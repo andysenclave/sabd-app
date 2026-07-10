@@ -7,6 +7,7 @@
  * and reads the loaded word bank + engine so the workspace wiring is exercised at runtime.
  */
 import { View, Text, StyleSheet } from 'react-native';
+import { Link } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { size as wordBankSize, wordBankVersion } from '@sabd/wordbank';
 import { defaultConfig } from '@sabd/elo';
@@ -39,6 +40,11 @@ export default function Home() {
       <Text style={[styles.meta, { color: t.colors.paperDim, fontFamily: t.font.mono }]}>
         wordbank v{wordBankVersion} · {wordBankSize} words · K{defaultConfig.kProvisional}
       </Text>
+
+      {/* Dev harness for the round components (T12–T14). Removed when Home ships (T19). */}
+      <Link href="/round-demo" style={[styles.link, { color: t.accent(), fontFamily: t.font.monoMedium }]}>
+        ▶ round components demo
+      </Link>
     </View>
   );
 }
@@ -52,4 +58,5 @@ const styles = StyleSheet.create({
   topic: { fontSize: 20, letterSpacing: 1 },
   body: { fontSize: 15, textAlign: 'center' },
   meta: { fontSize: 12, letterSpacing: 0.5, marginTop: 8 },
+  link: { fontSize: 13, letterSpacing: 0.5, marginTop: 24 },
 });
