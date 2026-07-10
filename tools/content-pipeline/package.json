@@ -1,0 +1,16 @@
+{
+  "name": "@sabd/content-pipeline",
+  "version": "0.1.0",
+  "description": "Content pipeline for Sabd — generation, validation, and merging of the word bank.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node src/validate.js data/raw/GAM-batch1.json",
+    "validate:offline": "node src/validate.js data/raw/GAM-batch1.json --no-api",
+    "merge": "node src/merge.js",
+    "build-bank": "node src/publish.js"
+  },
+  "devDependencies": {
+    "word-list": "^4.0.0"
+  }
+}

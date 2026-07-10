@@ -1,0 +1,21 @@
+{
+  "name": "@sabd/contracts",
+  "version": "0.1.0",
+  "description": "Sabd shared contract — WordEntry, RoundResult, RatingUpdate, RoundEvent types + dependency-free validators. The schema law.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=23.6"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^5.9.3"
+  }
+}

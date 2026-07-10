@@ -1,0 +1,173 @@
+[
+  {
+    "id": "GAM-0016",
+    "word": "RELOAD",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 1090,
+    "tier": "low",
+    "description": "That click of empty means it's time",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "GAM-0025",
+    "word": "RESPAWN",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 1380,
+    "tier": "mid",
+    "description": "Death is a suggestion; the timer disagrees briefly",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "K"
+      }
+    }
+  },
+  {
+    "id": "GAM-0026",
+    "word": "LOADOUT",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 1320,
+    "tier": "mid",
+    "description": "Everything strapped on before the drop",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "GAM-0028",
+    "word": "HITBOX",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 1520,
+    "tier": "mid",
+    "description": "The invisible shape that decides if it hurt",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "X",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "GAM-0050",
+    "word": "SMURF",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 1780,
+    "tier": "high",
+    "description": "A veteran hiding in beginner's clothes",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "P"
+      }
+    }
+  },
+  {
+    "id": "GAM-0052",
+    "word": "NETCODE",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 1900,
+    "tier": "high",
+    "description": "The invisible plumbing that decides who shot first",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "GAM-0055",
+    "word": "TICKRATE",
+    "topic": "Gaming",
+    "length": 8,
+    "difficulty": 2050,
+    "tier": "high",
+    "description": "How often the server bothers to check reality",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "GAM-0056",
+    "word": "MINMAX",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 2100,
+    "tier": "high",
+    "description": "Squeezing every stat until the spreadsheet smiles",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "X",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "GAM-0060",
+    "word": "TRYHARD",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 1620,
+    "tier": "high",
+    "description": "Sweat-soaked effort in a casual lobby",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "S"
+      }
+    }
+  }
+]

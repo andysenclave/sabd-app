@@ -1,0 +1,29 @@
+{
+  "name": "sabd",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Sabd (शब्द) — competitive, Elo-rated word-guessing game. Phase 2 monorepo.",
+  "type": "module",
+  "packageManager": "pnpm@11.0.9",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "content:validate": "pnpm --filter @sabd/content-pipeline validate",
+    "content:merge": "pnpm --filter @sabd/content-pipeline merge",
+    "content:build-bank": "pnpm --filter @sabd/content-pipeline build-bank",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^26.1.1",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.18.0"
+  }
+}

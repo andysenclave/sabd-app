@@ -1,0 +1,25 @@
+{
+  "name": "@sabd/elo",
+  "version": "0.1.0",
+  "description": "Sabd rating engine — pure, deterministic Elo-style rating math for the word game Sabd (Phase 1).",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "worked-example": "node scripts/worked-example.ts"
+  },
+  "engines": {
+    "node": ">=23.6"
+  },
+  "dependencies": {
+    "@sabd/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^5.9.3"
+  }
+}

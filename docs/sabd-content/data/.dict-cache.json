@@ -1,0 +1,14 @@
+{
+  "respawn": true,
+  "loadout": false,
+  "hitbox": false,
+  "nerf": true,
+  "esports": true,
+  "speedrun": true,
+  "gank": true,
+  "smurf": false,
+  "netcode": false,
+  "tickrate": false,
+  "minmax": false,
+  "tryhard": false
+}

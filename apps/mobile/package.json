@@ -1,0 +1,10 @@
+{
+  "name": "@sabd/mobile",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Sabd Expo mobile app — scaffolded in T8. Placeholder shell for Lane 1.",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@sabd/analyze-playtests",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Playtest export analysis — implemented in T28. Placeholder shell for Lane 1.",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sabd/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1"
+  }
+}

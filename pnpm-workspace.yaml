@@ -1,0 +1,9 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+  - 'tools/*'
+  - 'scripts/*'
+allowBuilds:
+  # esbuild (via apps/web → vite) fetches its platform binary in a postinstall.
+  # Allowed so the frozen web prototype stays runnable; not needed for typecheck/tests.
+  esbuild: true

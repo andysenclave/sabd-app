@@ -1,0 +1,131 @@
+/* SABD global base. Colors/typography live in tokens/skins; this is reset + fonts. */
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: #171a24; /* --ink; skin sets the real ground on the app root */
+  color: #e9eaf2;
+  font-family: 'Instrument Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+button {
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* The app is designed mobile-first (390px reference). On wider screens we
+   center a phone-width column so the locked layout reads as intended. */
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.sabd-frame {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100dvh;
+  position: relative;
+}
+
+/* Motion durations (mirror tokens.ts). Entrance + looping animations use CSS so
+   they are immune to React re-render restarts and are neutralized in one place by
+   the reduced-motion rule below. Framer handles one-shot/stopped-timer beats. */
+:root {
+  --fast: 120ms;
+  --beat: 260ms;
+  --snap: cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+@keyframes sabd-drop-typed {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes sabd-drop-given {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes sabd-chip-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes sabd-stub {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+@keyframes sabd-ember {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(228, 87, 61, 0);
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(228, 87, 61, 0.9);
+  }
+}
+
+.sabd-glyph-typed {
+  animation: sabd-drop-typed var(--fast) var(--snap) both;
+}
+.sabd-glyph-given {
+  animation: sabd-drop-given var(--beat) ease-out both;
+}
+.sabd-chip {
+  animation: sabd-chip-in var(--beat) ease-out both;
+}
+.sabd-stub {
+  animation: sabd-stub 1.1s ease-in-out infinite;
+}
+.sabd-ember {
+  animation: sabd-ember 1s ease-in-out infinite;
+}
+
+/* Reduced-motion: kill CSS transitions/animations globally. Framer Motion is
+   handled per-component via useReducedMotion(). Burn width still updates each
+   rAF frame (information, not decoration) — it uses no transition, so it stays. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@sabd/tokens",
+  "version": "0.1.0",
+  "description": "Sabd design tokens (colors, type, spacing, radii, motion, retro map) from DESIGN-SYSTEM.md rev. 2.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sabd/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
