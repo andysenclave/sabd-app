@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Sabd",
+    "slug": "sabd",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "sabd",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/icon.png",
+    "backgroundColor": "#171A24",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#171A24"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.sabd.app"
+    },
+    "android": {
+      "package": "com.sabd.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#171A24"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#171A24",
+          "image": "./assets/splash.png",
+          "imageWidth": 200
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

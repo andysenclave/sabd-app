@@ -1,7 +1,21 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "types": ["node"]
+    "strict": true,
+    "noEmit": true,
+    // The @sabd/* workspace packages import sibling modules with explicit `.ts`
+    // extensions (required for Node-native TS execution). Allow that here so tsc can
+    // typecheck through them; Metro resolves the same specifiers at bundle time.
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": ["node_modules"]
 }
