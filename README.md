@@ -59,6 +59,16 @@ pnpm content:build-bank     # publish the merged bank into @sabd/wordbank (--ver
 
 ## Status
 
-**Lane 1 complete (T1–T5):** monorepo scaffold, elo migrated, contracts extracted, pipeline
-migrated + wired to the wordbank, tokens built. `pnpm -r typecheck` and all package tests are
-green. Next: **Lane 2 (T6–T7)** — generate the full 6-topic word bank and human-review it.
+- **Lane 1 complete (T1–T5):** monorepo scaffold, elo migrated, contracts extracted, pipeline
+  migrated + wired to the wordbank, tokens built.
+- **T8 complete:** `apps/mobile` is a real Expo SDK-57 Router app (RN 0.86 / React 19),
+  monorepo-wired, with the ThemeProvider (+ oklch→sRGB accent bridge) and all four brand fonts.
+  `pnpm -r typecheck` green; `expo export` bundles cleanly. Device run via Expo Go is
+  owner-verifiable.
+
+**Verification commands:** `pnpm -r typecheck` · `pnpm -r test` ·
+`pnpm --filter @sabd/mobile exec expo export --platform android`.
+
+**Next unblocked:** T11 (word selection), T12–T14 (keyboard / rail+timer / slot row), and
+Lane 2 content (T6–T7). **Blocked:** T9/T10 (storage + event log) need
+`docs/sabd-event-log-and-sync.md` to lock the `RoundEvent` schema — see the contract note above.
