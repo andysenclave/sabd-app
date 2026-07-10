@@ -93,54 +93,83 @@ export interface RatingUpdate {
 
 /**
  * ─────────────────────────────────────────────────────────────────────────────
- * RoundEvent — PROVISIONAL.  ⚠  NOT YET LOCKED.
+ * RoundEvent — LOCKED to `docs/sabd-event-log-and-sync.md` §4 (schema v1).
  * ─────────────────────────────────────────────────────────────────────────────
- * The authoritative source (`docs/sabd-event-log-and-sync.md`) is MISSING from the
- * repo tree. This shape is a considered superset of RoundResult + the rating outcome
- * + an event envelope, sufficient for Lane 1 to typecheck and for early reasoning.
+ * The append-only event log is the truth; the rating is derived by replaying these
+ * through @sabd/elo. Logging scope is MINIMAL — exactly what Elo replay and
+ * word-rating correction consume. Do not add exhaust (keystrokes, guesses, device
+ * info); nothing consumes it and it becomes a liability once a userId attaches.
  *
- * It MUST be reconciled against the event-log doc before T9 (storage) / T10 (event
- * log core) / T23 (export). Treat any change here that lands from that doc as a
- * contract decision, not a refactor. Do not build persistence on this until confirmed.
+ * Field names here are camelCase mirrors of the §4 snake_case columns; the storage
+ * layer owns the row mapping (booleans ↔ 0/1, hintsUsed ↔ JSON text).
+ *
+ * NOT persisted in v1 (deliberate): `challengeMode` — it affects the rating, so an
+ * event without it can't be faithfully replayed; Challenge is disabled in Phase 2 and
+ * recording a challenge round is rejected. If Challenge ships, bump the schema version
+ * and add the column (contract decision, not a refactor).
  */
 export const ROUND_EVENT_SCHEMA_VERSION = 1 as const;
 
+/** New players seed at this rating with gamesPlayed = 0 (event-log doc §5). */
+export const SEED_RATING = 1200 as const;
+
 export interface RoundEvent {
-  /** Envelope schema version; bump on any breaking field change. */
-  schemaVersion: number;
-  /** Primary key — random UUID (expo-crypto). Idempotency hinge for appendRound. */
+  /** Primary key — client-generated random UUID → idempotent append/upload. */
   roundId: string;
+  /** Event shape version; bump when this shape changes. */
+  schemaVersion: number;
   /** Random install UUID (expo-crypto). NEVER a device identifier. */
   installId: string;
+  /** Epoch ms, client clock. */
+  playedAt: number;
 
-  /** What was played. */
+  /** e.g. "GAM-0142". */
   wordId: string;
-  word: string;
+  /**
+   * The word's rating AT PLAY TIME (§4.1) — ratings drift once correction begins;
+   * the number they actually faced is part of the event.
+   */
+  wordRatingAtPlay: number;
+  /** Which bank served this word. */
+  wordBankVersion: string;
   topic: string;
 
-  /** Round outcome (mirror of RoundResult, denormalized into the event). */
   solved: boolean;
   timeLimitSec: number;
   timeUsedSec: number;
+  /** The paid hints used (max 2). */
   hintsUsed: PaidHint[];
-  challengeMode: boolean;
+  /** "solo" (1v1 later). */
   mode: GameMode;
 
-  /** Rating math (the derived value; the log is the truth it derives from). */
-  opponentRating: number;
+  /** What they were rated facing this word (§4.3 — self-describing, drift-spotting). */
   playerRatingBefore: number;
-  playerRatingAfter: number;
-  gamesPlayedBefore: number;
-  delta: number;
+  /**
+   * Which engine tunables were live (§4.2) — a round played under hintPenalty 0.20
+   * cannot be honestly replayed under 0.15.
+   */
+  engineConfigVersion: string;
 
-  /** Timing — epoch ms. `timeUsedSec` derives from a monotonic source where available. */
-  startedAt: number;
-  endedAt: number;
-  /** Set when wall-clock and monotonic deltas disagree wildly (clock manipulation). */
+  /**
+   * Set when wall-clock and monotonic time deltas disagree wildly (clock
+   * manipulation). Required by the architect orders, which take precedence over the
+   * event-log doc's field list. Optional; absent means "no anomaly detected".
+   */
   anomaly?: boolean;
 
-  /** Provenance + sync bookkeeping. */
-  wordBankVersion: string;
-  /** Epoch ms when exported/synced; null until then. The manual loop leaves this untouched. */
+  /** Epoch ms when uploaded; null = never. The Phase-2 manual loop leaves this null. */
   syncedAt: number | null;
+}
+
+/**
+ * The "Send my data" export envelope (playtest-analysis doc §2):
+ * one JSON file per friend, consumed by scripts/analyze-playtests.
+ */
+export interface ExportFile {
+  installId: string;
+  /** ROUND_EVENT_SCHEMA_VERSION of the rounds within. */
+  schemaVersion: number;
+  /** Epoch ms. */
+  exportedAt: number;
+  rounds: RoundEvent[];
 }

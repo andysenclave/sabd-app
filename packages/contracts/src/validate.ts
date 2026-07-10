@@ -7,6 +7,7 @@
  */
 
 import type {
+  ExportFile,
   GameMode,
   PaidHint,
   RoundEvent,
@@ -188,38 +189,32 @@ function validateHintsUsed(c: Checker, v: unknown, path: string): void {
   });
 }
 
-// ─── RoundEvent (PROVISIONAL — see types.ts) ─────────────────────────────────
+// ─── RoundEvent (LOCKED — event-log doc §4, schema v1) ───────────────────────
 
 export function validateRoundEvent(input: unknown, path = 'roundEvent'): ValidationResult<RoundEvent> {
   const c = new Checker();
   if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
 
-  c.integer(input['schemaVersion'], `${path}.schemaVersion`);
   c.nonEmptyString(input['roundId'], `${path}.roundId`);
+  c.integer(input['schemaVersion'], `${path}.schemaVersion`);
   c.nonEmptyString(input['installId'], `${path}.installId`);
+  c.number(input['playedAt'], `${path}.playedAt`);
 
   c.nonEmptyString(input['wordId'], `${path}.wordId`);
-  c.nonEmptyString(input['word'], `${path}.word`);
+  c.number(input['wordRatingAtPlay'], `${path}.wordRatingAtPlay`);
+  c.nonEmptyString(input['wordBankVersion'], `${path}.wordBankVersion`);
   c.nonEmptyString(input['topic'], `${path}.topic`);
 
   c.boolean(input['solved'], `${path}.solved`);
   c.number(input['timeLimitSec'], `${path}.timeLimitSec`);
   c.number(input['timeUsedSec'], `${path}.timeUsedSec`);
   validateHintsUsed(c, input['hintsUsed'], `${path}.hintsUsed`);
-  c.boolean(input['challengeMode'], `${path}.challengeMode`);
   c.oneOf(input['mode'], GAME_MODES, `${path}.mode`);
 
-  c.number(input['opponentRating'], `${path}.opponentRating`);
   c.number(input['playerRatingBefore'], `${path}.playerRatingBefore`);
-  c.number(input['playerRatingAfter'], `${path}.playerRatingAfter`);
-  c.integer(input['gamesPlayedBefore'], `${path}.gamesPlayedBefore`);
-  c.number(input['delta'], `${path}.delta`);
+  c.nonEmptyString(input['engineConfigVersion'], `${path}.engineConfigVersion`);
 
-  c.number(input['startedAt'], `${path}.startedAt`);
-  c.number(input['endedAt'], `${path}.endedAt`);
   if (input['anomaly'] !== undefined) c.boolean(input['anomaly'], `${path}.anomaly`);
-
-  c.nonEmptyString(input['wordBankVersion'], `${path}.wordBankVersion`);
   if (input['syncedAt'] !== null) c.number(input['syncedAt'], `${path}.syncedAt`);
 
   return result(c, input as unknown as RoundEvent);
@@ -227,4 +222,27 @@ export function validateRoundEvent(input: unknown, path = 'roundEvent'): Validat
 
 export function isRoundEvent(input: unknown): input is RoundEvent {
   return validateRoundEvent(input).ok;
+}
+
+// ─── ExportFile (playtest-analysis doc §2) ───────────────────────────────────
+
+export function validateExportFile(input: unknown, path = 'export'): ValidationResult<ExportFile> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+
+  c.nonEmptyString(input['installId'], `${path}.installId`);
+  c.integer(input['schemaVersion'], `${path}.schemaVersion`);
+  c.number(input['exportedAt'], `${path}.exportedAt`);
+
+  const rounds = input['rounds'];
+  if (!Array.isArray(rounds)) {
+    c.fail(`${path}.rounds`, `expected array, got ${describe(rounds)}`);
+  } else {
+    rounds.forEach((r, i) => {
+      const rr = validateRoundEvent(r, `${path}.rounds[${i}]`);
+      if (!rr.ok) c.errors.push(...rr.errors);
+    });
+  }
+
+  return result(c, input as unknown as ExportFile);
 }

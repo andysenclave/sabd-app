@@ -15,6 +15,7 @@
   "dependencies": {
     "@sabd/contracts": "workspace:*",
     "@sabd/elo": "workspace:*",
+    "@sabd/storage": "workspace:*",
     "@sabd/tokens": "workspace:*",
     "@sabd/wordbank": "workspace:*",
     "@expo-google-fonts/archivo": "^0.4.2",

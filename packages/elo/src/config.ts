@@ -42,6 +42,14 @@ export interface EloConfig {
   readonly wordRatingUpdatesEnabled: boolean;
 }
 
+/**
+ * Version stamp for the tunables below — persisted on every round_event as
+ * `engineConfigVersion` (event-log doc §4.2). A round played under hintPenalty 0.20
+ * cannot be honestly replayed under 0.15; the stamp lets replay resolve which config
+ * was live. BUMP THIS whenever any defaultConfig value changes.
+ */
+export const ENGINE_CONFIG_VERSION = '1.0.0';
+
 export const defaultConfig: EloConfig = {
   solveBase: 0.5,
   speedBonusMax: 0.5,

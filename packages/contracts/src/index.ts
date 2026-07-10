@@ -5,6 +5,7 @@
  */
 
 export type {
+  ExportFile,
   GameMode,
   HintId,
   PaidHint,
@@ -17,7 +18,7 @@ export type {
   WordTier,
 } from './types.ts';
 
-export { ROUND_EVENT_SCHEMA_VERSION } from './types.ts';
+export { ROUND_EVENT_SCHEMA_VERSION, SEED_RATING } from './types.ts';
 
 export {
   GAME_MODES,
@@ -26,6 +27,7 @@ export {
   WORD_TIERS,
   isRoundEvent,
   isWordEntry,
+  validateExportFile,
   validateRoundEvent,
   validateRoundResult,
   validateWordEntry,

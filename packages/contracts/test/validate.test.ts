@@ -5,9 +5,10 @@ import {
   validateWordEntry,
   validateRoundResult,
   validateRoundEvent,
+  validateExportFile,
   ROUND_EVENT_SCHEMA_VERSION,
 } from '../src/index.ts';
-import type { WordEntry, RoundResult, RoundEvent } from '../src/index.ts';
+import type { WordEntry, RoundResult, RoundEvent, ExportFile } from '../src/index.ts';
 
 const goodWord: WordEntry = {
   id: 'GAM-0001',
@@ -36,26 +37,21 @@ const goodResult: RoundResult = {
 };
 
 const goodEvent: RoundEvent = {
-  schemaVersion: ROUND_EVENT_SCHEMA_VERSION,
   roundId: 'r-uuid',
+  schemaVersion: ROUND_EVENT_SCHEMA_VERSION,
   installId: 'i-uuid',
+  playedAt: 1_700_000_000_000,
   wordId: 'GAM-0001',
-  word: 'GAMER',
+  wordRatingAtPlay: 820,
+  wordBankVersion: '1.0.0',
   topic: 'Gaming',
   solved: true,
   timeLimitSec: 60,
   timeUsedSec: 22,
   hintsUsed: ['position'],
-  challengeMode: false,
   mode: 'solo',
-  opponentRating: 820,
-  playerRatingBefore: 1000,
-  playerRatingAfter: 1023,
-  gamesPlayedBefore: 3,
-  delta: 23,
-  startedAt: 1_700_000_000_000,
-  endedAt: 1_700_000_022_000,
-  wordBankVersion: '1.0.0',
+  playerRatingBefore: 1200,
+  engineConfigVersion: '1.0.0',
   syncedAt: null,
 };
 
@@ -111,4 +107,29 @@ test('RoundEvent allows optional anomaly flag', () => {
 test('RoundEvent rejects non-null non-number syncedAt', () => {
   const r = validateRoundEvent({ ...goodEvent, syncedAt: 'nope' });
   assert.equal(r.ok, false);
+});
+
+test('RoundEvent requires engineConfigVersion and wordRatingAtPlay (§4.1/§4.2)', () => {
+  const { engineConfigVersion: _e, ...noConfig } = goodEvent;
+  assert.equal(validateRoundEvent(noConfig).ok, false);
+  const { wordRatingAtPlay: _w, ...noRating } = goodEvent;
+  assert.equal(validateRoundEvent(noRating).ok, false);
+});
+
+const goodExport: ExportFile = {
+  installId: 'i-uuid',
+  schemaVersion: ROUND_EVENT_SCHEMA_VERSION,
+  exportedAt: 1_700_000_100_000,
+  rounds: [goodEvent],
+};
+
+test('valid ExportFile passes; empty rounds allowed', () => {
+  assert.equal(validateExportFile(goodExport).ok, true);
+  assert.equal(validateExportFile({ ...goodExport, rounds: [] }).ok, true);
+});
+
+test('ExportFile surfaces per-round errors with indexed paths', () => {
+  const r = validateExportFile({ ...goodExport, rounds: [goodEvent, { bad: true }] });
+  assert.equal(r.ok, false);
+  if (!r.ok) assert.ok(r.errors.some((e) => e.includes('rounds[1]')));
 });

@@ -13,10 +13,13 @@ import { size as wordBankSize, wordBankVersion } from '@sabd/wordbank';
 import { defaultConfig } from '@sabd/elo';
 
 import { useTheme } from '../src/theme';
+import { useStorageBoot } from '../src/storage/useStorageBoot';
 
 export default function Home() {
   const t = useTheme();
   const insets = useSafeAreaInsets();
+  // Boots SQLite (migrations → installId → verifyRating) and reads the log-backed rating.
+  const storage = useStorageBoot();
 
   return (
     <View style={[styles.screen, { backgroundColor: t.colors.ink, paddingTop: insets.top + 24 }]}>
@@ -26,8 +29,10 @@ export default function Home() {
         <Text style={[styles.wordmark, { color: t.colors.paper, fontFamily: t.font.brand }]}>SABD</Text>
       </View>
 
-      {/* Rating ◆ — Martian Mono, tabular. */}
-      <Text style={[styles.rating, { color: t.colors.kesar, fontFamily: t.font.monoBold }]}>◆ 1000</Text>
+      {/* Rating ◆ — Martian Mono, tabular. Log-backed via verifyRating on native. */}
+      <Text style={[styles.rating, { color: t.colors.kesar, fontFamily: t.font.monoBold }]}>
+        ◆ {storage.ready ? storage.rating : '····'}
+      </Text>
 
       {/* Topic label — Archivo, in the current topic accent. */}
       <Text style={[styles.topic, { color: t.accent(), fontFamily: t.font.display }]}>GAMING</Text>

@@ -1,0 +1,25 @@
+{
+  "name": "@sabd/storage",
+  "version": "0.1.0",
+  "description": "Sabd event log core — append-only round_event log, hybrid cached rating, replay verification, export. Pure logic against a SqlDriver seam.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=23.6"
+  },
+  "dependencies": {
+    "@sabd/contracts": "workspace:*",
+    "@sabd/elo": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^5.9.3"
+  }
+}

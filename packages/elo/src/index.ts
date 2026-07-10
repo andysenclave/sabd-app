@@ -5,7 +5,7 @@
  * fully deterministic (no I/O, no globals, no Date.now(), no randomness).
  */
 
-export { defaultConfig, type EloConfig } from './config.ts';
+export { defaultConfig, ENGINE_CONFIG_VERSION, type EloConfig } from './config.ts';
 
 export type {
   GameMode,
