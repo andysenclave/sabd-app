@@ -53,6 +53,11 @@ pnpm content:build-bank     # publish the merged bank into @sabd/wordbank (--ver
 - **`RoundEvent` is PROVISIONAL.** Its authoritative spec (`docs/sabd-event-log-and-sync.md`)
   is missing from the tree. The current shape lets Lane 1 typecheck; it **must** be reconciled
   against that doc before T9/T10/T23. Do not build persistence on it until confirmed.
+- **`RoundEvent` is LOCKED** to `docs/sabd-event-log-and-sync.md` §4 (schema v1) and
+  implemented by `@sabd/storage` (append-only log, atomic appendRound, verifyRating/fullReplay,
+  export). `challengeMode` is not persisted in v1 — `recordRound` rejects challenge rounds
+  (Challenge is disabled in Phase 2; shipping it = schema bump = contract decision). New
+  players seed at **1200**.
 - `apps/web` is a **frozen prototype**: it keeps its own local `types.ts` intentionally (its
   `RoundResult` is a UI-emit subset, not the engine contract). It is not a live consumer of
   `@sabd/contracts` and is not developed further in Phase 2.
@@ -66,11 +71,15 @@ pnpm content:build-bank     # publish the merged bank into @sabd/wordbank (--ver
 - **T12–T14 complete:** custom keyboard, Rekha rail + authoritative timer (`useRoundClock`),
   and slot row — built to the locked design and verified rendering/interacting in a browser
   (typed→correct flip, solve flash, timeout lock). Dev harness at `/round-demo`.
+- **T9–T10 complete:** `RoundEvent` locked to the event-log doc; `@sabd/storage` implements
+  the append-only log (atomic `appendRound`, idempotent on `round_id`, snapshot `verifyRating`
+  + `fullReplay`, export envelope) with the full §9.6 test suite green (14 tests); app boots
+  SQLite → migrations → installId → verifyRating on launch.
 
 **Verification commands:** `pnpm -r typecheck` · `pnpm -r test` ·
 `pnpm --filter @sabd/mobile exec expo export --platform android` · web preview via
 `.claude/launch.json` (`sabd-mobile-web`, after `expo export --platform web --output-dir dist`).
 
-**Next unblocked:** T15 (round state machine — onRoundEnd seam stubbed until T10), T16 (hints),
-T17 (round assembly), T11 (word selection), Lane 2 content (T6–T7). **Blocked:** T9/T10
-(storage + event log) need `docs/sabd-event-log-and-sync.md` to lock `RoundEvent` — see above.
+**Next unblocked:** T15 (round state machine → `recordRound` seam, now real), T16 (hints —
+costs: position 8s / letters 5s), T17 (round assembly), T11 (word selection), T23 (export UI),
+Lane 2 content (T6–T7). **Blocked:** T25–T27 still need `docs/sabd-distribution.md`.
