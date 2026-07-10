@@ -63,12 +63,14 @@ pnpm content:build-bank     # publish the merged bank into @sabd/wordbank (--ver
   migrated + wired to the wordbank, tokens built.
 - **T8 complete:** `apps/mobile` is a real Expo SDK-57 Router app (RN 0.86 / React 19),
   monorepo-wired, with the ThemeProvider (+ oklch→sRGB accent bridge) and all four brand fonts.
-  `pnpm -r typecheck` green; `expo export` bundles cleanly. Device run via Expo Go is
-  owner-verifiable.
+- **T12–T14 complete:** custom keyboard, Rekha rail + authoritative timer (`useRoundClock`),
+  and slot row — built to the locked design and verified rendering/interacting in a browser
+  (typed→correct flip, solve flash, timeout lock). Dev harness at `/round-demo`.
 
 **Verification commands:** `pnpm -r typecheck` · `pnpm -r test` ·
-`pnpm --filter @sabd/mobile exec expo export --platform android`.
+`pnpm --filter @sabd/mobile exec expo export --platform android` · web preview via
+`.claude/launch.json` (`sabd-mobile-web`, after `expo export --platform web --output-dir dist`).
 
-**Next unblocked:** T11 (word selection), T12–T14 (keyboard / rail+timer / slot row), and
-Lane 2 content (T6–T7). **Blocked:** T9/T10 (storage + event log) need
-`docs/sabd-event-log-and-sync.md` to lock the `RoundEvent` schema — see the contract note above.
+**Next unblocked:** T15 (round state machine — onRoundEnd seam stubbed until T10), T16 (hints),
+T17 (round assembly), T11 (word selection), Lane 2 content (T6–T7). **Blocked:** T9/T10
+(storage + event log) need `docs/sabd-event-log-and-sync.md` to lock `RoundEvent` — see above.
