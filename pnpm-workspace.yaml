@@ -7,3 +7,8 @@ allowBuilds:
   # esbuild (via apps/web → vite) fetches its platform binary in a postinstall.
   # Allowed so the frozen web prototype stays runnable; not needed for typecheck/tests.
   esbuild: true
+# Expo CLI require.resolve()s metro packages from the project root; pnpm's isolated
+# layout hides these transitive deps. Standard fix for Expo-in-pnpm monorepos.
+publicHoistPattern:
+  - 'metro*'
+  - '@expo/metro*'

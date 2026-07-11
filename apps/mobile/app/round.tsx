@@ -45,7 +45,7 @@ export default function RoundScreen() {
   return <ActiveRound key={word.id} word={word} initialRating={storage.rating} />;
 }
 
-function ActiveRound({ word, initialRating }: { word: WordEntry; initialRating: number }) {
+function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initialRating: number }>) {
   const t = useTheme();
   const insets = useSafeAreaInsets();
   const router = useRouter();
@@ -179,13 +179,13 @@ function EndBeat({
   update,
   onNext,
   onHome,
-}: {
+}: Readonly<{
   solved: boolean;
   answer: string;
   update: RatingUpdate | null;
   onNext: () => void;
   onHome: () => void;
-}) {
+}>) {
   const t = useTheme();
   const delta = update?.delta;
   return (
