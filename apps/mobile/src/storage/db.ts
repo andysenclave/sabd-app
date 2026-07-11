@@ -9,22 +9,12 @@
 
 import { openDatabaseSync } from 'expo-sqlite';
 import { randomUUID } from 'expo-crypto';
-import {
-  runMigrations,
-  getOrCreateInstallId,
-  verifyRating,
-  type SqlDriver,
-  type PlayerState,
-  type VerifyResult,
-} from '@sabd/storage';
+import { runMigrations, getOrCreateInstallId, verifyRating, type SqlDriver } from '@sabd/storage';
 
 import { ExpoSqliteDriver } from './expoDriver.ts';
+import type { Storage } from './db.types.ts';
 
-export interface Storage {
-  db: SqlDriver;
-  player: PlayerState;
-  verify: VerifyResult;
-}
+export type { Storage } from './db.types.ts';
 
 let instance: Storage | null = null;
 

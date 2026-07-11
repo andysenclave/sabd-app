@@ -6,8 +6,8 @@
  * pulls values from `@sabd/tokens` via the ThemeProvider, shows the RN-safe topic accent,
  * and reads the loaded word bank + engine so the workspace wiring is exercised at runtime.
  */
-import { View, Text, StyleSheet } from 'react-native';
-import { Link } from 'expo-router';
+import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { size as wordBankSize, wordBankVersion } from '@sabd/wordbank';
 import { defaultConfig } from '@sabd/elo';
@@ -18,6 +18,7 @@ import { useStorageBoot } from '../src/storage/useStorageBoot';
 export default function Home() {
   const t = useTheme();
   const insets = useSafeAreaInsets();
+  const router = useRouter();
   // Boots SQLite (migrations → installId → verifyRating) and reads the log-backed rating.
   const storage = useStorageBoot();
 
@@ -46,10 +47,16 @@ export default function Home() {
         wordbank v{wordBankVersion} · {wordBankSize} words · K{defaultConfig.kProvisional}
       </Text>
 
-      {/* Dev harness for the round components (T12–T14). Removed when Home ships (T19). */}
-      <Link href="/round-demo" style={[styles.link, { color: t.accent(), fontFamily: t.font.monoMedium }]}>
-        ▶ round components demo
-      </Link>
+      {/* PLAY — kesar primary CTA (placeholder Home; the real 8b grid ships in T19). */}
+      <Pressable
+        accessibilityRole="button"
+        onPress={() => router.push('/round')}
+        style={[styles.play, { backgroundColor: t.colors.kesar }]}
+      >
+        <Text style={{ fontFamily: t.font.brand, fontSize: 20, letterSpacing: 2, color: t.colors.ink }}>
+          PLAY
+        </Text>
+      </Pressable>
     </View>
   );
 }
@@ -63,5 +70,12 @@ const styles = StyleSheet.create({
   topic: { fontSize: 20, letterSpacing: 1 },
   body: { fontSize: 15, textAlign: 'center' },
   meta: { fontSize: 12, letterSpacing: 0.5, marginTop: 8 },
-  link: { fontSize: 13, letterSpacing: 0.5, marginTop: 24 },
+  play: {
+    marginTop: 28,
+    height: 56, // §6 primary CTA
+    paddingHorizontal: 48,
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

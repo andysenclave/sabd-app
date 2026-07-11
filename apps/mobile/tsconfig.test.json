@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    // apps/mobile has no "type": "module" (Expo convention), so NodeNext would read
+    // these files as CJS. Node's test runner detects the ESM syntax at runtime;
+    // mirror that for tsc.
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
+  },
+  "include": ["test/**/*.ts", "src/round/roundMachine.ts", "src/round/config.ts"]
+}

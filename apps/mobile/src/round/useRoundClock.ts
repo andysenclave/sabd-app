@@ -35,6 +35,8 @@ export interface RoundClockOptions {
   timeLimitSec: number;
   /** Authoritative start (epoch ms). */
   startedAt: number;
+  /** Seconds burned by hints — the burn re-seeds whenever this changes. */
+  penaltySec?: number;
   running: boolean;
   reducedMotion?: boolean;
 }
@@ -42,6 +44,7 @@ export interface RoundClockOptions {
 export function useRoundClock({
   timeLimitSec,
   startedAt,
+  penaltySec = 0,
   running,
   reducedMotion = false,
 }: RoundClockOptions): RoundClock {
@@ -54,7 +57,8 @@ export function useRoundClock({
   useEffect(() => {
     if (!running) return;
 
-    const remaining = (): number => Math.max(0, timeLimitSec - (Date.now() - startedAt) / 1000);
+    const remaining = (): number =>
+      Math.max(0, timeLimitSec - penaltySec - (Date.now() - startedAt) / 1000);
 
     const sync = (): number => {
       const rem = remaining();
@@ -97,7 +101,7 @@ export function useRoundClock({
     };
     // progress is a stable shared value; intentionally omitted.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [running, startedAt, timeLimitSec, reducedMotion]);
+  }, [running, startedAt, timeLimitSec, penaltySec, reducedMotion]);
 
   return { progress, remainingSec, critical, done };
 }

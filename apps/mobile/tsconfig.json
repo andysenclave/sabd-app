@@ -17,5 +17,7 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
   ],
-  "exclude": ["node_modules"]
+  // test/ runs under Node (node --test) and typechecks via tsconfig.test.json —
+  // keeping node globals out of the RN app's type space.
+  "exclude": ["node_modules", "test"]
 }

@@ -27,3 +27,6 @@ scripts/analyze-playtests/**/names.json
 # os / editor
 .DS_Store
 *.log
+
+# personal editor theming (root only; subproject .vscode dirs are intentional)
+/.vscode/

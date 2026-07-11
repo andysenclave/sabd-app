@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { Platform } from 'react-native';
 import { SEED_RATING } from '@sabd/contracts';
 
-import { initStorage } from './db.ts';
+// Extensionless: Metro picks db.web.ts on web, db.ts on native.
+import { initStorage } from './db';
 
 export interface StorageBoot {
   ready: boolean;

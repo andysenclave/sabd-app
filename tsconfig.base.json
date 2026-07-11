@@ -18,13 +18,14 @@
     "erasableSyntaxOnly": true,
     "noEmit": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
+    // paths without baseUrl: resolved relative to THIS file (TS ≥4.1; baseUrl is
+    // deprecated in TS 6, which apps/mobile uses).
     "paths": {
-      "@sabd/contracts": ["packages/contracts/src/index.ts"],
-      "@sabd/elo": ["packages/elo/src/index.ts"],
-      "@sabd/storage": ["packages/storage/src/index.ts"],
-      "@sabd/tokens": ["packages/tokens/src/index.ts"],
-      "@sabd/wordbank": ["packages/wordbank/src/index.ts"]
+      "@sabd/contracts": ["./packages/contracts/src/index.ts"],
+      "@sabd/elo": ["./packages/elo/src/index.ts"],
+      "@sabd/storage": ["./packages/storage/src/index.ts"],
+      "@sabd/tokens": ["./packages/tokens/src/index.ts"],
+      "@sabd/wordbank": ["./packages/wordbank/src/index.ts"]
     }
   }
 }
