@@ -26,6 +26,7 @@ import { TOPICS, topicById } from '../src/home/topics';
 import { availableBankTopics } from '../src/round/selectWord';
 import { getStorage } from '../src/storage/db';
 import { hasSplashPlayed } from '../src/splashState';
+import { Wordmark } from '../src/components/Logo';
 
 export default function Home() {
   const t = useTheme();
@@ -62,14 +63,9 @@ export default function Home() {
 
   return (
     <View style={[styles.screen, { backgroundColor: t.colors.ink, paddingTop: insets.top + 26 }]}>
-      {/* Header — lockup left (rail ABOVE the word), glowing rating right. */}
+      {/* Header — the real wordmark asset left, glowing rating right. */}
       <View style={styles.header}>
-        <View style={styles.lockup}>
-          <View style={[styles.rail, { backgroundColor: t.colors.kesar }]} />
-          <Text style={[styles.wordmark, { fontFamily: t.font.brand, color: t.colors.paper }]}>
-            SABD
-          </Text>
-        </View>
+        <Wordmark width={148} />
         <View style={styles.headerRight}>
           <View style={styles.ratingBlock}>
             <View style={styles.ratingRow}>
@@ -139,10 +135,7 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   screen: { flex: 1, paddingHorizontal: 24 },
-  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' },
-  lockup: { gap: 4 },
-  rail: { width: 112, height: 4, borderRadius: 1 },
-  wordmark: { fontSize: 30, lineHeight: 32, letterSpacing: 2, paddingHorizontal: 4 },
+  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   headerRight: { flexDirection: 'row', alignItems: 'center', gap: 14 },
   gear: { padding: 6 },
   ratingBlock: { alignItems: 'flex-end', gap: 2 },

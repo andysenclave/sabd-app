@@ -13,6 +13,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { View, Text, StyleSheet, Alert, Platform, Pressable } from 'react-native';
 import { useLocalSearchParams, useNavigation, useRouter } from 'expo-router';
+import { usePreventRemove } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { randomUUID } from 'expo-crypto';
 import type { RatingUpdate, TopicId, WordEntry } from '@sabd/contracts';
@@ -108,28 +109,24 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
   );
 
   const round = useRound({ word, onRoundEnd });
-  const statusRef = useRef(round.status);
-  statusRef.current = round.status;
 
   // Back interception (edge-swipe + Android hardware back both land here).
-  useEffect(() => {
-    const sub = navigation.addListener('beforeRemove', (e) => {
-      if (statusRef.current !== 'running') return;
-      e.preventDefault();
-      Alert.alert('Abandon this round?', 'Leaving a rated round counts as a timeout.', [
-        { text: 'Keep playing', style: 'cancel' },
-        {
-          text: 'Abandon',
-          style: 'destructive',
-          onPress: () => {
-            pendingNavAction.current = () => navigation.dispatch(e.data.action);
-            round.abandon();
-          },
+  // usePreventRemove (not a manual beforeRemove listener) is required for native-stack:
+  // a plain listener + preventDefault() races the native pop and leaves JS/native nav
+  // state out of sync ("screen was removed natively but didn't get removed from JS state").
+  usePreventRemove(round.status === 'running', ({ data }) => {
+    Alert.alert('Abandon this round?', 'Leaving a rated round counts as a timeout.', [
+      { text: 'Keep playing', style: 'cancel' },
+      {
+        text: 'Abandon',
+        style: 'destructive',
+        onPress: () => {
+          pendingNavAction.current = () => navigation.dispatch(data.action);
+          round.abandon();
         },
-      ]);
-    });
-    return sub;
-  }, [navigation, round]);
+      },
+    ]);
+  });
 
   const running = round.status === 'running';
   const solved = round.status === 'solved';

@@ -27,7 +27,7 @@
     "android": {
       "package": "com.sabd.app",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/adaptive-icon-foreground.png",
         "backgroundColor": "#171A24"
       }
     },
