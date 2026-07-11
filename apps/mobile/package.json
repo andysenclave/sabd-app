@@ -18,6 +18,7 @@
     "@expo-google-fonts/instrument-sans": "^0.4.2",
     "@expo-google-fonts/khand": "^0.4.1",
     "@expo-google-fonts/martian-mono": "^0.4.2",
+    "@expo/metro-runtime": "~6.1.2",
     "@sabd/contracts": "workspace:*",
     "@sabd/elo": "workspace:*",
     "@sabd/storage": "workspace:*",
