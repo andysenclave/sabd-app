@@ -9,6 +9,9 @@
     "node": ">=23.6"
   },
   "scripts": {
+    "dev": "pnpm --filter @sabd/mobile start",
+    "dev:android": "pnpm --filter @sabd/mobile android",
+    "dev:prototype": "pnpm --filter @sabd/web dev",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
     "lint": "turbo run lint",

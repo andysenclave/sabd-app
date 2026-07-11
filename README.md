@@ -30,6 +30,22 @@ Toolchain: **pnpm workspaces + Turborepo**, Node ≥ 23.6 (native TypeScript exe
 build step for the node packages), strict TS. `@sabd/*` cross-package imports resolve via
 workspace symlinks and `tsconfig.base.json` path mappings.
 
+## Running the app
+
+**The game is `apps/mobile` (Expo).** `apps/web` is the frozen Phase-1 prototype — it does
+not receive new work and will never reflect current progress.
+
+```bash
+pnpm dev            # Expo dev server for the REAL app (apps/mobile)
+                    #   → press `w` to open in the browser (hot reload)
+                    #   → scan the QR with Expo Go to run on your phone
+pnpm dev:android    # same, but launches straight onto a connected Android device
+pnpm dev:prototype  # the frozen Phase-1 web prototype (apps/web, :5173) — reference only
+```
+
+On a phone you get the full loop: solve a round, relaunch, the rating persists (SQLite is
+native-only; the browser preview skips persistence).
+
 ## Commands
 
 ```bash
