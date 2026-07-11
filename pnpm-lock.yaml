@@ -249,6 +249,9 @@ importers:
       '@types/node':
         specifier: ^26.1.1
         version: 26.1.1
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
 
   tools/content-pipeline:
     devDependencies:

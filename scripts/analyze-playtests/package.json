@@ -1,16 +1,19 @@
 {
   "name": "@sabd/analyze-playtests",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Playtest export analysis — implemented in T28. Placeholder shell for Lane 1.",
+  "description": "Playtest export analysis — reads 'Send my data' JSON exports, prints five plain-text reports (T28).",
   "scripts": {
+    "analyze": "node src/index.ts",
+    "test": "node --test \"test/*.test.ts\"",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@sabd/contracts": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^26.1.1"
+    "@types/node": "^26.1.1",
+    "typescript": "^5.9.3"
   }
 }
