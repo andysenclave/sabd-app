@@ -29,11 +29,17 @@ test('randomness: different rng values pick different words in the same window',
 });
 
 test('widens step-by-step when the window is empty (extreme rating), never crashes', () => {
-  const w = selectWord({ rating: 5000 });
-  assert.ok(w); // the hardest word in the bank, eventually
-  assert.equal(
-    w.difficulty,
-    Math.max(...words.map((x) => x.difficulty)),
+  const rating = 5000;
+  const w = selectWord({ rating });
+  assert.ok(w);
+  // The guarantee: the pick lies inside the FIRST window that has candidates —
+  // i.e. the minimal ±150-multiple reaching the bank's hardest words. (Randomness
+  // may pick any word in that band, not necessarily the absolute max.)
+  const maxDifficulty = Math.max(...words.map((x) => x.difficulty));
+  const minimalWindow = Math.ceil((rating - maxDifficulty) / 150) * 150;
+  assert.ok(
+    Math.abs(w.difficulty - rating) <= minimalWindow,
+    `${w.id} (${w.difficulty}) outside the minimal window ${minimalWindow}`,
   );
 });
 
