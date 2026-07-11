@@ -73,6 +73,7 @@ export const SlotRow = memo(function SlotRow({ slots, accentColor }: SlotRowProp
       {slots.map((s, i) => (
         <View
           key={i}
+          importantForAccessibility="no-hide-descendants"
           style={[
             styles.slot,
             {

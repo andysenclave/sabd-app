@@ -10,6 +10,7 @@
  * The markup below is copied verbatim from the source file so this stays pixel-faithful
  * to what the designer shipped. If the source file changes, re-copy it here.
  */
+import { View } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 
 const RETRO_WORDMARK_XML = `
@@ -44,7 +45,15 @@ export interface WordmarkProps {
   width: number;
 }
 
-/** The full flap-card SABD wordmark. Renders at any size with zero quality loss. */
+/**
+ * The full flap-card SABD wordmark. Renders at any size with zero quality loss.
+ * Purely decorative branding — the screen title already conveys "Sabd", so this is
+ * hidden from the accessibility tree rather than left to read as an unlabeled node.
+ */
 export function Wordmark({ width }: WordmarkProps) {
-  return <SvgXml xml={RETRO_WORDMARK_XML} width={width} height={width / WORDMARK_ASPECT_RATIO} />;
+  return (
+    <View accessible={false} importantForAccessibility="no">
+      <SvgXml xml={RETRO_WORDMARK_XML} width={width} height={width / WORDMARK_ASPECT_RATIO} />
+    </View>
+  );
 }

@@ -92,10 +92,15 @@ export default function Onboarding() {
         </Text>
       </View>
 
-      <View style={styles.dots}>
+      <View
+        style={styles.dots}
+        accessible
+        accessibilityLabel={`Step ${step + 1} of ${PANELS.length}`}
+      >
         {PANELS.map((_, i) => (
           <View
             key={i}
+            importantForAccessibility="no"
             style={[
               styles.dot,
               { backgroundColor: i === step ? t.colors.kesar : t.colors.ink2 },
@@ -119,9 +124,9 @@ export default function Onboarding() {
 
 const styles = StyleSheet.create({
   screen: { flex: 1, paddingHorizontal: 28 },
-  skip: { alignSelf: 'flex-end', padding: 8 },
+  skip: { alignSelf: 'flex-end', minWidth: 44, minHeight: 44, alignItems: 'flex-end', justifyContent: 'center' },
   center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
   dots: { flexDirection: 'row', justifyContent: 'center', gap: 8, marginBottom: 24 },
   dot: { width: 7, height: 7, borderRadius: 4 },
-  cta: { height: 56, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
+  cta: { height: 56, borderRadius: 12, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 32 },
 });

@@ -26,11 +26,14 @@ export const TopicCard = memo(function TopicCard({ topic, state, selected, onSel
   const t = useTheme();
   const accent = t.accentFor(topic.id);
   const soon = state.kind === 'soon';
+  const a11yLabel = `${topic.name}${
+    soon ? ', coming soon' : state.kind === 'played' ? `, rating ${state.rating}` : ', not yet played'
+  }`;
 
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${topic.name}${soon ? ', coming soon' : ''}`}
+      accessibilityLabel={a11yLabel}
       accessibilityState={{ selected, disabled: soon }}
       disabled={soon}
       onPress={() => onSelect(topic)}

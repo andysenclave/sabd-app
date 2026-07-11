@@ -6,7 +6,7 @@
  * (@sabd/storage.recordRound → @sabd/elo) — none of it here.
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { AppState } from 'react-native';
+import { AppState, AccessibilityInfo } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import type { PaidHint, RoundResult, WordEntry } from '@sabd/contracts';
 
@@ -18,6 +18,7 @@ import {
   pressKey,
   revealPosition,
   timeUsedSec,
+  type KeyInput,
   type RoundCore,
 } from './roundMachine.ts';
 import { useRoundClock, formatClock } from './useRoundClock.ts';
@@ -50,6 +51,11 @@ export function useRound({ word, hapticsEnabled = true, onRoundEnd }: UseRoundOp
   // Monotonic shadow of the wall clock, for the anomaly flag.
   const monoStart = useRef(performance.now());
   const endedRef = useRef(false);
+
+  // Always-fresh snapshot for handlers that need to read state without becoming
+  // unstable callbacks (Keyboard/HintBar hold onto onKey/takeHint by identity).
+  const coreRef = useRef(core);
+  coreRef.current = core;
 
   const clock = useRoundClock({
     timeLimitSec: gameConfig.timeLimitSec,
@@ -107,16 +113,57 @@ export function useRound({ word, hapticsEnabled = true, onRoundEnd }: UseRoundOp
     if (core.wrongGuesses > wrongGuessesRef.current) {
       wrongGuessesRef.current = core.wrongGuesses;
       if (hapticsEnabled) void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+      AccessibilityInfo.announceForAccessibility('Not in the word. Try again.');
     }
   }, [core.wrongGuesses, hapticsEnabled]);
 
+  // Pressure haptic (Part-A subtle touch): one tick the moment the rail enters
+  // the final 10 seconds — the only non-visual cue that state exists.
+  const wasCriticalRef = useRef(false);
+  useEffect(() => {
+    if (clock.critical && !wasCriticalRef.current) {
+      wasCriticalRef.current = true;
+      if (hapticsEnabled) void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+    } else if (!clock.critical) {
+      wasCriticalRef.current = false;
+    }
+  }, [clock.critical, hapticsEnabled]);
+
+  // Screen-reader announcement of every keystroke — without it, a blind player has
+  // zero feedback while typing on the custom keyboard (there's no system TextInput
+  // to fall back on). Computed from the PRE-update snapshot, since the machine's own
+  // no-op rules (row full, nothing to erase) must not announce anything.
+  const announceKeyEffect = (before: RoundCore, input: KeyInput): void => {
+    if (before.status !== 'running') return;
+    const total = before.answer.length;
+
+    if (input.kind === 'letter') {
+      const focus = before.cells.findIndex((c) => c.char === null);
+      if (focus === -1) return; // row already full — machine no-ops, so do we
+      AccessibilityInfo.announceForAccessibility(
+        `${input.letter.toUpperCase()}, letter ${focus + 1} of ${total}`,
+      );
+      return;
+    }
+    if (input.kind === 'backspace') {
+      for (let i = before.cells.length - 1; i >= 0; i--) {
+        const cell = before.cells[i]!;
+        if (cell.char !== null && !cell.given) {
+          AccessibilityInfo.announceForAccessibility(`Cleared letter ${i + 1}`);
+          return;
+        }
+      }
+    }
+  };
+
   const onKey = useCallback((key: KeyValue) => {
-    const input =
+    const input: KeyInput =
       key === 'ENTER'
-        ? ({ kind: 'enter' } as const)
+        ? { kind: 'enter' }
         : key === 'BACKSPACE'
-          ? ({ kind: 'backspace' } as const)
-          : ({ kind: 'letter', letter: key } as const);
+          ? { kind: 'backspace' }
+          : { kind: 'letter', letter: key };
+    announceKeyEffect(coreRef.current, input);
     setCore((c) => pressKey(c, input, Date.now(), gameConfig));
   }, []);
 
@@ -131,6 +178,9 @@ export function useRound({ word, hapticsEnabled = true, onRoundEnd }: UseRoundOp
         return next;
       });
       if (hapticsEnabled) void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+      AccessibilityInfo.announceForAccessibility(
+        hint === 'position' ? 'Position revealed.' : 'Letter hints revealed.',
+      );
     },
     [word, hapticsEnabled],
   );

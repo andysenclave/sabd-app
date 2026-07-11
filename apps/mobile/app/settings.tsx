@@ -7,8 +7,8 @@
  * share sheet → JSON file. `synced_at` stays untouched (the manual loop never
  * stamps it).
  */
-import { useCallback, useState } from 'react';
-import { View, Text, StyleSheet, Pressable, Switch, ScrollView, Platform } from 'react-native';
+import { useCallback, useEffect, useState } from 'react';
+import { View, Text, StyleSheet, Pressable, Switch, ScrollView, Platform, AccessibilityInfo } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as FileSystem from 'expo-file-system/legacy';
@@ -49,8 +49,14 @@ export default function Settings() {
 
   return (
     <View style={[styles.screen, { backgroundColor: t.colors.ink, paddingTop: insets.top + 20 }]}>
-      <View style={styles.header}>
-        <Pressable accessibilityRole="button" accessibilityLabel="Back" onPress={() => router.back()}>
+      <View style={styles.header} importantForAccessibility={exportOpen ? 'no-hide-descendants' : 'auto'}>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Back"
+          onPress={() => router.back()}
+          style={styles.back}
+          hitSlop={8}
+        >
           <Text style={{ fontFamily: t.font.mono, fontSize: 20, color: t.colors.paperDim }}>←</Text>
         </Pressable>
         <Text style={{ fontFamily: t.font.brand, fontSize: 22, letterSpacing: 1, color: t.colors.paper }}>
@@ -59,7 +65,10 @@ export default function Settings() {
         <View style={{ width: 20 }} />
       </View>
 
-      <ScrollView contentContainerStyle={styles.body}>
+      <ScrollView
+        contentContainerStyle={styles.body}
+        importantForAccessibility={exportOpen ? 'no-hide-descendants' : 'auto'}
+      >
         {/* Privacy — one honest paragraph. */}
         <Section title="PRIVACY">
           <Text style={{ fontFamily: t.font.body, fontSize: 14, lineHeight: 21, color: t.colors.paperDim }}>
@@ -74,14 +83,22 @@ export default function Settings() {
             <Switch
               value={haptics}
               onValueChange={toggleHaptics}
+              accessibilityLabel="Haptics"
               trackColor={{ false: t.colors.ink2, true: t.colors.kesar }}
             />
           </Row>
-          <Pressable accessibilityRole="button" onPress={replayOnboarding} style={styles.linkRow}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Replay onboarding"
+            onPress={replayOnboarding}
+            style={styles.linkRow}
+          >
             <Text style={{ fontFamily: t.font.body, fontSize: 15, color: t.colors.paper }}>
               Replay onboarding
             </Text>
-            <Text style={{ color: t.colors.paperDim }}>›</Text>
+            <Text importantForAccessibility="no" style={{ color: t.colors.paperDim }}>
+              ›
+            </Text>
           </Pressable>
         </Section>
 
@@ -142,6 +159,14 @@ function ExportPreview({ onClose }: { onClose: () => void }) {
   const rounds = file?.rounds ?? [];
   const empty = rounds.length === 0;
 
+  useEffect(() => {
+    AccessibilityInfo.announceForAccessibility(
+      empty ? 'Nothing to send yet dialog opened' : `Send my data dialog opened, ${rounds.length} rounds`,
+    );
+    // announce once, on open, regardless of later state changes within the dialog
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const send = useCallback(async () => {
     if (!file) return;
     setSending(true);
@@ -161,7 +186,7 @@ function ExportPreview({ onClose }: { onClose: () => void }) {
   }, [file]);
 
   return (
-    <View style={styles.overlay}>
+    <View style={styles.overlay} accessibilityViewIsModal>
       <View style={[styles.sheet, { backgroundColor: t.colors.ink2 }]}>
         <Text style={{ fontFamily: t.font.brand, fontSize: 18, color: t.colors.paper, marginBottom: 8 }}>
           {empty ? 'Nothing to send yet' : 'Send my data'}
@@ -201,7 +226,12 @@ function ExportPreview({ onClose }: { onClose: () => void }) {
         )}
 
         <View style={styles.sheetActions}>
-          <Pressable accessibilityRole="button" onPress={onClose} style={styles.ghostBtn}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={sent || empty ? 'Close' : 'Cancel'}
+            onPress={onClose}
+            style={styles.ghostBtn}
+          >
             <Text style={{ fontFamily: t.font.brand, fontSize: 15, color: t.colors.paperDim }}>
               {sent || empty ? 'CLOSE' : 'CANCEL'}
             </Text>
@@ -209,6 +239,7 @@ function ExportPreview({ onClose }: { onClose: () => void }) {
           {!empty && !sent && (
             <Pressable
               accessibilityRole="button"
+              accessibilityLabel={sending ? 'Sending' : 'Send'}
               onPress={send}
               disabled={sending}
               style={[styles.sendBtn, { backgroundColor: t.colors.kesar, opacity: sending ? 0.6 : 1 }]}
@@ -242,14 +273,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 22,
     paddingBottom: 16,
   },
+  back: { minWidth: 44, minHeight: 44, justifyContent: 'center' },
   body: { paddingHorizontal: 22, paddingBottom: 40 },
   section: { marginTop: 26 },
-  row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingVertical: 10 },
+  row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', minHeight: 44 },
   linkRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingVertical: 12,
+    minHeight: 44,
     marginTop: 4,
   },
   sendButton: { height: 52, borderRadius: 10, alignItems: 'center', justifyContent: 'center' },
@@ -264,6 +296,6 @@ const styles = StyleSheet.create({
   sheet: { width: '100%', borderRadius: 16, padding: 22 },
   previewBox: { backgroundColor: 'rgba(0,0,0,.2)', borderRadius: 8, padding: 12, marginBottom: 6 },
   sheetActions: { flexDirection: 'row', justifyContent: 'flex-end', gap: 16, marginTop: 20 },
-  ghostBtn: { paddingVertical: 10, paddingHorizontal: 6 },
-  sendBtn: { paddingVertical: 10, paddingHorizontal: 20, borderRadius: 8 },
+  ghostBtn: { minHeight: 44, paddingHorizontal: 6, justifyContent: 'center' },
+  sendBtn: { minHeight: 44, paddingHorizontal: 20, borderRadius: 8, justifyContent: 'center' },
 });

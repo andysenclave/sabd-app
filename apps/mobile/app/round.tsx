@@ -11,7 +11,7 @@
  * screens with the odometer ceremony are T20; the full motion ledger is T18.
  */
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { View, Text, StyleSheet, Alert, Platform, Pressable } from 'react-native';
+import { View, Text, StyleSheet, Alert, Platform, Pressable, AccessibilityInfo } from 'react-native';
 import { useLocalSearchParams, useNavigation, useRouter } from 'expo-router';
 import { usePreventRemove } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -97,6 +97,11 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
             ...(summary.anomaly ? { anomaly: true } : {}),
           });
           setUpdate(outcome.update);
+          AccessibilityInfo.announceForAccessibility(
+            summary.result.solved
+              ? `Solved. Rating ${outcome.update.delta >= 0 ? '+' : ''}${outcome.update.delta}, now ${outcome.update.newPlayerRating}.`
+              : `Time's up. The word was ${word.word.toUpperCase()}. Rating ${outcome.update.delta}, now ${outcome.update.newPlayerRating}.`,
+          );
         } catch (err) {
           console.error('round: recordRound failed', err);
         }
@@ -134,14 +139,20 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
   return (
     <View style={[styles.screen, { backgroundColor: t.colors.ink, paddingTop: insets.top + 24 }]}>
       {/* Glance bar — nothing tappable (§6: back = edge swipe). */}
-      <View style={styles.glance}>
+      <View
+        style={styles.glance}
+        accessible
+        accessibilityLabel={`Topic: ${word.topic}, rating ${update?.newPlayerRating ?? initialRating}`}
+      >
         <Text
           style={{ fontFamily: t.font.display, fontSize: 14, letterSpacing: 1.5, color: t.accent() }}
         >
           {word.topic.toUpperCase()}
         </Text>
         <View style={styles.ratingChip}>
-          <Text style={{ color: t.colors.kesar, fontSize: 10 }}>◆</Text>
+          <Text importantForAccessibility="no" style={{ color: t.colors.kesar, fontSize: 10 }}>
+            ◆
+          </Text>
           <Text style={{ fontFamily: t.font.mono, fontSize: 14, color: t.colors.paper }}>
             {update?.newPlayerRating ?? initialRating}
           </Text>
@@ -314,7 +325,11 @@ function TopicExhausted() {
       >
         You’ve played every word here — another topic awaits.
       </Text>
-      <Pressable onPress={() => router.dismissTo('/')} style={[styles.cta, { alignSelf: 'center' }]}>
+      <Pressable
+        accessibilityRole="button"
+        onPress={() => router.dismissTo('/')}
+        style={[styles.cta, { alignSelf: 'center' }]}
+      >
         <Text style={{ fontFamily: t.font.brand, fontSize: 16, color: t.colors.paperDim }}>HOME</Text>
       </Pressable>
     </View>
@@ -345,8 +360,9 @@ const styles = StyleSheet.create({
   ratingBeat: { alignItems: 'center', marginVertical: 4 },
   ctaRow: { flexDirection: 'row', gap: 12, paddingTop: 6 },
   cta: {
-    height: 44,
+    minHeight: 44,
     paddingHorizontal: 22,
+    paddingVertical: 10,
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',

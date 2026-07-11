@@ -67,9 +67,19 @@ export default function Home() {
       <View style={styles.header}>
         <Wordmark width={148} />
         <View style={styles.headerRight}>
-          <View style={styles.ratingBlock}>
+          <View
+            style={styles.ratingBlock}
+            accessible
+            accessibilityLabel={
+              storage.ready
+                ? `Rating ${storage.rating}, ${stats.rounds} ${stats.rounds === 1 ? 'round' : 'rounds'} played`
+                : 'Rating loading'
+            }
+          >
             <View style={styles.ratingRow}>
-              <Text style={{ color: t.colors.kesar, fontSize: 11 }}>◆</Text>
+              <Text importantForAccessibility="no" style={{ color: t.colors.kesar, fontSize: 11 }}>
+                ◆
+              </Text>
               <Text
                 style={{
                   fontFamily: t.font.monoBold,
@@ -93,6 +103,7 @@ export default function Home() {
             accessibilityLabel="Settings"
             onPress={() => router.push('/settings')}
             style={styles.gear}
+            hitSlop={8}
           >
             <Text style={{ fontSize: 18, color: t.colors.paperDim }}>⚙</Text>
           </Pressable>
@@ -123,7 +134,13 @@ export default function Home() {
             PLAY · {selectedMeta.name}
           </Text>
         </Pressable>
-        <Pressable accessibilityRole="button" accessibilityState={{ disabled: true }} disabled>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Challenge a rival, coming soon"
+          accessibilityState={{ disabled: true }}
+          disabled
+          style={styles.challenge}
+        >
           <Text style={{ fontFamily: t.font.mono, fontSize: 12, letterSpacing: 1, color: t.colors.paperDim }}>
             ⚔ CHALLENGE A RIVAL · SOON
           </Text>
@@ -137,7 +154,8 @@ const styles = StyleSheet.create({
   screen: { flex: 1, paddingHorizontal: 24 },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   headerRight: { flexDirection: 'row', alignItems: 'center', gap: 14 },
-  gear: { padding: 6 },
+  gear: { minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' },
+  challenge: { minHeight: 44, justifyContent: 'center', alignItems: 'center' },
   ratingBlock: { alignItems: 'flex-end', gap: 2 },
   ratingRow: { flexDirection: 'row', alignItems: 'center', gap: 7 },
   grid: {

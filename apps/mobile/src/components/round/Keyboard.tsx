@@ -69,6 +69,7 @@ export const Keyboard = memo(function Keyboard({
                 accessibilityState={{ disabled }}
                 disabled={disabled}
                 onPress={(_e: GestureResponderEvent) => press(k)}
+                hitSlop={{ top: 4, bottom: 4, left: 2, right: 2 }}
                 style={({ pressed }) => [
                   styles.key,
                   {
@@ -102,7 +103,7 @@ const styles = StyleSheet.create({
   padDisabled: { opacity: 0.4 },
   row: { flexDirection: 'row', gap: 5 },
   key: {
-    height: 44,
+    minHeight: 44,
     borderRadius: 6,
     alignItems: 'center',
     justifyContent: 'center',

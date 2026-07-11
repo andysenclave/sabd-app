@@ -30,11 +30,16 @@ export const HintBar = memo(function HintBar({ spent, disabled = false, onHint }
       {HINTS.map(({ id, label }) => {
         const isSpent = spent.includes(id);
         const inactive = isSpent || disabled;
+        const a11yLabel = isSpent
+          ? `${label} hint, already used`
+          : disabled
+            ? `${label} hint, unavailable`
+            : `${label} hint, costs ${gameConfig.hintCostSec[id]} seconds`;
         return (
           <Pressable
             key={id}
             accessibilityRole="button"
-            accessibilityLabel={`${label} hint, costs ${gameConfig.hintCostSec[id]} seconds`}
+            accessibilityLabel={a11yLabel}
             accessibilityState={{ disabled: inactive }}
             disabled={inactive}
             onPress={() => onHint(id)}
