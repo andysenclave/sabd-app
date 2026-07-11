@@ -94,14 +94,33 @@ pnpm content:build-bank     # publish the merged bank into @sabd/wordbank (--ver
   store stub), `runtimeVersion: {policy: "appVersion"}`, ready for `eas update`. See
   **Shipping the APK** below — `eas login` / `eas build:configure` need your Expo account,
   so that step is yours to run (T26).
+- **T24 (a11y + stress audit) complete:** 34 findings from a full audit of every screen,
+  most fixed directly (tap targets to 44px, missing labels/roles, and — the biggest gap —
+  the custom keyboard now announces every keystroke/backspace/wrong-guess/hint/round-end
+  via `AccessibilityInfo`, since there's no backing `TextInput` to fall back on). Checklist
+  with contrast numbers, the exact slot-clamp math at n=3/n=8, and what's deliberately
+  deferred (with reasons): `apps/mobile/A11Y-AUDIT.md`.
+- **T28 (playtest analysis script) complete:** `scripts/analyze-playtests` — five reports
+  (loop/hints/timing/words/topics), strict n<5 suppression, dedupe-by-roundId, mixed-
+  schemaVersion rejection. 20 tests; verified end-to-end against a synthetic 21-round
+  dataset. Run with `pnpm --filter @sabd/analyze-playtests analyze <exports-dir>`.
+- **T29 (playtest kit) complete:** `docs/playtest/` — the WhatsApp invite message, 6
+  post-play questions, `names.json.example`, and the install/played tracking file. Not
+  git-tracked (all of `docs/` is gitignored per an earlier decision) but exists on disk,
+  ready to forward.
+- **Two priority bugs fixed (2026-07-12):** the app icon and Home wordmark were
+  approximations, not the real designed assets — both now render the actual SVGs from
+  `docs/design/logo-package/` via `react-native-svg`. Also fixed a real native-stack
+  navigation crash on round-abandon (replaced a manual `beforeRemove` listener with
+  react-navigation's `usePreventRemove`, per their own runtime warning's guidance).
 
 **Verification commands:** `pnpm -r typecheck` · `pnpm -r test` ·
 `pnpm --filter @sabd/mobile exec expo export --platform android` · web preview via
 `.claude/launch.json` (`sabd-mobile-web`, after `expo export --platform web --output-dir dist`).
 
-**Next:** T24 (a11y + stress audit), T18 remainder (full motion ledger pass, 60fps check on
-device), T26 (owner runs the first real build), T27 (prove the `eas update` loop), T28–T30
-(playtest analysis + kit + ship).
+**Next — all owner/hardware-blocked:** T18's remaining on-device 60fps check, T26 (you run
+the first real `eas build`), T27 (prove the `eas update` loop on that build), T30 (ship to
+5–10 friends, log it, run T28 on the real exports — this is "Phase 2 done").
 
 ## Shipping the APK (T25/T26 — per `docs/sabd-distribution.md`)
 
