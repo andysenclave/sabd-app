@@ -20,6 +20,10 @@ apps/mobile/ios/
 .env.*
 !.env.example
 
+
+#the whole docs
+docs/**
+
 # playtest — real names/PII never committed (T29)
 docs/playtest/names.json
 scripts/analyze-playtests/**/names.json

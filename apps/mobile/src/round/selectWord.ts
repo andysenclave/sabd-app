@@ -1,7 +1,15 @@
 /**
- * Word selection — T11-LITE. The ±150 rating window with step-widening is real;
- * what T11 still owes: `seenIds` PERSISTED across sessions (needs a small table)
- * and the graceful topic-exhausted UX + property tests. Session-scoped memory here.
+ * Word selection (T11) — ±150 rating window, widening in steps, with a RANDOM pick
+ * inside the window. Randomness matters: a deterministic nearest-difficulty pick
+ * gives every player the identical word sequence, which makes the game predictable
+ * (and trivially spoilable between friends). Selection is not rating math — replay
+ * never re-selects — so Math.random is fine here (injectable for tests).
+ *
+ * Exclusions come from two layers:
+ *  - `exclude`: word ids this install has EVER faced — derived from the event log
+ *    (playedWordIds), i.e. the persisted seenIds. Survives restarts for free.
+ *  - a session-scoped set covering rounds not yet in the log (e.g. the web harness,
+ *    or a round abandoned before recording).
  */
 
 import type { WordEntry } from '@sabd/contracts';
@@ -9,12 +17,30 @@ import { words } from '@sabd/wordbank';
 
 const WINDOW_STEP = 150;
 
-/** Words already served this session — no repeats (Part-A rule). */
+/** Words served this session (belt for what the log doesn't have yet). */
 const sessionSeen = new Set<string>();
 
-export function selectWord(rating: number, topic?: string): WordEntry | null {
+export interface SelectWordOptions {
+  rating: number;
+  /** Bank topic display string (e.g. "Gaming"). Omit = any topic. */
+  topic?: string;
+  /** Persisted seen ids (from the event log). */
+  exclude?: ReadonlySet<string>;
+  /** Injectable for tests. Returns [0,1). */
+  rng?: () => number;
+}
+
+export function selectWord({
+  rating,
+  topic,
+  exclude,
+  rng = Math.random,
+}: SelectWordOptions): WordEntry | null {
   const pool = words.filter(
-    (w) => (topic === undefined || w.topic === topic) && !sessionSeen.has(w.id),
+    (w) =>
+      (topic === undefined || w.topic === topic) &&
+      !sessionSeen.has(w.id) &&
+      !(exclude?.has(w.id) ?? false),
   );
   if (pool.length === 0) return null; // topic exhausted — caller shows the graceful state
 
@@ -22,17 +48,16 @@ export function selectWord(rating: number, topic?: string): WordEntry | null {
   for (let window = WINDOW_STEP; ; window += WINDOW_STEP) {
     const inWindow = pool.filter((w) => Math.abs(w.difficulty - rating) <= window);
     if (inWindow.length > 0) {
-      // Nearest-difficulty within the window, stable by id.
-      inWindow.sort(
-        (a, b) =>
-          Math.abs(a.difficulty - rating) - Math.abs(b.difficulty - rating) ||
-          a.id.localeCompare(b.id),
-      );
-      const chosen = inWindow[0]!;
+      const chosen = inWindow[Math.floor(rng() * inWindow.length)]!;
       sessionSeen.add(chosen.id);
       return chosen;
     }
   }
+}
+
+/** Bank topics that actually have words (drives which Home cards are playable). */
+export function availableBankTopics(): ReadonlySet<string> {
+  return new Set(words.map((w) => w.topic));
 }
 
 /** For tests/debug. */

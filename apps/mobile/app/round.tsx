@@ -12,18 +12,19 @@
  */
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { View, Text, StyleSheet, Alert, Platform, Pressable } from 'react-native';
-import { useNavigation, useRouter } from 'expo-router';
+import { useLocalSearchParams, useNavigation, useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { randomUUID } from 'expo-crypto';
-import type { RatingUpdate, WordEntry } from '@sabd/contracts';
+import type { RatingUpdate, TopicId, WordEntry } from '@sabd/contracts';
 import { wordBankVersion } from '@sabd/wordbank';
-import { recordRound } from '@sabd/storage';
+import { playedWordIds, recordRound } from '@sabd/storage';
 
 import { useTheme } from '../src/theme';
 import { useStorageBoot } from '../src/storage/useStorageBoot';
 import { getStorage } from '../src/storage/db';
 import { useRound, type RoundEndSummary } from '../src/round/useRound';
 import { selectWord } from '../src/round/selectWord';
+import { TOPICS } from '../src/home/topics';
 import { Keyboard } from '../src/components/round/Keyboard';
 import { RekhaRail } from '../src/components/round/RekhaRail';
 import { SlotRow } from '../src/components/round/SlotRow';
@@ -32,12 +33,31 @@ import { LetterChips } from '../src/components/round/LetterChips';
 
 export default function RoundScreen() {
   const storage = useStorageBoot();
+  const params = useLocalSearchParams<{ topic?: string }>();
   const [word, setWord] = useState<WordEntry | null>(null);
+
+  const topicMeta = TOPICS.find((t) => t.id === (params.topic as TopicId));
 
   // Pick the word once the rating is known (storage boots in one frame on device).
   useEffect(() => {
-    if (storage.ready && word === null) setWord(selectWord(storage.rating));
-  }, [storage.ready, storage.rating, word]);
+    if (!storage.ready || word !== null) return;
+    // Persisted seenIds: every word this install has faced, straight from the log.
+    let exclude: ReadonlySet<string> | undefined;
+    if (Platform.OS !== 'web') {
+      try {
+        exclude = playedWordIds(getStorage().db);
+      } catch (err) {
+        console.error('round: playedWordIds failed', err);
+      }
+    }
+    setWord(
+      selectWord({
+        rating: storage.rating,
+        ...(topicMeta ? { topic: topicMeta.bankTopic } : {}),
+        ...(exclude ? { exclude } : {}),
+      }),
+    );
+  }, [storage.ready, storage.rating, word, topicMeta]);
 
   if (!storage.ready || word === null) {
     return word === null && storage.ready ? <TopicExhausted /> : <View style={styles.blank} />;
@@ -50,6 +70,7 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const navigation = useNavigation();
+  const params = useLocalSearchParams<{ topic?: string }>();
 
   const [update, setUpdate] = useState<RatingUpdate | null>(null);
   const roundIdRef = useRef(randomUUID());
@@ -157,7 +178,12 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
             solved={solved}
             answer={word.word.toUpperCase()}
             update={update}
-            onNext={() => router.replace('/round')}
+            onNext={() =>
+              router.replace({
+                pathname: '/round',
+                params: params.topic ? { topic: params.topic } : {},
+              })
+            }
             onHome={() => router.dismissTo('/')}
           />
         )}

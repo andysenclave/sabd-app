@@ -14,7 +14,10 @@ export {
   getRoundsAfter,
   getUnsynced,
   markSynced,
+  playedWordIds,
+  topicStats,
   type AppendResult,
+  type TopicStats,
 } from './events.ts';
 export {
   recordRound,

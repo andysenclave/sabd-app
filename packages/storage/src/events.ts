@@ -75,3 +75,31 @@ export function markSynced(db: SqlDriver, roundIds: string[], syncedAt: number):
 export function countRounds(db: SqlDriver): number {
   return db.get<{ n: number }>('SELECT COUNT(*) AS n FROM round_event')?.n ?? 0;
 }
+
+/** Every word this install has faced — the persisted `seenIds` (word selection, T11). */
+export function playedWordIds(db: SqlDriver): Set<string> {
+  const rows = db.all<{ word_id: string }>('SELECT DISTINCT word_id FROM round_event');
+  return new Set(rows.map((r) => r.word_id));
+}
+
+export interface TopicStats {
+  topic: string;
+  rounds: number;
+  solved: number;
+  /** playerRatingBefore of the LATEST round in this topic — "where you stood last time". */
+  lastRatingBefore: number;
+}
+
+/** Per-topic aggregates for the Home grid, derived from the log. */
+export function topicStats(db: SqlDriver): TopicStats[] {
+  return db.all<TopicStats>(
+    `SELECT topic,
+            COUNT(*)    AS rounds,
+            SUM(solved) AS solved,
+            (SELECT player_rating_before FROM round_event r2
+              WHERE r2.topic = round_event.topic
+              ORDER BY r2.rowid DESC LIMIT 1) AS lastRatingBefore
+     FROM round_event
+     GROUP BY topic`,
+  );
+}

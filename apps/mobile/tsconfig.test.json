@@ -8,5 +8,10 @@
     "module": "ESNext",
     "moduleResolution": "Bundler"
   },
-  "include": ["test/**/*.ts", "src/round/roundMachine.ts", "src/round/config.ts"]
+  "include": [
+    "test/**/*.ts",
+    "src/round/roundMachine.ts",
+    "src/round/config.ts",
+    "src/round/selectWord.ts"
+  ]
 }

@@ -31,14 +31,14 @@ export interface Theme {
   topic: TopicId;
   /** RN-safe accent hex for the current topic (optional alpha 0..1). */
   accent: (alpha?: number) => string;
-  /** RN-safe accent hex for an explicit topic (used by the Home grid). */
-  accentFor: (topic: TopicId, alpha?: number) => string;
+  /** RN-safe accent hex for an explicit topic (optional alpha, optional L override). */
+  accentFor: (topic: TopicId, alpha?: number, l?: number) => string;
   setTopic: (topic: TopicId) => void;
 }
 
-function accentHex(topic: TopicId, alpha?: number): string {
+function accentHex(topic: TopicId, alpha?: number, l: number = ACCENT_L): string {
   const hue = topicHues[topic];
-  return alpha === undefined ? oklchToHex(ACCENT_L, ACCENT_C, hue) : oklchToHexA(ACCENT_L, ACCENT_C, hue, alpha);
+  return alpha === undefined ? oklchToHex(l, ACCENT_C, hue) : oklchToHexA(l, ACCENT_C, hue, alpha);
 }
 
 const ThemeContext = createContext<Theme | null>(null);
@@ -61,7 +61,7 @@ export function ThemeProvider({
       font: fontFamily,
       topic,
       accent: (alpha?: number) => accentHex(topic, alpha),
-      accentFor: (t: TopicId, alpha?: number) => accentHex(t, alpha),
+      accentFor: (t: TopicId, alpha?: number, l?: number) => accentHex(t, alpha, l),
       setTopic,
     }),
     [topic],

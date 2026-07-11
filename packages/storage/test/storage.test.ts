@@ -25,6 +25,8 @@ import {
   fullReplay,
   buildExport,
   getOrCreateInstallId,
+  playedWordIds,
+  topicStats,
   type RecordRoundInput,
   type SqlDriver,
 } from '../src/index.ts';
@@ -242,6 +244,37 @@ test('full replay from 1200 matches the cache after N rounds', () => {
   assert.equal(f.replayed, 25);
   assert.equal(f.healed, false); // cache already equals the replay — no drift
   assert.equal(f.rating, cached);
+});
+
+// ─── Log-derived queries (word selection + Home grid) ────────────────────────
+
+test('playedWordIds returns the distinct words this install has faced', () => {
+  const db = freshDb();
+  playRounds(db, 6);
+  const ids = playedWordIds(db);
+  assert.equal(ids.size, 6);
+  assert.ok(ids.has('GAM-0001'));
+  // replaying an existing word id (different roundId) does not grow the set
+  recordRound(db, roundInput({ word: { id: 'GAM-0001', difficulty: 900, topic: 'Gaming' } }));
+  assert.equal(playedWordIds(db).size, 6);
+});
+
+test('topicStats aggregates per topic with the latest rating-before', () => {
+  const db = freshDb();
+  recordRound(db, roundInput({ solved: true, word: { id: 'GAM-1', difficulty: 1200, topic: 'Gaming' } }));
+  recordRound(db, roundInput({ solved: false, word: { id: 'MUS-1', difficulty: 1100, topic: 'Music' } }));
+  const r3 = recordRound(
+    db,
+    roundInput({ solved: true, word: { id: 'GAM-2', difficulty: 1300, topic: 'Gaming' } }),
+  );
+
+  const stats = new Map(topicStats(db).map((s) => [s.topic, s]));
+  assert.equal(stats.get('Gaming')?.rounds, 2);
+  assert.equal(stats.get('Gaming')?.solved, 2);
+  assert.equal(stats.get('Music')?.rounds, 1);
+  assert.equal(stats.get('Music')?.solved, 0);
+  // Gaming's lastRatingBefore = what the player was rated entering their LATEST Gaming round.
+  assert.equal(stats.get('Gaming')?.lastRatingBefore, r3.event.playerRatingBefore);
 });
 
 // ─── Export ──────────────────────────────────────────────────────────────────
