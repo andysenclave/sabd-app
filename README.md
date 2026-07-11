@@ -75,11 +75,18 @@ pnpm content:build-bank     # publish the merged bank into @sabd/wordbank (--ver
   the append-only log (atomic `appendRound`, idempotent on `round_id`, snapshot `verifyRating`
   + `fullReplay`, export envelope) with the full §9.6 test suite green (14 tests); app boots
   SQLite → migrations → installId → verifyRating on launch.
+- **T15–T17 complete:** the round is playable end-to-end. Pure `roundMachine` core (13 unit
+  tests over the Part-A edge cases), `useRound` (clock + haptics + AppState resume + the
+  once-only `onRoundEnd` seam → `recordRound`), HintBar/LetterChips (costs 8s/5s from
+  `src/round/config.ts` — the eas-update tunables), assembled `/round` screen per locked 3a
+  with confirm-abandon (= timeout, recorded before leaving). Verified end-to-end in-browser.
 
 **Verification commands:** `pnpm -r typecheck` · `pnpm -r test` ·
 `pnpm --filter @sabd/mobile exec expo export --platform android` · web preview via
 `.claude/launch.json` (`sabd-mobile-web`, after `expo export --platform web --output-dir dist`).
 
-**Next unblocked:** T15 (round state machine → `recordRound` seam, now real), T16 (hints —
-costs: position 8s / letters 5s), T17 (round assembly), T11 (word selection), T23 (export UI),
+**Next unblocked:** T18 (round feel pass), T19 (real Home), T20 (result screens), T11
+(finish word selection: persisted seenIds), T21–T24 (splash/onboarding/settings/a11y),
 Lane 2 content (T6–T7). **Blocked:** T25–T27 still need `docs/sabd-distribution.md`.
+**Device check recommended:** run on a phone via Expo Go — solve a round, relaunch, confirm
+the rating persisted (the log-backed loop end-to-end on hardware).
