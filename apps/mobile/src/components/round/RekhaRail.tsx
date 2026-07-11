@@ -6,6 +6,9 @@
  * shifts to `--signal` in the final 10s with a 1px ember pulse; freezes on end; a full-width
  * accent glow flash on solve. The readout sits at the burnt (right) end.
  *
+ * Wrong guess (T18): the RAIL flinches, not the letters — ±4px ×3 shake, `--fast` (120ms).
+ * Slots stay put; only this component reacts.
+ *
  * Purely visual: it renders the `progress` shared value from `useRoundClock`. It never owns
  * the time.
  */
@@ -15,10 +18,12 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withRepeat,
+  withSequence,
   withTiming,
   cancelAnimation,
   type SharedValue,
 } from 'react-native-reanimated';
+import { duration, motion as motionTokens } from '@sabd/tokens';
 
 import { useTheme } from '../../theme';
 
@@ -34,6 +39,8 @@ export interface RekhaRailProps {
   /** Override accent (defaults to the current topic's). */
   accentColor?: string;
   reducedMotion?: boolean;
+  /** Bumps on every wrong guess — triggers the rail-level shake. */
+  wrongGuesses?: number;
 }
 
 export function RekhaRail({
@@ -43,6 +50,7 @@ export function RekhaRail({
   solved = false,
   accentColor,
   reducedMotion = false,
+  wrongGuesses = 0,
 }: RekhaRailProps) {
   const t = useTheme();
   const accent = accentColor ?? t.accent();
@@ -60,9 +68,24 @@ export function RekhaRail({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [critical, reducedMotion]);
 
+  const shakeX = useSharedValue(0);
+  useEffect(() => {
+    if (wrongGuesses === 0) return;
+    const d = motionTokens.wrongShakePx;
+    if (reducedMotion) return; // reduced motion: no shake, the slot/description feedback suffices
+    shakeX.value = withSequence(
+      withTiming(-d, { duration: duration.fast / 3 }),
+      withTiming(d, { duration: duration.fast / 3 }),
+      withTiming(0, { duration: duration.fast / 3 }),
+    );
+  }, [wrongGuesses, reducedMotion, shakeX]);
+
   const burnStyle = useAnimatedStyle(() => ({
     width: `${Math.max(0, Math.min(1, progress.value)) * 100}%`,
     opacity: ember.value,
+  }));
+  const shakeStyle = useAnimatedStyle(() => ({
+    transform: [{ translateX: shakeX.value }],
   }));
 
   return (
@@ -76,7 +99,7 @@ export function RekhaRail({
         </Text>
       </View>
 
-      <View
+      <Animated.View
         style={[
           styles.rail,
           solved && {
@@ -87,6 +110,7 @@ export function RekhaRail({
             shadowOffset: { width: 0, height: 0 },
             elevation: 8,
           },
+          shakeStyle,
         ]}
       >
         {!solved && (
@@ -95,7 +119,7 @@ export function RekhaRail({
             <Animated.View style={[styles.burn, { backgroundColor: burnColor }, burnStyle]} />
           </>
         )}
-      </View>
+      </Animated.View>
     </View>
   );
 }

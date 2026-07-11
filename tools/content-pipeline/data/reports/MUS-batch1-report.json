@@ -1,0 +1,447 @@
+{
+  "input": "data/raw/MUS-batch1.json",
+  "generatedAt": "2026-07-11T14:11:40.801Z",
+  "apiFallback": "enabled",
+  "totals": {
+    "entries": 60,
+    "passed": 60,
+    "rejected": 0,
+    "review": 0
+  },
+  "tierSplit": {
+    "expected": {
+      "low": 24,
+      "mid": 24,
+      "high": 12
+    },
+    "actual": {
+      "low": 24,
+      "mid": 24,
+      "high": 12
+    },
+    "ok": true
+  },
+  "failuresByRule": {},
+  "entries": [
+    {
+      "id": "MUS-0001",
+      "word": "RAP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0002",
+      "word": "PIANO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0003",
+      "word": "NOTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0004",
+      "word": "DRUM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0005",
+      "word": "BEAT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0006",
+      "word": "BAND",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0007",
+      "word": "TUNE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0008",
+      "word": "CHOIR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0009",
+      "word": "BASS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0010",
+      "word": "GUITAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0011",
+      "word": "TEMPO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0012",
+      "word": "SINGER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0013",
+      "word": "MELODY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0014",
+      "word": "VIOLIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0015",
+      "word": "CHORUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0016",
+      "word": "FLUTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0017",
+      "word": "ALBUM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0018",
+      "word": "OPERA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0019",
+      "word": "CONCERT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0020",
+      "word": "DUET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0021",
+      "word": "STAGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0022",
+      "word": "POP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0023",
+      "word": "JAZZ",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0024",
+      "word": "SOLO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0025",
+      "word": "TENOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0026",
+      "word": "ANTHEM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0027",
+      "word": "OCTAVE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0028",
+      "word": "CELLO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0029",
+      "word": "BALLAD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0030",
+      "word": "WALTZ",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0031",
+      "word": "ENCORE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0032",
+      "word": "BARITONE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0033",
+      "word": "BANJO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0034",
+      "word": "ACOUSTIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0035",
+      "word": "REGGAE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0036",
+      "word": "SOPRANO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0037",
+      "word": "MAESTRO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0038",
+      "word": "SONATA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0039",
+      "word": "QUARTET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0040",
+      "word": "FALSETTO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0041",
+      "word": "MEDLEY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0042",
+      "word": "VIBRATO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0043",
+      "word": "REFRAIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0044",
+      "word": "CLEF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0045",
+      "word": "SYMPHONY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0046",
+      "word": "CADENCE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0047",
+      "word": "TIMBRE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0048",
+      "word": "RIFF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0049",
+      "word": "CODA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0050",
+      "word": "LEGATO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0051",
+      "word": "TREMOLO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0052",
+      "word": "STACCATO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0053",
+      "word": "ETUDE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0054",
+      "word": "ARPEGGIO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0055",
+      "word": "SOLFEGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0056",
+      "word": "LIBRETTO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0057",
+      "word": "OSTINATO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0058",
+      "word": "CANTATA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0059",
+      "word": "FERMATA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-0060",
+      "word": "MOTET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    }
+  ]
+}

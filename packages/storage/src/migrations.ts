@@ -55,8 +55,17 @@ CREATE INDEX idx_round_unsynced ON round_event(synced_at) WHERE synced_at IS NUL
 CREATE INDEX idx_round_word     ON round_event(word_id);
 `;
 
+/** 002 — app settings/flags (hapticsEnabled, onboardingSeen, …). */
+const KV_002 = `
+CREATE TABLE kv (
+  key   TEXT PRIMARY KEY,
+  value TEXT NOT NULL
+);
+`;
+
 export const MIGRATIONS: readonly Migration[] = [
   { version: 1, name: 'init', sql: INIT_001 },
+  { version: 2, name: 'kv-settings', sql: KV_002 },
 ];
 
 export function getSchemaVersion(db: SqlDriver): number {

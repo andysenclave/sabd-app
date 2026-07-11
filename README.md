@@ -66,9 +66,6 @@ pnpm content:build-bank     # publish the merged bank into @sabd/wordbank (--ver
 - `WordEntry.tier` is canonically **`low | mid | high`** (the content pipeline, its validator,
   the data, and the web UI all use these; elo's former `easy|hard` labels were on a field the
   engine never reads, and are superseded).
-- **`RoundEvent` is PROVISIONAL.** Its authoritative spec (`docs/sabd-event-log-and-sync.md`)
-  is missing from the tree. The current shape lets Lane 1 typecheck; it **must** be reconciled
-  against that doc before T9/T10/T23. Do not build persistence on it until confirmed.
 - **`RoundEvent` is LOCKED** to `docs/sabd-event-log-and-sync.md` §4 (schema v1) and
   implemented by `@sabd/storage` (append-only log, atomic appendRound, verifyRating/fullReplay,
   export). `challengeMode` is not persisted in v1 — `recordRound` rejects challenge rounds
@@ -80,29 +77,58 @@ pnpm content:build-bank     # publish the merged bank into @sabd/wordbank (--ver
 
 ## Status
 
-- **Lane 1 complete (T1–T5):** monorepo scaffold, elo migrated, contracts extracted, pipeline
-  migrated + wired to the wordbank, tokens built.
-- **T8 complete:** `apps/mobile` is a real Expo SDK-57 Router app (RN 0.86 / React 19),
-  monorepo-wired, with the ThemeProvider (+ oklch→sRGB accent bridge) and all four brand fonts.
-- **T12–T14 complete:** custom keyboard, Rekha rail + authoritative timer (`useRoundClock`),
-  and slot row — built to the locked design and verified rendering/interacting in a browser
-  (typed→correct flip, solve flash, timeout lock). Dev harness at `/round-demo`.
-- **T9–T10 complete:** `RoundEvent` locked to the event-log doc; `@sabd/storage` implements
-  the append-only log (atomic `appendRound`, idempotent on `round_id`, snapshot `verifyRating`
-  + `fullReplay`, export envelope) with the full §9.6 test suite green (14 tests); app boots
-  SQLite → migrations → installId → verifyRating on launch.
-- **T15–T17 complete:** the round is playable end-to-end. Pure `roundMachine` core (13 unit
-  tests over the Part-A edge cases), `useRound` (clock + haptics + AppState resume + the
-  once-only `onRoundEnd` seam → `recordRound`), HintBar/LetterChips (costs 8s/5s from
-  `src/round/config.ts` — the eas-update tunables), assembled `/round` screen per locked 3a
-  with confirm-abandon (= timeout, recorded before leaving). Verified end-to-end in-browser.
+- **Lane 1 (T1–T5), T8 (Expo scaffold), T9–T10 (event log storage), T15–T17 (playable round),
+  T19 (real Home) all complete** — see git log for detail per task.
+- **T6–T7 complete:** the full 6-topic, 360-word bank is generated, validated (zero hard
+  failures), reviewed, and published as `wordBankVersion 1.0.0`. All topic cards are live.
+- **T11 complete:** word selection is random within the ±150 rating window (not deterministic
+  — every player gets a different sequence) with seenIds persisted via the event log, so a
+  word never repeats across sessions.
+- **T20–T23 complete:** dedicated result beat with an odometer rating roll on solve
+  (`Odometer`, reduced-motion crossfades), a 3-panel skippable onboarding shown once
+  before first play, and a Settings screen (haptics toggle, replay onboarding, the
+  "Send my data" export flow with a real data preview + share sheet).
+- **T21 (splash flip)** and **T18 (wrong-guess rail shake)** are in — the शब्द→শব্দ→SABD
+  flip plays once at cold start; a wrong guess shakes the Rekha, not the letters.
+- **T25 (EAS config) complete:** `eas.json` (`preview` internal APK profile, `production`
+  store stub), `runtimeVersion: {policy: "appVersion"}`, ready for `eas update`. See
+  **Shipping the APK** below — `eas login` / `eas build:configure` need your Expo account,
+  so that step is yours to run (T26).
 
 **Verification commands:** `pnpm -r typecheck` · `pnpm -r test` ·
 `pnpm --filter @sabd/mobile exec expo export --platform android` · web preview via
 `.claude/launch.json` (`sabd-mobile-web`, after `expo export --platform web --output-dir dist`).
 
-**Next unblocked:** T18 (round feel pass), T19 (real Home), T20 (result screens), T11
-(finish word selection: persisted seenIds), T21–T24 (splash/onboarding/settings/a11y),
-Lane 2 content (T6–T7). **Blocked:** T25–T27 still need `docs/sabd-distribution.md`.
-**Device check recommended:** run on a phone via Expo Go — solve a round, relaunch, confirm
-the rating persisted (the log-backed loop end-to-end on hardware).
+**Next:** T24 (a11y + stress audit), T18 remainder (full motion ledger pass, 60fps check on
+device), T26 (owner runs the first real build), T27 (prove the `eas update` loop), T28–T30
+(playtest analysis + kit + ship).
+
+## Shipping the APK (T25/T26 — per `docs/sabd-distribution.md`)
+
+One-time setup (needs your Expo account — this step is yours to run):
+
+```bash
+cd apps/mobile
+npm i -g eas-cli
+eas login
+eas build:configure       # links this project to your Expo account, fills extra.eas.projectId
+```
+
+Then, the free/instant Android path:
+
+```bash
+eas build --platform android --profile preview
+```
+
+EAS returns a shareable link + QR code — friends scan, download the APK, tap install (Android
+will warn "unknown source"; tell them in advance). No Play Store, no account, free.
+
+**Iterating after that first build** — push JS/asset changes to an already-installed build in
+seconds, no rebuild:
+
+```bash
+eas update --branch preview --message "what changed"
+```
+
+Reopen the app on the test device — the update lands. Only native changes (new native
+dependency, icon, SDK bump) need a fresh `eas build`.

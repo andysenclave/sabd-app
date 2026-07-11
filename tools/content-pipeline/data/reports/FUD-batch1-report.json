@@ -1,0 +1,457 @@
+{
+  "input": "data/raw/FUD-batch1.json",
+  "generatedAt": "2026-07-11T14:11:44.185Z",
+  "apiFallback": "enabled",
+  "totals": {
+    "entries": 60,
+    "passed": 60,
+    "rejected": 0,
+    "review": 0
+  },
+  "tierSplit": {
+    "expected": {
+      "low": 24,
+      "mid": 24,
+      "high": 12
+    },
+    "actual": {
+      "low": 24,
+      "mid": 24,
+      "high": 12
+    },
+    "ok": true
+  },
+  "failuresByRule": {},
+  "entries": [
+    {
+      "id": "FUD-0001",
+      "word": "CHAI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0002",
+      "word": "MANGO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0003",
+      "word": "PIZZA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0004",
+      "word": "TEA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0005",
+      "word": "EGG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0006",
+      "word": "RICE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0007",
+      "word": "MILK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0008",
+      "word": "CAKE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0009",
+      "word": "SALT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0010",
+      "word": "BREAD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0011",
+      "word": "TOAST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0012",
+      "word": "CURRY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0013",
+      "word": "HONEY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0014",
+      "word": "JUICE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0015",
+      "word": "LEMON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0016",
+      "word": "ONION",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0017",
+      "word": "SUGAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0018",
+      "word": "DOSA",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "FUD-0019",
+      "word": "SAMOSA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0020",
+      "word": "BUTTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0021",
+      "word": "PICKLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0022",
+      "word": "NOODLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0023",
+      "word": "COFFEE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0024",
+      "word": "BANANA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0025",
+      "word": "NAAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0026",
+      "word": "TOFU",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0027",
+      "word": "GHEE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0028",
+      "word": "CUMIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0029",
+      "word": "LASSI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0030",
+      "word": "BROTH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0031",
+      "word": "KNEAD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0032",
+      "word": "GLAZE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0033",
+      "word": "PANEER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0034",
+      "word": "SIMMER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0035",
+      "word": "YOGURT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0036",
+      "word": "WASABI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0037",
+      "word": "SORBET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0038",
+      "word": "NUTMEG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0039",
+      "word": "JALEBI",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "FUD-0040",
+      "word": "CHUTNEY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0041",
+      "word": "BIRYANI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0042",
+      "word": "SAFFRON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0043",
+      "word": "TANDOOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0044",
+      "word": "GARNISH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0045",
+      "word": "RISOTTO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0046",
+      "word": "FALAFEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0047",
+      "word": "MARINADE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0048",
+      "word": "ESPRESSO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0049",
+      "word": "UMAMI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0050",
+      "word": "SOUFFLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0051",
+      "word": "JAGGERY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0052",
+      "word": "ROUX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0053",
+      "word": "OFFAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0054",
+      "word": "GHERKIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0055",
+      "word": "TEMPEH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0056",
+      "word": "GANACHE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0057",
+      "word": "COMPOTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0058",
+      "word": "TERRINE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0059",
+      "word": "JULIENNE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-0060",
+      "word": "APERITIF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    }
+  ]
+}

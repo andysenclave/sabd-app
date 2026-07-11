@@ -7,6 +7,9 @@ import {
 } from '@expo-google-fonts/martian-mono';
 import { Archivo_700Bold, Archivo_800ExtraBold } from '@expo-google-fonts/archivo';
 import { InstrumentSans_400Regular, InstrumentSans_500Medium } from '@expo-google-fonts/instrument-sans';
+// Script faces — the splash flip ONLY (शब्द → শব্দ → SABD). Never UI text.
+import { TiroDevanagariSanskrit_400Regular } from '@expo-google-fonts/tiro-devanagari-sanskrit';
+import { HindSiliguri_700Bold } from '@expo-google-fonts/hind-siliguri';
 
 /**
  * The four brand faces from DESIGN-SYSTEM.md §3, mapped to the exact family names
@@ -26,6 +29,10 @@ export const fontFamily = {
   displayHeavy: 'Archivo_800ExtraBold',
   body: 'InstrumentSans_400Regular',
   bodyMedium: 'InstrumentSans_500Medium',
+  /** शब्द mark only — splash flip, never UI text. */
+  devanagari: 'TiroDevanagariSanskrit_400Regular',
+  /** Bengali splash flip only. */
+  bengali: 'HindSiliguri_700Bold',
 } as const;
 
 export type FontFamilyKey = keyof typeof fontFamily;
@@ -42,5 +49,7 @@ export function useAppFonts(): [boolean, Error | null] {
     Archivo_800ExtraBold,
     InstrumentSans_400Regular,
     InstrumentSans_500Medium,
+    TiroDevanagariSanskrit_400Regular,
+    HindSiliguri_700Bold,
   });
 }

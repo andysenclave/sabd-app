@@ -1,0 +1,453 @@
+{
+  "input": "data/raw/SPC-batch1.json",
+  "generatedAt": "2026-07-11T14:11:40.673Z",
+  "apiFallback": "enabled",
+  "totals": {
+    "entries": 60,
+    "passed": 59,
+    "rejected": 0,
+    "review": 1
+  },
+  "tierSplit": {
+    "expected": {
+      "low": 24,
+      "mid": 24,
+      "high": 12
+    },
+    "actual": {
+      "low": 24,
+      "mid": 24,
+      "high": 12
+    },
+    "ok": true
+  },
+  "failuresByRule": {},
+  "entries": [
+    {
+      "id": "SPC-0001",
+      "word": "MOON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0002",
+      "word": "SUN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0003",
+      "word": "STAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0004",
+      "word": "MARS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0005",
+      "word": "ROCKET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0006",
+      "word": "ALIEN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0007",
+      "word": "ROBOT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0008",
+      "word": "PLANET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0009",
+      "word": "COMET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0010",
+      "word": "LASER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0011",
+      "word": "ORBIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0012",
+      "word": "GALAXY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0013",
+      "word": "METEOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0014",
+      "word": "LAUNCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0015",
+      "word": "SHUTTLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0016",
+      "word": "CRATER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0017",
+      "word": "ECLIPSE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0018",
+      "word": "GRAVITY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0019",
+      "word": "SOLAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0020",
+      "word": "LUNAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0021",
+      "word": "POD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0022",
+      "word": "ASTEROID",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0023",
+      "word": "COSMOS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0024",
+      "word": "SAUCER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0025",
+      "word": "CLONE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0026",
+      "word": "VOID",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0027",
+      "word": "PROBE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0028",
+      "word": "CAPSULE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0029",
+      "word": "COCKPIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0030",
+      "word": "VACUUM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0031",
+      "word": "WARP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0032",
+      "word": "NEBULA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0033",
+      "word": "DROID",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0034",
+      "word": "CYBORG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0035",
+      "word": "MODULE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0036",
+      "word": "PAYLOAD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0037",
+      "word": "AIRLOCK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0038",
+      "word": "FUSION",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0039",
+      "word": "PHOTON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0040",
+      "word": "PLASMA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0041",
+      "word": "NOVA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0042",
+      "word": "COSMIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0043",
+      "word": "REENTRY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0044",
+      "word": "THRUSTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0045",
+      "word": "STASIS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0046",
+      "word": "ION",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0047",
+      "word": "PULSAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0048",
+      "word": "QUASAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0049",
+      "word": "PARSEC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0050",
+      "word": "REDSHIFT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0051",
+      "word": "APOGEE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0052",
+      "word": "TACHYON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0053",
+      "word": "PERIGEE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0054",
+      "word": "ALBEDO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0055",
+      "word": "ECLIPTIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0056",
+      "word": "AZIMUTH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0057",
+      "word": "APHELION",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0058",
+      "word": "ANSIBLE",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-0059",
+      "word": "MAGNETAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-0060",
+      "word": "SYZYGY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    }
+  ]
+}

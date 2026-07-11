@@ -10,5 +10,19 @@
   "netcode": false,
   "tickrate": false,
   "minmax": false,
-  "tryhard": false
+  "tryhard": false,
+  "ansible": false,
+  "wifi": true,
+  "emoji": true,
+  "selfie": true,
+  "captcha": true,
+  "sudo": false,
+  "rickroll": false,
+  "dosa": true,
+  "jalebi": true,
+  "delhi": false,
+  "sahara": false,
+  "ganges": false,
+  "kerala": false,
+  "everest": false
 }

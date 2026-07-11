@@ -11,11 +11,12 @@
  *  - The mock's "TOP N%" percentile needs population data (a backend); until
  *    then the sub-line shows lifetime rounds.
  */
-import { useState } from 'react';
-import { View, Text, StyleSheet, Pressable, ScrollView } from 'react-native';
+import { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, Pressable, ScrollView, Platform } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import type { TopicId } from '@sabd/contracts';
+import { getSetting } from '@sabd/storage';
 
 import { useTheme } from '../src/theme';
 import { useStorageBoot } from '../src/storage/useStorageBoot';
@@ -23,6 +24,8 @@ import { useHomeStats } from '../src/home/useHomeStats';
 import { TopicCard, type TopicCardState } from '../src/home/TopicCard';
 import { TOPICS, topicById } from '../src/home/topics';
 import { availableBankTopics } from '../src/round/selectWord';
+import { getStorage } from '../src/storage/db';
+import { hasSplashPlayed } from '../src/splashState';
 
 export default function Home() {
   const t = useTheme();
@@ -31,6 +34,22 @@ export default function Home() {
   const storage = useStorageBoot();
   const stats = useHomeStats(storage.ready);
   const [selected, setSelected] = useState<TopicId>('gaming');
+
+  // Splash flip (T21) plays once at the launch moment — before Home, never in-round.
+  useEffect(() => {
+    if (!hasSplashPlayed()) router.replace('/splash');
+  }, [router]);
+
+  // First-launch onboarding gate (T22) — shown once, replayable from Settings.
+  useEffect(() => {
+    if (!hasSplashPlayed() || !storage.ready || Platform.OS === 'web') return;
+    try {
+      const seen = getSetting(getStorage().db, 'onboardingSeen', false);
+      if (!seen) router.replace('/onboarding');
+    } catch (err) {
+      console.error('home: onboarding check failed', err);
+    }
+  }, [storage.ready, router]);
 
   const banked = availableBankTopics();
   const cardState = (bankTopic: string): TopicCardState => {
@@ -51,26 +70,36 @@ export default function Home() {
             SABD
           </Text>
         </View>
-        <View style={styles.ratingBlock}>
-          <View style={styles.ratingRow}>
-            <Text style={{ color: t.colors.kesar, fontSize: 11 }}>◆</Text>
-            <Text
-              style={{
-                fontFamily: t.font.monoBold,
-                fontSize: 26,
-                color: t.colors.paper,
-                letterSpacing: -1,
-                textShadowColor: 'rgba(242,163,60,.4)',
-                textShadowOffset: { width: 0, height: 0 },
-                textShadowRadius: 18,
-              }}
-            >
-              {storage.ready ? storage.rating : '····'}
+        <View style={styles.headerRight}>
+          <View style={styles.ratingBlock}>
+            <View style={styles.ratingRow}>
+              <Text style={{ color: t.colors.kesar, fontSize: 11 }}>◆</Text>
+              <Text
+                style={{
+                  fontFamily: t.font.monoBold,
+                  fontSize: 26,
+                  color: t.colors.paper,
+                  letterSpacing: -1,
+                  textShadowColor: 'rgba(242,163,60,.4)',
+                  textShadowOffset: { width: 0, height: 0 },
+                  textShadowRadius: 18,
+                }}
+              >
+                {storage.ready ? storage.rating : '····'}
+              </Text>
+            </View>
+            <Text style={{ fontFamily: t.font.mono, fontSize: 10, letterSpacing: 2, color: t.colors.paperDim }}>
+              {stats.rounds === 1 ? '1 ROUND' : `${stats.rounds} ROUNDS`}
             </Text>
           </View>
-          <Text style={{ fontFamily: t.font.mono, fontSize: 10, letterSpacing: 2, color: t.colors.paperDim }}>
-            {stats.rounds === 1 ? '1 ROUND' : `${stats.rounds} ROUNDS`}
-          </Text>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Settings"
+            onPress={() => router.push('/settings')}
+            style={styles.gear}
+          >
+            <Text style={{ fontSize: 18, color: t.colors.paperDim }}>⚙</Text>
+          </Pressable>
         </View>
       </View>
 
@@ -114,6 +143,8 @@ const styles = StyleSheet.create({
   lockup: { gap: 4 },
   rail: { width: 112, height: 4, borderRadius: 1 },
   wordmark: { fontSize: 30, lineHeight: 32, letterSpacing: 2, paddingHorizontal: 4 },
+  headerRight: { flexDirection: 'row', alignItems: 'center', gap: 14 },
+  gear: { padding: 6 },
   ratingBlock: { alignItems: 'flex-end', gap: 2 },
   ratingRow: { flexDirection: 'row', alignItems: 'center', gap: 7 },
   grid: {

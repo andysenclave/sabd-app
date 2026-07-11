@@ -1,8 +1,13 @@
 {
-  "wordBankVersion": "0.1.0",
-  "generatedAt": "2026-07-08T14:36:45.929Z",
-  "count": 60,
+  "wordBankVersion": "1.0.0",
+  "generatedAt": "2026-07-11T14:13:17.605Z",
+  "count": 360,
   "topics": {
-    "Gaming": 60
+    "Food & Drink": 60,
+    "Gaming": 60,
+    "Internet & Tech Culture": 60,
+    "Music": 60,
+    "Space & Sci-Fi": 60,
+    "World & Places": 60
   }
 }

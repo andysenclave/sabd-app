@@ -27,6 +27,8 @@ import {
   getOrCreateInstallId,
   playedWordIds,
   topicStats,
+  getSetting,
+  setSetting,
   type RecordRoundInput,
   type SqlDriver,
 } from '../src/index.ts';
@@ -86,16 +88,18 @@ test('fresh install: migrations run from zero and are idempotent', () => {
   assert.equal(runMigrations(db).length, 0);
 });
 
+const LATEST = MIGRATIONS[MIGRATIONS.length - 1]!.version;
+
 test('upgrade: only migrations above the stored version run, in order', () => {
   const db = new NodeSqliteDriver();
-  runMigrations(db); // at v1
+  runMigrations(db); // at latest
   const fake = [
     ...MIGRATIONS,
-    { version: 2, name: 'add-col', sql: 'ALTER TABLE player ADD COLUMN test_col TEXT' },
+    { version: LATEST + 1, name: 'add-col', sql: 'ALTER TABLE player ADD COLUMN test_col TEXT' },
   ];
   const applied = runMigrations(db, fake);
-  assert.deepEqual(applied.map((m) => m.version), [2]);
-  assert.equal(getSchemaVersion(db), 2);
+  assert.deepEqual(applied.map((m) => m.version), [LATEST + 1]);
+  assert.equal(getSchemaVersion(db), LATEST + 1);
 });
 
 test('a failing migration rolls back atomically (version stays put)', () => {
@@ -103,10 +107,10 @@ test('a failing migration rolls back atomically (version stays put)', () => {
   runMigrations(db);
   const bad = [
     ...MIGRATIONS,
-    { version: 2, name: 'broken', sql: 'ALTER TABLE player ADD COLUMN ok TEXT; SYNTAX ERROR;' },
+    { version: LATEST + 1, name: 'broken', sql: 'ALTER TABLE player ADD COLUMN ok TEXT; SYNTAX ERROR;' },
   ];
   assert.throws(() => runMigrations(db, bad));
-  assert.equal(getSchemaVersion(db), 1);
+  assert.equal(getSchemaVersion(db), LATEST);
   // the partial ALTER must not have survived
   assert.equal(db.all("SELECT name FROM pragma_table_info('player') WHERE name='ok'").length, 0);
 });
@@ -275,6 +279,26 @@ test('topicStats aggregates per topic with the latest rating-before', () => {
   assert.equal(stats.get('Music')?.solved, 0);
   // Gaming's lastRatingBefore = what the player was rated entering their LATEST Gaming round.
   assert.equal(stats.get('Gaming')?.lastRatingBefore, r3.event.playerRatingBefore);
+});
+
+// ─── Settings kv (migration 002) ─────────────────────────────────────────────
+
+test('settings kv: defaults, round-trip, overwrite; v1→v2 upgrade path works', () => {
+  // Simulate an EXISTING install at schema v1, then upgrade.
+  const db = new NodeSqliteDriver();
+  runMigrations(db, MIGRATIONS.filter((m) => m.version === 1));
+  assert.equal(getSchemaVersion(db), 1);
+  seedPlayer(db, randomUUID(), tick());
+  const applied = runMigrations(db); // upgrade to latest
+  assert.deepEqual(applied.map((m) => m.version), [2]);
+
+  assert.equal(getSetting(db, 'hapticsEnabled', true), true); // default
+  setSetting(db, 'hapticsEnabled', false);
+  assert.equal(getSetting(db, 'hapticsEnabled', true), false);
+  setSetting(db, 'hapticsEnabled', true); // overwrite (upsert)
+  assert.equal(getSetting(db, 'hapticsEnabled', false), true);
+  setSetting(db, 'onboardingSeen', true);
+  assert.equal(getSetting(db, 'onboardingSeen', false), true);
 });
 
 // ─── Export ──────────────────────────────────────────────────────────────────

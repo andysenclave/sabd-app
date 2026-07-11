@@ -30,6 +30,7 @@ import { RekhaRail } from '../src/components/round/RekhaRail';
 import { SlotRow } from '../src/components/round/SlotRow';
 import { HintBar } from '../src/components/round/HintBar';
 import { LetterChips } from '../src/components/round/LetterChips';
+import { Odometer } from '../src/components/result/Odometer';
 
 export default function RoundScreen() {
   const storage = useStorageBoot();
@@ -158,6 +159,7 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
           critical={round.clock.critical}
           solved={solved}
           reducedMotion={round.reducedMotion}
+          wrongGuesses={round.wrongGuesses}
         />
         <View style={{ height: 12 }} />
         <SlotRow slots={round.slots} />
@@ -178,6 +180,8 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
             solved={solved}
             answer={word.word.toUpperCase()}
             update={update}
+            initialRating={initialRating}
+            reducedMotion={round.reducedMotion}
             onNext={() =>
               router.replace({
                 pathname: '/round',
@@ -198,22 +202,31 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
   );
 }
 
-/** Minimal end-of-round beat — superseded by the real result screens in T20. */
+/**
+ * The end-of-round beat (T20). Win: verdict, odometer rating roll (kesar +Δ),
+ * NEXT WORD is the one kesar CTA. Timeout: "TIME." in paper-dim, dim answer fill,
+ * small −Δ, BOTH CTAs ghost — restraint on loss is what makes the win worth something.
+ */
 function EndBeat({
   solved,
   answer,
   update,
+  initialRating,
+  reducedMotion,
   onNext,
   onHome,
 }: Readonly<{
   solved: boolean;
   answer: string;
   update: RatingUpdate | null;
+  initialRating: number;
+  reducedMotion: boolean;
   onNext: () => void;
   onHome: () => void;
 }>) {
   const t = useTheme();
   const delta = update?.delta;
+
   return (
     <View style={styles.endBeat}>
       <Text
@@ -231,17 +244,34 @@ function EndBeat({
           {answer}
         </Text>
       )}
-      {delta !== undefined && (
-        <Text
-          style={{
-            fontFamily: t.font.monoBold,
-            fontSize: 18,
-            color: solved ? t.colors.kesar : t.colors.paperDim,
-          }}
-        >
-          {delta >= 0 ? `+${delta}` : `${delta}`} → {update!.newPlayerRating}
-        </Text>
+
+      {update && delta !== undefined && (
+        <View style={styles.ratingBeat}>
+          {solved ? (
+            <Odometer
+              from={initialRating}
+              to={update.newPlayerRating}
+              reducedMotion={reducedMotion}
+              fontSize={40}
+            />
+          ) : (
+            <Text style={{ fontFamily: t.font.monoBold, fontSize: 22, color: t.colors.paperDim }}>
+              {update.newPlayerRating}
+            </Text>
+          )}
+          <Text
+            style={{
+              fontFamily: t.font.mono,
+              fontSize: solved ? 16 : 13,
+              color: solved ? t.colors.kesar : t.colors.paperDim,
+              marginTop: 2,
+            }}
+          >
+            {delta >= 0 ? `+${delta}` : `${delta}`}
+          </Text>
+        </View>
       )}
+
       <View style={styles.ctaRow}>
         <Pressable
           onPress={onNext}
@@ -256,7 +286,7 @@ function EndBeat({
               color: solved ? t.colors.ink : t.colors.paperDim,
             }}
           >
-            NEXT WORD
+            {solved ? 'NEXT WORD' : 'RETRY TOPIC'}
           </Text>
         </Pressable>
         <Pressable onPress={onHome} accessibilityRole="button" style={styles.cta}>
@@ -315,6 +345,7 @@ const styles = StyleSheet.create({
   },
   dock: { paddingBottom: 8 },
   endBeat: { alignItems: 'center', gap: 10, paddingTop: 18 },
+  ratingBeat: { alignItems: 'center', marginVertical: 4 },
   ctaRow: { flexDirection: 'row', gap: 12, paddingTop: 6 },
   cta: {
     height: 44,

@@ -34,3 +34,4 @@ export {
 } from './replay.ts';
 export { buildExport, serializeExport } from './export.ts';
 export { getOrCreateInstallId } from './identity.ts';
+export { getSetting, setSetting } from './settings.ts';

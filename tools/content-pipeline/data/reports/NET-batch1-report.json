@@ -1,0 +1,479 @@
+{
+  "input": "data/raw/NET-batch1.json",
+  "generatedAt": "2026-07-11T14:11:42.336Z",
+  "apiFallback": "enabled",
+  "totals": {
+    "entries": 60,
+    "passed": 58,
+    "rejected": 0,
+    "review": 2
+  },
+  "tierSplit": {
+    "expected": {
+      "low": 24,
+      "mid": 24,
+      "high": 12
+    },
+    "actual": {
+      "low": 24,
+      "mid": 24,
+      "high": 12
+    },
+    "ok": true
+  },
+  "failuresByRule": {},
+  "entries": [
+    {
+      "id": "NET-0001",
+      "word": "EMAIL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0002",
+      "word": "MEME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0003",
+      "word": "WIFI",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-0004",
+      "word": "BLOG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0005",
+      "word": "EMOJI",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-0006",
+      "word": "SPAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0007",
+      "word": "APP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0008",
+      "word": "VIRAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0009",
+      "word": "TWEET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0010",
+      "word": "LINK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0011",
+      "word": "CLICK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0012",
+      "word": "UPLOAD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0013",
+      "word": "PASSWORD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0014",
+      "word": "ONLINE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0015",
+      "word": "STREAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0016",
+      "word": "SEARCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0017",
+      "word": "SCROLL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0018",
+      "word": "CURSOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0019",
+      "word": "INBOX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0020",
+      "word": "WEBCAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0021",
+      "word": "LAPTOP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0022",
+      "word": "SELFIE",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-0023",
+      "word": "TROLL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0024",
+      "word": "GIF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0025",
+      "word": "BROWSER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0026",
+      "word": "FIREWALL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0027",
+      "word": "PODCAST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0028",
+      "word": "HASHTAG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0029",
+      "word": "COOKIE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0030",
+      "word": "CLOUD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0031",
+      "word": "SERVER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0032",
+      "word": "MALWARE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0033",
+      "word": "PHISHING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0034",
+      "word": "ROUTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0035",
+      "word": "MODEM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0036",
+      "word": "CAPTCHA",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-0037",
+      "word": "CATFISH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0038",
+      "word": "HACKER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0039",
+      "word": "LURKER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0040",
+      "word": "FORUM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0041",
+      "word": "THREAD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0042",
+      "word": "BUFFER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0043",
+      "word": "STARTUP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0044",
+      "word": "TRENDING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0045",
+      "word": "ENCRYPT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0046",
+      "word": "PIRACY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0047",
+      "word": "HOTSPOT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0048",
+      "word": "SPYWARE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0049",
+      "word": "PROTOCOL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0050",
+      "word": "LATENCY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0051",
+      "word": "KERNEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0052",
+      "word": "PACKET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0053",
+      "word": "DAEMON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0054",
+      "word": "CACHE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0055",
+      "word": "THROTTLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0056",
+      "word": "SUDO",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "NET-0057",
+      "word": "RICKROLL",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "NET-0058",
+      "word": "GEOTAG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0059",
+      "word": "BOTNET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-0060",
+      "word": "TORRENT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    }
+  ]
+}

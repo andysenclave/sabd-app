@@ -1,0 +1,477 @@
+{
+  "input": "data/raw/WLD-batch1.json",
+  "generatedAt": "2026-07-11T14:11:45.602Z",
+  "apiFallback": "enabled",
+  "totals": {
+    "entries": 60,
+    "passed": 55,
+    "rejected": 0,
+    "review": 5
+  },
+  "tierSplit": {
+    "expected": {
+      "low": 24,
+      "mid": 24,
+      "high": 12
+    },
+    "actual": {
+      "low": 24,
+      "mid": 24,
+      "high": 12
+    },
+    "ok": true
+  },
+  "failuresByRule": {},
+  "entries": [
+    {
+      "id": "WLD-0001",
+      "word": "MAP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0002",
+      "word": "BAY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0003",
+      "word": "CITY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0004",
+      "word": "LAKE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0005",
+      "word": "PEAK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0006",
+      "word": "BEACH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0007",
+      "word": "RIVER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0008",
+      "word": "OCEAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0009",
+      "word": "GLOBE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0010",
+      "word": "PARIS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0011",
+      "word": "DELHI",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "WLD-0012",
+      "word": "ISLAND",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0013",
+      "word": "DESERT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0014",
+      "word": "VALLEY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0015",
+      "word": "JUNGLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0016",
+      "word": "CANYON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0017",
+      "word": "TEMPLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0018",
+      "word": "HARBOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0019",
+      "word": "VILLAGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0020",
+      "word": "VOLCANO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0021",
+      "word": "COMPASS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0022",
+      "word": "CAPITAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0023",
+      "word": "PASSPORT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0024",
+      "word": "MOUNTAIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0025",
+      "word": "DELTA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0026",
+      "word": "OASIS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0027",
+      "word": "GORGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0028",
+      "word": "CAPE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0029",
+      "word": "DUNE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0030",
+      "word": "REEF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0031",
+      "word": "MESA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0032",
+      "word": "SUMMIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0033",
+      "word": "LAGOON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0034",
+      "word": "SAHARA",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "WLD-0035",
+      "word": "GANGES",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "WLD-0036",
+      "word": "KERALA",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "WLD-0037",
+      "word": "TUNDRA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0038",
+      "word": "STRAIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0039",
+      "word": "GEYSER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0040",
+      "word": "BAZAAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0041",
+      "word": "GLACIER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0042",
+      "word": "SAVANNA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0043",
+      "word": "EVEREST",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "WLD-0044",
+      "word": "PLATEAU",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0045",
+      "word": "EQUATOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0046",
+      "word": "MONSOON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0047",
+      "word": "PRAIRIE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0048",
+      "word": "LATITUDE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0049",
+      "word": "FJORD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0050",
+      "word": "STEPPE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0051",
+      "word": "ATOLL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0052",
+      "word": "TAIGA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0053",
+      "word": "ESTUARY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0054",
+      "word": "CALDERA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0055",
+      "word": "ISTHMUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0056",
+      "word": "KARST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0057",
+      "word": "MORAINE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0058",
+      "word": "POLDER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0059",
+      "word": "WADI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "WLD-0060",
+      "word": "TOMBOLO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    }
+  ]
+}
