@@ -5,20 +5,26 @@
  * kesar PLAY in the thumb zone → ⚔ Challenge (disabled, "soon").
  *
  * Data notes (flagged in the handoff):
- *  - Per-card number = playerRatingBefore of your LATEST round in that topic
- *    ("where you stood last time here") — the contract has one global rating,
- *    not per-topic ratings.
+ *  - Per-card number is this topic's OWN rating — the same @sabd/elo engine,
+ *    replayed only over this topic's rounds from the 1200 seed (`topicStats`,
+ *    @sabd/storage). Independent of the header's global rating and of every
+ *    other topic; nothing here reads playerRatingBefore.
  *  - The mock's "TOP N%" percentile needs population data (a backend); until
  *    then the sub-line shows lifetime rounds.
  */
 import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Pressable, ScrollView, Platform } from 'react-native';
+import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import type { TopicId } from '@sabd/contracts';
 import { getSetting } from '@sabd/storage';
 
 import { useTheme } from '../src/theme';
+import { hexToRgba } from '../src/theme/color';
+import { usePingPong } from '../src/theme/themed/ambient.ts';
+import { themedHues, acc, ok } from '../src/theme/themed/themedTokens.ts';
+import { useReducedMotion } from '../src/a11y/useReducedMotion';
 import { useStorageBoot } from '../src/storage/useStorageBoot';
 import { useHomeStats } from '../src/home/useHomeStats';
 import { TopicCard, type TopicCardState } from '../src/home/TopicCard';
@@ -30,11 +36,18 @@ import { Wordmark } from '../src/components/Logo';
 
 export default function Home() {
   const t = useTheme();
+  const reducedMotion = useReducedMotion();
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const storage = useStorageBoot();
   const stats = useHomeStats(storage.ready);
   const [selected, setSelected] = useState<TopicId>('gaming');
+
+  // PLAY CTA takes the selected category's color, with an idle k-beat pulse.
+  const selectedHue = themedHues[selected];
+  const playAccent = acc(selectedHue);
+  const beat = usePingPong(1, 1.05, 2600, 0, reducedMotion);
+  const beatStyle = useAnimatedStyle(() => ({ transform: [{ scale: beat.value }] }));
 
   // Splash flip (T21) plays once at the launch moment — before Home, never in-round.
   useEffect(() => {
@@ -56,7 +69,7 @@ export default function Home() {
   const cardState = (bankTopic: string): TopicCardState => {
     if (!banked.has(bankTopic)) return { kind: 'soon' };
     const s = stats.byTopic.get(bankTopic);
-    return s ? { kind: 'played', rating: s.lastRatingBefore } : { kind: 'unplayed' };
+    return s ? { kind: 'played', rating: s.rating } : { kind: 'unplayed' };
   };
 
   const selectedMeta = topicById(selected);
@@ -86,7 +99,7 @@ export default function Home() {
                   fontSize: 26,
                   color: t.colors.paper,
                   letterSpacing: -1,
-                  textShadowColor: 'rgba(242,163,60,.4)',
+                  textShadowColor: hexToRgba(t.colors.kesar, 0.45),
                   textShadowOffset: { width: 0, height: 0 },
                   textShadowRadius: 18,
                 }}
@@ -123,17 +136,27 @@ export default function Home() {
         ))}
       </ScrollView>
 
-      {/* CTA dock — thumb zone. One kesar CTA, max (§6). */}
+      {/* CTA dock — thumb zone. One CTA, max (§6); takes the selected category's color. */}
       <View style={[styles.dock, { paddingBottom: insets.bottom + 16 }]}>
-        <Pressable
-          accessibilityRole="button"
-          onPress={() => router.push({ pathname: '/round', params: { topic: selected } })}
-          style={[styles.play, { backgroundColor: t.colors.kesar }]}
+        <Animated.View
+          style={[
+            styles.play,
+            { backgroundColor: playAccent.main },
+            beatStyle,
+          ]}
         >
-          <Text style={{ fontFamily: t.font.brand, fontSize: 19, letterSpacing: 2, color: t.colors.ink }}>
-            PLAY · {selectedMeta.name}
-          </Text>
-        </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => router.push({ pathname: '/round', params: { topic: selected } })}
+            style={styles.playPressable}
+          >
+            {/* Inset underside strip, darkened same hue (mockup 10a: box-shadow: inset 0 -3px). */}
+            <View style={[styles.playUnderside, { backgroundColor: ok(0.5, 0.12, selectedHue) }]} />
+            <Text style={{ fontFamily: t.font.brand, fontSize: 19, letterSpacing: 2, color: t.colors.ink }}>
+              PLAY · {selectedMeta.name}
+            </Text>
+          </Pressable>
+        </Animated.View>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Challenge a rival, coming soon"
@@ -169,8 +192,9 @@ const styles = StyleSheet.create({
   play: {
     alignSelf: 'stretch',
     height: 56,
-    borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
+    borderRadius: 4,
+    overflow: 'hidden',
   },
+  playPressable: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  playUnderside: { position: 'absolute', left: 0, right: 0, bottom: 0, height: 3 },
 });

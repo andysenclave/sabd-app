@@ -1,16 +1,17 @@
 /**
- * §6 first-session goal — worked example table.
+ * Worked example — the points a solve is worth across tiers, streaks, and speed.
  *
- * A 1300-rated (settled, K=32) player faces words rated 1000 / 1300 / 1600
- * across four scenarios. Prints E, s, delta, newRating as a Markdown table.
+ * Prints a Markdown table of `delta` (points earned) and the resulting score for a
+ * player mid-streak facing low / mid / high words.
  *
  * Run: node scripts/worked-example.ts
  */
 
-import { applyResult, type PlayerState, type RoundResult } from '../src/index.ts';
+import { applyPoints, type PlayerState, type RoundResult } from '../src/index.ts';
 
-const player: PlayerState = { rating: 1300, gamesPlayed: 41 };
-const wordRatings = [1000, 1300, 1600];
+// A player already on a 3-solve streak, score 240 (mid-tier territory).
+const player: PlayerState = { rating: 240, streak: 3 };
+const wordDifficulties = [1000, 1400, 1800]; // low / mid / high
 
 interface Scenario {
   label: string;
@@ -24,28 +25,17 @@ const scenarios: Scenario[] = [
   { label: 'Timeout (not solved)', round: { solved: false, timeUsedSec: 60, hintsUsed: [] } },
 ];
 
-const fmt = (n: number, digits: number): string => (n === 0 ? 0 : n).toFixed(digits);
-
 const rows: string[] = [
-  '| Scenario | Word rating | E | s | delta | newRating |',
-  '|---|---|---|---|---|---|',
+  '| Scenario | Word difficulty | delta | new score | streak |',
+  '|---|---|---|---|---|',
 ];
 
 for (const { label, round } of scenarios) {
-  for (const opponentRating of wordRatings) {
-    const result: RoundResult = {
-      ...round,
-      timeLimitSec: 60,
-      opponentRating,
-      playerRating: player.rating,
-      gamesPlayed: player.gamesPlayed,
-      mode: 'solo',
-      challengeMode: false,
-    };
-    const u = applyResult(player, result);
-    const delta = u.delta === 0 ? 0 : u.delta; // normalize -0
+  for (const wordDifficulty of wordDifficulties) {
+    const result: RoundResult = { ...round, timeLimitSec: 60, wordDifficulty, mode: 'solo' };
+    const u = applyPoints(player, result);
     rows.push(
-      `| ${label} | ${opponentRating} | ${fmt(u.expected, 3)} | ${fmt(u.performance, 2)} | ${delta >= 0 ? '+' : ''}${delta} | ${u.newPlayerRating} |`,
+      `| ${label} | ${wordDifficulty} | +${u.delta} | ${u.newPlayerRating} | ${u.streak} |`,
     );
   }
 }

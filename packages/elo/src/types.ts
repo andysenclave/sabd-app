@@ -13,9 +13,9 @@
 export type {
   GameMode,
   PaidHint,
-  PerformanceBreakdown,
   RatingUpdate,
   RoundResult,
+  ScoreBreakdown,
   WordEntry,
   WordTier,
 } from '@sabd/contracts';

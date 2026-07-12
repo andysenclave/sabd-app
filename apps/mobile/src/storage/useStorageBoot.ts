@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Platform } from 'react-native';
+import { useFocusEffect } from 'expo-router';
 import { SEED_RATING } from '@sabd/contracts';
 
 // Extensionless: Metro picks db.web.ts on web, db.ts on native.
-import { initStorage } from './db';
+import { initStorage, refreshRating } from './db';
 
 export interface StorageBoot {
   ready: boolean;
@@ -37,6 +38,22 @@ export function useStorageBoot(): StorageBoot {
       setState({ ready: true, rating: SEED_RATING, installId: null });
     }
   }, []);
+
+  // Re-verify on focus: a round recorded from `/round` never unmounts this screen
+  // (expo-router keeps stack screens alive), so the boot effect above only ever
+  // runs once. Without this, the header rating is stuck at whatever it was on
+  // cold start until the app is fully closed and reopened.
+  useFocusEffect(
+    useCallback(() => {
+      if (Platform.OS === 'web') return;
+      try {
+        const rating = refreshRating();
+        setState((prev) => (prev.rating === rating ? prev : { ...prev, rating }));
+      } catch (err) {
+        console.error('storage: refreshRating failed', err);
+      }
+    }, []),
+  );
 
   return state;
 }

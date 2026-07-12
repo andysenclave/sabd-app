@@ -172,7 +172,11 @@ export const motion = {
 
 export const retro = {
   ground: '#0B0908', // warm black
-  surface: '#161310', // flap-card charcoal
+  // Mockup value was #161310 — barely distinguishable from `ground` on a real phone
+  // (owner-verified on-device, 2026-07-11: "card backgrounds are not properly
+  // visible... the dark is too dark"). Brightened for contrast; still reads as
+  // "warm black on warm black," just with enough separation to actually see the edge.
+  surface: '#241F17', // flap-card charcoal
   text: '#F0E6CC', // cream ink
   dim: '#8F8672', // warm dim
   brass: '#C98A2B', // rail / accent

@@ -29,11 +29,8 @@ const goodResult: RoundResult = {
   timeLimitSec: 60,
   timeUsedSec: 22,
   hintsUsed: ['position'],
-  opponentRating: 820,
-  playerRating: 1000,
-  gamesPlayed: 3,
+  wordDifficulty: 820,
   mode: 'solo',
-  challengeMode: false,
 };
 
 const goodEvent: RoundEvent = {

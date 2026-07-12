@@ -5,9 +5,11 @@
  */
 
 import type { RoundEvent } from '@sabd/contracts';
+import { SEED_RATING } from '@sabd/contracts';
 import type { SqlDriver } from './driver.ts';
 import { eventToParams, rowToEvent, INSERT_EVENT_SQL, type RoundEventRow } from './rows.ts';
-import { updateCache } from './player.ts';
+import { getPlayer, updateCache } from './player.ts';
+import { replayEvents } from './replay.ts';
 
 export interface AppendResult {
   /** False when round_id already existed — the caller treats that as success. */
@@ -25,14 +27,23 @@ export interface AppendResult {
 export function appendRound(
   db: SqlDriver,
   event: RoundEvent,
-  cacheAfter: { rating: number; gamesPlayed: number },
+  cacheAfter: { rating: number; gamesPlayed: number; streak: number },
 ): AppendResult {
   return db.transaction(() => {
     const { changes } = db.run(INSERT_EVENT_SQL, eventToParams(event));
     if (changes === 0) return { inserted: false }; // duplicate → success, no cache touch
-    updateCache(db, cacheAfter.rating, cacheAfter.gamesPlayed, event.roundId);
+    updateCache(db, cacheAfter.rating, cacheAfter.gamesPlayed, cacheAfter.streak, event.roundId);
     return { inserted: true };
   });
+}
+
+/**
+ * Rowid of a round, for "events after X" range queries. Returns 0 (before every row)
+ * when the id is null or missing — so a null epoch means "count from the first round".
+ */
+function rowidOf(db: SqlDriver, roundId: string | null): number {
+  if (roundId === null) return 0;
+  return db.get<{ rowid: number }>('SELECT rowid FROM round_event WHERE round_id = ?', [roundId])?.rowid ?? 0;
 }
 
 /**
@@ -86,20 +97,52 @@ export interface TopicStats {
   topic: string;
   rounds: number;
   solved: number;
-  /** playerRatingBefore of the LATEST round in this topic — "where you stood last time". */
-  lastRatingBefore: number;
+  /**
+   * This topic's OWN score: the points engine replayed only over this topic's rounds
+   * (with its own streak), from 0 — independent of the player's global score and of
+   * every other topic. Only rounds after the scoring epoch count.
+   */
+  rating: number;
 }
 
-/** Per-topic aggregates for the Home grid, derived from the log. */
+/** This topic's post-epoch rounds, in replay order. */
+function topicEventsAfterEpoch(db: SqlDriver, topic: string, epochRowid: number): RoundEvent[] {
+  return db
+    .all<RoundEventRow>('SELECT * FROM round_event WHERE topic = ? AND rowid > ? ORDER BY rowid', [
+      topic,
+      epochRowid,
+    ])
+    .map(rowToEvent);
+}
+
+/** Per-topic aggregates for the Home grid, derived from the log (post-epoch only). */
 export function topicStats(db: SqlDriver): TopicStats[] {
-  return db.all<TopicStats>(
-    `SELECT topic,
-            COUNT(*)    AS rounds,
-            SUM(solved) AS solved,
-            (SELECT player_rating_before FROM round_event r2
-              WHERE r2.topic = round_event.topic
-              ORDER BY r2.rowid DESC LIMIT 1) AS lastRatingBefore
-     FROM round_event
-     GROUP BY topic`,
+  const epochRowid = rowidOf(db, getPlayer(db)?.scoreEpochRoundId ?? null);
+  // Only topics that actually have a post-epoch round — a topic whose only rounds
+  // predate the reset shows as unplayed, not as "played, 0".
+  const topics = db.all<{ topic: string }>(
+    'SELECT DISTINCT topic FROM round_event WHERE rowid > ? ORDER BY topic',
+    [epochRowid],
   );
+  return topics.map(({ topic }) => {
+    const events = topicEventsAfterEpoch(db, topic, epochRowid);
+    const outcome = replayEvents(events, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 });
+    return {
+      topic,
+      rounds: events.length,
+      solved: events.filter((e) => e.solved).length,
+      rating: outcome.rating,
+    };
+  });
+}
+
+/**
+ * A single topic's current score (post-epoch replay). Drives difficulty selection:
+ * the harder your score in a topic, the harder the words that topic serves. Returns
+ * SEED_RATING (0) for a topic never played since the epoch.
+ */
+export function topicRating(db: SqlDriver, topic: string): number {
+  const epochRowid = rowidOf(db, getPlayer(db)?.scoreEpochRoundId ?? null);
+  const events = topicEventsAfterEpoch(db, topic, epochRowid);
+  return replayEvents(events, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 }).rating;
 }

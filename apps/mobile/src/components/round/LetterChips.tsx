@@ -20,6 +20,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { useTheme } from '../../theme';
+import { hexToRgba } from '../../theme/color';
 import { motion, duration } from '@sabd/tokens';
 
 export interface LetterChipsProps {
@@ -29,6 +30,9 @@ export interface LetterChipsProps {
   /** Seed for the order (use the word id). */
   seed: string;
   reducedMotion?: boolean;
+  /** Override the chip border/text color — themed round screens pass their own accent. */
+  accentColor?: string;
+  textColor?: string;
 }
 
 function seededSwap(seed: string): boolean {
@@ -41,10 +45,14 @@ function Chip({
   letter,
   index,
   reducedMotion,
+  accentColor,
+  textColor,
 }: {
   letter: string;
   index: number;
   reducedMotion: boolean;
+  accentColor: string;
+  textColor: string;
 }) {
   const t = useTheme();
   const progress = useSharedValue(0);
@@ -66,15 +74,9 @@ function Chip({
 
   return (
     <Animated.View
-      style={[
-        styles.chip,
-        { borderColor: t.accent(0.5), backgroundColor: 'rgba(233,234,242,.08)' },
-        style,
-      ]}
+      style={[styles.chip, { borderColor: accentColor, backgroundColor: hexToRgba(textColor, 0.08) }, style]}
     >
-      <Text style={{ fontFamily: t.font.mono, fontSize: 15, color: t.colors.paper }}>
-        {letter.toUpperCase()}
-      </Text>
+      <Text style={{ fontFamily: t.font.mono, fontSize: 15, color: textColor }}>{letter.toUpperCase()}</Text>
     </Animated.View>
   );
 }
@@ -84,13 +86,18 @@ export const LetterChips = memo(function LetterChips({
   decoy,
   seed,
   reducedMotion = false,
+  accentColor,
+  textColor,
 }: LetterChipsProps) {
+  const t = useTheme();
   const letters = seededSwap(seed) ? [decoy, correct] : [correct, decoy];
+  const resolvedAccent = accentColor ?? t.accent(0.5);
+  const resolvedText = textColor ?? t.colors.paper;
 
   return (
     <View style={styles.row} accessibilityLabel={`Letter hints: ${letters.join(', ')}`}>
       {letters.map((ch, i) => (
-        <Chip key={ch} letter={ch} index={i} reducedMotion={reducedMotion} />
+        <Chip key={ch} letter={ch} index={i} reducedMotion={reducedMotion} accentColor={resolvedAccent} textColor={resolvedText} />
       ))}
     </View>
   );

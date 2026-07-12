@@ -45,3 +45,16 @@ export function oklchToHex(L: number, C: number, hueDeg: number): string {
 export function oklchToHexA(L: number, C: number, hueDeg: number, alpha: number): string {
   return `${oklchToHex(L, C, hueDeg)}${toHex2(Math.min(1, Math.max(0, alpha)))}`;
 }
+
+/**
+ * `#rrggbb` → `rgba(r,g,b,alpha)`. For translucent fills/shadows that need to track
+ * a theme color (e.g. paper, kesar) instead of being hand-copied as a literal that
+ * silently goes stale when the palette is remapped (modern ↔ retro).
+ */
+export function hexToRgba(hex: string, alpha: number): string {
+  const h = hex.replace('#', '');
+  const r = parseInt(h.slice(0, 2), 16);
+  const g = parseInt(h.slice(2, 4), 16);
+  const b = parseInt(h.slice(4, 6), 16);
+  return `rgba(${r},${g},${b},${alpha})`;
+}

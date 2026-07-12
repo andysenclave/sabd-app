@@ -113,6 +113,70 @@ pnpm content:build-bank     # publish the merged bank into @sabd/wordbank (--ver
   `docs/design/logo-package/` via `react-native-svg`. Also fixed a real native-stack
   navigation crash on round-abandon (replaced a manual `beforeRemove` listener with
   react-navigation's `usePreventRemove`, per their own runtime warning's guidance).
+- **Post-playtest-prep feedback round (2026-07-11):** (1) the header/Home rating was
+  frozen until app relaunch — fixed with focus-triggered refresh, since expo-router keeps
+  Home mounted across a round. (2) Per-topic "ratings" on the Home grid were a global-rating
+  snapshot mislabeled as category-specific — `topicStats` (`@sabd/storage`) now replays
+  each topic's own rounds through `@sabd/elo` independently from the 1200 seed, no schema
+  change. (3) **Retro brass/cream (mockups 9b/9c) is now the app's one skin**, replacing
+  modern indigo/kesar everywhere (the wordmark asset was already retro-styled and clashed
+  with the old indigo background). A first pass kept per-topic accent color, which the
+  owner correctly flagged as not matching 9b/9c — the actual mockup markup is full brass
+  monochrome (topics read by name + icon shape, not color), plus a center-seam "fold" on
+  every card/slot, a two-layer brass rail, and 4px radii throughout, none of which the
+  first pass had. Corrected same day by reading the mockup's real markup instead of the
+  design doc's prose summary. (4) The splash flip is bigger (real wordmark SVG at the
+  SABD resolve, not plain text) with a landing shudder per script change, plus a
+  synthesized placeholder "clack" sound (`expo-audio`) — swap
+  `apps/mobile/assets/sound/splash-clack.wav` for a real asset later.
+- **Rev. 3 per-category redesign (2026-07-11):** built from a full new design handoff
+  (`docs/new-design/` — DESIGN-SYSTEM.md rev. 3 + actual TSX exports, not just a mockup
+  HTML this time). Home cards are per-category-colored again (gaming↔world hues swapped so
+  gaming reads green — a genuinely different hue table from Phase-1's, see
+  `src/theme/themed/themedTokens.ts`), with the center-seam fold + scanlines now
+  **gaming-only**. Every topic's Round screen is now fully bespoke — its own ground,
+  slot shape, rail treatment, and ambient motion
+  (`src/components/round/themed/Round{Gaming,Space,Music,Internet,Food,World}.tsx`) —
+  replacing the single shared retro round screen entirely (old generic
+  RekhaRail/SlotRow/HintBar/Keyboard deleted). Win/timeout results are themed per topic
+  too (`ThemedEndBeat.tsx`, owner's call — no mockup exists for this one). Caught and
+  fixed a real crash in verification: `WordEntry.topic` is a display string ("Gaming"),
+  not the lowercase `TopicId`, so the initial per-topic screen dispatch resolved to
+  `undefined` and blanked the whole round screen — fixed by mapping through
+  `TOPICS.find(t => t.bankTopic === word.topic)`.
+- **On-device fixes after the rev. 3 redesign (2026-07-11):** the web-preview pass above
+  didn't catch several real-device-only bugs the owner found on their phone. (1) Animated
+  `textShadowRadius` (the Home rating's glow pulse) renders as a hard rectangle on Android,
+  not a soft glow — replaced with `RadialGlow.tsx`, a real blurred SVG radial gradient, with
+  the pulse animating its opacity instead. (2) Slot/card backgrounds ported directly from the
+  mockup's CSS alpha values read as "almost invisible" on a real phone (worst on Gaming,
+  whose flap-card surface `#161310` was only 11 RGB units off its own ground) — bumped
+  `@sabd/tokens.retro.surface` to `#241F17`, added borders to Gaming's slots (the other 5
+  themed screens already had them), and roughly doubled every slot/hint/keyboard alpha value
+  across all 6 themed screens plus every `RadialGlow` opacity (nebula/lamp/stage-floor) and
+  broadened its falloff curve so atmosphere actually spreads instead of reading as a small
+  dim blob. (3) Space's filled slots were supposed to bob out of phase (`k-bob`, staggered
+  per letter) but the port hardcoded `delay=0` for every slot — fixed to stagger by index.
+  (4) Real bug, not a rendering gap: abandoning a round via back-gesture revealed the answer
+  (both visually and via the screen-reader announcement) — `useRound.ts`'s `abandon()` was
+  indistinguishable from a natural timeout. Fixed by threading a new `abandoned` flag through
+  `RoundEndSummary` so the word is suppressed specifically for abandons, while still recording
+  the round as a rated loss.
+- **Round 2 of on-device fixes, same day:** two of the round-1 fixes above shipped their own
+  new bugs, plus the abandon fix was still incomplete. (1) The Home rating's new `RadialGlow`
+  was wrapped too tightly (84×40 box, `rx=65/ry=60`) — the gradient's fade-out got clipped by
+  its own SVG viewport before reaching zero opacity, producing a solid rounded-pill badge
+  instead of a soft glow. Fixed by sizing the glow relative to the whole card instead of a
+  box around just the text. (2) Gaming's Home card border was selected-only; every hue except
+  gaming's green read fine unselected against the brightened surface token — now every card
+  gets a subtle always-on border. (3) The abandon fix had a real render-order race:
+  `core.status` flips to `'timedout'` (via `setCore`) one commit before `round.tsx`'s
+  `abandoned` flag caught up (it was only set inside `onRoundEnd`, fired from an effect after
+  that first render already committed) — a real, visible frame on-device where the end-beat
+  showed with `abandoned` still false. Fixed by making `abandoned` a real `useState` in
+  `useRound.ts`, set as a sibling call alongside `setCore` in the same handler so both land in
+  one React commit, and returned directly from the hook instead of round-tripped through
+  `onRoundEnd`.
 
 **Verification commands:** `pnpm -r typecheck` · `pnpm -r test` ·
 `pnpm --filter @sabd/mobile exec expo export --platform android` · web preview via

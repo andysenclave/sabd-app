@@ -63,9 +63,35 @@ CREATE TABLE kv (
 );
 `;
 
+/**
+ * 003 — points engine: per-player streak + a scoring epoch, and a one-time reset of any
+ * existing (Elo-era) install to a fresh 0.
+ *
+ * The rating is now a monotonic point total from 0, not an Elo number seeded at 1200.
+ * Pre-existing rounds were scored under the old engine; rather than re-derive them under
+ * the new math (which would show a confusing non-zero start), we reset the cache to 0 and
+ * mark the last pre-reset round as the scoring epoch — rounds AFTER it are the only ones
+ * that count. The old rounds stay on disk (exportable), they just no longer score.
+ *
+ * A fresh install has an empty player table here (migrations run before seedPlayer), so
+ * the UPDATE touches nothing — it only affects upgrades.
+ */
+const POINTS_RESET_003 = `
+ALTER TABLE player ADD COLUMN cached_streak INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE player ADD COLUMN score_epoch_round_id TEXT;
+
+UPDATE player SET
+  cached_rating         = 0,
+  cached_games_played   = 0,
+  cached_streak         = 0,
+  cached_after_round_id = (SELECT round_id FROM round_event ORDER BY rowid DESC LIMIT 1),
+  score_epoch_round_id  = (SELECT round_id FROM round_event ORDER BY rowid DESC LIMIT 1);
+`;
+
 export const MIGRATIONS: readonly Migration[] = [
   { version: 1, name: 'init', sql: INIT_001 },
   { version: 2, name: 'kv-settings', sql: KV_002 },
+  { version: 3, name: 'points-reset', sql: POINTS_RESET_003 },
 ];
 
 export function getSchemaVersion(db: SqlDriver): number {

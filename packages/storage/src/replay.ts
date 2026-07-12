@@ -1,57 +1,60 @@
 /**
- * Replay (event-log doc §5/§6) — the rating is `reduce(applyResult)` over the log.
+ * Replay (event-log doc §5/§6) — the score is `reduce(applyPoints)` over the log.
  *
  * All math comes from @sabd/elo; nothing is reimplemented here (standing order:
- * rating math in a component or in storage is a defect).
+ * scoring math in a component or in storage is a defect).
  *
- * Schema v1 does not persist challengeMode (Challenge is disabled in Phase 2 and
- * recordRound rejects it), so every replayed round is challengeMode: false. If an
- * event carries an engineConfigVersion other than the current one, we warn and replay
- * under the current config — a config-registry becomes necessary only after the first
- * tuning change ships.
+ * The fold carries the solve streak alongside the score, so a streak that spans the
+ * snapshot boundary survives an incremental verify. Only rounds AFTER the scoring epoch
+ * count: pre-reset (Elo-era) rounds stay on disk but never fold into the score.
+ *
+ * If an event carries an engineConfigVersion other than the current one, we warn and
+ * replay under the current config — a config registry becomes necessary only after a
+ * second tuning change ships.
  */
 
 import type { RoundEvent, RoundResult } from '@sabd/contracts';
 import { SEED_RATING } from '@sabd/contracts';
-import { applyResult, defaultConfig, ENGINE_CONFIG_VERSION, type EloConfig } from '@sabd/elo';
+import { applyPoints, defaultConfig, ENGINE_CONFIG_VERSION, type PointsConfig } from '@sabd/elo';
 import type { SqlDriver } from './driver.ts';
 import { getPlayer, updateCache } from './player.ts';
 import { getRoundsAfter } from './events.ts';
 
-export function eventToRoundResult(
-  e: RoundEvent,
-  playerRating: number,
-  gamesPlayed: number,
-): RoundResult {
+export function eventToRoundResult(e: RoundEvent): RoundResult {
   return {
     solved: e.solved,
     timeLimitSec: e.timeLimitSec,
     timeUsedSec: e.timeUsedSec,
     hintsUsed: e.hintsUsed,
-    opponentRating: e.wordRatingAtPlay,
-    playerRating,
-    gamesPlayed,
+    wordDifficulty: e.wordRatingAtPlay,
     mode: e.mode,
-    challengeMode: false, // not persisted in schema v1; recordRound rejects challenge rounds
   };
+}
+
+export interface ReplayState {
+  rating: number;
+  streak: number;
+  gamesPlayed: number;
 }
 
 export interface ReplayOutcome {
   rating: number;
+  streak: number;
   gamesPlayed: number;
   /** round_id of the last event folded in; null when no events were replayed. */
   lastRoundId: string | null;
   configMismatches: number;
 }
 
-/** Fold a list of events into a rating, starting from the given state. Pure. */
+/** Fold a list of events into a score + streak, starting from the given state. Pure. */
 export function replayEvents(
   events: readonly RoundEvent[],
-  start: { rating: number; gamesPlayed: number },
-  config: EloConfig = defaultConfig,
+  start: ReplayState,
+  config: PointsConfig = defaultConfig,
   warn: (msg: string) => void = console.warn,
 ): ReplayOutcome {
   let rating = start.rating;
+  let streak = start.streak;
   let gamesPlayed = start.gamesPlayed;
   let lastRoundId: string | null = null;
   let configMismatches = 0;
@@ -64,17 +67,14 @@ export function replayEvents(
           `replaying under ${ENGINE_CONFIG_VERSION}`,
       );
     }
-    const update = applyResult(
-      { rating, gamesPlayed },
-      eventToRoundResult(e, rating, gamesPlayed),
-      config,
-    );
+    const update = applyPoints({ rating, streak }, eventToRoundResult(e), config);
     rating = update.newPlayerRating;
+    streak = update.streak;
     gamesPlayed += 1;
     lastRoundId = e.roundId;
   }
 
-  return { rating, gamesPlayed, lastRoundId, configMismatches };
+  return { rating, streak, gamesPlayed, lastRoundId, configMismatches };
 }
 
 export interface VerifyResult {
@@ -103,7 +103,7 @@ export function verifyRating(
 
   const outcome = replayEvents(
     tail,
-    { rating: player.cachedRating, gamesPlayed: player.cachedGamesPlayed },
+    { rating: player.cachedRating, streak: player.cachedStreak, gamesPlayed: player.cachedGamesPlayed },
     defaultConfig,
     warn,
   );
@@ -116,14 +116,14 @@ export function verifyRating(
   }
   // Fold the tail into the cache either way — the snapshot pointer was stale.
   db.transaction(() => {
-    updateCache(db, outcome.rating, outcome.gamesPlayed, outcome.lastRoundId);
+    updateCache(db, outcome.rating, outcome.gamesPlayed, outcome.streak, outcome.lastRoundId);
   });
   return { healed: diverged, replayed: tail.length, rating: outcome.rating };
 }
 
 /**
- * fullReplay (§5, debug action) — recompute from the 1200 seed over the ENTIRE log
- * and reconcile the cache. Catches deep drift the snapshot can't see.
+ * fullReplay (§5, debug action) — recompute from the 0 seed over every round AFTER the
+ * scoring epoch and reconcile the cache. Catches deep drift the snapshot can't see.
  */
 export function fullReplay(
   db: SqlDriver,
@@ -132,8 +132,13 @@ export function fullReplay(
   const player = getPlayer(db);
   if (!player) throw new Error('fullReplay: no player row — seedPlayer must run first');
 
-  const all = getRoundsAfter(db, null);
-  const outcome = replayEvents(all, { rating: SEED_RATING, gamesPlayed: 0 }, defaultConfig, warn);
+  const scored = getRoundsAfter(db, player.scoreEpochRoundId);
+  const outcome = replayEvents(
+    scored,
+    { rating: SEED_RATING, streak: 0, gamesPlayed: 0 },
+    defaultConfig,
+    warn,
+  );
 
   const diverged =
     outcome.rating !== player.cachedRating || outcome.gamesPlayed !== player.cachedGamesPlayed;
@@ -143,8 +148,8 @@ export function fullReplay(
         `log says ${outcome.rating} (${outcome.gamesPlayed} games) — log wins`,
     );
     db.transaction(() => {
-      updateCache(db, outcome.rating, outcome.gamesPlayed, outcome.lastRoundId);
+      updateCache(db, outcome.rating, outcome.gamesPlayed, outcome.streak, outcome.lastRoundId);
     });
   }
-  return { healed: diverged, replayed: all.length, rating: outcome.rating };
+  return { healed: diverged, replayed: scored.length, rating: outcome.rating };
 }

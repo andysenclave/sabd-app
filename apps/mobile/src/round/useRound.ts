@@ -23,13 +23,15 @@ import {
 } from './roundMachine.ts';
 import { useRoundClock, formatClock } from './useRoundClock.ts';
 import { useReducedMotion } from '../a11y/useReducedMotion.ts';
-import type { KeyValue } from '../components/round/Keyboard.tsx';
-import type { SlotModel } from '../components/round/SlotRow.tsx';
+import type { KeyValue, SlotModel } from './types.ts';
 
 export interface RoundEndSummary {
   result: RoundResult2;
   /** Wall-vs-monotonic clocks disagreed beyond tolerance (device clock manipulation). */
   anomaly: boolean;
+  /** Ended via `abandon()` (back gesture), not a natural clock expiry — the caller
+   * should record it as a rated timeout but never reveal the word for it. */
+  abandoned: boolean;
 }
 
 /** RoundResult minus the player fields the storage seam fills in from the cache. */
@@ -51,6 +53,14 @@ export function useRound({ word, hapticsEnabled = true, onRoundEnd }: UseRoundOp
   // Monotonic shadow of the wall clock, for the anomaly flag.
   const monoStart = useRef(performance.now());
   const endedRef = useRef(false);
+  const abandonedRef = useRef(false);
+  // Real state, not just the ref above — `abandon()` sets this in the SAME callback
+  // as `setCore()`, so React batches them into one commit. Consumers reading
+  // `round.abandoned` at render time need that guarantee: reading it only from
+  // `onRoundEnd` (fired from an effect, one commit AFTER core.status flips) left a
+  // real one-frame window where the end-beat rendered with core.status === 'timedout'
+  // but abandoned still false — long enough on a real device to flash the answer.
+  const [abandoned, setAbandoned] = useState(false);
 
   // Always-fresh snapshot for handlers that need to read state without becoming
   // unstable callbacks (Keyboard/HintBar hold onto onKey/takeHint by identity).
@@ -103,6 +113,7 @@ export function useRound({ word, hapticsEnabled = true, onRoundEnd }: UseRoundOp
         mode: 'solo',
       },
       anomaly,
+      abandoned: abandonedRef.current,
     });
     // core.status is the trigger; the rest are stable refs/values at end time.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -185,8 +196,18 @@ export function useRound({ word, hapticsEnabled = true, onRoundEnd }: UseRoundOp
     [word, hapticsEnabled],
   );
 
-  /** Abandon (back gesture / hardware back): a rated round ends as a timeout. */
+  /**
+   * Abandon (back gesture / hardware back): a rated round ends as a timeout, but —
+   * unlike a natural clock expiry — the word is never revealed for it (the player
+   * actively chose to leave, not lose; spoiling the word for them serves nothing).
+   */
   const abandon = useCallback(() => {
+    if (coreRef.current.status !== 'running') return;
+    abandonedRef.current = true;
+    // Sibling calls, not nested inside setCore's updater (that must stay a pure
+    // function of previous state) — React still batches both into one commit since
+    // they're both called synchronously from the same event handler.
+    setAbandoned(true);
     setCore((c) => (c.status === 'running' ? { ...c, status: 'timedout', endedAt: Date.now() } : c));
   }, []);
 
@@ -210,6 +231,7 @@ export function useRound({ word, hapticsEnabled = true, onRoundEnd }: UseRoundOp
     clock,
     timeLabel: formatClock(clock.remainingSec),
     reducedMotion,
+    abandoned,
     onKey,
     takeHint,
     abandon,

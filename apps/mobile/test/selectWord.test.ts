@@ -1,53 +1,60 @@
 /**
- * T11 DoD — word selection over the real bank: window widening, randomness within
- * the window, persisted-seen exclusion, session no-repeat, graceful exhaustion.
+ * Word selection over the real bank — difficulty follows the SCORE (tier-gated),
+ * randomness within the tier, persisted-seen exclusion, session no-repeat, graceful
+ * exhaustion, and tier spill when the earned tier is used up.
  */
 
 import { test, beforeEach } from 'node:test';
 import assert from 'node:assert/strict';
 
+import { tierForScore } from '@sabd/elo';
 import { words } from '@sabd/wordbank';
 import { selectWord, resetSessionSeen, availableBankTopics } from '../src/round/selectWord.ts';
 
 beforeEach(() => resetSessionSeen());
 
-test('picks inside the ±150 window when it has candidates', () => {
+test('a score-0 player is served low-tier words', () => {
   for (let i = 0; i < 10; i++) {
     resetSessionSeen();
-    const w = selectWord({ rating: 1200 });
+    const w = selectWord({ score: 0 });
     assert.ok(w);
-    assert.ok(Math.abs(w.difficulty - 1200) <= 150, `${w.id} (${w.difficulty}) outside window`);
+    assert.equal(w.tier, 'low', `${w.id} is ${w.tier}, expected low at score 0`);
   }
 });
 
-test('randomness: different rng values pick different words in the same window', () => {
-  const low = selectWord({ rating: 1200, rng: () => 0 });
+test('a mid-score player is served mid-tier, a high-score player high-tier', () => {
+  const mid = selectWord({ score: 150 }); // tierForScore → mid
+  assert.equal(tierForScore(150), 'mid');
+  assert.equal(mid?.tier, 'mid');
+
   resetSessionSeen();
-  const high = selectWord({ rating: 1200, rng: () => 0.999 });
+  const high = selectWord({ score: 500 }); // tierForScore → high
+  assert.equal(tierForScore(500), 'high');
+  assert.equal(high?.tier, 'high');
+});
+
+test('randomness: different rng values pick different words in the same tier', () => {
+  const low = selectWord({ score: 0, rng: () => 0 });
+  resetSessionSeen();
+  const high = selectWord({ score: 0, rng: () => 0.999 });
   assert.ok(low && high);
   assert.notEqual(low.id, high.id);
 });
 
-test('widens step-by-step when the window is empty (extreme rating), never crashes', () => {
-  const rating = 5000;
-  const w = selectWord({ rating });
-  assert.ok(w);
-  // The guarantee: the pick lies inside the FIRST window that has candidates —
-  // i.e. the minimal ±150-multiple reaching the bank's hardest words. (Randomness
-  // may pick any word in that band, not necessarily the absolute max.)
-  const maxDifficulty = Math.max(...words.map((x) => x.difficulty));
-  const minimalWindow = Math.ceil((rating - maxDifficulty) / 150) * 150;
-  assert.ok(
-    Math.abs(w.difficulty - rating) <= minimalWindow,
-    `${w.id} (${w.difficulty}) outside the minimal window ${minimalWindow}`,
-  );
+test('spills to the nearest tier once the earned tier is exhausted', () => {
+  // Exhaust every low-tier Gaming word, then a score-0 (low) request must spill up.
+  const lowGaming = words.filter((w) => w.topic === 'Gaming' && w.tier === 'low');
+  const seen = new Set(lowGaming.map((w) => w.id));
+  const w = selectWord({ score: 0, topic: 'Gaming', exclude: seen });
+  assert.ok(w, 'should still serve a word by spilling to an adjacent tier');
+  assert.notEqual(w.tier, 'low');
 });
 
 test('never repeats within a session and respects the persisted exclude set', () => {
-  const seen = new Set<string>();
   const persisted = new Set<string>([words[0]!.id, words[1]!.id]);
+  const seen = new Set<string>();
   for (;;) {
-    const w = selectWord({ rating: 1200, exclude: persisted });
+    const w = selectWord({ score: 250, exclude: persisted }); // any score — exhausts every tier
     if (w === null) break;
     assert.ok(!seen.has(w.id), `repeat: ${w.id}`);
     assert.ok(!persisted.has(w.id), `served an excluded word: ${w.id}`);
@@ -57,9 +64,9 @@ test('never repeats within a session and respects the persisted exclude set', ()
 });
 
 test('topic filter serves only that topic; unknown topic exhausts gracefully', () => {
-  const w = selectWord({ rating: 1200, topic: 'Gaming' });
+  const w = selectWord({ score: 0, topic: 'Gaming' });
   assert.equal(w?.topic, 'Gaming');
-  assert.equal(selectWord({ rating: 1200, topic: 'No Such Topic' }), null);
+  assert.equal(selectWord({ score: 0, topic: 'No Such Topic' }), null);
 });
 
 test('availableBankTopics reflects the bank', () => {

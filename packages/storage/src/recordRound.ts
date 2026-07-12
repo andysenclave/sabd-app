@@ -1,14 +1,14 @@
 /**
  * recordRound — the storage side of the `onRoundEnd(result)` seam.
  *
- * Flow (event-log doc §5): read player → engine.applyResult() → append event +
+ * Flow (event-log doc §5): read player → engine.applyPoints() → append event +
  * update cache in ONE transaction → return the RatingUpdate for the result screen.
- * All rating math lives in @sabd/elo.
+ * All scoring math lives in @sabd/elo.
  */
 
 import type { PaidHint, GameMode, RatingUpdate, RoundEvent, WordEntry } from '@sabd/contracts';
 import { ROUND_EVENT_SCHEMA_VERSION } from '@sabd/contracts';
-import { applyResult, defaultConfig, ENGINE_CONFIG_VERSION, type EloConfig } from '@sabd/elo';
+import { applyPoints, defaultConfig, ENGINE_CONFIG_VERSION, type PointsConfig } from '@sabd/elo';
 import type { SqlDriver } from './driver.ts';
 import { getPlayer } from './player.ts';
 import { appendRound } from './events.ts';
@@ -45,7 +45,7 @@ export interface RecordRoundOutcome {
 export function recordRound(
   db: SqlDriver,
   input: RecordRoundInput,
-  config: EloConfig = defaultConfig,
+  config: PointsConfig = defaultConfig,
 ): RecordRoundOutcome {
   if (input.challengeMode) {
     throw new Error(
@@ -57,18 +57,15 @@ export function recordRound(
   const player = getPlayer(db);
   if (!player) throw new Error('recordRound: no player row — seedPlayer must run first');
 
-  const update = applyResult(
-    { rating: player.cachedRating, gamesPlayed: player.cachedGamesPlayed },
+  const update = applyPoints(
+    { rating: player.cachedRating, streak: player.cachedStreak },
     {
       solved: input.solved,
       timeLimitSec: input.timeLimitSec,
       timeUsedSec: input.timeUsedSec,
       hintsUsed: input.hintsUsed,
-      opponentRating: input.word.difficulty,
-      playerRating: player.cachedRating,
-      gamesPlayed: player.cachedGamesPlayed,
+      wordDifficulty: input.word.difficulty,
       mode: input.mode,
-      challengeMode: false,
     },
     config,
   );
@@ -96,6 +93,7 @@ export function recordRound(
   const { inserted } = appendRound(db, event, {
     rating: update.newPlayerRating,
     gamesPlayed: player.cachedGamesPlayed + 1,
+    streak: update.streak,
   });
 
   return { update, event, inserted };

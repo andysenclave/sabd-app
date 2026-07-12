@@ -27,8 +27,10 @@ import {
   getOrCreateInstallId,
   playedWordIds,
   topicStats,
+  topicRating,
   getSetting,
   setSetting,
+  replayEvents,
   type RecordRoundInput,
   type SqlDriver,
 } from '../src/index.ts';
@@ -123,9 +125,11 @@ test('getOrCreateInstallId creates once, then returns the same identity', () => 
   const first = getOrCreateInstallId(db, randomUUID, tick());
   const second = getOrCreateInstallId(db, randomUUID, tick());
   assert.equal(first.installId, second.installId);
-  assert.equal(first.cachedRating, SEED_RATING);
+  assert.equal(first.cachedRating, SEED_RATING); // 0 — the points engine starts from zero
   assert.equal(first.cachedGamesPlayed, 0);
+  assert.equal(first.cachedStreak, 0);
   assert.equal(first.cachedAfterRoundId, null);
+  assert.equal(first.scoreEpochRoundId, null); // fresh install: no reset boundary
 });
 
 // ─── recordRound / appendRound ───────────────────────────────────────────────
@@ -220,7 +224,7 @@ test('verifyRating: a corrupted cache self-heals on launch — the log wins', ()
   // Corrupt the cache: rating tampered AND pointer rolled back 3 rounds.
   const all = getRoundsAfter(db, null);
   const stalePointer = all[all.length - 4]!.roundId;
-  updateCache(db, 9999, honest.cachedGamesPlayed - 3, stalePointer);
+  updateCache(db, 9999, honest.cachedGamesPlayed - 3, honest.cachedStreak, stalePointer);
 
   const warnings: string[] = [];
   const v = verifyRating(db, (m) => warnings.push(m));
@@ -232,7 +236,7 @@ test('verifyRating: a corrupted cache self-heals on launch — the log wins', ()
   // base — catching deep drift is exactly why §5 keeps fullReplay as a second tier.
   const f = fullReplay(db, silent);
   assert.equal(f.healed, true);
-  assert.equal(f.rating, honest.cachedRating); // the honest number, recomputed from 1200
+  assert.equal(f.rating, honest.cachedRating); // the honest number, recomputed from 0
   assert.equal(getPlayer(db)!.cachedRating, honest.cachedRating);
 
   // And once fully healed, a second full replay finds nothing to fix.
@@ -240,7 +244,7 @@ test('verifyRating: a corrupted cache self-heals on launch — the log wins', ()
   assert.equal(f2.healed, false);
 });
 
-test('full replay from 1200 matches the cache after N rounds', () => {
+test('full replay from 0 matches the cache after N rounds', () => {
   const db = freshDb();
   playRounds(db, 25);
   const cached = getPlayer(db)!.cachedRating;
@@ -248,6 +252,24 @@ test('full replay from 1200 matches the cache after N rounds', () => {
   assert.equal(f.replayed, 25);
   assert.equal(f.healed, false); // cache already equals the replay — no drift
   assert.equal(f.rating, cached);
+});
+
+test('the score only ever climbs — every recorded round leaves it >= before', () => {
+  const db = freshDb();
+  let prev = getPlayer(db)!.cachedRating;
+  for (let i = 0; i < 20; i++) {
+    recordRound(
+      db,
+      roundInput({
+        solved: i % 3 !== 2, // a third are misses
+        timeUsedSec: 10 + (i % 5) * 9,
+        word: { id: `GAM-${i}`, difficulty: 900 + i * 60, topic: 'Gaming' },
+      }),
+    );
+    const now = getPlayer(db)!.cachedRating;
+    assert.ok(now >= prev, `score dropped at round ${i}: ${prev} → ${now}`);
+    prev = now;
+  }
 });
 
 // ─── Log-derived queries (word selection + Home grid) ────────────────────────
@@ -263,34 +285,52 @@ test('playedWordIds returns the distinct words this install has faced', () => {
   assert.equal(playedWordIds(db).size, 6);
 });
 
-test('topicStats aggregates per topic with the latest rating-before', () => {
+test('topicStats aggregates per topic, each with its OWN score + streak replayed from 0', () => {
   const db = freshDb();
   recordRound(db, roundInput({ solved: true, word: { id: 'GAM-1', difficulty: 1200, topic: 'Gaming' } }));
   recordRound(db, roundInput({ solved: false, word: { id: 'MUS-1', difficulty: 1100, topic: 'Music' } }));
-  const r3 = recordRound(
-    db,
-    roundInput({ solved: true, word: { id: 'GAM-2', difficulty: 1300, topic: 'Gaming' } }),
-  );
+  recordRound(db, roundInput({ solved: true, word: { id: 'GAM-2', difficulty: 1300, topic: 'Gaming' } }));
 
   const stats = new Map(topicStats(db).map((s) => [s.topic, s]));
   assert.equal(stats.get('Gaming')?.rounds, 2);
   assert.equal(stats.get('Gaming')?.solved, 2);
   assert.equal(stats.get('Music')?.rounds, 1);
   assert.equal(stats.get('Music')?.solved, 0);
-  // Gaming's lastRatingBefore = what the player was rated entering their LATEST Gaming round.
-  assert.equal(stats.get('Gaming')?.lastRatingBefore, r3.event.playerRatingBefore);
+
+  // A topic's score is independent of the player's global score and of other topics —
+  // the SAME engine, replayed only over that topic's own rounds (with its OWN streak)
+  // from 0. Because the streak is per-fold, the Gaming pair keeps its streak going here
+  // even though the Music miss broke the GLOBAL streak between them — so the topic score
+  // differs from the global cache.
+  const gamingEvents = getRoundsAfter(db, null).filter((e) => e.topic === 'Gaming');
+  const expectedGamingRating = replayEvents(gamingEvents, {
+    rating: SEED_RATING,
+    streak: 0,
+    gamesPlayed: 0,
+  }).rating;
+  assert.equal(stats.get('Gaming')?.rating, expectedGamingRating);
+  assert.notEqual(stats.get('Gaming')?.rating, getPlayer(db)!.cachedRating);
+});
+
+test('topicRating returns a single topic score, from 0, post-epoch only', () => {
+  const db = freshDb();
+  assert.equal(topicRating(db, 'Gaming'), SEED_RATING); // never played → 0
+  recordRound(db, roundInput({ solved: true, word: { id: 'GAM-1', difficulty: 1000, topic: 'Gaming' } }));
+  assert.ok(topicRating(db, 'Gaming') > 0);
+  assert.equal(topicRating(db, 'Music'), SEED_RATING); // other topic untouched
 });
 
 // ─── Settings kv (migration 002) ─────────────────────────────────────────────
 
-test('settings kv: defaults, round-trip, overwrite; v1→v2 upgrade path works', () => {
-  // Simulate an EXISTING install at schema v1, then upgrade.
+test('settings kv: defaults, round-trip, overwrite; v1→latest upgrade path works', () => {
+  // Simulate an EXISTING install at schema v1, then upgrade to latest (adds kv + the
+  // points-reset columns). seedPlayer only after the upgrade, once its columns exist.
   const db = new NodeSqliteDriver();
   runMigrations(db, MIGRATIONS.filter((m) => m.version === 1));
   assert.equal(getSchemaVersion(db), 1);
-  seedPlayer(db, randomUUID(), tick());
   const applied = runMigrations(db); // upgrade to latest
-  assert.deepEqual(applied.map((m) => m.version), [2]);
+  assert.deepEqual(applied.map((m) => m.version), [2, 3]);
+  seedPlayer(db, randomUUID(), tick());
 
   assert.equal(getSetting(db, 'hapticsEnabled', true), true); // default
   setSetting(db, 'hapticsEnabled', false);

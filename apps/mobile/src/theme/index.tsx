@@ -1,44 +1,68 @@
 /**
  * ThemeProvider — the single seam between `@sabd/tokens` and the RN app.
  *
- * It exposes the locked palette, the type scale, motion, and — critically — an
- * RN-safe per-topic `accent` (tokens store accents as `oklch()`, which RN can't parse,
- * so we convert to hex here). The current topic is swapped at round start; everything
- * else is constant (DESIGN-SYSTEM §2).
+ * It exposes the active palette, the type scale, and motion. The current topic is
+ * still tracked (`t.topic`/`setTopic`) for callers that key off it structurally
+ * (word bank lookups, etc.) but no longer drives any COLOR — see below.
+ *
+ * The app ships the RETRO skin (mockups 9b/9c) as its one look, not the modern
+ * indigo/kesar palette `@sabd/tokens.colors` describes — that palette stays in the
+ * package as the historical/locked reference, but `retroColors` below is what
+ * every screen actually reads through `t.colors`, by owner decision (2026-07-11):
+ * the logo asset is already retro-styled and clashed with an indigo background.
+ *
+ * `accentsCollapseToBrass` IS honored, per a pixel-level check against the actual
+ * mockup markup (not just the design doc's prose): 9b/9c use brass (`#C98A2B`) for
+ * every rail, border, diamond, and wallpaper glyph, on every topic, with zero hue
+ * variation — topics stay distinguishable by name and icon SHAPE only (△○✕ vs
+ * ✦✧ vs ♪♫...), never by color. An earlier pass here kept per-topic hue "on top of
+ * brass," which does not match either mockup and was wrong — corrected 2026-07-11.
+ * `accent()`/`accentFor()` are kept as the call-site API (so no component needed to
+ * change) but now always resolve to brass, ignoring the topic/hue arguments.
  */
 import { createContext, useContext, useMemo, useState, type ReactNode } from 'react';
-import {
-  colors,
-  duration,
-  easing,
-  topicHues,
-  type,
-  ACCENT_L,
-  ACCENT_C,
-  type TopicId,
-} from '@sabd/tokens';
+import { colors, duration, easing, retro, type, type TopicId } from '@sabd/tokens';
 
 import { fontFamily } from './fonts.ts';
-import { oklchToHex, oklchToHexA } from './color.ts';
+import { hexToRgba } from './color.ts';
+
+/**
+ * `retro` from @sabd/tokens, reshaped to the same key set as `colors` so every
+ * consumer of `t.colors.X` gets the retro value with zero call-site changes.
+ * `signal` (timer-critical / wrong-guess) is left as-is — it's functional, not
+ * part of the palette remap, and the doc doesn't redefine it for retro.
+ */
+const retroColors = {
+  ink: retro.ground,
+  ink2: retro.surface,
+  paper: retro.text,
+  paperDim: retro.dim,
+  kesar: retro.brass,
+  signal: colors.signal,
+  slotEmpty: hexToRgba(retro.text, 0.04),
+  slotFocused: hexToRgba(retro.text, 0.06),
+  railTrack: hexToRgba(retro.text, 0.12),
+} as const;
 
 export interface Theme {
-  colors: typeof colors;
+  colors: Record<keyof typeof colors, string>;
   type: typeof type;
   duration: typeof duration;
   easing: typeof easing;
   font: typeof fontFamily;
-  /** The topic in play; drives the accent. */
+  /** Retro-only values that don't fit the base 8-key palette shape (mockups 9b/9c). */
+  retro: { brassUnderside: string; glow: string; cardSeam: string };
+  /** The topic in play. No longer drives color — kept for structural callers. */
   topic: TopicId;
-  /** RN-safe accent hex for the current topic (optional alpha 0..1). */
+  /** Brass, always — kept topic-shaped for call-site compatibility (optional alpha 0..1). */
   accent: (alpha?: number) => string;
-  /** RN-safe accent hex for an explicit topic (optional alpha, optional L override). */
+  /** Brass, always — the `topic`/`l` args are accepted but ignored (see file header). */
   accentFor: (topic: TopicId, alpha?: number, l?: number) => string;
   setTopic: (topic: TopicId) => void;
 }
 
-function accentHex(topic: TopicId, alpha?: number, l: number = ACCENT_L): string {
-  const hue = topicHues[topic];
-  return alpha === undefined ? oklchToHex(l, ACCENT_C, hue) : oklchToHexA(l, ACCENT_C, hue, alpha);
+function accentHex(alpha?: number): string {
+  return alpha === undefined ? retroColors.kesar : hexToRgba(retroColors.kesar, alpha);
 }
 
 const ThemeContext = createContext<Theme | null>(null);
@@ -54,14 +78,15 @@ export function ThemeProvider({
 
   const value = useMemo<Theme>(
     () => ({
-      colors,
+      colors: retroColors,
       type,
       duration,
       easing,
       font: fontFamily,
+      retro: { brassUnderside: retro.brassUnderside, glow: retro.glow, cardSeam: retro.cardSeam },
       topic,
-      accent: (alpha?: number) => accentHex(topic, alpha),
-      accentFor: (t: TopicId, alpha?: number, l?: number) => accentHex(t, alpha, l),
+      accent: (alpha?: number) => accentHex(alpha),
+      accentFor: (_topic: TopicId, alpha?: number) => accentHex(alpha),
       setTopic,
     }),
     [topic],

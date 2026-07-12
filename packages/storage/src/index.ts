@@ -16,6 +16,7 @@ export {
   markSynced,
   playedWordIds,
   topicStats,
+  topicRating,
   type AppendResult,
   type TopicStats,
 } from './events.ts';
@@ -30,6 +31,7 @@ export {
   replayEvents,
   verifyRating,
   type ReplayOutcome,
+  type ReplayState,
   type VerifyResult,
 } from './replay.ts';
 export { buildExport, serializeExport } from './export.ts';

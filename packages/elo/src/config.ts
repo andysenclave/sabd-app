@@ -1,74 +1,60 @@
 /**
- * Sabd rating engine — tunable constants (single source of truth).
+ * Sabd scoring engine — tunable constants (single source of truth).
  *
- * Every weight/band the design doc marks as tunable lives here. The engine
- * functions accept an optional config override so playtest tuning never
- * requires touching the math.
+ * The score is a monotonic point total: a solve awards points (never negative), a miss
+ * awards nothing and breaks the streak. Every weight/band lives here so playtest tuning
+ * never touches the math. The engine functions accept an optional config override.
  */
 
-export interface EloConfig {
-  /** Base score awarded for any solve (§3.2 `solveBase`). */
-  readonly solveBase: number;
-  /** Max additional score for an instant solve (§3.2 `speedBonus` weight). */
+import type { WordTier } from './types.ts';
+
+export interface PointsConfig {
+  /** Base points awarded for a solve, by the word's difficulty tier. */
+  readonly tierBase: Readonly<Record<WordTier, number>>;
+  /** Max extra points for an instant solve; scales down to 0 as the clock is used. */
   readonly speedBonusMax: number;
-  /** Penalty per PAID hint used (§3.2 `hintPenalty` weight). Max 2 paid hints. */
+  /** Points deducted per PAID hint used (max 2 paid hints). */
   readonly hintPenaltyPerHint: number;
-  /** Lower clamp for a solved round's performance score. */
-  readonly solvedFloor: number;
-  /** Upper clamp for the performance score. */
-  readonly performanceCeiling: number;
+  /** A solve never awards fewer than this (before the streak bonus is added). */
+  readonly minSolvePoints: number;
 
-  /** Elo logistic divisor (standard Elo uses 400). */
-  readonly eloDivisor: number;
+  /** Extra points added per consecutive solve: bonus = streakStep * (streak - 1). */
+  readonly streakStep: number;
+  /** Cap on the per-round streak bonus so a long streak can't run away. */
+  readonly streakBonusMax: number;
 
-  /** K-factor bands (§3.3). */
-  readonly kProvisional: number;
-  /** Games played below this count ⇒ provisional K. */
-  readonly provisionalGames: number;
-  readonly kStandard: number;
-  readonly kHighRated: number;
-  /** Rating at/above which the high-rated (lower) K applies. */
-  readonly highRatedThreshold: number;
+  /**
+   * Score → difficulty tier the player is served. The score only climbs, so difficulty
+   * only ever holds or rises: `score < mid` → low, `< high` → mid, else high.
+   */
+  readonly tierThresholds: Readonly<{ mid: number; high: number }>;
 
-  /** Challenge-mode multiplier — applies to GAINS ONLY (§4). */
-  readonly challengeMultiplier: number;
-
-  /** Ratings never drop below this floor. */
-  readonly ratingFloor: number;
-
-  /** K used by the Phase-2 word-rating self-correction (§3.5). */
-  readonly wordK: number;
-  /** Phase-2 flag: word rating self-correction is OFF by default. */
-  readonly wordRatingUpdatesEnabled: boolean;
+  /**
+   * Difficulty (puzzle rating) → tier bands, mirroring the content pipeline's TIER_BANDS.
+   * The event log stores only the numeric difficulty, so scoring re-derives the tier here.
+   */
+  readonly tierBands: Readonly<{ lowMax: number; midMax: number }>;
 }
 
 /**
  * Version stamp for the tunables below — persisted on every round_event as
- * `engineConfigVersion` (event-log doc §4.2). A round played under hintPenalty 0.20
- * cannot be honestly replayed under 0.15; the stamp lets replay resolve which config
- * was live. BUMP THIS whenever any defaultConfig value changes.
+ * `engineConfigVersion`. BUMP THIS whenever any defaultConfig value changes.
+ *
+ * 2.0.0 — replaced the Elo rating engine with the monotonic points engine (seed 0,
+ * streak bonus, tier-gated difficulty).
  */
-export const ENGINE_CONFIG_VERSION = '1.0.0';
+export const ENGINE_CONFIG_VERSION = '2.0.0';
 
-export const defaultConfig: EloConfig = {
-  solveBase: 0.5,
-  speedBonusMax: 0.5,
-  hintPenaltyPerHint: 0.2,
-  solvedFloor: 0.05,
-  performanceCeiling: 1.0,
+export const defaultConfig: PointsConfig = {
+  tierBase: { low: 10, mid: 20, high: 30 },
+  speedBonusMax: 10,
+  hintPenaltyPerHint: 3,
+  minSolvePoints: 5,
 
-  eloDivisor: 400,
+  streakStep: 2,
+  streakBonusMax: 20,
 
-  kProvisional: 40,
-  provisionalGames: 30,
-  kStandard: 32,
-  kHighRated: 24,
-  highRatedThreshold: 2000,
+  tierThresholds: { mid: 100, high: 300 },
 
-  challengeMultiplier: 1.25,
-
-  ratingFloor: 100,
-
-  wordK: 16,
-  wordRatingUpdatesEnabled: false,
+  tierBands: { lowMax: 1200, midMax: 1600 },
 };
