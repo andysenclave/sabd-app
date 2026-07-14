@@ -4,7 +4,12 @@
     "appVersionSource": "local"
   },
   "build": {
+    "base": {
+      "node": "24.3.0",
+      "pnpm": "11.0.9"
+    },
     "preview": {
+      "extends": "base",
       "distribution": "internal",
       "channel": "preview",
       "android": {
@@ -12,6 +17,7 @@
       }
     },
     "production": {
+      "extends": "base",
       "distribution": "store",
       "channel": "production",
       "autoIncrement": true
