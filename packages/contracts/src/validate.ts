@@ -165,11 +165,8 @@ export function validateRoundResult(
   c.boolean(input['solved'], `${path}.solved`);
   c.number(input['timeLimitSec'], `${path}.timeLimitSec`);
   c.number(input['timeUsedSec'], `${path}.timeUsedSec`);
-  c.number(input['opponentRating'], `${path}.opponentRating`);
-  c.number(input['playerRating'], `${path}.playerRating`);
-  c.integer(input['gamesPlayed'], `${path}.gamesPlayed`);
+  c.number(input['wordDifficulty'], `${path}.wordDifficulty`);
   c.oneOf(input['mode'], GAME_MODES, `${path}.mode`);
-  c.boolean(input['challengeMode'], `${path}.challengeMode`);
   validateHintsUsed(c, input['hintsUsed'], `${path}.hintsUsed`);
 
   return result(c, input as unknown as RoundResult);

@@ -17,3 +17,7 @@ export function initStorage(_dbName?: string): Storage {
 export function getStorage(): Storage {
   throw new Error('storage: not available on web (dev harness only)');
 }
+
+export function refreshRating(): number {
+  throw new Error('storage: not available on web (dev harness only)');
+}

@@ -1,33 +1,29 @@
 /**
- * Sabd rating engine — public API (Phase 1).
+ * Sabd scoring engine — public API.
  *
  * Pure, standalone, framework-agnostic. Zero runtime dependencies, ESM,
  * fully deterministic (no I/O, no globals, no Date.now(), no randomness).
+ *
+ * The package is still named `@sabd/elo` for historical reasons; the engine is now a
+ * monotonic points model (see points.ts), not Elo. Renaming the package is deferred.
  */
 
-export { defaultConfig, ENGINE_CONFIG_VERSION, type EloConfig } from './config.ts';
+export { defaultConfig, ENGINE_CONFIG_VERSION, type PointsConfig } from './config.ts';
 
 export type {
   GameMode,
   PaidHint,
-  PerformanceBreakdown,
   RatingUpdate,
   RoundResult,
+  ScoreBreakdown,
   WordEntry,
   WordTier,
 } from './types.ts';
 
 export {
-  computePerformance,
+  applyPoints,
   countPaidHints,
-  type PerformanceResult,
-} from './performance.ts';
-
-export {
-  applyResult,
-  expectedScore,
-  kFactor,
-  updateWordRating,
+  tierForDifficulty,
+  tierForScore,
   type PlayerState,
-  type WordRatingUpdate,
-} from './elo.ts';
+} from './points.ts';

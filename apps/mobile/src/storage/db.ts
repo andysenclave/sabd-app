@@ -37,3 +37,15 @@ export function getStorage(): Storage {
   if (!instance) throw new Error('getStorage: initStorage() has not run');
   return instance;
 }
+
+/**
+ * Re-verify the cached rating against the log and refresh the singleton's `verify`.
+ * Cheap: verifyRating only replays events past the snapshot pointer (usually 0).
+ * Callers re-run this on screen focus so a round recorded elsewhere in the stack
+ * (round.tsx never unmounts Home) is reflected without an app relaunch.
+ */
+export function refreshRating(): number {
+  const s = getStorage();
+  s.verify = verifyRating(s.db);
+  return s.verify.rating;
+}

@@ -52,7 +52,7 @@ export interface WordEntry {
   };
 }
 
-/** RoundResult — input to the rating engine, produced by the game loop. */
+/** RoundResult — input to the scoring engine, produced by the game loop. */
 export interface RoundResult {
   /** Did the player get the word before the clock hit 0. */
   solved: boolean;
@@ -61,34 +61,35 @@ export interface RoundResult {
   timeUsedSec: number;
   /** Subset of the 2 paid hints (max 2). */
   hintsUsed: PaidHint[];
-  /** The word's `difficulty` (solo) OR the opponent's rating (1v1). */
-  opponentRating: number;
-  playerRating: number;
-  gamesPlayed: number;
+  /** The word's `difficulty` (puzzle rating) — the tier the score awards is derived from it. */
+  wordDifficulty: number;
   mode: GameMode;
-  /** Player opted into a harder-than-rating word / higher opponent. */
-  challengeMode: boolean;
 }
 
-/** Breakdown of the performance score components. */
-export interface PerformanceBreakdown {
-  solveBase: number;
+/** Breakdown of the points awarded for a solved round (all zero on a miss). */
+export interface ScoreBreakdown {
+  /** Base points for the word's difficulty tier (low/mid/high). */
+  tierBase: number;
+  /** Extra points for a fast solve (≥ 0). */
   speedBonus: number;
-  /** Negative or zero (e.g. -0.20 for one paid hint). */
+  /** Points lost to paid hints (≤ 0). */
   hintPenalty: number;
+  /** Extra points from the active solve streak (≥ 0). */
+  streakBonus: number;
 }
 
-/** RatingUpdate — rating-engine output. */
+/**
+ * RatingUpdate — scoring-engine output. The score is a monotonic point total:
+ * `delta` is always ≥ 0 (0 on a miss), so `newPlayerRating` never decreases.
+ */
 export interface RatingUpdate {
-  /** Performance score s ∈ [0,1]. */
-  performance: number;
-  /** Expected score E from standard Elo. */
-  expected: number;
-  /** Rounded rating change (challenge multiplier already applied to gains). */
+  /** Points earned this round (≥ 0; exactly 0 on a miss). */
   delta: number;
+  /** New score after this round (≥ 0, never below the previous score). */
   newPlayerRating: number;
-  kFactor: number;
-  breakdown: PerformanceBreakdown;
+  /** Solve streak AFTER this round — incremented on a solve, reset to 0 on a miss. */
+  streak: number;
+  breakdown: ScoreBreakdown;
 }
 
 /**
@@ -110,8 +111,11 @@ export interface RatingUpdate {
  */
 export const ROUND_EVENT_SCHEMA_VERSION = 1 as const;
 
-/** New players seed at this rating with gamesPlayed = 0 (event-log doc §5). */
-export const SEED_RATING = 1200 as const;
+/**
+ * New players (and every per-topic score) start here. The score is a monotonic point
+ * total that only climbs from 0 — there is no matchmaking seed anymore.
+ */
+export const SEED_RATING = 0 as const;
 
 export interface RoundEvent {
   /** Primary key — client-generated random UUID → idempotent append/upload. */

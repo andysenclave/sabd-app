@@ -1,9 +1,12 @@
 /**
- * Word selection (T11) — ±150 rating window, widening in steps, with a RANDOM pick
- * inside the window. Randomness matters: a deterministic nearest-difficulty pick
- * gives every player the identical word sequence, which makes the game predictable
- * (and trivially spoilable between friends). Selection is not rating math — replay
- * never re-selects — so Math.random is fine here (injectable for tests).
+ * Word selection (T11) — difficulty follows the player's SCORE. The higher your score
+ * in a topic, the harder the tier of word it serves (`tierForScore`); because the score
+ * only ever climbs, the difficulty you've reached never regresses — a broken streak
+ * costs you the bonus, not your level. A RANDOM pick inside the chosen tier keeps the
+ * word sequence from being identical (and spoilable) between players.
+ *
+ * Selection is not scoring math — replay never re-selects — so Math.random is fine here
+ * (injectable for tests).
  *
  * Exclusions come from two layers:
  *  - `exclude`: word ids this install has EVER faced — derived from the event log
@@ -12,16 +15,26 @@
  *    or a round abandoned before recording).
  */
 
-import type { WordEntry } from '@sabd/contracts';
+import type { WordEntry, WordTier } from '@sabd/contracts';
+import { tierForScore } from '@sabd/elo';
 import { words } from '@sabd/wordbank';
 
-const WINDOW_STEP = 150;
+/**
+ * When the target tier is exhausted (all its words seen), spill to the nearest tier —
+ * an easier already-mastered one before a harder unearned one.
+ */
+const TIER_FALLBACK: Record<WordTier, WordTier[]> = {
+  low: ['low', 'mid', 'high'],
+  mid: ['mid', 'low', 'high'],
+  high: ['high', 'mid', 'low'],
+};
 
 /** Words served this session (belt for what the log doesn't have yet). */
 const sessionSeen = new Set<string>();
 
 export interface SelectWordOptions {
-  rating: number;
+  /** The player's current score in this topic — drives the difficulty tier served. */
+  score: number;
   /** Bank topic display string (e.g. "Gaming"). Omit = any topic. */
   topic?: string;
   /** Persisted seen ids (from the event log). */
@@ -31,7 +44,7 @@ export interface SelectWordOptions {
 }
 
 export function selectWord({
-  rating,
+  score,
   topic,
   exclude,
   rng = Math.random,
@@ -44,15 +57,20 @@ export function selectWord({
   );
   if (pool.length === 0) return null; // topic exhausted — caller shows the graceful state
 
-  // Widen ±150 in steps until the window catches something; never crash.
-  for (let window = WINDOW_STEP; ; window += WINDOW_STEP) {
-    const inWindow = pool.filter((w) => Math.abs(w.difficulty - rating) <= window);
-    if (inWindow.length > 0) {
-      const chosen = inWindow[Math.floor(rng() * inWindow.length)]!;
+  // Serve the tier this score has earned; spill to the nearest tier if it's exhausted.
+  const targetTier = tierForScore(score);
+  for (const tier of TIER_FALLBACK[targetTier]) {
+    const candidates = pool.filter((w) => w.tier === tier);
+    if (candidates.length > 0) {
+      const chosen = candidates[Math.floor(rng() * candidates.length)]!;
       sessionSeen.add(chosen.id);
       return chosen;
     }
   }
+  // Pool is non-empty but no word carried a known tier — shouldn't happen; pick anything.
+  const chosen = pool[Math.floor(rng() * pool.length)]!;
+  sessionSeen.add(chosen.id);
+  return chosen;
 }
 
 /** Bank topics that actually have words (drives which Home cards are playable). */
