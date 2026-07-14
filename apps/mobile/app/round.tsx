@@ -141,7 +141,7 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
   // a plain listener + preventDefault() races the native pop and leaves JS/native nav
   // state out of sync ("screen was removed natively but didn't get removed from JS state").
   usePreventRemove(round.status === 'running', ({ data }) => {
-    Alert.alert('Abandon this round?', 'Leaving a rated round counts as a timeout.', [
+    Alert.alert('Abandon this round?', 'You’ll score no points and your streak resets. Your score never drops.', [
       { text: 'Keep playing', style: 'cancel' },
       {
         text: 'Abandon',
