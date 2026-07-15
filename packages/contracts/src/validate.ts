@@ -14,6 +14,7 @@ import type {
   PlayerSnapshot,
   RoundEvent,
   RoundResult,
+  SyncDownResponse,
   SyncUploadRequest,
   SyncUploadResponse,
   TopicId,
@@ -354,6 +355,31 @@ export function validateSyncUploadResponse(
   if (!snap.ok) c.errors.push(...snap.errors);
 
   return result(c, input as unknown as SyncUploadResponse);
+}
+
+export function validateSyncDownResponse(
+  input: unknown,
+  path = 'syncDown',
+): ValidationResult<SyncDownResponse> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+
+  const snap = validatePlayerSnapshot(input['snapshot'], `${path}.snapshot`);
+  if (!snap.ok) c.errors.push(...snap.errors);
+
+  if (input['events'] !== undefined) {
+    const events = input['events'];
+    if (!Array.isArray(events)) {
+      c.fail(`${path}.events`, `expected array, got ${describe(events)}`);
+    } else {
+      events.forEach((e, i) => {
+        const r = validateRoundEvent(e, `${path}.events[${i}]`);
+        if (!r.ok) c.errors.push(...r.errors);
+      });
+    }
+  }
+
+  return result(c, input as unknown as SyncDownResponse);
 }
 
 // ─── Phase 3: word slices (T2) ───────────────────────────────────────────────

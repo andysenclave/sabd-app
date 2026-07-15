@@ -16,9 +16,11 @@ export {
   getUnsynced,
   markSynced,
   playedWordIds,
+  restoreEvents,
   topicStats,
   topicRating,
   type AppendResult,
+  type RestoreOutcome,
   type TopicStats,
 } from './events.ts';
 export {

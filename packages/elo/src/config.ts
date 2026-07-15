@@ -45,6 +45,18 @@ export interface PointsConfig {
  */
 export const ENGINE_CONFIG_VERSION = '2.0.0';
 
+/**
+ * True when an event's `engineConfigVersion` belongs to the points era (major ≥ 2).
+ * The 2026-07 scoring reset coincides exactly with engine 2.0.0, so "does this event
+ * fold into a score" is derivable from data already in the event — Elo-era (1.x)
+ * events stay on disk/server for calibration but are never scored. Used by the
+ * client restore path and the server replay identically.
+ */
+export function isPointsEraConfig(version: string): boolean {
+  const major = Number.parseInt(version, 10);
+  return Number.isFinite(major) && major >= 2;
+}
+
 export const defaultConfig: PointsConfig = {
   tierBase: { low: 10, mid: 20, high: 30 },
   speedBonusMax: 10,

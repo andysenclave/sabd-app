@@ -1,0 +1,26 @@
+{
+  "name": "@sabd/ingest",
+  "version": "0.1.0",
+  "description": "Sabd ingestion + sync service (Phase-3 T11-T13) — serverless: POST /v1/rounds (idempotent event upload), GET /v1/me (authoritative replay snapshot + reinstall restore). Deploy target: Cloudflare Worker + D1 (see README).",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=23.6"
+  },
+  "dependencies": {
+    "@sabd/contracts": "workspace:*",
+    "@sabd/elo": "workspace:*"
+  },
+  "devDependencies": {
+    "@sabd/storage": "workspace:*",
+    "@types/node": "^26.1.1",
+    "typescript": "^5.9.3"
+  }
+}

@@ -19,6 +19,7 @@ import {
   getPlayer,
   updateCache,
   recordRound,
+  restoreEvents,
   countRounds,
   getRoundsAfter,
   getUnsynced,
@@ -348,6 +349,44 @@ test('topicRating returns a single topic score, from 0, post-epoch only', () => 
   recordRound(db, roundInput({ solved: true, word: { id: 'GAM-1', difficulty: 1000, topic: 'Gaming' } }));
   assert.ok(topicRating(db, 'Gaming') > 0);
   assert.equal(topicRating(db, 'Music'), SEED_RATING); // other topic untouched
+});
+
+// ─── Restore (Phase-3 T13/T14) ───────────────────────────────────────────────
+
+test('restoreEvents with Elo-era history re-pins the epoch: full seenIds, points-era-only score', () => {
+  // Source device: mixed history (as a long-time tester's server log would be).
+  const src = freshDb();
+  playRounds(src, 4);
+  const all = getRoundsAfter(src, null);
+  // Rewrite the first two as Elo-era rounds (engine 1.0.0) — pre-reset history.
+  const eloEra = all.slice(0, 2).map((e) => ({ ...e, engineConfigVersion: '1.0.0' }));
+  const pointsEra = all.slice(2);
+
+  const dst = freshDb();
+  const outcome = restoreEvents(dst, [...pointsEra, ...eloEra], 1_800_000_000_000); // out of order too
+
+  assert.equal(outcome.restored, 4);
+  assert.equal(countRounds(dst), 4); // full history on disk (export/seenIds)
+  assert.equal(playedWordIds(dst).size, 4);
+  // …but only the points-era rounds fold into the score.
+  const expected = replayEvents(pointsEra, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 }).rating;
+  assert.equal(getPlayer(dst)!.cachedRating, expected);
+  assert.equal(getPlayer(dst)!.scoreEpochRoundId, eloEra[1]!.roundId);
+  // fullReplay agrees (epoch respected) — the cache survives a deep verify.
+  assert.equal(fullReplay(dst, silent).healed, false);
+});
+
+test('restoreEvents is idempotent (re-restore changes nothing)', () => {
+  const src = freshDb();
+  playRounds(src, 3);
+  const events = getRoundsAfter(src, null);
+
+  const dst = freshDb();
+  restoreEvents(dst, events, 1_800_000_000_000);
+  const rating = getPlayer(dst)!.cachedRating;
+  const again = restoreEvents(dst, events, 1_800_000_000_001);
+  assert.equal(again.restored, 0);
+  assert.equal(getPlayer(dst)!.cachedRating, rating);
 });
 
 // ─── Settings kv (migration 002) ─────────────────────────────────────────────

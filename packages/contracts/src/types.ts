@@ -275,6 +275,18 @@ export interface SyncUploadResponse {
 }
 
 /**
+ * `GET /v1/me` response (sync-down, T13). `events` is present only when the client
+ * asks (`?includeEvents=1` — the reinstall-restore path): the install's full stored
+ * log, which the client re-appends locally so every local replay (global score,
+ * per-category scores/streaks, seenIds for selection) restores from the truth
+ * itself rather than trusting a number.
+ */
+export interface SyncDownResponse {
+  snapshot: PlayerSnapshot;
+  events?: RoundEvent[];
+}
+
+/**
  * ─── Word slices (T2/T8–T10) ─────────────────────────────────────────────────
  * The online word bank is published as versioned static files: one slice per
  * (topic × tier), plus one manifest per bank version. Tier slices supersede the

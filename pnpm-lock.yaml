@@ -153,6 +153,9 @@ importers:
         specifier: 0.5.1
         version: 0.5.1(@babel/core@7.29.7)(react-native@0.81.5(@babel/core@7.29.7)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
     devDependencies:
+      '@sabd/ingest':
+        specifier: workspace:*
+        version: link:../../services/ingest
       '@types/react':
         specifier: ~19.1.17
         version: 19.1.17
@@ -258,6 +261,25 @@ importers:
         specifier: workspace:*
         version: link:../../packages/contracts
     devDependencies:
+      '@types/node':
+        specifier: ^26.1.1
+        version: 26.1.1
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  services/ingest:
+    dependencies:
+      '@sabd/contracts':
+        specifier: workspace:*
+        version: link:../../packages/contracts
+      '@sabd/elo':
+        specifier: workspace:*
+        version: link:../../packages/elo
+    devDependencies:
+      '@sabd/storage':
+        specifier: workspace:*
+        version: link:../../packages/storage
       '@types/node':
         specifier: ^26.1.1
         version: 26.1.1

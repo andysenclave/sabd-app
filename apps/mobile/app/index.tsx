@@ -26,6 +26,7 @@ import { usePingPong } from '../src/theme/themed/ambient.ts';
 import { themedHues, acc, ok } from '../src/theme/themed/themedTokens.ts';
 import { useReducedMotion } from '../src/a11y/useReducedMotion';
 import { useStorageBoot } from '../src/storage/useStorageBoot';
+import { useSync } from '../src/sync/useSync';
 import { useHomeStats } from '../src/home/useHomeStats';
 import { TopicCard, type TopicCardState } from '../src/home/TopicCard';
 import { TOPICS, topicById } from '../src/home/topics';
@@ -40,6 +41,8 @@ export default function Home() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const storage = useStorageBoot();
+  // One fire-and-forget sync pass per launch (T14) — no-op until INGEST_BASE_URL is set.
+  useSync(storage.ready);
   const stats = useHomeStats(storage.ready);
   const [selected, setSelected] = useState<TopicId>('gaming');
 
