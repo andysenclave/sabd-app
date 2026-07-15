@@ -19,6 +19,7 @@
     "@expo-google-fonts/instrument-sans": "^0.4.2",
     "@expo-google-fonts/khand": "^0.4.1",
     "@expo-google-fonts/martian-mono": "^0.4.2",
+    "@expo-google-fonts/roboto-condensed": "^0.4.2",
     "@expo-google-fonts/tiro-devanagari-sanskrit": "^0.4.0",
     "@expo/metro-runtime": "~6.1.2",
     "@react-navigation/native": "^7.3.8",
