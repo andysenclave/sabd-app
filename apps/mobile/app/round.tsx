@@ -94,6 +94,8 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
   const params = useLocalSearchParams<{ topic?: string }>();
 
   const [update, setUpdate] = useState<RatingUpdate | null>(null);
+  // The played category's score after this round (T19: which score moved).
+  const [topicScore, setTopicScore] = useState<number | undefined>(undefined);
   const roundIdRef = useRef(randomUUID());
   const pendingNavAction = useRef<(() => void) | null>(null);
 
@@ -116,12 +118,18 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
             ...(summary.anomaly ? { anomaly: true } : {}),
           });
           setUpdate(outcome.update);
+          setTopicScore(topicRating(getStorage().db, word.topic));
+          const b = outcome.update.breakdown;
           AccessibilityInfo.announceForAccessibility(
             summary.result.solved
-              ? `Solved. Plus ${outcome.update.delta} points, now ${outcome.update.newPlayerRating}. Streak ${outcome.update.streak}.`
+              ? `Solved. Plus ${outcome.update.delta} points: base ${b.tierBase}` +
+                  (b.speedBonus > 0 ? `, speed bonus ${b.speedBonus}` : '') +
+                  (b.hintPenalty < 0 ? `, hints ${b.hintPenalty}` : '') +
+                  (b.streakBonus > 0 ? `, streak bonus ${b.streakBonus}` : '') +
+                  `. Now ${outcome.update.newPlayerRating}. Streak ${outcome.update.streak}.`
               : summary.abandoned
-                ? `Round abandoned. No points. Streak reset.`
-                : `Time's up. The word was ${word.word.toUpperCase()}. No points. Streak reset.`,
+                ? `Round abandoned. Plus zero points. Streak reset.`
+                : `Time's up. The word was ${word.word.toUpperCase()}. Plus zero points. Streak reset.`,
           );
         } catch (err) {
           console.error('round: recordRound failed', err);
@@ -202,6 +210,8 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
             abandoned={round.abandoned}
             update={update}
             initialRating={initialRating}
+            topicScore={topicScore}
+            topicLabel={word.topic.toUpperCase()}
             reducedMotion={round.reducedMotion}
             onNext={() =>
               router.replace({
