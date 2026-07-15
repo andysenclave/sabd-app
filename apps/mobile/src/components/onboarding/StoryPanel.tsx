@@ -214,7 +214,10 @@ const st = StyleSheet.create({
   // letterSpacing 1 (not the handoff's 3) so SKIP is pixel-identical to the mechanics
   // panels' SKIP — same width, same left edge — with no shift when advancing panels.
   skipText: { fontFamily: fontFamily.mono, fontSize: 12, letterSpacing: 1, color: T.muted },
-  center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  // Fixed top anchor (not dead-center) so the flap board starts at the same height as
+  // the mechanics panels' glyph — aligned on swipe — using the top space. paddingTop
+  // must match onboarding.tsx's center (48).
+  center: { flex: 1, alignItems: 'center', justifyContent: 'flex-start', paddingTop: 48 },
   board: { alignItems: 'center', marginBottom: 40 },
   rail: {
     width: 316,

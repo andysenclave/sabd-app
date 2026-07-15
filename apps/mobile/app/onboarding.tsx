@@ -138,7 +138,10 @@ export default function Onboarding() {
 const styles = StyleSheet.create({
   screen: { flex: 1, paddingHorizontal: 28 },
   skip: { alignSelf: 'flex-end', minWidth: 44, minHeight: 44, alignItems: 'flex-end', justifyContent: 'center' },
-  center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  // Content anchored to a FIXED top offset (not dead-center) so every onboarding panel
+  // starts its content at the same height — aligned on swipe — and the top space isn't
+  // left ~45% empty on tall phones. `paddingTop` must match StoryPanel's centerPadTop.
+  center: { flex: 1, alignItems: 'center', justifyContent: 'flex-start', paddingTop: 48 },
   dots: { flexDirection: 'row', justifyContent: 'center', gap: 8, marginBottom: 24 },
   dot: { width: 7, height: 7, borderRadius: 4 },
   cta: { height: 56, borderRadius: 12, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 32 },
