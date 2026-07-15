@@ -18,6 +18,7 @@
  */
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Animated, Easing, Pressable, StyleSheet, Text, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { retro } from '@sabd/tokens';
 
 import { fontFamily } from '../../theme/fonts.ts';
@@ -158,14 +159,18 @@ export interface StoryPanelProps {
 }
 
 export function StoryPanel({ animate, onNext, onSkip }: StoryPanelProps) {
+  const insets = useSafeAreaInsets();
   const [playing, setPlaying] = useState(animate);
   const next = useCallback(() => {
     setPlaying(false);
     onNext();
   }, [onNext]);
 
+  // Safe-area handling IDENTICAL to the mechanics panels (app/onboarding.tsx): the
+  // background fills behind the status bar and gesture bar, insets pad the content.
+  // Same +40 / +24 as the other screens so SKIP and the CTA align across the flow.
   return (
-    <View style={st.screen}>
+    <View style={[st.screen, { paddingTop: insets.top + 40, paddingBottom: insets.bottom + 24 }]}>
       <Pressable
         accessibilityRole="button"
         accessibilityLabel="Skip onboarding"
@@ -206,7 +211,9 @@ export function StoryPanel({ animate, onNext, onSkip }: StoryPanelProps) {
 const st = StyleSheet.create({
   screen: { flex: 1, backgroundColor: T.bg, paddingHorizontal: 28 },
   skip: { alignSelf: 'flex-end', minWidth: 44, minHeight: 44, alignItems: 'flex-end', justifyContent: 'center' },
-  skipText: { fontFamily: fontFamily.mono, fontSize: 12, letterSpacing: 3, color: T.muted },
+  // letterSpacing 1 (not the handoff's 3) so SKIP is pixel-identical to the mechanics
+  // panels' SKIP — same width, same left edge — with no shift when advancing panels.
+  skipText: { fontFamily: fontFamily.mono, fontSize: 12, letterSpacing: 1, color: T.muted },
   center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
   board: { alignItems: 'center', marginBottom: 40 },
   rail: {

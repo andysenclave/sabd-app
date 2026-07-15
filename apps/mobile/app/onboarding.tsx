@@ -60,13 +60,10 @@ export default function Onboarding() {
     router.replace('/');
   }, [router]);
 
-  // Panel ① — the śabda story (T19a). Owns its own skip/next/dots/CTA.
+  // Panel ① — the śabda story (T19a). Owns its own background + safe-area insets
+  // (identical pattern to the mechanics screens below), skip/next/dots/CTA.
   if (step === 0) {
-    return (
-      <View style={{ flex: 1, paddingTop: insets.top + 30, paddingBottom: insets.bottom + 28 }}>
-        <StoryPanel animate={!reducedMotion} onNext={() => setStep(1)} onSkip={finish} />
-      </View>
-    );
+    return <StoryPanel animate={!reducedMotion} onNext={() => setStep(1)} onSkip={finish} />;
   }
 
   const panel = PANELS[step - 1]!;
