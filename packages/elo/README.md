@@ -1,153 +1,106 @@
-# sabd-elo
+# @sabd/elo — the Sabd scoring engine (monotonic points)
 
-Elo-style rating engine for **Sabd** (शब्द — "word"), a competitive, Elo-rated
-word-guessing game. Phase 1: a pure, standalone, framework-agnostic TypeScript
-module — no UI, no network, no database, **zero runtime dependencies**, ESM,
-fully deterministic (no I/O, no globals, no `Date.now()`, no randomness — time
-comes in via `RoundResult`).
+> **Naming note:** the package keeps its historical name `@sabd/elo`, but the Elo rating
+> engine (seed 1200, bidirectional) shipped **replaced** on 2026-07-13 by engine `2.0.0` —
+> a **monotonic points model**. The authoritative description is
+> `docs/SCORING-HANDOFF.md`; this README is the package-level summary.
 
-Every word carries its own rating (`difficulty`), every player carries a
-rating, and the same math scores both modes:
+Pure, standalone, framework-agnostic TypeScript module — no UI, no network, no database,
+**zero runtime dependencies**, ESM, fully deterministic (no I/O, no globals, no
+`Date.now()`, no randomness — time comes in via `RoundResult`).
 
-- **Solo:** player vs. the **word's** rating.
-- **1v1:** player vs. the **opponent's** rating.
+## The model
 
-The result is not binary — the player usually gets the word eventually — so
-the engine grades *how well* they did (time left + hints used) into a
-performance score `s ∈ [0,1]` and feeds that into Elo instead of win/lose.
+The score is a **monotonic point total**. Every player and every category starts at **0**.
+
+- A **solve** earns `max(minSolvePoints, tierBase + speedBonus − hintPenalty)` plus an
+  escalating **streak bonus** (`+2, +4, +6…` capped at `+20`).
+- A **miss** (timeout or abandon) earns **0** and resets the streak. The score never drops.
+- The score picks the **difficulty tier** of words served (`tierForScore`): `< 100 → low`,
+  `< 300 → mid`, `else → high`. Because the score only climbs, earned difficulty never
+  regresses — a broken streak costs the bonus, not the level.
+
+One signal (score) drives difficulty; one (streak) drives reward — they never cross.
 
 ## Public API
 
 ```ts
 import {
-  computePerformance,  // (result, config?) => { s, breakdown }
-  expectedScore,       // (playerRating, opponentRating, config?) => E
-  kFactor,             // (rating, gamesPlayed, config?) => K
-  applyResult,         // (playerState, result, config?) => RatingUpdate
-  updateWordRating,    // Phase 2 — off by default (config.wordRatingUpdatesEnabled)
-  defaultConfig,
-} from 'sabd-elo';
+  applyPoints,           // (playerState, result, config?) => RatingUpdate
+  tierForScore,          // (score, config?) => 'low' | 'mid' | 'high' — selection tier
+  tierForDifficulty,     // (difficulty, config?) => WordTier — a word's tier from its rating
+  countPaidHints,        // (result) => 0 | 1 | 2
+  defaultConfig,         // every tunable (PointsConfig)
+  ENGINE_CONFIG_VERSION, // stamped on every RoundEvent — bump on ANY tunable change
+} from '@sabd/elo';
 ```
 
-Types `WordEntry`, `RoundResult`, and `RatingUpdate` implement the shared
-contract (§2 of the design doc) verbatim.
+`PlayerState` is `{ rating, streak }`; `RatingUpdate` is
+`{ delta, newPlayerRating, streak, breakdown: { tierBase, speedBonus, hintPenalty, streakBonus } }`
+with `delta ≥ 0` always (exactly 0 on a miss). Shared shapes (`RoundResult`,
+`RatingUpdate`, `WordEntry`) implement `@sabd/contracts` verbatim.
 
-## Formulas
-
-### Expected score (standard Elo)
-
-```
-E = 1 / (1 + 10 ^ ((opponentRating - playerRating) / 400))
-```
-
-### Performance score `s ∈ [0,1]`
+## Formula (engine 2.0.0)
 
 ```
-T = timeUsedSec / timeLimitSec   (fraction of clock used, clamped to 0..1)
-H = number of PAID hints used    (0..2 — only Position + Letters count;
-                                  the free always-visible description is NOT counted)
-
-not solved (timed out):
-  s = 0.0
-
-solved:
-  solveBase   = 0.5
-  speedBonus  = 0.5 * (1 - T)      // faster ⇒ up to +0.5
-  hintPenalty = 0.20 * H           // each paid hint ⇒ -0.20 (max -0.40)
-  s = clamp(solveBase + speedBonus - hintPenalty, 0.05, 1.0)
+miss:  delta = 0, streak → 0                             // score unchanged, always
+solve: tier        = tierForDifficulty(word.difficulty)  // bands: ≤1200 low, ≤1600 mid, else high
+       tierBase    = { low: 10, mid: 20, high: 30 }[tier]
+       speedBonus  = round(10 × (1 − timeUsed/timeLimit))
+       hintPenalty = −3 × paidHintsUsed                   // max 2 paid hints ⇒ −6
+       solvePoints = max(5, tierBase + speedBonus + hintPenalty)
+       streakBonus = min(20, 2 × (newStreak − 1))
+       delta       = solvePoints + streakBonus
 ```
 
-A solve is always worth a floor of 0.05. A fast no-hint solve approaches 1.0.
+Worked examples live in `docs/SCORING-HANDOFF.md` §3.
 
-### K-factor (volatility)
+## Tuning
 
-```
-gamesPlayed < 30   ⇒ K = 40   // provisional
-rating < 2000      ⇒ K = 32
-rating >= 2000     ⇒ K = 24
-```
-
-### Rating update
-
-```
-delta           = round(K * (s - E))
-newPlayerRating = max(ratingFloor, playerRating + delta)
-```
-
-### Challenge modifier (opt-in, gains only)
-
-Bigger gains for punching up, but only on **gains** — losses stay full (real
-risk):
-
-```
-if (challengeMode && delta > 0) delta = round(delta * challengeMultiplier)   // 1.25
-```
-
-### Word rating self-correction (Phase 2 — off by default)
-
-`updateWordRating(wordRating, playerRating, playerPerformance, config?)` runs
-the same Elo formula from the word's side with small `K = 16` and
-`wordResult = 1 - s`. It is pure and gated behind
-`config.wordRatingUpdatesEnabled` (default `false`) — when disabled it returns
-the word rating unchanged with `applied: false`. The server decides when to
-persist.
-
-## Tunable constants (`src/config.ts`)
-
-All knobs live in one `defaultConfig` object; every engine function accepts an
-optional config override, so playtest tuning never touches the math.
+Every knob lives in `src/config.ts` (`PointsConfig`); every engine function accepts an
+override, so playtest tuning never touches the math. A rebalance is pure JS → ships
+over-the-air via `eas update`. **Bump `ENGINE_CONFIG_VERSION` whenever a default
+changes** — replay warns on mismatch.
 
 | Constant | Default | Meaning |
 |---|---|---|
-| `solveBase` | 0.5 | Base score for any solve |
-| `speedBonusMax` | 0.5 | Max bonus for an instant solve |
-| `hintPenaltyPerHint` | 0.20 | Penalty per paid hint (max 2 hints ⇒ -0.40) |
-| `solvedFloor` | 0.05 | Minimum `s` for a solved round |
-| `performanceCeiling` | 1.0 | Maximum `s` |
-| `eloDivisor` | 400 | Standard Elo logistic divisor |
-| `kProvisional` | 40 | K while `gamesPlayed < provisionalGames` |
-| `provisionalGames` | 30 | Provisional games threshold |
-| `kStandard` | 32 | K for settled players under `highRatedThreshold` |
-| `kHighRated` | 24 | K at/above `highRatedThreshold` |
-| `highRatedThreshold` | 2000 | Rating for the reduced K band |
-| `challengeMultiplier` | 1.25 | Gain multiplier in challenge mode (gains only) |
-| `ratingFloor` | 100 | Ratings never drop below this |
-| `wordK` | 16 | K for Phase-2 word self-correction |
-| `wordRatingUpdatesEnabled` | false | Phase-2 flag |
+| `tierBase` | `{low: 10, mid: 20, high: 30}` | Base pay per word tier |
+| `speedBonusMax` | 10 | Instant-solve bonus, scales to 0 at the buzzer |
+| `hintPenaltyPerHint` | 3 | Per paid hint (max 2) |
+| `minSolvePoints` | 5 | A solve always pays at least this |
+| `streakStep` | 2 | Bonus escalation per consecutive solve |
+| `streakBonusMax` | 20 | Streak bonus cap |
+| `tierThresholds` | `{mid: 100, high: 300}` | Score → served tier (the ramp; most tuning-likely) |
+| `tierBands` | `{lowMax: 1200, midMax: 1600}` | Word difficulty → tier (mirrors content pipeline) |
 
-## Worked example
+Symptom → knob: slow ramp → lower `tierThresholds` · too-fast ramp → raise them ·
+streak not worth chasing → `streakStep`/`streakBonusMax` · hints mispriced →
+`hintPenaltyPerHint`.
 
-A **1300-rated** player (settled, 41 games ⇒ K = 32), 60-second clock, facing
-words rated 1000 / 1300 / 1600. Generated by `npm run worked-example`
-(`scripts/worked-example.ts`).
+## Replay is the truth
 
-| Scenario | Word rating | E | s | delta | newRating |
-|---|---|---|---|---|---|
-| Instant no-hint solve (0s, 0 hints) | 1000 | 0.849 | 1.00 | +5 | 1305 |
-| Instant no-hint solve (0s, 0 hints) | 1300 | 0.500 | 1.00 | +16 | 1316 |
-| Instant no-hint solve (0s, 0 hints) | 1600 | 0.151 | 1.00 | +27 | 1327 |
-| Slow 2-hint solve (54s, 2 hints) | 1000 | 0.849 | 0.15 | -22 | 1278 |
-| Slow 2-hint solve (54s, 2 hints) | 1300 | 0.500 | 0.15 | -11 | 1289 |
-| Slow 2-hint solve (54s, 2 hints) | 1600 | 0.151 | 0.15 | +0 | 1300 |
-| Half-clock 1-hint solve (30s, 1 hint) | 1000 | 0.849 | 0.55 | -10 | 1290 |
-| Half-clock 1-hint solve (30s, 1 hint) | 1300 | 0.500 | 0.55 | +2 | 1302 |
-| Half-clock 1-hint solve (30s, 1 hint) | 1600 | 0.151 | 0.55 | +13 | 1313 |
-| Timeout (not solved) | 1000 | 0.849 | 0.00 | -27 | 1273 |
-| Timeout (not solved) | 1300 | 0.500 | 0.00 | -16 | 1284 |
-| Timeout (not solved) | 1600 | 0.151 | 0.00 | -5 | 1295 |
+The score is never stored authoritatively — it is `reduce(applyPoints)` over the
+append-only event log (`RoundEvent`, schema v1, LOCKED), from 0, folding only rounds
+after the scoring epoch. Client and server run this same package over the same events
+and must get the same number; that property is the anti-cheat foundation. Scoring uses
+`wordRatingAtPlay` from the event — never a word's *current* (re-calibrated) difficulty —
+so historical scores never shift when words re-rate (Phase-3 T16 freeze rule).
 
-The feel this encodes: crushing an easy word barely pays (+5), crushing a hard
-word pays big (+27), a laboured solve of an easy word actually costs rating
-(-22), and even a mediocre solve of a hard word still earns (+13). Timing out
-against a hard word costs little (-5) — losing to it was expected.
+## What was removed with Elo (do not reintroduce)
+
+`expectedScore` · `kFactor` · `computePerformance` · `applyResult` · `updateWordRating`
+(returns in Phase 3 as a *server-side* job, not an engine export) · the ±band/form-lean
+selection · the 1200 seed · any falling rating. 1v1/Challenge scoring lost its Elo
+foundation and needs its own design before it ships (`recordRound` still rejects
+challenge rounds under schema v1).
 
 ## Development
 
 Requires Node >= 23.6 (tests run `.ts` directly via native type stripping).
 
 ```sh
-npm install            # dev deps only: typescript, @types/node
-npm test               # node:test — zero runtime deps
-npm run typecheck      # tsc --noEmit
-npm run worked-example # print the table above
+pnpm install         # dev deps only: typescript, @types/node
+pnpm test            # node:test — zero runtime deps
+pnpm typecheck       # tsc --noEmit
+pnpm worked-example  # print a points table for sample rounds
 ```

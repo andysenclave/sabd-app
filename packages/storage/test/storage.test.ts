@@ -9,8 +9,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { randomUUID } from 'node:crypto';
 
-import { SEED_RATING, validateExportFile, validateRoundEvent } from '@sabd/contracts';
+import { SEED_RATING, validateCategoryScore, validateExportFile, validateRoundEvent } from '@sabd/contracts';
 import {
+  categoryScores,
   MIGRATIONS,
   getSchemaVersion,
   runMigrations,
@@ -310,6 +311,35 @@ test('topicStats aggregates per topic, each with its OWN score + streak replayed
   }).rating;
   assert.equal(stats.get('Gaming')?.rating, expectedGamingRating);
   assert.notEqual(stats.get('Gaming')?.rating, getPlayer(db)!.cachedRating);
+});
+
+test('topicStats carries each topic\'s OWN live streak (survives another topic\'s miss)', () => {
+  const db = freshDb();
+  recordRound(db, roundInput({ solved: true, word: { id: 'GAM-1', difficulty: 1200, topic: 'Gaming' } }));
+  recordRound(db, roundInput({ solved: false, word: { id: 'MUS-1', difficulty: 1100, topic: 'Music' } }));
+  recordRound(db, roundInput({ solved: true, word: { id: 'GAM-2', difficulty: 1300, topic: 'Gaming' } }));
+
+  const stats = new Map(topicStats(db).map((s) => [s.topic, s]));
+  // The Music miss broke the GLOBAL streak but not Gaming's own counter.
+  assert.equal(stats.get('Gaming')?.streak, 2);
+  assert.equal(stats.get('Music')?.streak, 0);
+  assert.equal(getPlayer(db)!.cachedStreak, 1); // global: reset by the miss, then one solve
+});
+
+test('categoryScores returns the shared-contract CategoryScore shape (T3, sync payload)', () => {
+  const db = freshDb();
+  recordRound(db, roundInput({ solved: true, word: { id: 'GAM-1', difficulty: 1200, topic: 'Gaming' } }));
+  recordRound(db, roundInput({ solved: false, word: { id: 'GAM-2', difficulty: 1300, topic: 'Gaming' } }));
+
+  const scores = categoryScores(db);
+  assert.equal(scores.length, 1);
+  const gaming = scores[0]!;
+  // Contract-valid, field for field — this is what sync compares to the server snapshot.
+  assert.equal(validateCategoryScore(gaming).ok, true);
+  assert.equal(gaming.topic, 'Gaming');
+  assert.equal(gaming.gamesPlayed, 2);
+  assert.equal(gaming.streak, 0); // the miss reset it
+  assert.equal(gaming.score, topicRating(db, 'Gaming'));
 });
 
 test('topicRating returns a single topic score, from 0, post-epoch only', () => {

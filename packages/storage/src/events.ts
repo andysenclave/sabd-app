@@ -4,7 +4,7 @@
  * which Phase 2's manual loop never does.
  */
 
-import type { RoundEvent } from '@sabd/contracts';
+import type { CategoryScore, RoundEvent } from '@sabd/contracts';
 import { SEED_RATING } from '@sabd/contracts';
 import type { SqlDriver } from './driver.ts';
 import { eventToParams, rowToEvent, INSERT_EVENT_SQL, type RoundEventRow } from './rows.ts';
@@ -103,6 +103,8 @@ export interface TopicStats {
    * every other topic. Only rounds after the scoring epoch count.
    */
   rating: number;
+  /** This topic's OWN live streak (from the same per-topic replay). */
+  streak: number;
 }
 
 /** This topic's post-epoch rounds, in replay order. */
@@ -132,8 +134,23 @@ export function topicStats(db: SqlDriver): TopicStats[] {
       rounds: events.length,
       solved: events.filter((e) => e.solved).length,
       rating: outcome.rating,
+      streak: outcome.streak,
     };
   });
+}
+
+/**
+ * The per-category scoring state in the SHARED CONTRACT shape (Phase-3 T3) — what the
+ * sync layer compares against the server's PlayerSnapshot.categories and what the
+ * profile screen (T18) reads. Same replay as topicStats, contract field names.
+ */
+export function categoryScores(db: SqlDriver): CategoryScore[] {
+  return topicStats(db).map(({ topic, rounds, rating, streak }) => ({
+    topic,
+    score: rating,
+    streak,
+    gamesPlayed: rounds,
+  }));
 }
 
 /**
