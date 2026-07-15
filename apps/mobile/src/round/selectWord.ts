@@ -80,6 +80,18 @@ export function availableBankTopics(): ReadonlySet<string> {
   return bankTopics();
 }
 
+/**
+ * Topics that still hold at least one UNSEEN word for this install (soft wall, T7).
+ * When a topic exhausts, these are the "still stocked" alternatives the wall offers.
+ */
+export function stockedBankTopics(exclude?: ReadonlySet<string>): ReadonlySet<string> {
+  const out = new Set<string>();
+  for (const w of bankWords()) {
+    if (!sessionSeen.has(w.id) && !(exclude?.has(w.id) ?? false)) out.add(w.topic);
+  }
+  return out;
+}
+
 /** For tests/debug. */
 export function resetSessionSeen(): void {
   sessionSeen.clear();
