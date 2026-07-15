@@ -50,6 +50,9 @@ importers:
       '@expo-google-fonts/martian-mono':
         specifier: ^0.4.2
         version: 0.4.2
+      '@expo-google-fonts/roboto-condensed':
+        specifier: ^0.4.2
+        version: 0.4.2
       '@expo-google-fonts/tiro-devanagari-sanskrit':
         specifier: ^0.4.0
         version: 0.4.0
@@ -153,6 +156,9 @@ importers:
         specifier: 0.5.1
         version: 0.5.1(@babel/core@7.29.7)(react-native@0.81.5(@babel/core@7.29.7)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
     devDependencies:
+      '@sabd/ingest':
+        specifier: workspace:*
+        version: link:../../services/ingest
       '@types/react':
         specifier: ~19.1.17
         version: 19.1.17
@@ -258,6 +264,60 @@ importers:
         specifier: workspace:*
         version: link:../../packages/contracts
     devDependencies:
+      '@types/node':
+        specifier: ^26.1.1
+        version: 26.1.1
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  services/correction:
+    dependencies:
+      '@sabd/contracts':
+        specifier: workspace:*
+        version: link:../../packages/contracts
+      '@sabd/elo':
+        specifier: workspace:*
+        version: link:../../packages/elo
+    devDependencies:
+      '@sabd/storage':
+        specifier: workspace:*
+        version: link:../../packages/storage
+      '@types/node':
+        specifier: ^26.1.1
+        version: 26.1.1
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  services/ingest:
+    dependencies:
+      '@sabd/contracts':
+        specifier: workspace:*
+        version: link:../../packages/contracts
+      '@sabd/elo':
+        specifier: workspace:*
+        version: link:../../packages/elo
+    devDependencies:
+      '@sabd/storage':
+        specifier: workspace:*
+        version: link:../../packages/storage
+      '@types/node':
+        specifier: ^26.1.1
+        version: 26.1.1
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  services/wordbank-publish:
+    dependencies:
+      '@sabd/contracts':
+        specifier: workspace:*
+        version: link:../../packages/contracts
+    devDependencies:
+      '@sabd/wordbank':
+        specifier: workspace:*
+        version: link:../../packages/wordbank
       '@types/node':
         specifier: ^26.1.1
         version: 26.1.1
@@ -978,6 +1038,9 @@ packages:
 
   '@expo-google-fonts/martian-mono@0.4.2':
     resolution: {integrity: sha512-dzrsnjixkbu9O2XgjNaMIl/aSbQ32zqkJW7G5ZvBB1EWudbuqQCnDu1wFzXMsDLY318NAgflmakl1v7fr9/kyQ==}
+
+  '@expo-google-fonts/roboto-condensed@0.4.2':
+    resolution: {integrity: sha512-O4fsLz/61XD6sY9HEmNpjNh0GNOagmEIWh+F7l+CocU0FSBq5MK1Ipzklsec7i4LQk1fWKF7AdOnOn6QhHQowg==}
 
   '@expo-google-fonts/tiro-devanagari-sanskrit@0.4.0':
     resolution: {integrity: sha512-XGTEwveEowAdOexcui93HT4728B5hACzF8EWXHt0kAwZSrKfWF3jfbt0wY5gd7j4IiCC8xro676HJdC28NA7gA==}
@@ -4948,6 +5011,8 @@ snapshots:
   '@expo-google-fonts/khand@0.4.1': {}
 
   '@expo-google-fonts/martian-mono@0.4.2': {}
+
+  '@expo-google-fonts/roboto-condensed@0.4.2': {}
 
   '@expo-google-fonts/tiro-devanagari-sanskrit@0.4.0': {}
 

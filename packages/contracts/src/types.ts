@@ -177,3 +177,167 @@ export interface ExportFile {
   exportedAt: number;
   rounds: RoundEvent[];
 }
+
+/**
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Phase 3 — sync + word-slice contracts (architect roadmap T1/T2).
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Versioning semantics for everything below live in `packages/contracts/VERSIONING.md`.
+ */
+
+/**
+ * Canonical bank topic display string per TopicId — the value that appears in
+ * `WordEntry.topic` and `RoundEvent.topic`. Single source of truth: the mobile Home
+ * grid, the wordbank publisher, and the server's per-category replay all consume this
+ * mapping (T1 DoD: zero duplicate definitions).
+ */
+export const BANK_TOPICS: Readonly<Record<TopicId, string>> = {
+  gaming: 'Gaming',
+  space: 'Space & Sci-Fi',
+  music: 'Music',
+  internet: 'Internet & Tech Culture',
+  food: 'Food & Drink',
+  world: 'World & Places',
+} as const;
+
+/** Reverse lookup: bank topic display string → TopicId (undefined for unknown topics). */
+export function topicIdForBankTopic(topic: string): TopicId | undefined {
+  for (const id of Object.keys(BANK_TOPICS) as TopicId[]) {
+    if (BANK_TOPICS[id] === topic) return id;
+  }
+  return undefined;
+}
+
+/**
+ * One category's scoring state — a pure replay outcome (points engine over that
+ * topic's post-epoch events, seed 0, own streak). Appears in sync payloads; never
+ * stored authoritatively anywhere (the event log is the truth, client and server
+ * each derive it by replay).
+ */
+export interface CategoryScore {
+  /** Bank topic display string, exactly as in `RoundEvent.topic` (see BANK_TOPICS). */
+  topic: string;
+  /** Monotonic point total for this topic (≥ 0). */
+  score: number;
+  /** Current consecutive-solve streak in this topic (0 after any miss). */
+  streak: number;
+  /** Post-epoch rounds folded into this score. */
+  gamesPlayed: number;
+}
+
+/**
+ * The server's authoritative scoring snapshot for an install — the response body of
+ * `GET /v1/me` (sync-down, T13) and the tail of every upload response (T12).
+ * Computed by replaying the install's stored events through @sabd/elo server-side;
+ * NEVER trusted from a client. Global is an independent replay across all topics
+ * with its own streak — NOT the sum of the categories (locked owner decision).
+ */
+export interface PlayerSnapshot {
+  installId: string;
+  /** Engine tunables the server replayed under. */
+  engineConfigVersion: string;
+  /** Independent all-topics replay (own streak) — not a sum of `categories`. */
+  global: { score: number; streak: number; gamesPlayed: number };
+  /** One entry per topic with ≥ 1 post-epoch round on the server. */
+  categories: CategoryScore[];
+  /** Total events the server holds for this install (pre- and post-epoch). */
+  totalRounds: number;
+  /** Epoch ms when the server computed this snapshot. */
+  computedAt: number;
+}
+
+/**
+ * `POST /v1/rounds` request (ingestion, T11). A batch of unsynced events for one
+ * install. Idempotent on `roundId` — re-uploading a batch (or part of one) changes
+ * nothing server-side. No auth: the anonymous installId is the identity (Phase 3).
+ */
+export interface SyncUploadRequest {
+  installId: string;
+  /** ROUND_EVENT_SCHEMA_VERSION of the events within. */
+  schemaVersion: number;
+  events: RoundEvent[];
+}
+
+/**
+ * `POST /v1/rounds` response. Every uploaded roundId lands in exactly one of the
+ * three lists; the client marks `syncedAt` for accepted + duplicate ids (duplicates
+ * were already safely stored — that's idempotency, not an error).
+ */
+export interface SyncUploadResponse {
+  /** Stored this request. */
+  acceptedRoundIds: string[];
+  /** Already stored by an earlier upload — safe to mark synced. */
+  duplicateRoundIds: string[];
+  /** Failed validation — NOT stored; client keeps them local and surfaces a diagnostic. */
+  rejectedRoundIds: string[];
+  /** Authoritative post-replay state; on divergence the client heals its cache from this. */
+  snapshot: PlayerSnapshot;
+}
+
+/**
+ * `GET /v1/me` response (sync-down, T13). `events` is present only when the client
+ * asks (`?includeEvents=1` — the reinstall-restore path): the install's full stored
+ * log, which the client re-appends locally so every local replay (global score,
+ * per-category scores/streaks, seenIds for selection) restores from the truth
+ * itself rather than trusting a number.
+ */
+export interface SyncDownResponse {
+  snapshot: PlayerSnapshot;
+  events?: RoundEvent[];
+}
+
+/**
+ * ─── Word slices (T2/T8–T10) ─────────────────────────────────────────────────
+ * The online word bank is published as versioned static files: one slice per
+ * (topic × tier), plus one manifest per bank version. Tier slices supersede the
+ * Elo-era overlapping rating bands: selection is tier-driven (`tierForScore` +
+ * nearest-tier spill), so the natural download unit is the tier — spill coverage
+ * comes from holding a topic's neighbouring tiers, not from overlapping cuts.
+ */
+
+export const WORD_SLICE_SCHEMA_VERSION = 1 as const;
+
+/** One downloadable slice's entry in the manifest. */
+export interface WordSliceRef {
+  /** Identity key (URL-safe; slices are pathed by it). */
+  topicId: TopicId;
+  /** Bank topic display string (matches `WordEntry.topic`). */
+  topic: string;
+  tier: WordTier;
+  /**
+   * Monotonic per-slice content version — bumps ONLY when this slice's words
+   * change, so an unchanged slice is never re-downloaded across bank versions.
+   */
+  sliceVersion: number;
+  /** Fetch path, relative to the manifest's URL (content-addressed, immutable). */
+  url: string;
+  wordCount: number;
+  /** Uncompressed byte size of the slice file. */
+  bytes: number;
+  /** SHA-256 (hex) of the slice file — integrity check before the atomic swap. */
+  sha256: string;
+}
+
+/**
+ * The manifest the client polls (stable URL, short cache). Lists every slice of one
+ * published bank version.
+ */
+export interface WordSliceManifest {
+  schemaVersion: number;
+  /** The bank publish this manifest describes (semver — see VERSIONING.md). */
+  wordBankVersion: string;
+  /** ISO 8601 publish timestamp. */
+  generatedAt: string;
+  slices: WordSliceRef[];
+}
+
+/** A slice file's content — self-describing so a cached file can be trusted alone. */
+export interface WordSlice {
+  schemaVersion: number;
+  wordBankVersion: string;
+  topicId: TopicId;
+  topic: string;
+  tier: WordTier;
+  sliceVersion: number;
+  words: WordEntry[];
+}

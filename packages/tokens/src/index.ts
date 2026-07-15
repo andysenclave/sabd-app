@@ -25,6 +25,16 @@ export const colors = {
   /** Timer-critical (<10s) + wrong-guess only. Never decorative. */
   signal: '#E4573D',
 
+  /**
+   * Semantic "submit / go" (FB-002, Phase-3 design 2026-07-15). FIXED across all
+   * topics & skins, like `signal` — never remapped per topic. oklch(0.58 0.14 165):
+   * deeper + cooler than the Gaming topic accent oklch(0.77 0.15 150) so the two
+   * never blur on a Gaming round. Used on the keyboard's Enter key.
+   */
+  confirm: '#0E9268',
+  /** Inset bottom edge of a confirm control (physical key depth). oklch(0.40 0.10 165). */
+  confirmEdge: '#085C42',
+
   /** Empty slot fill. */
   slotEmpty: 'rgba(233,234,242,.04)',
   /** Focused slot fill (+ accent stub). */

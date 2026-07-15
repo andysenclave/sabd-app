@@ -1,0 +1,26 @@
+{
+  "name": "@sabd/wordbank-publish",
+  "version": "0.1.0",
+  "description": "Sabd word-bank publisher (Phase-3 T8) — cuts the merged bank into versioned (topic x tier) static slices + a manifest for CDN publishing.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "publish-slices": "node src/publish.ts",
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=23.6"
+  },
+  "dependencies": {
+    "@sabd/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "@sabd/wordbank": "workspace:*",
+    "@types/node": "^26.1.1",
+    "typescript": "^5.9.3"
+  }
+}

@@ -39,6 +39,10 @@ const retroColors = {
   paperDim: retro.dim,
   kesar: retro.brass,
   signal: colors.signal,
+  // `confirm` is a FIXED semantic (submit/go), never remapped per skin — same value
+  // in both palettes, like `signal` (FB-002).
+  confirm: colors.confirm,
+  confirmEdge: colors.confirmEdge,
   slotEmpty: hexToRgba(retro.text, 0.04),
   slotFocused: hexToRgba(retro.text, 0.06),
   railTrack: hexToRgba(retro.text, 0.12),

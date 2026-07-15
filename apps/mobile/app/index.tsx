@@ -26,6 +26,7 @@ import { usePingPong } from '../src/theme/themed/ambient.ts';
 import { themedHues, acc, ok } from '../src/theme/themed/themedTokens.ts';
 import { useReducedMotion } from '../src/a11y/useReducedMotion';
 import { useStorageBoot } from '../src/storage/useStorageBoot';
+import { useSync } from '../src/sync/useSync';
 import { useHomeStats } from '../src/home/useHomeStats';
 import { TopicCard, type TopicCardState } from '../src/home/TopicCard';
 import { TOPICS, topicById } from '../src/home/topics';
@@ -40,6 +41,8 @@ export default function Home() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const storage = useStorageBoot();
+  // One fire-and-forget sync pass per launch (T14) — no-op until INGEST_BASE_URL is set.
+  useSync(storage.ready);
   const stats = useHomeStats(storage.ready);
   const [selected, setSelected] = useState<TopicId>('gaming');
 
@@ -80,14 +83,18 @@ export default function Home() {
       <View style={styles.header}>
         <Wordmark width={148} />
         <View style={styles.headerRight}>
-          <View
+          <Pressable
             style={styles.ratingBlock}
             accessible
+            accessibilityRole="button"
             accessibilityLabel={
               storage.ready
-                ? `Rating ${storage.rating}, ${stats.rounds} ${stats.rounds === 1 ? 'round' : 'rounds'} played`
+                ? `Rating ${storage.rating}, ${stats.rounds} ${stats.rounds === 1 ? 'round' : 'rounds'} played. Open profile.`
                 : 'Rating loading'
             }
+            // The score chip opens the category profile (T18 — the diagnostic).
+            onPress={() => router.push('/profile')}
+            hitSlop={8}
           >
             <View style={styles.ratingRow}>
               <Text importantForAccessibility="no" style={{ color: t.colors.kesar, fontSize: 11 }}>
@@ -110,7 +117,7 @@ export default function Home() {
             <Text style={{ fontFamily: t.font.mono, fontSize: 10, letterSpacing: 2, color: t.colors.paperDim }}>
               {stats.rounds === 1 ? '1 ROUND' : `${stats.rounds} ROUNDS`}
             </Text>
-          </View>
+          </Pressable>
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Settings"

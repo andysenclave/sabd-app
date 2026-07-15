@@ -1,7 +1,8 @@
 /**
- * Onboarding (T22): shown once before the first round, skippable. Three panels max,
- * Instrument Sans voice, teaches: the rail is time, hints cost seconds, rating is you.
- * A settings toggle replays it (see app/settings.tsx). Persists via kv `onboardingSeen`.
+ * Onboarding (T22 + T19a): shown once before the first round, skippable. Opens with
+ * the śabda story panel (FB-001), then three mechanics panels (Instrument Sans voice):
+ * the rail is time, hints cost seconds, rating is you. A settings toggle replays it
+ * (see app/settings.tsx). Persists via kv `onboardingSeen`.
  */
 import { useCallback, useState } from 'react';
 import { View, Text, StyleSheet, Pressable, Platform } from 'react-native';
@@ -11,6 +12,8 @@ import { setSetting } from '@sabd/storage';
 
 import { useTheme } from '../src/theme';
 import { getStorage } from '../src/storage/db';
+import { useReducedMotion } from '../src/a11y/useReducedMotion';
+import { StoryPanel } from '../src/components/onboarding/StoryPanel';
 
 interface Panel {
   title: string;
@@ -36,10 +39,14 @@ const PANELS: Panel[] = [
   },
 ];
 
+// Total flow = story panel (step 0) + the three mechanics panels (steps 1–3).
+const TOTAL_STEPS = PANELS.length + 1;
+
 export default function Onboarding() {
   const t = useTheme();
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const reducedMotion = useReducedMotion();
   const [step, setStep] = useState(0);
 
   const finish = useCallback(() => {
@@ -53,8 +60,17 @@ export default function Onboarding() {
     router.replace('/');
   }, [router]);
 
-  const panel = PANELS[step]!;
-  const last = step === PANELS.length - 1;
+  // Panel ① — the śabda story (T19a). Owns its own skip/next/dots/CTA.
+  if (step === 0) {
+    return (
+      <View style={{ flex: 1, paddingTop: insets.top + 30, paddingBottom: insets.bottom + 28 }}>
+        <StoryPanel animate={!reducedMotion} onNext={() => setStep(1)} onSkip={finish} />
+      </View>
+    );
+  }
+
+  const panel = PANELS[step - 1]!;
+  const last = step === TOTAL_STEPS - 1;
 
   return (
     <View style={[styles.screen, { backgroundColor: t.colors.ink, paddingTop: insets.top + 40, paddingBottom: insets.bottom + 24 }]}>
@@ -95,9 +111,9 @@ export default function Onboarding() {
       <View
         style={styles.dots}
         accessible
-        accessibilityLabel={`Step ${step + 1} of ${PANELS.length}`}
+        accessibilityLabel={`Step ${step + 1} of ${TOTAL_STEPS}`}
       >
-        {PANELS.map((_, i) => (
+        {Array.from({ length: TOTAL_STEPS }, (_, i) => (
           <View
             key={i}
             importantForAccessibility="no"

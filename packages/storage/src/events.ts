@@ -4,8 +4,9 @@
  * which Phase 2's manual loop never does.
  */
 
-import type { RoundEvent } from '@sabd/contracts';
+import type { CategoryScore, RoundEvent } from '@sabd/contracts';
 import { SEED_RATING } from '@sabd/contracts';
+import { isPointsEraConfig } from '@sabd/elo';
 import type { SqlDriver } from './driver.ts';
 import { eventToParams, rowToEvent, INSERT_EVENT_SQL, type RoundEventRow } from './rows.ts';
 import { getPlayer, updateCache } from './player.ts';
@@ -71,6 +72,47 @@ export function getUnsynced(db: SqlDriver): RoundEvent[] {
     .map(rowToEvent);
 }
 
+export interface RestoreOutcome {
+  restored: number;
+  rating: number;
+}
+
+/**
+ * Reinstall restore (Phase-3 T13/T14): write the server's copy of this install's log
+ * back into the local db, then rebuild the cache by replay. FRESH INSTALLS ONLY —
+ * the caller guards on countRounds(db) === 0; restoring into a live log would fight
+ * the epoch bookkeeping.
+ *
+ * Events land in played order (playedAt, roundId — the server's replay order) so
+ * rowid order matches replay order, and arrive already `synced` (the server holds
+ * them; re-uploading would be noise). If the history contains Elo-era rounds, the
+ * scoring epoch is re-pinned to the last of them — exactly what migration 003 did on
+ * an upgrading device — so only points-era rounds fold, and seenIds keeps the full
+ * history for word exclusion.
+ */
+export function restoreEvents(db: SqlDriver, events: readonly RoundEvent[], syncedAt: number): RestoreOutcome {
+  const ordered = [...events].sort((a, b) => a.playedAt - b.playedAt || (a.roundId < b.roundId ? -1 : 1));
+  const lastPreEpoch = [...ordered].reverse().find((e) => !isPointsEraConfig(e.engineConfigVersion));
+
+  return db.transaction(() => {
+    let restored = 0;
+    for (const e of ordered) {
+      const { changes } = db.run(INSERT_EVENT_SQL, eventToParams({ ...e, syncedAt }));
+      restored += changes;
+    }
+    if (lastPreEpoch !== undefined) {
+      db.run('UPDATE player SET score_epoch_round_id = ?', [lastPreEpoch.roundId]);
+    }
+    const epochRowid = rowidOf(db, lastPreEpoch?.roundId ?? null);
+    const scored = db
+      .all<RoundEventRow>('SELECT * FROM round_event WHERE rowid > ? ORDER BY rowid', [epochRowid])
+      .map(rowToEvent);
+    const outcome = replayEvents(scored, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 });
+    updateCache(db, outcome.rating, outcome.gamesPlayed, outcome.streak, outcome.lastRoundId);
+    return { restored, rating: outcome.rating };
+  });
+}
+
 /** Stamp synced_at after a successful upload. NOT used by the Phase-2 manual loop. */
 export function markSynced(db: SqlDriver, roundIds: string[], syncedAt: number): void {
   db.transaction(() => {
@@ -103,6 +145,8 @@ export interface TopicStats {
    * every other topic. Only rounds after the scoring epoch count.
    */
   rating: number;
+  /** This topic's OWN live streak (from the same per-topic replay). */
+  streak: number;
 }
 
 /** This topic's post-epoch rounds, in replay order. */
@@ -132,8 +176,23 @@ export function topicStats(db: SqlDriver): TopicStats[] {
       rounds: events.length,
       solved: events.filter((e) => e.solved).length,
       rating: outcome.rating,
+      streak: outcome.streak,
     };
   });
+}
+
+/**
+ * The per-category scoring state in the SHARED CONTRACT shape (Phase-3 T3) — what the
+ * sync layer compares against the server's PlayerSnapshot.categories and what the
+ * profile screen (T18) reads. Same replay as topicStats, contract field names.
+ */
+export function categoryScores(db: SqlDriver): CategoryScore[] {
+  return topicStats(db).map(({ topic, rounds, rating, streak }) => ({
+    topic,
+    score: rating,
+    streak,
+    gamesPlayed: rounds,
+  }));
 }
 
 /**

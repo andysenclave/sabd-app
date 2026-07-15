@@ -8,6 +8,7 @@
  */
 
 import type { TopicId } from '@sabd/contracts';
+import { BANK_TOPICS } from '@sabd/contracts';
 
 export interface TopicMeta {
   id: TopicId;
@@ -17,13 +18,15 @@ export interface TopicMeta {
   bankTopic: string;
 }
 
+// bankTopic comes from the contract's canonical mapping (Phase-3 T1: the publisher and
+// the server's per-category replay consume the same one — zero duplicate definitions).
 export const TOPICS: readonly TopicMeta[] = [
-  { id: 'gaming', name: 'GAMING', bankTopic: 'Gaming' },
-  { id: 'space', name: 'SPACE & SCI-FI', bankTopic: 'Space & Sci-Fi' },
-  { id: 'music', name: 'MUSIC', bankTopic: 'Music' },
-  { id: 'internet', name: 'INTERNET & TECH', bankTopic: 'Internet & Tech Culture' },
-  { id: 'food', name: 'FOOD & DRINK', bankTopic: 'Food & Drink' },
-  { id: 'world', name: 'WORLD & PLACES', bankTopic: 'World & Places' },
+  { id: 'gaming', name: 'GAMING', bankTopic: BANK_TOPICS.gaming },
+  { id: 'space', name: 'SPACE & SCI-FI', bankTopic: BANK_TOPICS.space },
+  { id: 'music', name: 'MUSIC', bankTopic: BANK_TOPICS.music },
+  { id: 'internet', name: 'INTERNET & TECH', bankTopic: BANK_TOPICS.internet },
+  { id: 'food', name: 'FOOD & DRINK', bankTopic: BANK_TOPICS.food },
+  { id: 'world', name: 'WORLD & PLACES', bankTopic: BANK_TOPICS.world },
 ];
 
 export function topicById(id: TopicId): TopicMeta {

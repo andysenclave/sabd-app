@@ -9,7 +9,7 @@ import assert from 'node:assert/strict';
 
 import { tierForScore } from '@sabd/elo';
 import { words } from '@sabd/wordbank';
-import { selectWord, resetSessionSeen, availableBankTopics } from '../src/round/selectWord.ts';
+import { selectWord, resetSessionSeen, availableBankTopics, stockedBankTopics } from '../src/round/selectWord.ts';
 
 beforeEach(() => resetSessionSeen());
 
@@ -72,4 +72,11 @@ test('topic filter serves only that topic; unknown topic exhausts gracefully', (
 test('availableBankTopics reflects the bank', () => {
   const topics = availableBankTopics();
   assert.ok(topics.has('Gaming'));
+});
+
+test('stockedBankTopics drops a topic once every word is seen (soft wall, T7)', () => {
+  const gamingIds = words.filter((w) => w.topic === 'Gaming').map((w) => w.id);
+  const stocked = stockedBankTopics(new Set(gamingIds));
+  assert.ok(!stocked.has('Gaming')); // exhausted — the wall should not offer it
+  assert.ok(stocked.has('Music')); // untouched topics remain on offer
 });

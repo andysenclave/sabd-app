@@ -7,13 +7,21 @@
  */
 
 import type {
+  CategoryScore,
   ExportFile,
   GameMode,
   PaidHint,
+  PlayerSnapshot,
   RoundEvent,
   RoundResult,
+  SyncDownResponse,
+  SyncUploadRequest,
+  SyncUploadResponse,
   TopicId,
   WordEntry,
+  WordSlice,
+  WordSliceManifest,
+  WordSliceRef,
   WordTier,
 } from './types.ts';
 
@@ -242,4 +250,226 @@ export function validateExportFile(input: unknown, path = 'export'): ValidationR
   }
 
   return result(c, input as unknown as ExportFile);
+}
+
+// ─── Phase 3: sync payloads (T1) ─────────────────────────────────────────────
+
+/** score/streak/gamesPlayed are all non-negative integers (monotonic points engine). */
+function nonNegativeInteger(c: Checker, v: unknown, path: string): void {
+  if (!c.integer(v, path)) return;
+  if ((v as number) < 0) c.fail(path, `expected >= 0, got ${String(v)}`);
+}
+
+export function validateCategoryScore(
+  input: unknown,
+  path = 'categoryScore',
+): ValidationResult<CategoryScore> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+
+  c.nonEmptyString(input['topic'], `${path}.topic`);
+  nonNegativeInteger(c, input['score'], `${path}.score`);
+  nonNegativeInteger(c, input['streak'], `${path}.streak`);
+  nonNegativeInteger(c, input['gamesPlayed'], `${path}.gamesPlayed`);
+
+  return result(c, input as unknown as CategoryScore);
+}
+
+export function validatePlayerSnapshot(
+  input: unknown,
+  path = 'snapshot',
+): ValidationResult<PlayerSnapshot> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+
+  c.nonEmptyString(input['installId'], `${path}.installId`);
+  c.nonEmptyString(input['engineConfigVersion'], `${path}.engineConfigVersion`);
+  nonNegativeInteger(c, input['totalRounds'], `${path}.totalRounds`);
+  c.number(input['computedAt'], `${path}.computedAt`);
+
+  const global = input['global'];
+  if (c.isObject(global, `${path}.global`)) {
+    nonNegativeInteger(c, global['score'], `${path}.global.score`);
+    nonNegativeInteger(c, global['streak'], `${path}.global.streak`);
+    nonNegativeInteger(c, global['gamesPlayed'], `${path}.global.gamesPlayed`);
+  }
+
+  const categories = input['categories'];
+  if (!Array.isArray(categories)) {
+    c.fail(`${path}.categories`, `expected array, got ${describe(categories)}`);
+  } else {
+    categories.forEach((cat, i) => {
+      const r = validateCategoryScore(cat, `${path}.categories[${i}]`);
+      if (!r.ok) c.errors.push(...r.errors);
+    });
+  }
+
+  return result(c, input as unknown as PlayerSnapshot);
+}
+
+export function validateSyncUploadRequest(
+  input: unknown,
+  path = 'syncUpload',
+): ValidationResult<SyncUploadRequest> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+
+  c.nonEmptyString(input['installId'], `${path}.installId`);
+  c.integer(input['schemaVersion'], `${path}.schemaVersion`);
+
+  const events = input['events'];
+  if (!Array.isArray(events)) {
+    c.fail(`${path}.events`, `expected array, got ${describe(events)}`);
+  } else {
+    events.forEach((e, i) => {
+      const r = validateRoundEvent(e, `${path}.events[${i}]`);
+      if (!r.ok) c.errors.push(...r.errors);
+      // Every event in the batch must belong to the batch's install — a mixed batch
+      // is a client defect, and silently accepting it would misattribute rounds.
+      else if (typeof input['installId'] === 'string' && r.value.installId !== input['installId']) {
+        c.fail(`${path}.events[${i}].installId`, 'does not match batch installId');
+      }
+    });
+  }
+
+  return result(c, input as unknown as SyncUploadRequest);
+}
+
+export function validateSyncUploadResponse(
+  input: unknown,
+  path = 'syncUploadResponse',
+): ValidationResult<SyncUploadResponse> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+
+  for (const key of ['acceptedRoundIds', 'duplicateRoundIds', 'rejectedRoundIds'] as const) {
+    const ids = input[key];
+    if (!Array.isArray(ids)) {
+      c.fail(`${path}.${key}`, `expected array, got ${describe(ids)}`);
+    } else {
+      ids.forEach((id, i) => c.nonEmptyString(id, `${path}.${key}[${i}]`));
+    }
+  }
+
+  const snap = validatePlayerSnapshot(input['snapshot'], `${path}.snapshot`);
+  if (!snap.ok) c.errors.push(...snap.errors);
+
+  return result(c, input as unknown as SyncUploadResponse);
+}
+
+export function validateSyncDownResponse(
+  input: unknown,
+  path = 'syncDown',
+): ValidationResult<SyncDownResponse> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+
+  const snap = validatePlayerSnapshot(input['snapshot'], `${path}.snapshot`);
+  if (!snap.ok) c.errors.push(...snap.errors);
+
+  if (input['events'] !== undefined) {
+    const events = input['events'];
+    if (!Array.isArray(events)) {
+      c.fail(`${path}.events`, `expected array, got ${describe(events)}`);
+    } else {
+      events.forEach((e, i) => {
+        const r = validateRoundEvent(e, `${path}.events[${i}]`);
+        if (!r.ok) c.errors.push(...r.errors);
+      });
+    }
+  }
+
+  return result(c, input as unknown as SyncDownResponse);
+}
+
+// ─── Phase 3: word slices (T2) ───────────────────────────────────────────────
+
+const SHA256_HEX = /^[0-9a-f]{64}$/;
+
+export function validateWordSliceRef(
+  input: unknown,
+  path = 'sliceRef',
+): ValidationResult<WordSliceRef> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+
+  c.oneOf(input['topicId'], TOPIC_IDS, `${path}.topicId`);
+  c.nonEmptyString(input['topic'], `${path}.topic`);
+  c.oneOf(input['tier'], WORD_TIERS, `${path}.tier`);
+  nonNegativeInteger(c, input['sliceVersion'], `${path}.sliceVersion`);
+  c.nonEmptyString(input['url'], `${path}.url`);
+  nonNegativeInteger(c, input['wordCount'], `${path}.wordCount`);
+  nonNegativeInteger(c, input['bytes'], `${path}.bytes`);
+  if (c.nonEmptyString(input['sha256'], `${path}.sha256`) && !SHA256_HEX.test(input['sha256'] as string)) {
+    c.fail(`${path}.sha256`, 'expected 64 lowercase hex chars');
+  }
+
+  return result(c, input as unknown as WordSliceRef);
+}
+
+export function validateWordSliceManifest(
+  input: unknown,
+  path = 'manifest',
+): ValidationResult<WordSliceManifest> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+
+  c.integer(input['schemaVersion'], `${path}.schemaVersion`);
+  c.nonEmptyString(input['wordBankVersion'], `${path}.wordBankVersion`);
+  c.nonEmptyString(input['generatedAt'], `${path}.generatedAt`);
+
+  const slices = input['slices'];
+  if (!Array.isArray(slices)) {
+    c.fail(`${path}.slices`, `expected array, got ${describe(slices)}`);
+  } else {
+    const seen = new Set<string>();
+    slices.forEach((s, i) => {
+      const r = validateWordSliceRef(s, `${path}.slices[${i}]`);
+      if (!r.ok) {
+        c.errors.push(...r.errors);
+        return;
+      }
+      // One slice per (topicId × tier) per manifest — duplicates make the client's
+      // "which version do I hold" question unanswerable.
+      const key = `${r.value.topicId}/${r.value.tier}`;
+      if (seen.has(key)) c.fail(`${path}.slices[${i}]`, `duplicate slice for ${key}`);
+      seen.add(key);
+    });
+  }
+
+  return result(c, input as unknown as WordSliceManifest);
+}
+
+export function validateWordSlice(input: unknown, path = 'slice'): ValidationResult<WordSlice> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+
+  c.integer(input['schemaVersion'], `${path}.schemaVersion`);
+  c.nonEmptyString(input['wordBankVersion'], `${path}.wordBankVersion`);
+  c.oneOf(input['topicId'], TOPIC_IDS, `${path}.topicId`);
+  c.nonEmptyString(input['topic'], `${path}.topic`);
+  c.oneOf(input['tier'], WORD_TIERS, `${path}.tier`);
+  nonNegativeInteger(c, input['sliceVersion'], `${path}.sliceVersion`);
+
+  const words = input['words'];
+  if (!Array.isArray(words)) {
+    c.fail(`${path}.words`, `expected array, got ${describe(words)}`);
+  } else {
+    words.forEach((w, i) => {
+      const r = validateWordEntry(w, `${path}.words[${i}]`);
+      if (!r.ok) {
+        c.errors.push(...r.errors);
+        return;
+      }
+      // Slice coherence: every word must belong to the slice's topic and tier.
+      if (typeof input['topic'] === 'string' && r.value.topic !== input['topic']) {
+        c.fail(`${path}.words[${i}].topic`, `does not match slice topic ${String(input['topic'])}`);
+      }
+      if (typeof input['tier'] === 'string' && r.value.tier !== input['tier']) {
+        c.fail(`${path}.words[${i}].tier`, `does not match slice tier ${String(input['tier'])}`);
+      }
+    });
+  }
+
+  return result(c, input as unknown as WordSlice);
 }

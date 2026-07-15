@@ -22,7 +22,8 @@ import { useTheme } from '../src/theme';
 import { useStorageBoot } from '../src/storage/useStorageBoot';
 import { getStorage } from '../src/storage/db';
 import { useRound, type RoundEndSummary } from '../src/round/useRound';
-import { selectWord } from '../src/round/selectWord';
+import { selectWord, stockedBankTopics } from '../src/round/selectWord';
+import { WORDBANK_MANIFEST_URL } from '../src/bank/config.ts';
 import { TOPICS } from '../src/home/topics';
 import { LetterChips } from '../src/components/round/LetterChips';
 import { RoundGaming } from '../src/components/round/themed/RoundGaming';
@@ -80,7 +81,7 @@ export default function RoundScreen() {
 
   if (!storage.ready || word === null) {
     return word === null && storage.ready ? (
-      <TopicExhausted />
+      <SoftWall topicLabel={topicMeta?.name} />
     ) : (
       <View style={[styles.blank, { backgroundColor: theme.colors.ink }]} />
     );
@@ -94,6 +95,8 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
   const params = useLocalSearchParams<{ topic?: string }>();
 
   const [update, setUpdate] = useState<RatingUpdate | null>(null);
+  // The played category's score after this round (T19: which score moved).
+  const [topicScore, setTopicScore] = useState<number | undefined>(undefined);
   const roundIdRef = useRef(randomUUID());
   const pendingNavAction = useRef<(() => void) | null>(null);
 
@@ -116,12 +119,18 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
             ...(summary.anomaly ? { anomaly: true } : {}),
           });
           setUpdate(outcome.update);
+          setTopicScore(topicRating(getStorage().db, word.topic));
+          const b = outcome.update.breakdown;
           AccessibilityInfo.announceForAccessibility(
             summary.result.solved
-              ? `Solved. Plus ${outcome.update.delta} points, now ${outcome.update.newPlayerRating}. Streak ${outcome.update.streak}.`
+              ? `Solved. Plus ${outcome.update.delta} points: base ${b.tierBase}` +
+                  (b.speedBonus > 0 ? `, speed bonus ${b.speedBonus}` : '') +
+                  (b.hintPenalty < 0 ? `, hints ${b.hintPenalty}` : '') +
+                  (b.streakBonus > 0 ? `, streak bonus ${b.streakBonus}` : '') +
+                  `. Now ${outcome.update.newPlayerRating}. Streak ${outcome.update.streak}.`
               : summary.abandoned
-                ? `Round abandoned. No points. Streak reset.`
-                : `Time's up. The word was ${word.word.toUpperCase()}. No points. Streak reset.`,
+                ? `Round abandoned. Plus zero points. Streak reset.`
+                : `Time's up. The word was ${word.word.toUpperCase()}. Plus zero points. Streak reset.`,
           );
         } catch (err) {
           console.error('round: recordRound failed', err);
@@ -202,6 +211,8 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
             abandoned={round.abandoned}
             update={update}
             initialRating={initialRating}
+            topicScore={topicScore}
+            topicLabel={word.topic.toUpperCase()}
             reducedMotion={round.reducedMotion}
             onNext={() =>
               router.replace({
@@ -217,22 +228,83 @@ function ActiveRound({ word, initialRating }: Readonly<{ word: WordEntry; initia
   );
 }
 
-function TopicExhausted() {
+/**
+ * The soft wall (T7) — the player out-climbed this topic's words on this phone.
+ * Framed as an ACHIEVEMENT (they beat the stack), never a dead end: offers the
+ * still-stocked topics as immediate next moves, plus Home. FUNCTIONAL version;
+ * this is Phase 3's highest-craft state and is logged to the design pile (FB-005)
+ * for the real moment. The reconnect line appears only once online word delivery
+ * exists (WORDBANK_MANIFEST_URL configured).
+ */
+function SoftWall({ topicLabel }: Readonly<{ topicLabel?: string }>) {
   const t = useTheme();
   const router = useRouter();
+
+  // Which topics still hold unseen words for this install?
+  let stocked: ReadonlySet<string> = new Set<string>();
+  if (Platform.OS !== 'web') {
+    try {
+      stocked = stockedBankTopics(playedWordIds(getStorage().db));
+    } catch (err) {
+      console.error('soft wall: stocked lookup failed', err);
+    }
+  }
+  const alternatives = TOPICS.filter((m) => stocked.has(m.bankTopic)).slice(0, 3);
+
   return (
     <View style={[styles.blank, { backgroundColor: t.colors.ink, justifyContent: 'center' }]}>
       <Text
         style={{
+          fontFamily: t.font.displayHeavy,
+          fontSize: 26,
+          letterSpacing: 1,
+          color: t.colors.kesar,
+          textAlign: 'center',
+          paddingHorizontal: 32,
+        }}
+      >
+        YOU’VE OUTRUN YOUR WORDS
+      </Text>
+      <Text
+        style={{
           fontFamily: t.font.body,
           fontSize: 15,
+          lineHeight: 22,
           color: t.colors.paperDim,
           textAlign: 'center',
           paddingHorizontal: 44,
         }}
       >
-        You’ve played every word here — another topic awaits.
+        {topicLabel
+          ? `Every ${topicLabel} word on this phone — solved or faced. That's the whole stack, beaten.`
+          : 'Every word on this phone — solved or faced. That’s the whole stack, beaten.'}
+        {WORDBANK_MANIFEST_URL !== null ? ' Fresh words arrive next time you’re online.' : ''}
       </Text>
+
+      {alternatives.length > 0 && (
+        <View style={{ gap: 10, alignItems: 'center' }}>
+          <Text style={{ fontFamily: t.font.mono, fontSize: 11, letterSpacing: 2, color: t.colors.paperDim }}>
+            STILL STOCKED
+          </Text>
+          {alternatives.map((m) => {
+            const a = acc(themedHues[m.id]);
+            return (
+              <Pressable
+                key={m.id}
+                accessibilityRole="button"
+                accessibilityLabel={`Play ${m.name}`}
+                onPress={() => router.replace({ pathname: '/round', params: { topic: m.id } })}
+                style={[styles.cta, { borderWidth: 1, borderColor: a.main, minWidth: 220 }]}
+              >
+                <Text style={{ fontFamily: t.font.brand, fontSize: 15, letterSpacing: 1, color: a.bright }}>
+                  {m.name}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      )}
+
       <Pressable accessibilityRole="button" onPress={() => router.dismissTo('/')} style={[styles.cta, { alignSelf: 'center' }]}>
         <Text style={{ fontFamily: t.font.brand, fontSize: 16, color: t.colors.paperDim }}>HOME</Text>
       </Pressable>

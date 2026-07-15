@@ -13,6 +13,7 @@ import type { RatingUpdate, TopicId } from '@sabd/contracts';
 
 import { useTheme } from '../../../theme';
 import { themedHues, acc } from '../../../theme/themed/themedTokens.ts';
+import { breakdownLine } from '../../../round/breakdown.ts';
 import { Odometer } from '../../result/Odometer';
 
 export interface ThemedEndBeatProps {
@@ -24,10 +25,15 @@ export interface ThemedEndBeatProps {
   abandoned: boolean;
   update: RatingUpdate | null;
   initialRating: number;
+  /** The played category's score AFTER this round (T19: which score moved). */
+  topicScore?: number;
+  /** Display label for the category line (e.g. "GAMING"). */
+  topicLabel?: string;
   reducedMotion: boolean;
   onNext: () => void;
   onHome: () => void;
 }
+
 
 export const ThemedEndBeat = memo(function ThemedEndBeat({
   topic,
@@ -36,6 +42,8 @@ export const ThemedEndBeat = memo(function ThemedEndBeat({
   abandoned,
   update,
   initialRating,
+  topicScore,
+  topicLabel,
   reducedMotion,
   onNext,
   onHome,
@@ -72,7 +80,8 @@ export const ThemedEndBeat = memo(function ThemedEndBeat({
               {update.newPlayerRating}
             </Text>
           )}
-          {/* Points only ever climb: on a solve show the gain, on a miss show nothing lost. */}
+          {/* Points only ever climb: on a solve show the gain, on a miss an honest +0 —
+              the score didn't fall, it just didn't rise (no punishment framing). */}
           <Text
             style={{
               fontFamily: t.font.mono,
@@ -81,11 +90,33 @@ export const ThemedEndBeat = memo(function ThemedEndBeat({
               marginTop: 2,
             }}
           >
-            {solved ? `+${delta}` : 'no points'}
+            {solved ? `+${delta}` : '+0 · streak reset'}
           </Text>
+          {/* T19: WHY it paid what it paid — every non-zero breakdown component. */}
+          {solved && (
+            <Text
+              style={{ fontFamily: t.font.mono, fontSize: 11, letterSpacing: 0.5, color: t.colors.paperDim, marginTop: 4 }}
+            >
+              {breakdownLine(update)}
+            </Text>
+          )}
           {solved && update.streak >= 2 && (
             <Text style={{ fontFamily: t.font.mono, fontSize: 12, letterSpacing: 1, color: a.main, marginTop: 4 }}>
               {`STREAK ${update.streak}`}
+            </Text>
+          )}
+          {/* T19: which category score moved (per-topic fold, independent of global). */}
+          {topicScore !== undefined && topicLabel !== undefined && (
+            <Text
+              style={{
+                fontFamily: t.font.mono,
+                fontSize: 11,
+                letterSpacing: 1,
+                color: solved ? a.main : t.colors.paperDim,
+                marginTop: 6,
+              }}
+            >
+              {`${topicLabel} ${topicScore}`}
             </Text>
           )}
         </View>

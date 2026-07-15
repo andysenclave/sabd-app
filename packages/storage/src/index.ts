@@ -10,14 +10,17 @@ export { MIGRATIONS, getSchemaVersion, runMigrations, type Migration } from './m
 export { getPlayer, seedPlayer, updateCache, type PlayerState } from './player.ts';
 export {
   appendRound,
+  categoryScores,
   countRounds,
   getRoundsAfter,
   getUnsynced,
   markSynced,
   playedWordIds,
+  restoreEvents,
   topicStats,
   topicRating,
   type AppendResult,
+  type RestoreOutcome,
   type TopicStats,
 } from './events.ts';
 export {

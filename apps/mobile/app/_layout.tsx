@@ -8,6 +8,7 @@ import { colors } from '@sabd/tokens';
 
 import { ThemeProvider } from '../src/theme';
 import { useAppFonts } from '../src/theme/fonts';
+import { useBankBoot } from '../src/bank/useBankBoot';
 
 // Hold the native splash until the brand fonts are ready (avoids a fallback-font flash).
 // The split-flap logo intro (T21) plays after this, at the launch moment only.
@@ -15,6 +16,9 @@ void SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [fontsLoaded, fontError] = useAppFonts();
+  // Load downloaded word slices from disk + background-refresh from the CDN (T10).
+  // Fire-and-forget: play never waits on this.
+  useBankBoot();
 
   useEffect(() => {
     if (fontsLoaded || fontError) void SplashScreen.hideAsync();

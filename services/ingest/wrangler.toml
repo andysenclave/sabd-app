@@ -1,0 +1,14 @@
+# Sabd ingest — Cloudflare Worker config (T11). Deploy once the owner account exists:
+#   1. npx wrangler d1 create sabd-ingest          → paste database_id below
+#   2. npx wrangler d1 execute sabd-ingest --file=schema.sql --remote
+#   3. npx wrangler deploy
+# Free tier: 100k req/day + 5 GB D1 — orders of magnitude above playtest load.
+
+name = "sabd-ingest"
+main = "src/worker.ts"
+compatibility_date = "2026-07-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sabd-ingest"
+database_id = "REPLACE-AFTER-D1-CREATE"

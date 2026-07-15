@@ -17,7 +17,9 @@
 
 import type { WordEntry, WordTier } from '@sabd/contracts';
 import { tierForScore } from '@sabd/elo';
-import { words } from '@sabd/wordbank';
+// The LIVE bank (T10): bundled words with downloaded slices layered per (topic × tier).
+// Offline/fresh installs see exactly the bundled bank.
+import { bankWords, bankTopics } from '../bank/liveBank.ts';
 
 /**
  * When the target tier is exhausted (all its words seen), spill to the nearest tier —
@@ -49,7 +51,7 @@ export function selectWord({
   exclude,
   rng = Math.random,
 }: SelectWordOptions): WordEntry | null {
-  const pool = words.filter(
+  const pool = bankWords().filter(
     (w) =>
       (topic === undefined || w.topic === topic) &&
       !sessionSeen.has(w.id) &&
@@ -75,7 +77,19 @@ export function selectWord({
 
 /** Bank topics that actually have words (drives which Home cards are playable). */
 export function availableBankTopics(): ReadonlySet<string> {
-  return new Set(words.map((w) => w.topic));
+  return bankTopics();
+}
+
+/**
+ * Topics that still hold at least one UNSEEN word for this install (soft wall, T7).
+ * When a topic exhausts, these are the "still stocked" alternatives the wall offers.
+ */
+export function stockedBankTopics(exclude?: ReadonlySet<string>): ReadonlySet<string> {
+  const out = new Set<string>();
+  for (const w of bankWords()) {
+    if (!sessionSeen.has(w.id) && !(exclude?.has(w.id) ?? false)) out.add(w.topic);
+  }
+  return out;
 }
 
 /** For tests/debug. */

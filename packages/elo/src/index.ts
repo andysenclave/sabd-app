@@ -8,7 +8,7 @@
  * monotonic points model (see points.ts), not Elo. Renaming the package is deferred.
  */
 
-export { defaultConfig, ENGINE_CONFIG_VERSION, type PointsConfig } from './config.ts';
+export { defaultConfig, ENGINE_CONFIG_VERSION, isPointsEraConfig, type PointsConfig } from './config.ts';
 
 export type {
   GameMode,

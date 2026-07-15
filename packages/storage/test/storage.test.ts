@@ -9,8 +9,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { randomUUID } from 'node:crypto';
 
-import { SEED_RATING, validateExportFile, validateRoundEvent } from '@sabd/contracts';
+import { SEED_RATING, validateCategoryScore, validateExportFile, validateRoundEvent } from '@sabd/contracts';
 import {
+  categoryScores,
   MIGRATIONS,
   getSchemaVersion,
   runMigrations,
@@ -18,6 +19,7 @@ import {
   getPlayer,
   updateCache,
   recordRound,
+  restoreEvents,
   countRounds,
   getRoundsAfter,
   getUnsynced,
@@ -312,12 +314,79 @@ test('topicStats aggregates per topic, each with its OWN score + streak replayed
   assert.notEqual(stats.get('Gaming')?.rating, getPlayer(db)!.cachedRating);
 });
 
+test('topicStats carries each topic\'s OWN live streak (survives another topic\'s miss)', () => {
+  const db = freshDb();
+  recordRound(db, roundInput({ solved: true, word: { id: 'GAM-1', difficulty: 1200, topic: 'Gaming' } }));
+  recordRound(db, roundInput({ solved: false, word: { id: 'MUS-1', difficulty: 1100, topic: 'Music' } }));
+  recordRound(db, roundInput({ solved: true, word: { id: 'GAM-2', difficulty: 1300, topic: 'Gaming' } }));
+
+  const stats = new Map(topicStats(db).map((s) => [s.topic, s]));
+  // The Music miss broke the GLOBAL streak but not Gaming's own counter.
+  assert.equal(stats.get('Gaming')?.streak, 2);
+  assert.equal(stats.get('Music')?.streak, 0);
+  assert.equal(getPlayer(db)!.cachedStreak, 1); // global: reset by the miss, then one solve
+});
+
+test('categoryScores returns the shared-contract CategoryScore shape (T3, sync payload)', () => {
+  const db = freshDb();
+  recordRound(db, roundInput({ solved: true, word: { id: 'GAM-1', difficulty: 1200, topic: 'Gaming' } }));
+  recordRound(db, roundInput({ solved: false, word: { id: 'GAM-2', difficulty: 1300, topic: 'Gaming' } }));
+
+  const scores = categoryScores(db);
+  assert.equal(scores.length, 1);
+  const gaming = scores[0]!;
+  // Contract-valid, field for field — this is what sync compares to the server snapshot.
+  assert.equal(validateCategoryScore(gaming).ok, true);
+  assert.equal(gaming.topic, 'Gaming');
+  assert.equal(gaming.gamesPlayed, 2);
+  assert.equal(gaming.streak, 0); // the miss reset it
+  assert.equal(gaming.score, topicRating(db, 'Gaming'));
+});
+
 test('topicRating returns a single topic score, from 0, post-epoch only', () => {
   const db = freshDb();
   assert.equal(topicRating(db, 'Gaming'), SEED_RATING); // never played → 0
   recordRound(db, roundInput({ solved: true, word: { id: 'GAM-1', difficulty: 1000, topic: 'Gaming' } }));
   assert.ok(topicRating(db, 'Gaming') > 0);
   assert.equal(topicRating(db, 'Music'), SEED_RATING); // other topic untouched
+});
+
+// ─── Restore (Phase-3 T13/T14) ───────────────────────────────────────────────
+
+test('restoreEvents with Elo-era history re-pins the epoch: full seenIds, points-era-only score', () => {
+  // Source device: mixed history (as a long-time tester's server log would be).
+  const src = freshDb();
+  playRounds(src, 4);
+  const all = getRoundsAfter(src, null);
+  // Rewrite the first two as Elo-era rounds (engine 1.0.0) — pre-reset history.
+  const eloEra = all.slice(0, 2).map((e) => ({ ...e, engineConfigVersion: '1.0.0' }));
+  const pointsEra = all.slice(2);
+
+  const dst = freshDb();
+  const outcome = restoreEvents(dst, [...pointsEra, ...eloEra], 1_800_000_000_000); // out of order too
+
+  assert.equal(outcome.restored, 4);
+  assert.equal(countRounds(dst), 4); // full history on disk (export/seenIds)
+  assert.equal(playedWordIds(dst).size, 4);
+  // …but only the points-era rounds fold into the score.
+  const expected = replayEvents(pointsEra, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 }).rating;
+  assert.equal(getPlayer(dst)!.cachedRating, expected);
+  assert.equal(getPlayer(dst)!.scoreEpochRoundId, eloEra[1]!.roundId);
+  // fullReplay agrees (epoch respected) — the cache survives a deep verify.
+  assert.equal(fullReplay(dst, silent).healed, false);
+});
+
+test('restoreEvents is idempotent (re-restore changes nothing)', () => {
+  const src = freshDb();
+  playRounds(src, 3);
+  const events = getRoundsAfter(src, null);
+
+  const dst = freshDb();
+  restoreEvents(dst, events, 1_800_000_000_000);
+  const rating = getPlayer(dst)!.cachedRating;
+  const again = restoreEvents(dst, events, 1_800_000_000_001);
+  assert.equal(again.restored, 0);
+  assert.equal(getPlayer(dst)!.cachedRating, rating);
 });
 
 // ─── Settings kv (migration 002) ─────────────────────────────────────────────

@@ -10,6 +10,7 @@ import { memo, useCallback } from 'react';
 import { View, Text, Pressable, StyleSheet, type GestureResponderEvent } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import type { PaidHint } from '@sabd/contracts';
+import { colors } from '@sabd/tokens';
 
 import { gameConfig } from '../../../round/config.ts';
 import type { KeyValue } from '../../../round/types.ts';
@@ -140,10 +141,13 @@ interface KeyRow {
   pad: number;
 }
 
+// FB-002 (Phase-3 design, 2026-07-15): Backspace LEFT, Enter RIGHT — swapped from
+// the Phase-2 layout. Enter is always the fixed `confirm` green (a semantic token,
+// never the topic accent); identity rests on position + label, not color alone.
 const ROWS: KeyRow[] = [
   { keys: ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'], pad: 0 },
   { keys: ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'], pad: 18 },
-  { keys: ['ENTER', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'BACKSPACE'], pad: 0 },
+  { keys: ['BACKSPACE', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'ENTER'], pad: 0 },
 ];
 
 const KEY_LABEL: Partial<Record<KeyValue, string>> = { ENTER: '⏎', BACKSPACE: '⌫' };
@@ -185,11 +189,12 @@ export const ThemedKeyboard = memo(function ThemedKeyboard({
         <View key={i} style={[styles.keyRow, { paddingHorizontal: row.pad }]}>
           {row.keys.map((k) => {
             const special = isSpecialKey(k);
+            const isEnter = k === 'ENTER';
             return (
               <Pressable
                 key={k}
                 accessibilityRole="button"
-                accessibilityLabel={k === 'ENTER' ? 'Enter' : k === 'BACKSPACE' ? 'Backspace' : k}
+                accessibilityLabel={isEnter ? 'Submit guess' : k === 'BACKSPACE' ? 'Delete letter' : k}
                 accessibilityState={{ disabled }}
                 disabled={disabled}
                 onPress={(_e: GestureResponderEvent) => press(k)}
@@ -197,17 +202,25 @@ export const ThemedKeyboard = memo(function ThemedKeyboard({
                 style={({ pressed }) => [
                   styles.key,
                   {
-                    backgroundColor: keyBg,
+                    backgroundColor: isEnter ? colors.confirm : keyBg,
                     borderColor: keyBorder,
-                    borderWidth: keyBorder ? 1 : 0,
+                    borderWidth: keyBorder && !isEnter ? 1 : 0,
                     borderRadius: radius,
                     flexGrow: special ? 1.4 : 1,
                     flexBasis: 0,
                   },
+                  // Retro-style inset bottom edge on the confirm key (physical depth).
+                  isEnter && { borderBottomWidth: 3, borderBottomColor: colors.confirmEdge },
                   pressed && !disabled && styles.keyPressed,
                 ]}
               >
-                <Text style={{ fontFamily: fontFamily.mono, fontSize: 13, color: special ? dim : text }}>
+                <Text
+                  style={{
+                    fontFamily: isEnter ? fontFamily.monoBold : fontFamily.mono,
+                    fontSize: special ? 16 : 13,
+                    color: isEnter ? colors.ink : special ? dim : text,
+                  }}
+                >
                   {KEY_LABEL[k] ?? k}
                 </Text>
               </Pressable>
