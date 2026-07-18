@@ -8,7 +8,19 @@
  * monotonic points model (see points.ts), not Elo. Renaming the package is deferred.
  */
 
-export { defaultConfig, ENGINE_CONFIG_VERSION, isPointsEraConfig, type PointsConfig } from './config.ts';
+export {
+  CONFIGS,
+  CONFIG_2_0_0,
+  CONFIG_3_0_0,
+  configForVersion,
+  defaultConfig,
+  ENGINE_CONFIG_VERSION,
+  isPointsEraConfig,
+  requireConfig,
+  UnknownConfigVersionError,
+  type PointsConfig,
+  type TierBand,
+} from './config.ts';
 
 export type {
   GameMode,
@@ -21,7 +33,15 @@ export type {
 } from './types.ts';
 
 export {
+  LEGACY_SCALE,
+  UNIFIED_SCALE,
+  rescaleLegacyDifficulty,
+} from './rescale.ts';
+
+export {
   applyPoints,
+  bandForDifficulty,
+  bandForScore,
   countPaidHints,
   tierForDifficulty,
   tierForScore,
