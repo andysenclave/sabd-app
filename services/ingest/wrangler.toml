@@ -11,4 +11,4 @@ compatibility_date = "2026-07-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "sabd-ingest"
-database_id = "REPLACE-AFTER-D1-CREATE"
+database_id = "6e328f80-2bf0-4e13-81f1-3f487ff5cb4e"
