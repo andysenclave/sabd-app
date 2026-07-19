@@ -1,0 +1,1105 @@
+{
+  "input": "data/raw/unified/FUD-u1.json",
+  "scale": "unified",
+  "generatedAt": "2026-07-19T09:37:27.894Z",
+  "apiFallback": "enabled",
+  "totals": {
+    "entries": 150,
+    "passed": 150,
+    "rejected": 0,
+    "review": 0
+  },
+  "tierSplit": {
+    "expected": {
+      "veryEasy": 45,
+      "easy": 45,
+      "medium": 40,
+      "hard": 20
+    },
+    "actual": {
+      "veryEasy": 45,
+      "easy": 45,
+      "medium": 40,
+      "hard": 20
+    },
+    "ok": true
+  },
+  "failuresByRule": {},
+  "entries": [
+    {
+      "id": "FUD-9001",
+      "word": "WATER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9002",
+      "word": "APPLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9003",
+      "word": "SOUP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9004",
+      "word": "FISH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9005",
+      "word": "CHEESE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9006",
+      "word": "CUP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9007",
+      "word": "SPOON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9008",
+      "word": "PLATE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9009",
+      "word": "BOWL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9010",
+      "word": "FORK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9011",
+      "word": "ICE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9012",
+      "word": "JAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9013",
+      "word": "PIE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9014",
+      "word": "CORN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9015",
+      "word": "SODA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9016",
+      "word": "CANDY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9017",
+      "word": "MEAT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9018",
+      "word": "FRUIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9019",
+      "word": "GRAPE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9020",
+      "word": "WINE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9021",
+      "word": "BEER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9022",
+      "word": "COOKIE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9023",
+      "word": "BURGER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9024",
+      "word": "FRIES",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9025",
+      "word": "CHIPS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9026",
+      "word": "OVEN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9027",
+      "word": "LUNCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9028",
+      "word": "DINNER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9029",
+      "word": "SNACK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9030",
+      "word": "POTATO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9031",
+      "word": "TOMATO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9032",
+      "word": "ORANGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9033",
+      "word": "CARROT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9034",
+      "word": "CREAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9035",
+      "word": "SALAD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9036",
+      "word": "PASTA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9037",
+      "word": "GARLIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9038",
+      "word": "GINGER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9039",
+      "word": "PEPPER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9040",
+      "word": "BACON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9041",
+      "word": "STEAK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9042",
+      "word": "DONUT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9043",
+      "word": "MUFFIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9044",
+      "word": "PEANUT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9045",
+      "word": "GRAVY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9046",
+      "word": "ROTI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9047",
+      "word": "SPICE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9048",
+      "word": "FLOUR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9049",
+      "word": "SAUCE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9050",
+      "word": "FRY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9051",
+      "word": "BAKE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9052",
+      "word": "BOIL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9053",
+      "word": "STEAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9054",
+      "word": "ROAST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9055",
+      "word": "GRILL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9056",
+      "word": "STEW",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9057",
+      "word": "DOUGH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9058",
+      "word": "BATTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9059",
+      "word": "YEAST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9060",
+      "word": "KETCHUP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9061",
+      "word": "MAYO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9062",
+      "word": "SYRUP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9063",
+      "word": "MUSTARD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9064",
+      "word": "VINEGAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9065",
+      "word": "OLIVE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9066",
+      "word": "ALMOND",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9067",
+      "word": "CASHEW",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9068",
+      "word": "RAISIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9069",
+      "word": "COCONUT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9070",
+      "word": "PAPAYA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9071",
+      "word": "GUAVA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9072",
+      "word": "SPINACH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9073",
+      "word": "CABBAGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9074",
+      "word": "PUMPKIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9075",
+      "word": "LENTIL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9076",
+      "word": "PANCAKE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9077",
+      "word": "WAFFLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9078",
+      "word": "TACO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9079",
+      "word": "SUSHI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9080",
+      "word": "RAMEN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9081",
+      "word": "PRETZEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9082",
+      "word": "IDLI",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "FUD-9083",
+      "word": "MASALA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9084",
+      "word": "TIKKA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9085",
+      "word": "KEBAB",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9086",
+      "word": "PAKORA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9087",
+      "word": "RAITA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9088",
+      "word": "KORMA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9089",
+      "word": "PULAO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9090",
+      "word": "HALWA",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "FUD-9091",
+      "word": "CLOVE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9092",
+      "word": "BASIL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9093",
+      "word": "THYME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9094",
+      "word": "FENNEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9095",
+      "word": "TURMERIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9096",
+      "word": "CARDAMOM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9097",
+      "word": "OREGANO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9098",
+      "word": "PARSLEY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9099",
+      "word": "CILANTRO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9100",
+      "word": "SESAME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9101",
+      "word": "SALAMI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9102",
+      "word": "WHISK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9103",
+      "word": "LADLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9104",
+      "word": "SPATULA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9105",
+      "word": "SKILLET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9106",
+      "word": "GRIDDLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9107",
+      "word": "COLANDER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9108",
+      "word": "SAUTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9109",
+      "word": "POACH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9110",
+      "word": "BRAISE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9111",
+      "word": "FILLET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9112",
+      "word": "SIRLOIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9113",
+      "word": "BRISKET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9114",
+      "word": "CHORIZO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9115",
+      "word": "HUMMUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9116",
+      "word": "TAHINI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9117",
+      "word": "QUINOA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9118",
+      "word": "COUSCOUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9119",
+      "word": "LASAGNA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9120",
+      "word": "GNOCCHI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9121",
+      "word": "PAELLA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9122",
+      "word": "TEMPURA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9123",
+      "word": "MISO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9124",
+      "word": "KIMCHI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9125",
+      "word": "SRIRACHA",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "FUD-9126",
+      "word": "CUSTARD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9127",
+      "word": "MERINGUE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9128",
+      "word": "PARFAIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9129",
+      "word": "BRIOCHE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9130",
+      "word": "TRUFFLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9131",
+      "word": "FRITTATA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9132",
+      "word": "ORZO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9133",
+      "word": "MARZIPAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9134",
+      "word": "PRALINE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9135",
+      "word": "GALETTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9136",
+      "word": "CEVICHE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9137",
+      "word": "GAZPACHO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9138",
+      "word": "MOUSSAKA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9139",
+      "word": "KOMBUCHA",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "FUD-9140",
+      "word": "FARRO",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "FUD-9141",
+      "word": "SEITAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9142",
+      "word": "DAIKON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9143",
+      "word": "ENDIVE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9144",
+      "word": "SUMAC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9145",
+      "word": "HARISSA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9146",
+      "word": "CONFIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9147",
+      "word": "TARTARE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9148",
+      "word": "RENNET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9149",
+      "word": "VELOUTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "FUD-9150",
+      "word": "MIREPOIX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    }
+  ]
+}

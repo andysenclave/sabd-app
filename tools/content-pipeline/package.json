@@ -8,9 +8,13 @@
     "validate": "node src/validate.js data/raw/GAM-batch1.json",
     "validate:offline": "node src/validate.js data/raw/GAM-batch1.json --no-api",
     "merge": "node src/merge.js",
-    "build-bank": "node src/publish.js"
+    "merge:unified": "node src/merge.js --scale=unified",
+    "migrate-legacy": "node src/migrate-legacy.js",
+    "build-bank": "node src/publish.js",
+    "build-bank:unified": "node src/publish.js --scale=unified"
   },
   "devDependencies": {
+    "@sabd/elo": "workspace:*",
     "word-list": "^4.0.0"
   }
 }

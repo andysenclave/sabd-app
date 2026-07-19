@@ -29,6 +29,26 @@ export type GameMode = 'solo' | '1v1';
 export type WordTier = 'low' | 'mid' | 'high';
 
 /**
+ * Phase 4 (PART A §2): the four-tier vocabulary of the UNIFIED difficulty scale
+ * (0–500, same units as the player score — engine config `3.0.0`). Bands:
+ * veryEasy 0–50, easy 51–150, medium 151–350, hard 351+. The legacy trio above
+ * stays the vocabulary of the Elo-era scale (config `2.0.0`) — code paths bound to
+ * the ACTIVE config (selection, slices, calibration) keep using `WordTier` until
+ * the gated 3.0.0 flip (edge-case F7).
+ */
+export type UnifiedTier = 'veryEasy' | 'easy' | 'medium' | 'hard';
+
+/** Either scale's tier vocabulary — what a bank entry may carry (see `BankScale`). */
+export type BankTier = WordTier | UnifiedTier;
+
+/**
+ * Which number system a bank's difficulties live in (edge-case F5: a bank/slice is
+ * self-describing so a cached file can never be mis-banded). `elo-legacy` = 800–2200,
+ * three tiers; `unified` = 0–500, four tiers. Mirrors `PointsConfig['scale']`.
+ */
+export type BankScale = 'elo-legacy' | 'unified';
+
+/**
  * The six canonical topics (token/Home identity keys, lowercase).
  * Note: `WordEntry.topic` is a display string (e.g. "Gaming") and stays `string` by
  * contract; `TopicId` is the identity key used by tokens and the Home grid.
@@ -41,9 +61,13 @@ export interface WordEntry {
   word: string;
   topic: string;
   length: number;
-  /** The word's rating ("puzzle rating"). */
+  /**
+   * The word's rating ("puzzle rating"). Which scale it lives on is declared by the
+   * bank/slice that carries the entry (`BankScale`), never guessed per-entry.
+   */
   difficulty: number;
-  tier: WordTier;
+  /** Legacy trio on an `elo-legacy` bank; unified four on a `unified` bank. */
+  tier: BankTier;
   description: string;
   hints: {
     /** `index` is 0-based — slot 0 is the first slot. */

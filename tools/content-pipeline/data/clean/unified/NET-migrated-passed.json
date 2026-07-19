@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "NET-0001",
+    "word": "EMAIL",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 4,
+    "tier": "veryEasy",
+    "description": "Digital letters delivered faster than any postman",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "NET-0002",
+    "word": "APP",
+    "topic": "Internet & Tech Culture",
+    "length": 3,
+    "difficulty": 8,
+    "tier": "veryEasy",
+    "description": "A tiny icon promising to fix your life",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0003",
+    "word": "CLICK",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 11,
+    "tier": "veryEasy",
+    "description": "The tiny sound right before something happens onscreen",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0004",
+    "word": "MEME",
+    "topic": "Internet & Tech Culture",
+    "length": 4,
+    "difficulty": 15,
+    "tier": "veryEasy",
+    "description": "An inside joke the whole planet shares",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0005",
+    "word": "LINK",
+    "topic": "Internet & Tech Culture",
+    "length": 4,
+    "difficulty": 17,
+    "tier": "veryEasy",
+    "description": "Blue underlined text daring you to travel",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0006",
+    "word": "SPAM",
+    "topic": "Internet & Tech Culture",
+    "length": 4,
+    "difficulty": 21,
+    "tier": "veryEasy",
+    "description": "The junk mail nobody ordered but everyone gets",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0007",
+    "word": "WIFI",
+    "topic": "Internet & Tech Culture",
+    "length": 4,
+    "difficulty": 26,
+    "tier": "veryEasy",
+    "description": "Invisible waves your whole house begs for",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0008",
+    "word": "TWEET",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 32,
+    "tier": "veryEasy",
+    "description": "A whole opinion squeezed into 280 characters",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "W"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0009",
+    "word": "BLOG",
+    "topic": "Internet & Tech Culture",
+    "length": 4,
+    "difficulty": 38,
+    "tier": "veryEasy",
+    "description": "One stranger's diary, published for everyone",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0010",
+    "word": "ONLINE",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 43,
+    "tier": "veryEasy",
+    "description": "Green dot glowing, present but not really here",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0011",
+    "word": "EMOJI",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 49,
+    "tier": "veryEasy",
+    "description": "Tiny yellow faces doing your feelings' heavy lifting",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "J"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0012",
+    "word": "SEARCH",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 54,
+    "tier": "easy",
+    "description": "Type a question, a billion answers appear",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0013",
+    "word": "VIRAL",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 60,
+    "tier": "easy",
+    "description": "When millions catch it overnight, no doctor needed",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0014",
+    "word": "LAPTOP",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 66,
+    "tier": "easy",
+    "description": "A whole office folded shut under one arm",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0015",
+    "word": "SCROLL",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 71,
+    "tier": "easy",
+    "description": "Thumbs flicking through a feed that never ends",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0016",
+    "word": "UPLOAD",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 79,
+    "tier": "easy",
+    "description": "Sending your files off to live somewhere else",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0017",
+    "word": "INBOX",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 84,
+    "tier": "easy",
+    "description": "Where messages pile up and guilt lives",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "X",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0018",
+    "word": "PASSWORD",
+    "topic": "Internet & Tech Culture",
+    "length": 8,
+    "difficulty": 90,
+    "tier": "easy",
+    "description": "The secret handshake you always forget",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "W"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0019",
+    "word": "STREAM",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 99,
+    "tier": "easy",
+    "description": "Shows flowing straight to your screen, no discs required",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "NET-0020",
+    "word": "CURSOR",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 111,
+    "tier": "easy",
+    "description": "The little arrow that follows your hand everywhere",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0021",
+    "word": "WEBCAM",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 120,
+    "tier": "easy",
+    "description": "The tiny eye you tape over just in case",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "NET-0022",
+    "word": "SELFIE",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 128,
+    "tier": "easy",
+    "description": "Arm outstretched, best angle found, take fifty more",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0023",
+    "word": "TROLL",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 139,
+    "tier": "easy",
+    "description": "Stirring the comments just to watch them boil",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0024",
+    "word": "GIF",
+    "topic": "Internet & Tech Culture",
+    "length": 3,
+    "difficulty": 148,
+    "tier": "easy",
+    "description": "A three-second clip looping until the end of time",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0025",
+    "word": "BROWSER",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 155,
+    "tier": "medium",
+    "description": "Forty tabs open, one of them playing music",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "W"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0026",
+    "word": "CLOUD",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 165,
+    "tier": "medium",
+    "description": "Your files floating in someone else's computer",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0027",
+    "word": "PODCAST",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 178,
+    "tier": "medium",
+    "description": "Two friends, some microphones, and your whole commute",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0028",
+    "word": "HACKER",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 183,
+    "tier": "medium",
+    "description": "Hoodie, green text, three keyboards, Hollywood insists",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0029",
+    "word": "HASHTAG",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 193,
+    "tier": "medium",
+    "description": "The pound sign that learned to organize crowds",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0030",
+    "word": "ROUTER",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 198,
+    "tier": "medium",
+    "description": "The blinking box you restart when everything breaks",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0031",
+    "word": "COOKIE",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 208,
+    "tier": "medium",
+    "description": "A tiny crumb websites leave to remember you",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0032",
+    "word": "FORUM",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 218,
+    "tier": "medium",
+    "description": "Ancient threads where strangers argued before social media",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0033",
+    "word": "FIREWALL",
+    "topic": "Internet & Tech Culture",
+    "length": 8,
+    "difficulty": 223,
+    "tier": "medium",
+    "description": "The bouncer checking every packet at the door",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "W"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0034",
+    "word": "SERVER",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 233,
+    "tier": "medium",
+    "description": "Humming racks that never sleep so websites don't",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "V"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0035",
+    "word": "TRENDING",
+    "topic": "Internet & Tech Culture",
+    "length": 8,
+    "difficulty": 238,
+    "tier": "medium",
+    "description": "What everyone suddenly argues about today, forgotten tomorrow",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0036",
+    "word": "MODEM",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 243,
+    "tier": "medium",
+    "description": "The box that screamed before the web loaded",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "NET-0037",
+    "word": "MALWARE",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 253,
+    "tier": "medium",
+    "description": "The nasty stowaway inside that free screensaver",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "W"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0038",
+    "word": "THREAD",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 258,
+    "tier": "medium",
+    "description": "One reply after another, spiraling on for days",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "NET-0039",
+    "word": "STARTUP",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 268,
+    "tier": "medium",
+    "description": "Three founders, one garage, billion-dollar dreams",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0040",
+    "word": "HOTSPOT",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 273,
+    "tier": "medium",
+    "description": "Your phone quietly becomes the coffee shop's rival",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0041",
+    "word": "PHISHING",
+    "topic": "Internet & Tech Culture",
+    "length": 8,
+    "difficulty": 278,
+    "tier": "medium",
+    "description": "A fake bank message dangling shiny bait",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0042",
+    "word": "CAPTCHA",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 288,
+    "tier": "medium",
+    "description": "Prove your humanity by squinting at traffic lights",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0043",
+    "word": "CATFISH",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 298,
+    "tier": "medium",
+    "description": "The profile photo belongs to somebody else entirely",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0044",
+    "word": "PIRACY",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 308,
+    "tier": "medium",
+    "description": "Sailing the high seas for movies without paying",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0045",
+    "word": "LURKER",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 313,
+    "tier": "medium",
+    "description": "Reads every post, has never once replied",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0046",
+    "word": "BUFFER",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 323,
+    "tier": "medium",
+    "description": "The spinning circle stockpiling video before it plays",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0047",
+    "word": "ENCRYPT",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 333,
+    "tier": "medium",
+    "description": "Scramble the message so only keys can read",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0048",
+    "word": "SPYWARE",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 345,
+    "tier": "medium",
+    "description": "It watches your keystrokes and quietly phones home",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "W"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0049",
+    "word": "PACKET",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 356,
+    "tier": "hard",
+    "description": "Your message, chopped into envelopes racing separate routes",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "NET-0050",
+    "word": "PROTOCOL",
+    "topic": "Internet & Tech Culture",
+    "length": 8,
+    "difficulty": 363,
+    "tier": "hard",
+    "description": "The strict etiquette machines follow when they converse",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0051",
+    "word": "CACHE",
+    "topic": "Internet & Tech Culture",
+    "length": 5,
+    "difficulty": 372,
+    "tier": "hard",
+    "description": "Yesterday's page kept close, so tomorrow loads instantly",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "NET-0052",
+    "word": "LATENCY",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 382,
+    "tier": "hard",
+    "description": "The heartbeat of delay between click and response",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "NET-0053",
+    "word": "GEOTAG",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 391,
+    "tier": "hard",
+    "description": "Your photo quietly whispering exactly where you stood",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "NET-0054",
+    "word": "KERNEL",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 398,
+    "tier": "hard",
+    "description": "The innermost seed every operating system grows around",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0055",
+    "word": "THROTTLE",
+    "topic": "Internet & Tech Culture",
+    "length": 8,
+    "difficulty": 412,
+    "tier": "hard",
+    "description": "Your provider quietly pinching the pipe at month's end",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0056",
+    "word": "BOTNET",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 420,
+    "tier": "hard",
+    "description": "An army of hijacked machines awaiting one command",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "NET-0057",
+    "word": "DAEMON",
+    "topic": "Internet & Tech Culture",
+    "length": 6,
+    "difficulty": 428,
+    "tier": "hard",
+    "description": "A background spirit toiling where no window shows",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "NET-0058",
+    "word": "RICKROLL",
+    "topic": "Internet & Tech Culture",
+    "length": 8,
+    "difficulty": 444,
+    "tier": "hard",
+    "description": "An innocent link, then suddenly 1987 starts singing",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0059",
+    "word": "SUDO",
+    "topic": "Internet & Tech Culture",
+    "length": 4,
+    "difficulty": 465,
+    "tier": "hard",
+    "description": "Four letters that make the computer stop arguing",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "NET-0060",
+    "word": "TORRENT",
+    "topic": "Internet & Tech Culture",
+    "length": 7,
+    "difficulty": 488,
+    "tier": "hard",
+    "description": "A file arriving in pieces from a thousand strangers",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "A"
+      }
+    }
+  }
+]

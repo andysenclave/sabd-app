@@ -1,0 +1,1147 @@
+{
+  "input": "data/raw/unified/NET-u1.json",
+  "scale": "unified",
+  "generatedAt": "2026-07-19T09:37:34.122Z",
+  "apiFallback": "enabled",
+  "totals": {
+    "entries": 150,
+    "passed": 148,
+    "rejected": 0,
+    "review": 2
+  },
+  "tierSplit": {
+    "expected": {
+      "veryEasy": 45,
+      "easy": 45,
+      "medium": 40,
+      "hard": 20
+    },
+    "actual": {
+      "veryEasy": 45,
+      "easy": 45,
+      "medium": 40,
+      "hard": 20
+    },
+    "ok": true
+  },
+  "failuresByRule": {},
+  "entries": [
+    {
+      "id": "NET-9001",
+      "word": "PHONE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9002",
+      "word": "CALL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9003",
+      "word": "TEXT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9004",
+      "word": "PHOTO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9005",
+      "word": "VIDEO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9006",
+      "word": "GAME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9007",
+      "word": "MUSIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9008",
+      "word": "CHAT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9009",
+      "word": "SCREEN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9010",
+      "word": "CAMERA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9011",
+      "word": "TAP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9012",
+      "word": "SWIPE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9013",
+      "word": "SHARE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9014",
+      "word": "LIKE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9015",
+      "word": "POST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9016",
+      "word": "SEND",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9017",
+      "word": "SAVE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9018",
+      "word": "DELETE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9019",
+      "word": "REPLY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9020",
+      "word": "MENU",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9021",
+      "word": "ICON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9022",
+      "word": "FILE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9023",
+      "word": "FOLDER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9024",
+      "word": "PAGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9025",
+      "word": "WEB",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9026",
+      "word": "SITE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9027",
+      "word": "MOUSE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9028",
+      "word": "KEYBOARD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9029",
+      "word": "PRINTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9030",
+      "word": "TABLET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9031",
+      "word": "SPEAKER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9032",
+      "word": "BATTERY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9033",
+      "word": "CHARGER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9034",
+      "word": "CABLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9035",
+      "word": "VOLUME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9036",
+      "word": "MUTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9037",
+      "word": "SIGNAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9038",
+      "word": "LOGIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9039",
+      "word": "PROFILE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9040",
+      "word": "FRIEND",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9041",
+      "word": "FOLLOW",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9042",
+      "word": "BLOCK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9043",
+      "word": "UNLOCK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9044",
+      "word": "DOWNLOAD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9045",
+      "word": "GADGET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9046",
+      "word": "UPDATE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9047",
+      "word": "RESTART",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9048",
+      "word": "REBOOT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9049",
+      "word": "MESSAGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9050",
+      "word": "RINGTONE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9051",
+      "word": "SNOOZE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9052",
+      "word": "HEADSET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9053",
+      "word": "DESKTOP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9054",
+      "word": "MONITOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9055",
+      "word": "NETWORK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9056",
+      "word": "WIRELESS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9057",
+      "word": "USERNAME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9058",
+      "word": "STATUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9059",
+      "word": "AVATAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9060",
+      "word": "FEED",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9061",
+      "word": "STORY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9062",
+      "word": "FILTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9063",
+      "word": "STICKER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9064",
+      "word": "CAPTION",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9065",
+      "word": "COMMENT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9066",
+      "word": "TAG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9067",
+      "word": "TREND",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9068",
+      "word": "CHANNEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9069",
+      "word": "PLAYLIST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9070",
+      "word": "EBOOK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9071",
+      "word": "POPUP",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-9072",
+      "word": "BACKUP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9073",
+      "word": "SYNC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9074",
+      "word": "VIRUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9075",
+      "word": "SCAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9076",
+      "word": "HACK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9077",
+      "word": "GHOST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9078",
+      "word": "GLITCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9079",
+      "word": "LAG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9080",
+      "word": "PING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9081",
+      "word": "CODE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9082",
+      "word": "CODER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9083",
+      "word": "PIXEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9084",
+      "word": "GAMER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9085",
+      "word": "STREAK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9086",
+      "word": "SPOILER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9087",
+      "word": "VLOG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9088",
+      "word": "WIDGET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9089",
+      "word": "UNBOXING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9090",
+      "word": "DRONE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9091",
+      "word": "DEBUG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9092",
+      "word": "SCRIPT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9093",
+      "word": "PLUGIN",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-9094",
+      "word": "DOMAIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9095",
+      "word": "HOSTING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9096",
+      "word": "DATABASE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9097",
+      "word": "TERMINAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9098",
+      "word": "CONSOLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9099",
+      "word": "JOYSTICK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9100",
+      "word": "EMULATOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9101",
+      "word": "STREAMER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9102",
+      "word": "CHATBOT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9103",
+      "word": "NEWBIE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9104",
+      "word": "UPVOTE",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-9105",
+      "word": "DEEPFAKE",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-9106",
+      "word": "CRYPTO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9107",
+      "word": "BITCOIN",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-9108",
+      "word": "PAYWALL",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-9109",
+      "word": "WEBINAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9110",
+      "word": "INTRANET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9111",
+      "word": "PROXY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9112",
+      "word": "FIBER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9113",
+      "word": "ETHERNET",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-9114",
+      "word": "TROJAN",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-9115",
+      "word": "ADWARE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9116",
+      "word": "BREACH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9117",
+      "word": "EXPLOIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9118",
+      "word": "PATCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9119",
+      "word": "TOKEN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9120",
+      "word": "SANDBOX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9121",
+      "word": "FIRMWARE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9122",
+      "word": "DONGLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9123",
+      "word": "STYLUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9124",
+      "word": "TRACKPAD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9125",
+      "word": "CHIPSET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9126",
+      "word": "COMPILER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9127",
+      "word": "COMMIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9128",
+      "word": "MERGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9129",
+      "word": "BACKEND",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-9130",
+      "word": "FRONTEND",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "NET-9131",
+      "word": "CIPHER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9132",
+      "word": "HONEYPOT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9133",
+      "word": "SPOOF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9134",
+      "word": "GRIEF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9135",
+      "word": "SALT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9136",
+      "word": "HASH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9137",
+      "word": "CHECKSUM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9138",
+      "word": "PARITY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9139",
+      "word": "NIBBLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9140",
+      "word": "LOSSY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9141",
+      "word": "RASTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9142",
+      "word": "DITHER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9143",
+      "word": "VOXEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9144",
+      "word": "LAMBDA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9145",
+      "word": "GOPHER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9146",
+      "word": "USENET",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "NET-9147",
+      "word": "PHREAK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9148",
+      "word": "WAREZ",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "NET-9149",
+      "word": "GREP",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "NET-9150",
+      "word": "REGEX",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    }
+  ]
+}

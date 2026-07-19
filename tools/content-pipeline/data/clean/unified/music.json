@@ -1,0 +1,3992 @@
+[
+  {
+    "id": "MUS-0001",
+    "word": "RAP",
+    "topic": "Music",
+    "length": 3,
+    "difficulty": 0,
+    "tier": "veryEasy",
+    "description": "Rhymes fired fast over a thumping loop",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0002",
+    "word": "SONG",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 5,
+    "tier": "veryEasy",
+    "description": "Three minutes of feeling, hummed all day after",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0003",
+    "word": "SING",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 6,
+    "tier": "veryEasy",
+    "description": "Open your mouth and let the shower audience judge",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0004",
+    "word": "DANCE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 7,
+    "tier": "veryEasy",
+    "description": "Feet answering the speakers before the brain agrees",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0005",
+    "word": "PIANO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 8,
+    "tier": "veryEasy",
+    "description": "Eighty-eight teeth, grinning in black and white",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0006",
+    "word": "ROCK",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 8,
+    "tier": "veryEasy",
+    "description": "Loud roots, electric swagger, arenas full of raised fists",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0007",
+    "word": "RADIO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 9,
+    "tier": "veryEasy",
+    "description": "Invisible waves carrying breakfast hits into the kitchen",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0008",
+    "word": "VOICE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 10,
+    "tier": "veryEasy",
+    "description": "The oldest instrument, carried everywhere without a case",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0009",
+    "word": "BELL",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 11,
+    "tier": "veryEasy",
+    "description": "Bright metal peals swinging from towers on Sunday morning",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0010",
+    "word": "NOTE",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 11,
+    "tier": "veryEasy",
+    "description": "A single dot that dares to make sound",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0011",
+    "word": "HORN",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 12,
+    "tier": "veryEasy",
+    "description": "Brass flare that announces itself before the players do",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0012",
+    "word": "CLAP",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 13,
+    "tier": "veryEasy",
+    "description": "Hands meeting in loud approval when the last chord fades",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0013",
+    "word": "HUM",
+    "topic": "Music",
+    "length": 3,
+    "difficulty": 14,
+    "tier": "veryEasy",
+    "description": "A closed-mouth chorus of one, wandering through chores",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0014",
+    "word": "MIC",
+    "topic": "Music",
+    "length": 3,
+    "difficulty": 15,
+    "tier": "veryEasy",
+    "description": "Hold it close, drop it when the verse lands",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0015",
+    "word": "SPEAKER",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 16,
+    "tier": "veryEasy",
+    "description": "Cabinet lungs pushing the bassline into your chest",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0016",
+    "word": "VOLUME",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 17,
+    "tier": "veryEasy",
+    "description": "The knob parents always beg you to turn down",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0017",
+    "word": "RECORD",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 18,
+    "tier": "veryEasy",
+    "description": "Black grooves spinning stories under a patient needle",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0018",
+    "word": "DISCO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 19,
+    "tier": "veryEasy",
+    "description": "Mirror balls, flared trousers, and a fever every Saturday",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0019",
+    "word": "DRUM",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 19,
+    "tier": "veryEasy",
+    "description": "Hit it hard and the whole room nods along",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0020",
+    "word": "METAL",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 20,
+    "tier": "veryEasy",
+    "description": "Distortion cranked until the amplifier begs for mercy",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0021",
+    "word": "PUNK",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 21,
+    "tier": "veryEasy",
+    "description": "Three chords, safety pins, and pure teenage defiance",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0022",
+    "word": "BLUES",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 22,
+    "tier": "veryEasy",
+    "description": "Twelve bars of heartbreak from the Mississippi delta",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0023",
+    "word": "BEAT",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 23,
+    "tier": "veryEasy",
+    "description": "The pulse your foot obeys without asking",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0024",
+    "word": "FOLK",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 23,
+    "tier": "veryEasy",
+    "description": "Old stories passed down on porches and picket lines",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0025",
+    "word": "KARAOKE",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 24,
+    "tier": "veryEasy",
+    "description": "Liquid courage, a glowing screen, and borrowed lyrics",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0026",
+    "word": "RHYTHM",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 25,
+    "tier": "veryEasy",
+    "description": "The pulse your foot finds before you notice",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0027",
+    "word": "TRUMPET",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 26,
+    "tier": "veryEasy",
+    "description": "Three valves and enough brass to wake a parade",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0028",
+    "word": "WHISTLE",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 27,
+    "tier": "veryEasy",
+    "description": "Pursed lips turning breath into a bright little melody",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0029",
+    "word": "ORGAN",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 28,
+    "tier": "veryEasy",
+    "description": "Pipes and pedals shaking the whole cathedral awake",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0030",
+    "word": "HARP",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 29,
+    "tier": "veryEasy",
+    "description": "Golden strings plucked by angels and orchestra hands",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0031",
+    "word": "BAND",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 30,
+    "tier": "veryEasy",
+    "description": "Four friends, one garage, dreams of stadiums",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0032",
+    "word": "STEREO",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 30,
+    "tier": "veryEasy",
+    "description": "Left ear, right ear, the whole room in between",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0033",
+    "word": "PLAYLIST",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 31,
+    "tier": "veryEasy",
+    "description": "Your mood, curated track by track for the drive",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0034",
+    "word": "REMIX",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 32,
+    "tier": "veryEasy",
+    "description": "A familiar favorite rebuilt with fresh drops and edits",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "H"
+      }
+    }
+  },
+  {
+    "id": "MUS-0035",
+    "word": "HIT",
+    "topic": "Music",
+    "length": 3,
+    "difficulty": 33,
+    "tier": "veryEasy",
+    "description": "Chart royalty, everywhere at once for one hot summer",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0036",
+    "word": "TOUR",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 34,
+    "tier": "veryEasy",
+    "description": "City after city, one bus, the same twenty songs",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0037",
+    "word": "TUNE",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 34,
+    "tier": "veryEasy",
+    "description": "The bit you hum in the shower for weeks",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0038",
+    "word": "GIG",
+    "topic": "Music",
+    "length": 3,
+    "difficulty": 35,
+    "tier": "veryEasy",
+    "description": "Small venue, late night, cash in a guitar case",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0039",
+    "word": "AMP",
+    "topic": "Music",
+    "length": 3,
+    "difficulty": 36,
+    "tier": "veryEasy",
+    "description": "The box that turns bedroom practice into neighborhood complaints",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0040",
+    "word": "DIVA",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 37,
+    "tier": "veryEasy",
+    "description": "Demands roses, delivers goosebumps from the highest register",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0041",
+    "word": "CHOIR",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 38,
+    "tier": "veryEasy",
+    "description": "Many voices, one robe-clad wall of sound",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0042",
+    "word": "LULLABY",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 38,
+    "tier": "veryEasy",
+    "description": "Soft midnight verses that trade tantrums for tiny snores",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0043",
+    "word": "JINGLE",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 39,
+    "tier": "veryEasy",
+    "description": "Fifteen catchy seconds selling soap for the next decade",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0044",
+    "word": "TUBA",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 40,
+    "tier": "veryEasy",
+    "description": "The deepest brass, wrapped around its patient player",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0045",
+    "word": "BASS",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 41,
+    "tier": "veryEasy",
+    "description": "The low growl you feel in your chest",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0046",
+    "word": "CHANT",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 41,
+    "tier": "veryEasy",
+    "description": "One phrase, many voices, rising from stadium terraces",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0047",
+    "word": "HARMONY",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 42,
+    "tier": "veryEasy",
+    "description": "Different voices agreeing in the most beautiful way",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0048",
+    "word": "TANGO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 43,
+    "tier": "veryEasy",
+    "description": "Two dancers, one rose, and smoldering Argentine strings",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0049",
+    "word": "ECHO",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 44,
+    "tier": "veryEasy",
+    "description": "The canyon repeats whatever you shout, slightly late",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0050",
+    "word": "HYMN",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 45,
+    "tier": "veryEasy",
+    "description": "Pews stand together when the organist gives the nod",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0051",
+    "word": "STRUM",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 46,
+    "tier": "veryEasy",
+    "description": "Fingers sweeping six strings in one lazy campfire motion",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0052",
+    "word": "KAZOO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 47,
+    "tier": "veryEasy",
+    "description": "Plastic buzz that makes every player sound equally silly",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "Z",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0053",
+    "word": "SAX",
+    "topic": "Music",
+    "length": 3,
+    "difficulty": 48,
+    "tier": "veryEasy",
+    "description": "Smoky curves crooning through late-night city streets",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "X"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0054",
+    "word": "GONG",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 49,
+    "tier": "veryEasy",
+    "description": "One enormous shimmering crash to end the ceremony",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0055",
+    "word": "VINYL",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 52,
+    "tier": "easy",
+    "description": "Warm crackle collectors swear sounds better than perfect",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0056",
+    "word": "GUITAR",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 53,
+    "tier": "easy",
+    "description": "Six strings, endless campfire heroes",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0057",
+    "word": "TRACK",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 54,
+    "tier": "easy",
+    "description": "One numbered slice of a longer listening journey",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0058",
+    "word": "LYRIC",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 56,
+    "tier": "easy",
+    "description": "The words you scream correctly at every show",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0059",
+    "word": "TEMPO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 56,
+    "tier": "easy",
+    "description": "How fast the song's heart beats",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0060",
+    "word": "VERSE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 58,
+    "tier": "easy",
+    "description": "The storytelling stretch before the big singalong part",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0061",
+    "word": "AUDIO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 60,
+    "tier": "easy",
+    "description": "Everything your ears receive once the signal leaves the wire",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0062",
+    "word": "SINGER",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 60,
+    "tier": "easy",
+    "description": "Lungs for a living, microphone for a best friend",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0063",
+    "word": "DEMO",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 62,
+    "tier": "easy",
+    "description": "Rough first take mailed hopefully to every label in town",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0064",
+    "word": "STUDIO",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 64,
+    "tier": "easy",
+    "description": "Padded walls, red light on, magic being captured",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0065",
+    "word": "GENRE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 66,
+    "tier": "easy",
+    "description": "The shelf label deciding which fans find you",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0066",
+    "word": "KEY",
+    "topic": "Music",
+    "length": 3,
+    "difficulty": 68,
+    "tier": "easy",
+    "description": "The home base every song secretly circles back to",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0067",
+    "word": "MELODY",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 68,
+    "tier": "easy",
+    "description": "The line your memory keeps humming back",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0068",
+    "word": "TONE",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 70,
+    "tier": "easy",
+    "description": "The color of a sound before the notes even matter",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0069",
+    "word": "PITCH",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 72,
+    "tier": "easy",
+    "description": "How high or low, and whether grandma winces",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0070",
+    "word": "CHORD",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 74,
+    "tier": "easy",
+    "description": "Several notes holding hands at the same moment",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0071",
+    "word": "VIOLIN",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 75,
+    "tier": "easy",
+    "description": "Four strings weeping under a horsehair bow",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0072",
+    "word": "SCALE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 76,
+    "tier": "easy",
+    "description": "Do re mi, climbing stairs one careful step each",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0073",
+    "word": "SOUL",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 78,
+    "tier": "easy",
+    "description": "Motown grit and gospel fire poured over heartbreak",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0074",
+    "word": "FUNK",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 80,
+    "tier": "easy",
+    "description": "Slap that groove until the whole room struts",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0075",
+    "word": "GOSPEL",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 82,
+    "tier": "easy",
+    "description": "Hands raised, choirs soaring, Sunday shaking the rafters",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0076",
+    "word": "CHORUS",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 83,
+    "tier": "easy",
+    "description": "The part everyone waits for and screams together",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0077",
+    "word": "TECHNO",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 84,
+    "tier": "easy",
+    "description": "Machines throbbing at four on the floor till sunrise",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0078",
+    "word": "INDIE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 86,
+    "tier": "easy",
+    "description": "Small labels, big feelings, cardigans in the crowd",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0079",
+    "word": "SWING",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 88,
+    "tier": "easy",
+    "description": "Big brass sections making the whole ballroom bounce",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0080",
+    "word": "CAROL",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 90,
+    "tier": "easy",
+    "description": "Doorstep voices trading verses for cocoa in December",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0081",
+    "word": "SALSA",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 92,
+    "tier": "easy",
+    "description": "Havana horns and hips that refuse to stay still",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0082",
+    "word": "FLUTE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 94,
+    "tier": "easy",
+    "description": "Silver breath turned sideways into birdsong",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0083",
+    "word": "SAMBA",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 94,
+    "tier": "easy",
+    "description": "Rio's carnival heartbeat spilling down every street",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0084",
+    "word": "CONGA",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 96,
+    "tier": "easy",
+    "description": "Tall drums leading a snaking line across the party",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0085",
+    "word": "POLKA",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 98,
+    "tier": "easy",
+    "description": "Accordion bounce that keeps the wedding tent hopping",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0086",
+    "word": "YODEL",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 100,
+    "tier": "easy",
+    "description": "Alpine voices leaping between registers across the valley",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0087",
+    "word": "FIDDLE",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 102,
+    "tier": "easy",
+    "description": "Same strings, wilder bowing, barn dances till dawn",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0088",
+    "word": "UKULELE",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 104,
+    "tier": "easy",
+    "description": "Four tiny strings carrying an island breeze",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0089",
+    "word": "ALBUM",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 105,
+    "tier": "easy",
+    "description": "Twelve tracks that tell one long story",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0090",
+    "word": "BUGLE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 106,
+    "tier": "easy",
+    "description": "No valves, just sunrise duty calls at camp",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0091",
+    "word": "OBOE",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 108,
+    "tier": "easy",
+    "description": "The reedy voice every orchestra tunes itself against",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0092",
+    "word": "TROMBONE",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 110,
+    "tier": "easy",
+    "description": "Brass with a sliding arm and a comic glissando",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0093",
+    "word": "CLARINET",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 112,
+    "tier": "easy",
+    "description": "Licorice-black woodwind gliding from klezmer to swing",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0094",
+    "word": "OPERA",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 113,
+    "tier": "easy",
+    "description": "Where heartbreak arrives fortissimo and in Italian",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0095",
+    "word": "SNARE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 114,
+    "tier": "easy",
+    "description": "The crisp backbeat crack in every marching line",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0096",
+    "word": "CYMBAL",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 116,
+    "tier": "easy",
+    "description": "Golden plates crashing right on the big finish",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0097",
+    "word": "BONGO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 118,
+    "tier": "easy",
+    "description": "Two small heads slapped between beatnik poetry lines",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0098",
+    "word": "CONCERT",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 120,
+    "tier": "easy",
+    "description": "Thousands of strangers screaming the same words",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0099",
+    "word": "COWBELL",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 120,
+    "tier": "easy",
+    "description": "The barnyard clank that famously needs more",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "W"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0100",
+    "word": "TRIANGLE",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 122,
+    "tier": "easy",
+    "description": "Three silver sides, one ting, surprisingly hard to miss",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0101",
+    "word": "MARACA",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 124,
+    "tier": "easy",
+    "description": "Seeds in a gourd shaking out Latin sunshine",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0102",
+    "word": "RECORDER",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 126,
+    "tier": "easy",
+    "description": "Every schoolchild's first squeaky woodwind memory",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0103",
+    "word": "DUET",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 128,
+    "tier": "easy",
+    "description": "Takes two, whether harmony or argument",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0104",
+    "word": "KEYBOARD",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 128,
+    "tier": "easy",
+    "description": "Eighty-eight shortcuts to any instrument you can imagine",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0105",
+    "word": "SYNTH",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 130,
+    "tier": "easy",
+    "description": "Oscillators dreaming up sounds nature never made",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0106",
+    "word": "STAGE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 131,
+    "tier": "easy",
+    "description": "Wooden platform where nerves meet spotlights",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0107",
+    "word": "BOOMBOX",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 132,
+    "tier": "easy",
+    "description": "Shoulder-mounted thunder for the whole block to share",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0108",
+    "word": "JUKEBOX",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 134,
+    "tier": "easy",
+    "description": "Chrome and neon swapping quarters for slow dances",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0109",
+    "word": "TRIO",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 136,
+    "tier": "easy",
+    "description": "Three players, three parts, one tight conversation",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0110",
+    "word": "HOOK",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 138,
+    "tier": "easy",
+    "description": "The three seconds a label bets the whole song on",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0111",
+    "word": "POP",
+    "topic": "Music",
+    "length": 3,
+    "difficulty": 139,
+    "tier": "easy",
+    "description": "Sugary hooks engineered for maximum radio play",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0112",
+    "word": "INTRO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 140,
+    "tier": "easy",
+    "description": "The opening seconds that set the whole mood",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0113",
+    "word": "JAZZ",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 143,
+    "tier": "easy",
+    "description": "Wrong notes played so right they became a genre",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "J",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0114",
+    "word": "SOLO",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 150,
+    "tier": "easy",
+    "description": "One brave voice while everyone else goes quiet",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0115",
+    "word": "SHARP",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 155,
+    "tier": "medium",
+    "description": "Half a step higher, courtesy of one spiky symbol",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0116",
+    "word": "FLAT",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 160,
+    "tier": "medium",
+    "description": "Lowered a semitone, or how bad karaoke lands",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0117",
+    "word": "TENOR",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 160,
+    "tier": "medium",
+    "description": "Pavarotti's lane in the vocal highway",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0118",
+    "word": "MAJOR",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 165,
+    "tier": "medium",
+    "description": "The scale that sounds like good news arriving",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "H"
+      }
+    }
+  },
+  {
+    "id": "MUS-0119",
+    "word": "ANTHEM",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 170,
+    "tier": "medium",
+    "description": "Hand on heart, everybody rises for this",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0120",
+    "word": "MINOR",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 170,
+    "tier": "medium",
+    "description": "Keys that carry rain clouds and quiet aching",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "H"
+      }
+    }
+  },
+  {
+    "id": "MUS-0121",
+    "word": "ALTO",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 175,
+    "tier": "medium",
+    "description": "The lower ladies' line, rich beneath the sopranos",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0122",
+    "word": "OCTAVE",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 175,
+    "tier": "medium",
+    "description": "Do to do, eight white keys apart",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0123",
+    "word": "CELLO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 180,
+    "tier": "medium",
+    "description": "Violin's big sibling, hugged between the knees",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0124",
+    "word": "TREBLE",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 180,
+    "tier": "medium",
+    "description": "The bright upper half where sparkle lives",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0125",
+    "word": "VIOLA",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 185,
+    "tier": "medium",
+    "description": "The string family's overlooked middle child, warm and mellow",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0126",
+    "word": "BALLAD",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 190,
+    "tier": "medium",
+    "description": "Slow song for lighters held aloft",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0127",
+    "word": "PICCOLO",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 190,
+    "tier": "medium",
+    "description": "Half the size, twice the altitude, cuts through everything",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0128",
+    "word": "SITAR",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 195,
+    "tier": "medium",
+    "description": "Droning strings that carried the sixties toward India",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "H"
+      }
+    }
+  },
+  {
+    "id": "MUS-0129",
+    "word": "WALTZ",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 195,
+    "tier": "medium",
+    "description": "One-two-three, one-two-three, around the ballroom",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0130",
+    "word": "ENCORE",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 200,
+    "tier": "medium",
+    "description": "The crowd's demand after the final bow",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0131",
+    "word": "MANDOLIN",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 200,
+    "tier": "medium",
+    "description": "Teardrop body, doubled strings, bluegrass lightning",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0132",
+    "word": "BAGPIPE",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 205,
+    "tier": "medium",
+    "description": "Highland drone squeezed out of tartan lungs",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0133",
+    "word": "BARITONE",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 205,
+    "tier": "medium",
+    "description": "Male voice parked between basement and penthouse",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0134",
+    "word": "LUTE",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 210,
+    "tier": "medium",
+    "description": "Pear-shaped strings serenading candlelit Renaissance courtyards",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0135",
+    "word": "BANJO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 215,
+    "tier": "medium",
+    "description": "Twangy round-bellied star of bluegrass porches",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "J"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0136",
+    "word": "LYRE",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 215,
+    "tier": "medium",
+    "description": "Ancient Greek strings cradled by poets and gods",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0137",
+    "word": "MARIMBA",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 220,
+    "tier": "medium",
+    "description": "Wooden bars rippling under four fast mallets",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0138",
+    "word": "ACOUSTIC",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 225,
+    "tier": "medium",
+    "description": "Unplugged, wooden, honest, no amplifier required",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0139",
+    "word": "TIMPANI",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 225,
+    "tier": "medium",
+    "description": "Copper kettles thundering from the orchestra's back row",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0140",
+    "word": "CASTANET",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 230,
+    "tier": "medium",
+    "description": "Clicking shells snapping fire into flamenco fingers",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0141",
+    "word": "REGGAE",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 230,
+    "tier": "medium",
+    "description": "Jamaica's laid-back offbeat gift to the world",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0142",
+    "word": "CORNET",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 235,
+    "tier": "medium",
+    "description": "Trumpet's stockier cousin, mellow in the brass line",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0143",
+    "word": "ARIA",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 240,
+    "tier": "medium",
+    "description": "One voice, full orchestra, the opera's emotional summit",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0144",
+    "word": "SOPRANO",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 240,
+    "tier": "medium",
+    "description": "The highest voice, shattering glasses since forever",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0145",
+    "word": "OPUS",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 245,
+    "tier": "medium",
+    "description": "A composer's work, filed by number for posterity",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0146",
+    "word": "FORTE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 250,
+    "tier": "medium",
+    "description": "The dynamic marking demanding you play it loud",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0147",
+    "word": "MAESTRO",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 250,
+    "tier": "medium",
+    "description": "The one bowing after waving a tiny stick",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0148",
+    "word": "ADAGIO",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 255,
+    "tier": "medium",
+    "description": "Slow enough for the strings to really ache",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0149",
+    "word": "ALLEGRO",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 260,
+    "tier": "medium",
+    "description": "Brisk and bright, the metronome set to cheerful",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0150",
+    "word": "SONATA",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 260,
+    "tier": "medium",
+    "description": "Moonlight famously came in this classical package",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0151",
+    "word": "PRESTO",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 265,
+    "tier": "medium",
+    "description": "Fingers blurring, the fastest marking on the page",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0152",
+    "word": "MINUET",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 270,
+    "tier": "medium",
+    "description": "Powdered wigs bowing through a stately triple dance",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0153",
+    "word": "QUARTET",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 270,
+    "tier": "medium",
+    "description": "Four players, usually two violins deep",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "Q",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0154",
+    "word": "FALSETTO",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 275,
+    "tier": "medium",
+    "description": "When gentlemen borrow the top shelf of voices",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0155",
+    "word": "PRELUDE",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 275,
+    "tier": "medium",
+    "description": "The short piece that clears its throat first",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0156",
+    "word": "OVERTURE",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 280,
+    "tier": "medium",
+    "description": "The orchestra's opening argument before the curtain rises",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0157",
+    "word": "CONCERTO",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 285,
+    "tier": "medium",
+    "description": "One virtuoso versus a full orchestra, politely",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0158",
+    "word": "MEDLEY",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 285,
+    "tier": "medium",
+    "description": "Several songs stitched into one greatest-hits blur",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0159",
+    "word": "RHAPSODY",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 290,
+    "tier": "medium",
+    "description": "One sprawling movement chasing every mood it meets",
+    "hints": {
+      "position": {
+        "index": 7,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0160",
+    "word": "VIBRATO",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 290,
+    "tier": "medium",
+    "description": "The wobble that makes a held note shimmer",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0161",
+    "word": "NOCTURNE",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 295,
+    "tier": "medium",
+    "description": "Moonlit keys composed for hours past midnight",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "H"
+      }
+    }
+  },
+  {
+    "id": "MUS-0162",
+    "word": "REFRAIN",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 300,
+    "tier": "medium",
+    "description": "The line that keeps coming back for more",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0163",
+    "word": "REQUIEM",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 300,
+    "tier": "medium",
+    "description": "A mass for the departed, scored in mourning",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0164",
+    "word": "BRIDGE",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 305,
+    "tier": "medium",
+    "description": "The detour section that makes the last big return land harder",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0165",
+    "word": "CLEF",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 310,
+    "tier": "medium",
+    "description": "Curly gatekeeper at the start of every staff",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0166",
+    "word": "MOTIF",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 310,
+    "tier": "medium",
+    "description": "Four famous notes knocking, then haunting the whole piece",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0167",
+    "word": "TRILL",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 315,
+    "tier": "medium",
+    "description": "Two neighbor notes fluttering faster than a hummingbird",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0168",
+    "word": "SEGUE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 320,
+    "tier": "medium",
+    "description": "No pause, no silence, one piece melting into the next",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0169",
+    "word": "CAPO",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 325,
+    "tier": "medium",
+    "description": "The little clamp that shifts every string up at once",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0170",
+    "word": "SYMPHONY",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 325,
+    "tier": "medium",
+    "description": "A hundred players, four movements, one grand argument",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0171",
+    "word": "CADENCE",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 330,
+    "tier": "medium",
+    "description": "How a musical sentence decides to end",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0172",
+    "word": "FRET",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 330,
+    "tier": "medium",
+    "description": "Metal stripes mapping where your fingers should land",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0173",
+    "word": "REVERB",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 335,
+    "tier": "medium",
+    "description": "Cathedral spaciousness, bottled and added at the mixing desk",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0174",
+    "word": "SAMPLE",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 340,
+    "tier": "medium",
+    "description": "A borrowed bar of vintage groove reborn inside new beats",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0175",
+    "word": "TIMBRE",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 340,
+    "tier": "medium",
+    "description": "Why a trumpet never sounds like a flute",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0176",
+    "word": "ENSEMBLE",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 345,
+    "tier": "medium",
+    "description": "Many players breathing together as one instrument",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0177",
+    "word": "METER",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 350,
+    "tier": "medium",
+    "description": "How the pulse groups itself, three here, four there",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0178",
+    "word": "RIFF",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 350,
+    "tier": "medium",
+    "description": "The guitar lick everyone air-plays instantly",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0179",
+    "word": "DIRGE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 358,
+    "tier": "hard",
+    "description": "Slow steps, black veils, a lament pacing the procession",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0180",
+    "word": "CODA",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 363,
+    "tier": "hard",
+    "description": "The tail pinned on after the ending",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0181",
+    "word": "BOLERO",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 366,
+    "tier": "hard",
+    "description": "One long Spanish crescendo Ravel made famous",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0182",
+    "word": "FUGUE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 374,
+    "tier": "hard",
+    "description": "One subject chased through voice after voice, Bach's favorite maze",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0183",
+    "word": "LEGATO",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 376,
+    "tier": "hard",
+    "description": "Notes melting smoothly into each other, no gaps",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0184",
+    "word": "TREMOLO",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 381,
+    "tier": "hard",
+    "description": "A single note shaking like a nervous leaf",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0185",
+    "word": "MADRIGAL",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 382,
+    "tier": "hard",
+    "description": "Elizabethan voices weaving fa-la-la around courtly love",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0186",
+    "word": "STACCATO",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 388,
+    "tier": "hard",
+    "description": "Notes chopped short, like tiptoeing on hot sand",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0187",
+    "word": "CHORALE",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 390,
+    "tier": "hard",
+    "description": "Bach's four-part congregational settings, sturdy as pews",
+    "hints": {
+      "position": {
+        "index": 6,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0188",
+    "word": "ORATORIO",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 398,
+    "tier": "hard",
+    "description": "Sacred drama sung at scale, no costumes required",
+    "hints": {
+      "position": {
+        "index": 6,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0189",
+    "word": "ETUDE",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 401,
+    "tier": "hard",
+    "description": "Chopin's homework that sneaked into concert halls",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0190",
+    "word": "MAZURKA",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 406,
+    "tier": "hard",
+    "description": "Chopin's homesick Polish dance in lilting triple time",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0191",
+    "word": "ARPEGGIO",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 413,
+    "tier": "hard",
+    "description": "A chord unstacked, climbing one rung at a time",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0192",
+    "word": "GAVOTTE",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 414,
+    "tier": "hard",
+    "description": "A courtly French skip tucked into Baroque suites",
+    "hints": {
+      "position": {
+        "index": 6,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "MUS-0193",
+    "word": "ANDANTE",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 422,
+    "tier": "hard",
+    "description": "At an easy walking pace, says the Italian",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "MUS-0194",
+    "word": "SOLFEGE",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 425,
+    "tier": "hard",
+    "description": "Do, re, mi and friends, formally trained",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0195",
+    "word": "VIVACE",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 430,
+    "tier": "hard",
+    "description": "Livelier than allegro, the page practically fizzing",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0196",
+    "word": "LIBRETTO",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 438,
+    "tier": "hard",
+    "description": "The little book carrying an opera's every word",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0197",
+    "word": "RUBATO",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 438,
+    "tier": "hard",
+    "description": "Stolen time, borrowed from one bar and repaid later",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0198",
+    "word": "MEZZO",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 446,
+    "tier": "hard",
+    "description": "Neither top nor bottom, the in-between Italian voice",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "Z",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0199",
+    "word": "OSTINATO",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 450,
+    "tier": "hard",
+    "description": "A stubborn phrase that refuses to stop repeating",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0200",
+    "word": "ZITHER",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 454,
+    "tier": "hard",
+    "description": "Flat strings plucked across Alpine laps and film noir",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "MUS-0201",
+    "word": "DULCIMER",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 462,
+    "tier": "hard",
+    "description": "Hammered strings ringing through Appalachian hollows",
+    "hints": {
+      "position": {
+        "index": 6,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "H"
+      }
+    }
+  },
+  {
+    "id": "MUS-0202",
+    "word": "CANTATA",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 463,
+    "tier": "hard",
+    "description": "Bach's Sunday specialty, sung with orchestra in tow",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0203",
+    "word": "OCARINA",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 470,
+    "tier": "hard",
+    "description": "Clay vessel whistling through a green-clad hero's quest",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "MUS-0204",
+    "word": "FERMATA",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 475,
+    "tier": "hard",
+    "description": "The little eye that tells time to hold its breath",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "MUS-0205",
+    "word": "THEREMIN",
+    "topic": "Music",
+    "length": 8,
+    "difficulty": 478,
+    "tier": "hard",
+    "description": "Played by waving at thin air, eerily",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0206",
+    "word": "KLEZMER",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 486,
+    "tier": "hard",
+    "description": "Wailing clarinets carrying Yiddish weddings to their feet",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "MUS-0207",
+    "word": "MOTET",
+    "topic": "Music",
+    "length": 5,
+    "difficulty": 488,
+    "tier": "hard",
+    "description": "Sacred Renaissance polyphony, Latin and unaccompanied",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0208",
+    "word": "ZYDECO",
+    "topic": "Music",
+    "length": 6,
+    "difficulty": 492,
+    "tier": "hard",
+    "description": "Louisiana accordions and washboards cooking up a dancehall",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "Z",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "MUS-0209",
+    "word": "RAGA",
+    "topic": "Music",
+    "length": 4,
+    "difficulty": 496,
+    "tier": "hard",
+    "description": "An Indian melodic framework unfolding with the hour",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "MUS-0210",
+    "word": "LUTHIER",
+    "topic": "Music",
+    "length": 7,
+    "difficulty": 500,
+    "tier": "hard",
+    "description": "Sawdust, varnish, and patience shaping tomorrow's violins",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    }
+  }
+]

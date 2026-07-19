@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "SPC-0001",
+    "word": "MOON",
+    "topic": "Space & Sci-Fi",
+    "length": 4,
+    "difficulty": 4,
+    "tier": "veryEasy",
+    "description": "Earth's pale nightlight, pockmarked and loyal",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0002",
+    "word": "SUN",
+    "topic": "Space & Sci-Fi",
+    "length": 3,
+    "difficulty": 9,
+    "tier": "veryEasy",
+    "description": "The daytime blaze you must never stare at",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0003",
+    "word": "STAR",
+    "topic": "Space & Sci-Fi",
+    "length": 4,
+    "difficulty": 15,
+    "tier": "veryEasy",
+    "description": "Distant fire the night sky pins up",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "SPC-0004",
+    "word": "MARS",
+    "topic": "Space & Sci-Fi",
+    "length": 4,
+    "difficulty": 21,
+    "tier": "veryEasy",
+    "description": "The rusty neighbor everyone wants to visit",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0005",
+    "word": "ROCKET",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 28,
+    "tier": "veryEasy",
+    "description": "Fire below, countdown behind, sky ahead",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "SPC-0006",
+    "word": "ALIEN",
+    "topic": "Space & Sci-Fi",
+    "length": 5,
+    "difficulty": 34,
+    "tier": "veryEasy",
+    "description": "Little green rumor with big black eyes",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0007",
+    "word": "ROBOT",
+    "topic": "Space & Sci-Fi",
+    "length": 5,
+    "difficulty": 39,
+    "tier": "veryEasy",
+    "description": "Metal helper that never asks for lunch",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "SPC-0008",
+    "word": "PLANET",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 45,
+    "tier": "veryEasy",
+    "description": "A big round rock that swept its lane clean",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0009",
+    "word": "COMET",
+    "topic": "Space & Sci-Fi",
+    "length": 5,
+    "difficulty": 51,
+    "tier": "easy",
+    "description": "A dirty snowball trailing its glowing scarf",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0010",
+    "word": "LASER",
+    "topic": "Space & Sci-Fi",
+    "length": 5,
+    "difficulty": 56,
+    "tier": "easy",
+    "description": "Light with excellent posture and terrible mercy",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0011",
+    "word": "ORBIT",
+    "topic": "Space & Sci-Fi",
+    "length": 5,
+    "difficulty": 62,
+    "tier": "easy",
+    "description": "Falling forever and somehow always missing the ground",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "SPC-0012",
+    "word": "GALAXY",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 68,
+    "tier": "easy",
+    "description": "Billions of suns spinning in one slow pinwheel",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "X"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0013",
+    "word": "METEOR",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 73,
+    "tier": "easy",
+    "description": "Make a wish before it burns out",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "SPC-0014",
+    "word": "LAUNCH",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 79,
+    "tier": "easy",
+    "description": "Ten, nine, eight... hold onto your teeth",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0015",
+    "word": "SHUTTLE",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 86,
+    "tier": "easy",
+    "description": "The winged bus that punched through the sky",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0016",
+    "word": "CRATER",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 94,
+    "tier": "easy",
+    "description": "The dent left when the sky falls down",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "SPC-0017",
+    "word": "ECLIPSE",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 101,
+    "tier": "easy",
+    "description": "Daytime darkness while two bodies line up",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0018",
+    "word": "GRAVITY",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 107,
+    "tier": "easy",
+    "description": "The invisible bully that keeps everyone down",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "V"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "SPC-0019",
+    "word": "SOLAR",
+    "topic": "Space & Sci-Fi",
+    "length": 5,
+    "difficulty": 113,
+    "tier": "easy",
+    "description": "Panels drink it; flares lose their temper",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0020",
+    "word": "LUNAR",
+    "topic": "Space & Sci-Fi",
+    "length": 5,
+    "difficulty": 118,
+    "tier": "easy",
+    "description": "Phases, tides, and one small step's address",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0021",
+    "word": "POD",
+    "topic": "Space & Sci-Fi",
+    "length": 3,
+    "difficulty": 124,
+    "tier": "easy",
+    "description": "A tiny lifeboat jettisoned in a hurry",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0022",
+    "word": "ASTEROID",
+    "topic": "Space & Sci-Fi",
+    "length": 8,
+    "difficulty": 129,
+    "tier": "easy",
+    "description": "A tumbling boulder loitering between planets",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "SPC-0023",
+    "word": "COSMOS",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 137,
+    "tier": "easy",
+    "description": "Everything, everywhere, wrapped in one tidy word",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0024",
+    "word": "SAUCER",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 146,
+    "tier": "easy",
+    "description": "Flying dishware the tabloids simply adore",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0025",
+    "word": "CLONE",
+    "topic": "Space & Sci-Fi",
+    "length": 5,
+    "difficulty": 155,
+    "tier": "medium",
+    "description": "Your face, grown fresh in a lab",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0026",
+    "word": "VOID",
+    "topic": "Space & Sci-Fi",
+    "length": 4,
+    "difficulty": 163,
+    "tier": "medium",
+    "description": "The big empty between everything else",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0027",
+    "word": "PROBE",
+    "topic": "Space & Sci-Fi",
+    "length": 5,
+    "difficulty": 173,
+    "tier": "medium",
+    "description": "An unmanned scout flung at distant worlds",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0028",
+    "word": "CAPSULE",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 180,
+    "tier": "medium",
+    "description": "A cramped cone splashing down with heroes inside",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0029",
+    "word": "COCKPIT",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 190,
+    "tier": "medium",
+    "description": "Where the switches live and the view stuns",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0030",
+    "word": "VACUUM",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 198,
+    "tier": "medium",
+    "description": "Where sound gives up and screams go unheard",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0031",
+    "word": "WARP",
+    "topic": "Space & Sci-Fi",
+    "length": 4,
+    "difficulty": 205,
+    "tier": "medium",
+    "description": "Bending the map so the trip takes minutes",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0032",
+    "word": "NEBULA",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 215,
+    "tier": "medium",
+    "description": "A stellar nursery painted in glowing gas",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0033",
+    "word": "DROID",
+    "topic": "Space & Sci-Fi",
+    "length": 5,
+    "difficulty": 223,
+    "tier": "medium",
+    "description": "A beeping sidekick with more loyalty than most humans",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0034",
+    "word": "CYBORG",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 230,
+    "tier": "medium",
+    "description": "Half flesh, half chrome, all business",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0035",
+    "word": "MODULE",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 240,
+    "tier": "medium",
+    "description": "One snap-together piece of an orbiting home",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0036",
+    "word": "PAYLOAD",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 248,
+    "tier": "medium",
+    "description": "The precious cargo riding atop all that fire",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0037",
+    "word": "AIRLOCK",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 255,
+    "tier": "medium",
+    "description": "The chamber where inside politely meets outside",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0038",
+    "word": "FUSION",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 265,
+    "tier": "medium",
+    "description": "Squeeze atoms hard enough and they shine",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0039",
+    "word": "PHOTON",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 273,
+    "tier": "medium",
+    "description": "The tiniest parcel of light, always in a hurry",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0040",
+    "word": "PLASMA",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 283,
+    "tier": "medium",
+    "description": "Matter's fourth mood: hot, glowing, and unruly",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0041",
+    "word": "NOVA",
+    "topic": "Space & Sci-Fi",
+    "length": 4,
+    "difficulty": 290,
+    "tier": "medium",
+    "description": "A faint star suddenly showing off, briefly",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "V"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0042",
+    "word": "COSMIC",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 300,
+    "tier": "medium",
+    "description": "Rays, jokes, and horror all share this scale",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0043",
+    "word": "REENTRY",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 308,
+    "tier": "medium",
+    "description": "Coming home wrapped in a friendly fireball",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "SPC-0044",
+    "word": "THRUSTER",
+    "topic": "Space & Sci-Fi",
+    "length": 8,
+    "difficulty": 315,
+    "tier": "medium",
+    "description": "Little burps of fire that nudge the ship",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "SPC-0045",
+    "word": "STASIS",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 325,
+    "tier": "medium",
+    "description": "Frozen sleep for the long haul between suns",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0046",
+    "word": "ION",
+    "topic": "Space & Sci-Fi",
+    "length": 3,
+    "difficulty": 333,
+    "tier": "medium",
+    "description": "An atom that lost or stole a charge",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0047",
+    "word": "PULSAR",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 340,
+    "tier": "medium",
+    "description": "A dead star's lighthouse, ticking with eerie precision",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0048",
+    "word": "QUASAR",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 348,
+    "tier": "medium",
+    "description": "A galaxy's furious core outshining everything, across eons",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0049",
+    "word": "PARSEC",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 356,
+    "tier": "hard",
+    "description": "Three lightyears and change, no time involved",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0050",
+    "word": "REDSHIFT",
+    "topic": "Space & Sci-Fi",
+    "length": 8,
+    "difficulty": 367,
+    "tier": "hard",
+    "description": "Fleeing galaxies blush toward the warmer end",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "O"
+      }
+    }
+  },
+  {
+    "id": "SPC-0051",
+    "word": "APOGEE",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 378,
+    "tier": "hard",
+    "description": "A satellite's farthest sulk before swinging back home",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0052",
+    "word": "TACHYON",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 389,
+    "tier": "hard",
+    "description": "A hypothetical sprinter that never slows below light",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0053",
+    "word": "PERIGEE",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 402,
+    "tier": "hard",
+    "description": "Where a circling body hugs Earth the tightest",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0054",
+    "word": "ALBEDO",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 413,
+    "tier": "hard",
+    "description": "How brightly a world winks the light back",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0055",
+    "word": "ECLIPTIC",
+    "topic": "Space & Sci-Fi",
+    "length": 8,
+    "difficulty": 425,
+    "tier": "hard",
+    "description": "The sun's yearly racetrack across our sky",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0056",
+    "word": "AZIMUTH",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 438,
+    "tier": "hard",
+    "description": "Compass degrees for aiming your telescope sideways",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "Z",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0057",
+    "word": "APHELION",
+    "topic": "Space & Sci-Fi",
+    "length": 8,
+    "difficulty": 451,
+    "tier": "hard",
+    "description": "The loop's loneliest stretch from our own star",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "SPC-0058",
+    "word": "ANSIBLE",
+    "topic": "Space & Sci-Fi",
+    "length": 7,
+    "difficulty": 465,
+    "tier": "hard",
+    "description": "Fiction's phone that ignores the light-speed limit",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "SPC-0059",
+    "word": "MAGNETAR",
+    "topic": "Space & Sci-Fi",
+    "length": 8,
+    "difficulty": 480,
+    "tier": "hard",
+    "description": "A stellar corpse whose field could wipe you from across space",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "SPC-0060",
+    "word": "SYZYGY",
+    "topic": "Space & Sci-Fi",
+    "length": 6,
+    "difficulty": 496,
+    "tier": "hard",
+    "description": "Three bodies queue up; vowels barely attend",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "Z"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "T"
+      }
+    }
+  }
+]

@@ -2,11 +2,16 @@
 // validate.js — Sabd batch validator (all rules from brief §6).
 //
 // Usage:
-//   node src/validate.js data/raw/GAM-batch1.json [--no-api] [--max-print N]
+//   node src/validate.js data/raw/GAM-batch1.json [--scale=legacy|unified] [--no-api] [--max-print N]
 //
 // Writes  data/reports/<name>-report.json
 // Splits  data/clean/<name>-passed.json / -rejected.json / -review.json
+//         (unified scale: data/clean/unified/<name>-*.json)
 // Exits non-zero when any entry hard-fails.
+//
+// Phase 4 (P4-T4/T6): `--scale=unified` validates against the unified 0–500 scale —
+// four tiers (veryEasy/easy/medium/hard), bottom-weighted split. Default stays
+// `legacy` (800–2200, low/mid/high) so historical batches re-validate byte-identically.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -24,8 +29,26 @@ const TOPICS = {
   'World & Places': 'WLD',
 };
 
-const TIER_BANDS = { low: [800, 1200], mid: [1201, 1600], high: [1601, 2200] };
-const EXPECTED_SPLIT_PER_60 = { low: 24, mid: 24, high: 12 };
+// Per-scale rules. `legacy` = the Elo-era fossil scale (batch1 era); `unified` = the
+// Phase-4 scale where difficulty speaks the player-score's language (engine 3.0.0).
+// Unified bands mirror @sabd/elo CONFIG_3_0_0; the split is the architect's
+// bottom-weighted 25/30/30/15 (a stranger's first 60 seconds decides everything).
+const SCALES = {
+  legacy: {
+    tiers: ['low', 'mid', 'high'],
+    bands: { low: [800, 1200], mid: [1201, 1600], high: [1601, 2200] },
+    range: [800, 2200],
+    splitPer60: { low: 24, mid: 24, high: 12 },
+    cleanSubdir: '',
+  },
+  unified: {
+    tiers: ['veryEasy', 'easy', 'medium', 'hard'],
+    bands: { veryEasy: [0, 50], easy: [51, 150], medium: [151, 350], hard: [351, 500] },
+    range: [0, 500],
+    splitPer60: { veryEasy: 18, easy: 18, medium: 16, hard: 8 },
+    cleanSubdir: 'unified',
+  },
+};
 
 // Phrases that make a free description read like a dictionary entry.
 const DEFINITIONAL_PATTERNS = [
@@ -81,16 +104,18 @@ function hardCheck(entry, ctx) {
     fail('length-mismatch', `length=${entry.length} but word has ${word.length} letters`);
   }
 
-  // 3. tier
-  const tierOk = ['low', 'mid', 'high'].includes(entry.tier);
-  if (!tierOk) fail('tier-invalid', `tier ${JSON.stringify(entry.tier)} not in low|mid|high`);
+  // 3. tier (scale-local vocabulary)
+  const scale = ctx.scale;
+  const tierOk = scale.tiers.includes(entry.tier);
+  if (!tierOk) fail('tier-invalid', `tier ${JSON.stringify(entry.tier)} not in ${scale.tiers.join('|')}`);
 
-  // 4. difficulty
+  // 4. difficulty (scale-local range + band)
   const d = entry.difficulty;
-  if (!Number.isInteger(d) || d < 800 || d > 2200) {
-    fail('difficulty-range', `difficulty=${d} outside 800-2200`);
+  const [rangeLo, rangeHi] = scale.range;
+  if (!Number.isInteger(d) || d < rangeLo || d > rangeHi) {
+    fail('difficulty-range', `difficulty=${d} outside ${rangeLo}-${rangeHi}`);
   } else if (tierOk) {
-    const [lo, hi] = TIER_BANDS[entry.tier];
+    const [lo, hi] = scale.bands[entry.tier];
     if (d < lo || d > hi) {
       fail('difficulty-band', `difficulty=${d} outside ${entry.tier} band ${lo}-${hi}`);
     }
@@ -184,10 +209,16 @@ async function main() {
   const useApi = !args.includes('--no-api');
   const maxPrintIdx = args.indexOf('--max-print');
   const MAX_PRINT = maxPrintIdx !== -1 ? Number(args[maxPrintIdx + 1]) || 5 : 5;
+  const scaleArg = args.find((a) => a.startsWith('--scale='))?.slice('--scale='.length) ?? 'legacy';
+  const scale = SCALES[scaleArg];
+  if (!scale) {
+    console.error(`Unknown --scale=${scaleArg} (expected ${Object.keys(SCALES).join('|')})`);
+    process.exit(2);
+  }
   const inputPath = args.find((a) => !a.startsWith('--') && a !== String(MAX_PRINT));
 
   if (!inputPath) {
-    console.error('Usage: node src/validate.js <batch.json> [--no-api] [--max-print N]');
+    console.error('Usage: node src/validate.js <batch.json> [--scale=legacy|unified] [--no-api] [--max-print N]');
     process.exit(2);
   }
 
@@ -205,7 +236,7 @@ async function main() {
   }
 
   const base = path.basename(absInput).replace(/\.json$/i, '');
-  const ctx = { seenIds: new Map(), seenWords: new Map() };
+  const ctx = { seenIds: new Map(), seenWords: new Map(), scale };
 
   const passed = [];
   const rejected = [];
@@ -267,22 +298,18 @@ async function main() {
   }
 
   // ---- per-batch tier split -------------------------------------------
-  const actualSplit = { low: 0, mid: 0, high: 0 };
+  const actualSplit = Object.fromEntries(scale.tiers.map((t) => [t, 0]));
   for (const e of batch) if (e?.tier in actualSplit) actualSplit[e.tier]++;
-  const scale = batch.length / 60;
-  const expectedSplit = {
-    low: Math.round(EXPECTED_SPLIT_PER_60.low * scale),
-    mid: Math.round(EXPECTED_SPLIT_PER_60.mid * scale),
-    high: Math.round(EXPECTED_SPLIT_PER_60.high * scale),
-  };
-  const tierSplitOk =
-    actualSplit.low === expectedSplit.low &&
-    actualSplit.mid === expectedSplit.mid &&
-    actualSplit.high === expectedSplit.high;
+  const ratio = batch.length / 60;
+  const expectedSplit = Object.fromEntries(
+    scale.tiers.map((t) => [t, Math.round(scale.splitPer60[t] * ratio)]),
+  );
+  const tierSplitOk = scale.tiers.every((t) => actualSplit[t] === expectedSplit[t]);
 
   // ---- write outputs ----------------------------------------------------
   const report = {
     input: path.relative(ROOT, absInput),
+    scale: scaleArg,
     generatedAt: new Date().toISOString(),
     apiFallback: useApi ? 'enabled' : 'disabled (--no-api)',
     totals: {
@@ -297,7 +324,7 @@ async function main() {
   };
 
   const reportsDir = path.join(ROOT, 'data', 'reports');
-  const cleanDir = path.join(ROOT, 'data', 'clean');
+  const cleanDir = path.join(ROOT, 'data', 'clean', scale.cleanSubdir);
   fs.mkdirSync(reportsDir, { recursive: true });
   fs.mkdirSync(cleanDir, { recursive: true });
 
@@ -321,8 +348,8 @@ async function main() {
     `Entries: ${batch.length}   PASSED: ${passed.length}   REJECTED: ${rejected.length}   REVIEW: ${review.length}`
   );
   console.log(
-    `Tier split (low/mid/high): actual ${actualSplit.low}/${actualSplit.mid}/${actualSplit.high}` +
-      `  expected ${expectedSplit.low}/${expectedSplit.mid}/${expectedSplit.high}  ${tierSplitOk ? 'OK' : '** OFF **'}`
+    `Tier split (${scale.tiers.join('/')}): actual ${scale.tiers.map((t) => actualSplit[t]).join('/')}` +
+      `  expected ${scale.tiers.map((t) => expectedSplit[t]).join('/')}  ${tierSplitOk ? 'OK' : '** OFF **'}`
   );
   console.log(`Dictionary API fallback: ${report.apiFallback}`);
 
@@ -352,7 +379,7 @@ async function main() {
 
   console.log(`\nReport:  ${path.relative(process.cwd(), reportPath)}`);
   console.log(
-    `Buckets: data/clean/${base}-passed.json | -rejected.json | -review.json`
+    `Buckets: ${path.relative(ROOT, cleanDir)}/${base}-passed.json | -rejected.json | -review.json`
   );
   console.log(line);
 

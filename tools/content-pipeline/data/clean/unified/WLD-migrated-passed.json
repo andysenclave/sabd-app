@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "WLD-0001",
+    "word": "MAP",
+    "topic": "World & Places",
+    "length": 3,
+    "difficulty": 4,
+    "tier": "veryEasy",
+    "description": "Folded paper that never refolds the same way twice",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "WLD-0002",
+    "word": "BEACH",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 6,
+    "tier": "veryEasy",
+    "description": "Sun, sand, and sunscreen in your sandwich",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0003",
+    "word": "CITY",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 9,
+    "tier": "veryEasy",
+    "description": "Millions of strangers sharing one skyline",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "N"
+      }
+    }
+  },
+  {
+    "id": "WLD-0004",
+    "word": "RIVER",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 11,
+    "tier": "veryEasy",
+    "description": "Always running downhill, never out of breath",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "V"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0005",
+    "word": "LAKE",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 17,
+    "tier": "veryEasy",
+    "description": "Still water the mountains keep for themselves",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "WLD-0006",
+    "word": "OCEAN",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 19,
+    "tier": "veryEasy",
+    "description": "Most of the planet, still mostly unexplored",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "WLD-0007",
+    "word": "BAY",
+    "topic": "World & Places",
+    "length": 3,
+    "difficulty": 23,
+    "tier": "veryEasy",
+    "description": "Where the sea takes a calm bite from the land",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0008",
+    "word": "MOUNTAIN",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 28,
+    "tier": "veryEasy",
+    "description": "It was climbed because it was there",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "WLD-0009",
+    "word": "ISLAND",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 34,
+    "tier": "veryEasy",
+    "description": "Land that decided to keep its distance",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0010",
+    "word": "DESERT",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 39,
+    "tier": "veryEasy",
+    "description": "Endless sand with a serious hydration problem",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "M"
+      }
+    }
+  },
+  {
+    "id": "WLD-0011",
+    "word": "PEAK",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 51,
+    "tier": "easy",
+    "description": "The pointy bit that collects flags and frostbite",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "WLD-0012",
+    "word": "PARIS",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 56,
+    "tier": "easy",
+    "description": "Croissants, catwalks, and one very tall iron lady",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0013",
+    "word": "VALLEY",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 62,
+    "tier": "easy",
+    "description": "The low road between two proud ridges",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0014",
+    "word": "DELHI",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 68,
+    "tier": "easy",
+    "description": "India's capital, old and new stitched together",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0015",
+    "word": "JUNGLE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 73,
+    "tier": "easy",
+    "description": "Green chaos where everything hums, bites, or climbs",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0016",
+    "word": "GLOBE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 79,
+    "tier": "easy",
+    "description": "The whole world spinning on a desk",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "WLD-0017",
+    "word": "TEMPLE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 86,
+    "tier": "easy",
+    "description": "Incense, bells, and shoes left at the door",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0018",
+    "word": "CANYON",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 92,
+    "tier": "easy",
+    "description": "A river's masterpiece, carved over a few million years",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0019",
+    "word": "VILLAGE",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 99,
+    "tier": "easy",
+    "description": "Everyone knows your name, and your business",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0020",
+    "word": "HARBOR",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 111,
+    "tier": "easy",
+    "description": "Where tired ships come home to gossip",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0021",
+    "word": "VOLCANO",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 118,
+    "tier": "easy",
+    "description": "A mountain with anger management issues",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0022",
+    "word": "COMPASS",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 126,
+    "tier": "easy",
+    "description": "The needle that always fancies north",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0023",
+    "word": "CAPITAL",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 135,
+    "tier": "easy",
+    "description": "The city where the country keeps its paperwork",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0024",
+    "word": "PASSPORT",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 143,
+    "tier": "easy",
+    "description": "A little booklet collecting stamps and side-eye at borders",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "M"
+      }
+    }
+  },
+  {
+    "id": "WLD-0025",
+    "word": "DELTA",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 155,
+    "tier": "medium",
+    "description": "Where a river fans out and finally lets go",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0026",
+    "word": "MONSOON",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 165,
+    "tier": "medium",
+    "description": "The sky saving all year for one long pour",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0027",
+    "word": "OASIS",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 168,
+    "tier": "medium",
+    "description": "Palm trees and water where neither should exist",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0028",
+    "word": "SUMMIT",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 175,
+    "tier": "medium",
+    "description": "Where every direction suddenly points down",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0029",
+    "word": "GORGE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 180,
+    "tier": "medium",
+    "description": "A slot of stone the water sawed deep",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0030",
+    "word": "EVEREST",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 185,
+    "tier": "medium",
+    "description": "The planet's rooftop, complete with a queue",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    }
+  },
+  {
+    "id": "WLD-0031",
+    "word": "CAPE",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 193,
+    "tier": "medium",
+    "description": "Land's last stubborn point jabbing at the sea",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0032",
+    "word": "SAHARA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 195,
+    "tier": "medium",
+    "description": "Africa's giant sandbox, no toys allowed",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0033",
+    "word": "DUNE",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 203,
+    "tier": "medium",
+    "description": "A hill of sand that keeps moving house",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "WLD-0034",
+    "word": "GLACIER",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 205,
+    "tier": "medium",
+    "description": "A river of ice in absolutely no hurry",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0035",
+    "word": "REEF",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 213,
+    "tier": "medium",
+    "description": "Coral city where ships fear to scrape",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "WLD-0036",
+    "word": "GANGES",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 220,
+    "tier": "medium",
+    "description": "The sacred river that carries prayers to the sea",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0037",
+    "word": "PLATEAU",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 228,
+    "tier": "medium",
+    "description": "High country that forgot to have peaks",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0038",
+    "word": "LAGOON",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 235,
+    "tier": "medium",
+    "description": "Shallow blue water hiding behind a coral fence",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0039",
+    "word": "BAZAAR",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 245,
+    "tier": "medium",
+    "description": "Haggling, spices, and noise by the alleyful",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "Z",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0040",
+    "word": "EQUATOR",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 250,
+    "tier": "medium",
+    "description": "The invisible belt where the planet sweats most",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "WLD-0041",
+    "word": "KERALA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 260,
+    "tier": "medium",
+    "description": "Backwaters, coconuts, and God's own country",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0042",
+    "word": "TUNDRA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 270,
+    "tier": "medium",
+    "description": "Frozen ground where trees gave up trying",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    }
+  },
+  {
+    "id": "WLD-0043",
+    "word": "MESA",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 275,
+    "tier": "medium",
+    "description": "A table of rock the desert set",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0044",
+    "word": "STRAIT",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 283,
+    "tier": "medium",
+    "description": "The sea squeezing between two nervous coastlines",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "WLD-0045",
+    "word": "GEYSER",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 293,
+    "tier": "medium",
+    "description": "The ground's kettle boiling over on schedule",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0046",
+    "word": "SAVANNA",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 303,
+    "tier": "medium",
+    "description": "Golden grass, flat-topped trees, lions on patrol",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0047",
+    "word": "PRAIRIE",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 313,
+    "tier": "medium",
+    "description": "Grass to the horizon, wind for company",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0048",
+    "word": "LATITUDE",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 330,
+    "tier": "medium",
+    "description": "Lines that measure how far from the middle you wandered",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0049",
+    "word": "FJORD",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 356,
+    "tier": "hard",
+    "description": "A glacier's deep blue signature on the coastline",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0050",
+    "word": "STEPPE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 367,
+    "tier": "hard",
+    "description": "Treeless grass where horsemen wrote history",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0051",
+    "word": "ATOLL",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 378,
+    "tier": "hard",
+    "description": "A coral ring around a vanished volcano",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0052",
+    "word": "TAIGA",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 391,
+    "tier": "hard",
+    "description": "The endless pine belt below the frozen north",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0053",
+    "word": "ESTUARY",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 403,
+    "tier": "hard",
+    "description": "Where the river and the tide argue over salt",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "I"
+      }
+    }
+  },
+  {
+    "id": "WLD-0054",
+    "word": "CALDERA",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 415,
+    "tier": "hard",
+    "description": "The crater left when a volcano swallows itself",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0055",
+    "word": "ISTHMUS",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 429,
+    "tier": "hard",
+    "description": "A skinny land bridge two oceans nearly pinch shut",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0056",
+    "word": "KARST",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 442,
+    "tier": "hard",
+    "description": "Limestone country, riddled with sinkholes and secret caves",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "E"
+      }
+    }
+  },
+  {
+    "id": "WLD-0057",
+    "word": "MORAINE",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 454,
+    "tier": "hard",
+    "description": "The rubble a glacier bulldozed and then abandoned",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0058",
+    "word": "POLDER",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 468,
+    "tier": "hard",
+    "description": "Farmland the Dutch politely borrowed from the sea",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    }
+  },
+  {
+    "id": "WLD-0059",
+    "word": "WADI",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 481,
+    "tier": "hard",
+    "description": "A desert riverbed waiting years for its river",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "R"
+      }
+    }
+  },
+  {
+    "id": "WLD-0060",
+    "word": "TOMBOLO",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 495,
+    "tier": "hard",
+    "description": "The sandy bridge that ties an island to shore",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    }
+  }
+]
