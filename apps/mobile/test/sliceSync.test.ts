@@ -10,7 +10,8 @@ import { createHash } from 'node:crypto';
 
 import type { WordEntry, WordSlice, WordSliceManifest } from '@sabd/contracts';
 import { BANK_TOPICS, WORD_SLICE_SCHEMA_VERSION } from '@sabd/contracts';
-import { words as bundledWords } from '@sabd/wordbank';
+// Post-3.0.0 flip: liveBank serves the UNIFIED bank, so bundled-bank comparisons use it.
+import { unifiedWords as bundledWords } from '@sabd/wordbank';
 import { cellFileName, loadInstalledSlices, syncSlices, type SliceIO } from '../src/bank/sliceSync.ts';
 import {
   applySlices,
@@ -52,21 +53,24 @@ function fakeIO(cdn: Map<string, string>, disk: Map<string, string> = new Map())
 }
 
 let seq = 0;
-function word(topic: string, tier: 'low' | 'mid' | 'high', id?: string): WordEntry {
+function word(topic: string, tier: WordEntry['tier'], id?: string): WordEntry {
   const w = `W${String(++seq).padStart(3, '0')}`;
+  const difficulty =
+    tier === 'veryEasy' ? 30 : tier === 'easy' ? 100 : tier === 'medium' ? 250 : tier === 'hard' ? 400
+    : tier === 'low' ? 900 : tier === 'mid' ? 1400 : 1800;
   return {
     id: id ?? `T-${String(++seq).padStart(4, '0')}`,
     word: w,
     topic,
     length: w.length,
-    difficulty: tier === 'low' ? 900 : tier === 'mid' ? 1400 : 1800,
+    difficulty,
     tier,
     description: 'A test word, nothing more',
     hints: { position: { index: 0, letter: 'W' }, letters: { correct: 'W', decoy: 'X' } },
   };
 }
 
-function slice(topicId: 'gaming' | 'music', tier: 'low' | 'mid' | 'high', sliceVersion: number, words: WordEntry[]): WordSlice {
+function slice(topicId: 'gaming' | 'music', tier: WordEntry['tier'], sliceVersion: number, words: WordEntry[]): WordSlice {
   return {
     schemaVersion: WORD_SLICE_SCHEMA_VERSION,
     wordBankVersion: '1.1.0',
@@ -189,18 +193,18 @@ test('no overrides → exactly the bundled bank', () => {
 });
 
 test('an applied slice REPLACES its (topic × tier) cell; other cells untouched', () => {
-  const bundledGamingLow = bundledWords.filter((w) => w.topic === BANK_TOPICS.gaming && w.tier === 'low');
-  const bundledRest = bundledWords.length - bundledGamingLow.length;
+  const bundledGamingVE = bundledWords.filter((w) => w.topic === BANK_TOPICS.gaming && w.tier === 'veryEasy');
+  const bundledRest = bundledWords.length - bundledGamingVE.length;
 
-  const replacement = [word(BANK_TOPICS.gaming, 'low', 'GAM-X1'), word(BANK_TOPICS.gaming, 'low', 'GAM-X2')];
-  applySlices([slice('gaming', 'low', 2, replacement)]);
+  const replacement = [word(BANK_TOPICS.gaming, 'veryEasy', 'GAM-X1'), word(BANK_TOPICS.gaming, 'veryEasy', 'GAM-X2')];
+  applySlices([slice('gaming', 'veryEasy', 2, replacement)]);
 
   const live = bankWords();
   assert.equal(live.length, bundledRest + 2);
-  const liveGamingLow = live.filter((w) => w.topic === BANK_TOPICS.gaming && w.tier === 'low');
-  assert.deepEqual(liveGamingLow.map((w) => w.id).sort(), ['GAM-X1', 'GAM-X2']);
-  // A bundled gaming/low word removed by the correction stays removed (no union).
-  assert.ok(!live.some((w) => w.id === bundledGamingLow[0]!.id));
+  const liveGamingVE = live.filter((w) => w.topic === BANK_TOPICS.gaming && w.tier === 'veryEasy');
+  assert.deepEqual(liveGamingVE.map((w) => w.id).sort(), ['GAM-X1', 'GAM-X2']);
+  // A bundled gaming/veryEasy word removed by the correction stays removed (no union).
+  assert.ok(!live.some((w) => w.id === bundledGamingVE[0]!.id));
 });
 
 test('an empty downloaded slice empties its cell (removal is honored)', () => {

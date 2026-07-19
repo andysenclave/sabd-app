@@ -336,7 +336,8 @@ export interface WordSliceRef {
   topicId: TopicId;
   /** Bank topic display string (matches `WordEntry.topic`). */
   topic: string;
-  tier: WordTier;
+  /** A slice cell's tier — unified four post-3.0.0, legacy trio on old banks (BankScale). */
+  tier: BankTier;
   /**
    * Monotonic per-slice content version — bumps ONLY when this slice's words
    * change, so an unchanged slice is never re-downloaded across bank versions.
@@ -370,7 +371,8 @@ export interface WordSlice {
   wordBankVersion: string;
   topicId: TopicId;
   topic: string;
-  tier: WordTier;
+  /** A slice cell's tier — unified four post-3.0.0, legacy trio on old banks (BankScale). */
+  tier: BankTier;
   sliceVersion: number;
   words: WordEntry[];
 }

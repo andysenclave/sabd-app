@@ -407,7 +407,7 @@ export function validateWordSliceRef(
 
   c.oneOf(input['topicId'], TOPIC_IDS, `${path}.topicId`);
   c.nonEmptyString(input['topic'], `${path}.topic`);
-  c.oneOf(input['tier'], WORD_TIERS, `${path}.tier`);
+  c.oneOf(input['tier'], BANK_TIERS, `${path}.tier`);
   nonNegativeInteger(c, input['sliceVersion'], `${path}.sliceVersion`);
   c.nonEmptyString(input['url'], `${path}.url`);
   nonNegativeInteger(c, input['wordCount'], `${path}.wordCount`);
@@ -460,7 +460,7 @@ export function validateWordSlice(input: unknown, path = 'slice'): ValidationRes
   c.nonEmptyString(input['wordBankVersion'], `${path}.wordBankVersion`);
   c.oneOf(input['topicId'], TOPIC_IDS, `${path}.topicId`);
   c.nonEmptyString(input['topic'], `${path}.topic`);
-  c.oneOf(input['tier'], WORD_TIERS, `${path}.tier`);
+  c.oneOf(input['tier'], BANK_TIERS, `${path}.tier`);
   nonNegativeInteger(c, input['sliceVersion'], `${path}.sliceVersion`);
 
   const words = input['words'];

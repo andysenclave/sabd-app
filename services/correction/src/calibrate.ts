@@ -19,13 +19,13 @@
  *   change). Within-tier nudges auto-apply into the next bank PATCH version.
  */
 
-import type { WordEntry, WordTier } from '@sabd/contracts';
+import type { BankTier, WordEntry } from '@sabd/contracts';
 import { defaultConfig, tierForDifficulty } from '@sabd/elo';
 import { NOISE_FLOOR, type WordStats } from './aggregate.ts';
 
 export interface CalibrationConfig {
   /** Target solve rate per tier — what "correctly rated" looks like. */
-  readonly targetSolveRate: Readonly<Record<WordTier, number>>;
+  readonly targetSolveRate: Readonly<Partial<Record<BankTier, number>>>;
   /** Rating points of nudge per 1.0 of solve-rate error. */
   readonly gain: number;
   /** Max |nudge| per run — keeps corrections slow. */
@@ -35,11 +35,16 @@ export interface CalibrationConfig {
 }
 
 export const defaultCalibration: CalibrationConfig = {
-  // A low word should be solved by most (it greets score-0 players); high words
-  // should genuinely resist. Between the tiers the targets step down.
-  targetSolveRate: { low: 0.8, mid: 0.6, high: 0.4 },
-  gain: 400,
-  maxNudge: 50,
+  // Post-3.0.0-flip: the live bank is the UNIFIED four-tier scale (0–500). A veryEasy
+  // word should be solved by nearly everyone (it greets score-0 players); hard words
+  // should genuinely resist. Targets step down across the tiers.
+  // NOTE (F11): pre-3.0.0 events carry old-scale wordRatingAtPlay; the confidence-
+  // weighted rebuild (P4-T7) will discard that evidence. Aggregate solve RATE is
+  // scale-independent, so today's nudges stay sound in the meantime.
+  targetSolveRate: { veryEasy: 0.85, easy: 0.72, medium: 0.55, hard: 0.4 },
+  // Smaller step on the unified scale (0–500 vs 800–2200): gain/maxNudge scaled ~1/4.
+  gain: 100,
+  maxNudge: 12,
   noiseFloor: NOISE_FLOOR,
 };
 
@@ -51,8 +56,8 @@ export interface WordNudge {
   solveRate: number;
   oldDifficulty: number;
   newDifficulty: number;
-  oldTier: WordTier;
-  newTier: WordTier;
+  oldTier: BankTier;
+  newTier: BankTier;
 }
 
 export interface CalibrationProposal {
@@ -82,6 +87,7 @@ export function proposeCorrections(
 
     const oldTier = tierForDifficulty(word.difficulty, defaultConfig);
     const target = config.targetSolveRate[oldTier];
+    if (target === undefined) continue; // tier with no configured target — skip
     // Solved more than target → easier than rated → difficulty moves DOWN.
     const raw = config.gain * (target - s.solveRate);
     const nudge = Math.max(-config.maxNudge, Math.min(config.maxNudge, Math.round(raw)));
