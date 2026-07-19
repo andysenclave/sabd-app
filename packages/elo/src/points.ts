@@ -12,7 +12,7 @@
  * broken streak costs you the bonus, not your level.
  */
 
-import { defaultConfig, type PointsConfig } from './config.ts';
+import { defaultConfig, type PointsConfig, type TierBand } from './config.ts';
 import type { RatingUpdate, RoundResult, ScoreBreakdown, WordTier } from './types.ts';
 
 const clamp = (x: number, lo: number, hi: number): number => Math.min(hi, Math.max(lo, x));
@@ -30,11 +30,36 @@ export function countPaidHints(result: Pick<RoundResult, 'hintsUsed'>): number {
   return Math.min(new Set(result.hintsUsed).size, 2);
 }
 
-/** The word's difficulty tier, re-derived from its numeric difficulty (event-log has no tier). */
+/**
+ * The band a numeric difficulty falls in, walking the config's own bands (ascending
+ * by `maxRating`). Config-generic: works for any config's tier vocabulary, so it is
+ * safe to call with the 2.0.0 or the 3.0.0 config. The top band's `maxRating` is
+ * Infinity, so a band is always found; the fallback guards a malformed config.
+ */
+export function bandForDifficulty(difficulty: number, config: PointsConfig = defaultConfig): TierBand {
+  return config.bands.find((b) => difficulty <= b.maxRating) ?? lastBand(config);
+}
+
+/** The band a player at this score is served, walking the config's `serveBelow` bounds. */
+export function bandForScore(score: number, config: PointsConfig = defaultConfig): TierBand {
+  return config.bands.find((b) => score < b.serveBelow) ?? lastBand(config);
+}
+
+/** The top band — the fallback when no band matches (e.g. a NaN rating on a valid config). */
+function lastBand(config: PointsConfig): TierBand {
+  const top = config.bands[config.bands.length - 1];
+  if (!top) throw new RangeError('PointsConfig has no tier bands');
+  return top;
+}
+
+/**
+ * The word's difficulty tier, re-derived from its numeric difficulty (event-log has
+ * no tier). Typed `WordTier` for the active/legacy 3-tier configs that selection and
+ * calibration run against; scoring under an arbitrary config uses `bandForDifficulty`
+ * directly (its tier name is config-local and not assumed to be a `WordTier`).
+ */
 export function tierForDifficulty(difficulty: number, config: PointsConfig = defaultConfig): WordTier {
-  if (difficulty <= config.tierBands.lowMax) return 'low';
-  if (difficulty <= config.tierBands.midMax) return 'mid';
-  return 'high';
+  return bandForDifficulty(difficulty, config).tier as WordTier;
 }
 
 /**
@@ -42,9 +67,7 @@ export function tierForDifficulty(difficulty: number, config: PointsConfig = def
  * difficulty a player has reached never regresses (the score never drops).
  */
 export function tierForScore(score: number, config: PointsConfig = defaultConfig): WordTier {
-  if (score < config.tierThresholds.mid) return 'low';
-  if (score < config.tierThresholds.high) return 'mid';
-  return 'high';
+  return bandForScore(score, config).tier as WordTier;
 }
 
 /**
@@ -71,8 +94,7 @@ export function applyPoints(
     throw new RangeError(`timeLimitSec must be > 0, got ${result.timeLimitSec}`);
   }
 
-  const tier = tierForDifficulty(result.wordDifficulty, config);
-  const tierBase = config.tierBase[tier];
+  const tierBase = bandForDifficulty(result.wordDifficulty, config).base;
 
   const T = clamp(result.timeUsedSec / result.timeLimitSec, 0, 1);
   const speedBonus = Math.round(config.speedBonusMax * (1 - T));

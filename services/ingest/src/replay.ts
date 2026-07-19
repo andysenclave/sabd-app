@@ -12,7 +12,7 @@
 
 import type { CategoryScore, PlayerSnapshot, RoundEvent, RoundResult } from '@sabd/contracts';
 import { SEED_RATING } from '@sabd/contracts';
-import { applyPoints, ENGINE_CONFIG_VERSION, isPointsEraConfig } from '@sabd/elo';
+import { applyPoints, ENGINE_CONFIG_VERSION, isPointsEraConfig, requireConfig } from '@sabd/elo';
 
 /** Points-era = engineConfigVersion major ≥ 2 (see module note). */
 export function isPointsEra(e: RoundEvent): boolean {
@@ -43,7 +43,11 @@ function fold(events: readonly RoundEvent[]): Fold {
   let streak = 0;
   let gamesPlayed = 0;
   for (const e of events) {
-    const update = applyPoints({ rating: score, streak }, eventToRoundResult(e));
+    // Config-versioned replay (PART A §1): each round scores under the config that
+    // was live when it was played. `requireConfig` throws UnknownConfigVersionError
+    // on an unregistered stamp (F1) — the worker quarantines the batch, never guesses.
+    const config = requireConfig(e.engineConfigVersion);
+    const update = applyPoints({ rating: score, streak }, eventToRoundResult(e), config);
     score = update.newPlayerRating;
     streak = update.streak;
     gamesPlayed += 1;

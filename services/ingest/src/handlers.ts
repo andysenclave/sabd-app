@@ -8,6 +8,7 @@
 
 import type { RoundEvent, SyncDownResponse, SyncUploadResponse } from '@sabd/contracts';
 import { validateRoundEvent } from '@sabd/contracts';
+import { configForVersion, isPointsEraConfig } from '@sabd/elo';
 import { computeSnapshot } from './replay.ts';
 import type { EventStore } from './store.ts';
 
@@ -56,8 +57,17 @@ export async function handleUploadRounds(
   const rejectedRoundIds: string[] = [];
   for (const raw of rawEvents) {
     const checked = validateRoundEvent(raw);
+    // Config-versioned replay (F1): a POINTS-ERA event (major ≥ 2 — one that WOULD be
+    // scored) stamped with a config we can't resolve is QUARANTINED at the boundary —
+    // never stored. Storing it would poison every future replay of this install
+    // (computeSnapshot would throw on the unknown stamp). Elo-era (1.x) events are a
+    // different case: they are stored on purpose (they feed calibration) and simply
+    // filtered out of scoring, so they are NOT quarantined. The client keeps a
+    // quarantined event locally and surfaces a diagnostic — "fail loudly, never guess".
+    const scorable = checked.ok && isPointsEraConfig(checked.value.engineConfigVersion);
+    const resolvable = checked.ok && (!scorable || configForVersion(checked.value.engineConfigVersion) !== undefined);
     // An event claiming another install is rejected, not silently re-attributed.
-    if (checked.ok && checked.value.installId === installId) {
+    if (checked.ok && checked.value.installId === installId && resolvable) {
       valid.push(checked.value);
     } else {
       const rid =

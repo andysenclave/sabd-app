@@ -97,7 +97,7 @@ test('T12 DoD: server replay equals the CLIENT fold from identical events', asyn
   const snapshot = computeSnapshot(INSTALL, events, NOW);
 
   // The client fold: @sabd/storage replayEvents over the same list, seed 0.
-  const client = replayEvents(events, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 }, undefined, () => {});
+  const client = replayEvents(events, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 });
   assert.equal(snapshot.global.score, client.rating);
   assert.equal(snapshot.global.streak, client.streak);
   assert.equal(snapshot.global.gamesPlayed, client.gamesPlayed);
@@ -129,6 +129,42 @@ test('epoch: Elo-era events (engineConfigVersion 1.x) are stored but never score
   assert.equal(r.body.snapshot.global.gamesPlayed, 2); // only points-era scored
   const expected = computeSnapshot(INSTALL, pointsEra, NOW).global.score;
   assert.equal(r.body.snapshot.global.score, expected);
+});
+
+test('F1: a points-era event with an UNKNOWN config is quarantined (rejected, not stored)', async () => {
+  const store = new MemoryEventStore();
+  const good = event(); // active config, accepted
+  // A device ahead of the server after an OTA, or a corrupted stamp: points-era
+  // (major ≥ 2) but no registered config. Must NOT be stored — storing it would
+  // poison every future replay of this install (computeSnapshot would throw).
+  const ahead = event({ engineConfigVersion: '4.0.0' });
+  const r = await upload(store, [good, ahead]);
+  assert.ok(r.ok);
+
+  assert.deepEqual(r.body.acceptedRoundIds, [good.roundId]);
+  assert.ok(r.body.rejectedRoundIds.includes(ahead.roundId));
+  assert.equal(r.body.snapshot.totalRounds, 1); // the poison never landed
+
+  // The install stays replayable: a follow-up sync-down does not throw.
+  const me = await handleGetMe(store, INSTALL, false, NOW);
+  assert.ok(me.ok);
+  assert.equal(me.body.snapshot.totalRounds, 1);
+});
+
+test('P4-T2 coexistence: 2.0.0 and 3.0.0 events replay together, each under its era', async () => {
+  const store = new MemoryEventStore();
+  // A 3.0.0 event on the unified scale (rating 400 = hard, base 30) interleaved with
+  // a 2.0.0 event (rating 900 = low, base 10). Both are registered → both scored.
+  const v2 = event({ engineConfigVersion: '2.0.0', wordRatingAtPlay: 900 });
+  const v3 = event({ engineConfigVersion: '3.0.0', wordRatingAtPlay: 400 });
+  const r = await upload(store, [v2, v3]);
+  assert.ok(r.ok);
+
+  assert.equal(r.body.snapshot.totalRounds, 2);
+  assert.equal(r.body.snapshot.global.gamesPlayed, 2); // both are points-era → both scored
+  // Server truth must equal the client fold over the identical events (anti-cheat base).
+  const client = replayEvents([v2, v3], { rating: SEED_RATING, streak: 0, gamesPlayed: 0 });
+  assert.equal(r.body.snapshot.global.score, client.rating);
 });
 
 test('a bad event is rejected by roundId; the rest of the batch lands', async () => {
@@ -169,7 +205,7 @@ test('T13 reinstall restore: includeEvents returns the full log, replayable loca
   assert.equal(r.body.events?.length, 3);
 
   // The restored log replays (client-side) to exactly the server's snapshot.
-  const client = replayEvents(r.body.events!, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 }, undefined, () => {});
+  const client = replayEvents(r.body.events!, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 });
   assert.equal(client.rating, r.body.snapshot.global.score);
   assert.equal(client.streak, r.body.snapshot.global.streak);
 });
