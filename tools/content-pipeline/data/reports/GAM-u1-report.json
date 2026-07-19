@@ -1,0 +1,1103 @@
+{
+  "input": "data/raw/unified/GAM-u1.json",
+  "scale": "unified",
+  "generatedAt": "2026-07-19T09:37:30.557Z",
+  "apiFallback": "enabled",
+  "totals": {
+    "entries": 150,
+    "passed": 147,
+    "rejected": 0,
+    "review": 3
+  },
+  "tierSplit": {
+    "expected": {
+      "veryEasy": 45,
+      "easy": 45,
+      "medium": 40,
+      "hard": 20
+    },
+    "actual": {
+      "veryEasy": 45,
+      "easy": 45,
+      "medium": 40,
+      "hard": 20
+    },
+    "ok": true
+  },
+  "failuresByRule": {},
+  "entries": [
+    {
+      "id": "GAM-9001",
+      "word": "GAME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9002",
+      "word": "PLAY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9003",
+      "word": "WIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9004",
+      "word": "FUN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9005",
+      "word": "TOY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9006",
+      "word": "RUN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9007",
+      "word": "BALL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9008",
+      "word": "DICE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9009",
+      "word": "CARD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9010",
+      "word": "KING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9011",
+      "word": "RACE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9012",
+      "word": "TEAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9013",
+      "word": "GOLD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9014",
+      "word": "COIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9015",
+      "word": "STAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9016",
+      "word": "MAP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9017",
+      "word": "KEY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9018",
+      "word": "DOOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9019",
+      "word": "HERO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9020",
+      "word": "MAZE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9021",
+      "word": "CHESS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9022",
+      "word": "LOSE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9023",
+      "word": "AIM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9024",
+      "word": "SPIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9025",
+      "word": "ROLL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9026",
+      "word": "TURN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9027",
+      "word": "FIGHT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9028",
+      "word": "MAGIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9029",
+      "word": "SWORD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9030",
+      "word": "NINJA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9031",
+      "word": "ROBOT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9032",
+      "word": "ALIEN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9033",
+      "word": "GHOST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9034",
+      "word": "ZOMBIE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9035",
+      "word": "DRAGON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9036",
+      "word": "CASTLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9037",
+      "word": "PIRATE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9038",
+      "word": "WIZARD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9039",
+      "word": "KNIGHT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9040",
+      "word": "ARROW",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9041",
+      "word": "TRAP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9042",
+      "word": "PRIZE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9043",
+      "word": "TIMER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9044",
+      "word": "PAUSE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9045",
+      "word": "SCREEN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9046",
+      "word": "BUTTON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9047",
+      "word": "PUZZLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9048",
+      "word": "BONUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9049",
+      "word": "ENEMY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9050",
+      "word": "ARENA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9051",
+      "word": "BATTLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9052",
+      "word": "SHIELD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9053",
+      "word": "SPELL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9054",
+      "word": "STAGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9055",
+      "word": "WORLD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9056",
+      "word": "TOKEN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9057",
+      "word": "SAVE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9058",
+      "word": "MENU",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9059",
+      "word": "DEMO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9060",
+      "word": "CRASH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9061",
+      "word": "FREEZE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9062",
+      "word": "TROPHY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9063",
+      "word": "MEDAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9064",
+      "word": "RANK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9065",
+      "word": "BADGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9066",
+      "word": "SKIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9067",
+      "word": "ARMOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9068",
+      "word": "POTION",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9069",
+      "word": "WEAPON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9070",
+      "word": "DUNGEON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9071",
+      "word": "MISSION",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9072",
+      "word": "VICTORY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9073",
+      "word": "DEFEAT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9074",
+      "word": "REPLAY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9075",
+      "word": "RESTART",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9076",
+      "word": "UPGRADE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9077",
+      "word": "HEADSET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9078",
+      "word": "STREAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9079",
+      "word": "ONLINE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9080",
+      "word": "RETRO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9081",
+      "word": "SOLO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9082",
+      "word": "SQUAD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9083",
+      "word": "CLAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9084",
+      "word": "RAID",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9085",
+      "word": "DODGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9086",
+      "word": "SPRINT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9087",
+      "word": "SNEAK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9088",
+      "word": "CROUCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9089",
+      "word": "SUMMON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9090",
+      "word": "REVIVE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9091",
+      "word": "PATCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9092",
+      "word": "TIER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9093",
+      "word": "LORE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9094",
+      "word": "INDIE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9095",
+      "word": "PERK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9096",
+      "word": "AMBUSH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9097",
+      "word": "TAUNT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9098",
+      "word": "VERSUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9099",
+      "word": "REMATCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9100",
+      "word": "TUTORIAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9101",
+      "word": "VANILLA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9102",
+      "word": "SERVER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9103",
+      "word": "HOST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9104",
+      "word": "PING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9105",
+      "word": "BETA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9106",
+      "word": "ALPHA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9107",
+      "word": "EXPLOIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9108",
+      "word": "SPRITE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9109",
+      "word": "TEXTURE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9110",
+      "word": "POLYGON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9111",
+      "word": "RENDER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9112",
+      "word": "ENGINE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9113",
+      "word": "FRAME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9114",
+      "word": "RAGDOLL",
+      "status": "passed",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "dictionary-api-only",
+          "detail": "not in local wordlist; confirmed by dictionaryapi.dev"
+        }
+      ]
+    },
+    {
+      "id": "GAM-9115",
+      "word": "SKYBOX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9116",
+      "word": "MINIMAP",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "GAM-9117",
+      "word": "OVERLAY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9118",
+      "word": "RECOIL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9119",
+      "word": "STRAFE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9120",
+      "word": "CLUTCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9121",
+      "word": "FRAG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9122",
+      "word": "JUKE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9123",
+      "word": "TILT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9124",
+      "word": "TOXIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9125",
+      "word": "TROLL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9126",
+      "word": "IDLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9127",
+      "word": "EMULATOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9128",
+      "word": "BIOME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9129",
+      "word": "JUNGLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9130",
+      "word": "COUNTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9131",
+      "word": "MULLIGAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9132",
+      "word": "TEMPO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9133",
+      "word": "MILL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9134",
+      "word": "CANTRIP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9135",
+      "word": "TOPDECK",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "GAM-9136",
+      "word": "CREEP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9137",
+      "word": "WARD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9138",
+      "word": "PEEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9139",
+      "word": "BACKDOOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9140",
+      "word": "ENRAGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9141",
+      "word": "PARSE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9142",
+      "word": "UPTIME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9143",
+      "word": "WIPE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9144",
+      "word": "NEUTRAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9145",
+      "word": "DITHER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9146",
+      "word": "PARALLAX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9147",
+      "word": "SCANLINE",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "GAM-9148",
+      "word": "MARQUEE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9149",
+      "word": "BEZEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "GAM-9150",
+      "word": "ATTRACT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    }
+  ]
+}

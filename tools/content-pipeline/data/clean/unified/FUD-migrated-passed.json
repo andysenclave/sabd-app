@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "FUD-0001",
+    "word": "TEA",
+    "topic": "Food & Drink",
+    "length": 3,
+    "difficulty": 0,
+    "tier": "veryEasy",
+    "description": "Leaves steeped until the whole house slows down",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "M"
+      }
+    },
+    "altDescription": "Biscuits queue up for a quick afternoon dunk"
+  },
+  {
+    "id": "FUD-0002",
+    "word": "CHAI",
+    "topic": "Food & Drink",
+    "length": 4,
+    "difficulty": 4,
+    "tier": "veryEasy",
+    "description": "Steam, spice, and roadside conversations in a small glass",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Railway platforms echo with its vendor's singsong call"
+  },
+  {
+    "id": "FUD-0003",
+    "word": "MILK",
+    "topic": "Food & Drink",
+    "length": 4,
+    "difficulty": 8,
+    "tier": "veryEasy",
+    "description": "What the cat and the chaiwala both covet",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Cereal's morning bath, leaving white moustaches behind"
+  },
+  {
+    "id": "FUD-0004",
+    "word": "PIZZA",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 11,
+    "tier": "veryEasy",
+    "description": "A cheesy circle sliced into friendly arguments",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "Z"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Pineapple on top starts internet wars"
+  },
+  {
+    "id": "FUD-0005",
+    "word": "RICE",
+    "topic": "Food & Drink",
+    "length": 4,
+    "difficulty": 19,
+    "tier": "veryEasy",
+    "description": "Tiny white grains beneath every good curry",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Showered over newlyweds in older traditions"
+  },
+  {
+    "id": "FUD-0006",
+    "word": "EGG",
+    "topic": "Food & Drink",
+    "length": 3,
+    "difficulty": 26,
+    "tier": "veryEasy",
+    "description": "Breakfast's fragile little sunrise in a shell",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Which came first, it or the chicken?"
+  },
+  {
+    "id": "FUD-0007",
+    "word": "TOAST",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 30,
+    "tier": "veryEasy",
+    "description": "Breakfast browned until the smoke alarm judges you",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Glasses lift skyward before the best man's speech"
+  },
+  {
+    "id": "FUD-0008",
+    "word": "CAKE",
+    "topic": "Food & Drink",
+    "length": 4,
+    "difficulty": 34,
+    "tier": "veryEasy",
+    "description": "Candles land on it once a year",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "You can't keep it and eat it too"
+  },
+  {
+    "id": "FUD-0009",
+    "word": "SALT",
+    "topic": "Food & Drink",
+    "length": 4,
+    "difficulty": 41,
+    "tier": "veryEasy",
+    "description": "The pinch that makes or breaks the pot",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Take advice with just one grain of it"
+  },
+  {
+    "id": "FUD-0010",
+    "word": "BREAD",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 49,
+    "tier": "veryEasy",
+    "description": "Loaves rising quietly while the town sleeps",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Slang for money, staple for everyone"
+  },
+  {
+    "id": "FUD-0011",
+    "word": "SUGAR",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 53,
+    "tier": "easy",
+    "description": "Sweet crystals plotting against your dentist",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "A spoonful famously helps medicine go down"
+  },
+  {
+    "id": "FUD-0012",
+    "word": "MANGO",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 56,
+    "tier": "easy",
+    "description": "The king of fruits holds court every summer",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Ripe ones drip straight down your elbow"
+  },
+  {
+    "id": "FUD-0013",
+    "word": "CURRY",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 64,
+    "tier": "easy",
+    "description": "A bubbling pot where spices settle their differences",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Flatterers do this with favor"
+  },
+  {
+    "id": "FUD-0014",
+    "word": "LEMON",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 71,
+    "tier": "easy",
+    "description": "Yellow puckery ambush hiding in your drink",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Faulty cars earn this sour nickname"
+  },
+  {
+    "id": "FUD-0015",
+    "word": "HONEY",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 75,
+    "tier": "easy",
+    "description": "Golden loot the bees never meant to share",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Sweethearts answer to it; biscuits drown in it"
+  },
+  {
+    "id": "FUD-0016",
+    "word": "JUICE",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 83,
+    "tier": "easy",
+    "description": "Fruit squeezed until it confesses everything",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Gossip and batteries both run on it"
+  },
+  {
+    "id": "FUD-0017",
+    "word": "ONION",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 94,
+    "tier": "easy",
+    "description": "The one vegetable that fights back with tears",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Ogres famously claim to share its layers"
+  },
+  {
+    "id": "FUD-0018",
+    "word": "NOODLE",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 98,
+    "tier": "easy",
+    "description": "Slurp first, apologize to your shirt later",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Slang crowns it your thinking organ"
+  },
+  {
+    "id": "FUD-0019",
+    "word": "DOSA",
+    "topic": "Food & Drink",
+    "length": 4,
+    "difficulty": 105,
+    "tier": "easy",
+    "description": "A crisp golden crescent wider than its plate",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Overnight fermentation earns its morning crackle"
+  },
+  {
+    "id": "FUD-0020",
+    "word": "SAMOSA",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 113,
+    "tier": "easy",
+    "description": "A fried triangle smuggling spiced potatoes",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Chai's crunchy companion at four o'clock"
+  },
+  {
+    "id": "FUD-0021",
+    "word": "COFFEE",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 120,
+    "tier": "easy",
+    "description": "Monday morning's dark and bitter savior",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Baristas misspell your name while brewing it"
+  },
+  {
+    "id": "FUD-0022",
+    "word": "BUTTER",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 124,
+    "tier": "easy",
+    "description": "Golden slab melting into everything it meets",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Flatterers spread it on thick, figuratively"
+  },
+  {
+    "id": "FUD-0023",
+    "word": "PICKLE",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 131,
+    "tier": "easy",
+    "description": "Grandmother's jars sunbathing on the terrace",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Find yourself in one when trouble brews"
+  },
+  {
+    "id": "FUD-0024",
+    "word": "BANANA",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 143,
+    "tier": "easy",
+    "description": "Comedy's favorite yellow tripping hazard",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Republics and split desserts share its name"
+  },
+  {
+    "id": "FUD-0025",
+    "word": "NAAN",
+    "topic": "Food & Drink",
+    "length": 4,
+    "difficulty": 160,
+    "tier": "medium",
+    "description": "Pillowy flatbread slapped onto a scorching wall",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Torn and dragged through rich gravy pools"
+  },
+  {
+    "id": "FUD-0026",
+    "word": "PANEER",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 165,
+    "tier": "medium",
+    "description": "Milk pressed into cubes that never melt",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Palak's white companion in vegetarian favorites"
+  },
+  {
+    "id": "FUD-0027",
+    "word": "LASSI",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 170,
+    "tier": "medium",
+    "description": "Punjab's frothy answer to the afternoon sun",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Sweet or salted, served in clay tumblers"
+  },
+  {
+    "id": "FUD-0028",
+    "word": "BIRYANI",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 175,
+    "tier": "medium",
+    "description": "Layered rice worth fighting over at weddings",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Hyderabad and Lucknow feud over its crown"
+  },
+  {
+    "id": "FUD-0029",
+    "word": "TOFU",
+    "topic": "Food & Drink",
+    "length": 4,
+    "difficulty": 180,
+    "tier": "medium",
+    "description": "Bland white block that soaks up ambition",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Soybeans pressed into vegan devotion"
+  },
+  {
+    "id": "FUD-0030",
+    "word": "CHUTNEY",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 185,
+    "tier": "medium",
+    "description": "The tangy sidekick every snack demands",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Mint and coriander ground into green lightning"
+  },
+  {
+    "id": "FUD-0031",
+    "word": "GHEE",
+    "topic": "Food & Drink",
+    "length": 4,
+    "difficulty": 200,
+    "tier": "medium",
+    "description": "Clarified gold spooned over festive everything",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Fuels temple lamps and ladoos equally"
+  },
+  {
+    "id": "FUD-0032",
+    "word": "YOGURT",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 205,
+    "tier": "medium",
+    "description": "Milk cultured into a tangy morning companion",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Billions of live cultures, sold as breakfast"
+  },
+  {
+    "id": "FUD-0033",
+    "word": "TANDOOR",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 215,
+    "tier": "medium",
+    "description": "A clay inferno where flatbreads cling for life",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Charcoal depths that blush chicken crimson"
+  },
+  {
+    "id": "FUD-0034",
+    "word": "CUMIN",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 220,
+    "tier": "medium",
+    "description": "Earthy seeds that crackle first in the pan",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Jeera to some, tempering's opening act"
+  },
+  {
+    "id": "FUD-0035",
+    "word": "MARINADE",
+    "topic": "Food & Drink",
+    "length": 8,
+    "difficulty": 225,
+    "tier": "medium",
+    "description": "An overnight bath that seasons tomorrow's dinner",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Patience, acid, and spice plotting flavor together"
+  },
+  {
+    "id": "FUD-0036",
+    "word": "JALEBI",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 230,
+    "tier": "medium",
+    "description": "Orange spirals dripping syrup at the fair",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Sweet tangled hoops, straight answers never"
+  },
+  {
+    "id": "FUD-0037",
+    "word": "BROTH",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 240,
+    "tier": "medium",
+    "description": "Bones surrender their secrets to patient water",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Too many cooks famously ruin it"
+  },
+  {
+    "id": "FUD-0038",
+    "word": "SIMMER",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 250,
+    "tier": "medium",
+    "description": "A gentle bubble, never a rolling boil",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Tempers do it just below boiling"
+  },
+  {
+    "id": "FUD-0039",
+    "word": "KNEAD",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 260,
+    "tier": "medium",
+    "description": "Punish the dough until it finally behaves",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Sounds like necessity, works the gluten"
+  },
+  {
+    "id": "FUD-0040",
+    "word": "NUTMEG",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 270,
+    "tier": "medium",
+    "description": "Grated whispers of warmth in winter desserts",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Footballers slip the ball through your legs"
+  },
+  {
+    "id": "FUD-0041",
+    "word": "GLAZE",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 280,
+    "tier": "medium",
+    "description": "The shiny coat a doughnut wears to impress",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "Z",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Bored eyes do it during long meetings"
+  },
+  {
+    "id": "FUD-0042",
+    "word": "SORBET",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 290,
+    "tier": "medium",
+    "description": "Frozen fruit pretending cream never existed",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Cleanses palates between fancy dinner courses"
+  },
+  {
+    "id": "FUD-0043",
+    "word": "GARNISH",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 300,
+    "tier": "medium",
+    "description": "The parsley nobody eats but everyone expects",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Courts do it to wages, chefs to plates"
+  },
+  {
+    "id": "FUD-0044",
+    "word": "WASABI",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 310,
+    "tier": "medium",
+    "description": "Green fire that goes straight for the nose",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The real root rarely leaves Japan"
+  },
+  {
+    "id": "FUD-0045",
+    "word": "SAFFRON",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 320,
+    "tier": "medium",
+    "description": "Crimson threads worth more than gold by weight",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Harvested from crocus blooms at dawn"
+  },
+  {
+    "id": "FUD-0046",
+    "word": "RISOTTO",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 330,
+    "tier": "medium",
+    "description": "Stir, ladle, stir again, Italian patience served creamy",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "The dish television chefs weaponize against contestants"
+  },
+  {
+    "id": "FUD-0047",
+    "word": "FALAFEL",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 340,
+    "tier": "medium",
+    "description": "Chickpeas balled up and dropped into hot oil",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Street pitas bulge with these green-hearted spheres"
+  },
+  {
+    "id": "FUD-0048",
+    "word": "ESPRESSO",
+    "topic": "Food & Drink",
+    "length": 8,
+    "difficulty": 350,
+    "tier": "medium",
+    "description": "Italy's tiny cup with a giant kick",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Nine bars of force, one golden crema"
+  },
+  {
+    "id": "FUD-0049",
+    "word": "UMAMI",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 363,
+    "tier": "hard",
+    "description": "The fifth taste your tongue knew before science did",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Mushrooms, parmesan, and soy share its depth"
+  },
+  {
+    "id": "FUD-0050",
+    "word": "JAGGERY",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 371,
+    "tier": "hard",
+    "description": "Unrefined cane sweetness sold in golden bricks",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Cane fields boiled down in smoky village pans"
+  },
+  {
+    "id": "FUD-0051",
+    "word": "SOUFFLE",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 376,
+    "tier": "hard",
+    "description": "A puffed-up diva that collapses under criticism",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Ordered in advance, timed to the minute"
+  },
+  {
+    "id": "FUD-0052",
+    "word": "OFFAL",
+    "topic": "Food & Drink",
+    "length": 5,
+    "difficulty": 388,
+    "tier": "hard",
+    "description": "The parts of the beast polite menus rename",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Sounds dreadful, nose-to-tail chefs disagree"
+  },
+  {
+    "id": "FUD-0053",
+    "word": "GHERKIN",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 405,
+    "tier": "hard",
+    "description": "A small cucumber that took a vinegar bath",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "A London skyscraper wears its nickname"
+  },
+  {
+    "id": "FUD-0054",
+    "word": "TEMPEH",
+    "topic": "Food & Drink",
+    "length": 6,
+    "difficulty": 418,
+    "tier": "hard",
+    "description": "Fermented soybeans pressed into a nutty brick",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Indonesia wraps this protein in banana leaves"
+  },
+  {
+    "id": "FUD-0055",
+    "word": "ROUX",
+    "topic": "Food & Drink",
+    "length": 4,
+    "difficulty": 425,
+    "tier": "hard",
+    "description": "Flour and fat whisked into French thickening magic",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "X",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Gumbo begins with its slow dark patience"
+  },
+  {
+    "id": "FUD-0056",
+    "word": "GANACHE",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 440,
+    "tier": "hard",
+    "description": "Chocolate and cream melted into silky luxury",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "A scolded apprentice's happy accident, legend says"
+  },
+  {
+    "id": "FUD-0057",
+    "word": "COMPOTE",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 455,
+    "tier": "hard",
+    "description": "Fruit stewed softly until it forgets its shape",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Jam's looser cousin, spooned while warm"
+  },
+  {
+    "id": "FUD-0058",
+    "word": "JULIENNE",
+    "topic": "Food & Drink",
+    "length": 8,
+    "difficulty": 470,
+    "tier": "hard",
+    "description": "Vegetables sliced into slender matchsticks by fancy knives",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "J",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "A French girl's name lurking in culinary school drills"
+  },
+  {
+    "id": "FUD-0059",
+    "word": "TERRINE",
+    "topic": "Food & Drink",
+    "length": 7,
+    "difficulty": 488,
+    "tier": "hard",
+    "description": "A loaf-shaped French affair served cold and sliced",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "The earthenware mold christened the dish itself"
+  },
+  {
+    "id": "FUD-0060",
+    "word": "APERITIF",
+    "topic": "Food & Drink",
+    "length": 8,
+    "difficulty": 500,
+    "tier": "hard",
+    "description": "A little sip that politely knocks before dinner",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "France opens the evening with this ritual pour"
+  }
+]

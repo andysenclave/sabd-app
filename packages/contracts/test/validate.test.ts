@@ -61,8 +61,13 @@ test('the real GAMER wordbank entry shape validates', () => {
   assert.equal(r.ok, true);
 });
 
-test('WordEntry rejects wrong tier vocabulary (easy/hard superseded)', () => {
-  const r = validateWordEntry({ ...goodWord, tier: 'easy' });
+test('WordEntry accepts BOTH tier vocabularies, rejects anything else', () => {
+  // Phase 4: 'easy'/'hard' returned as UNIFIED tiers (PART A §2) — the Phase-3 rule
+  // that rejected them (elo's old labels) is superseded by the four-tier scale.
+  for (const tier of ['low', 'mid', 'high', 'veryEasy', 'easy', 'medium', 'hard']) {
+    assert.equal(validateWordEntry({ ...goodWord, tier }).ok, true, `tier ${tier} should be valid`);
+  }
+  const r = validateWordEntry({ ...goodWord, tier: 'legendary' });
   assert.equal(r.ok, false);
   if (!r.ok) assert.ok(r.errors.some((e) => e.includes('tier')));
 });

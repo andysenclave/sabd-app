@@ -1,0 +1,842 @@
+[
+  {
+    "word": "RAP",
+    "altDescription": "Street poetry sparring, bar after bar"
+  },
+  {
+    "word": "SONG",
+    "altDescription": "What birds offer the dawn for free"
+  },
+  {
+    "word": "SING",
+    "altDescription": "Everyone joins in when the birthday cake arrives"
+  },
+  {
+    "word": "DANCE",
+    "altDescription": "Bodies talking when words take a break"
+  },
+  {
+    "word": "PIANO",
+    "altDescription": "Grand or upright, hammers whisper behind the lid"
+  },
+  {
+    "word": "ROCK",
+    "altDescription": "Elvis lit the fuse; guitars never calmed down"
+  },
+  {
+    "word": "RADIO",
+    "altDescription": "Buggles claimed video killed this star"
+  },
+  {
+    "word": "VOICE",
+    "altDescription": "Lose it after the concert, find it in the shower"
+  },
+  {
+    "word": "BELL",
+    "altDescription": "Rings for dinner, doorways, and boxing rounds"
+  },
+  {
+    "word": "NOTE",
+    "altDescription": "Quarter, half, or whole, each claims its beat"
+  },
+  {
+    "word": "HORN",
+    "altDescription": "Traffic jams and jazz clubs both lean on one"
+  },
+  {
+    "word": "CLAP",
+    "altDescription": "Famously impossible with only one hand"
+  },
+  {
+    "word": "HUM",
+    "altDescription": "Bees and refrigerators drone it all day long"
+  },
+  {
+    "word": "MIC",
+    "altDescription": "Check, one two, tap tap before the show"
+  },
+  {
+    "word": "SPEAKER",
+    "altDescription": "Woofers and tweeters living in one loud box"
+  },
+  {
+    "word": "VOLUME",
+    "altDescription": "Spinal Tap's went one louder, to eleven"
+  },
+  {
+    "word": "RECORD",
+    "altDescription": "Athletes break it, DJs spin it"
+  },
+  {
+    "word": "DISCO",
+    "altDescription": "Donna Summer ruled its glittering late-seventies floor"
+  },
+  {
+    "word": "DRUM",
+    "altDescription": "Marching bands keep time on its tight skin"
+  },
+  {
+    "word": "METAL",
+    "altDescription": "Headbangers, leather, and lyrics about dragons"
+  },
+  {
+    "word": "PUNK",
+    "altDescription": "Mohawks pogoing in a sweaty London basement, 1977"
+  },
+  {
+    "word": "BLUES",
+    "altDescription": "Woke up this morning, and my baby left"
+  },
+  {
+    "word": "BEAT",
+    "altDescription": "The cop's patrol route, or the producer's loop"
+  },
+  {
+    "word": "FOLK",
+    "altDescription": "Dylan went electric and the purists booed"
+  },
+  {
+    "word": "KARAOKE",
+    "altDescription": "Japan's gift to tone-deaf office parties everywhere"
+  },
+  {
+    "word": "RHYTHM",
+    "altDescription": "Spelled with no true vowels, felt everywhere"
+  },
+  {
+    "word": "TRUMPET",
+    "altDescription": "Miles Davis whispered cool through its bell"
+  },
+  {
+    "word": "WHISTLE",
+    "altDescription": "Referees and kettles share this piercing talent"
+  },
+  {
+    "word": "ORGAN",
+    "altDescription": "Phantom's favorite, thundering beneath the opera house"
+  },
+  {
+    "word": "HARP",
+    "altDescription": "Ireland put it on coins and pint glasses"
+  },
+  {
+    "word": "BAND",
+    "altDescription": "Wedding, marching, or rubber, always keeping things together"
+  },
+  {
+    "word": "STEREO",
+    "altDescription": "Two channels doubling the mono world"
+  },
+  {
+    "word": "PLAYLIST",
+    "altDescription": "The mixtape's descendant, dragged together in seconds"
+  },
+  {
+    "word": "REMIX",
+    "altDescription": "The club version, stretched and stripped for dancing"
+  },
+  {
+    "word": "HIT",
+    "altDescription": "Number one with a bullet, briefly"
+  },
+  {
+    "word": "TOUR",
+    "altDescription": "Months of hotels, one triumphant homecoming show"
+  },
+  {
+    "word": "TUNE",
+    "altDescription": "Carry it well or clear the room"
+  },
+  {
+    "word": "GIG",
+    "altDescription": "Economy named after musicians' one-night bookings"
+  },
+  {
+    "word": "AMP",
+    "altDescription": "Marshall stacks towering behind every guitar hero"
+  },
+  {
+    "word": "DIVA",
+    "altDescription": "The tantrum backstage, the triumph on stage"
+  },
+  {
+    "word": "CHOIR",
+    "altDescription": "Preaching to it wastes your breath, proverbially"
+  },
+  {
+    "word": "LULLABY",
+    "altDescription": "Brahms wrote the one every crib knows"
+  },
+  {
+    "word": "JINGLE",
+    "altDescription": "All the way, according to one sleigh song"
+  },
+  {
+    "word": "TUBA",
+    "altDescription": "Oompah backbone of every polka band"
+  },
+  {
+    "word": "BASS",
+    "altDescription": "Four thick strings, or a fish, or dropped"
+  },
+  {
+    "word": "CHANT",
+    "altDescription": "Gregorian monks floating one line through stone halls"
+  },
+  {
+    "word": "HARMONY",
+    "altDescription": "Barbershop quartets live and die by it"
+  },
+  {
+    "word": "TANGO",
+    "altDescription": "It takes two, the saying insists"
+  },
+  {
+    "word": "ECHO",
+    "altDescription": "Nymph who faded to a mere reply"
+  },
+  {
+    "word": "HYMN",
+    "altDescription": "Amazing Grace, the best-known of the bunch"
+  },
+  {
+    "word": "STRUM",
+    "altDescription": "Down, down, up, the beginner's first pattern"
+  },
+  {
+    "word": "KAZOO",
+    "altDescription": "Hum into wax paper and call it jazz"
+  },
+  {
+    "word": "SAX",
+    "altDescription": "Kenny G and Coltrane, worlds apart, same reed"
+  },
+  {
+    "word": "GONG",
+    "altDescription": "Struck once to summon dinner at the manor"
+  },
+  {
+    "word": "VINYL",
+    "altDescription": "Dead format that outlived every replacement, twice"
+  },
+  {
+    "word": "GUITAR",
+    "altDescription": "Hendrix set his alight at Monterey"
+  },
+  {
+    "word": "TRACK",
+    "altDescription": "Runners lap it; producers lay it down"
+  },
+  {
+    "word": "LYRIC",
+    "altDescription": "Poetry that only works with melody attached"
+  },
+  {
+    "word": "TEMPO",
+    "altDescription": "The metronome's one and only strong opinion"
+  },
+  {
+    "word": "VERSE",
+    "altDescription": "Chapter one, chapter two, same tune between choruses"
+  },
+  {
+    "word": "AUDIO",
+    "altDescription": "Visual's partner in every editing suite"
+  },
+  {
+    "word": "SINGER",
+    "altDescription": "Front and center, the one holding the melody"
+  },
+  {
+    "word": "DEMO",
+    "altDescription": "Bedroom recording praying for its big break"
+  },
+  {
+    "word": "STUDIO",
+    "altDescription": "Abbey Road, the building rather than the crossing"
+  },
+  {
+    "word": "GENRE",
+    "altDescription": "Purists argue its borders; artists happily blur them"
+  },
+  {
+    "word": "KEY",
+    "altDescription": "Opens doors, or gets changed mid-song for drama"
+  },
+  {
+    "word": "MELODY",
+    "altDescription": "What the right hand carries while chords support"
+  },
+  {
+    "word": "TONE",
+    "altDescription": "Watch yours, or dial it in on pedals"
+  },
+  {
+    "word": "PITCH",
+    "altDescription": "Baseball throws it; tuners nudge it perfect"
+  },
+  {
+    "word": "CHORD",
+    "altDescription": "Three fingers down, and suddenly you're a guitarist"
+  },
+  {
+    "word": "VIOLIN",
+    "altDescription": "The world's smallest one plays for complainers"
+  },
+  {
+    "word": "SCALE",
+    "altDescription": "Fish have them; pianists practice them daily"
+  },
+  {
+    "word": "SOUL",
+    "altDescription": "Aretha demanded respect and defined the sound"
+  },
+  {
+    "word": "FUNK",
+    "altDescription": "James Brown hit it on the one"
+  },
+  {
+    "word": "GOSPEL",
+    "altDescription": "The honest truth, swears the old phrase"
+  },
+  {
+    "word": "CHORUS",
+    "altDescription": "Greek theaters staffed one before pop did"
+  },
+  {
+    "word": "TECHNO",
+    "altDescription": "Detroit's cold, gleaming export to Berlin warehouses"
+  },
+  {
+    "word": "INDIE",
+    "altDescription": "Films and bands both wear this DIY badge"
+  },
+  {
+    "word": "SWING",
+    "altDescription": "Ellington swore the music meant nothing without it"
+  },
+  {
+    "word": "CAROL",
+    "altDescription": "A Christmas name for songs and Dickens heroines"
+  },
+  {
+    "word": "SALSA",
+    "altDescription": "Order it with chips or dance it hot"
+  },
+  {
+    "word": "FLUTE",
+    "altDescription": "Champagne pours into one; orchestras seat several"
+  },
+  {
+    "word": "SAMBA",
+    "altDescription": "Brazil's shuffling footwork even soccer commentators borrow"
+  },
+  {
+    "word": "CONGA",
+    "altDescription": "Gloria Estefan ordered everybody to do it"
+  },
+  {
+    "word": "POLKA",
+    "altDescription": "Dots share its name; Weird Al loves it"
+  },
+  {
+    "word": "YODEL",
+    "altDescription": "Tarzan's jungle call, borrowed from goatherds"
+  },
+  {
+    "word": "FIDDLE",
+    "altDescription": "The devil went down to Georgia carrying one"
+  },
+  {
+    "word": "UKULELE",
+    "altDescription": "Tiptoe Through the Tulips twinkled on one"
+  },
+  {
+    "word": "ALBUM",
+    "altDescription": "Photos fill one; so do B-sides"
+  },
+  {
+    "word": "BUGLE",
+    "altDescription": "Cone-shaped corn snacks stole its name"
+  },
+  {
+    "word": "OBOE",
+    "altDescription": "Peter's grumpy duck waddles to its sound"
+  },
+  {
+    "word": "TROMBONE",
+    "altDescription": "Seventy-six of them led the big parade"
+  },
+  {
+    "word": "CLARINET",
+    "altDescription": "Rhapsody in Blue opens with its long slide"
+  },
+  {
+    "word": "OPERA",
+    "altDescription": "Not over till the large lady delivers"
+  },
+  {
+    "word": "SNARE",
+    "altDescription": "Rattling wires beneath give it that buzz"
+  },
+  {
+    "word": "CYMBAL",
+    "altDescription": "Hi-hats hide a kissing pair on command"
+  },
+  {
+    "word": "BONGO",
+    "altDescription": "Knees make a fine stand for this pair"
+  },
+  {
+    "word": "CONCERT",
+    "altDescription": "Tickets, traffic, and ears ringing until Tuesday"
+  },
+  {
+    "word": "COWBELL",
+    "altDescription": "Alpine herds wear what drummers strike on the offbeat"
+  },
+  {
+    "word": "TRIANGLE",
+    "altDescription": "Geometry class shape moonlighting in the percussion pit"
+  },
+  {
+    "word": "MARACA",
+    "altDescription": "Grab the pair, twist your wrists, instant fiesta"
+  },
+  {
+    "word": "RECORDER",
+    "altDescription": "Three holes covered, Hot Cross Buns achieved"
+  },
+  {
+    "word": "DUET",
+    "altDescription": "Piano bench built for four hands, two egos"
+  },
+  {
+    "word": "KEYBOARD",
+    "altDescription": "Typists and synth players fight over the word"
+  },
+  {
+    "word": "SYNTH",
+    "altDescription": "The eighties ran entirely on its neon wash"
+  },
+  {
+    "word": "STAGE",
+    "altDescription": "Fright named after it keeps actors sweating"
+  },
+  {
+    "word": "BOOMBOX",
+    "altDescription": "Held overhead outside her window, blasting Peter Gabriel"
+  },
+  {
+    "word": "JUKEBOX",
+    "altDescription": "Fonzie's fist could start the diner's corner deejay"
+  },
+  {
+    "word": "TRIO",
+    "altDescription": "Jazz's classic setup: keys, upright, brushes"
+  },
+  {
+    "word": "HOOK",
+    "altDescription": "Pirates hang one where a hand went missing"
+  },
+  {
+    "word": "POP",
+    "altDescription": "Corn does it, bubbles do it, charts crown it"
+  },
+  {
+    "word": "INTRO",
+    "altDescription": "The drumroll before the song shakes your hand"
+  },
+  {
+    "word": "JAZZ",
+    "altDescription": "Hands can do it, New Orleans birthed it"
+  },
+  {
+    "word": "SOLO",
+    "altDescription": "Han's surname, or the guitarist's spotlight minute"
+  },
+  {
+    "word": "SHARP",
+    "altDescription": "Hashtag's older sibling on the staff"
+  },
+  {
+    "word": "FLAT",
+    "altDescription": "British apartment, or a tire's sad state"
+  },
+  {
+    "word": "TENOR",
+    "altDescription": "The three famous ones sold out stadiums"
+  },
+  {
+    "word": "MAJOR",
+    "altDescription": "Outranks captain, both in armies and keys"
+  },
+  {
+    "word": "ANTHEM",
+    "altDescription": "Queen wrote one for champions specifically"
+  },
+  {
+    "word": "MINOR",
+    "altDescription": "Sounds like a coal digger, plays like heartbreak"
+  },
+  {
+    "word": "ALTO",
+    "altDescription": "Saxophone's most popular size bears this name"
+  },
+  {
+    "word": "OCTAVE",
+    "altDescription": "Somewhere Over the Rainbow leaps one immediately"
+  },
+  {
+    "word": "CELLO",
+    "altDescription": "Yo-Yo Ma's famous companion since childhood"
+  },
+  {
+    "word": "TREBLE",
+    "altDescription": "The swirly G clef answers to this"
+  },
+  {
+    "word": "VIOLA",
+    "altDescription": "Shakespeare's shipwrecked heroine in Twelfth Night, coincidentally"
+  },
+  {
+    "word": "BALLAD",
+    "altDescription": "Medieval storytellers spun tragedy into these verses"
+  },
+  {
+    "word": "PICCOLO",
+    "altDescription": "Stars and Stripes Forever hands it the spotlight"
+  },
+  {
+    "word": "SITAR",
+    "altDescription": "Gourd-bellied giant with frets that curve like waves"
+  },
+  {
+    "word": "WALTZ",
+    "altDescription": "Strauss flooded Vienna with the Blue Danube's spin"
+  },
+  {
+    "word": "ENCORE",
+    "altDescription": "French for again, chanted in English arenas"
+  },
+  {
+    "word": "MANDOLIN",
+    "altDescription": "Captain Corelli played one through an entire novel"
+  },
+  {
+    "word": "BAGPIPE",
+    "altDescription": "Squeeze the sack, brace the neighbors"
+  },
+  {
+    "word": "BARITONE",
+    "altDescription": "Crooners' favorite altitude, Sinatra certified"
+  },
+  {
+    "word": "LUTE",
+    "altDescription": "Sting recorded Dowland songs on its bent neck"
+  },
+  {
+    "word": "BANJO",
+    "altDescription": "Dueling ones made Deliverance unforgettable"
+  },
+  {
+    "word": "LYRE",
+    "altDescription": "Nero allegedly played while Rome burned"
+  },
+  {
+    "word": "MARIMBA",
+    "altDescription": "Xylophone's mellower cousin with resonator pipes below"
+  },
+  {
+    "word": "ACOUSTIC",
+    "altDescription": "Engineers study it; coffeehouses worship it"
+  },
+  {
+    "word": "TIMPANI",
+    "altDescription": "Also Sprach Zarathustra's dawn pounds on these"
+  },
+  {
+    "word": "CASTANET",
+    "altDescription": "Señorita's palm-sized clatter punctuating every twirl"
+  },
+  {
+    "word": "REGGAE",
+    "altDescription": "Marley carried it from Trenchtown to the world"
+  },
+  {
+    "word": "CORNET",
+    "altDescription": "Brass bands' front line, ice-cream cone shaped"
+  },
+  {
+    "word": "ARIA",
+    "altDescription": "Nessun Dorma, every World Cup's borrowed showstopper"
+  },
+  {
+    "word": "SOPRANO",
+    "altDescription": "Tony's TV family, or the choir's top shelf"
+  },
+  {
+    "word": "OPUS",
+    "altDescription": "Bloom County's penguin shares the Latin label"
+  },
+  {
+    "word": "FORTE",
+    "altDescription": "Your strong suit, in Italian and in life"
+  },
+  {
+    "word": "MAESTRO",
+    "altDescription": "Shouted in gratitude at conductors and plumbers alike"
+  },
+  {
+    "word": "ADAGIO",
+    "altDescription": "Barber's famous one accompanies every cinematic tragedy"
+  },
+  {
+    "word": "ALLEGRO",
+    "altDescription": "Most first movements sprint under this Italian banner"
+  },
+  {
+    "word": "SONATA",
+    "altDescription": "Hyundai borrowed its name; Beethoven perfected its form"
+  },
+  {
+    "word": "PRESTO",
+    "altDescription": "Magicians say it; metronomes fear it"
+  },
+  {
+    "word": "MINUET",
+    "altDescription": "Symphonies parked one third-movement curtsy before scherzos arrived"
+  },
+  {
+    "word": "QUARTET",
+    "altDescription": "Beethoven's late ones still puzzle and astonish"
+  },
+  {
+    "word": "FALSETTO",
+    "altDescription": "Bee Gees built an empire way up there"
+  },
+  {
+    "word": "PRELUDE",
+    "altDescription": "Chopin wrote twenty-four appetizers with no main course"
+  },
+  {
+    "word": "OVERTURE",
+    "altDescription": "1812 famously ends in actual cannon fire"
+  },
+  {
+    "word": "CONCERTO",
+    "altDescription": "Four Seasons packaged as violin showpieces"
+  },
+  {
+    "word": "MEDLEY",
+    "altDescription": "Swimmers race it; wedding bands abuse it"
+  },
+  {
+    "word": "RHAPSODY",
+    "altDescription": "Bohemian, Blue, or Hungarian, always unbound"
+  },
+  {
+    "word": "VIBRATO",
+    "altDescription": "Left hands rocking on the fingerboard for warmth"
+  },
+  {
+    "word": "NOCTURNE",
+    "altDescription": "Chopin signed twenty-one of these dusky pages"
+  },
+  {
+    "word": "REFRAIN",
+    "altDescription": "Politely abstain, or return to the chorus"
+  },
+  {
+    "word": "REQUIEM",
+    "altDescription": "Mozart died mid-way through writing his own"
+  },
+  {
+    "word": "BRIDGE",
+    "altDescription": "Card games, rivers, and songwriters all cross one"
+  },
+  {
+    "word": "CLEF",
+    "altDescription": "Treble's flourish or bass's backwards C"
+  },
+  {
+    "word": "MOTIF",
+    "altDescription": "Wallpaper patterns and Wagner both repeat one"
+  },
+  {
+    "word": "TRILL",
+    "altDescription": "Operatic show-off move, marked tr above"
+  },
+  {
+    "word": "SEGUE",
+    "altDescription": "Podcast hosts butcher this Italian glide constantly"
+  },
+  {
+    "word": "CAPO",
+    "altDescription": "Mafia bosses and fretboards both answer to one"
+  },
+  {
+    "word": "SYMPHONY",
+    "altDescription": "Cities name their orchestras after this grandest form"
+  },
+  {
+    "word": "CADENCE",
+    "altDescription": "Military marchers count theirs; composers resolve theirs"
+  },
+  {
+    "word": "FRET",
+    "altDescription": "Worry about it, or press behind it"
+  },
+  {
+    "word": "REVERB",
+    "altDescription": "The knob that turns a closet into a canyon"
+  },
+  {
+    "word": "SAMPLE",
+    "altDescription": "Free taste at the store, lawsuit in the studio"
+  },
+  {
+    "word": "TIMBRE",
+    "altDescription": "Spelled like lumber, pronounced like amber"
+  },
+  {
+    "word": "ENSEMBLE",
+    "altDescription": "Fashion outfits and chamber groups share the French word"
+  },
+  {
+    "word": "METER",
+    "altDescription": "Parking enforcement and poetry both run on it"
+  },
+  {
+    "word": "RIFF",
+    "altDescription": "Comedians borrow the word for improvised runs"
+  },
+  {
+    "word": "DIRGE",
+    "altDescription": "What critics call any album that drags"
+  },
+  {
+    "word": "CODA",
+    "altDescription": "Oscar-winning film title, tucked past the final chorus"
+  },
+  {
+    "word": "BOLERO",
+    "altDescription": "Torvill and Dean skated gold to it"
+  },
+  {
+    "word": "FUGUE",
+    "altDescription": "Psychiatrists borrowed its name for dissociative states"
+  },
+  {
+    "word": "LEGATO",
+    "altDescription": "A curved line overhead demands this seamless touch"
+  },
+  {
+    "word": "TREMOLO",
+    "altDescription": "The amp knob that makes chords flicker on and off"
+  },
+  {
+    "word": "MADRIGAL",
+    "altDescription": "Encanto's magical family borrowed the surname"
+  },
+  {
+    "word": "STACCATO",
+    "altDescription": "Dots above the heads command these clipped jabs"
+  },
+  {
+    "word": "CHORALE",
+    "altDescription": "Wachet Auf and friends, harmonized for Sunday"
+  },
+  {
+    "word": "ORATORIO",
+    "altDescription": "Handel's Messiah crowns the whole genre"
+  },
+  {
+    "word": "ETUDE",
+    "altDescription": "French for study, fiendish in practice"
+  },
+  {
+    "word": "MAZURKA",
+    "altDescription": "Heel-clicking folk swirl the polonaise calls cousin"
+  },
+  {
+    "word": "ARPEGGIO",
+    "altDescription": "Italian instructs: play it like a harp"
+  },
+  {
+    "word": "GAVOTTE",
+    "altDescription": "Carly Simon watched someone vain do this dance"
+  },
+  {
+    "word": "ANDANTE",
+    "altDescription": "Faster than adagio, lazier than allegro"
+  },
+  {
+    "word": "SOLFEGE",
+    "altDescription": "Julie Andrews turned this drill into a hillside anthem"
+  },
+  {
+    "word": "VIVACE",
+    "altDescription": "Play it like the espresso just kicked in"
+  },
+  {
+    "word": "LIBRETTO",
+    "altDescription": "Da Ponte wrote Mozart's; Gilbert wrote Sullivan's"
+  },
+  {
+    "word": "RUBATO",
+    "altDescription": "Romantic pianists' permission slip for elastic phrasing"
+  },
+  {
+    "word": "MEZZO",
+    "altDescription": "Carmen was written for this darker soprano cousin"
+  },
+  {
+    "word": "OSTINATO",
+    "altDescription": "Boléro rides a single one for fifteen minutes"
+  },
+  {
+    "word": "ZITHER",
+    "altDescription": "Munich taverns hum with its tabletop shimmer"
+  },
+  {
+    "word": "DULCIMER",
+    "altDescription": "Latin sweetness baked right into its name"
+  },
+  {
+    "word": "CANTATA",
+    "altDescription": "Italian for sung, sonata's vocal opposite"
+  },
+  {
+    "word": "OCARINA",
+    "altDescription": "The sweet potato of wind instruments, literally nicknamed"
+  },
+  {
+    "word": "FERMATA",
+    "altDescription": "Conductors stretch it as long as they dare"
+  },
+  {
+    "word": "THEREMIN",
+    "altDescription": "Soviet physicist's accidental spy-era invention with antennas"
+  },
+  {
+    "word": "KLEZMER",
+    "altDescription": "Fiddler on the Roof borrowed its bittersweet bounce"
+  },
+  {
+    "word": "MOTET",
+    "altDescription": "Palestrina's bread and butter for cathedral choirs"
+  },
+  {
+    "word": "ZYDECO",
+    "altDescription": "Creole French for snap beans, allegedly"
+  },
+  {
+    "word": "RAGA",
+    "altDescription": "Coltrane and Harrison both went east chasing these"
+  },
+  {
+    "word": "LUTHIER",
+    "altDescription": "Cremona's old masters handed down this craft"
+  }
+]

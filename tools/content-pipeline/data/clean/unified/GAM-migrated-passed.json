@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "GAM-0001",
+    "word": "GAMER",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 8,
+    "tier": "veryEasy",
+    "description": "Controller in hand, sleep optional",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Night owl with a controller and snacks"
+  },
+  {
+    "id": "GAM-0002",
+    "word": "JUMP",
+    "topic": "Gaming",
+    "length": 4,
+    "difficulty": 11,
+    "tier": "veryEasy",
+    "description": "The first button anyone ever presses",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "J"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "B"
+      }
+    },
+    "altDescription": "Leap over the gap before you fall"
+  },
+  {
+    "id": "GAM-0003",
+    "word": "LOOT",
+    "topic": "Gaming",
+    "length": 4,
+    "difficulty": 19,
+    "tier": "veryEasy",
+    "description": "Shiny things pried from chests and fallen foes",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Spoils gathered from every fallen foe"
+  },
+  {
+    "id": "GAM-0004",
+    "word": "HEALTH",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 23,
+    "tier": "veryEasy",
+    "description": "The red bar you'd rather keep full",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The vital gauge nobody wants draining"
+  },
+  {
+    "id": "GAM-0005",
+    "word": "LIVES",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 26,
+    "tier": "veryEasy",
+    "description": "Hearts in the corner, counting down your chances",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Spare chances counting down in the corner"
+  },
+  {
+    "id": "GAM-0006",
+    "word": "MOUSE",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 34,
+    "tier": "veryEasy",
+    "description": "A desk rodent that clicks heads",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The clicker skittering across your desk"
+  },
+  {
+    "id": "GAM-0007",
+    "word": "BOSS",
+    "topic": "Gaming",
+    "length": 4,
+    "difficulty": 38,
+    "tier": "veryEasy",
+    "description": "The big bad waiting at the end of the corridor",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The towering brute guarding the exit"
+  },
+  {
+    "id": "GAM-0008",
+    "word": "PIXEL",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 45,
+    "tier": "veryEasy",
+    "description": "One tiny square in a hero's face",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "X"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "The smallest dot building a blocky face"
+  },
+  {
+    "id": "GAM-0009",
+    "word": "LAG",
+    "topic": "Gaming",
+    "length": 3,
+    "difficulty": 53,
+    "tier": "easy",
+    "description": "When the world stutters and blame flies at the router",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "B"
+      }
+    },
+    "altDescription": "The stutter that ruins a perfect shot"
+  },
+  {
+    "id": "GAM-0010",
+    "word": "COMBO",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 56,
+    "tier": "easy",
+    "description": "Chained blows that keep the counter ticking",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "A chain of hits keeping the counter alive"
+  },
+  {
+    "id": "GAM-0011",
+    "word": "CHEAT",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 64,
+    "tier": "easy",
+    "description": "Codes whispered on playgrounds, gods made cheap",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Playground codes granting cheap godhood"
+  },
+  {
+    "id": "GAM-0012",
+    "word": "QUEST",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 68,
+    "tier": "easy",
+    "description": "An errand dressed up as destiny",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "Q"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "A noble errand logged in your journal"
+  },
+  {
+    "id": "GAM-0013",
+    "word": "SPAWN",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 75,
+    "tier": "easy",
+    "description": "Where you blink into existence, ready or not",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The point where you flicker into being"
+  },
+  {
+    "id": "GAM-0014",
+    "word": "MANA",
+    "topic": "Gaming",
+    "length": 4,
+    "difficulty": 79,
+    "tier": "easy",
+    "description": "Blue fuel for wizardly business",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The azure reserve powering every incantation"
+  },
+  {
+    "id": "GAM-0015",
+    "word": "LEVEL",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 83,
+    "tier": "easy",
+    "description": "Climb one, and the world gets meaner",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "V"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Beat this floor, the next grows harder"
+  },
+  {
+    "id": "GAM-0016",
+    "word": "AVATAR",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 94,
+    "tier": "easy",
+    "description": "The you that walks worlds you can't",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "The digital stand-in wearing your name"
+  },
+  {
+    "id": "GAM-0017",
+    "word": "RELOAD",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 109,
+    "tier": "easy",
+    "description": "That click of empty means it's time",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Slam a fresh magazine when empty"
+  },
+  {
+    "id": "GAM-0018",
+    "word": "SCORE",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 113,
+    "tier": "easy",
+    "description": "Numbers that climb while your thumbs do the work",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "The climbing number bragging for you"
+  },
+  {
+    "id": "GAM-0019",
+    "word": "CONSOLE",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 120,
+    "tier": "easy",
+    "description": "The living-room box that swallows weekends",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The box beneath the television swallowing hours"
+  },
+  {
+    "id": "GAM-0020",
+    "word": "PORTAL",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 124,
+    "tier": "easy",
+    "description": "Step in here, step out somewhere impossible",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "A shimmering gateway to somewhere impossible"
+  },
+  {
+    "id": "GAM-0021",
+    "word": "ARCADE",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 131,
+    "tier": "easy",
+    "description": "Coin-fed cabinets glowing in a noisy hall",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Neon cabinets humming in a coin-fed hall"
+  },
+  {
+    "id": "GAM-0022",
+    "word": "GUILD",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 135,
+    "tier": "easy",
+    "description": "Strangers become family, raid nights become ritual",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "A banner uniting raiders into family"
+  },
+  {
+    "id": "GAM-0023",
+    "word": "SNIPER",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 143,
+    "tier": "easy",
+    "description": "Patience, a scope, and one held breath",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "A patient scope waiting one breath"
+  },
+  {
+    "id": "GAM-0024",
+    "word": "NOOB",
+    "topic": "Gaming",
+    "length": 4,
+    "difficulty": 146,
+    "tier": "easy",
+    "description": "Fresh meat who runs the wrong way",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "D"
+      }
+    },
+    "altDescription": "The clueless newcomer sprinting wrong"
+  },
+  {
+    "id": "GAM-0025",
+    "word": "BUFF",
+    "topic": "Gaming",
+    "length": 4,
+    "difficulty": 165,
+    "tier": "medium",
+    "description": "A temporary blessing before the big fight",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "D"
+      }
+    },
+    "altDescription": "A fleeting boost before the clash"
+  },
+  {
+    "id": "GAM-0026",
+    "word": "LOBBY",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 170,
+    "tier": "medium",
+    "description": "The waiting room where trash talk warms up",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Where players gather before the whistle"
+  },
+  {
+    "id": "GAM-0027",
+    "word": "GRIND",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 175,
+    "tier": "medium",
+    "description": "The same task, a thousand times, for numbers",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Repeating dull tasks for slow numbers"
+  },
+  {
+    "id": "GAM-0028",
+    "word": "FARMING",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 185,
+    "tier": "medium",
+    "description": "Reaping the same monsters until the coffers fill",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Grinding the same foes for steady gold"
+  },
+  {
+    "id": "GAM-0029",
+    "word": "MELEE",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 190,
+    "tier": "medium",
+    "description": "When bullets run out, fists remember",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Close-quarters fists after the ammo dies"
+  },
+  {
+    "id": "GAM-0030",
+    "word": "NERF",
+    "topic": "Gaming",
+    "length": 4,
+    "difficulty": 195,
+    "tier": "medium",
+    "description": "Yesterday's favorite weapon, today's foam bat",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "V"
+      }
+    },
+    "altDescription": "Yesterday's beast weapon, now a wet noodle"
+  },
+  {
+    "id": "GAM-0031",
+    "word": "GLITCH",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 205,
+    "tier": "medium",
+    "description": "Reality hiccups and a wall stops being a wall",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "A bug that turns walls into air"
+  },
+  {
+    "id": "GAM-0032",
+    "word": "LOADOUT",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 210,
+    "tier": "medium",
+    "description": "Everything strapped on before the drop",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Your chosen kit strapped on pre-drop"
+  },
+  {
+    "id": "GAM-0033",
+    "word": "EMOTE",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 215,
+    "tier": "medium",
+    "description": "A little dance says more than chat",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "A cheeky dance mocking the fallen"
+  },
+  {
+    "id": "GAM-0034",
+    "word": "ESPORTS",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 225,
+    "tier": "medium",
+    "description": "Stadiums roar for keyboards now",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "C"
+      }
+    },
+    "altDescription": "Competitive pros chasing tournament millions"
+  },
+  {
+    "id": "GAM-0035",
+    "word": "HEALER",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 230,
+    "tier": "medium",
+    "description": "Everyone's best friend when the bar runs red",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "The mender restoring wounded teammates"
+  },
+  {
+    "id": "GAM-0036",
+    "word": "RESPAWN",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 240,
+    "tier": "medium",
+    "description": "Death is a suggestion; the timer disagrees briefly",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "K"
+      }
+    },
+    "altDescription": "Blink back to life after a short wait"
+  },
+  {
+    "id": "GAM-0037",
+    "word": "UNLOCK",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 245,
+    "tier": "medium",
+    "description": "Grind enough and the padlock icon disappears",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Earn access to what was previously barred"
+  },
+  {
+    "id": "GAM-0038",
+    "word": "META",
+    "topic": "Gaming",
+    "length": 4,
+    "difficulty": 250,
+    "tier": "medium",
+    "description": "What everyone plays because everyone plays it",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The dominant tactics ruling every match"
+  },
+  {
+    "id": "GAM-0039",
+    "word": "CAMPER",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 260,
+    "tier": "medium",
+    "description": "One corner, one gun, zero shame",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "A player hiding still, waiting to ambush"
+  },
+  {
+    "id": "GAM-0040",
+    "word": "TURRET",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 265,
+    "tier": "medium",
+    "description": "A sentry that never blinks or sleeps",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "An automated cannon bolted to defend"
+  },
+  {
+    "id": "GAM-0041",
+    "word": "SANDBOX",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 270,
+    "tier": "medium",
+    "description": "No goals, no rails, just your imagination",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "X",
+        "decoy": "C"
+      }
+    },
+    "altDescription": "An open world with zero objectives imposed"
+  },
+  {
+    "id": "GAM-0042",
+    "word": "STEALTH",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 275,
+    "tier": "medium",
+    "description": "Crouch low, breathe soft, be nobody",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Moving unseen, hushed and invisible"
+  },
+  {
+    "id": "GAM-0043",
+    "word": "MACRO",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 285,
+    "tier": "medium",
+    "description": "One keypress, a whole rehearsed routine",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "A single command automating many inputs"
+  },
+  {
+    "id": "GAM-0044",
+    "word": "COOLDOWN",
+    "topic": "Gaming",
+    "length": 8,
+    "difficulty": 290,
+    "tier": "medium",
+    "description": "The greyed-out button begging for patience",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The wait before an ability recharges"
+  },
+  {
+    "id": "GAM-0045",
+    "word": "SPEEDRUN",
+    "topic": "Gaming",
+    "length": 8,
+    "difficulty": 300,
+    "tier": "medium",
+    "description": "Finishing years of adventure before lunch",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Racing the clock to beat it fastest"
+  },
+  {
+    "id": "GAM-0046",
+    "word": "HITBOX",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 310,
+    "tier": "medium",
+    "description": "The invisible shape that decides if it hurt",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "X",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "The unseen zone registering a strike"
+  },
+  {
+    "id": "GAM-0047",
+    "word": "AGGRO",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 325,
+    "tier": "medium",
+    "description": "The monster's undivided, unwanted attention",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Drawing a monster's hostile focus onto you"
+  },
+  {
+    "id": "GAM-0048",
+    "word": "MODDING",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 330,
+    "tier": "medium",
+    "description": "Players rebuilding the house the developers left",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Tinkering fans reshaping a game's guts"
+  },
+  {
+    "id": "GAM-0049",
+    "word": "TRYHARD",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 356,
+    "tier": "hard",
+    "description": "Sweat-soaked effort in a casual lobby",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Taking a friendly match far too seriously"
+  },
+  {
+    "id": "GAM-0050",
+    "word": "GANK",
+    "topic": "Gaming",
+    "length": 4,
+    "difficulty": 363,
+    "tier": "hard",
+    "description": "Uninvited guests crashing your lane from the shadows",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "C"
+      }
+    },
+    "altDescription": "Ambushers swarming a lone lane opponent"
+  },
+  {
+    "id": "GAM-0051",
+    "word": "CHEESE",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 373,
+    "tier": "hard",
+    "description": "A cheap trick that works until it's patched",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "An unfair gimmick abused for easy wins"
+  },
+  {
+    "id": "GAM-0052",
+    "word": "KITING",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 381,
+    "tier": "hard",
+    "description": "Always retreating, always shooting, never caught",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "D"
+      }
+    },
+    "altDescription": "Leading a chaser around while chipping damage"
+  },
+  {
+    "id": "GAM-0053",
+    "word": "WHIFF",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 388,
+    "tier": "hard",
+    "description": "A mighty swing that meets only air",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "A total miss on a committed attack"
+  },
+  {
+    "id": "GAM-0054",
+    "word": "SMURF",
+    "topic": "Gaming",
+    "length": 5,
+    "difficulty": 396,
+    "tier": "hard",
+    "description": "A veteran hiding in beginner's clothes",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "P"
+      }
+    },
+    "altDescription": "An expert on a fresh low-ranked account"
+  },
+  {
+    "id": "GAM-0055",
+    "word": "CRUNCH",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 410,
+    "tier": "hard",
+    "description": "The studio's lights stay on far too late",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Brutal overtime before a game ships"
+  },
+  {
+    "id": "GAM-0056",
+    "word": "BACKFILL",
+    "topic": "Gaming",
+    "length": 8,
+    "difficulty": 420,
+    "tier": "hard",
+    "description": "Dropped into someone else's losing battle",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Slotted into a game already in progress"
+  },
+  {
+    "id": "GAM-0057",
+    "word": "NETCODE",
+    "topic": "Gaming",
+    "length": 7,
+    "difficulty": 425,
+    "tier": "hard",
+    "description": "The invisible plumbing that decides who shot first",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The network logic syncing every player's actions"
+  },
+  {
+    "id": "GAM-0058",
+    "word": "SHADER",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 440,
+    "tier": "hard",
+    "description": "Tiny programs painting light onto every surface",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Code coloring how light hits a model"
+  },
+  {
+    "id": "GAM-0059",
+    "word": "TICKRATE",
+    "topic": "Gaming",
+    "length": 8,
+    "difficulty": 463,
+    "tier": "hard",
+    "description": "How often the server bothers to check reality",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "The server's heartbeat measuring the world"
+  },
+  {
+    "id": "GAM-0060",
+    "word": "MINMAX",
+    "topic": "Gaming",
+    "length": 6,
+    "difficulty": 475,
+    "tier": "hard",
+    "description": "Squeezing every stat until the spreadsheet smiles",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "X",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Optimizing a build down to the decimal"
+  }
+]

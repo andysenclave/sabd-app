@@ -1,0 +1,1176 @@
+{
+  "input": "data/raw/unified/SPC-u1.json",
+  "scale": "unified",
+  "generatedAt": "2026-07-19T09:37:37.051Z",
+  "apiFallback": "enabled",
+  "totals": {
+    "entries": 150,
+    "passed": 134,
+    "rejected": 0,
+    "review": 16
+  },
+  "tierSplit": {
+    "expected": {
+      "veryEasy": 45,
+      "easy": 45,
+      "medium": 40,
+      "hard": 20
+    },
+    "actual": {
+      "veryEasy": 45,
+      "easy": 45,
+      "medium": 40,
+      "hard": 20
+    },
+    "ok": true
+  },
+  "failuresByRule": {},
+  "entries": [
+    {
+      "id": "SPC-9001",
+      "word": "SKY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9002",
+      "word": "SPACE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9003",
+      "word": "EARTH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9004",
+      "word": "UFO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9005",
+      "word": "SHIP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9006",
+      "word": "NIGHT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9007",
+      "word": "SUIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9008",
+      "word": "HELMET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9009",
+      "word": "CREW",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9010",
+      "word": "FLAG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9011",
+      "word": "FUEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9012",
+      "word": "BEEP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9013",
+      "word": "FUTURE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9014",
+      "word": "JEDI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9015",
+      "word": "INFINITY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9016",
+      "word": "UNIVERSE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9017",
+      "word": "PLUTO",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9018",
+      "word": "FORCE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9019",
+      "word": "FLOAT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9020",
+      "word": "GLOW",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9021",
+      "word": "ZAP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9022",
+      "word": "VENUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9023",
+      "word": "SATURN",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9024",
+      "word": "RING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9025",
+      "word": "JUPITER",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9026",
+      "word": "BEAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9027",
+      "word": "TWINKLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9028",
+      "word": "RAY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9029",
+      "word": "MERCURY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9030",
+      "word": "DUST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9031",
+      "word": "URANUS",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9032",
+      "word": "NEPTUNE",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9033",
+      "word": "TAIL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9034",
+      "word": "PILOT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9035",
+      "word": "MISSION",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9036",
+      "word": "ENGINE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9037",
+      "word": "OXYGEN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9038",
+      "word": "TAKEOFF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9039",
+      "word": "STARSHIP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9040",
+      "word": "MOONWALK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9041",
+      "word": "SPACEMAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9042",
+      "word": "BLASTOFF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9043",
+      "word": "LIFTOFF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9044",
+      "word": "ROVER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9045",
+      "word": "APOLLO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9046",
+      "word": "YODA",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9047",
+      "word": "RADAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9048",
+      "word": "SIGNAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9049",
+      "word": "ANTENNA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9050",
+      "word": "WORMHOLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9051",
+      "word": "ANDROID",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9052",
+      "word": "MARTIAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9053",
+      "word": "TREK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9054",
+      "word": "EMPIRE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9055",
+      "word": "SHIELD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9056",
+      "word": "AVATAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9057",
+      "word": "INVADER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9058",
+      "word": "TELEPORT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9059",
+      "word": "PORTAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9060",
+      "word": "HOVER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9061",
+      "word": "MUTANT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9062",
+      "word": "CYBER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9063",
+      "word": "BLASTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9064",
+      "word": "TENTACLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9065",
+      "word": "FLEET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9066",
+      "word": "INVASION",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9067",
+      "word": "LANDER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9068",
+      "word": "BOOSTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9069",
+      "word": "ESCAPE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9070",
+      "word": "IGNITE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9071",
+      "word": "THRUST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9072",
+      "word": "DWARF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9073",
+      "word": "GIANT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9074",
+      "word": "RADIO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9075",
+      "word": "HELIUM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9076",
+      "word": "AURORA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9077",
+      "word": "FLARE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9078",
+      "word": "ORION",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9079",
+      "word": "STARDUST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9080",
+      "word": "FIREBALL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9081",
+      "word": "CRESCENT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9082",
+      "word": "DUNE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9083",
+      "word": "MATRIX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9084",
+      "word": "HOLOGRAM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9085",
+      "word": "FRONTIER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9086",
+      "word": "GALACTIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9087",
+      "word": "STARGAZE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9088",
+      "word": "VOYAGER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9089",
+      "word": "SPUTNIK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9090",
+      "word": "HUBBLE",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9091",
+      "word": "HORIZON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9092",
+      "word": "TITAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9093",
+      "word": "GEMINI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9094",
+      "word": "EUROPA",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9095",
+      "word": "SIRIUS",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist AND dictionaryapi.dev — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9096",
+      "word": "POLARIS",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist (API unknown) — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9097",
+      "word": "ZODIAC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9098",
+      "word": "CLUSTER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9099",
+      "word": "SPIRAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9100",
+      "word": "VORTEX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9101",
+      "word": "BINARY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9102",
+      "word": "NEUTRON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9103",
+      "word": "PROTON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9104",
+      "word": "GAMMA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9105",
+      "word": "QUANTUM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9106",
+      "word": "STELLAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9107",
+      "word": "ASTRAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9108",
+      "word": "CORONA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9109",
+      "word": "SUNSPOT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9110",
+      "word": "TRANSIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9111",
+      "word": "EQUINOX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9112",
+      "word": "SOLSTICE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9113",
+      "word": "FLYBY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9114",
+      "word": "TETHER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9115",
+      "word": "VISOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9116",
+      "word": "HATCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9117",
+      "word": "STAGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9118",
+      "word": "NOZZLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9119",
+      "word": "ASCENT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9120",
+      "word": "DESCENT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9121",
+      "word": "OUTPOST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9122",
+      "word": "COLONY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9123",
+      "word": "HABITAT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9124",
+      "word": "HYDROGEN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9125",
+      "word": "MONOLITH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9126",
+      "word": "ODYSSEY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9127",
+      "word": "CLOAK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9128",
+      "word": "TRACTOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9129",
+      "word": "PHASER",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist (API unknown) — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9130",
+      "word": "VULCAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9131",
+      "word": "GIBBOUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9132",
+      "word": "UMBRA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9133",
+      "word": "PENUMBRA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9134",
+      "word": "NADIR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9135",
+      "word": "BOLIDE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9136",
+      "word": "PARALLAX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9137",
+      "word": "CEPHEID",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9138",
+      "word": "PERSEID",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist (API unknown) — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9139",
+      "word": "GIMBAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9140",
+      "word": "GANTRY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9141",
+      "word": "FAIRING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9142",
+      "word": "CHARON",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist (API unknown) — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9143",
+      "word": "DEIMOS",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist (API unknown) — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9144",
+      "word": "VESTA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9145",
+      "word": "CYGNUS",
+      "status": "review",
+      "errors": [],
+      "flags": [
+        {
+          "flag": "not-in-dictionary",
+          "detail": "missing from wordlist (API unknown) — possible topic jargon, needs human review",
+          "severity": "review"
+        }
+      ]
+    },
+    {
+      "id": "SPC-9146",
+      "word": "QUARK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9147",
+      "word": "NEUTRINO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9148",
+      "word": "GRAVITON",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9149",
+      "word": "EPICYCLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "SPC-9150",
+      "word": "SEXTANT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    }
+  ]
+}

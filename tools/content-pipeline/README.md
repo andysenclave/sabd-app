@@ -80,3 +80,33 @@ node -e "import('word-list').then(m => require('fs').copyFileSync(m.default, 'da
 
 ~150–200 words per topic (3 batches × 60), 6 topics ⇒ ~1,050 entries.
 Tier bands: low 800–1200, mid 1201–1600, high 1601–2200; 24/24/12 per batch.
+
+## Phase 4 — the unified scale (P4-T4/T5/T6)
+
+The bank moved to the **unified 0–500 scale** (difficulty ≈ the player score it suits)
+with four bottom-weighted tiers: veryEasy 0–50, easy 51–150, medium 151–350,
+hard 351–500 (~25/30/30/15). The legacy artifacts above are frozen history — the app
+serves them until the engine-3.0.0 flip.
+
+Unified workflow (all under `data/*/unified/`):
+
+```sh
+node src/migrate-legacy.js                             # legacy bank → unified scale (@sabd/elo transform)
+node src/complete-hints.js data/raw/unified/GAM-u1.json  # fill ids/lengths/hints deterministically
+node src/validate.js data/raw/unified/GAM-u1.json --scale=unified
+node src/apply-alt-descriptions.js                     # inject second clues (<PREFIX>-alt.json → passed batches)
+node src/merge.js --scale=unified                      # + P4-T5 stock audit (fails if a tier < 15%)
+node src/publish.js --scale=unified --version=2.1.0    # parallel artifacts, `scale` marker (F5)
+```
+
+Authoring batches carry only what needs judgment (`word`, `topic`, `tier`,
+`difficulty`, `description`); `complete-hints.js` derives the rest, seeded by the
+word so re-runs are byte-identical. Target ≥200 words per topic; the merge audit
+and `@sabd/wordbank` tests both enforce the 15% floor per tier.
+
+Every unified entry also carries an **`altDescription`** — a second clue from a
+different angle, same rules as the primary (owner request; reserved for a future
+shuffle/extra-help feature). `<PREFIX>-alt.json` files hold `[{word, altDescription}]`
+per topic; `apply-alt-descriptions.js` injects them into the passed batches (re-run it
+after any re-migration, before merging). The validator enforces the same length/leak
+rules on `altDescription` and rejects one identical to the primary.

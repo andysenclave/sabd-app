@@ -1,0 +1,842 @@
+[
+  {
+    "word": "MOON",
+    "altDescription": "It pulls the tides and drives werewolves wild"
+  },
+  {
+    "word": "SKY",
+    "altDescription": "Blue ceiling by day, black velvet by dark"
+  },
+  {
+    "word": "SPACE",
+    "altDescription": "Where astronauts float and silence never ends"
+  },
+  {
+    "word": "EARTH",
+    "altDescription": "The blue marble every astronaut photographs first"
+  },
+  {
+    "word": "UFO",
+    "altDescription": "Strange lights hovering where no plane should be"
+  },
+  {
+    "word": "SHIP",
+    "altDescription": "Every captain needs one to leave port"
+  },
+  {
+    "word": "SUN",
+    "altDescription": "Our nearest star, feeding every leaf on the planet"
+  },
+  {
+    "word": "NIGHT",
+    "altDescription": "Owls wake, streetlamps hum, the world goes quiet"
+  },
+  {
+    "word": "SUIT",
+    "altDescription": "Tailored for boardrooms or built for the vacuum"
+  },
+  {
+    "word": "HELMET",
+    "altDescription": "Skulls trust it, from bicycles to the void"
+  },
+  {
+    "word": "CREW",
+    "altDescription": "Roster of names sharing every launch and meal"
+  },
+  {
+    "word": "FLAG",
+    "altDescription": "A nation's colors snapping proudly atop a pole"
+  },
+  {
+    "word": "FUEL",
+    "altDescription": "Empty gauge, stranded journey; fill up before flying"
+  },
+  {
+    "word": "STAR",
+    "altDescription": "Wish on the first one you see tonight"
+  },
+  {
+    "word": "BEEP",
+    "altDescription": "Short electronic chirp from every impatient machine"
+  },
+  {
+    "word": "FUTURE",
+    "altDescription": "Tomorrow, and every tomorrow after that"
+  },
+  {
+    "word": "JEDI",
+    "altDescription": "Master Yoda trained the last of them"
+  },
+  {
+    "word": "INFINITY",
+    "altDescription": "The sideways eight that never runs out"
+  },
+  {
+    "word": "UNIVERSE",
+    "altDescription": "Born in a bang, home to absolutely everyone"
+  },
+  {
+    "word": "MARS",
+    "altDescription": "Red deserts where robot explorers leave lonely tracks"
+  },
+  {
+    "word": "PLUTO",
+    "altDescription": "Tiny world wearing a bright heart-shaped glacier"
+  },
+  {
+    "word": "FORCE",
+    "altDescription": "Push or pull that Newton measured in his laws"
+  },
+  {
+    "word": "FLOAT",
+    "altDescription": "Corks do it; astronauts' pencils do too"
+  },
+  {
+    "word": "GLOW",
+    "altDescription": "Fireflies and dying embers share this gentle trick"
+  },
+  {
+    "word": "ZAP",
+    "altDescription": "Static electricity's tiny sting on a doorknob"
+  },
+  {
+    "word": "VENUS",
+    "altDescription": "Love's goddess lent her name to hellish clouds"
+  },
+  {
+    "word": "SATURN",
+    "altDescription": "Sixth from the sun, everybody's favorite to draw"
+  },
+  {
+    "word": "RING",
+    "altDescription": "Slip it on a finger or answer the phone"
+  },
+  {
+    "word": "ROCKET",
+    "altDescription": "Fireworks' big brother, bound for orbit"
+  },
+  {
+    "word": "JUPITER",
+    "altDescription": "King of the gods, hoarding dozens of moons"
+  },
+  {
+    "word": "BEAM",
+    "altDescription": "Sunlight's straight path through a dusty window"
+  },
+  {
+    "word": "TWINKLE",
+    "altDescription": "Little star, little star, the lullaby repeats it"
+  },
+  {
+    "word": "RAY",
+    "altDescription": "A flat fish gliding, or one slice of sunshine"
+  },
+  {
+    "word": "MERCURY",
+    "altDescription": "Winged messenger god, also the thermometer's silver liquid"
+  },
+  {
+    "word": "ALIEN",
+    "altDescription": "Visitor whose passport lists no country on this planet"
+  },
+  {
+    "word": "DUST",
+    "altDescription": "Gray powder clinging to every astronaut's boots"
+  },
+  {
+    "word": "URANUS",
+    "altDescription": "Seventh out, first found through a telescope"
+  },
+  {
+    "word": "NEPTUNE",
+    "altDescription": "Sea god's planet, discovered by pure mathematics"
+  },
+  {
+    "word": "TAIL",
+    "altDescription": "Dogs wag it; coins hide it opposite heads"
+  },
+  {
+    "word": "PILOT",
+    "altDescription": "First episode of a series, or the cockpit's boss"
+  },
+  {
+    "word": "MISSION",
+    "altDescription": "Impossible ones self-destruct in five seconds"
+  },
+  {
+    "word": "ROBOT",
+    "altDescription": "Asimov gave it three laws to obey"
+  },
+  {
+    "word": "ENGINE",
+    "altDescription": "Check its light before a long road trip"
+  },
+  {
+    "word": "OXYGEN",
+    "altDescription": "Element eight, partnered with hydrogen in every raindrop"
+  },
+  {
+    "word": "TAKEOFF",
+    "altDescription": "Runways exist for this loud, thrilling goodbye"
+  },
+  {
+    "word": "STARSHIP",
+    "altDescription": "Musk's shiny steel giant, or sci-fi's favorite vessel"
+  },
+  {
+    "word": "MOONWALK",
+    "altDescription": "Bouncy low-gravity stroll, or a smooth dance illusion"
+  },
+  {
+    "word": "PLANET",
+    "altDescription": "Ancient Greeks called them wanderers across the sky"
+  },
+  {
+    "word": "SPACEMAN",
+    "altDescription": "Major Tom's job before ground control lost contact"
+  },
+  {
+    "word": "BLASTOFF",
+    "altDescription": "What kids yell hurling toy ships skyward"
+  },
+  {
+    "word": "LIFTOFF",
+    "altDescription": "The tower cleared, gravity's grip finally broken"
+  },
+  {
+    "word": "ROVER",
+    "altDescription": "Curiosity by name, wandering by trade"
+  },
+  {
+    "word": "APOLLO",
+    "altDescription": "Sun god lending his name to lunar trips"
+  },
+  {
+    "word": "COMET",
+    "altDescription": "Halley's famous visitor, returning every seventy-six years"
+  },
+  {
+    "word": "YODA",
+    "altDescription": "Do or do not, the swamp master says"
+  },
+  {
+    "word": "RADAR",
+    "altDescription": "Reads the same backward; bats invented the concept"
+  },
+  {
+    "word": "LASER",
+    "altDescription": "Cats chase its red dot up the wall"
+  },
+  {
+    "word": "SIGNAL",
+    "altDescription": "Your phone's bars, or smoke rising from ancient hills"
+  },
+  {
+    "word": "ANTENNA",
+    "altDescription": "Insects wear two; old rooftops wore one"
+  },
+  {
+    "word": "WORMHOLE",
+    "altDescription": "Einstein and Rosen's tunnel through spacetime's fabric"
+  },
+  {
+    "word": "ANDROID",
+    "altDescription": "Data from the Enterprise, or your phone's green mascot"
+  },
+  {
+    "word": "ORBIT",
+    "altDescription": "The loop a satellite faithfully retraces each lap"
+  },
+  {
+    "word": "MARTIAN",
+    "altDescription": "Matt Damon farmed potatoes to survive as one"
+  },
+  {
+    "word": "TREK",
+    "altDescription": "A long, wearying journey on foot through mountains"
+  },
+  {
+    "word": "EMPIRE",
+    "altDescription": "Rome built one; New York named a building"
+  },
+  {
+    "word": "GALAXY",
+    "altDescription": "A long time ago, in one far away"
+  },
+  {
+    "word": "SHIELD",
+    "altDescription": "Captain America throws his; knights hid behind theirs"
+  },
+  {
+    "word": "AVATAR",
+    "altDescription": "A deity descending to walk among mortals"
+  },
+  {
+    "word": "METEOR",
+    "altDescription": "Sky streak blamed for the dinosaurs' bad day"
+  },
+  {
+    "word": "INVADER",
+    "altDescription": "Uninvited guest arriving with an army behind them"
+  },
+  {
+    "word": "TELEPORT",
+    "altDescription": "Nightcrawler's smoky signature trick, bamf and gone"
+  },
+  {
+    "word": "PORTAL",
+    "altDescription": "The cake was a lie in this game"
+  },
+  {
+    "word": "LAUNCH",
+    "altDescription": "Startups and rockets both dread a failed one"
+  },
+  {
+    "word": "HOVER",
+    "altDescription": "Hummingbirds and helicopters mastered standing still midair"
+  },
+  {
+    "word": "MUTANT",
+    "altDescription": "Teenage ninja turtles carry this label proudly"
+  },
+  {
+    "word": "CYBER",
+    "altDescription": "Monday's biggest online shopping discounts wear this name"
+  },
+  {
+    "word": "BLASTER",
+    "altDescription": "Stormtroopers famously can't aim theirs at anything"
+  },
+  {
+    "word": "SHUTTLE",
+    "altDescription": "Badminton's feathered target, or the airport courtesy ride"
+  },
+  {
+    "word": "TENTACLE",
+    "altDescription": "Eight of these make an octopus very handy"
+  },
+  {
+    "word": "FLEET",
+    "altDescription": "Nimble of foot, or the navy's full collection"
+  },
+  {
+    "word": "INVASION",
+    "altDescription": "Normandy's beaches remember history's largest one"
+  },
+  {
+    "word": "CRATER",
+    "altDescription": "Volcano mouths and the moon's countless dimples"
+  },
+  {
+    "word": "LANDER",
+    "altDescription": "The Eagle at Tranquility Base, mission accomplished"
+  },
+  {
+    "word": "BOOSTER",
+    "altDescription": "Extra vaccine dose, or the toddler's car seat"
+  },
+  {
+    "word": "ESCAPE",
+    "altDescription": "The keyboard key pressed when everything goes wrong"
+  },
+  {
+    "word": "IGNITE",
+    "altDescription": "Spark meets fuel, and passion catches too"
+  },
+  {
+    "word": "ECLIPSE",
+    "altDescription": "Cardboard glasses sell out before this rare show"
+  },
+  {
+    "word": "THRUST",
+    "altDescription": "Sword lunge, or what engines measure in pounds"
+  },
+  {
+    "word": "DWARF",
+    "altDescription": "Seven whistled off to work in Snow White"
+  },
+  {
+    "word": "GIANT",
+    "altDescription": "The beanstalk's grumpy landlord, smelling Englishmen"
+  },
+  {
+    "word": "GRAVITY",
+    "altDescription": "Newton's apple obeyed it; Sandra Bullock fought it"
+  },
+  {
+    "word": "RADIO",
+    "altDescription": "Golden-age families gathered around one every evening"
+  },
+  {
+    "word": "HELIUM",
+    "altDescription": "The noble gas keeping blimps and airships aloft"
+  },
+  {
+    "word": "AURORA",
+    "altDescription": "Sleeping Beauty's name, and dawn's Roman goddess"
+  },
+  {
+    "word": "SOLAR",
+    "altDescription": "The system all eight planets call home"
+  },
+  {
+    "word": "FLARE",
+    "altDescription": "Distress signal fired skyward, or seventies pant style"
+  },
+  {
+    "word": "LUNAR",
+    "altDescription": "Beijing's New Year follows this calendar"
+  },
+  {
+    "word": "ORION",
+    "altDescription": "Mythology's great hunter, immortalized with his dogs"
+  },
+  {
+    "word": "STARDUST",
+    "altDescription": "Ziggy's surname, and Tinker Bell's shimmering wake"
+  },
+  {
+    "word": "POD",
+    "altDescription": "Open the bay doors, HAL; also holds peas"
+  },
+  {
+    "word": "FIREBALL",
+    "altDescription": "Cinnamon whiskey, or a dragon's angriest exhale"
+  },
+  {
+    "word": "CRESCENT",
+    "altDescription": "Buttery French pastries borrow this slender curve"
+  },
+  {
+    "word": "ASTEROID",
+    "altDescription": "Classic arcade game where triangles shoot rocks"
+  },
+  {
+    "word": "DUNE",
+    "altDescription": "Wind-sculpted sand wave slowly marching across deserts"
+  },
+  {
+    "word": "MATRIX",
+    "altDescription": "Rows and columns multiplied in algebra class"
+  },
+  {
+    "word": "COSMOS",
+    "altDescription": "Sagan's beloved series, also a cheerful garden flower"
+  },
+  {
+    "word": "HOLOGRAM",
+    "altDescription": "Tupac performed again thanks to this shimmering trick"
+  },
+  {
+    "word": "FRONTIER",
+    "altDescription": "Covered wagons rolled west chasing its promise"
+  },
+  {
+    "word": "GALACTIC",
+    "altDescription": "Hitchhikers need a guide at this scale"
+  },
+  {
+    "word": "STARGAZE",
+    "altDescription": "What telescopes on balconies invite you to do"
+  },
+  {
+    "word": "SAUCER",
+    "altDescription": "Every teacup rests upon its faithful round partner"
+  },
+  {
+    "word": "VOYAGER",
+    "altDescription": "Janeway's lost ship, decades from home"
+  },
+  {
+    "word": "SPUTNIK",
+    "altDescription": "Russia's 1957 shock that panicked Washington overnight"
+  },
+  {
+    "word": "HUBBLE",
+    "altDescription": "Famously blurry until astronauts fixed its mirror"
+  },
+  {
+    "word": "HORIZON",
+    "altDescription": "The line ships slip below when leaving"
+  },
+  {
+    "word": "CLONE",
+    "altDescription": "Dolly the sheep made this word famous"
+  },
+  {
+    "word": "TITAN",
+    "altDescription": "Elder gods overthrown by Zeus and company"
+  },
+  {
+    "word": "GEMINI",
+    "altDescription": "Castor and Pollux share this zodiac sign"
+  },
+  {
+    "word": "VOID",
+    "altDescription": "Nietzsche warned it stares back at you"
+  },
+  {
+    "word": "EUROPA",
+    "altDescription": "The maiden Zeus carried off, disguised as a bull"
+  },
+  {
+    "word": "SIRIUS",
+    "altDescription": "Harry Potter's godfather, or the satellite radio"
+  },
+  {
+    "word": "PROBE",
+    "altDescription": "What detectives launch and dentists wield"
+  },
+  {
+    "word": "POLARIS",
+    "altDescription": "The Little Dipper's handle ends with it"
+  },
+  {
+    "word": "CAPSULE",
+    "altDescription": "Swallow one for headaches; bury one for history"
+  },
+  {
+    "word": "ZODIAC",
+    "altDescription": "The horoscope column's organizing wheel of birthdays"
+  },
+  {
+    "word": "CLUSTER",
+    "altDescription": "Grapes grow in one; headaches come in worse ones"
+  },
+  {
+    "word": "COCKPIT",
+    "altDescription": "Sealed front seats only the flight crew enters"
+  },
+  {
+    "word": "SPIRAL",
+    "altDescription": "Staircases and seashells share this winding blueprint"
+  },
+  {
+    "word": "VORTEX",
+    "altDescription": "Your bathtub drain performs a tiny one nightly"
+  },
+  {
+    "word": "VACUUM",
+    "altDescription": "Nature abhors it; carpets secretly love it"
+  },
+  {
+    "word": "BINARY",
+    "altDescription": "Ones and zeros whispering beneath all software"
+  },
+  {
+    "word": "WARP",
+    "altDescription": "Damp wood does it; Mario found pipes for it"
+  },
+  {
+    "word": "NEUTRON",
+    "altDescription": "The nucleus dweller carrying no charge at all"
+  },
+  {
+    "word": "PROTON",
+    "altDescription": "Geneva's great collider hurls them in circles"
+  },
+  {
+    "word": "NEBULA",
+    "altDescription": "Thanos's blue cybernetic daughter, always second best"
+  },
+  {
+    "word": "GAMMA",
+    "altDescription": "The radiation that turned Banner big and green"
+  },
+  {
+    "word": "QUANTUM",
+    "altDescription": "Schrödinger's cat lives and dies in this realm"
+  },
+  {
+    "word": "DROID",
+    "altDescription": "Not the ones you're looking for, officer"
+  },
+  {
+    "word": "STELLAR",
+    "altDescription": "Report cards say it when grades truly shine"
+  },
+  {
+    "word": "CYBORG",
+    "altDescription": "Schwarzenegger played cinema's most famous one"
+  },
+  {
+    "word": "ASTRAL",
+    "altDescription": "Celestial adjective beloved by mystics and poets"
+  },
+  {
+    "word": "CORONA",
+    "altDescription": "Lime-topped beach beer, or 2020's infamous namesake"
+  },
+  {
+    "word": "MODULE",
+    "altDescription": "Online courses split their lessons into these"
+  },
+  {
+    "word": "SUNSPOT",
+    "altDescription": "Galileo tracked these blemishes through smoked glass"
+  },
+  {
+    "word": "TRANSIT",
+    "altDescription": "City buses and subways run under this banner"
+  },
+  {
+    "word": "PAYLOAD",
+    "altDescription": "The harmful half of every computer virus"
+  },
+  {
+    "word": "EQUINOX",
+    "altDescription": "March and September each host one quietly"
+  },
+  {
+    "word": "AIRLOCK",
+    "altDescription": "Sci-fi villains' favorite way of ejecting troublemakers"
+  },
+  {
+    "word": "SOLSTICE",
+    "altDescription": "Stonehenge throws its famous party twice yearly"
+  },
+  {
+    "word": "FLYBY",
+    "altDescription": "Maverick buzzed the tower; permission definitely denied"
+  },
+  {
+    "word": "FUSION",
+    "altDescription": "Sushi burritos and jazz-rock share this label"
+  },
+  {
+    "word": "TETHER",
+    "altDescription": "Goats graze at its length; phones share internet through it"
+  },
+  {
+    "word": "VISOR",
+    "altDescription": "Geordi La Forge saw everything through his"
+  },
+  {
+    "word": "PHOTON",
+    "altDescription": "Torpedoes of choice aboard the Enterprise"
+  },
+  {
+    "word": "HATCH",
+    "altDescription": "What eggs and evil plans eventually do"
+  },
+  {
+    "word": "STAGE",
+    "altDescription": "All the world's one, Shakespeare claimed"
+  },
+  {
+    "word": "PLASMA",
+    "altDescription": "Donated at blood banks, or old flat televisions"
+  },
+  {
+    "word": "NOZZLE",
+    "altDescription": "The garden hose's adjustable business end"
+  },
+  {
+    "word": "NOVA",
+    "altDescription": "PBS science series, or a classic Chevy"
+  },
+  {
+    "word": "ASCENT",
+    "altDescription": "Everest's final push toward the summit"
+  },
+  {
+    "word": "DESCENT",
+    "altDescription": "Ancestry traces yours; planes announce theirs before landing"
+  },
+  {
+    "word": "COSMIC",
+    "altDescription": "The microwave background hum left over from creation"
+  },
+  {
+    "word": "OUTPOST",
+    "altDescription": "Where the garrison watches roads nobody travels"
+  },
+  {
+    "word": "COLONY",
+    "altDescription": "Ants build one; thirteen rebelled against a king"
+  },
+  {
+    "word": "REENTRY",
+    "altDescription": "The heat shield's one and only exam"
+  },
+  {
+    "word": "HABITAT",
+    "altDescription": "Every creature's natural address, per nature documentaries"
+  },
+  {
+    "word": "THRUSTER",
+    "altDescription": "What lets a pilot park gently in zero gravity"
+  },
+  {
+    "word": "HYDROGEN",
+    "altDescription": "Periodic table's opener, infamous since the Hindenburg"
+  },
+  {
+    "word": "MONOLITH",
+    "altDescription": "Mysterious metal pillar that popped up in Utah"
+  },
+  {
+    "word": "STASIS",
+    "altDescription": "Gridlock's fancy cousin: nothing moves, nothing changes"
+  },
+  {
+    "word": "ODYSSEY",
+    "altDescription": "Homer's homesick hero took twenty years, or Honda's minivan"
+  },
+  {
+    "word": "CLOAK",
+    "altDescription": "Paired with dagger, or Harry's invisible inheritance"
+  },
+  {
+    "word": "ION",
+    "altDescription": "Tiny thrust, endless patience: deep-space engines love these"
+  },
+  {
+    "word": "TRACTOR",
+    "altDescription": "Green or red, ploughing fields at dawn"
+  },
+  {
+    "word": "PULSAR",
+    "altDescription": "Jocelyn Bell first mistook it for alien Morse"
+  },
+  {
+    "word": "PHASER",
+    "altDescription": "Starfleet's sidearm, or a guitarist's swirling pedal"
+  },
+  {
+    "word": "VULCAN",
+    "altDescription": "The forge god hammering under Mount Etna"
+  },
+  {
+    "word": "QUASAR",
+    "altDescription": "Feeding black hole broadcasting across half the universe"
+  },
+  {
+    "word": "GIBBOUS",
+    "altDescription": "The etymology admits it: humpbacked, like a camel"
+  },
+  {
+    "word": "PARSEC",
+    "altDescription": "Han Solo misused it bragging about the Kessel Run"
+  },
+  {
+    "word": "UMBRA",
+    "altDescription": "Eclipse chasers race jets to stay inside it"
+  },
+  {
+    "word": "REDSHIFT",
+    "altDescription": "Stretched waves proving the whole cosmos inflates"
+  },
+  {
+    "word": "PENUMBRA",
+    "altDescription": "Where partial-eclipse viewers stand, slightly disappointed"
+  },
+  {
+    "word": "APOGEE",
+    "altDescription": "A career's highest point, borrowed from orbital mechanics"
+  },
+  {
+    "word": "NADIR",
+    "altDescription": "Rock bottom, as astronomers politely put it"
+  },
+  {
+    "word": "BOLIDE",
+    "altDescription": "Chelyabinsk dashcams caught one shattering the morning"
+  },
+  {
+    "word": "TACHYON",
+    "altDescription": "Star Trek writers' favorite particle for impossible plots"
+  },
+  {
+    "word": "PARALLAX",
+    "altDescription": "How surveyors and astronomers triangulate the unreachable"
+  },
+  {
+    "word": "PERIGEE",
+    "altDescription": "Full moons look super when arriving here"
+  },
+  {
+    "word": "CEPHEID",
+    "altDescription": "Henrietta Leavitt's ticket to sizing the universe"
+  },
+  {
+    "word": "PERSEID",
+    "altDescription": "Comet debris streaking while summer campers stay up"
+  },
+  {
+    "word": "ALBEDO",
+    "altDescription": "Fresh snowfields score high; asphalt scores nearly zero"
+  },
+  {
+    "word": "GIMBAL",
+    "altDescription": "Smartphone filmmakers swear by this steadying grip"
+  },
+  {
+    "word": "ECLIPTIC",
+    "altDescription": "The flat lane all planets roughly share"
+  },
+  {
+    "word": "GANTRY",
+    "altDescription": "Motorway signs hang from one; cranes ride others"
+  },
+  {
+    "word": "FAIRING",
+    "altDescription": "Motorcycle bodywork smoothing the wind's angry grip"
+  },
+  {
+    "word": "AZIMUTH",
+    "altDescription": "Artillery crews dial it in before elevation"
+  },
+  {
+    "word": "CHARON",
+    "altDescription": "Spotted in 1978 as a bump on blurry photographs"
+  },
+  {
+    "word": "APHELION",
+    "altDescription": "Earth hits it each July, summer heat regardless"
+  },
+  {
+    "word": "DEIMOS",
+    "altDescription": "Terror personified, forever chasing his brother Phobos"
+  },
+  {
+    "word": "VESTA",
+    "altDescription": "Hearth goddess whose virgins tended eternal flames"
+  },
+  {
+    "word": "ANSIBLE",
+    "altDescription": "Le Guin coined it; sysadmins automate with it"
+  },
+  {
+    "word": "CYGNUS",
+    "altDescription": "Its X-1 gave black holes their first confirmed home"
+  },
+  {
+    "word": "QUARK",
+    "altDescription": "Deep Space Nine's scheming Ferengi bartender"
+  },
+  {
+    "word": "MAGNETAR",
+    "altDescription": "Its starquakes briefly outshine entire galaxies"
+  },
+  {
+    "word": "NEUTRINO",
+    "altDescription": "Trillions cross your thumbnail every single second"
+  },
+  {
+    "word": "GRAVITON",
+    "altDescription": "If weight travels in packets, meet the packet"
+  },
+  {
+    "word": "EPICYCLE",
+    "altDescription": "Complication stacked on complication until Copernicus cleaned house"
+  },
+  {
+    "word": "SYZYGY",
+    "altDescription": "Scrabble players dream of it; dictionaries barely believe it"
+  },
+  {
+    "word": "SEXTANT",
+    "altDescription": "Old captains squinted through it at noon"
+  }
+]

@@ -1,0 +1,842 @@
+[
+  {
+    "word": "MAP",
+    "altDescription": "Treasure hunters follow its dotted lines to X"
+  },
+  {
+    "word": "SEA",
+    "altDescription": "Fishermen cast nets into its restless grey swells"
+  },
+  {
+    "word": "BEACH",
+    "altDescription": "Footprints vanish here with every incoming wave"
+  },
+  {
+    "word": "ROAD",
+    "altDescription": "Headlights trace its curves through the sleeping night"
+  },
+  {
+    "word": "HILL",
+    "altDescription": "Cyclists dread the up, love the down"
+  },
+  {
+    "word": "TOWN",
+    "altDescription": "One market square where everybody eventually meets"
+  },
+  {
+    "word": "CITY",
+    "altDescription": "Traffic horns and neon that never sleep"
+  },
+  {
+    "word": "EARTH",
+    "altDescription": "Third stop from the sun, remarkably lively"
+  },
+  {
+    "word": "WORLD",
+    "altDescription": "Travelers dream of circling it in eighty days"
+  },
+  {
+    "word": "INDIA",
+    "altDescription": "Cricket fever, festival colors, and monsoon-washed streets"
+  },
+  {
+    "word": "RIVER",
+    "altDescription": "Boats drift where it bends toward the sea"
+  },
+  {
+    "word": "PARK",
+    "altDescription": "Kites, picnics, and dogs off their leashes"
+  },
+  {
+    "word": "FARM",
+    "altDescription": "A rooster announces dawn before the alarm does"
+  },
+  {
+    "word": "ROCK",
+    "altDescription": "Climbers grip it, sculptors carve it, ages ignore it"
+  },
+  {
+    "word": "SAND",
+    "altDescription": "Hourglasses and castle-builders both depend on it"
+  },
+  {
+    "word": "POND",
+    "altDescription": "Frogs croak from lily pads at dusk"
+  },
+  {
+    "word": "CAVE",
+    "altDescription": "Bats hang above stone icicles growing drop by drop"
+  },
+  {
+    "word": "LAKE",
+    "altDescription": "Morning mist lifts off its glassy mirror"
+  },
+  {
+    "word": "BRIDGE",
+    "altDescription": "Engineers' answer to an inconvenient stretch of water"
+  },
+  {
+    "word": "FOREST",
+    "altDescription": "Where fairy-tale children scatter breadcrumbs and get lost"
+  },
+  {
+    "word": "OCEAN",
+    "altDescription": "Whales sing across its deep blue miles"
+  },
+  {
+    "word": "STREET",
+    "altDescription": "Every address starts with its painted name plate"
+  },
+  {
+    "word": "HOTEL",
+    "altDescription": "Lobby bells, room keys, and checkout at noon"
+  },
+  {
+    "word": "TRAIN",
+    "altDescription": "A long whistle, then platforms slide away"
+  },
+  {
+    "word": "BAY",
+    "altDescription": "Sheltered anchorage where sailboats ride out storms"
+  },
+  {
+    "word": "CAMP",
+    "altDescription": "Ghost stories and marshmallows toasted on sticks"
+  },
+  {
+    "word": "TENT",
+    "altDescription": "Pegs, poles, and rain drumming inches above you"
+  },
+  {
+    "word": "PATH",
+    "altDescription": "The winding way less traveled, or more"
+  },
+  {
+    "word": "FLAG",
+    "altDescription": "Hoisted at dawn, saluted, lowered at sunset"
+  },
+  {
+    "word": "TRIP",
+    "altDescription": "Souvenirs and photographs outlast the itinerary"
+  },
+  {
+    "word": "FIELD",
+    "altDescription": "Scarecrows stand guard over the ripening rows"
+  },
+  {
+    "word": "MOUNTAIN",
+    "altDescription": "Snow-capped giant wearing clouds like a scarf"
+  },
+  {
+    "word": "COUNTRY",
+    "altDescription": "Home team you cheer for at the Olympics"
+  },
+  {
+    "word": "NORTH",
+    "altDescription": "Follow the pole star toward colder lands"
+  },
+  {
+    "word": "SOUTH",
+    "altDescription": "Where migrating birds head when winter bites"
+  },
+  {
+    "word": "EAST",
+    "altDescription": "The compass rose's right-hand arm"
+  },
+  {
+    "word": "WEST",
+    "altDescription": "Cowboys rode wild into this storied direction"
+  },
+  {
+    "word": "COAST",
+    "altDescription": "Lighthouses blink along its salty edge"
+  },
+  {
+    "word": "ISLAND",
+    "altDescription": "Castaways draw HELP in its lonely sand"
+  },
+  {
+    "word": "SHORE",
+    "altDescription": "Seashells wash up here for collectors' pockets"
+  },
+  {
+    "word": "CLIFF",
+    "altDescription": "Gulls nest where hikers dare not lean"
+  },
+  {
+    "word": "STREAM",
+    "altDescription": "Trout flicker beneath a wobbly stepping-stone crossing"
+  },
+  {
+    "word": "TRAIL",
+    "altDescription": "Blazes on trees mark the way onward"
+  },
+  {
+    "word": "DESERT",
+    "altDescription": "Camel caravans chase mirages between distant wells"
+  },
+  {
+    "word": "WOODS",
+    "altDescription": "Mushroom pickers whistle so wolves keep away"
+  },
+  {
+    "word": "PORT",
+    "altDescription": "Sailors step onto solid ground with sea legs"
+  },
+  {
+    "word": "POLE",
+    "altDescription": "Explorers raced each other to plant flags there"
+  },
+  {
+    "word": "CASTLE",
+    "altDescription": "Knights, dungeons, and a princess in the tallest turret"
+  },
+  {
+    "word": "AIRPORT",
+    "altDescription": "Luggage carousels spin while jet engines whine"
+  },
+  {
+    "word": "CHINA",
+    "altDescription": "Pandas, dragons, and tea poured for emperors"
+  },
+  {
+    "word": "JAPAN",
+    "altDescription": "Sumo rings, manga stalls, and one sacred snowy cone"
+  },
+  {
+    "word": "LONDON",
+    "altDescription": "Mind the gap on its ancient underground"
+  },
+  {
+    "word": "MUMBAI",
+    "altDescription": "Dabbawalas thread lunches through its relentless crowds"
+  },
+  {
+    "word": "GOA",
+    "altDescription": "Susegad afternoons, old churches, and beach shacks"
+  },
+  {
+    "word": "AGRA",
+    "altDescription": "Mughal emperors ruled from this Yamuna-side seat"
+  },
+  {
+    "word": "ASIA",
+    "altDescription": "Rice paddies, silk routes, and teeming megacities"
+  },
+  {
+    "word": "PEAK",
+    "altDescription": "Everything below looks tiny from up here"
+  },
+  {
+    "word": "EUROPE",
+    "altDescription": "Backpackers hop between its capitals on one rail pass"
+  },
+  {
+    "word": "AFRICA",
+    "altDescription": "Fifty-plus nations between one desert and two capes"
+  },
+  {
+    "word": "PARIS",
+    "altDescription": "Lovers lock padlocks over a slow green river"
+  },
+  {
+    "word": "EGYPT",
+    "altDescription": "The Sphinx keeps its riddles beside the dunes"
+  },
+  {
+    "word": "FRANCE",
+    "altDescription": "Wine, four hundred cheeses, and effortless chic"
+  },
+  {
+    "word": "SPAIN",
+    "altDescription": "Bulls run, paella simmers, Gaudi's spires dream"
+  },
+  {
+    "word": "VALLEY",
+    "altDescription": "Fog pools where the villages nestle low"
+  },
+  {
+    "word": "RUSSIA",
+    "altDescription": "Ballet, bitter winters, and onion-domed skylines"
+  },
+  {
+    "word": "CANADA",
+    "altDescription": "Hockey rinks outnumber warm days up there"
+  },
+  {
+    "word": "MEXICO",
+    "altDescription": "Marigolds and sugar skulls for the departed"
+  },
+  {
+    "word": "DELHI",
+    "altDescription": "Chandni Chowk's chaos beside old red ramparts"
+  },
+  {
+    "word": "BRAZIL",
+    "altDescription": "Carnival feathers beneath a hilltop open-armed statue"
+  },
+  {
+    "word": "GREECE",
+    "altDescription": "Gods quarreled on its mountaintop before democracy arrived"
+  },
+  {
+    "word": "JUNGLE",
+    "altDescription": "Vines thick enough to swing a hero through"
+  },
+  {
+    "word": "TOKYO",
+    "altDescription": "Vending machines and shrines share every block"
+  },
+  {
+    "word": "ROME",
+    "altDescription": "Toss a coin backwards into its famous fountain"
+  },
+  {
+    "word": "SYDNEY",
+    "altDescription": "Surfers catch dawn waves at Bondi's edge"
+  },
+  {
+    "word": "DUBAI",
+    "altDescription": "Ski indoors while the desert bakes outside"
+  },
+  {
+    "word": "GLOBE",
+    "altDescription": "Shakespeare's round playhouse borrowed its name"
+  },
+  {
+    "word": "NEPAL",
+    "altDescription": "Sherpas call this mountain kingdom home"
+  },
+  {
+    "word": "PUNJAB",
+    "altDescription": "Lassi by the tumbler, tractors at full volume"
+  },
+  {
+    "word": "KASHMIR",
+    "altDescription": "Famed soft wool and shikara rides at dawn"
+  },
+  {
+    "word": "TEMPLE",
+    "altDescription": "Carved gods watch pilgrims circle the sanctum"
+  },
+  {
+    "word": "JAIPUR",
+    "altDescription": "Elephants amble up to an amber hilltop fortress"
+  },
+  {
+    "word": "VENICE",
+    "altDescription": "Masked carnivals in a slowly sinking marvel"
+  },
+  {
+    "word": "HAWAII",
+    "altDescription": "Aloha greetings and flower garlands at arrival"
+  },
+  {
+    "word": "CANYON",
+    "altDescription": "Shout across and wait for your echo"
+  },
+  {
+    "word": "ALPS",
+    "altDescription": "Hannibal marched elephants over these icy passes"
+  },
+  {
+    "word": "AMAZON",
+    "altDescription": "Piranhas patrol the world's mightiest waterway"
+  },
+  {
+    "word": "ARCTIC",
+    "altDescription": "Midnight sun and ice floes going soft"
+  },
+  {
+    "word": "ATLAS",
+    "altDescription": "The Titan condemned to shoulder the heavens"
+  },
+  {
+    "word": "VILLAGE",
+    "altDescription": "One well, one school, a hundred cousins"
+  },
+  {
+    "word": "TOWER",
+    "altDescription": "Rapunzel let her hair down from one"
+  },
+  {
+    "word": "PALACE",
+    "altDescription": "Throne rooms behind gates the public queues outside"
+  },
+  {
+    "word": "FORT",
+    "altDescription": "Pillow builders and generals both claim one"
+  },
+  {
+    "word": "PYRAMID",
+    "altDescription": "Desert geometry visible from very far away"
+  },
+  {
+    "word": "BORDER",
+    "altDescription": "Guards check papers where two maps meet"
+  },
+  {
+    "word": "HARBOR",
+    "altDescription": "Masts sway safe while storms rage outside"
+  },
+  {
+    "word": "TUNNEL",
+    "altDescription": "Your radio dies until light reappears ahead"
+  },
+  {
+    "word": "HIGHWAY",
+    "altDescription": "Toll booths punctuate the long fast miles"
+  },
+  {
+    "word": "CANAL",
+    "altDescription": "Barges queue at locks between two seas"
+  },
+  {
+    "word": "VOLCANO",
+    "altDescription": "It naps for centuries, then redecorates violently"
+  },
+  {
+    "word": "FERRY",
+    "altDescription": "Same two docks, all day, every day"
+  },
+  {
+    "word": "VISA",
+    "altDescription": "Embassy queues and forms before any flight"
+  },
+  {
+    "word": "CRUISE",
+    "altDescription": "Deck chairs, midnight buffets, a new harbor daily"
+  },
+  {
+    "word": "COMPASS",
+    "altDescription": "Lost hikers trust its trembling little arrow"
+  },
+  {
+    "word": "RESORT",
+    "altDescription": "Wristbands on, worries checked at the gate"
+  },
+  {
+    "word": "JOURNEY",
+    "altDescription": "Heroes in stories always take the long one"
+  },
+  {
+    "word": "SAFARI",
+    "altDescription": "Khaki hats and cameras stalking the big five"
+  },
+  {
+    "word": "CAPITAL",
+    "altDescription": "Parliament sits here, so do all the protests"
+  },
+  {
+    "word": "GULF",
+    "altDescription": "Pearl divers once worked these warm waters"
+  },
+  {
+    "word": "CREEK",
+    "altDescription": "Wading kids chase tadpoles between mossy stones"
+  },
+  {
+    "word": "MEADOW",
+    "altDescription": "Perfect ground for cartwheels and lazy afternoons"
+  },
+  {
+    "word": "PASSPORT",
+    "altDescription": "Its unflattering photo follows you across continents"
+  },
+  {
+    "word": "MARSH",
+    "altDescription": "Mosquitoes breed in its reedy shallows"
+  },
+  {
+    "word": "SWAMP",
+    "altDescription": "Ogres and fireflies favor this squelchy address"
+  },
+  {
+    "word": "RIDGE",
+    "altDescription": "Wind hits hardest on this narrow crest"
+  },
+  {
+    "word": "HIMALAYA",
+    "altDescription": "Sanskrit named it the abode of snow"
+  },
+  {
+    "word": "DELTA",
+    "altDescription": "A Greek triangle drawn in fertile silt"
+  },
+  {
+    "word": "CAIRO",
+    "altDescription": "Africa's biggest city crowds the patient Nile"
+  },
+  {
+    "word": "ISTANBUL",
+    "altDescription": "Old Constantinople goes by this name now"
+  },
+  {
+    "word": "MONSOON",
+    "altDescription": "Farmers watch the horizon praying for its arrival"
+  },
+  {
+    "word": "VIENNA",
+    "altDescription": "Mozart premiered where schnitzel still reigns supreme"
+  },
+  {
+    "word": "OASIS",
+    "altDescription": "Green surprise the dunes keep secret"
+  },
+  {
+    "word": "OSLO",
+    "altDescription": "Viking longships and The Scream both dock here"
+  },
+  {
+    "word": "SUMMIT",
+    "altDescription": "World leaders borrow its name for meetings"
+  },
+  {
+    "word": "LISBON",
+    "altDescription": "Custard tarts and fado songs near the docks"
+  },
+  {
+    "word": "GORGE",
+    "altDescription": "Rope bridges sway high above its shadows"
+  },
+  {
+    "word": "KYOTO",
+    "altDescription": "Bamboo groves and a famous climate treaty"
+  },
+  {
+    "word": "EVEREST",
+    "altDescription": "Hillary and Tenzing got there first, breathless"
+  },
+  {
+    "word": "HAVANA",
+    "altDescription": "Rum, revolution murals, and waves lashing the seawall"
+  },
+  {
+    "word": "TEHRAN",
+    "altDescription": "Carpet bazaars bustle in Iran's smoggy heart"
+  },
+  {
+    "word": "CAPE",
+    "altDescription": "Superheroes wear one; explorers round one"
+  },
+  {
+    "word": "SAHARA",
+    "altDescription": "Once green grassland, now the ultimate emptiness"
+  },
+  {
+    "word": "NAIROBI",
+    "altDescription": "Kenya's bustling gateway to the great migration"
+  },
+  {
+    "word": "ANDES",
+    "altDescription": "Llamas and Inca trails thread its heights"
+  },
+  {
+    "word": "DUNE",
+    "altDescription": "Frank Herbert set sandworms loose on one"
+  },
+  {
+    "word": "GLACIER",
+    "altDescription": "It carved the valleys and birthed the fjords"
+  },
+  {
+    "word": "ROCKIES",
+    "altDescription": "The continental divide rides their high shoulders"
+  },
+  {
+    "word": "THAMES",
+    "altDescription": "Oxford and Cambridge race eights along it"
+  },
+  {
+    "word": "REEF",
+    "altDescription": "Snorkelers hover over its rainbow neighborhoods"
+  },
+  {
+    "word": "DANUBE",
+    "altDescription": "Budapest and Belgrade share its slow current"
+  },
+  {
+    "word": "GANGES",
+    "altDescription": "Born in ice, ending in a thousand mouths"
+  },
+  {
+    "word": "RHINE",
+    "altDescription": "Vineyards climb its banks from the Alps seaward"
+  },
+  {
+    "word": "SEINE",
+    "altDescription": "Impressionists painted its light again and again"
+  },
+  {
+    "word": "PLATEAU",
+    "altDescription": "Where graphs and landforms both flatten out"
+  },
+  {
+    "word": "VOLGA",
+    "altDescription": "Barge haulers sang their way along it"
+  },
+  {
+    "word": "LAGOON",
+    "altDescription": "A famous movie creature crawled from one"
+  },
+  {
+    "word": "YANGTZE",
+    "altDescription": "One colossal dam tamed its wild waters"
+  },
+  {
+    "word": "MEKONG",
+    "altDescription": "Floating markets bob on its brown breadth"
+  },
+  {
+    "word": "BAZAAR",
+    "altDescription": "Lanterns, carpets, and prices never written down"
+  },
+  {
+    "word": "GOBI",
+    "altDescription": "Two-humped camels plod Mongolia's stony waste"
+  },
+  {
+    "word": "EQUATOR",
+    "altDescription": "Sailors hold ceremonies when ships cross it"
+  },
+  {
+    "word": "KALAHARI",
+    "altDescription": "San trackers read stories in its dust"
+  },
+  {
+    "word": "SIBERIA",
+    "altDescription": "Permafrost, rare tigers, and one heroic railway"
+  },
+  {
+    "word": "KERALA",
+    "altDescription": "Kathakali faces and pepper vines in the rain"
+  },
+  {
+    "word": "SUMATRA",
+    "altDescription": "A monstrous 2004 wave rose off its coast"
+  },
+  {
+    "word": "VARANASI",
+    "altDescription": "Silk weavers work where Shiva reputedly never leaves"
+  },
+  {
+    "word": "TUNDRA",
+    "altDescription": "Reindeer graze lichen under a sunless winter"
+  },
+  {
+    "word": "DECCAN",
+    "altDescription": "Black soil plains where old sultanates clashed"
+  },
+  {
+    "word": "MESA",
+    "altDescription": "Roadrunner cartoons chase across its high flats"
+  },
+  {
+    "word": "ETNA",
+    "altDescription": "Cyclopes supposedly forged thunderbolts beneath it"
+  },
+  {
+    "word": "PAMPAS",
+    "altDescription": "Cattle herds built a nation's beefy reputation here"
+  },
+  {
+    "word": "STRAIT",
+    "altDescription": "A chokepoint every admiral memorizes early"
+  },
+  {
+    "word": "OUTBACK",
+    "altDescription": "Road trains thunder past Uluru toward nowhere"
+  },
+  {
+    "word": "HAMLET",
+    "altDescription": "Shakespeare's gloomy Dane shares its tiny name"
+  },
+  {
+    "word": "GEYSER",
+    "altDescription": "Old Faithful performs its tallest trick hourly"
+  },
+  {
+    "word": "WHARF",
+    "altDescription": "Gulls squabble over fish crates at dawn"
+  },
+  {
+    "word": "JETTY",
+    "altDescription": "Anglers dangle lines off its far end"
+  },
+  {
+    "word": "SAVANNA",
+    "altDescription": "Termite towers and thundering wildebeest herds"
+  },
+  {
+    "word": "INLET",
+    "altDescription": "Kayakers slip into its quiet hidden waters"
+  },
+  {
+    "word": "BASIN",
+    "altDescription": "All local rain answers to one river"
+  },
+  {
+    "word": "PRAIRIE",
+    "altDescription": "Bison once darkened it from edge to edge"
+  },
+  {
+    "word": "TRENCH",
+    "altDescription": "Only a few submersibles have touched its bottom"
+  },
+  {
+    "word": "RAVINE",
+    "altDescription": "Lost balls and hikers' nerves tumble into it"
+  },
+  {
+    "word": "BAYOU",
+    "altDescription": "Cajun fiddles echo over still dark water"
+  },
+  {
+    "word": "LATITUDE",
+    "altDescription": "Navigators reckon it by the noon sun"
+  },
+  {
+    "word": "GROTTO",
+    "altDescription": "A hidden hollow where nymphs bathed, legends say"
+  },
+  {
+    "word": "MANGROVE",
+    "altDescription": "Storm shields planted where land meets salt"
+  },
+  {
+    "word": "CHASM",
+    "altDescription": "Divides between generations borrow its yawning name"
+  },
+  {
+    "word": "BUTTE",
+    "altDescription": "Monument Valley's sentinels pose for every western"
+  },
+  {
+    "word": "GHAT",
+    "altDescription": "Pyres burn at the river's stone edge"
+  },
+  {
+    "word": "FJORD",
+    "altDescription": "Norwegian postcards can't resist its steep mirrors"
+  },
+  {
+    "word": "TARN",
+    "altDescription": "Lake District wanderers name each icy jewel"
+  },
+  {
+    "word": "STEPPE",
+    "altDescription": "Yurts dot the wind-scoured Eurasian sweep"
+  },
+  {
+    "word": "TOR",
+    "altDescription": "Dartmoor's weathered stone stacks draw fog and legend"
+  },
+  {
+    "word": "MASSIF",
+    "altDescription": "Mont Blanc anchors one such mighty cluster"
+  },
+  {
+    "word": "ATOLL",
+    "altDescription": "Bikini's blue circle once hosted terrible tests"
+  },
+  {
+    "word": "SEAMOUNT",
+    "altDescription": "Sonar reveals what charts long left blank"
+  },
+  {
+    "word": "BIGHT",
+    "altDescription": "Rope handlers and chart readers both use it"
+  },
+  {
+    "word": "TAIGA",
+    "altDescription": "Wolf howls carry far between snowy trunks"
+  },
+  {
+    "word": "PLAYA",
+    "altDescription": "Burning Man builds its city on one"
+  },
+  {
+    "word": "ESTUARY",
+    "altDescription": "Brackish nursery where young fish grow bold"
+  },
+  {
+    "word": "VELD",
+    "altDescription": "Springbok bound across its sunburnt open miles"
+  },
+  {
+    "word": "SCREE",
+    "altDescription": "Each footstep sets off a small stony avalanche"
+  },
+  {
+    "word": "CALDERA",
+    "altDescription": "Santorini's white villages perch on its curved rim"
+  },
+  {
+    "word": "ARROYO",
+    "altDescription": "Campers avoid its bed when thunderheads gather"
+  },
+  {
+    "word": "CENOTE",
+    "altDescription": "Divers descend Yucatan's jade-lit limestone wells"
+  },
+  {
+    "word": "ISTHMUS",
+    "altDescription": "Panama's narrow waist, eventually cut for ships"
+  },
+  {
+    "word": "LAHAR",
+    "altDescription": "Villages downhill fear this scalding grey surge"
+  },
+  {
+    "word": "CIRQUE",
+    "altDescription": "A famous circus borrowed this French bowl"
+  },
+  {
+    "word": "KARST",
+    "altDescription": "Guilin's dreamy stone towers typify this terrain"
+  },
+  {
+    "word": "ARETE",
+    "altDescription": "Greek philosophers praised it; alpinists inch along it"
+  },
+  {
+    "word": "MORAINE",
+    "altDescription": "Its ridges map where ancient ice once paused"
+  },
+  {
+    "word": "COL",
+    "altDescription": "Tour de France riders curse each famous one"
+  },
+  {
+    "word": "LOESS",
+    "altDescription": "Chinese farmers once dug cozy homes inside it"
+  },
+  {
+    "word": "POLDER",
+    "altDescription": "Windmills once pumped these fields dry daily"
+  },
+  {
+    "word": "DOAB",
+    "altDescription": "Ganga and Yamuna cradle its famous wheat"
+  },
+  {
+    "word": "DRUMLIN",
+    "altDescription": "Whole herds of them dot Irish farmland"
+  },
+  {
+    "word": "WADI",
+    "altDescription": "Bedouin camp in it, warily watching clouds"
+  },
+  {
+    "word": "ESKER",
+    "altDescription": "Road builders quarry these snaking glacial leftovers"
+  },
+  {
+    "word": "TOMBOLO",
+    "altDescription": "Low tide reveals a walkable ribbon seaward"
+  },
+  {
+    "word": "RIA",
+    "altDescription": "Galicia's mussel rafts float on flooded inlets"
+  }
+]

@@ -7,6 +7,7 @@
  */
 
 import type {
+  BankTier,
   CategoryScore,
   ExportFile,
   GameMode,
@@ -18,6 +19,7 @@ import type {
   SyncUploadRequest,
   SyncUploadResponse,
   TopicId,
+  UnifiedTier,
   WordEntry,
   WordSlice,
   WordSliceManifest,
@@ -26,6 +28,10 @@ import type {
 } from './types.ts';
 
 export const WORD_TIERS: readonly WordTier[] = ['low', 'mid', 'high'];
+/** Phase 4: the unified (0–500) scale's four tiers, ascending. */
+export const UNIFIED_TIERS: readonly UnifiedTier[] = ['veryEasy', 'easy', 'medium', 'hard'];
+/** Every tier name a bank entry may carry, across both scales. */
+export const BANK_TIERS: readonly BankTier[] = [...WORD_TIERS, ...UNIFIED_TIERS];
 export const PAID_HINTS: readonly PaidHint[] = ['position', 'letters'];
 export const GAME_MODES: readonly GameMode[] = ['solo', '1v1'];
 export const TOPIC_IDS: readonly TopicId[] = [
@@ -129,8 +135,14 @@ export function validateWordEntry(input: unknown, path = 'wordEntry'): Validatio
   c.nonEmptyString(input['id'], `${path}.id`);
   c.nonEmptyString(input['word'], `${path}.word`);
   c.nonEmptyString(input['topic'], `${path}.topic`);
-  c.oneOf(input['tier'], WORD_TIERS, `${path}.tier`);
+  // Either scale's vocabulary — the carrying bank/slice declares which (BankScale);
+  // per-scale band coherence is the content pipeline's job, not this shape check.
+  c.oneOf(input['tier'], BANK_TIERS, `${path}.tier`);
   c.nonEmptyString(input['description'], `${path}.description`);
+  // Optional second clue (legacy entries predate it); when present it must be real.
+  if (input['altDescription'] !== undefined) {
+    c.nonEmptyString(input['altDescription'], `${path}.altDescription`);
+  }
 
   const lengthOk = c.integer(input['length'], `${path}.length`);
   c.number(input['difficulty'], `${path}.difficulty`);
