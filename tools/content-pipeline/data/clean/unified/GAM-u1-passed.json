@@ -16,7 +16,8 @@
         "correct": "G",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Board or console, the contest is on tonight"
   },
   {
     "id": "GAM-9002",
@@ -35,7 +36,8 @@
         "correct": "Y",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Recess energy, whether outdoors or on a couch"
   },
   {
     "id": "GAM-9003",
@@ -54,7 +56,8 @@
         "correct": "N",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "First across the line, arms raised high"
   },
   {
     "id": "GAM-9004",
@@ -73,7 +76,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Pure enjoyment, no other justification needed"
   },
   {
     "id": "GAM-9005",
@@ -92,7 +96,8 @@
         "correct": "T",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Childhood treasure of plastic and imagination"
   },
   {
     "id": "GAM-9006",
@@ -111,7 +116,8 @@
         "correct": "N",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Sprint forward, legs pumping, never slowing"
   },
   {
     "id": "GAM-9007",
@@ -130,7 +136,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Kicked, thrown, or dribbled toward the goal"
   },
   {
     "id": "GAM-9008",
@@ -149,7 +156,8 @@
         "correct": "D",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Tumbling cubes deciding fate at the table"
   },
   {
     "id": "GAM-9009",
@@ -168,7 +176,8 @@
         "correct": "C",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Dealt from the deck, held close and secret"
   },
   {
     "id": "GAM-9010",
@@ -187,7 +196,8 @@
         "correct": "I",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Topple him and the whole match ends"
   },
   {
     "id": "GAM-9011",
@@ -206,7 +216,8 @@
         "correct": "C",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Fastest lap takes the checkered flag"
   },
   {
     "id": "GAM-9012",
@@ -225,7 +236,8 @@
         "correct": "T",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Squad united, sharing the wins and losses"
   },
   {
     "id": "GAM-9013",
@@ -244,7 +256,8 @@
         "correct": "D",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Glittering hoard piled high by dragons"
   },
   {
     "id": "GAM-9014",
@@ -263,7 +276,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Drop it in the slot for another go"
   },
   {
     "id": "GAM-9015",
@@ -282,7 +296,8 @@
         "correct": "S",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Grab it, flash colors, mow down everything"
   },
   {
     "id": "GAM-9016",
@@ -301,7 +316,8 @@
         "correct": "P",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Charts the terrain so nobody wanders lost"
   },
   {
     "id": "GAM-9017",
@@ -320,7 +336,8 @@
         "correct": "K",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Turns the lock guarding the next room"
   },
   {
     "id": "GAM-9018",
@@ -339,7 +356,8 @@
         "correct": "D",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Barred passage until the right item appears"
   },
   {
     "id": "GAM-9019",
@@ -358,7 +376,8 @@
         "correct": "R",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "The brave soul everyone roots for"
   },
   {
     "id": "GAM-9020",
@@ -377,7 +396,8 @@
         "correct": "E",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Hedge corridors hiding one way out"
   },
   {
     "id": "GAM-9021",
@@ -396,7 +416,8 @@
         "correct": "S",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Grandmasters brooding over marble armies"
   },
   {
     "id": "GAM-9022",
@@ -415,7 +436,8 @@
         "correct": "O",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Defeat's gray screen and mournful jingle"
   },
   {
     "id": "GAM-9023",
@@ -434,7 +456,8 @@
         "correct": "M",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Line up the shot and hold steady"
   },
   {
     "id": "GAM-9024",
@@ -453,7 +476,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Give the wheel a whirl for prizes"
   },
   {
     "id": "GAM-9025",
@@ -472,7 +496,8 @@
         "correct": "L",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Cast the bones and trust your luck"
   },
   {
     "id": "GAM-9026",
@@ -491,7 +516,8 @@
         "correct": "N",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Your moment to act before passing along"
   },
   {
     "id": "GAM-9027",
@@ -510,7 +536,8 @@
         "correct": "H",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Two brawlers, one health bar each"
   },
   {
     "id": "GAM-9028",
@@ -529,7 +556,8 @@
         "correct": "C",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Arcane sparks when steel isn't enough"
   },
   {
     "id": "GAM-9029",
@@ -548,7 +576,8 @@
         "correct": "S",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "The blade every knight swings first"
   },
   {
     "id": "GAM-9030",
@@ -567,7 +596,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Rooftop shadow flinging silent throwing blades"
   },
   {
     "id": "GAM-9031",
@@ -586,7 +616,8 @@
         "correct": "O",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Beeping mechanical ally built from bolts"
   },
   {
     "id": "GAM-9032",
@@ -605,7 +636,8 @@
         "correct": "I",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Invaders marching down in tidy rows"
   },
   {
     "id": "GAM-9033",
@@ -624,7 +656,8 @@
         "correct": "G",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Pale pursuer haunting a neon labyrinth"
   },
   {
     "id": "GAM-9034",
@@ -643,7 +676,8 @@
         "correct": "M",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The undead horde clawing at your barricade"
   },
   {
     "id": "GAM-9035",
@@ -662,7 +696,8 @@
         "correct": "O",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Winged terror guarding mountains of treasure"
   },
   {
     "id": "GAM-9036",
@@ -681,7 +716,8 @@
         "correct": "T",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Turrets and moats hiding royalty inside"
   },
   {
     "id": "GAM-9037",
@@ -700,7 +736,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Eyepatch, cutlass, and dreams of doubloons"
   },
   {
     "id": "GAM-9038",
@@ -719,7 +756,8 @@
         "correct": "R",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Robed spellcaster hurling bolts from a staff"
   },
   {
     "id": "GAM-9039",
@@ -738,7 +776,8 @@
         "correct": "G",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Armored champion sworn to the throne"
   },
   {
     "id": "GAM-9040",
@@ -757,7 +796,8 @@
         "correct": "R",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Feathered shaft loosed toward the mark"
   },
   {
     "id": "GAM-9041",
@@ -776,7 +816,8 @@
         "correct": "P",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Hidden spikes punishing a careless step"
   },
   {
     "id": "GAM-9042",
@@ -795,7 +836,8 @@
         "correct": "Z",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The reward glinting past the ribbon"
   },
   {
     "id": "GAM-9043",
@@ -814,7 +856,8 @@
         "correct": "R",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Countdown pressure sweating your every second"
   },
   {
     "id": "GAM-9044",
@@ -833,7 +876,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Freeze the action for a snack break"
   },
   {
     "id": "GAM-9045",
@@ -852,7 +896,8 @@
         "correct": "N",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "The glowing pane holding every adventure"
   },
   {
     "id": "GAM-9046",
@@ -871,7 +916,8 @@
         "correct": "T",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Press it and something wonderful triggers"
   },
   {
     "id": "GAM-9047",
@@ -890,7 +936,8 @@
         "correct": "Z",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Fit the pieces for that satisfying click"
   },
   {
     "id": "GAM-9048",
@@ -909,7 +956,8 @@
         "correct": "N",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Extra rewards showering a clean finish"
   },
   {
     "id": "GAM-9049",
@@ -928,7 +976,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The red blip you're meant to eliminate"
   },
   {
     "id": "GAM-9050",
@@ -947,7 +996,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Caged combat with a roaring crowd"
   },
   {
     "id": "GAM-9051",
@@ -966,7 +1016,8 @@
         "correct": "T",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Clashing armies until one side falls"
   },
   {
     "id": "GAM-9052",
@@ -985,7 +1036,8 @@
         "correct": "D",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The barrier raised against incoming blows"
   },
   {
     "id": "GAM-9053",
@@ -1004,7 +1056,8 @@
         "correct": "L",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Muttered syllables lighting the wand"
   },
   {
     "id": "GAM-9054",
@@ -1023,7 +1076,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Beat it and the next one unlocks"
   },
   {
     "id": "GAM-9055",
@@ -1042,7 +1096,8 @@
         "correct": "R",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Linked kingdoms joined by hidden pipes"
   },
   {
     "id": "GAM-9056",
@@ -1061,7 +1116,8 @@
         "correct": "K",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "A metal disc buying extra tries"
   },
   {
     "id": "GAM-9057",
@@ -1080,7 +1136,8 @@
         "correct": "V",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Record your progress before the boss"
   },
   {
     "id": "GAM-9058",
@@ -1099,7 +1156,8 @@
         "correct": "U",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The opening screen listing every option"
   },
   {
     "id": "GAM-9059",
@@ -1118,7 +1176,8 @@
         "correct": "D",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "A free sample before buying the whole thing"
   },
   {
     "id": "GAM-9060",
@@ -1137,7 +1196,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The freeze that dumps you to desktop"
   },
   {
     "id": "GAM-9061",
@@ -1156,7 +1216,8 @@
         "correct": "F",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "The image locks while your heart races"
   },
   {
     "id": "GAM-9062",
@@ -1175,7 +1236,8 @@
         "correct": "Y",
         "decoy": "L"
       }
-    }
+    },
+    "altDescription": "Gleaming proof you finished the grind"
   },
   {
     "id": "GAM-9063",
@@ -1194,7 +1256,8 @@
         "correct": "D",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Podium metal draped around your neck"
   },
   {
     "id": "GAM-9064",
@@ -1213,7 +1276,8 @@
         "correct": "A",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Your standing on the competitive ladder"
   },
   {
     "id": "GAM-9065",
@@ -1232,7 +1296,8 @@
         "correct": "G",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Shiny pins earned from beaten gyms"
   },
   {
     "id": "GAM-9066",
@@ -1251,7 +1316,8 @@
         "correct": "I",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "A flashy costume draining your wallet"
   },
   {
     "id": "GAM-9067",
@@ -1270,7 +1336,8 @@
         "correct": "M",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Plated protection soaking up the hits"
   },
   {
     "id": "GAM-9068",
@@ -1289,7 +1356,8 @@
         "correct": "I",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Red liquid chugged near death"
   },
   {
     "id": "GAM-9069",
@@ -1308,7 +1376,8 @@
         "correct": "E",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Whatever you wield against the horde"
   },
   {
     "id": "GAM-9070",
@@ -1327,7 +1396,8 @@
         "correct": "D",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Dank corridors hoarding chests below"
   },
   {
     "id": "GAM-9071",
@@ -1346,7 +1416,8 @@
         "correct": "S",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Objectives briefed before the drop"
   },
   {
     "id": "GAM-9072",
@@ -1365,7 +1436,8 @@
         "correct": "O",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Confetti, fanfare, and the winner's chicken dinner"
   },
   {
     "id": "GAM-9073",
@@ -1384,7 +1456,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The dull screen daring another attempt"
   },
   {
     "id": "GAM-9074",
@@ -1403,7 +1476,8 @@
         "correct": "R",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Rewatch the highlight from every angle"
   },
   {
     "id": "GAM-9075",
@@ -1422,7 +1496,8 @@
         "correct": "S",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Wipe it clean, back to square one"
   },
   {
     "id": "GAM-9076",
@@ -1441,7 +1516,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Coins spent to sharpen your stats"
   },
   {
     "id": "GAM-9077",
@@ -1460,7 +1536,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Ears covered, mic hot, squad talking"
   },
   {
     "id": "GAM-9078",
@@ -1479,7 +1556,8 @@
         "correct": "R",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "A broadcaster sharing every match in real time"
   },
   {
     "id": "GAM-9079",
@@ -1498,7 +1576,8 @@
         "correct": "L",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Plugged into the net, never playing alone"
   },
   {
     "id": "GAM-9080",
@@ -1517,7 +1596,8 @@
         "correct": "R",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Chiptune nostalgia in chunky blocks"
   },
   {
     "id": "GAM-9081",
@@ -1536,7 +1616,8 @@
         "correct": "O",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "One brave player, no backup arriving"
   },
   {
     "id": "GAM-9082",
@@ -1555,7 +1636,8 @@
         "correct": "D",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The small crew watching each other's backs"
   },
   {
     "id": "GAM-9083",
@@ -1574,7 +1656,8 @@
         "correct": "A",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "A tagged brotherhood sharing one banner"
   },
   {
     "id": "GAM-9084",
@@ -1593,7 +1676,8 @@
         "correct": "I",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Dozens teaming against one colossal beast"
   },
   {
     "id": "GAM-9085",
@@ -1612,7 +1696,8 @@
         "correct": "D",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "A last-second sidestep, feeling untouchable"
   },
   {
     "id": "GAM-9086",
@@ -1631,7 +1716,8 @@
         "correct": "R",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "A full-tilt dash draining your energy"
   },
   {
     "id": "GAM-9087",
@@ -1650,7 +1736,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Slip past drowsy guards unseen"
   },
   {
     "id": "GAM-9088",
@@ -1669,7 +1756,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Duck low to shrink your target"
   },
   {
     "id": "GAM-9089",
@@ -1688,7 +1776,8 @@
         "correct": "M",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Call forth a beast from thin air"
   },
   {
     "id": "GAM-9090",
@@ -1707,7 +1796,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Bring a teammate back from the floor"
   },
   {
     "id": "GAM-9091",
@@ -1726,7 +1816,8 @@
         "correct": "C",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The update quietly rebalancing everything overnight"
   },
   {
     "id": "GAM-9092",
@@ -1745,7 +1836,8 @@
         "correct": "E",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The S-to-F ranking of everything"
   },
   {
     "id": "GAM-9093",
@@ -1764,7 +1856,8 @@
         "correct": "E",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "The hidden mythology fans obsess over"
   },
   {
     "id": "GAM-9094",
@@ -1783,7 +1876,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "A scrappy solo-made darling, no publisher attached"
   },
   {
     "id": "GAM-9095",
@@ -1802,7 +1896,8 @@
         "correct": "K",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "A chosen edge carried each round"
   },
   {
     "id": "GAM-9096",
@@ -1821,7 +1916,8 @@
         "correct": "U",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "A surprise strike from unseen attackers"
   },
   {
     "id": "GAM-9097",
@@ -1840,7 +1936,8 @@
         "correct": "T",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Bait the beast into ignoring your allies"
   },
   {
     "id": "GAM-9098",
@@ -1859,7 +1956,8 @@
         "correct": "R",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Head-to-head, mano a mano showdown"
   },
   {
     "id": "GAM-9099",
@@ -1878,7 +1976,8 @@
         "correct": "E",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Another round to avenge that sting"
   },
   {
     "id": "GAM-9100",
@@ -1897,7 +1996,8 @@
         "correct": "U",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The hand-holding lesson teaching you to walk"
   },
   {
     "id": "GAM-9101",
@@ -1916,7 +2016,8 @@
         "correct": "V",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "The unmodded game straight off the disc"
   },
   {
     "id": "GAM-9102",
@@ -1935,7 +2036,8 @@
         "correct": "E",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The remote host everyone's game connects to"
   },
   {
     "id": "GAM-9103",
@@ -1954,7 +2056,8 @@
         "correct": "T",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "The one running the match for everybody"
   },
   {
     "id": "GAM-9104",
@@ -1973,7 +2076,8 @@
         "correct": "P",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The millisecond delay judging your connection"
   },
   {
     "id": "GAM-9105",
@@ -1992,7 +2096,8 @@
         "correct": "B",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "An early trial run before the polish"
   },
   {
     "id": "GAM-9106",
@@ -2011,7 +2116,8 @@
         "correct": "P",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "A raw first draft, bugs everywhere"
   },
   {
     "id": "GAM-9107",
@@ -2030,7 +2136,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Bending an unintended bug to your advantage"
   },
   {
     "id": "GAM-9108",
@@ -2049,7 +2156,8 @@
         "correct": "S",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Two-dimensional artwork animating a character"
   },
   {
     "id": "GAM-9109",
@@ -2068,7 +2176,8 @@
         "correct": "E",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The surface detail painted onto shapes"
   },
   {
     "id": "GAM-9110",
@@ -2087,7 +2196,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The flat panels sculpting a 3D shape"
   },
   {
     "id": "GAM-9111",
@@ -2106,7 +2216,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Drawing the scene pixel by pixel"
   },
   {
     "id": "GAM-9112",
@@ -2125,7 +2236,8 @@
         "correct": "I",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The core tech powering the whole game"
   },
   {
     "id": "GAM-9113",
@@ -2144,7 +2256,8 @@
         "correct": "E",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "A single snapshot in the flowing animation"
   },
   {
     "id": "GAM-9114",
@@ -2163,7 +2276,8 @@
         "correct": "L",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "A limp corpse tumbling with floppy joints"
   },
   {
     "id": "GAM-9115",
@@ -2182,7 +2296,8 @@
         "correct": "B",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The distant backdrop cube faking a horizon"
   },
   {
     "id": "GAM-9117",
@@ -2201,7 +2316,8 @@
         "correct": "A",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Graphics layered on top of the gameplay feed"
   },
   {
     "id": "GAM-9118",
@@ -2220,7 +2336,8 @@
         "correct": "I",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The gun's upward jolt fought with muscle memory"
   },
   {
     "id": "GAM-9119",
@@ -2239,7 +2356,8 @@
         "correct": "T",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Circling an enemy while facing them"
   },
   {
     "id": "GAM-9120",
@@ -2258,7 +2376,8 @@
         "correct": "H",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "A pressure-cooker win against all odds"
   },
   {
     "id": "GAM-9121",
@@ -2277,7 +2396,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "A quick kill logged in the shooter"
   },
   {
     "id": "GAM-9122",
@@ -2296,7 +2416,8 @@
         "correct": "E",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "A slick fake-out dodging the tackle"
   },
   {
     "id": "GAM-9123",
@@ -2315,7 +2436,8 @@
         "correct": "T",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Frustration spiraling your play downhill"
   },
   {
     "id": "GAM-9124",
@@ -2334,7 +2456,8 @@
         "correct": "T",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Poisonous behavior souring the whole lobby"
   },
   {
     "id": "GAM-9125",
@@ -2353,7 +2476,8 @@
         "correct": "T",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "A mischief-maker baiting everyone for laughs"
   },
   {
     "id": "GAM-9126",
@@ -2372,7 +2496,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Progress ticking on with zero input"
   },
   {
     "id": "GAM-9127",
@@ -2391,7 +2516,8 @@
         "correct": "U",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Software mimicking a vintage console faithfully"
   },
   {
     "id": "GAM-9128",
@@ -2410,7 +2536,8 @@
         "correct": "M",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "A distinct climate zone within the world"
   },
   {
     "id": "GAM-9129",
@@ -2429,7 +2556,8 @@
         "correct": "U",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The wild path a roamer farms alone"
   },
   {
     "id": "GAM-9130",
@@ -2448,7 +2576,8 @@
         "correct": "R",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "The perfect answer shutting them down"
   },
   {
     "id": "GAM-9131",
@@ -2467,7 +2596,8 @@
         "correct": "L",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "A do-over on a lousy starting draw"
   },
   {
     "id": "GAM-9132",
@@ -2486,7 +2616,8 @@
         "correct": "T",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Controlling the pace to keep pressure on"
   },
   {
     "id": "GAM-9133",
@@ -2505,7 +2636,8 @@
         "correct": "I",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Grinding a rival's library to dust"
   },
   {
     "id": "GAM-9134",
@@ -2524,7 +2656,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "A minor incantation replacing itself instantly"
   },
   {
     "id": "GAM-9136",
@@ -2543,7 +2676,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The little grunts you last-hit for cash"
   },
   {
     "id": "GAM-9137",
@@ -2562,7 +2696,8 @@
         "correct": "W",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "A placed sentry lighting the fog"
   },
   {
     "id": "GAM-9138",
@@ -2581,7 +2716,8 @@
         "correct": "P",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Shielding a teammate by knocking attackers back"
   },
   {
     "id": "GAM-9139",
@@ -2600,7 +2736,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "A sneaky solo assault on the enemy core"
   },
   {
     "id": "GAM-9140",
@@ -2619,7 +2756,8 @@
         "correct": "G",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "A boss's furious final desperate phase"
   },
   {
     "id": "GAM-9141",
@@ -2638,7 +2776,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "A performance readout dissecting your output"
   },
   {
     "id": "GAM-9142",
@@ -2657,7 +2796,8 @@
         "correct": "P",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "How much of the battle your skills stayed running"
   },
   {
     "id": "GAM-9143",
@@ -2676,7 +2816,8 @@
         "correct": "W",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "A total party defeat resetting the attempt"
   },
   {
     "id": "GAM-9144",
@@ -2695,7 +2836,8 @@
         "correct": "N",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The spacing standoff before anyone attacks"
   },
   {
     "id": "GAM-9145",
@@ -2714,7 +2856,8 @@
         "correct": "H",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Scattered pixels blending a limited palette"
   },
   {
     "id": "GAM-9146",
@@ -2733,7 +2876,8 @@
         "correct": "P",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Distant scenery drifting slower than foreground"
   },
   {
     "id": "GAM-9148",
@@ -2752,7 +2896,8 @@
         "correct": "Q",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The lit sign advertising an arcade machine"
   },
   {
     "id": "GAM-9149",
@@ -2771,7 +2916,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The decorated trim edging a screen"
   },
   {
     "id": "GAM-9150",
@@ -2790,7 +2936,8 @@
         "correct": "T",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "The idle showcase reeling players in"
   },
   {
     "id": "GAM-9116",
@@ -2809,7 +2956,8 @@
         "correct": "N",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "A shrunken overview in the screen's edge"
   },
   {
     "id": "GAM-9135",
@@ -2828,7 +2976,8 @@
         "correct": "K",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "A lucky pull off the deck's summit"
   },
   {
     "id": "GAM-9147",
@@ -2847,6 +2996,7 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "The faint horizontal lines of a CRT"
   }
 ]

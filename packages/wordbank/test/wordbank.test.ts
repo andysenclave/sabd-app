@@ -115,6 +115,23 @@ test('P4-T6 — hint integrity + description rules hold across the whole unified
   }
 });
 
+test('every unified entry carries an altDescription obeying the same rules (owner request)', () => {
+  for (const w of unifiedWords) {
+    const alt = w.altDescription;
+    assert.ok(alt && alt.trim().length > 0, `${w.id} ${w.word}: missing altDescription`);
+    // Same rules as the primary clue: ≤12 words, no answer leak, and a genuinely
+    // different clue (the future shuffle/help feature needs two distinct angles).
+    const tokens = alt.trim().split(/\s+/);
+    assert.ok(tokens.length <= 12, `${w.id}: altDescription has ${tokens.length} words`);
+    const leak = alt
+      .toUpperCase()
+      .split(/[^A-Z]+/)
+      .some((tok) => tok.includes(w.word));
+    assert.ok(!leak, `${w.id} ${w.word}: altDescription leaks the word`);
+    assert.notEqual(alt.toLowerCase(), w.description.toLowerCase(), `${w.id}: altDescription duplicates description`);
+  }
+});
+
 test('no duplicate words within a topic; ids are unique bank-wide', () => {
   const ids = new Set<string>();
   const perTopic = new Map<string, Set<string>>();

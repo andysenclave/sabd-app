@@ -16,7 +16,8 @@
         "correct": "O",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "First thing checked at dawn, last at night"
   },
   {
     "id": "NET-9002",
@@ -35,7 +36,8 @@
         "correct": "C",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Grandma prefers this over any typed message"
   },
   {
     "id": "NET-9003",
@@ -54,7 +56,8 @@
         "correct": "T",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Abbreviations and autocorrect disasters in tiny bubbles"
   },
   {
     "id": "NET-9004",
@@ -73,7 +76,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Say cheese, then judge it immediately after"
   },
   {
     "id": "NET-9005",
@@ -92,7 +96,8 @@
         "correct": "D",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Press record and let the story roll"
   },
   {
     "id": "NET-9006",
@@ -111,7 +116,8 @@
         "correct": "G",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Winner celebrated, loser demands an instant rematch"
   },
   {
     "id": "NET-9007",
@@ -130,7 +136,8 @@
         "correct": "S",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Playlists, albums, and the songs stuck in heads"
   },
   {
     "id": "NET-9008",
@@ -149,7 +156,8 @@
         "correct": "C",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Typing quickly with friends late into night"
   },
   {
     "id": "NET-9009",
@@ -168,7 +176,8 @@
         "correct": "N",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Brightness cranked, eyes tired, still staring anyway"
   },
   {
     "id": "NET-9010",
@@ -187,7 +196,8 @@
         "correct": "C",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Lens, shutter, and a flash for dark rooms"
   },
   {
     "id": "NET-9011",
@@ -206,7 +216,8 @@
         "correct": "P",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Knock once on glass, the icon obeys"
   },
   {
     "id": "NET-9012",
@@ -225,7 +236,8 @@
         "correct": "P",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "One smooth drag and the card pays"
   },
   {
     "id": "NET-9013",
@@ -244,7 +256,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The button that spreads posts far beyond friends"
   },
   {
     "id": "NET-9014",
@@ -263,7 +276,8 @@
         "correct": "L",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Double tap approval, counted and craved daily"
   },
   {
     "id": "NET-9015",
@@ -282,7 +296,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Draft it, doubt it, publish it anyway"
   },
   {
     "id": "NET-9016",
@@ -301,7 +316,8 @@
         "correct": "D",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Paper plane icon launching words across distance"
   },
   {
     "id": "NET-9017",
@@ -320,7 +336,8 @@
         "correct": "V",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Floppy disk icon still guarding your work"
   },
   {
     "id": "NET-9018",
@@ -339,7 +356,8 @@
         "correct": "L",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Trash can waiting hungrily for old files"
   },
   {
     "id": "NET-9019",
@@ -358,7 +376,8 @@
         "correct": "P",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Hitting all instead of one, office horror"
   },
   {
     "id": "NET-9020",
@@ -377,7 +396,8 @@
         "correct": "U",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Three stacked lines waiting in the corner"
   },
   {
     "id": "NET-9021",
@@ -396,7 +416,8 @@
         "correct": "C",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Dragged around the home grid until perfect"
   },
   {
     "id": "NET-9022",
@@ -415,7 +436,8 @@
         "correct": "L",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Zipped, attached, misplaced, rescued from downloads folder"
   },
   {
     "id": "NET-9023",
@@ -434,7 +456,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Nested inside itself until nothing gets found"
   },
   {
     "id": "NET-9024",
@@ -453,7 +476,8 @@
         "correct": "A",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Refresh it when the loading never ends"
   },
   {
     "id": "NET-9025",
@@ -472,7 +496,8 @@
         "correct": "E",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Countless connected corners, all one address bar away"
   },
   {
     "id": "NET-9026",
@@ -491,7 +516,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Homepage first, then wander deeper inside"
   },
   {
     "id": "NET-9027",
@@ -510,7 +536,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Two buttons and a wheel guiding your arrow"
   },
   {
     "id": "NET-9028",
@@ -529,7 +556,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Spacebar in the south, escape up north"
   },
   {
     "id": "NET-9029",
@@ -548,7 +576,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Ink cartridges cost more than the machine"
   },
   {
     "id": "NET-9030",
@@ -567,7 +596,8 @@
         "correct": "T",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Kids' menus and cockpits both swear by it"
   },
   {
     "id": "NET-9031",
@@ -586,7 +616,8 @@
         "correct": "S",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Bass thumping until the walls join in"
   },
   {
     "id": "NET-9032",
@@ -605,7 +636,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Overnight feeding keeps the little slab alive"
   },
   {
     "id": "NET-9033",
@@ -624,7 +656,8 @@
         "correct": "G",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The wall's nightly gift to a dying phone"
   },
   {
     "id": "NET-9034",
@@ -643,7 +676,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "One end never fits the port you have"
   },
   {
     "id": "NET-9035",
@@ -662,7 +696,8 @@
         "correct": "M",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Rocker buttons on the side know your mood"
   },
   {
     "id": "NET-9036",
@@ -681,7 +716,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Crossed-out speaker icon during the loud ads"
   },
   {
     "id": "NET-9037",
@@ -700,7 +736,8 @@
         "correct": "I",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Full strength downtown, nothing in the elevator"
   },
   {
     "id": "NET-9038",
@@ -719,7 +756,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Username, secret word, and a hopeful enter key"
   },
   {
     "id": "NET-9039",
@@ -738,7 +776,8 @@
         "correct": "R",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Bio, birthday, and carefully chosen cover shot"
   },
   {
     "id": "NET-9040",
@@ -757,7 +796,8 @@
         "correct": "I",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Hundreds counted, three actually show up moving day"
   },
   {
     "id": "NET-9041",
@@ -776,7 +816,8 @@
         "correct": "O",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "One tap and their world enters yours"
   },
   {
     "id": "NET-9042",
@@ -795,7 +836,8 @@
         "correct": "K",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "The nuclear option when muting feels too soft"
   },
   {
     "id": "NET-9043",
@@ -814,7 +856,8 @@
         "correct": "K",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Six digits or a squiggled pattern grants entry"
   },
   {
     "id": "NET-9044",
@@ -833,7 +876,8 @@
         "correct": "D",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Progress bar crawling toward one hundred percent"
   },
   {
     "id": "NET-9045",
@@ -852,7 +896,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The drawer of abandoned blinking impulse buys"
   },
   {
     "id": "NET-9046",
@@ -871,7 +916,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Install now or remind me tomorrow, forever"
   },
   {
     "id": "NET-9047",
@@ -890,7 +936,8 @@
         "correct": "S",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The fix-everything ritual IT always prescribes first"
   },
   {
     "id": "NET-9048",
@@ -909,7 +956,8 @@
         "correct": "B",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Hollywood does it to tired old franchises too"
   },
   {
     "id": "NET-9049",
@@ -928,7 +976,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Seen at midnight, answered maybe by noon"
   },
   {
     "id": "NET-9050",
@@ -947,7 +996,8 @@
         "correct": "I",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Custom melody announcing exactly who's interrupting dinner"
   },
   {
     "id": "NET-9051",
@@ -966,7 +1016,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Alarm silenced, dream resumed, meeting missed"
   },
   {
     "id": "NET-9052",
@@ -985,7 +1036,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Call center armor, also worn for raids"
   },
   {
     "id": "NET-9053",
@@ -1004,7 +1056,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Where stray icons and old screenshots pile up"
   },
   {
     "id": "NET-9054",
@@ -1023,7 +1076,8 @@
         "correct": "O",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Dual setup, one for work, one for pretending"
   },
   {
     "id": "NET-9055",
@@ -1042,7 +1096,8 @@
         "correct": "K",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "What ambitious people do at awkward mixers"
   },
   {
     "id": "NET-9056",
@@ -1061,7 +1116,8 @@
         "correct": "E",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Charging pads and earbuds embraced this life"
   },
   {
     "id": "NET-9057",
@@ -1080,7 +1136,8 @@
         "correct": "A",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Every good one taken, add more numbers"
   },
   {
     "id": "NET-9058",
@@ -1099,7 +1156,8 @@
         "correct": "T",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Single, complicated, or last seen recently"
   },
   {
     "id": "NET-9059",
@@ -1118,7 +1176,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "The cartoon you, braver than the real one"
   },
   {
     "id": "NET-9060",
@@ -1137,7 +1196,8 @@
         "correct": "D",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The algorithm sets today's menu of distractions"
   },
   {
     "id": "NET-9061",
@@ -1156,7 +1216,8 @@
         "correct": "S",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The glowing ring begging for a tap"
   },
   {
     "id": "NET-9062",
@@ -1175,7 +1236,8 @@
         "correct": "F",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Dog ears and flower crowns on demand"
   },
   {
     "id": "NET-9063",
@@ -1194,7 +1256,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Badges of identity plastered across laptop lids"
   },
   {
     "id": "NET-9064",
@@ -1213,7 +1276,8 @@
         "correct": "O",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Three drafts later, still just an emoji"
   },
   {
     "id": "NET-9065",
@@ -1232,7 +1296,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Don't read them, everyone says, reading them"
   },
   {
     "id": "NET-9066",
@@ -1251,7 +1316,8 @@
         "correct": "G",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "You're it, now the notification says so"
   },
   {
     "id": "NET-9067",
@@ -1270,7 +1336,8 @@
         "correct": "N",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Charts climbing today, cringe compilation next year"
   },
   {
     "id": "NET-9068",
@@ -1289,7 +1356,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Surfing them once required only a couch"
   },
   {
     "id": "NET-9069",
@@ -1308,7 +1376,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Hours curating the perfect order, nobody notices"
   },
   {
     "id": "NET-9070",
@@ -1327,7 +1396,8 @@
         "correct": "K",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Turning pages with a tap, no paper cuts"
   },
   {
     "id": "NET-9071",
@@ -1346,7 +1416,8 @@
         "correct": "P",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Close button hiding where fingers can't find it"
   },
   {
     "id": "NET-9072",
@@ -1365,7 +1436,8 @@
         "correct": "K",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Everything twice, because hard drives betray eventually"
   },
   {
     "id": "NET-9073",
@@ -1384,7 +1456,8 @@
         "correct": "S",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Boy bands did it; now calendars do"
   },
   {
     "id": "NET-9074",
@@ -1403,7 +1476,8 @@
         "correct": "V",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "One sketchy download, now everything runs strangely"
   },
   {
     "id": "NET-9075",
@@ -1422,7 +1496,8 @@
         "correct": "S",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Your uncle's crypto opportunity, definitely legitimate"
   },
   {
     "id": "NET-9076",
@@ -1441,7 +1516,8 @@
         "correct": "K",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Clever kitchen trick, or a midnight intrusion"
   },
   {
     "id": "NET-9077",
@@ -1460,7 +1536,8 @@
         "correct": "G",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "White sheet, two eyeholes, boo"
   },
   {
     "id": "NET-9078",
@@ -1479,7 +1556,8 @@
         "correct": "L",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Walking through walls was never the plan"
   },
   {
     "id": "NET-9079",
@@ -1498,7 +1576,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Blaming it after every lost match, always"
   },
   {
     "id": "NET-9080",
@@ -1517,7 +1596,8 @@
         "correct": "P",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "That sharp little sound demanding your attention"
   },
   {
     "id": "NET-9081",
@@ -1536,7 +1616,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Semicolons missing, everything on fire at midnight"
   },
   {
     "id": "NET-9082",
@@ -1555,7 +1636,8 @@
         "correct": "R",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Dark mode devotee typing curly brackets all day"
   },
   {
     "id": "NET-9083",
@@ -1574,7 +1656,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Zoom far enough and everything becomes blocks"
   },
   {
     "id": "NET-9084",
@@ -1593,7 +1676,8 @@
         "correct": "G",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Rage quits, victory dances, RGB everything"
   },
   {
     "id": "NET-9085",
@@ -1612,7 +1696,8 @@
         "correct": "K",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Two hundred days strong, vacation threatens everything"
   },
   {
     "id": "NET-9086",
@@ -1631,7 +1716,8 @@
         "correct": "S",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Car wing, or the ruined season finale"
   },
   {
     "id": "NET-9087",
@@ -1650,7 +1736,8 @@
         "correct": "V",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Good morning guys, welcome back to my channel"
   },
   {
     "id": "NET-9088",
@@ -1669,7 +1756,8 @@
         "correct": "G",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Weather and clocks squatting rent-free beside icons"
   },
   {
     "id": "NET-9089",
@@ -1688,7 +1776,8 @@
         "correct": "N",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Crinkling plastic, gasps, and affiliate links below"
   },
   {
     "id": "NET-9090",
@@ -1707,7 +1796,8 @@
         "correct": "N",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Four propellers and a nervous new pilot"
   },
   {
     "id": "NET-9091",
@@ -1726,7 +1816,8 @@
         "correct": "U",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Print statements everywhere, dignity long gone"
   },
   {
     "id": "NET-9092",
@@ -1745,7 +1836,8 @@
         "correct": "T",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Actors follow one; so does your automation"
   },
   {
     "id": "NET-9093",
@@ -1764,7 +1856,8 @@
         "correct": "P",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Guitar pedals and browser extras, both snap in"
   },
   {
     "id": "NET-9094",
@@ -1783,7 +1876,8 @@
         "correct": "M",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "A king's territory, or your website's address"
   },
   {
     "id": "NET-9095",
@@ -1802,7 +1896,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Monthly bill that keeps the blog breathing"
   },
   {
     "id": "NET-9096",
@@ -1821,7 +1916,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Tables joined together, answering queries all night"
   },
   {
     "id": "NET-9097",
@@ -1840,7 +1936,8 @@
         "correct": "L",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Airport gates or green text, both departures"
   },
   {
     "id": "NET-9098",
@@ -1859,7 +1956,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Comfort a friend, or boot up adventures"
   },
   {
     "id": "NET-9099",
@@ -1878,7 +1976,8 @@
         "correct": "J",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Flight simulators and claw machines both demand one"
   },
   {
     "id": "NET-9100",
@@ -1897,7 +1996,8 @@
         "correct": "U",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Legally gray portal back to 1998 afternoons"
   },
   {
     "id": "NET-9101",
@@ -1916,7 +2016,8 @@
         "correct": "R",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Don't forget to like and subscribe, chat"
   },
   {
     "id": "NET-9102",
@@ -1935,7 +2036,8 @@
         "correct": "B",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Customer service that never needs a lunch break"
   },
   {
     "id": "NET-9103",
@@ -1954,7 +2056,8 @@
         "correct": "N",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Asks the question the FAQ answered twice"
   },
   {
     "id": "NET-9104",
@@ -1973,7 +2076,8 @@
         "correct": "P",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Karma rises when the crowd approves loudly"
   },
   {
     "id": "NET-9105",
@@ -1992,7 +2096,8 @@
         "correct": "P",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Trust your eyes less every passing year"
   },
   {
     "id": "NET-9106",
@@ -2011,7 +2116,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "To the moon, they promised, before winter"
   },
   {
     "id": "NET-9107",
@@ -2030,7 +2136,8 @@
         "correct": "I",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Pizza bought in 2010, worth millions now"
   },
   {
     "id": "NET-9108",
@@ -2049,7 +2156,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Subscribe to continue reading what curiosity started"
   },
   {
     "id": "NET-9109",
@@ -2068,7 +2176,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Mandatory attendance, cameras off, minds elsewhere"
   },
   {
     "id": "NET-9110",
@@ -2087,7 +2196,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Company announcements nobody reads, safely walled inside"
   },
   {
     "id": "NET-9111",
@@ -2106,7 +2216,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Voting by it, or browsing behind it"
   },
   {
     "id": "NET-9112",
@@ -2125,7 +2236,8 @@
         "correct": "R",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Breakfast cereals brag about it; ISPs too"
   },
   {
     "id": "NET-9113",
@@ -2144,7 +2256,8 @@
         "correct": "R",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Plugged straight in, latency drops, gamers rejoice"
   },
   {
     "id": "NET-9114",
@@ -2163,7 +2276,8 @@
         "correct": "J",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Looks like a helpful download, absolutely isn't"
   },
   {
     "id": "NET-9115",
@@ -2182,7 +2296,8 @@
         "correct": "A",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The toolbar you never installed, selling things loudly"
   },
   {
     "id": "NET-9116",
@@ -2201,7 +2316,8 @@
         "correct": "A",
         "decoy": "L"
       }
-    }
+    },
+    "altDescription": "Whales do it gracefully; databases do it disastrously"
   },
   {
     "id": "NET-9117",
@@ -2220,7 +2336,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Speedrunners celebrate one; security teams patch one"
   },
   {
     "id": "NET-9118",
@@ -2239,7 +2356,8 @@
         "correct": "C",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Tuesday's gift from Microsoft, reboot required after"
   },
   {
     "id": "NET-9119",
@@ -2258,7 +2376,8 @@
         "correct": "K",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Arcade currency, or your session's secret pass"
   },
   {
     "id": "NET-9120",
@@ -2277,7 +2396,8 @@
         "correct": "X",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Toddlers and beta testers both dig here"
   },
   {
     "id": "NET-9121",
@@ -2296,7 +2416,8 @@
         "correct": "R",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Neither hard nor soft, quietly running everything"
   },
   {
     "id": "NET-9122",
@@ -2315,7 +2436,8 @@
         "correct": "G",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Lost it again; the projector waits smugly"
   },
   {
     "id": "NET-9123",
@@ -2334,7 +2456,8 @@
         "correct": "Y",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Artists sketch with it; ancients wrote with it"
   },
   {
     "id": "NET-9124",
@@ -2353,7 +2476,8 @@
         "correct": "P",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Pinch to zoom, two fingers to scroll"
   },
   {
     "id": "NET-9125",
@@ -2372,7 +2496,8 @@
         "correct": "C",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Silicon middle management between processor and everything else"
   },
   {
     "id": "NET-9126",
@@ -2391,7 +2516,8 @@
         "correct": "P",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "It found forty errors; you wrote ten lines"
   },
   {
     "id": "NET-9127",
@@ -2410,7 +2536,8 @@
         "correct": "M",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Relationships and repositories both demand this courage"
   },
   {
     "id": "NET-9128",
@@ -2429,7 +2556,8 @@
         "correct": "E",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Highway lanes do it; code conflicts follow"
   },
   {
     "id": "NET-9129",
@@ -2448,7 +2576,8 @@
         "correct": "K",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Where the real logic hides from pretty buttons"
   },
   {
     "id": "NET-9130",
@@ -2467,7 +2596,8 @@
         "correct": "D",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "CSS tantrums and pixel-perfect button arguments"
   },
   {
     "id": "NET-9131",
@@ -2486,7 +2616,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Caesar's old trick, still guarding messages"
   },
   {
     "id": "NET-9132",
@@ -2505,7 +2636,8 @@
         "correct": "T",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Winnie's favorite, repurposed for trapping digital thieves"
   },
   {
     "id": "NET-9133",
@@ -2524,7 +2656,8 @@
         "correct": "F",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "A parody movie, or that fake bank number calling"
   },
   {
     "id": "NET-9134",
@@ -2543,7 +2676,8 @@
         "correct": "E",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Sorrow, or sabotage inflicted on teammates"
   },
   {
     "id": "NET-9135",
@@ -2562,7 +2696,8 @@
         "correct": "L",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Seasons your fries, strengthens your stored secrets"
   },
   {
     "id": "NET-9136",
@@ -2581,7 +2716,8 @@
         "correct": "H",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Breakfast potatoes, or passwords mashed beyond recognition"
   },
   {
     "id": "NET-9137",
@@ -2600,7 +2736,8 @@
         "correct": "K",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "One flipped bit and this little fingerprint disagrees"
   },
   {
     "id": "NET-9138",
@@ -2619,7 +2756,8 @@
         "correct": "T",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Even or odd keeps the memory honest"
   },
   {
     "id": "NET-9139",
@@ -2638,7 +2776,8 @@
         "correct": "B",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Four bits, or a mouse's tiny bite"
   },
   {
     "id": "NET-9140",
@@ -2657,7 +2796,8 @@
         "correct": "O",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Why that meme looks worse every repost"
   },
   {
     "id": "NET-9141",
@@ -2676,7 +2816,8 @@
         "correct": "R",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Scan lines marching across old CRT glass"
   },
   {
     "id": "NET-9142",
@@ -2695,7 +2836,8 @@
         "correct": "H",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "To hesitate, or to fake smooth gradients"
   },
   {
     "id": "NET-9143",
@@ -2714,7 +2856,8 @@
         "correct": "V",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Minecraft worlds stack these tiny cubes skyward"
   },
   {
     "id": "NET-9144",
@@ -2733,7 +2876,8 @@
         "correct": "A",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Anonymous functions and Half-Life's iconic logo"
   },
   {
     "id": "NET-9145",
@@ -2752,7 +2896,8 @@
         "correct": "H",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Caddyshack's nemesis, also Minnesota's proud mascot"
   },
   {
     "id": "NET-9147",
@@ -2771,7 +2916,8 @@
         "correct": "P",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Blue boxes built by future Apple founders"
   },
   {
     "id": "NET-9148",
@@ -2790,7 +2936,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Misspelled loot from the scene's FTP dungeons"
   },
   {
     "id": "NET-9150",
@@ -2809,7 +2956,8 @@
         "correct": "X",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Now you have two problems, the saying goes"
   },
   {
     "id": "NET-9146",
@@ -2828,7 +2976,8 @@
         "correct": "E",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Where September never ended, old-timers sigh"
   },
   {
     "id": "NET-9149",
@@ -2847,6 +2996,7 @@
         "correct": "P",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Needle found, haystack searched in milliseconds flat"
   }
 ]

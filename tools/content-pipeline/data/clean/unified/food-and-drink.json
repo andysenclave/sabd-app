@@ -16,7 +16,8 @@
         "correct": "T",
         "decoy": "M"
       }
-    }
+    },
+    "altDescription": "Biscuits queue up for a quick afternoon dunk"
   },
   {
     "id": "FUD-0002",
@@ -35,7 +36,8 @@
         "correct": "H",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Railway platforms echo with its vendor's singsong call"
   },
   {
     "id": "FUD-0003",
@@ -54,7 +56,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Wells, rivers, and clouds all carry the same gift"
   },
   {
     "id": "FUD-0004",
@@ -73,7 +76,8 @@
         "correct": "P",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Newton napped beneath the wrong branch, luckily"
   },
   {
     "id": "FUD-0005",
@@ -92,7 +96,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Sometimes the alphabet floats in your bowl"
   },
   {
     "id": "FUD-0006",
@@ -111,7 +116,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Chips' famous partner, battered beyond recognition"
   },
   {
     "id": "FUD-0007",
@@ -130,7 +136,8 @@
         "correct": "K",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Cereal's morning bath, leaving white moustaches behind"
   },
   {
     "id": "FUD-0008",
@@ -149,7 +156,8 @@
         "correct": "S",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Cartoon mice risk everything for one yellow wedge"
   },
   {
     "id": "FUD-0009",
@@ -168,7 +176,8 @@
         "correct": "C",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Winners hoist one; bakers measure with one"
   },
   {
     "id": "FUD-0010",
@@ -187,7 +196,8 @@
         "correct": "A",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Pineapple on top starts internet wars"
   },
   {
     "id": "FUD-0011",
@@ -206,7 +216,8 @@
         "correct": "N",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Stirs the sugar your doctor never approved"
   },
   {
     "id": "FUD-0012",
@@ -225,7 +236,8 @@
         "correct": "P",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Circus artists spin them on tall sticks"
   },
   {
     "id": "FUD-0013",
@@ -244,7 +256,8 @@
         "correct": "L",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Cupped hands inspired its ancient shape"
   },
   {
     "id": "FUD-0014",
@@ -263,7 +276,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Roads do it too, forcing hard choices"
   },
   {
     "id": "FUD-0015",
@@ -282,7 +296,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Break it to start awkward party conversations"
   },
   {
     "id": "FUD-0016",
@@ -301,7 +316,8 @@
         "correct": "J",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Traffic gets stuck in one too"
   },
   {
     "id": "FUD-0017",
@@ -320,7 +336,8 @@
         "correct": "I",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Clowns throw it; mathematicians circle it endlessly"
   },
   {
     "id": "FUD-0018",
@@ -339,7 +356,8 @@
         "correct": "R",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Autumn mazes get carved through its fields"
   },
   {
     "id": "FUD-0019",
@@ -358,7 +376,8 @@
         "correct": "C",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Showered over newlyweds in older traditions"
   },
   {
     "id": "FUD-0020",
@@ -377,7 +396,8 @@
         "correct": "A",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The hiss when the cap twists free"
   },
   {
     "id": "FUD-0021",
@@ -396,7 +416,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "October doorbells ring for this pillowcase loot"
   },
   {
     "id": "FUD-0022",
@@ -415,7 +436,8 @@
         "correct": "M",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "What vegetarians politely wave away at dinner"
   },
   {
     "id": "FUD-0023",
@@ -434,7 +456,8 @@
         "correct": "I",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Eden's most famous forbidden temptation"
   },
   {
     "id": "FUD-0024",
@@ -453,7 +476,8 @@
         "correct": "A",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The fox called them sour and left"
   },
   {
     "id": "FUD-0025",
@@ -472,7 +496,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Cellars age it; toasts raise it"
   },
   {
     "id": "FUD-0026",
@@ -491,7 +516,8 @@
         "correct": "E",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Hops and barley meet in a chilled mug"
   },
   {
     "id": "FUD-0027",
@@ -510,7 +536,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Which came first, it or the chicken?"
   },
   {
     "id": "FUD-0028",
@@ -529,7 +556,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Browsers collect them; grandmothers bake them"
   },
   {
     "id": "FUD-0029",
@@ -548,7 +576,8 @@
         "correct": "B",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Drive-thru royalty flattened between soft buns"
   },
   {
     "id": "FUD-0030",
@@ -567,7 +596,8 @@
         "correct": "I",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The side dish friends always steal first"
   },
   {
     "id": "FUD-0031",
@@ -586,7 +616,8 @@
         "correct": "C",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Gamblers stack them; couches collect their crumbs"
   },
   {
     "id": "FUD-0032",
@@ -605,7 +636,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Glasses lift skyward before the best man's speech"
   },
   {
     "id": "FUD-0033",
@@ -624,7 +656,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Peek through its glass, but never open early"
   },
   {
     "id": "FUD-0034",
@@ -643,7 +676,8 @@
         "correct": "U",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Economists insist there's no free one"
   },
   {
     "id": "FUD-0035",
@@ -662,7 +696,8 @@
         "correct": "N",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Candlelight turns this meal into romance"
   },
   {
     "id": "FUD-0036",
@@ -681,7 +716,8 @@
         "correct": "K",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "You can't keep it and eat it too"
   },
   {
     "id": "FUD-0037",
@@ -700,7 +736,8 @@
         "correct": "C",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Midnight fridge raids hunt for one"
   },
   {
     "id": "FUD-0038",
@@ -719,7 +756,8 @@
         "correct": "P",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Grows eyes but never sees the couch joke"
   },
   {
     "id": "FUD-0039",
@@ -738,7 +776,8 @@
         "correct": "M",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Bad performances once met flying red projectiles"
   },
   {
     "id": "FUD-0040",
@@ -757,7 +796,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Famously, nothing in English rhymes with it"
   },
   {
     "id": "FUD-0041",
@@ -776,7 +816,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Dangled from sticks to keep donkeys moving"
   },
   {
     "id": "FUD-0042",
@@ -795,7 +836,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The best always rises, so they say"
   },
   {
     "id": "FUD-0043",
@@ -814,7 +856,8 @@
         "correct": "S",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Caesar lent his name to this bowl"
   },
   {
     "id": "FUD-0044",
@@ -833,7 +876,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Bowties, shells, and tubes swimming in sauce"
   },
   {
     "id": "FUD-0045",
@@ -852,7 +896,8 @@
         "correct": "T",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Take advice with just one grain of it"
   },
   {
     "id": "FUD-0046",
@@ -871,7 +916,8 @@
         "correct": "I",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Lingers on the breath long after dinner ends"
   },
   {
     "id": "FUD-0047",
@@ -890,7 +936,8 @@
         "correct": "G",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Redheads borrow its name; colds fear it"
   },
   {
     "id": "FUD-0048",
@@ -909,7 +956,8 @@
         "correct": "R",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Salt's darker half in matching shakers"
   },
   {
     "id": "FUD-0049",
@@ -928,7 +976,8 @@
         "correct": "O",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "What breadwinners famously bring home"
   },
   {
     "id": "FUD-0050",
@@ -947,7 +996,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The splurge order when someone else pays"
   },
   {
     "id": "FUD-0051",
@@ -966,7 +1016,8 @@
         "correct": "U",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Police break-room clichés come glazed"
   },
   {
     "id": "FUD-0052",
@@ -985,7 +1036,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Its top became an unflattering jeans metaphor"
   },
   {
     "id": "FUD-0053",
@@ -1004,7 +1056,8 @@
         "correct": "D",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Slang for money, staple for everyone"
   },
   {
     "id": "FUD-0054",
@@ -1023,7 +1076,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Elephants adore them; airlines fear them"
   },
   {
     "id": "FUD-0055",
@@ -1042,7 +1096,8 @@
         "correct": "G",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Sails to the table in its own boat"
   },
   {
     "id": "FUD-0056",
@@ -1061,7 +1116,8 @@
         "correct": "R",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Rolled thin, flipped fast, counted by appetite"
   },
   {
     "id": "FUD-0057",
@@ -1080,7 +1136,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "A spoonful famously helps medicine go down"
   },
   {
     "id": "FUD-0058",
@@ -1099,7 +1156,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Variety, they claim, of life itself"
   },
   {
     "id": "FUD-0059",
@@ -1118,7 +1176,8 @@
         "correct": "L",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Bakers wear it like accidental face powder"
   },
   {
     "id": "FUD-0060",
@@ -1137,7 +1196,8 @@
         "correct": "G",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Ripe ones drip straight down your elbow"
   },
   {
     "id": "FUD-0061",
@@ -1156,7 +1216,8 @@
         "correct": "U",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Slang for swagger, ladled over spaghetti"
   },
   {
     "id": "FUD-0062",
@@ -1175,7 +1236,8 @@
         "correct": "R",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Small ones get dismissed; big ones sizzle"
   },
   {
     "id": "FUD-0063",
@@ -1194,7 +1256,8 @@
         "correct": "B",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "School fundraisers hold sales named for it"
   },
   {
     "id": "FUD-0064",
@@ -1213,7 +1276,8 @@
         "correct": "I",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Anger makes blood do it, allegedly"
   },
   {
     "id": "FUD-0065",
@@ -1232,7 +1296,8 @@
         "correct": "Y",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Flatterers do this with favor"
   },
   {
     "id": "FUD-0066",
@@ -1251,7 +1316,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Let it off before the whistle blows"
   },
   {
     "id": "FUD-0067",
@@ -1270,7 +1336,8 @@
         "correct": "T",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Comedians honor friends by insulting them publicly"
   },
   {
     "id": "FUD-0068",
@@ -1289,7 +1356,8 @@
         "correct": "L",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Detectives do it to suspects under bright lights"
   },
   {
     "id": "FUD-0069",
@@ -1308,7 +1376,8 @@
         "correct": "N",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Faulty cars earn this sour nickname"
   },
   {
     "id": "FUD-0070",
@@ -1327,7 +1396,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Left in it, worriers simmer alone"
   },
   {
     "id": "FUD-0071",
@@ -1346,7 +1416,8 @@
         "correct": "U",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Punch it down; slang spends it"
   },
   {
     "id": "FUD-0072",
@@ -1365,7 +1436,8 @@
         "correct": "Y",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Sweethearts answer to it; biscuits drown in it"
   },
   {
     "id": "FUD-0073",
@@ -1384,7 +1456,8 @@
         "correct": "B",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Cricket sends one to face the bowler"
   },
   {
     "id": "FUD-0074",
@@ -1403,7 +1476,8 @@
         "correct": "S",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Brewers thank this microbe for every pint"
   },
   {
     "id": "FUD-0075",
@@ -1422,7 +1496,8 @@
         "correct": "P",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Puns about catching up write themselves"
   },
   {
     "id": "FUD-0076",
@@ -1441,7 +1516,8 @@
         "correct": "Y",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The clinic in Minnesota shares its name"
   },
   {
     "id": "FUD-0077",
@@ -1460,7 +1536,8 @@
         "correct": "C",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Gossip and batteries both run on it"
   },
   {
     "id": "FUD-0078",
@@ -1479,7 +1556,8 @@
         "correct": "R",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Cough bottles hide medicine under its sweetness"
   },
   {
     "id": "FUD-0079",
@@ -1498,7 +1576,8 @@
         "correct": "M",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Some can't cut it, idioms insist"
   },
   {
     "id": "FUD-0080",
@@ -1517,7 +1596,8 @@
         "correct": "V",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Catches fewer flies than honey, proverbially"
   },
   {
     "id": "FUD-0081",
@@ -1536,7 +1616,8 @@
         "correct": "V",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Extend its branch to end an argument"
   },
   {
     "id": "FUD-0082",
@@ -1555,7 +1636,8 @@
         "correct": "A",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Poets compare beautiful eyes to its shape"
   },
   {
     "id": "FUD-0083",
@@ -1574,7 +1656,8 @@
         "correct": "A",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Its name sounds like a polite sneeze"
   },
   {
     "id": "FUD-0084",
@@ -1593,7 +1676,8 @@
         "correct": "N",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Ogres famously claim to share its layers"
   },
   {
     "id": "FUD-0085",
@@ -1612,7 +1696,8 @@
         "correct": "N",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "The cookie surprise nobody wanted over chocolate"
   },
   {
     "id": "FUD-0086",
@@ -1631,7 +1716,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Temples crack them open for blessings"
   },
   {
     "id": "FUD-0087",
@@ -1650,7 +1736,8 @@
         "correct": "D",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Slang crowns it your thinking organ"
   },
   {
     "id": "FUD-0088",
@@ -1669,7 +1756,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Its enzyme softens the toughest meat"
   },
   {
     "id": "FUD-0089",
@@ -1688,7 +1776,8 @@
         "correct": "A",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "One ripe fruit perfumes the whole courtyard"
   },
   {
     "id": "FUD-0090",
@@ -1707,7 +1796,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "The green bits lingering in your smile"
   },
   {
     "id": "FUD-0091",
@@ -1726,7 +1816,8 @@
         "correct": "D",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Overnight fermentation earns its morning crackle"
   },
   {
     "id": "FUD-0092",
@@ -1745,7 +1836,8 @@
         "correct": "C",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Dolls once sprouted from its famous patch"
   },
   {
     "id": "FUD-0093",
@@ -1764,7 +1856,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Cinderella's ride before the midnight deadline"
   },
   {
     "id": "FUD-0094",
@@ -1783,7 +1876,8 @@
         "correct": "N",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Red, green, or yellow, it thickens supper"
   },
   {
     "id": "FUD-0095",
@@ -1802,7 +1896,8 @@
         "correct": "K",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Shrove Tuesday's famous frying-pan relay races"
   },
   {
     "id": "FUD-0096",
@@ -1821,7 +1916,8 @@
         "correct": "S",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Chai's crunchy companion at four o'clock"
   },
   {
     "id": "FUD-0097",
@@ -1840,7 +1936,8 @@
         "correct": "F",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Politicians do it when dodging straight answers"
   },
   {
     "id": "FUD-0098",
@@ -1859,7 +1956,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Tuesdays got branded in its honor"
   },
   {
     "id": "FUD-0099",
@@ -1878,7 +1976,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Conveyor belts parade it past hungry chopsticks"
   },
   {
     "id": "FUD-0100",
@@ -1897,7 +1996,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Baristas misspell your name while brewing it"
   },
   {
     "id": "FUD-0101",
@@ -1916,7 +2016,8 @@
         "correct": "N",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Broke students survive on its instant packets"
   },
   {
     "id": "FUD-0102",
@@ -1935,7 +2036,8 @@
         "correct": "L",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Yoga bends bodies into its shape"
   },
   {
     "id": "FUD-0103",
@@ -1954,7 +2056,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Flatterers spread it on thick, figuratively"
   },
   {
     "id": "FUD-0104",
@@ -1973,7 +2076,8 @@
         "correct": "L",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "South India's softest start to Sunday"
   },
   {
     "id": "FUD-0105",
@@ -1992,7 +2096,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Bollywood borrows its name for spicy plots"
   },
   {
     "id": "FUD-0106",
@@ -2011,7 +2116,8 @@
         "correct": "I",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Britain's adopted national dish carries this name"
   },
   {
     "id": "FUD-0107",
@@ -2030,7 +2136,8 @@
         "correct": "K",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Late-night cravings gather at its glowing stall"
   },
   {
     "id": "FUD-0108",
@@ -2049,7 +2156,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Find yourself in one when trouble brews"
   },
   {
     "id": "FUD-0109",
@@ -2068,7 +2176,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Gram-flour armor for onions and chilies"
   },
   {
     "id": "FUD-0110",
@@ -2087,7 +2196,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Curd, cucumber, and calm beside biryani"
   },
   {
     "id": "FUD-0111",
@@ -2106,7 +2216,8 @@
         "correct": "O",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The menu's gentlest answer to spice fear"
   },
   {
     "id": "FUD-0112",
@@ -2125,7 +2236,8 @@
         "correct": "B",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Republics and split desserts share its name"
   },
   {
     "id": "FUD-0113",
@@ -2144,7 +2256,8 @@
         "correct": "P",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Biryani's calmer cousin, no wedding drama"
   },
   {
     "id": "FUD-0114",
@@ -2163,7 +2276,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Winter carrots meet their sweetest destiny"
   },
   {
     "id": "FUD-0115",
@@ -2182,7 +2296,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Old toothache remedies swear by its oil"
   },
   {
     "id": "FUD-0116",
@@ -2201,7 +2316,8 @@
         "correct": "S",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Pesto owes it everything, mortar included"
   },
   {
     "id": "FUD-0117",
@@ -2220,7 +2336,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Torn and dragged through rich gravy pools"
   },
   {
     "id": "FUD-0118",
@@ -2239,7 +2356,8 @@
         "correct": "P",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Palak's white companion in vegetarian favorites"
   },
   {
     "id": "FUD-0119",
@@ -2258,7 +2376,8 @@
         "correct": "H",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Puns about clocks follow it everywhere"
   },
   {
     "id": "FUD-0120",
@@ -2277,7 +2396,8 @@
         "correct": "N",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Its pale bulb roasts sweeter than expected"
   },
   {
     "id": "FUD-0121",
@@ -2296,7 +2416,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Sweet or salted, served in clay tumblers"
   },
   {
     "id": "FUD-0122",
@@ -2315,7 +2436,8 @@
         "correct": "B",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Hyderabad and Lucknow feud over its crown"
   },
   {
     "id": "FUD-0123",
@@ -2334,7 +2456,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Wedding ceremonies smear its auspicious yellow"
   },
   {
     "id": "FUD-0124",
@@ -2353,7 +2476,8 @@
         "correct": "R",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "An accidental bite that hijacks the biryani"
   },
   {
     "id": "FUD-0125",
@@ -2372,7 +2496,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Soybeans pressed into vegan devotion"
   },
   {
     "id": "FUD-0126",
@@ -2391,7 +2516,8 @@
         "correct": "Y",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Mint and coriander ground into green lightning"
   },
   {
     "id": "FUD-0127",
@@ -2410,7 +2536,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Greek hillsides named it mountain's joy"
   },
   {
     "id": "FUD-0128",
@@ -2429,7 +2556,8 @@
         "correct": "S",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "First in a famous folk-song herb quartet"
   },
   {
     "id": "FUD-0129",
@@ -2448,7 +2576,8 @@
         "correct": "I",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Scattered green over tacos and salsa alike"
   },
   {
     "id": "FUD-0130",
@@ -2467,7 +2596,8 @@
         "correct": "H",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Fuels temple lamps and ladoos equally"
   },
   {
     "id": "FUD-0131",
@@ -2486,7 +2616,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Freckles on every burger bun's crown"
   },
   {
     "id": "FUD-0132",
@@ -2505,7 +2636,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Cured logs hanging from Italian rafters"
   },
   {
     "id": "FUD-0133",
@@ -2524,7 +2656,8 @@
         "correct": "T",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Billions of live cultures, sold as breakfast"
   },
   {
     "id": "FUD-0134",
@@ -2543,7 +2676,8 @@
         "correct": "W",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Cream surrenders into peaks beneath it"
   },
   {
     "id": "FUD-0135",
@@ -2562,7 +2696,8 @@
         "correct": "L",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The Big Dipper's kitchen-drawer twin"
   },
   {
     "id": "FUD-0136",
@@ -2581,7 +2716,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Charcoal depths that blush chicken crimson"
   },
   {
     "id": "FUD-0137",
@@ -2600,7 +2736,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Jeera to some, tempering's opening act"
   },
   {
     "id": "FUD-0138",
@@ -2619,7 +2756,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Scrapes the bowl cleaner than any finger"
   },
   {
     "id": "FUD-0139",
@@ -2638,7 +2776,8 @@
         "correct": "D",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Patience, acid, and spice plotting flavor together"
   },
   {
     "id": "FUD-0140",
@@ -2657,7 +2796,8 @@
         "correct": "E",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Cast iron heirloom you never wash with soap"
   },
   {
     "id": "FUD-0141",
@@ -2676,7 +2816,8 @@
         "correct": "D",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Diner pancakes hit this hot flattop first"
   },
   {
     "id": "FUD-0142",
@@ -2695,7 +2836,8 @@
         "correct": "B",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Sweet tangled hoops, straight answers never"
   },
   {
     "id": "FUD-0143",
@@ -2714,7 +2856,8 @@
         "correct": "C",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Rains dinner water into the sink"
   },
   {
     "id": "FUD-0144",
@@ -2733,7 +2876,8 @@
         "correct": "H",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Too many cooks famously ruin it"
   },
   {
     "id": "FUD-0145",
@@ -2752,7 +2896,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "French verbs make vegetables jump"
   },
   {
     "id": "FUD-0146",
@@ -2771,7 +2916,8 @@
         "correct": "H",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Hunters do it illegally; chefs do it gently"
   },
   {
     "id": "FUD-0147",
@@ -2790,7 +2936,8 @@
         "correct": "A",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Dutch ovens forgive the toughest cuts this way"
   },
   {
     "id": "FUD-0148",
@@ -2809,7 +2956,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Tempers do it just below boiling"
   },
   {
     "id": "FUD-0149",
@@ -2828,7 +2976,8 @@
         "correct": "L",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Mignon's partner on fancy steakhouse menus"
   },
   {
     "id": "FUD-0150",
@@ -2847,7 +2996,8 @@
         "correct": "D",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Sounds like necessity, works the gluten"
   },
   {
     "id": "FUD-0151",
@@ -2866,7 +3016,8 @@
         "correct": "R",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Legend claims a king knighted this cut"
   },
   {
     "id": "FUD-0152",
@@ -2885,7 +3036,8 @@
         "correct": "B",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Texas pits argue over its bark"
   },
   {
     "id": "FUD-0153",
@@ -2904,7 +3056,8 @@
         "correct": "R",
         "decoy": "L"
       }
-    }
+    },
+    "altDescription": "Stains the eggs orange at breakfast"
   },
   {
     "id": "FUD-0154",
@@ -2923,7 +3076,8 @@
         "correct": "G",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Footballers slip the ball through your legs"
   },
   {
     "id": "FUD-0155",
@@ -2942,7 +3096,8 @@
         "correct": "U",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "The mezze table's beige diplomatic center"
   },
   {
     "id": "FUD-0156",
@@ -2961,7 +3116,8 @@
         "correct": "Z",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Bored eyes do it during long meetings"
   },
   {
     "id": "FUD-0157",
@@ -2980,7 +3136,8 @@
         "correct": "I",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The quiet partner behind hummus's silkiness"
   },
   {
     "id": "FUD-0158",
@@ -2999,7 +3156,8 @@
         "correct": "N",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Menus mispronounce it; Incas revered it"
   },
   {
     "id": "FUD-0159",
@@ -3018,7 +3176,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "North Africa steams its name twice over"
   },
   {
     "id": "FUD-0160",
@@ -3037,7 +3196,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Cleanses palates between fancy dinner courses"
   },
   {
     "id": "FUD-0161",
@@ -3056,7 +3216,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Garfield's Monday-hating heart beats for it"
   },
   {
     "id": "FUD-0162",
@@ -3075,7 +3236,8 @@
         "correct": "H",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Courts do it to wages, chefs to plates"
   },
   {
     "id": "FUD-0163",
@@ -3094,7 +3256,8 @@
         "correct": "O",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Its opening letter stays fashionably silent"
   },
   {
     "id": "FUD-0164",
@@ -3113,7 +3276,8 @@
         "correct": "A",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Valencia guards its crusty bottom jealously"
   },
   {
     "id": "FUD-0165",
@@ -3132,7 +3296,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Portugal's gift that Japan perfected centuries ago"
   },
   {
     "id": "FUD-0166",
@@ -3151,7 +3316,8 @@
         "correct": "B",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "The real root rarely leaves Japan"
   },
   {
     "id": "FUD-0167",
@@ -3170,7 +3336,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Barrel-aged for years before breakfast"
   },
   {
     "id": "FUD-0168",
@@ -3189,7 +3356,8 @@
         "correct": "M",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Korean cameras prompt smiles with its name"
   },
   {
     "id": "FUD-0169",
@@ -3208,7 +3376,8 @@
         "correct": "N",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Harvested from crocus blooms at dawn"
   },
   {
     "id": "FUD-0170",
@@ -3227,7 +3396,8 @@
         "correct": "R",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "A Thai seaside town lent its name"
   },
   {
     "id": "FUD-0171",
@@ -3246,7 +3416,8 @@
         "correct": "C",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Vanilla-scented flood over warm crumble"
   },
   {
     "id": "FUD-0172",
@@ -3265,7 +3436,8 @@
         "correct": "T",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "The dish television chefs weaponize against contestants"
   },
   {
     "id": "FUD-0173",
@@ -3284,7 +3456,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Pavlova wears this crisp shattering crown"
   },
   {
     "id": "FUD-0174",
@@ -3303,7 +3476,8 @@
         "correct": "F",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Street pitas bulge with these green-hearted spheres"
   },
   {
     "id": "FUD-0175",
@@ -3322,7 +3496,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "French perfection, according to its own name"
   },
   {
     "id": "FUD-0176",
@@ -3341,7 +3516,8 @@
         "correct": "R",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The misquoted queen allegedly offered it instead"
   },
   {
     "id": "FUD-0177",
@@ -3360,7 +3536,8 @@
         "correct": "O",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Nine bars of force, one golden crema"
   },
   {
     "id": "FUD-0178",
@@ -3379,7 +3556,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Chocolatiers borrowed its name for cocoa-dusted spheres"
   },
   {
     "id": "FUD-0179",
@@ -3398,7 +3576,8 @@
         "correct": "T",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Yesterday's leftovers reborn in beaten eggs"
   },
   {
     "id": "FUD-0180",
@@ -3417,7 +3596,8 @@
         "correct": "O",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Italian for barley, though wheat throughout"
   },
   {
     "id": "FUD-0181",
@@ -3436,7 +3616,8 @@
         "correct": "M",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Mushrooms, parmesan, and soy share its depth"
   },
   {
     "id": "FUD-0182",
@@ -3455,7 +3636,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The smooth blanket beneath wedding cake icing"
   },
   {
     "id": "FUD-0183",
@@ -3474,7 +3656,8 @@
         "correct": "Y",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Cane fields boiled down in smoky village pans"
   },
   {
     "id": "FUD-0184",
@@ -3493,7 +3676,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Ordered in advance, timed to the minute"
   },
   {
     "id": "FUD-0185",
@@ -3512,7 +3696,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "New Orleans pours pecans into sweet patties"
   },
   {
     "id": "FUD-0186",
@@ -3531,7 +3716,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "France crowns January with its almond version"
   },
   {
     "id": "FUD-0187",
@@ -3550,7 +3736,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Sounds dreadful, nose-to-tail chefs disagree"
   },
   {
     "id": "FUD-0188",
@@ -3569,7 +3756,8 @@
         "correct": "E",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Peru's flagship dish, freshest at noon"
   },
   {
     "id": "FUD-0189",
@@ -3588,7 +3776,8 @@
         "correct": "O",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Tomatoes blended smooth, stove left untouched"
   },
   {
     "id": "FUD-0190",
@@ -3607,7 +3796,8 @@
         "correct": "K",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "A London skyscraper wears its nickname"
   },
   {
     "id": "FUD-0191",
@@ -3626,7 +3816,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "The taverna casserole every yiayia perfects"
   },
   {
     "id": "FUD-0192",
@@ -3645,7 +3836,8 @@
         "correct": "U",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Sweet tea transformed into health-aisle hype"
   },
   {
     "id": "FUD-0193",
@@ -3664,7 +3856,8 @@
         "correct": "H",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Indonesia wraps this protein in banana leaves"
   },
   {
     "id": "FUD-0194",
@@ -3683,7 +3876,8 @@
         "correct": "R",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Plump kernels anchoring rustic Tuscan soups"
   },
   {
     "id": "FUD-0195",
@@ -3702,7 +3896,8 @@
         "correct": "X",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Gumbo begins with its slow dark patience"
   },
   {
     "id": "FUD-0196",
@@ -3721,7 +3916,8 @@
         "correct": "T",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Its name alarms those mishearing devilry"
   },
   {
     "id": "FUD-0197",
@@ -3740,7 +3936,8 @@
         "correct": "K",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Japan simmers this pale giant in winter"
   },
   {
     "id": "FUD-0198",
@@ -3759,7 +3956,8 @@
         "correct": "H",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "A scolded apprentice's happy accident, legend says"
   },
   {
     "id": "FUD-0199",
@@ -3778,7 +3976,8 @@
         "correct": "N",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Belgian boats built for elegant party scoops"
   },
   {
     "id": "FUD-0200",
@@ -3797,7 +3996,8 @@
         "correct": "A",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Ground berries brightening bazaar spice pyramids"
   },
   {
     "id": "FUD-0201",
@@ -3816,7 +4016,8 @@
         "correct": "T",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Jam's looser cousin, spooned while warm"
   },
   {
     "id": "FUD-0202",
@@ -3835,7 +4036,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Tunisia's smolder, sometimes softened with rose"
   },
   {
     "id": "FUD-0203",
@@ -3854,7 +4056,8 @@
         "correct": "F",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Preservation the French made feel luxurious"
   },
   {
     "id": "FUD-0204",
@@ -3873,7 +4076,8 @@
         "correct": "J",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "A French girl's name lurking in culinary school drills"
   },
   {
     "id": "FUD-0205",
@@ -3892,7 +4096,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The daring order that skips the stove"
   },
   {
     "id": "FUD-0206",
@@ -3911,7 +4116,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Traditionally borrowed from a calf's fourth stomach"
   },
   {
     "id": "FUD-0207",
@@ -3930,7 +4136,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The earthenware mold christened the dish itself"
   },
   {
     "id": "FUD-0208",
@@ -3949,7 +4156,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "One of Escoffier's five foundational pillars"
   },
   {
     "id": "FUD-0209",
@@ -3968,7 +4176,8 @@
         "correct": "F",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "France opens the evening with this ritual pour"
   },
   {
     "id": "FUD-0210",
@@ -3987,6 +4196,7 @@
         "correct": "M",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "A French duke's name diced into every stockpot"
   }
 ]

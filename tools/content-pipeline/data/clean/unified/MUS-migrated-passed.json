@@ -16,7 +16,8 @@
         "correct": "R",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Street poetry sparring, bar after bar"
   },
   {
     "id": "MUS-0002",
@@ -35,7 +36,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Grand or upright, hammers whisper behind the lid"
   },
   {
     "id": "MUS-0003",
@@ -54,7 +56,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Quarter, half, or whole, each claims its beat"
   },
   {
     "id": "MUS-0004",
@@ -73,7 +76,8 @@
         "correct": "D",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Marching bands keep time on its tight skin"
   },
   {
     "id": "MUS-0005",
@@ -92,7 +96,8 @@
         "correct": "T",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "The cop's patrol route, or the producer's loop"
   },
   {
     "id": "MUS-0006",
@@ -111,7 +116,8 @@
         "correct": "B",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Wedding, marching, or rubber, always keeping things together"
   },
   {
     "id": "MUS-0007",
@@ -130,7 +136,8 @@
         "correct": "U",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Carry it well or clear the room"
   },
   {
     "id": "MUS-0008",
@@ -149,7 +156,8 @@
         "correct": "H",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Preaching to it wastes your breath, proverbially"
   },
   {
     "id": "MUS-0009",
@@ -168,7 +176,8 @@
         "correct": "B",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Four thick strings, or a fish, or dropped"
   },
   {
     "id": "MUS-0010",
@@ -187,7 +196,8 @@
         "correct": "G",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Hendrix set his alight at Monterey"
   },
   {
     "id": "MUS-0011",
@@ -206,7 +216,8 @@
         "correct": "T",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "The metronome's one and only strong opinion"
   },
   {
     "id": "MUS-0012",
@@ -225,7 +236,8 @@
         "correct": "S",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Front and center, the one holding the melody"
   },
   {
     "id": "MUS-0013",
@@ -244,7 +256,8 @@
         "correct": "M",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "What the right hand carries while chords support"
   },
   {
     "id": "MUS-0014",
@@ -263,7 +276,8 @@
         "correct": "V",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "The world's smallest one plays for complainers"
   },
   {
     "id": "MUS-0015",
@@ -282,7 +296,8 @@
         "correct": "C",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Greek theaters staffed one before pop did"
   },
   {
     "id": "MUS-0016",
@@ -301,7 +316,8 @@
         "correct": "F",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Champagne pours into one; orchestras seat several"
   },
   {
     "id": "MUS-0017",
@@ -320,7 +336,8 @@
         "correct": "L",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Photos fill one; so do B-sides"
   },
   {
     "id": "MUS-0018",
@@ -339,7 +356,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Not over till the large lady delivers"
   },
   {
     "id": "MUS-0019",
@@ -358,7 +376,8 @@
         "correct": "R",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Tickets, traffic, and ears ringing until Tuesday"
   },
   {
     "id": "MUS-0020",
@@ -377,7 +396,8 @@
         "correct": "D",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Piano bench built for four hands, two egos"
   },
   {
     "id": "MUS-0021",
@@ -396,7 +416,8 @@
         "correct": "G",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Fright named after it keeps actors sweating"
   },
   {
     "id": "MUS-0022",
@@ -415,7 +436,8 @@
         "correct": "P",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Corn does it, bubbles do it, charts crown it"
   },
   {
     "id": "MUS-0023",
@@ -434,7 +456,8 @@
         "correct": "J",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Hands can do it, New Orleans birthed it"
   },
   {
     "id": "MUS-0024",
@@ -453,7 +476,8 @@
         "correct": "S",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Han's surname, or the guitarist's spotlight minute"
   },
   {
     "id": "MUS-0025",
@@ -472,7 +496,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The three famous ones sold out stadiums"
   },
   {
     "id": "MUS-0026",
@@ -491,7 +516,8 @@
         "correct": "M",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Queen wrote one for champions specifically"
   },
   {
     "id": "MUS-0027",
@@ -510,7 +536,8 @@
         "correct": "C",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Somewhere Over the Rainbow leaps one immediately"
   },
   {
     "id": "MUS-0028",
@@ -529,7 +556,8 @@
         "correct": "C",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Yo-Yo Ma's famous companion since childhood"
   },
   {
     "id": "MUS-0029",
@@ -548,7 +576,8 @@
         "correct": "B",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Medieval storytellers spun tragedy into these verses"
   },
   {
     "id": "MUS-0030",
@@ -567,7 +596,8 @@
         "correct": "W",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Strauss flooded Vienna with the Blue Danube's spin"
   },
   {
     "id": "MUS-0031",
@@ -586,7 +616,8 @@
         "correct": "C",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "French for again, chanted in English arenas"
   },
   {
     "id": "MUS-0032",
@@ -605,7 +636,8 @@
         "correct": "B",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Crooners' favorite altitude, Sinatra certified"
   },
   {
     "id": "MUS-0033",
@@ -624,7 +656,8 @@
         "correct": "B",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Dueling ones made Deliverance unforgettable"
   },
   {
     "id": "MUS-0034",
@@ -643,7 +676,8 @@
         "correct": "C",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Engineers study it; coffeehouses worship it"
   },
   {
     "id": "MUS-0035",
@@ -662,7 +696,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Marley carried it from Trenchtown to the world"
   },
   {
     "id": "MUS-0036",
@@ -681,7 +716,8 @@
         "correct": "P",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Tony's TV family, or the choir's top shelf"
   },
   {
     "id": "MUS-0037",
@@ -700,7 +736,8 @@
         "correct": "M",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Shouted in gratitude at conductors and plumbers alike"
   },
   {
     "id": "MUS-0038",
@@ -719,7 +756,8 @@
         "correct": "T",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Hyundai borrowed its name; Beethoven perfected its form"
   },
   {
     "id": "MUS-0039",
@@ -738,7 +776,8 @@
         "correct": "Q",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Beethoven's late ones still puzzle and astonish"
   },
   {
     "id": "MUS-0040",
@@ -757,7 +796,8 @@
         "correct": "F",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Bee Gees built an empire way up there"
   },
   {
     "id": "MUS-0041",
@@ -776,7 +816,8 @@
         "correct": "M",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Swimmers race it; wedding bands abuse it"
   },
   {
     "id": "MUS-0042",
@@ -795,7 +836,8 @@
         "correct": "V",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Left hands rocking on the fingerboard for warmth"
   },
   {
     "id": "MUS-0043",
@@ -814,7 +856,8 @@
         "correct": "F",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Politely abstain, or return to the chorus"
   },
   {
     "id": "MUS-0044",
@@ -833,7 +876,8 @@
         "correct": "F",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Treble's flourish or bass's backwards C"
   },
   {
     "id": "MUS-0045",
@@ -852,7 +896,8 @@
         "correct": "M",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Cities name their orchestras after this grandest form"
   },
   {
     "id": "MUS-0046",
@@ -871,7 +916,8 @@
         "correct": "D",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Military marchers count theirs; composers resolve theirs"
   },
   {
     "id": "MUS-0047",
@@ -890,7 +936,8 @@
         "correct": "M",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Spelled like lumber, pronounced like amber"
   },
   {
     "id": "MUS-0048",
@@ -909,7 +956,8 @@
         "correct": "R",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Comedians borrow the word for improvised runs"
   },
   {
     "id": "MUS-0049",
@@ -928,7 +976,8 @@
         "correct": "C",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Oscar-winning film title, tucked past the final chorus"
   },
   {
     "id": "MUS-0050",
@@ -947,7 +996,8 @@
         "correct": "T",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "A curved line overhead demands this seamless touch"
   },
   {
     "id": "MUS-0051",
@@ -966,7 +1016,8 @@
         "correct": "L",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The amp knob that makes chords flicker on and off"
   },
   {
     "id": "MUS-0052",
@@ -985,7 +1036,8 @@
         "correct": "S",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Dots above the heads command these clipped jabs"
   },
   {
     "id": "MUS-0053",
@@ -1004,7 +1056,8 @@
         "correct": "D",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "French for study, fiendish in practice"
   },
   {
     "id": "MUS-0054",
@@ -1023,7 +1076,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Italian instructs: play it like a harp"
   },
   {
     "id": "MUS-0055",
@@ -1042,7 +1096,8 @@
         "correct": "G",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Julie Andrews turned this drill into a hillside anthem"
   },
   {
     "id": "MUS-0056",
@@ -1061,7 +1116,8 @@
         "correct": "B",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Da Ponte wrote Mozart's; Gilbert wrote Sullivan's"
   },
   {
     "id": "MUS-0057",
@@ -1080,7 +1136,8 @@
         "correct": "S",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Boléro rides a single one for fifteen minutes"
   },
   {
     "id": "MUS-0058",
@@ -1099,7 +1156,8 @@
         "correct": "C",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Italian for sung, sonata's vocal opposite"
   },
   {
     "id": "MUS-0059",
@@ -1118,7 +1176,8 @@
         "correct": "F",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Conductors stretch it as long as they dare"
   },
   {
     "id": "MUS-0060",
@@ -1137,6 +1196,7 @@
         "correct": "M",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Palestrina's bread and butter for cathedral choirs"
   }
 ]

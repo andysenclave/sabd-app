@@ -10,6 +10,7 @@
     "merge": "node src/merge.js",
     "merge:unified": "node src/merge.js --scale=unified",
     "migrate-legacy": "node src/migrate-legacy.js",
+    "apply-alt": "node src/apply-alt-descriptions.js",
     "build-bank": "node src/publish.js",
     "build-bank:unified": "node src/publish.js --scale=unified"
   },

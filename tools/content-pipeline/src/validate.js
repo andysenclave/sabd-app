@@ -159,6 +159,22 @@ function hardCheck(entry, ctx) {
     fail('description-leak', `description token "${tok}" contains the word ${word}`);
   }
 
+  // 9b. altDescription (optional second clue) — same rules when present.
+  if (entry.altDescription !== undefined) {
+    const alt = isString(entry.altDescription) ? entry.altDescription.trim() : '';
+    const altWords = alt ? alt.split(/\s+/) : [];
+    if (!alt) {
+      fail('alt-description-empty', 'altDescription present but empty');
+    } else if (altWords.length > 12) {
+      fail('alt-description-length', `altDescription has ${altWords.length} words (max 12)`);
+    } else if (word && descriptionTokens(alt).some((t) => t.includes(word))) {
+      const tok = descriptionTokens(alt).find((t) => t.includes(word));
+      fail('alt-description-leak', `altDescription token "${tok}" contains the word ${word}`);
+    } else if (alt && desc && alt.toLowerCase() === desc.toLowerCase()) {
+      fail('alt-description-duplicate', 'altDescription is identical to description');
+    }
+  }
+
   // 10. id
   const expectedPrefix = TOPICS[entry.topic];
   const idRe = expectedPrefix
@@ -198,6 +214,16 @@ function softCheck(entry) {
       flag: 'description-definitional',
       detail: `description matches definitional pattern ${pat} — reads like a dictionary entry`,
     });
+  }
+  const alt = isString(entry.altDescription) ? entry.altDescription.trim() : '';
+  if (alt) {
+    const altPat = DEFINITIONAL_PATTERNS.find((p) => p.test(alt));
+    if (altPat) {
+      flags.push({
+        flag: 'alt-description-definitional',
+        detail: `altDescription matches definitional pattern ${altPat} — reads like a dictionary entry`,
+      });
+    }
   }
   return flags;
 }

@@ -16,7 +16,8 @@
         "correct": "M",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Subject line first, then regards at the bottom"
   },
   {
     "id": "NET-0002",
@@ -35,7 +36,8 @@
         "correct": "A",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Downloaded in seconds, forgotten within a week"
   },
   {
     "id": "NET-0003",
@@ -54,7 +56,8 @@
         "correct": "K",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Mouse button down, your decision registered instantly"
   },
   {
     "id": "NET-0004",
@@ -73,7 +76,8 @@
         "correct": "M",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Funny picture mutating as it races around"
   },
   {
     "id": "NET-0005",
@@ -92,7 +96,8 @@
         "correct": "K",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Tap it and teleport somewhere else entirely"
   },
   {
     "id": "NET-0006",
@@ -111,7 +116,8 @@
         "correct": "M",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Congratulations, a prince needs your bank details"
   },
   {
     "id": "NET-0007",
@@ -130,7 +136,8 @@
         "correct": "I",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "First question asked at every cafe counter"
   },
   {
     "id": "NET-0008",
@@ -149,7 +156,8 @@
         "correct": "E",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Bird noises turned into global hot takes"
   },
   {
     "id": "NET-0009",
@@ -168,7 +176,8 @@
         "correct": "G",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Recipe buried beneath three thousand words of childhood"
   },
   {
     "id": "NET-0010",
@@ -187,7 +196,8 @@
         "correct": "N",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The opposite of touching grass"
   },
   {
     "id": "NET-0011",
@@ -206,7 +216,8 @@
         "correct": "M",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Eggplants and peaches with hidden second lives"
   },
   {
     "id": "NET-0012",
@@ -225,7 +236,8 @@
         "correct": "C",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The little magnifying glass knows your secrets"
   },
   {
     "id": "NET-0013",
@@ -244,7 +256,8 @@
         "correct": "L",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "One dance clip, suddenly the whole world's copying"
   },
   {
     "id": "NET-0014",
@@ -263,7 +276,8 @@
         "correct": "P",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Warm on your knees, fan quietly panicking"
   },
   {
     "id": "NET-0015",
@@ -282,7 +296,8 @@
         "correct": "L",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Wizards unroll one; insomniacs can't stop"
   },
   {
     "id": "NET-0016",
@@ -301,7 +316,8 @@
         "correct": "P",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Your creation leaves home for the big servers"
   },
   {
     "id": "NET-0017",
@@ -320,7 +336,8 @@
         "correct": "X",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Zero unread, the productivity guru's impossible dream"
   },
   {
     "id": "NET-0018",
@@ -339,7 +356,8 @@
         "correct": "S",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Your pet's name plus the year you graduated"
   },
   {
     "id": "NET-0019",
@@ -358,7 +376,8 @@
         "correct": "M",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "A brook, or a million Friday night binges"
   },
   {
     "id": "NET-0020",
@@ -377,7 +396,8 @@
         "correct": "R",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Blinking line patiently awaiting your next thought"
   },
   {
     "id": "NET-0021",
@@ -396,7 +416,8 @@
         "correct": "M",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Green light glowing, better fix your hair"
   },
   {
     "id": "NET-0022",
@@ -415,7 +436,8 @@
         "correct": "L",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Duck lips and a bathroom mirror classic"
   },
   {
     "id": "NET-0023",
@@ -434,7 +456,8 @@
         "correct": "L",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Lives under bridges, or in reply sections"
   },
   {
     "id": "NET-0024",
@@ -453,7 +476,8 @@
         "correct": "F",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "The pronunciation debate that never dies"
   },
   {
     "id": "NET-0025",
@@ -472,7 +496,8 @@
         "correct": "S",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Chrome, Firefox, and the one nobody chooses"
   },
   {
     "id": "NET-0026",
@@ -491,7 +516,8 @@
         "correct": "D",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Fluffy in the sky, pricey by the gigabyte"
   },
   {
     "id": "NET-0027",
@@ -510,7 +536,8 @@
         "correct": "D",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Everyone you know secretly wants to start one"
   },
   {
     "id": "NET-0028",
@@ -529,7 +556,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "White hats defend, black hats break in"
   },
   {
     "id": "NET-0029",
@@ -548,7 +576,8 @@
         "correct": "G",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Ironic ones now longer than the caption itself"
   },
   {
     "id": "NET-0030",
@@ -567,7 +596,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The home's little traffic cop for packets"
   },
   {
     "id": "NET-0031",
@@ -586,7 +616,8 @@
         "correct": "E",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Grandma bakes them; browsers quietly collect them"
   },
   {
     "id": "NET-0032",
@@ -605,7 +636,8 @@
         "correct": "M",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Romans gathered in one; nerds still do"
   },
   {
     "id": "NET-0033",
@@ -624,7 +656,8 @@
         "correct": "L",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Why the office computer can't reach fun sites"
   },
   {
     "id": "NET-0034",
@@ -643,7 +676,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Restaurant staff, or the machine behind every website"
   },
   {
     "id": "NET-0035",
@@ -662,7 +696,8 @@
         "correct": "G",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Today's number one, complete with tiny flame icon"
   },
   {
     "id": "NET-0036",
@@ -681,7 +716,8 @@
         "correct": "M",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Translates phone lines into nineties internet magic"
   },
   {
     "id": "NET-0037",
@@ -700,7 +736,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Your machine slows, strange popups bloom overnight"
   },
   {
     "id": "NET-0038",
@@ -719,7 +756,8 @@
         "correct": "D",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Needles pull it; arguments unravel it online"
   },
   {
     "id": "NET-0039",
@@ -738,7 +776,8 @@
         "correct": "P",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Ping pong tables, free snacks, no profits"
   },
   {
     "id": "NET-0040",
@@ -757,7 +796,8 @@
         "correct": "P",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Your data plan, generously feeding nearby laptops"
   },
   {
     "id": "NET-0041",
@@ -776,7 +816,8 @@
         "correct": "G",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Dear valued customer, please verify urgently, sincerely, crooks"
   },
   {
     "id": "NET-0042",
@@ -795,7 +836,8 @@
         "correct": "H",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Robots fail it; tired humans nearly do"
   },
   {
     "id": "NET-0043",
@@ -814,7 +856,8 @@
         "correct": "H",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Whiskered bottom-feeder, or your online sweetheart's lie"
   },
   {
     "id": "NET-0044",
@@ -833,7 +876,8 @@
         "correct": "Y",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "You wouldn't steal a car, the ads warned"
   },
   {
     "id": "NET-0045",
@@ -852,7 +896,8 @@
         "correct": "U",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Knows all the drama, contributes exactly nothing"
   },
   {
     "id": "NET-0046",
@@ -871,7 +916,8 @@
         "correct": "R",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Polishing wheel, or the pause before playback"
   },
   {
     "id": "NET-0047",
@@ -890,7 +936,8 @@
         "correct": "C",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Plain words go in, gibberish comes out"
   },
   {
     "id": "NET-0048",
@@ -909,7 +956,8 @@
         "correct": "Y",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Free download, hidden passenger, your habits harvested"
   },
   {
     "id": "NET-0049",
@@ -928,7 +976,8 @@
         "correct": "T",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Ketchup arrives in one; your data too"
   },
   {
     "id": "NET-0050",
@@ -947,7 +996,8 @@
         "correct": "C",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Diplomats follow one; so does every handshake online"
   },
   {
     "id": "NET-0051",
@@ -966,7 +1016,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Squirrels keep one; so does your browser"
   },
   {
     "id": "NET-0052",
@@ -985,7 +1036,8 @@
         "correct": "Y",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Milliseconds that decide whether your shot registered"
   },
   {
     "id": "NET-0053",
@@ -1004,7 +1056,8 @@
         "correct": "A",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Vacation posts kindly informing burglars you're away"
   },
   {
     "id": "NET-0054",
@@ -1023,7 +1076,8 @@
         "correct": "K",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Corn has one; so does Linux"
   },
   {
     "id": "NET-0055",
@@ -1042,7 +1096,8 @@
         "correct": "L",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Motorcycle grip magic, also your ISP's mean trick"
   },
   {
     "id": "NET-0056",
@@ -1061,7 +1116,8 @@
         "correct": "B",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Your smart fridge might secretly serve evil"
   },
   {
     "id": "NET-0057",
@@ -1080,7 +1136,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Pronounced demon, summoned at boot, entirely benign"
   },
   {
     "id": "NET-0058",
@@ -1099,7 +1156,8 @@
         "correct": "O",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "The internet's most beloved musical ambush"
   },
   {
     "id": "NET-0059",
@@ -1118,7 +1176,8 @@
         "correct": "U",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Make me a sandwich, said with authority"
   },
   {
     "id": "NET-0060",
@@ -1137,6 +1196,7 @@
         "correct": "N",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "A violent downpour, or seeding until dawn"
   }
 ]

@@ -16,7 +16,8 @@
         "correct": "K",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Blue ceiling by day, black velvet by dark"
   },
   {
     "id": "SPC-9002",
@@ -35,7 +36,8 @@
         "correct": "C",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Where astronauts float and silence never ends"
   },
   {
     "id": "SPC-9003",
@@ -54,7 +56,8 @@
         "correct": "T",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The blue marble every astronaut photographs first"
   },
   {
     "id": "SPC-9004",
@@ -73,7 +76,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Strange lights hovering where no plane should be"
   },
   {
     "id": "SPC-9005",
@@ -92,7 +96,8 @@
         "correct": "I",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Every captain needs one to leave port"
   },
   {
     "id": "SPC-9006",
@@ -111,7 +116,8 @@
         "correct": "H",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Owls wake, streetlamps hum, the world goes quiet"
   },
   {
     "id": "SPC-9007",
@@ -130,7 +136,8 @@
         "correct": "S",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Tailored for boardrooms or built for the vacuum"
   },
   {
     "id": "SPC-9008",
@@ -149,7 +156,8 @@
         "correct": "E",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Skulls trust it, from bicycles to the void"
   },
   {
     "id": "SPC-9009",
@@ -168,7 +176,8 @@
         "correct": "C",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Roster of names sharing every launch and meal"
   },
   {
     "id": "SPC-9010",
@@ -187,7 +196,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "A nation's colors snapping proudly atop a pole"
   },
   {
     "id": "SPC-9011",
@@ -206,7 +216,8 @@
         "correct": "L",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Empty gauge, stranded journey; fill up before flying"
   },
   {
     "id": "SPC-9012",
@@ -225,7 +236,8 @@
         "correct": "E",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Short electronic chirp from every impatient machine"
   },
   {
     "id": "SPC-9013",
@@ -244,7 +256,8 @@
         "correct": "U",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Tomorrow, and every tomorrow after that"
   },
   {
     "id": "SPC-9014",
@@ -263,7 +276,8 @@
         "correct": "J",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Master Yoda trained the last of them"
   },
   {
     "id": "SPC-9015",
@@ -282,7 +296,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The sideways eight that never runs out"
   },
   {
     "id": "SPC-9016",
@@ -301,7 +316,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Born in a bang, home to absolutely everyone"
   },
   {
     "id": "SPC-9018",
@@ -320,7 +336,8 @@
         "correct": "R",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Push or pull that Newton measured in his laws"
   },
   {
     "id": "SPC-9019",
@@ -339,7 +356,8 @@
         "correct": "T",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Corks do it; astronauts' pencils do too"
   },
   {
     "id": "SPC-9020",
@@ -358,7 +376,8 @@
         "correct": "W",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Fireflies and dying embers share this gentle trick"
   },
   {
     "id": "SPC-9021",
@@ -377,7 +396,8 @@
         "correct": "A",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Static electricity's tiny sting on a doorknob"
   },
   {
     "id": "SPC-9022",
@@ -396,7 +416,8 @@
         "correct": "S",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Love's goddess lent her name to hellish clouds"
   },
   {
     "id": "SPC-9024",
@@ -415,7 +436,8 @@
         "correct": "G",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Slip it on a finger or answer the phone"
   },
   {
     "id": "SPC-9026",
@@ -434,7 +456,8 @@
         "correct": "M",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Sunlight's straight path through a dusty window"
   },
   {
     "id": "SPC-9027",
@@ -453,7 +476,8 @@
         "correct": "L",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Little star, little star, the lullaby repeats it"
   },
   {
     "id": "SPC-9028",
@@ -472,7 +496,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "A flat fish gliding, or one slice of sunshine"
   },
   {
     "id": "SPC-9029",
@@ -491,7 +516,8 @@
         "correct": "C",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Winged messenger god, also the thermometer's silver liquid"
   },
   {
     "id": "SPC-9030",
@@ -510,7 +536,8 @@
         "correct": "D",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Gray powder clinging to every astronaut's boots"
   },
   {
     "id": "SPC-9033",
@@ -529,7 +556,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Dogs wag it; coins hide it opposite heads"
   },
   {
     "id": "SPC-9034",
@@ -548,7 +576,8 @@
         "correct": "P",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "First episode of a series, or the cockpit's boss"
   },
   {
     "id": "SPC-9035",
@@ -567,7 +596,8 @@
         "correct": "S",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Impossible ones self-destruct in five seconds"
   },
   {
     "id": "SPC-9036",
@@ -586,7 +616,8 @@
         "correct": "I",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Check its light before a long road trip"
   },
   {
     "id": "SPC-9037",
@@ -605,7 +636,8 @@
         "correct": "Y",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Element eight, partnered with hydrogen in every raindrop"
   },
   {
     "id": "SPC-9038",
@@ -624,7 +656,8 @@
         "correct": "E",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Runways exist for this loud, thrilling goodbye"
   },
   {
     "id": "SPC-9039",
@@ -643,7 +676,8 @@
         "correct": "T",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Musk's shiny steel giant, or sci-fi's favorite vessel"
   },
   {
     "id": "SPC-9040",
@@ -662,7 +696,8 @@
         "correct": "W",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Bouncy low-gravity stroll, or a smooth dance illusion"
   },
   {
     "id": "SPC-9041",
@@ -681,7 +716,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Major Tom's job before ground control lost contact"
   },
   {
     "id": "SPC-9042",
@@ -700,7 +736,8 @@
         "correct": "A",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "What kids yell hurling toy ships skyward"
   },
   {
     "id": "SPC-9043",
@@ -719,7 +756,8 @@
         "correct": "F",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The tower cleared, gravity's grip finally broken"
   },
   {
     "id": "SPC-9044",
@@ -738,7 +776,8 @@
         "correct": "R",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Curiosity by name, wandering by trade"
   },
   {
     "id": "SPC-9045",
@@ -757,7 +796,8 @@
         "correct": "L",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Sun god lending his name to lunar trips"
   },
   {
     "id": "SPC-9047",
@@ -776,7 +816,8 @@
         "correct": "A",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Reads the same backward; bats invented the concept"
   },
   {
     "id": "SPC-9048",
@@ -795,7 +836,8 @@
         "correct": "I",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Your phone's bars, or smoke rising from ancient hills"
   },
   {
     "id": "SPC-9049",
@@ -814,7 +856,8 @@
         "correct": "T",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Insects wear two; old rooftops wore one"
   },
   {
     "id": "SPC-9050",
@@ -833,7 +876,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Einstein and Rosen's tunnel through spacetime's fabric"
   },
   {
     "id": "SPC-9051",
@@ -852,7 +896,8 @@
         "correct": "D",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Data from the Enterprise, or your phone's green mascot"
   },
   {
     "id": "SPC-9052",
@@ -871,7 +916,8 @@
         "correct": "T",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Matt Damon farmed potatoes to survive as one"
   },
   {
     "id": "SPC-9053",
@@ -890,7 +936,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "A long, wearying journey on foot through mountains"
   },
   {
     "id": "SPC-9054",
@@ -909,7 +956,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Rome built one; New York named a building"
   },
   {
     "id": "SPC-9055",
@@ -928,7 +976,8 @@
         "correct": "D",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Captain America throws his; knights hid behind theirs"
   },
   {
     "id": "SPC-9056",
@@ -947,7 +996,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "A deity descending to walk among mortals"
   },
   {
     "id": "SPC-9057",
@@ -966,7 +1016,8 @@
         "correct": "A",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Uninvited guest arriving with an army behind them"
   },
   {
     "id": "SPC-9058",
@@ -985,7 +1036,8 @@
         "correct": "T",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Nightcrawler's smoky signature trick, bamf and gone"
   },
   {
     "id": "SPC-9059",
@@ -1004,7 +1056,8 @@
         "correct": "T",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "The cake was a lie in this game"
   },
   {
     "id": "SPC-9060",
@@ -1023,7 +1076,8 @@
         "correct": "R",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Hummingbirds and helicopters mastered standing still midair"
   },
   {
     "id": "SPC-9061",
@@ -1042,7 +1096,8 @@
         "correct": "T",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Teenage ninja turtles carry this label proudly"
   },
   {
     "id": "SPC-9062",
@@ -1061,7 +1116,8 @@
         "correct": "C",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Monday's biggest online shopping discounts wear this name"
   },
   {
     "id": "SPC-9063",
@@ -1080,7 +1136,8 @@
         "correct": "B",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Stormtroopers famously can't aim theirs at anything"
   },
   {
     "id": "SPC-9064",
@@ -1099,7 +1156,8 @@
         "correct": "T",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Eight of these make an octopus very handy"
   },
   {
     "id": "SPC-9065",
@@ -1118,7 +1176,8 @@
         "correct": "E",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Nimble of foot, or the navy's full collection"
   },
   {
     "id": "SPC-9066",
@@ -1137,7 +1196,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Normandy's beaches remember history's largest one"
   },
   {
     "id": "SPC-9067",
@@ -1156,7 +1216,8 @@
         "correct": "N",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "The Eagle at Tranquility Base, mission accomplished"
   },
   {
     "id": "SPC-9068",
@@ -1175,7 +1236,8 @@
         "correct": "B",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Extra vaccine dose, or the toddler's car seat"
   },
   {
     "id": "SPC-9069",
@@ -1194,7 +1256,8 @@
         "correct": "C",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "The keyboard key pressed when everything goes wrong"
   },
   {
     "id": "SPC-9070",
@@ -1213,7 +1276,8 @@
         "correct": "I",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Spark meets fuel, and passion catches too"
   },
   {
     "id": "SPC-9071",
@@ -1232,7 +1296,8 @@
         "correct": "R",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Sword lunge, or what engines measure in pounds"
   },
   {
     "id": "SPC-9072",
@@ -1251,7 +1316,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Seven whistled off to work in Snow White"
   },
   {
     "id": "SPC-9073",
@@ -1270,7 +1336,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The beanstalk's grumpy landlord, smelling Englishmen"
   },
   {
     "id": "SPC-9074",
@@ -1289,7 +1356,8 @@
         "correct": "D",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Golden-age families gathered around one every evening"
   },
   {
     "id": "SPC-9075",
@@ -1308,7 +1376,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The noble gas keeping blimps and airships aloft"
   },
   {
     "id": "SPC-9076",
@@ -1327,7 +1396,8 @@
         "correct": "A",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Sleeping Beauty's name, and dawn's Roman goddess"
   },
   {
     "id": "SPC-9077",
@@ -1346,7 +1416,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Distress signal fired skyward, or seventies pant style"
   },
   {
     "id": "SPC-9079",
@@ -1365,7 +1436,8 @@
         "correct": "S",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Ziggy's surname, and Tinker Bell's shimmering wake"
   },
   {
     "id": "SPC-9080",
@@ -1384,7 +1456,8 @@
         "correct": "A",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Cinnamon whiskey, or a dragon's angriest exhale"
   },
   {
     "id": "SPC-9081",
@@ -1403,7 +1476,8 @@
         "correct": "S",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Buttery French pastries borrow this slender curve"
   },
   {
     "id": "SPC-9082",
@@ -1422,7 +1496,8 @@
         "correct": "E",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Wind-sculpted sand wave slowly marching across deserts"
   },
   {
     "id": "SPC-9083",
@@ -1441,7 +1516,8 @@
         "correct": "A",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Rows and columns multiplied in algebra class"
   },
   {
     "id": "SPC-9084",
@@ -1460,7 +1536,8 @@
         "correct": "A",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Tupac performed again thanks to this shimmering trick"
   },
   {
     "id": "SPC-9085",
@@ -1479,7 +1556,8 @@
         "correct": "E",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Covered wagons rolled west chasing its promise"
   },
   {
     "id": "SPC-9086",
@@ -1498,7 +1576,8 @@
         "correct": "C",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Hitchhikers need a guide at this scale"
   },
   {
     "id": "SPC-9087",
@@ -1517,7 +1596,8 @@
         "correct": "T",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "What telescopes on balconies invite you to do"
   },
   {
     "id": "SPC-9088",
@@ -1536,7 +1616,8 @@
         "correct": "G",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Janeway's lost ship, decades from home"
   },
   {
     "id": "SPC-9089",
@@ -1555,7 +1636,8 @@
         "correct": "K",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Russia's 1957 shock that panicked Washington overnight"
   },
   {
     "id": "SPC-9091",
@@ -1574,7 +1656,8 @@
         "correct": "Z",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The line ships slip below when leaving"
   },
   {
     "id": "SPC-9092",
@@ -1593,7 +1676,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Elder gods overthrown by Zeus and company"
   },
   {
     "id": "SPC-9093",
@@ -1612,7 +1696,8 @@
         "correct": "I",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Castor and Pollux share this zodiac sign"
   },
   {
     "id": "SPC-9097",
@@ -1631,7 +1716,8 @@
         "correct": "D",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The horoscope column's organizing wheel of birthdays"
   },
   {
     "id": "SPC-9098",
@@ -1650,7 +1736,8 @@
         "correct": "C",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Grapes grow in one; headaches come in worse ones"
   },
   {
     "id": "SPC-9099",
@@ -1669,7 +1756,8 @@
         "correct": "I",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Staircases and seashells share this winding blueprint"
   },
   {
     "id": "SPC-9100",
@@ -1688,7 +1776,8 @@
         "correct": "V",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Your bathtub drain performs a tiny one nightly"
   },
   {
     "id": "SPC-9101",
@@ -1707,7 +1796,8 @@
         "correct": "R",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Ones and zeros whispering beneath all software"
   },
   {
     "id": "SPC-9102",
@@ -1726,7 +1816,8 @@
         "correct": "N",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The nucleus dweller carrying no charge at all"
   },
   {
     "id": "SPC-9103",
@@ -1745,7 +1836,8 @@
         "correct": "P",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Geneva's great collider hurls them in circles"
   },
   {
     "id": "SPC-9104",
@@ -1764,7 +1856,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The radiation that turned Banner big and green"
   },
   {
     "id": "SPC-9105",
@@ -1783,7 +1876,8 @@
         "correct": "M",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Schrödinger's cat lives and dies in this realm"
   },
   {
     "id": "SPC-9106",
@@ -1802,7 +1896,8 @@
         "correct": "A",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Report cards say it when grades truly shine"
   },
   {
     "id": "SPC-9107",
@@ -1821,7 +1916,8 @@
         "correct": "T",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Celestial adjective beloved by mystics and poets"
   },
   {
     "id": "SPC-9108",
@@ -1840,7 +1936,8 @@
         "correct": "O",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Lime-topped beach beer, or 2020's infamous namesake"
   },
   {
     "id": "SPC-9109",
@@ -1859,7 +1956,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Galileo tracked these blemishes through smoked glass"
   },
   {
     "id": "SPC-9110",
@@ -1878,7 +1976,8 @@
         "correct": "S",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "City buses and subways run under this banner"
   },
   {
     "id": "SPC-9111",
@@ -1897,7 +1996,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "March and September each host one quietly"
   },
   {
     "id": "SPC-9112",
@@ -1916,7 +2016,8 @@
         "correct": "E",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Stonehenge throws its famous party twice yearly"
   },
   {
     "id": "SPC-9113",
@@ -1935,7 +2036,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Maverick buzzed the tower; permission definitely denied"
   },
   {
     "id": "SPC-9114",
@@ -1954,7 +2056,8 @@
         "correct": "H",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Goats graze at its length; phones share internet through it"
   },
   {
     "id": "SPC-9115",
@@ -1973,7 +2076,8 @@
         "correct": "V",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Geordi La Forge saw everything through his"
   },
   {
     "id": "SPC-9116",
@@ -1992,7 +2096,8 @@
         "correct": "H",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "What eggs and evil plans eventually do"
   },
   {
     "id": "SPC-9117",
@@ -2011,7 +2116,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "All the world's one, Shakespeare claimed"
   },
   {
     "id": "SPC-9118",
@@ -2030,7 +2136,8 @@
         "correct": "Z",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The garden hose's adjustable business end"
   },
   {
     "id": "SPC-9119",
@@ -2049,7 +2156,8 @@
         "correct": "E",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Everest's final push toward the summit"
   },
   {
     "id": "SPC-9120",
@@ -2068,7 +2176,8 @@
         "correct": "S",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Ancestry traces yours; planes announce theirs before landing"
   },
   {
     "id": "SPC-9121",
@@ -2087,7 +2196,8 @@
         "correct": "P",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Where the garrison watches roads nobody travels"
   },
   {
     "id": "SPC-9122",
@@ -2106,7 +2216,8 @@
         "correct": "C",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Ants build one; thirteen rebelled against a king"
   },
   {
     "id": "SPC-9123",
@@ -2125,7 +2236,8 @@
         "correct": "B",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Every creature's natural address, per nature documentaries"
   },
   {
     "id": "SPC-9124",
@@ -2144,7 +2256,8 @@
         "correct": "D",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Periodic table's opener, infamous since the Hindenburg"
   },
   {
     "id": "SPC-9125",
@@ -2163,7 +2276,8 @@
         "correct": "N",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Mysterious metal pillar that popped up in Utah"
   },
   {
     "id": "SPC-9126",
@@ -2182,7 +2296,8 @@
         "correct": "Y",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Homer's homesick hero took twenty years, or Honda's minivan"
   },
   {
     "id": "SPC-9127",
@@ -2201,7 +2316,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Paired with dagger, or Harry's invisible inheritance"
   },
   {
     "id": "SPC-9128",
@@ -2220,7 +2336,8 @@
         "correct": "A",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Green or red, ploughing fields at dawn"
   },
   {
     "id": "SPC-9130",
@@ -2239,7 +2356,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "The forge god hammering under Mount Etna"
   },
   {
     "id": "SPC-9131",
@@ -2258,7 +2376,8 @@
         "correct": "O",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "The etymology admits it: humpbacked, like a camel"
   },
   {
     "id": "SPC-9132",
@@ -2277,7 +2396,8 @@
         "correct": "M",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Eclipse chasers race jets to stay inside it"
   },
   {
     "id": "SPC-9133",
@@ -2296,7 +2416,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Where partial-eclipse viewers stand, slightly disappointed"
   },
   {
     "id": "SPC-9134",
@@ -2315,7 +2436,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Rock bottom, as astronomers politely put it"
   },
   {
     "id": "SPC-9135",
@@ -2334,7 +2456,8 @@
         "correct": "E",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Chelyabinsk dashcams caught one shattering the morning"
   },
   {
     "id": "SPC-9136",
@@ -2353,7 +2476,8 @@
         "correct": "P",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "How surveyors and astronomers triangulate the unreachable"
   },
   {
     "id": "SPC-9137",
@@ -2372,7 +2496,8 @@
         "correct": "C",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Henrietta Leavitt's ticket to sizing the universe"
   },
   {
     "id": "SPC-9139",
@@ -2391,7 +2516,8 @@
         "correct": "L",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Smartphone filmmakers swear by this steadying grip"
   },
   {
     "id": "SPC-9140",
@@ -2410,7 +2536,8 @@
         "correct": "T",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Motorway signs hang from one; cranes ride others"
   },
   {
     "id": "SPC-9141",
@@ -2429,7 +2556,8 @@
         "correct": "N",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Motorcycle bodywork smoothing the wind's angry grip"
   },
   {
     "id": "SPC-9144",
@@ -2448,7 +2576,8 @@
         "correct": "V",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Hearth goddess whose virgins tended eternal flames"
   },
   {
     "id": "SPC-9146",
@@ -2467,7 +2596,8 @@
         "correct": "Q",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Deep Space Nine's scheming Ferengi bartender"
   },
   {
     "id": "SPC-9147",
@@ -2486,7 +2616,8 @@
         "correct": "I",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Trillions cross your thumbnail every single second"
   },
   {
     "id": "SPC-9148",
@@ -2505,7 +2636,8 @@
         "correct": "A",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "If weight travels in packets, meet the packet"
   },
   {
     "id": "SPC-9149",
@@ -2524,7 +2656,8 @@
         "correct": "I",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Complication stacked on complication until Copernicus cleaned house"
   },
   {
     "id": "SPC-9150",
@@ -2543,7 +2676,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Old captains squinted through it at noon"
   },
   {
     "id": "SPC-9017",
@@ -2562,7 +2696,8 @@
         "correct": "L",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Tiny world wearing a bright heart-shaped glacier"
   },
   {
     "id": "SPC-9023",
@@ -2581,7 +2716,8 @@
         "correct": "A",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Sixth from the sun, everybody's favorite to draw"
   },
   {
     "id": "SPC-9025",
@@ -2600,7 +2736,8 @@
         "correct": "P",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "King of the gods, hoarding dozens of moons"
   },
   {
     "id": "SPC-9031",
@@ -2619,7 +2756,8 @@
         "correct": "U",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Seventh out, first found through a telescope"
   },
   {
     "id": "SPC-9032",
@@ -2638,7 +2776,8 @@
         "correct": "U",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Sea god's planet, discovered by pure mathematics"
   },
   {
     "id": "SPC-9046",
@@ -2657,7 +2796,8 @@
         "correct": "D",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Do or do not, the swamp master says"
   },
   {
     "id": "SPC-9078",
@@ -2676,7 +2816,8 @@
         "correct": "R",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Mythology's great hunter, immortalized with his dogs"
   },
   {
     "id": "SPC-9090",
@@ -2695,7 +2836,8 @@
         "correct": "B",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Famously blurry until astronauts fixed its mirror"
   },
   {
     "id": "SPC-9094",
@@ -2714,7 +2856,8 @@
         "correct": "O",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The maiden Zeus carried off, disguised as a bull"
   },
   {
     "id": "SPC-9095",
@@ -2733,7 +2876,8 @@
         "correct": "S",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Harry Potter's godfather, or the satellite radio"
   },
   {
     "id": "SPC-9096",
@@ -2752,7 +2896,8 @@
         "correct": "I",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "The Little Dipper's handle ends with it"
   },
   {
     "id": "SPC-9129",
@@ -2771,7 +2916,8 @@
         "correct": "E",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Starfleet's sidearm, or a guitarist's swirling pedal"
   },
   {
     "id": "SPC-9138",
@@ -2790,7 +2936,8 @@
         "correct": "P",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Comet debris streaking while summer campers stay up"
   },
   {
     "id": "SPC-9142",
@@ -2809,7 +2956,8 @@
         "correct": "O",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Spotted in 1978 as a bump on blurry photographs"
   },
   {
     "id": "SPC-9143",
@@ -2828,7 +2976,8 @@
         "correct": "O",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Terror personified, forever chasing his brother Phobos"
   },
   {
     "id": "SPC-9145",
@@ -2847,6 +2996,7 @@
         "correct": "G",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Its X-1 gave black holes their first confirmed home"
   }
 ]

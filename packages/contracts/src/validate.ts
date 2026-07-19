@@ -139,6 +139,10 @@ export function validateWordEntry(input: unknown, path = 'wordEntry'): Validatio
   // per-scale band coherence is the content pipeline's job, not this shape check.
   c.oneOf(input['tier'], BANK_TIERS, `${path}.tier`);
   c.nonEmptyString(input['description'], `${path}.description`);
+  // Optional second clue (legacy entries predate it); when present it must be real.
+  if (input['altDescription'] !== undefined) {
+    c.nonEmptyString(input['altDescription'], `${path}.altDescription`);
+  }
 
   const lengthOk = c.integer(input['length'], `${path}.length`);
   c.number(input['difficulty'], `${path}.difficulty`);

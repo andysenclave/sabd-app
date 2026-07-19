@@ -16,7 +16,8 @@
         "correct": "N",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "What birds offer the dawn for free"
   },
   {
     "id": "MUS-9002",
@@ -35,7 +36,8 @@
         "correct": "S",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Everyone joins in when the birthday cake arrives"
   },
   {
     "id": "MUS-9003",
@@ -54,7 +56,8 @@
         "correct": "C",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Bodies talking when words take a break"
   },
   {
     "id": "MUS-9004",
@@ -73,7 +76,8 @@
         "correct": "K",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Elvis lit the fuse; guitars never calmed down"
   },
   {
     "id": "MUS-9005",
@@ -92,7 +96,8 @@
         "correct": "D",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Buggles claimed video killed this star"
   },
   {
     "id": "MUS-9006",
@@ -111,7 +116,8 @@
         "correct": "C",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Lose it after the concert, find it in the shower"
   },
   {
     "id": "MUS-9007",
@@ -130,7 +136,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Rings for dinner, doorways, and boxing rounds"
   },
   {
     "id": "MUS-9008",
@@ -149,7 +156,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Traffic jams and jazz clubs both lean on one"
   },
   {
     "id": "MUS-9009",
@@ -168,7 +176,8 @@
         "correct": "A",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Famously impossible with only one hand"
   },
   {
     "id": "MUS-9010",
@@ -187,7 +196,8 @@
         "correct": "M",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Bees and refrigerators drone it all day long"
   },
   {
     "id": "MUS-9011",
@@ -206,7 +216,8 @@
         "correct": "M",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Check, one two, tap tap before the show"
   },
   {
     "id": "MUS-9012",
@@ -225,7 +236,8 @@
         "correct": "S",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Woofers and tweeters living in one loud box"
   },
   {
     "id": "MUS-9013",
@@ -244,7 +256,8 @@
         "correct": "M",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Spinal Tap's went one louder, to eleven"
   },
   {
     "id": "MUS-9014",
@@ -263,7 +276,8 @@
         "correct": "R",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Athletes break it, DJs spin it"
   },
   {
     "id": "MUS-9015",
@@ -282,7 +296,8 @@
         "correct": "C",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Donna Summer ruled its glittering late-seventies floor"
   },
   {
     "id": "MUS-9016",
@@ -301,7 +316,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Headbangers, leather, and lyrics about dragons"
   },
   {
     "id": "MUS-9017",
@@ -320,7 +336,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Mohawks pogoing in a sweaty London basement, 1977"
   },
   {
     "id": "MUS-9018",
@@ -339,7 +356,8 @@
         "correct": "U",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Woke up this morning, and my baby left"
   },
   {
     "id": "MUS-9019",
@@ -358,7 +376,8 @@
         "correct": "F",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Dylan went electric and the purists booed"
   },
   {
     "id": "MUS-9020",
@@ -377,7 +396,8 @@
         "correct": "K",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Japan's gift to tone-deaf office parties everywhere"
   },
   {
     "id": "MUS-9021",
@@ -396,7 +416,8 @@
         "correct": "H",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Spelled with no true vowels, felt everywhere"
   },
   {
     "id": "MUS-9022",
@@ -415,7 +436,8 @@
         "correct": "M",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Miles Davis whispered cool through its bell"
   },
   {
     "id": "MUS-9023",
@@ -434,7 +456,8 @@
         "correct": "T",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Referees and kettles share this piercing talent"
   },
   {
     "id": "MUS-9024",
@@ -453,7 +476,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Phantom's favorite, thundering beneath the opera house"
   },
   {
     "id": "MUS-9025",
@@ -472,7 +496,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Ireland put it on coins and pint glasses"
   },
   {
     "id": "MUS-9026",
@@ -491,7 +516,8 @@
         "correct": "E",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Two channels doubling the mono world"
   },
   {
     "id": "MUS-9027",
@@ -510,7 +536,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The mixtape's descendant, dragged together in seconds"
   },
   {
     "id": "MUS-9028",
@@ -529,7 +556,8 @@
         "correct": "M",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "The club version, stretched and stripped for dancing"
   },
   {
     "id": "MUS-9029",
@@ -548,7 +576,8 @@
         "correct": "I",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Number one with a bullet, briefly"
   },
   {
     "id": "MUS-9030",
@@ -567,7 +596,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Months of hotels, one triumphant homecoming show"
   },
   {
     "id": "MUS-9031",
@@ -586,7 +616,8 @@
         "correct": "G",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Economy named after musicians' one-night bookings"
   },
   {
     "id": "MUS-9032",
@@ -605,7 +636,8 @@
         "correct": "M",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Marshall stacks towering behind every guitar hero"
   },
   {
     "id": "MUS-9033",
@@ -624,7 +656,8 @@
         "correct": "V",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "The tantrum backstage, the triumph on stage"
   },
   {
     "id": "MUS-9034",
@@ -643,7 +676,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Brahms wrote the one every crib knows"
   },
   {
     "id": "MUS-9035",
@@ -662,7 +696,8 @@
         "correct": "N",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "All the way, according to one sleigh song"
   },
   {
     "id": "MUS-9036",
@@ -681,7 +716,8 @@
         "correct": "U",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Oompah backbone of every polka band"
   },
   {
     "id": "MUS-9037",
@@ -700,7 +736,8 @@
         "correct": "H",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Gregorian monks floating one line through stone halls"
   },
   {
     "id": "MUS-9038",
@@ -719,7 +756,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Barbershop quartets live and die by it"
   },
   {
     "id": "MUS-9039",
@@ -738,7 +776,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "It takes two, the saying insists"
   },
   {
     "id": "MUS-9040",
@@ -757,7 +796,8 @@
         "correct": "O",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Nymph who faded to a mere reply"
   },
   {
     "id": "MUS-9041",
@@ -776,7 +816,8 @@
         "correct": "H",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Amazing Grace, the best-known of the bunch"
   },
   {
     "id": "MUS-9042",
@@ -795,7 +836,8 @@
         "correct": "S",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Down, down, up, the beginner's first pattern"
   },
   {
     "id": "MUS-9043",
@@ -814,7 +856,8 @@
         "correct": "Z",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Hum into wax paper and call it jazz"
   },
   {
     "id": "MUS-9044",
@@ -833,7 +876,8 @@
         "correct": "A",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Kenny G and Coltrane, worlds apart, same reed"
   },
   {
     "id": "MUS-9045",
@@ -852,7 +896,8 @@
         "correct": "G",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Struck once to summon dinner at the manor"
   },
   {
     "id": "MUS-9046",
@@ -871,7 +916,8 @@
         "correct": "Y",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Dead format that outlived every replacement, twice"
   },
   {
     "id": "MUS-9047",
@@ -890,7 +936,8 @@
         "correct": "K",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Runners lap it; producers lay it down"
   },
   {
     "id": "MUS-9048",
@@ -909,7 +956,8 @@
         "correct": "I",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Poetry that only works with melody attached"
   },
   {
     "id": "MUS-9049",
@@ -928,7 +976,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Chapter one, chapter two, same tune between choruses"
   },
   {
     "id": "MUS-9050",
@@ -947,7 +996,8 @@
         "correct": "A",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Visual's partner in every editing suite"
   },
   {
     "id": "MUS-9051",
@@ -966,7 +1016,8 @@
         "correct": "D",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Bedroom recording praying for its big break"
   },
   {
     "id": "MUS-9052",
@@ -985,7 +1036,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Abbey Road, the building rather than the crossing"
   },
   {
     "id": "MUS-9053",
@@ -1004,7 +1056,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Purists argue its borders; artists happily blur them"
   },
   {
     "id": "MUS-9054",
@@ -1023,7 +1076,8 @@
         "correct": "K",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Opens doors, or gets changed mid-song for drama"
   },
   {
     "id": "MUS-9055",
@@ -1042,7 +1096,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Watch yours, or dial it in on pedals"
   },
   {
     "id": "MUS-9056",
@@ -1061,7 +1116,8 @@
         "correct": "C",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Baseball throws it; tuners nudge it perfect"
   },
   {
     "id": "MUS-9057",
@@ -1080,7 +1136,8 @@
         "correct": "D",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Three fingers down, and suddenly you're a guitarist"
   },
   {
     "id": "MUS-9058",
@@ -1099,7 +1156,8 @@
         "correct": "C",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Fish have them; pianists practice them daily"
   },
   {
     "id": "MUS-9059",
@@ -1118,7 +1176,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Aretha demanded respect and defined the sound"
   },
   {
     "id": "MUS-9060",
@@ -1137,7 +1196,8 @@
         "correct": "F",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "James Brown hit it on the one"
   },
   {
     "id": "MUS-9061",
@@ -1156,7 +1216,8 @@
         "correct": "G",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "The honest truth, swears the old phrase"
   },
   {
     "id": "MUS-9062",
@@ -1175,7 +1236,8 @@
         "correct": "T",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Detroit's cold, gleaming export to Berlin warehouses"
   },
   {
     "id": "MUS-9063",
@@ -1194,7 +1256,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Films and bands both wear this DIY badge"
   },
   {
     "id": "MUS-9064",
@@ -1213,7 +1276,8 @@
         "correct": "W",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Ellington swore the music meant nothing without it"
   },
   {
     "id": "MUS-9065",
@@ -1232,7 +1296,8 @@
         "correct": "L",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "A Christmas name for songs and Dickens heroines"
   },
   {
     "id": "MUS-9066",
@@ -1251,7 +1316,8 @@
         "correct": "S",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Order it with chips or dance it hot"
   },
   {
     "id": "MUS-9067",
@@ -1270,7 +1336,8 @@
         "correct": "B",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Brazil's shuffling footwork even soccer commentators borrow"
   },
   {
     "id": "MUS-9068",
@@ -1289,7 +1356,8 @@
         "correct": "C",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Gloria Estefan ordered everybody to do it"
   },
   {
     "id": "MUS-9069",
@@ -1308,7 +1376,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Dots share its name; Weird Al loves it"
   },
   {
     "id": "MUS-9070",
@@ -1327,7 +1396,8 @@
         "correct": "Y",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Tarzan's jungle call, borrowed from goatherds"
   },
   {
     "id": "MUS-9071",
@@ -1346,7 +1416,8 @@
         "correct": "E",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The devil went down to Georgia carrying one"
   },
   {
     "id": "MUS-9072",
@@ -1365,7 +1436,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Tiptoe Through the Tulips twinkled on one"
   },
   {
     "id": "MUS-9073",
@@ -1384,7 +1456,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Cone-shaped corn snacks stole its name"
   },
   {
     "id": "MUS-9074",
@@ -1403,7 +1476,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Peter's grumpy duck waddles to its sound"
   },
   {
     "id": "MUS-9075",
@@ -1422,7 +1496,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Seventy-six of them led the big parade"
   },
   {
     "id": "MUS-9076",
@@ -1441,7 +1516,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Rhapsody in Blue opens with its long slide"
   },
   {
     "id": "MUS-9077",
@@ -1460,7 +1536,8 @@
         "correct": "N",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Rattling wires beneath give it that buzz"
   },
   {
     "id": "MUS-9078",
@@ -1479,7 +1556,8 @@
         "correct": "A",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Hi-hats hide a kissing pair on command"
   },
   {
     "id": "MUS-9079",
@@ -1498,7 +1576,8 @@
         "correct": "O",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Knees make a fine stand for this pair"
   },
   {
     "id": "MUS-9080",
@@ -1517,7 +1596,8 @@
         "correct": "L",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Alpine herds wear what drummers strike on the offbeat"
   },
   {
     "id": "MUS-9081",
@@ -1536,7 +1616,8 @@
         "correct": "T",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Geometry class shape moonlighting in the percussion pit"
   },
   {
     "id": "MUS-9082",
@@ -1555,7 +1636,8 @@
         "correct": "M",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Grab the pair, twist your wrists, instant fiesta"
   },
   {
     "id": "MUS-9083",
@@ -1574,7 +1656,8 @@
         "correct": "E",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Three holes covered, Hot Cross Buns achieved"
   },
   {
     "id": "MUS-9084",
@@ -1593,7 +1676,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Typists and synth players fight over the word"
   },
   {
     "id": "MUS-9085",
@@ -1612,7 +1696,8 @@
         "correct": "S",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The eighties ran entirely on its neon wash"
   },
   {
     "id": "MUS-9086",
@@ -1631,7 +1716,8 @@
         "correct": "O",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Held overhead outside her window, blasting Peter Gabriel"
   },
   {
     "id": "MUS-9087",
@@ -1650,7 +1736,8 @@
         "correct": "U",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Fonzie's fist could start the diner's corner deejay"
   },
   {
     "id": "MUS-9088",
@@ -1669,7 +1756,8 @@
         "correct": "T",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Jazz's classic setup: keys, upright, brushes"
   },
   {
     "id": "MUS-9089",
@@ -1688,7 +1776,8 @@
         "correct": "H",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Pirates hang one where a hand went missing"
   },
   {
     "id": "MUS-9090",
@@ -1707,7 +1796,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "The drumroll before the song shakes your hand"
   },
   {
     "id": "MUS-9091",
@@ -1726,7 +1816,8 @@
         "correct": "H",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Hashtag's older sibling on the staff"
   },
   {
     "id": "MUS-9092",
@@ -1745,7 +1836,8 @@
         "correct": "F",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "British apartment, or a tire's sad state"
   },
   {
     "id": "MUS-9093",
@@ -1764,7 +1856,8 @@
         "correct": "M",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Outranks captain, both in armies and keys"
   },
   {
     "id": "MUS-9094",
@@ -1783,7 +1876,8 @@
         "correct": "I",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Sounds like a coal digger, plays like heartbreak"
   },
   {
     "id": "MUS-9095",
@@ -1802,7 +1896,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Saxophone's most popular size bears this name"
   },
   {
     "id": "MUS-9096",
@@ -1821,7 +1916,8 @@
         "correct": "T",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "The swirly G clef answers to this"
   },
   {
     "id": "MUS-9097",
@@ -1840,7 +1936,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Shakespeare's shipwrecked heroine in Twelfth Night, coincidentally"
   },
   {
     "id": "MUS-9098",
@@ -1859,7 +1956,8 @@
         "correct": "C",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Stars and Stripes Forever hands it the spotlight"
   },
   {
     "id": "MUS-9099",
@@ -1878,7 +1976,8 @@
         "correct": "A",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Gourd-bellied giant with frets that curve like waves"
   },
   {
     "id": "MUS-9100",
@@ -1897,7 +1996,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Captain Corelli played one through an entire novel"
   },
   {
     "id": "MUS-9101",
@@ -1916,7 +2016,8 @@
         "correct": "P",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Squeeze the sack, brace the neighbors"
   },
   {
     "id": "MUS-9102",
@@ -1935,7 +2036,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Sting recorded Dowland songs on its bent neck"
   },
   {
     "id": "MUS-9103",
@@ -1954,7 +2056,8 @@
         "correct": "Y",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Nero allegedly played while Rome burned"
   },
   {
     "id": "MUS-9104",
@@ -1973,7 +2076,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Xylophone's mellower cousin with resonator pipes below"
   },
   {
     "id": "MUS-9105",
@@ -1992,7 +2096,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Also Sprach Zarathustra's dawn pounds on these"
   },
   {
     "id": "MUS-9106",
@@ -2011,7 +2116,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Señorita's palm-sized clatter punctuating every twirl"
   },
   {
     "id": "MUS-9107",
@@ -2030,7 +2136,8 @@
         "correct": "C",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Brass bands' front line, ice-cream cone shaped"
   },
   {
     "id": "MUS-9108",
@@ -2049,7 +2156,8 @@
         "correct": "I",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Nessun Dorma, every World Cup's borrowed showstopper"
   },
   {
     "id": "MUS-9109",
@@ -2068,7 +2176,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Bloom County's penguin shares the Latin label"
   },
   {
     "id": "MUS-9110",
@@ -2087,7 +2196,8 @@
         "correct": "R",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Your strong suit, in Italian and in life"
   },
   {
     "id": "MUS-9111",
@@ -2106,7 +2216,8 @@
         "correct": "A",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Barber's famous one accompanies every cinematic tragedy"
   },
   {
     "id": "MUS-9112",
@@ -2125,7 +2236,8 @@
         "correct": "O",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Most first movements sprint under this Italian banner"
   },
   {
     "id": "MUS-9113",
@@ -2144,7 +2256,8 @@
         "correct": "P",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Magicians say it; metronomes fear it"
   },
   {
     "id": "MUS-9114",
@@ -2163,7 +2276,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Symphonies parked one third-movement curtsy before scherzos arrived"
   },
   {
     "id": "MUS-9115",
@@ -2182,7 +2296,8 @@
         "correct": "P",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Chopin wrote twenty-four appetizers with no main course"
   },
   {
     "id": "MUS-9116",
@@ -2201,7 +2316,8 @@
         "correct": "T",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "1812 famously ends in actual cannon fire"
   },
   {
     "id": "MUS-9117",
@@ -2220,7 +2336,8 @@
         "correct": "N",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Four Seasons packaged as violin showpieces"
   },
   {
     "id": "MUS-9118",
@@ -2239,7 +2356,8 @@
         "correct": "O",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Bohemian, Blue, or Hungarian, always unbound"
   },
   {
     "id": "MUS-9119",
@@ -2258,7 +2376,8 @@
         "correct": "N",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Chopin signed twenty-one of these dusky pages"
   },
   {
     "id": "MUS-9120",
@@ -2277,7 +2396,8 @@
         "correct": "R",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Mozart died mid-way through writing his own"
   },
   {
     "id": "MUS-9121",
@@ -2296,7 +2416,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Card games, rivers, and songwriters all cross one"
   },
   {
     "id": "MUS-9122",
@@ -2315,7 +2436,8 @@
         "correct": "I",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Wallpaper patterns and Wagner both repeat one"
   },
   {
     "id": "MUS-9123",
@@ -2334,7 +2456,8 @@
         "correct": "I",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Operatic show-off move, marked tr above"
   },
   {
     "id": "MUS-9124",
@@ -2353,7 +2476,8 @@
         "correct": "G",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Podcast hosts butcher this Italian glide constantly"
   },
   {
     "id": "MUS-9125",
@@ -2372,7 +2496,8 @@
         "correct": "C",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Mafia bosses and fretboards both answer to one"
   },
   {
     "id": "MUS-9126",
@@ -2391,7 +2516,8 @@
         "correct": "F",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Worry about it, or press behind it"
   },
   {
     "id": "MUS-9127",
@@ -2410,7 +2536,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "The knob that turns a closet into a canyon"
   },
   {
     "id": "MUS-9128",
@@ -2429,7 +2556,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Free taste at the store, lawsuit in the studio"
   },
   {
     "id": "MUS-9129",
@@ -2448,7 +2576,8 @@
         "correct": "E",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Fashion outfits and chamber groups share the French word"
   },
   {
     "id": "MUS-9130",
@@ -2467,7 +2596,8 @@
         "correct": "M",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Parking enforcement and poetry both run on it"
   },
   {
     "id": "MUS-9131",
@@ -2486,7 +2616,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "What critics call any album that drags"
   },
   {
     "id": "MUS-9132",
@@ -2505,7 +2636,8 @@
         "correct": "L",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Torvill and Dean skated gold to it"
   },
   {
     "id": "MUS-9133",
@@ -2524,7 +2656,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Psychiatrists borrowed its name for dissociative states"
   },
   {
     "id": "MUS-9134",
@@ -2543,7 +2676,8 @@
         "correct": "A",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Encanto's magical family borrowed the surname"
   },
   {
     "id": "MUS-9135",
@@ -2562,7 +2696,8 @@
         "correct": "C",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Wachet Auf and friends, harmonized for Sunday"
   },
   {
     "id": "MUS-9136",
@@ -2581,7 +2716,8 @@
         "correct": "O",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Handel's Messiah crowns the whole genre"
   },
   {
     "id": "MUS-9137",
@@ -2600,7 +2736,8 @@
         "correct": "M",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Heel-clicking folk swirl the polonaise calls cousin"
   },
   {
     "id": "MUS-9138",
@@ -2619,7 +2756,8 @@
         "correct": "V",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Carly Simon watched someone vain do this dance"
   },
   {
     "id": "MUS-9139",
@@ -2638,7 +2776,8 @@
         "correct": "A",
         "decoy": "O"
       }
-    }
+    },
+    "altDescription": "Faster than adagio, lazier than allegro"
   },
   {
     "id": "MUS-9140",
@@ -2657,7 +2796,8 @@
         "correct": "V",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Play it like the espresso just kicked in"
   },
   {
     "id": "MUS-9141",
@@ -2676,7 +2816,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Romantic pianists' permission slip for elastic phrasing"
   },
   {
     "id": "MUS-9142",
@@ -2695,7 +2836,8 @@
         "correct": "Z",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Carmen was written for this darker soprano cousin"
   },
   {
     "id": "MUS-9143",
@@ -2714,7 +2856,8 @@
         "correct": "T",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Munich taverns hum with its tabletop shimmer"
   },
   {
     "id": "MUS-9144",
@@ -2733,7 +2876,8 @@
         "correct": "I",
         "decoy": "H"
       }
-    }
+    },
+    "altDescription": "Latin sweetness baked right into its name"
   },
   {
     "id": "MUS-9145",
@@ -2752,7 +2896,8 @@
         "correct": "O",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "The sweet potato of wind instruments, literally nicknamed"
   },
   {
     "id": "MUS-9146",
@@ -2771,7 +2916,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Soviet physicist's accidental spy-era invention with antennas"
   },
   {
     "id": "MUS-9147",
@@ -2790,7 +2936,8 @@
         "correct": "K",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Fiddler on the Roof borrowed its bittersweet bounce"
   },
   {
     "id": "MUS-9148",
@@ -2809,7 +2956,8 @@
         "correct": "Z",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Creole French for snap beans, allegedly"
   },
   {
     "id": "MUS-9149",
@@ -2828,7 +2976,8 @@
         "correct": "A",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Coltrane and Harrison both went east chasing these"
   },
   {
     "id": "MUS-9150",
@@ -2847,6 +2996,7 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Cremona's old masters handed down this craft"
   }
 ]

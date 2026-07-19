@@ -96,6 +96,7 @@ function completeEntry(entry, seq) {
     difficulty: entry.difficulty,
     tier: entry.tier,
     description: entry.description,
+    ...(entry.altDescription !== undefined ? { altDescription: entry.altDescription } : {}),
     hints: hintsAreComplete(entry)
       ? entry.hints
       : {

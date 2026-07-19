@@ -69,6 +69,15 @@ export interface WordEntry {
   /** Legacy trio on an `elo-legacy` bank; unified four on a `unified` bank. */
   tier: BankTier;
   description: string;
+  /**
+   * A SECOND clue for the same word (owner request, 2026-07-19) — same authoring
+   * rules as `description` (5–12 words, evocative, no leak) but a different angle.
+   * Reserved for a future feature (clue shuffling or an extra help option — the
+   * consumer is deliberately undecided; nothing reads it yet). Optional because
+   * legacy (`elo-legacy`) bank entries predate it; every unified-bank entry carries
+   * one (enforced by @sabd/wordbank tests, not by this shape check).
+   */
+  altDescription?: string;
   hints: {
     /** `index` is 0-based — slot 0 is the first slot. */
     position: { index: number; letter: string };

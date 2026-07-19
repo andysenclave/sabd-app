@@ -16,7 +16,8 @@
         "correct": "P",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Treasure hunters follow its dotted lines to X"
   },
   {
     "id": "WLD-0002",
@@ -35,7 +36,8 @@
         "correct": "H",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Footprints vanish here with every incoming wave"
   },
   {
     "id": "WLD-0003",
@@ -54,7 +56,8 @@
         "correct": "T",
         "decoy": "N"
       }
-    }
+    },
+    "altDescription": "Traffic horns and neon that never sleep"
   },
   {
     "id": "WLD-0004",
@@ -73,7 +76,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Boats drift where it bends toward the sea"
   },
   {
     "id": "WLD-0005",
@@ -92,7 +96,8 @@
         "correct": "E",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Morning mist lifts off its glassy mirror"
   },
   {
     "id": "WLD-0006",
@@ -111,7 +116,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Whales sing across its deep blue miles"
   },
   {
     "id": "WLD-0007",
@@ -130,7 +136,8 @@
         "correct": "Y",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Sheltered anchorage where sailboats ride out storms"
   },
   {
     "id": "WLD-0008",
@@ -149,7 +156,8 @@
         "correct": "T",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Snow-capped giant wearing clouds like a scarf"
   },
   {
     "id": "WLD-0009",
@@ -168,7 +176,8 @@
         "correct": "D",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Castaways draw HELP in its lonely sand"
   },
   {
     "id": "WLD-0010",
@@ -187,7 +196,8 @@
         "correct": "T",
         "decoy": "M"
       }
-    }
+    },
+    "altDescription": "Camel caravans chase mirages between distant wells"
   },
   {
     "id": "WLD-0011",
@@ -206,7 +216,8 @@
         "correct": "K",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Everything below looks tiny from up here"
   },
   {
     "id": "WLD-0012",
@@ -225,7 +236,8 @@
         "correct": "S",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Lovers lock padlocks over a slow green river"
   },
   {
     "id": "WLD-0013",
@@ -244,7 +256,8 @@
         "correct": "Y",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Fog pools where the villages nestle low"
   },
   {
     "id": "WLD-0014",
@@ -263,7 +276,8 @@
         "correct": "H",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Chandni Chowk's chaos beside old red ramparts"
   },
   {
     "id": "WLD-0015",
@@ -282,7 +296,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Vines thick enough to swing a hero through"
   },
   {
     "id": "WLD-0016",
@@ -301,7 +316,8 @@
         "correct": "B",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Shakespeare's round playhouse borrowed its name"
   },
   {
     "id": "WLD-0017",
@@ -320,7 +336,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Carved gods watch pilgrims circle the sanctum"
   },
   {
     "id": "WLD-0018",
@@ -339,7 +356,8 @@
         "correct": "N",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Shout across and wait for your echo"
   },
   {
     "id": "WLD-0019",
@@ -358,7 +376,8 @@
         "correct": "G",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "One well, one school, a hundred cousins"
   },
   {
     "id": "WLD-0020",
@@ -377,7 +396,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Masts sway safe while storms rage outside"
   },
   {
     "id": "WLD-0021",
@@ -396,7 +416,8 @@
         "correct": "V",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "It naps for centuries, then redecorates violently"
   },
   {
     "id": "WLD-0022",
@@ -415,7 +436,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Lost hikers trust its trembling little arrow"
   },
   {
     "id": "WLD-0023",
@@ -434,7 +456,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Parliament sits here, so do all the protests"
   },
   {
     "id": "WLD-0024",
@@ -453,7 +476,8 @@
         "correct": "T",
         "decoy": "M"
       }
-    }
+    },
+    "altDescription": "Its unflattering photo follows you across continents"
   },
   {
     "id": "WLD-0025",
@@ -472,7 +496,8 @@
         "correct": "D",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "A Greek triangle drawn in fertile silt"
   },
   {
     "id": "WLD-0026",
@@ -491,7 +516,8 @@
         "correct": "M",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Farmers watch the horizon praying for its arrival"
   },
   {
     "id": "WLD-0027",
@@ -510,7 +536,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Green surprise the dunes keep secret"
   },
   {
     "id": "WLD-0028",
@@ -529,7 +556,8 @@
         "correct": "T",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "World leaders borrow its name for meetings"
   },
   {
     "id": "WLD-0029",
@@ -548,7 +576,8 @@
         "correct": "G",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Rope bridges sway high above its shadows"
   },
   {
     "id": "WLD-0030",
@@ -567,7 +596,8 @@
         "correct": "T",
         "decoy": "A"
       }
-    }
+    },
+    "altDescription": "Hillary and Tenzing got there first, breathless"
   },
   {
     "id": "WLD-0031",
@@ -586,7 +616,8 @@
         "correct": "P",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Superheroes wear one; explorers round one"
   },
   {
     "id": "WLD-0032",
@@ -605,7 +636,8 @@
         "correct": "H",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Once green grassland, now the ultimate emptiness"
   },
   {
     "id": "WLD-0033",
@@ -624,7 +656,8 @@
         "correct": "N",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Frank Herbert set sandworms loose on one"
   },
   {
     "id": "WLD-0034",
@@ -643,7 +676,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "It carved the valleys and birthed the fjords"
   },
   {
     "id": "WLD-0035",
@@ -662,7 +696,8 @@
         "correct": "F",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Snorkelers hover over its rainbow neighborhoods"
   },
   {
     "id": "WLD-0036",
@@ -681,7 +716,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Born in ice, ending in a thousand mouths"
   },
   {
     "id": "WLD-0037",
@@ -700,7 +736,8 @@
         "correct": "U",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Where graphs and landforms both flatten out"
   },
   {
     "id": "WLD-0038",
@@ -719,7 +756,8 @@
         "correct": "G",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "A famous movie creature crawled from one"
   },
   {
     "id": "WLD-0039",
@@ -738,7 +776,8 @@
         "correct": "Z",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Lanterns, carpets, and prices never written down"
   },
   {
     "id": "WLD-0040",
@@ -757,7 +796,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Sailors hold ceremonies when ships cross it"
   },
   {
     "id": "WLD-0041",
@@ -776,7 +816,8 @@
         "correct": "L",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Kathakali faces and pepper vines in the rain"
   },
   {
     "id": "WLD-0042",
@@ -795,7 +836,8 @@
         "correct": "R",
         "decoy": "S"
       }
-    }
+    },
+    "altDescription": "Reindeer graze lichen under a sunless winter"
   },
   {
     "id": "WLD-0043",
@@ -814,7 +856,8 @@
         "correct": "S",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Roadrunner cartoons chase across its high flats"
   },
   {
     "id": "WLD-0044",
@@ -833,7 +876,8 @@
         "correct": "R",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "A chokepoint every admiral memorizes early"
   },
   {
     "id": "WLD-0045",
@@ -852,7 +896,8 @@
         "correct": "S",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Old Faithful performs its tallest trick hourly"
   },
   {
     "id": "WLD-0046",
@@ -871,7 +916,8 @@
         "correct": "V",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Termite towers and thundering wildebeest herds"
   },
   {
     "id": "WLD-0047",
@@ -890,7 +936,8 @@
         "correct": "P",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Bison once darkened it from edge to edge"
   },
   {
     "id": "WLD-0048",
@@ -909,7 +956,8 @@
         "correct": "D",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Navigators reckon it by the noon sun"
   },
   {
     "id": "WLD-0049",
@@ -928,7 +976,8 @@
         "correct": "D",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Norwegian postcards can't resist its steep mirrors"
   },
   {
     "id": "WLD-0050",
@@ -947,7 +996,8 @@
         "correct": "P",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Yurts dot the wind-scoured Eurasian sweep"
   },
   {
     "id": "WLD-0051",
@@ -966,7 +1016,8 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Bikini's blue circle once hosted terrible tests"
   },
   {
     "id": "WLD-0052",
@@ -985,7 +1036,8 @@
         "correct": "G",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Wolf howls carry far between snowy trunks"
   },
   {
     "id": "WLD-0053",
@@ -1004,7 +1056,8 @@
         "correct": "Y",
         "decoy": "I"
       }
-    }
+    },
+    "altDescription": "Brackish nursery where young fish grow bold"
   },
   {
     "id": "WLD-0054",
@@ -1023,7 +1076,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Santorini's white villages perch on its curved rim"
   },
   {
     "id": "WLD-0055",
@@ -1042,7 +1096,8 @@
         "correct": "M",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Panama's narrow waist, eventually cut for ships"
   },
   {
     "id": "WLD-0056",
@@ -1061,7 +1116,8 @@
         "correct": "T",
         "decoy": "E"
       }
-    }
+    },
+    "altDescription": "Guilin's dreamy stone towers typify this terrain"
   },
   {
     "id": "WLD-0057",
@@ -1080,7 +1136,8 @@
         "correct": "N",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Its ridges map where ancient ice once paused"
   },
   {
     "id": "WLD-0058",
@@ -1099,7 +1156,8 @@
         "correct": "R",
         "decoy": "T"
       }
-    }
+    },
+    "altDescription": "Windmills once pumped these fields dry daily"
   },
   {
     "id": "WLD-0059",
@@ -1118,7 +1176,8 @@
         "correct": "W",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Bedouin camp in it, warily watching clouds"
   },
   {
     "id": "WLD-0060",
@@ -1137,6 +1196,7 @@
         "correct": "L",
         "decoy": "R"
       }
-    }
+    },
+    "altDescription": "Low tide reveals a walkable ribbon seaward"
   }
 ]
