@@ -13,8 +13,13 @@
  * path, where the log itself is adopted (restoreEvents) and cache + log agree.
  */
 
-import type { RoundEvent, SyncUploadResponse } from '@sabd/contracts';
-import { ROUND_EVENT_SCHEMA_VERSION, validateSyncDownResponse } from '@sabd/contracts';
+import type { ClaimCodeResponse, RoundEvent, SyncUploadResponse } from '@sabd/contracts';
+import {
+  ROUND_EVENT_SCHEMA_VERSION,
+  validateClaimCodeResponse,
+  validateClaimResponse,
+  validateSyncDownResponse,
+} from '@sabd/contracts';
 import type { SqlDriver } from '@sabd/storage';
 import { countRounds, getPlayer, getUnsynced, markSynced, restoreEvents } from '@sabd/storage';
 import { UPLOAD_BATCH_SIZE } from './config.ts';
@@ -117,6 +122,82 @@ export async function restoreIfFresh(
     );
   }
   return { restored: outcome.restored, rating: outcome.rating };
+}
+
+/**
+ * ─── Accounts & transfer-code claim (P4-T9) ──────────────────────────────────
+ * Anonymous play stays the default — these only run when the user opts into sync.
+ */
+
+/** Ask the server for a single-use transfer code to link another device. */
+export async function requestTransferCode(
+  db: SqlDriver,
+  fetchJson: FetchJson,
+  baseUrl: string,
+): Promise<ClaimCodeResponse | null> {
+  const player = getPlayer(db);
+  if (!player) return null;
+  const raw = await fetchJson(`${baseUrl}/v1/account/code`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Install-Id': player.installId },
+    body: '{}',
+  });
+  const checked = validateClaimCodeResponse(raw);
+  return checked.ok ? checked.value : null;
+}
+
+export interface ClaimSummary {
+  ok: boolean;
+  /** Designed rejection state when !ok — see ClaimResponse.reason. */
+  reason?: 'unknown_code' | 'already_claimed';
+  /** Rounds adopted from the account's merged log (on success). */
+  restored?: number;
+  rating?: number;
+}
+
+/**
+ * Redeem a transfer code: join the account and adopt its merged history.
+ *
+ * A FRESH device (the primary case — "restore my history on a new phone") restores
+ * exactly: restoreEvents inserts the account log in playedAt order, so the local
+ * insert-order replay matches the server's playedAt-order replay byte-for-byte.
+ *
+ * A device that ALREADY has local rounds still joins the account (its rounds were
+ * uploaded and are now part of it, server-side), and adopts the merged log — but its
+ * LOCAL score is replayed in insert order, which can differ from the server's
+ * playedAt order when the two histories interleave. The server snapshot stays
+ * authoritative; the next sync surfaces any divergence (uploadUnsynced's diagnostics).
+ * Reconciling that fully (rebuild the local log in playedAt order) is a follow-up.
+ */
+export async function claimAccount(
+  db: SqlDriver,
+  fetchJson: FetchJson,
+  baseUrl: string,
+  code: string,
+  now: number,
+  warn: (msg: string) => void = console.warn,
+): Promise<ClaimSummary> {
+  const player = getPlayer(db);
+  if (!player) return { ok: false };
+
+  const raw = await fetchJson(`${baseUrl}/v1/account/claim`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ installId: player.installId, code }),
+  });
+  const checked = validateClaimResponse(raw);
+  if (!checked.ok) {
+    warn(`claim: response invalid (${checked.errors[0] ?? 'unknown'})`);
+    return { ok: false };
+  }
+  const res = checked.value;
+  if (!res.ok) return res.reason ? { ok: false, reason: res.reason } : { ok: false };
+
+  const events = res.events ?? [];
+  const outcome = restoreEvents(db, events, now); // idempotent merge
+  // Push any local-only rounds so they join the account server-side.
+  await uploadUnsynced(db, fetchJson, baseUrl, now, warn);
+  return { ok: true, restored: outcome.restored, rating: outcome.rating };
 }
 
 /** One full sync pass: restore (fresh installs) then upload the queue. */

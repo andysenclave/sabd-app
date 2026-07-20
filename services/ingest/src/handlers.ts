@@ -6,7 +6,14 @@
  * beyond "these events happened" — every numeric truth is recomputed by replay.
  */
 
-import type { RoundEvent, SyncDownResponse, SyncUploadResponse } from '@sabd/contracts';
+import type {
+  ClaimCodeResponse,
+  ClaimResponse,
+  PlayerSnapshot,
+  RoundEvent,
+  SyncDownResponse,
+  SyncUploadResponse,
+} from '@sabd/contracts';
 import { validateRoundEvent } from '@sabd/contracts';
 import { configForVersion, isPointsEraConfig } from '@sabd/elo';
 import { computeSnapshot } from './replay.ts';
@@ -21,6 +28,25 @@ export type HandlerResult<T> = { ok: true; body: T } | { ok: false; error: Handl
 
 /** Hard cap per upload call — a weeks-offline backlog arrives as multiple batches. */
 export const MAX_BATCH_SIZE = 500;
+
+/** How long a transfer code stays redeemable. Short — it's a device-to-device handoff. */
+export const CLAIM_CODE_TTL_MS = 15 * 60 * 1000;
+
+/**
+ * The authoritative snapshot for an install, ACCOUNT-AWARE: when the install is bound
+ * to an account (P4-T9), the snapshot is the merged replay across every install in the
+ * account; otherwise it's the install's own events. Returns the events folded, so the
+ * restore path can adopt exactly what was scored.
+ */
+async function resolveSnapshot(
+  store: EventStore,
+  installId: string,
+  now: number,
+): Promise<{ snapshot: PlayerSnapshot; events: RoundEvent[]; accountId: string | null }> {
+  const accountId = await store.accountForInstall(installId);
+  const events = accountId ? await store.eventsForAccount(accountId) : await store.eventsForInstall(installId);
+  return { snapshot: computeSnapshot(installId, events, now, accountId), events, accountId };
+}
 
 /**
  * POST /v1/rounds — idempotent on roundId. A bad batch ENVELOPE (shape, missing
@@ -79,7 +105,7 @@ export async function handleUploadRounds(
   }
 
   const outcome = await store.insertEvents(valid, now);
-  const snapshot = computeSnapshot(installId, await store.eventsForInstall(installId), now);
+  const { snapshot } = await resolveSnapshot(store, installId, now);
 
   return {
     ok: true,
@@ -106,10 +132,86 @@ export async function handleGetMe(
   if (installId.length === 0) {
     return { ok: false, error: { status: 400, errors: ['installId required'] } };
   }
-  const events = await store.eventsForInstall(installId);
-  const snapshot = computeSnapshot(installId, events, now);
+  const { snapshot, events } = await resolveSnapshot(store, installId, now);
   return {
     ok: true,
     body: includeEvents ? { snapshot, events } : { snapshot },
   };
+}
+
+/**
+ * POST /v1/account/code — the calling install mints a single-use transfer code (P4-T9).
+ * The install's account is created lazily on first request (binding this install), so
+ * "enable sync" and "get a code" are one step. `mkAccountId`/`mkCode` are injected
+ * (crypto in the worker, deterministic in tests); `now` sets the expiry.
+ */
+export async function handleCreateCode(
+  store: EventStore,
+  installId: string,
+  now: number,
+  mkAccountId: () => string,
+  mkCode: () => string,
+): Promise<HandlerResult<ClaimCodeResponse>> {
+  if (installId.length === 0) {
+    return { ok: false, error: { status: 400, errors: ['installId required'] } };
+  }
+  const { accountId } = await store.ensureAccount(installId, mkAccountId);
+  const code = mkCode();
+  const expiresAt = now + CLAIM_CODE_TTL_MS;
+  await store.putClaimCode(code, accountId, expiresAt);
+  return { ok: true, body: { accountId, code, expiresAt } };
+}
+
+/**
+ * POST /v1/account/claim — redeem a transfer code on another install. On success the
+ * install joins the account and the response carries the merged snapshot + full log
+ * (the client adopts it via the reinstall-restore path). On failure `reason` names a
+ * designed state; `already_claimed` (F12) means this install already owns a history.
+ */
+export async function handleClaim(
+  store: EventStore,
+  body: unknown,
+  now: number,
+): Promise<HandlerResult<ClaimResponse>> {
+  if (typeof body !== 'object' || body === null || Array.isArray(body)) {
+    return { ok: false, error: { status: 400, errors: ['body: expected object'] } };
+  }
+  const b = body as Record<string, unknown>;
+  const installId = b['installId'];
+  const code = b['code'];
+  if (typeof installId !== 'string' || installId.length === 0) {
+    return { ok: false, error: { status: 400, errors: ['installId: required'] } };
+  }
+  if (typeof code !== 'string' || code.length === 0) {
+    return { ok: false, error: { status: 400, errors: ['code: required'] } };
+  }
+
+  const outcome = await store.redeemClaimCode(code, installId, now);
+  if (outcome.status !== 'ok') {
+    // A rejection is a valid 200 with ok:false — the client shows the designed state,
+    // it is not a transport error to retry.
+    return { ok: true, body: { ok: false, accountId: outcome.accountId, reason: outcome.status } };
+  }
+
+  const { snapshot, events } = await resolveSnapshot(store, installId, now);
+  return { ok: true, body: { ok: true, accountId: outcome.accountId, snapshot, events } };
+}
+
+/**
+ * DELETE /v1/account — erase the calling install's account and every install's events
+ * in it (F14). Published word-calibration aggregates are derived snapshots; deletion
+ * affects only FUTURE calibration runs (documented in the privacy note). An unbound
+ * install is a no-op success (nothing to erase).
+ */
+export async function handleDeleteAccount(
+  store: EventStore,
+  installId: string,
+): Promise<HandlerResult<{ deletedEvents: number; deletedInstalls: number }>> {
+  if (installId.length === 0) {
+    return { ok: false, error: { status: 400, errors: ['installId required'] } };
+  }
+  const accountId = await store.accountForInstall(installId);
+  if (!accountId) return { ok: true, body: { deletedEvents: 0, deletedInstalls: 0 } };
+  const result = await store.deleteAccount(accountId);
+  return { ok: true, body: result };
 }

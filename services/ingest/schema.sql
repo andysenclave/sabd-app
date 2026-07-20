@@ -29,3 +29,20 @@ CREATE TABLE IF NOT EXISTS round_event (
 
 CREATE INDEX IF NOT EXISTS idx_ingest_install ON round_event(install_id);
 CREATE INDEX IF NOT EXISTS idx_ingest_word    ON round_event(word_id);
+
+-- Accounts & transfer-code claim (P4-T9). An account owns the merged history of one
+-- or more installs; a device mints a single-use code that another device claims.
+-- Anonymous play needs no row here — an install is only recorded once it binds.
+CREATE TABLE IF NOT EXISTS install_account (
+  install_id  TEXT PRIMARY KEY,          -- one install binds to at most one account (F12)
+  account_id  TEXT NOT NULL,
+  claimed_at  INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_install_account ON install_account(account_id);
+
+CREATE TABLE IF NOT EXISTS claim_code (
+  code        TEXT PRIMARY KEY,
+  account_id  TEXT NOT NULL,
+  expires_at  INTEGER NOT NULL,
+  used_at     INTEGER                    -- NULL until redeemed; single-use
+);

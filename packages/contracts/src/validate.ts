@@ -9,6 +9,8 @@
 import type {
   BankTier,
   CategoryScore,
+  ClaimCodeResponse,
+  ClaimResponse,
   ExportFile,
   GameMode,
   PaidHint,
@@ -317,6 +319,41 @@ export function validatePlayerSnapshot(
   }
 
   return result(c, input as unknown as PlayerSnapshot);
+}
+
+export function validateClaimCodeResponse(
+  input: unknown,
+  path = 'claimCode',
+): ValidationResult<ClaimCodeResponse> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+  c.nonEmptyString(input['accountId'], `${path}.accountId`);
+  c.nonEmptyString(input['code'], `${path}.code`);
+  c.number(input['expiresAt'], `${path}.expiresAt`);
+  return result(c, input as unknown as ClaimCodeResponse);
+}
+
+export function validateClaimResponse(
+  input: unknown,
+  path = 'claim',
+): ValidationResult<ClaimResponse> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+  c.boolean(input['ok'], `${path}.ok`);
+  // accountId is string on success, null on rejection — both valid.
+  if (input['accountId'] !== null) c.nonEmptyString(input['accountId'], `${path}.accountId`);
+  if (input['snapshot'] !== undefined) {
+    const r = validatePlayerSnapshot(input['snapshot'], `${path}.snapshot`);
+    if (!r.ok) c.errors.push(...r.errors);
+  }
+  if (input['events'] !== undefined) {
+    if (!Array.isArray(input['events'])) c.fail(`${path}.events`, 'expected array');
+    else input['events'].forEach((e, i) => {
+      const r = validateRoundEvent(e, `${path}.events[${i}]`);
+      if (!r.ok) c.errors.push(...r.errors);
+    });
+  }
+  return result(c, input as unknown as ClaimResponse);
 }
 
 export function validateSyncUploadRequest(

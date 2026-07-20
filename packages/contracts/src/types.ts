@@ -267,16 +267,60 @@ export interface CategoryScore {
  */
 export interface PlayerSnapshot {
   installId: string;
+  /**
+   * The account this install is bound to, when it has claimed/created one (P4-T9).
+   * Null (or absent) for a pure-anonymous install. When set, the snapshot is the
+   * MERGED replay across every install bound to the account, not just `installId`.
+   */
+  accountId?: string | null;
   /** Engine tunables the server replayed under. */
   engineConfigVersion: string;
   /** Independent all-topics replay (own streak) — not a sum of `categories`. */
   global: { score: number; streak: number; gamesPlayed: number };
   /** One entry per topic with ≥ 1 post-epoch round on the server. */
   categories: CategoryScore[];
-  /** Total events the server holds for this install (pre- and post-epoch). */
+  /** Total events the server holds for this install (or account, when bound). */
   totalRounds: number;
   /** Epoch ms when the server computed this snapshot. */
   computedAt: number;
+}
+
+/**
+ * ─── Accounts & transfer-code claim (P4-T9) ──────────────────────────────────
+ * Anonymous play stays the default identity (the installId). An "account" is a
+ * server-minted id that OWNS the merged history of one or more installs; a device
+ * opts in by minting a single-use TRANSFER CODE and another device claims it. No
+ * third-party provider (owner decision) — the code is the bearer credential.
+ */
+
+/** `POST /v1/account/code` response — a fresh single-use transfer code. */
+export interface ClaimCodeResponse {
+  /** The account the code claims into (created lazily binding the calling install). */
+  accountId: string;
+  /** Short, human-typeable, single-use. */
+  code: string;
+  /** Epoch ms after which the code no longer redeems. */
+  expiresAt: number;
+}
+
+/** `POST /v1/account/claim` request — redeem a transfer code on another install. */
+export interface ClaimRequest {
+  installId: string;
+  code: string;
+}
+
+/**
+ * `POST /v1/account/claim` response. On success the caller adopts `events` locally
+ * (same restore path as reinstall) and holds the merged `snapshot`. On failure
+ * `reason` names a DESIGNED state — `already_claimed` is the F12 case (this install
+ * already belongs to an account; the UI offers "keep playing here or contact support").
+ */
+export interface ClaimResponse {
+  ok: boolean;
+  accountId: string | null;
+  snapshot?: PlayerSnapshot;
+  events?: RoundEvent[];
+  reason?: 'unknown_code' | 'already_claimed';
 }
 
 /**
