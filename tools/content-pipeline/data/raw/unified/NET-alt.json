@@ -1,0 +1,842 @@
+[
+  {
+    "word": "EMAIL",
+    "altDescription": "Subject line first, then regards at the bottom"
+  },
+  {
+    "word": "PHONE",
+    "altDescription": "First thing checked at dawn, last at night"
+  },
+  {
+    "word": "CALL",
+    "altDescription": "Grandma prefers this over any typed message"
+  },
+  {
+    "word": "TEXT",
+    "altDescription": "Abbreviations and autocorrect disasters in tiny bubbles"
+  },
+  {
+    "word": "APP",
+    "altDescription": "Downloaded in seconds, forgotten within a week"
+  },
+  {
+    "word": "PHOTO",
+    "altDescription": "Say cheese, then judge it immediately after"
+  },
+  {
+    "word": "VIDEO",
+    "altDescription": "Press record and let the story roll"
+  },
+  {
+    "word": "GAME",
+    "altDescription": "Winner celebrated, loser demands an instant rematch"
+  },
+  {
+    "word": "CLICK",
+    "altDescription": "Mouse button down, your decision registered instantly"
+  },
+  {
+    "word": "MUSIC",
+    "altDescription": "Playlists, albums, and the songs stuck in heads"
+  },
+  {
+    "word": "CHAT",
+    "altDescription": "Typing quickly with friends late into night"
+  },
+  {
+    "word": "SCREEN",
+    "altDescription": "Brightness cranked, eyes tired, still staring anyway"
+  },
+  {
+    "word": "CAMERA",
+    "altDescription": "Lens, shutter, and a flash for dark rooms"
+  },
+  {
+    "word": "MEME",
+    "altDescription": "Funny picture mutating as it races around"
+  },
+  {
+    "word": "TAP",
+    "altDescription": "Knock once on glass, the icon obeys"
+  },
+  {
+    "word": "SWIPE",
+    "altDescription": "One smooth drag and the card pays"
+  },
+  {
+    "word": "LINK",
+    "altDescription": "Tap it and teleport somewhere else entirely"
+  },
+  {
+    "word": "SHARE",
+    "altDescription": "The button that spreads posts far beyond friends"
+  },
+  {
+    "word": "LIKE",
+    "altDescription": "Double tap approval, counted and craved daily"
+  },
+  {
+    "word": "POST",
+    "altDescription": "Draft it, doubt it, publish it anyway"
+  },
+  {
+    "word": "SEND",
+    "altDescription": "Paper plane icon launching words across distance"
+  },
+  {
+    "word": "SAVE",
+    "altDescription": "Floppy disk icon still guarding your work"
+  },
+  {
+    "word": "SPAM",
+    "altDescription": "Congratulations, a prince needs your bank details"
+  },
+  {
+    "word": "DELETE",
+    "altDescription": "Trash can waiting hungrily for old files"
+  },
+  {
+    "word": "REPLY",
+    "altDescription": "Hitting all instead of one, office horror"
+  },
+  {
+    "word": "MENU",
+    "altDescription": "Three stacked lines waiting in the corner"
+  },
+  {
+    "word": "ICON",
+    "altDescription": "Dragged around the home grid until perfect"
+  },
+  {
+    "word": "FILE",
+    "altDescription": "Zipped, attached, misplaced, rescued from downloads folder"
+  },
+  {
+    "word": "WIFI",
+    "altDescription": "First question asked at every cafe counter"
+  },
+  {
+    "word": "FOLDER",
+    "altDescription": "Nested inside itself until nothing gets found"
+  },
+  {
+    "word": "PAGE",
+    "altDescription": "Refresh it when the loading never ends"
+  },
+  {
+    "word": "WEB",
+    "altDescription": "Countless connected corners, all one address bar away"
+  },
+  {
+    "word": "SITE",
+    "altDescription": "Homepage first, then wander deeper inside"
+  },
+  {
+    "word": "MOUSE",
+    "altDescription": "Two buttons and a wheel guiding your arrow"
+  },
+  {
+    "word": "KEYBOARD",
+    "altDescription": "Spacebar in the south, escape up north"
+  },
+  {
+    "word": "TWEET",
+    "altDescription": "Bird noises turned into global hot takes"
+  },
+  {
+    "word": "PRINTER",
+    "altDescription": "Ink cartridges cost more than the machine"
+  },
+  {
+    "word": "TABLET",
+    "altDescription": "Kids' menus and cockpits both swear by it"
+  },
+  {
+    "word": "SPEAKER",
+    "altDescription": "Bass thumping until the walls join in"
+  },
+  {
+    "word": "BATTERY",
+    "altDescription": "Overnight feeding keeps the little slab alive"
+  },
+  {
+    "word": "CHARGER",
+    "altDescription": "The wall's nightly gift to a dying phone"
+  },
+  {
+    "word": "BLOG",
+    "altDescription": "Recipe buried beneath three thousand words of childhood"
+  },
+  {
+    "word": "CABLE",
+    "altDescription": "One end never fits the port you have"
+  },
+  {
+    "word": "VOLUME",
+    "altDescription": "Rocker buttons on the side know your mood"
+  },
+  {
+    "word": "MUTE",
+    "altDescription": "Crossed-out speaker icon during the loud ads"
+  },
+  {
+    "word": "SIGNAL",
+    "altDescription": "Full strength downtown, nothing in the elevator"
+  },
+  {
+    "word": "LOGIN",
+    "altDescription": "Username, secret word, and a hopeful enter key"
+  },
+  {
+    "word": "ONLINE",
+    "altDescription": "The opposite of touching grass"
+  },
+  {
+    "word": "PROFILE",
+    "altDescription": "Bio, birthday, and carefully chosen cover shot"
+  },
+  {
+    "word": "FRIEND",
+    "altDescription": "Hundreds counted, three actually show up moving day"
+  },
+  {
+    "word": "FOLLOW",
+    "altDescription": "One tap and their world enters yours"
+  },
+  {
+    "word": "BLOCK",
+    "altDescription": "The nuclear option when muting feels too soft"
+  },
+  {
+    "word": "UNLOCK",
+    "altDescription": "Six digits or a squiggled pattern grants entry"
+  },
+  {
+    "word": "DOWNLOAD",
+    "altDescription": "Progress bar crawling toward one hundred percent"
+  },
+  {
+    "word": "EMOJI",
+    "altDescription": "Eggplants and peaches with hidden second lives"
+  },
+  {
+    "word": "GADGET",
+    "altDescription": "The drawer of abandoned blinking impulse buys"
+  },
+  {
+    "word": "UPDATE",
+    "altDescription": "Install now or remind me tomorrow, forever"
+  },
+  {
+    "word": "SEARCH",
+    "altDescription": "The little magnifying glass knows your secrets"
+  },
+  {
+    "word": "RESTART",
+    "altDescription": "The fix-everything ritual IT always prescribes first"
+  },
+  {
+    "word": "REBOOT",
+    "altDescription": "Hollywood does it to tired old franchises too"
+  },
+  {
+    "word": "MESSAGE",
+    "altDescription": "Seen at midnight, answered maybe by noon"
+  },
+  {
+    "word": "VIRAL",
+    "altDescription": "One dance clip, suddenly the whole world's copying"
+  },
+  {
+    "word": "RINGTONE",
+    "altDescription": "Custom melody announcing exactly who's interrupting dinner"
+  },
+  {
+    "word": "SNOOZE",
+    "altDescription": "Alarm silenced, dream resumed, meeting missed"
+  },
+  {
+    "word": "HEADSET",
+    "altDescription": "Call center armor, also worn for raids"
+  },
+  {
+    "word": "LAPTOP",
+    "altDescription": "Warm on your knees, fan quietly panicking"
+  },
+  {
+    "word": "DESKTOP",
+    "altDescription": "Where stray icons and old screenshots pile up"
+  },
+  {
+    "word": "MONITOR",
+    "altDescription": "Dual setup, one for work, one for pretending"
+  },
+  {
+    "word": "SCROLL",
+    "altDescription": "Wizards unroll one; insomniacs can't stop"
+  },
+  {
+    "word": "NETWORK",
+    "altDescription": "What ambitious people do at awkward mixers"
+  },
+  {
+    "word": "WIRELESS",
+    "altDescription": "Charging pads and earbuds embraced this life"
+  },
+  {
+    "word": "USERNAME",
+    "altDescription": "Every good one taken, add more numbers"
+  },
+  {
+    "word": "STATUS",
+    "altDescription": "Single, complicated, or last seen recently"
+  },
+  {
+    "word": "UPLOAD",
+    "altDescription": "Your creation leaves home for the big servers"
+  },
+  {
+    "word": "AVATAR",
+    "altDescription": "The cartoon you, braver than the real one"
+  },
+  {
+    "word": "FEED",
+    "altDescription": "The algorithm sets today's menu of distractions"
+  },
+  {
+    "word": "INBOX",
+    "altDescription": "Zero unread, the productivity guru's impossible dream"
+  },
+  {
+    "word": "STORY",
+    "altDescription": "The glowing ring begging for a tap"
+  },
+  {
+    "word": "FILTER",
+    "altDescription": "Dog ears and flower crowns on demand"
+  },
+  {
+    "word": "PASSWORD",
+    "altDescription": "Your pet's name plus the year you graduated"
+  },
+  {
+    "word": "STICKER",
+    "altDescription": "Badges of identity plastered across laptop lids"
+  },
+  {
+    "word": "CAPTION",
+    "altDescription": "Three drafts later, still just an emoji"
+  },
+  {
+    "word": "COMMENT",
+    "altDescription": "Don't read them, everyone says, reading them"
+  },
+  {
+    "word": "TAG",
+    "altDescription": "You're it, now the notification says so"
+  },
+  {
+    "word": "TREND",
+    "altDescription": "Charts climbing today, cringe compilation next year"
+  },
+  {
+    "word": "STREAM",
+    "altDescription": "A brook, or a million Friday night binges"
+  },
+  {
+    "word": "CHANNEL",
+    "altDescription": "Surfing them once required only a couch"
+  },
+  {
+    "word": "PLAYLIST",
+    "altDescription": "Hours curating the perfect order, nobody notices"
+  },
+  {
+    "word": "EBOOK",
+    "altDescription": "Turning pages with a tap, no paper cuts"
+  },
+  {
+    "word": "POPUP",
+    "altDescription": "Close button hiding where fingers can't find it"
+  },
+  {
+    "word": "BACKUP",
+    "altDescription": "Everything twice, because hard drives betray eventually"
+  },
+  {
+    "word": "CURSOR",
+    "altDescription": "Blinking line patiently awaiting your next thought"
+  },
+  {
+    "word": "SYNC",
+    "altDescription": "Boy bands did it; now calendars do"
+  },
+  {
+    "word": "VIRUS",
+    "altDescription": "One sketchy download, now everything runs strangely"
+  },
+  {
+    "word": "SCAM",
+    "altDescription": "Your uncle's crypto opportunity, definitely legitimate"
+  },
+  {
+    "word": "HACK",
+    "altDescription": "Clever kitchen trick, or a midnight intrusion"
+  },
+  {
+    "word": "GHOST",
+    "altDescription": "White sheet, two eyeholes, boo"
+  },
+  {
+    "word": "WEBCAM",
+    "altDescription": "Green light glowing, better fix your hair"
+  },
+  {
+    "word": "GLITCH",
+    "altDescription": "Walking through walls was never the plan"
+  },
+  {
+    "word": "LAG",
+    "altDescription": "Blaming it after every lost match, always"
+  },
+  {
+    "word": "PING",
+    "altDescription": "That sharp little sound demanding your attention"
+  },
+  {
+    "word": "CODE",
+    "altDescription": "Semicolons missing, everything on fire at midnight"
+  },
+  {
+    "word": "SELFIE",
+    "altDescription": "Duck lips and a bathroom mirror classic"
+  },
+  {
+    "word": "CODER",
+    "altDescription": "Dark mode devotee typing curly brackets all day"
+  },
+  {
+    "word": "PIXEL",
+    "altDescription": "Zoom far enough and everything becomes blocks"
+  },
+  {
+    "word": "GAMER",
+    "altDescription": "Rage quits, victory dances, RGB everything"
+  },
+  {
+    "word": "STREAK",
+    "altDescription": "Two hundred days strong, vacation threatens everything"
+  },
+  {
+    "word": "TROLL",
+    "altDescription": "Lives under bridges, or in reply sections"
+  },
+  {
+    "word": "SPOILER",
+    "altDescription": "Car wing, or the ruined season finale"
+  },
+  {
+    "word": "VLOG",
+    "altDescription": "Good morning guys, welcome back to my channel"
+  },
+  {
+    "word": "WIDGET",
+    "altDescription": "Weather and clocks squatting rent-free beside icons"
+  },
+  {
+    "word": "GIF",
+    "altDescription": "The pronunciation debate that never dies"
+  },
+  {
+    "word": "UNBOXING",
+    "altDescription": "Crinkling plastic, gasps, and affiliate links below"
+  },
+  {
+    "word": "DRONE",
+    "altDescription": "Four propellers and a nervous new pilot"
+  },
+  {
+    "word": "BROWSER",
+    "altDescription": "Chrome, Firefox, and the one nobody chooses"
+  },
+  {
+    "word": "DEBUG",
+    "altDescription": "Print statements everywhere, dignity long gone"
+  },
+  {
+    "word": "SCRIPT",
+    "altDescription": "Actors follow one; so does your automation"
+  },
+  {
+    "word": "CLOUD",
+    "altDescription": "Fluffy in the sky, pricey by the gigabyte"
+  },
+  {
+    "word": "PLUGIN",
+    "altDescription": "Guitar pedals and browser extras, both snap in"
+  },
+  {
+    "word": "DOMAIN",
+    "altDescription": "A king's territory, or your website's address"
+  },
+  {
+    "word": "HOSTING",
+    "altDescription": "Monthly bill that keeps the blog breathing"
+  },
+  {
+    "word": "PODCAST",
+    "altDescription": "Everyone you know secretly wants to start one"
+  },
+  {
+    "word": "DATABASE",
+    "altDescription": "Tables joined together, answering queries all night"
+  },
+  {
+    "word": "HACKER",
+    "altDescription": "White hats defend, black hats break in"
+  },
+  {
+    "word": "TERMINAL",
+    "altDescription": "Airport gates or green text, both departures"
+  },
+  {
+    "word": "CONSOLE",
+    "altDescription": "Comfort a friend, or boot up adventures"
+  },
+  {
+    "word": "HASHTAG",
+    "altDescription": "Ironic ones now longer than the caption itself"
+  },
+  {
+    "word": "JOYSTICK",
+    "altDescription": "Flight simulators and claw machines both demand one"
+  },
+  {
+    "word": "ROUTER",
+    "altDescription": "The home's little traffic cop for packets"
+  },
+  {
+    "word": "EMULATOR",
+    "altDescription": "Legally gray portal back to 1998 afternoons"
+  },
+  {
+    "word": "STREAMER",
+    "altDescription": "Don't forget to like and subscribe, chat"
+  },
+  {
+    "word": "COOKIE",
+    "altDescription": "Grandma bakes them; browsers quietly collect them"
+  },
+  {
+    "word": "CHATBOT",
+    "altDescription": "Customer service that never needs a lunch break"
+  },
+  {
+    "word": "NEWBIE",
+    "altDescription": "Asks the question the FAQ answered twice"
+  },
+  {
+    "word": "FORUM",
+    "altDescription": "Romans gathered in one; nerds still do"
+  },
+  {
+    "word": "UPVOTE",
+    "altDescription": "Karma rises when the crowd approves loudly"
+  },
+  {
+    "word": "FIREWALL",
+    "altDescription": "Why the office computer can't reach fun sites"
+  },
+  {
+    "word": "DEEPFAKE",
+    "altDescription": "Trust your eyes less every passing year"
+  },
+  {
+    "word": "CRYPTO",
+    "altDescription": "To the moon, they promised, before winter"
+  },
+  {
+    "word": "SERVER",
+    "altDescription": "Restaurant staff, or the machine behind every website"
+  },
+  {
+    "word": "BITCOIN",
+    "altDescription": "Pizza bought in 2010, worth millions now"
+  },
+  {
+    "word": "TRENDING",
+    "altDescription": "Today's number one, complete with tiny flame icon"
+  },
+  {
+    "word": "PAYWALL",
+    "altDescription": "Subscribe to continue reading what curiosity started"
+  },
+  {
+    "word": "MODEM",
+    "altDescription": "Translates phone lines into nineties internet magic"
+  },
+  {
+    "word": "WEBINAR",
+    "altDescription": "Mandatory attendance, cameras off, minds elsewhere"
+  },
+  {
+    "word": "INTRANET",
+    "altDescription": "Company announcements nobody reads, safely walled inside"
+  },
+  {
+    "word": "MALWARE",
+    "altDescription": "Your machine slows, strange popups bloom overnight"
+  },
+  {
+    "word": "PROXY",
+    "altDescription": "Voting by it, or browsing behind it"
+  },
+  {
+    "word": "THREAD",
+    "altDescription": "Needles pull it; arguments unravel it online"
+  },
+  {
+    "word": "FIBER",
+    "altDescription": "Breakfast cereals brag about it; ISPs too"
+  },
+  {
+    "word": "ETHERNET",
+    "altDescription": "Plugged straight in, latency drops, gamers rejoice"
+  },
+  {
+    "word": "STARTUP",
+    "altDescription": "Ping pong tables, free snacks, no profits"
+  },
+  {
+    "word": "TROJAN",
+    "altDescription": "Looks like a helpful download, absolutely isn't"
+  },
+  {
+    "word": "HOTSPOT",
+    "altDescription": "Your data plan, generously feeding nearby laptops"
+  },
+  {
+    "word": "ADWARE",
+    "altDescription": "The toolbar you never installed, selling things loudly"
+  },
+  {
+    "word": "PHISHING",
+    "altDescription": "Dear valued customer, please verify urgently, sincerely, crooks"
+  },
+  {
+    "word": "BREACH",
+    "altDescription": "Whales do it gracefully; databases do it disastrously"
+  },
+  {
+    "word": "EXPLOIT",
+    "altDescription": "Speedrunners celebrate one; security teams patch one"
+  },
+  {
+    "word": "CAPTCHA",
+    "altDescription": "Robots fail it; tired humans nearly do"
+  },
+  {
+    "word": "PATCH",
+    "altDescription": "Tuesday's gift from Microsoft, reboot required after"
+  },
+  {
+    "word": "TOKEN",
+    "altDescription": "Arcade currency, or your session's secret pass"
+  },
+  {
+    "word": "CATFISH",
+    "altDescription": "Whiskered bottom-feeder, or your online sweetheart's lie"
+  },
+  {
+    "word": "SANDBOX",
+    "altDescription": "Toddlers and beta testers both dig here"
+  },
+  {
+    "word": "FIRMWARE",
+    "altDescription": "Neither hard nor soft, quietly running everything"
+  },
+  {
+    "word": "PIRACY",
+    "altDescription": "You wouldn't steal a car, the ads warned"
+  },
+  {
+    "word": "DONGLE",
+    "altDescription": "Lost it again; the projector waits smugly"
+  },
+  {
+    "word": "LURKER",
+    "altDescription": "Knows all the drama, contributes exactly nothing"
+  },
+  {
+    "word": "STYLUS",
+    "altDescription": "Artists sketch with it; ancients wrote with it"
+  },
+  {
+    "word": "TRACKPAD",
+    "altDescription": "Pinch to zoom, two fingers to scroll"
+  },
+  {
+    "word": "BUFFER",
+    "altDescription": "Polishing wheel, or the pause before playback"
+  },
+  {
+    "word": "CHIPSET",
+    "altDescription": "Silicon middle management between processor and everything else"
+  },
+  {
+    "word": "COMPILER",
+    "altDescription": "It found forty errors; you wrote ten lines"
+  },
+  {
+    "word": "ENCRYPT",
+    "altDescription": "Plain words go in, gibberish comes out"
+  },
+  {
+    "word": "COMMIT",
+    "altDescription": "Relationships and repositories both demand this courage"
+  },
+  {
+    "word": "MERGE",
+    "altDescription": "Highway lanes do it; code conflicts follow"
+  },
+  {
+    "word": "BACKEND",
+    "altDescription": "Where the real logic hides from pretty buttons"
+  },
+  {
+    "word": "SPYWARE",
+    "altDescription": "Free download, hidden passenger, your habits harvested"
+  },
+  {
+    "word": "FRONTEND",
+    "altDescription": "CSS tantrums and pixel-perfect button arguments"
+  },
+  {
+    "word": "CIPHER",
+    "altDescription": "Caesar's old trick, still guarding messages"
+  },
+  {
+    "word": "PACKET",
+    "altDescription": "Ketchup arrives in one; your data too"
+  },
+  {
+    "word": "HONEYPOT",
+    "altDescription": "Winnie's favorite, repurposed for trapping digital thieves"
+  },
+  {
+    "word": "PROTOCOL",
+    "altDescription": "Diplomats follow one; so does every handshake online"
+  },
+  {
+    "word": "SPOOF",
+    "altDescription": "A parody movie, or that fake bank number calling"
+  },
+  {
+    "word": "CACHE",
+    "altDescription": "Squirrels keep one; so does your browser"
+  },
+  {
+    "word": "GRIEF",
+    "altDescription": "Sorrow, or sabotage inflicted on teammates"
+  },
+  {
+    "word": "LATENCY",
+    "altDescription": "Milliseconds that decide whether your shot registered"
+  },
+  {
+    "word": "SALT",
+    "altDescription": "Seasons your fries, strengthens your stored secrets"
+  },
+  {
+    "word": "GEOTAG",
+    "altDescription": "Vacation posts kindly informing burglars you're away"
+  },
+  {
+    "word": "HASH",
+    "altDescription": "Breakfast potatoes, or passwords mashed beyond recognition"
+  },
+  {
+    "word": "KERNEL",
+    "altDescription": "Corn has one; so does Linux"
+  },
+  {
+    "word": "CHECKSUM",
+    "altDescription": "One flipped bit and this little fingerprint disagrees"
+  },
+  {
+    "word": "PARITY",
+    "altDescription": "Even or odd keeps the memory honest"
+  },
+  {
+    "word": "THROTTLE",
+    "altDescription": "Motorcycle grip magic, also your ISP's mean trick"
+  },
+  {
+    "word": "NIBBLE",
+    "altDescription": "Four bits, or a mouse's tiny bite"
+  },
+  {
+    "word": "BOTNET",
+    "altDescription": "Your smart fridge might secretly serve evil"
+  },
+  {
+    "word": "LOSSY",
+    "altDescription": "Why that meme looks worse every repost"
+  },
+  {
+    "word": "DAEMON",
+    "altDescription": "Pronounced demon, summoned at boot, entirely benign"
+  },
+  {
+    "word": "RASTER",
+    "altDescription": "Scan lines marching across old CRT glass"
+  },
+  {
+    "word": "DITHER",
+    "altDescription": "To hesitate, or to fake smooth gradients"
+  },
+  {
+    "word": "RICKROLL",
+    "altDescription": "The internet's most beloved musical ambush"
+  },
+  {
+    "word": "VOXEL",
+    "altDescription": "Minecraft worlds stack these tiny cubes skyward"
+  },
+  {
+    "word": "LAMBDA",
+    "altDescription": "Anonymous functions and Half-Life's iconic logo"
+  },
+  {
+    "word": "GOPHER",
+    "altDescription": "Caddyshack's nemesis, also Minnesota's proud mascot"
+  },
+  {
+    "word": "SUDO",
+    "altDescription": "Make me a sandwich, said with authority"
+  },
+  {
+    "word": "USENET",
+    "altDescription": "Where September never ended, old-timers sigh"
+  },
+  {
+    "word": "PHREAK",
+    "altDescription": "Blue boxes built by future Apple founders"
+  },
+  {
+    "word": "WAREZ",
+    "altDescription": "Misspelled loot from the scene's FTP dungeons"
+  },
+  {
+    "word": "TORRENT",
+    "altDescription": "A violent downpour, or seeding until dawn"
+  },
+  {
+    "word": "GREP",
+    "altDescription": "Needle found, haystack searched in milliseconds flat"
+  },
+  {
+    "word": "REGEX",
+    "altDescription": "Now you have two problems, the saying goes"
+  }
+]

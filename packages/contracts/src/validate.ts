@@ -7,7 +7,10 @@
  */
 
 import type {
+  BankTier,
   CategoryScore,
+  ClaimCodeResponse,
+  ClaimResponse,
   ExportFile,
   GameMode,
   PaidHint,
@@ -18,6 +21,7 @@ import type {
   SyncUploadRequest,
   SyncUploadResponse,
   TopicId,
+  UnifiedTier,
   WordEntry,
   WordSlice,
   WordSliceManifest,
@@ -26,6 +30,10 @@ import type {
 } from './types.ts';
 
 export const WORD_TIERS: readonly WordTier[] = ['low', 'mid', 'high'];
+/** Phase 4: the unified (0–500) scale's four tiers, ascending. */
+export const UNIFIED_TIERS: readonly UnifiedTier[] = ['veryEasy', 'easy', 'medium', 'hard'];
+/** Every tier name a bank entry may carry, across both scales. */
+export const BANK_TIERS: readonly BankTier[] = [...WORD_TIERS, ...UNIFIED_TIERS];
 export const PAID_HINTS: readonly PaidHint[] = ['position', 'letters'];
 export const GAME_MODES: readonly GameMode[] = ['solo', '1v1'];
 export const TOPIC_IDS: readonly TopicId[] = [
@@ -129,8 +137,14 @@ export function validateWordEntry(input: unknown, path = 'wordEntry'): Validatio
   c.nonEmptyString(input['id'], `${path}.id`);
   c.nonEmptyString(input['word'], `${path}.word`);
   c.nonEmptyString(input['topic'], `${path}.topic`);
-  c.oneOf(input['tier'], WORD_TIERS, `${path}.tier`);
+  // Either scale's vocabulary — the carrying bank/slice declares which (BankScale);
+  // per-scale band coherence is the content pipeline's job, not this shape check.
+  c.oneOf(input['tier'], BANK_TIERS, `${path}.tier`);
   c.nonEmptyString(input['description'], `${path}.description`);
+  // Optional second clue (legacy entries predate it); when present it must be real.
+  if (input['altDescription'] !== undefined) {
+    c.nonEmptyString(input['altDescription'], `${path}.altDescription`);
+  }
 
   const lengthOk = c.integer(input['length'], `${path}.length`);
   c.number(input['difficulty'], `${path}.difficulty`);
@@ -307,6 +321,41 @@ export function validatePlayerSnapshot(
   return result(c, input as unknown as PlayerSnapshot);
 }
 
+export function validateClaimCodeResponse(
+  input: unknown,
+  path = 'claimCode',
+): ValidationResult<ClaimCodeResponse> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+  c.nonEmptyString(input['accountId'], `${path}.accountId`);
+  c.nonEmptyString(input['code'], `${path}.code`);
+  c.number(input['expiresAt'], `${path}.expiresAt`);
+  return result(c, input as unknown as ClaimCodeResponse);
+}
+
+export function validateClaimResponse(
+  input: unknown,
+  path = 'claim',
+): ValidationResult<ClaimResponse> {
+  const c = new Checker();
+  if (!c.isObject(input, path)) return { ok: false, errors: [...c.errors] };
+  c.boolean(input['ok'], `${path}.ok`);
+  // accountId is string on success, null on rejection — both valid.
+  if (input['accountId'] !== null) c.nonEmptyString(input['accountId'], `${path}.accountId`);
+  if (input['snapshot'] !== undefined) {
+    const r = validatePlayerSnapshot(input['snapshot'], `${path}.snapshot`);
+    if (!r.ok) c.errors.push(...r.errors);
+  }
+  if (input['events'] !== undefined) {
+    if (!Array.isArray(input['events'])) c.fail(`${path}.events`, 'expected array');
+    else input['events'].forEach((e, i) => {
+      const r = validateRoundEvent(e, `${path}.events[${i}]`);
+      if (!r.ok) c.errors.push(...r.errors);
+    });
+  }
+  return result(c, input as unknown as ClaimResponse);
+}
+
 export function validateSyncUploadRequest(
   input: unknown,
   path = 'syncUpload',
@@ -395,7 +444,7 @@ export function validateWordSliceRef(
 
   c.oneOf(input['topicId'], TOPIC_IDS, `${path}.topicId`);
   c.nonEmptyString(input['topic'], `${path}.topic`);
-  c.oneOf(input['tier'], WORD_TIERS, `${path}.tier`);
+  c.oneOf(input['tier'], BANK_TIERS, `${path}.tier`);
   nonNegativeInteger(c, input['sliceVersion'], `${path}.sliceVersion`);
   c.nonEmptyString(input['url'], `${path}.url`);
   nonNegativeInteger(c, input['wordCount'], `${path}.wordCount`);
@@ -448,7 +497,7 @@ export function validateWordSlice(input: unknown, path = 'slice'): ValidationRes
   c.nonEmptyString(input['wordBankVersion'], `${path}.wordBankVersion`);
   c.oneOf(input['topicId'], TOPIC_IDS, `${path}.topicId`);
   c.nonEmptyString(input['topic'], `${path}.topic`);
-  c.oneOf(input['tier'], WORD_TIERS, `${path}.tier`);
+  c.oneOf(input['tier'], BANK_TIERS, `${path}.tier`);
   nonNegativeInteger(c, input['sliceVersion'], `${path}.sliceVersion`);
 
   const words = input['words'];

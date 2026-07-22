@@ -327,6 +327,9 @@ importers:
 
   tools/content-pipeline:
     devDependencies:
+      '@sabd/elo':
+        specifier: workspace:*
+        version: link:../../packages/elo
       word-list:
         specifier: ^4.0.0
         version: 4.1.0

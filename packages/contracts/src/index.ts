@@ -5,7 +5,12 @@
  */
 
 export type {
+  BankScale,
+  BankTier,
   CategoryScore,
+  ClaimCodeResponse,
+  ClaimRequest,
+  ClaimResponse,
   ExportFile,
   GameMode,
   HintId,
@@ -19,6 +24,7 @@ export type {
   SyncUploadRequest,
   SyncUploadResponse,
   TopicId,
+  UnifiedTier,
   WordEntry,
   WordSlice,
   WordSliceManifest,
@@ -35,13 +41,17 @@ export {
 } from './types.ts';
 
 export {
+  BANK_TIERS,
   GAME_MODES,
   PAID_HINTS,
   TOPIC_IDS,
+  UNIFIED_TIERS,
   WORD_TIERS,
   isRoundEvent,
   isWordEntry,
   validateCategoryScore,
+  validateClaimCodeResponse,
+  validateClaimResponse,
   validateExportFile,
   validatePlayerSnapshot,
   validateRoundEvent,

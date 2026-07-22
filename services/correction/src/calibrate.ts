@@ -1,58 +1,82 @@
 /**
- * Word self-calibration (T16 — REBUILD, points-era design).
+ * Word self-calibration (P4-T7 — confidence-weighted rebuild).
  *
- * The Elo-era `updateWordRating` ran the Elo formula from the word's side; the
- * points engine has no expectedScore, so calibration is redesigned around the
- * signal we actually have: OBSERVED SOLVE RATE vs the TARGET solve rate for the
+ * The signal is OBSERVED first-attempt solve rate vs the TARGET solve rate for the
  * word's tier. A word solved far more often than its tier's target is easier than
- * rated (difficulty drifts down), and vice versa. Nudges are small (maxNudge per
- * weekly run) so a word converges over several runs — "corrections move ratings
- * slowly".
+ * rated (difficulty drifts down), and vice versa. What Phase 4 changed:
  *
- * ⚠️ Scoring-coupling rule (architect Lane 5, critical):
- *   difficulty → tier → base pay. So:
- *   1. TIER-AT-PLAY IS FROZEN — scoring always uses the event's wordRatingAtPlay,
- *      never today's difficulty. Historical scores never shift (replay test).
- *   2. A nudge that would CROSS a tier boundary is NEVER auto-applied — it is
- *      flagged for human review (it changes what future rounds pay).
- *   In-lane reading of "re-categorization": tier crossings (the scoring-visible
- *   change). Within-tier nudges auto-apply into the next bank PATCH version.
+ *   correction magnitude SCALES WITH SAMPLE SIZE, from 5 players up.
+ *     weight = min(1, uniquePlayers / SATURATION)   // 5 → 0.025, 200 → 1.0
+ *     delta  = weight * gain * (target − observed)
+ *
+ * so a word with 5 players moves ~1–2 points, and one with 200 moves decisively —
+ * replacing the old hard 30-attempt gate that did nothing until 30 then jumped.
+ *
+ * The guards (architect PART F):
+ *  - F8: `weight` counts UNIQUE PLAYERS, not raw attempts — one grinder can't move a
+ *    word alone.
+ *  - F9: `observed` is the FIRST-attempt solve rate — a retry after a fail has
+ *    answer-adjacent knowledge and is excluded from the signal.
+ *  - F10: `maxNudge` bounds per-run movement below a tier width, and a nudge that
+ *    would CROSS a tier boundary is never auto-applied (flagged for human review), so
+ *    a word cannot oscillate across a boundary run after run.
+ *  - F11: pre-3.0.0 evidence is dropped upstream (`calibrationEvents`).
+ *  - Confounding guard: `weight` is further scaled by how broad the attempting
+ *    players' score range is — a word tried only by a narrow band gives weak evidence.
+ *
+ * ⚠️ Scoring-coupling rule (unchanged): TIER-AT-PLAY IS FROZEN. Scoring always uses the
+ * event's wordRatingAtPlay, never today's difficulty (proven by the replay freeze
+ * test). A nudge that crosses a tier boundary is flagged, never auto-applied.
  */
 
-import type { WordEntry, WordTier } from '@sabd/contracts';
+import type { BankTier, WordEntry } from '@sabd/contracts';
 import { defaultConfig, tierForDifficulty } from '@sabd/elo';
 import { NOISE_FLOOR, type WordStats } from './aggregate.ts';
 
 export interface CalibrationConfig {
-  /** Target solve rate per tier — what "correctly rated" looks like. */
-  readonly targetSolveRate: Readonly<Record<WordTier, number>>;
-  /** Rating points of nudge per 1.0 of solve-rate error. */
+  /** Target first-attempt solve rate per tier — what "correctly rated" looks like. */
+  readonly targetSolveRate: Readonly<Partial<Record<BankTier, number>>>;
+  /** Rating points of nudge per 1.0 of solve-rate error at FULL confidence. */
   readonly gain: number;
-  /** Max |nudge| per run — keeps corrections slow. */
+  /** Unique players at which the confidence weight saturates to 1.0. */
+  readonly saturation: number;
+  /** Max |nudge| per run — kept below a tier width so corrections stay slow (F10). */
   readonly maxNudge: number;
-  /** Attempts below this are noise; never re-rated. */
-  readonly noiseFloor: number;
+  /** Minimum DISTINCT players before a word is re-rated at all (F8). */
+  readonly minPlayers: number;
+  /**
+   * Player-score range (max−min) at which the confounding guard reaches full weight;
+   * narrower evidence is gently discounted (never below `spreadFloor`).
+   */
+  readonly spreadRef: number;
+  /** Floor on the confounding-guard multiplier so narrow-but-real evidence still counts. */
+  readonly spreadFloor: number;
 }
 
 export const defaultCalibration: CalibrationConfig = {
-  // A low word should be solved by most (it greets score-0 players); high words
-  // should genuinely resist. Between the tiers the targets step down.
-  targetSolveRate: { low: 0.8, mid: 0.6, high: 0.4 },
-  gain: 400,
-  maxNudge: 50,
-  noiseFloor: NOISE_FLOOR,
+  // Unified four-tier scale (0–500). A veryEasy word should be solved by nearly
+  // everyone (it greets score-0 players); hard words genuinely resist.
+  targetSolveRate: { veryEasy: 0.85, easy: 0.72, medium: 0.55, hard: 0.4 },
+  gain: 100,
+  saturation: 200,
+  maxNudge: 25,
+  minPlayers: NOISE_FLOOR,
+  spreadRef: 60,
+  spreadFloor: 0.5,
 };
 
 export interface WordNudge {
   wordId: string;
   word: string;
   topic: string;
-  attempts: number;
+  uniquePlayers: number;
   solveRate: number;
+  /** The confidence weight applied this run (uniquePlayers × spread guard) [0,1]. */
+  weight: number;
   oldDifficulty: number;
   newDifficulty: number;
-  oldTier: WordTier;
-  newTier: WordTier;
+  oldTier: BankTier;
+  newTier: BankTier;
 }
 
 export interface CalibrationProposal {
@@ -60,8 +84,17 @@ export interface CalibrationProposal {
   autoNudges: WordNudge[];
   /** Tier crossings — scoring-visible; require human approval (T17). */
   flagged: WordNudge[];
-  /** Words with data but below the noise floor (report only). */
+  /** Words with data but below the minimum-players floor (report only). */
   belowFloor: number;
+}
+
+const clamp = (x: number, lo: number, hi: number): number => Math.min(hi, Math.max(lo, x));
+
+/** The confidence weight for a word's evidence: sample size × breadth, in [0,1]. */
+export function confidenceWeight(stats: WordStats, config: CalibrationConfig): number {
+  const sample = Math.min(1, stats.uniquePlayers / config.saturation);
+  const breadth = clamp(stats.playerScoreSpread / config.spreadRef, config.spreadFloor, 1);
+  return sample * breadth;
 }
 
 export function proposeCorrections(
@@ -75,16 +108,19 @@ export function proposeCorrections(
   for (const s of stats) {
     const word = byId.get(s.wordId);
     if (!word) continue; // event for a word no longer in the bank — nothing to rate
-    if (s.attempts < config.noiseFloor) {
+    if (s.uniquePlayers < config.minPlayers) {
       proposal.belowFloor++;
       continue;
     }
 
     const oldTier = tierForDifficulty(word.difficulty, defaultConfig);
     const target = config.targetSolveRate[oldTier];
-    // Solved more than target → easier than rated → difficulty moves DOWN.
-    const raw = config.gain * (target - s.solveRate);
-    const nudge = Math.max(-config.maxNudge, Math.min(config.maxNudge, Math.round(raw)));
+    if (target === undefined) continue; // tier with no configured target — skip
+
+    const weight = confidenceWeight(s, config);
+    // First-attempt signal (F9). Solved more than target → easier than rated → DOWN.
+    const raw = weight * config.gain * (target - s.firstAttemptSolveRate);
+    const nudge = clamp(Math.round(raw), -config.maxNudge, config.maxNudge);
     if (nudge === 0) continue;
 
     const newDifficulty = word.difficulty + nudge;
@@ -93,8 +129,9 @@ export function proposeCorrections(
       wordId: word.id,
       word: word.word,
       topic: word.topic,
-      attempts: s.attempts,
-      solveRate: s.solveRate,
+      uniquePlayers: s.uniquePlayers,
+      solveRate: s.firstAttemptSolveRate,
+      weight,
       oldDifficulty: word.difficulty,
       newDifficulty,
       oldTier,

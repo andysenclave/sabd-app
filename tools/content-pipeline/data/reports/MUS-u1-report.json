@@ -1,0 +1,1080 @@
+{
+  "input": "data/raw/unified/MUS-u1.json",
+  "scale": "unified",
+  "generatedAt": "2026-07-19T09:37:30.641Z",
+  "apiFallback": "enabled",
+  "totals": {
+    "entries": 150,
+    "passed": 150,
+    "rejected": 0,
+    "review": 0
+  },
+  "tierSplit": {
+    "expected": {
+      "veryEasy": 45,
+      "easy": 45,
+      "medium": 40,
+      "hard": 20
+    },
+    "actual": {
+      "veryEasy": 45,
+      "easy": 45,
+      "medium": 40,
+      "hard": 20
+    },
+    "ok": true
+  },
+  "failuresByRule": {},
+  "entries": [
+    {
+      "id": "MUS-9001",
+      "word": "SONG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9002",
+      "word": "SING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9003",
+      "word": "DANCE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9004",
+      "word": "ROCK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9005",
+      "word": "RADIO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9006",
+      "word": "VOICE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9007",
+      "word": "BELL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9008",
+      "word": "HORN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9009",
+      "word": "CLAP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9010",
+      "word": "HUM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9011",
+      "word": "MIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9012",
+      "word": "SPEAKER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9013",
+      "word": "VOLUME",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9014",
+      "word": "RECORD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9015",
+      "word": "DISCO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9016",
+      "word": "METAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9017",
+      "word": "PUNK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9018",
+      "word": "BLUES",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9019",
+      "word": "FOLK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9020",
+      "word": "KARAOKE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9021",
+      "word": "RHYTHM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9022",
+      "word": "TRUMPET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9023",
+      "word": "WHISTLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9024",
+      "word": "ORGAN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9025",
+      "word": "HARP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9026",
+      "word": "STEREO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9027",
+      "word": "PLAYLIST",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9028",
+      "word": "REMIX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9029",
+      "word": "HIT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9030",
+      "word": "TOUR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9031",
+      "word": "GIG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9032",
+      "word": "AMP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9033",
+      "word": "DIVA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9034",
+      "word": "LULLABY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9035",
+      "word": "JINGLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9036",
+      "word": "TUBA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9037",
+      "word": "CHANT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9038",
+      "word": "HARMONY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9039",
+      "word": "TANGO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9040",
+      "word": "ECHO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9041",
+      "word": "HYMN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9042",
+      "word": "STRUM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9043",
+      "word": "KAZOO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9044",
+      "word": "SAX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9045",
+      "word": "GONG",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9046",
+      "word": "VINYL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9047",
+      "word": "TRACK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9048",
+      "word": "LYRIC",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9049",
+      "word": "VERSE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9050",
+      "word": "AUDIO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9051",
+      "word": "DEMO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9052",
+      "word": "STUDIO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9053",
+      "word": "GENRE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9054",
+      "word": "KEY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9055",
+      "word": "TONE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9056",
+      "word": "PITCH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9057",
+      "word": "CHORD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9058",
+      "word": "SCALE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9059",
+      "word": "SOUL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9060",
+      "word": "FUNK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9061",
+      "word": "GOSPEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9062",
+      "word": "TECHNO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9063",
+      "word": "INDIE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9064",
+      "word": "SWING",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9065",
+      "word": "CAROL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9066",
+      "word": "SALSA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9067",
+      "word": "SAMBA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9068",
+      "word": "CONGA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9069",
+      "word": "POLKA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9070",
+      "word": "YODEL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9071",
+      "word": "FIDDLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9072",
+      "word": "UKULELE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9073",
+      "word": "BUGLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9074",
+      "word": "OBOE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9075",
+      "word": "TROMBONE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9076",
+      "word": "CLARINET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9077",
+      "word": "SNARE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9078",
+      "word": "CYMBAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9079",
+      "word": "BONGO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9080",
+      "word": "COWBELL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9081",
+      "word": "TRIANGLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9082",
+      "word": "MARACA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9083",
+      "word": "RECORDER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9084",
+      "word": "KEYBOARD",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9085",
+      "word": "SYNTH",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9086",
+      "word": "BOOMBOX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9087",
+      "word": "JUKEBOX",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9088",
+      "word": "TRIO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9089",
+      "word": "HOOK",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9090",
+      "word": "INTRO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9091",
+      "word": "SHARP",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9092",
+      "word": "FLAT",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9093",
+      "word": "MAJOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9094",
+      "word": "MINOR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9095",
+      "word": "ALTO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9096",
+      "word": "TREBLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9097",
+      "word": "VIOLA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9098",
+      "word": "PICCOLO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9099",
+      "word": "SITAR",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9100",
+      "word": "MANDOLIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9101",
+      "word": "BAGPIPE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9102",
+      "word": "LUTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9103",
+      "word": "LYRE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9104",
+      "word": "MARIMBA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9105",
+      "word": "TIMPANI",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9106",
+      "word": "CASTANET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9107",
+      "word": "CORNET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9108",
+      "word": "ARIA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9109",
+      "word": "OPUS",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9110",
+      "word": "FORTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9111",
+      "word": "ADAGIO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9112",
+      "word": "ALLEGRO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9113",
+      "word": "PRESTO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9114",
+      "word": "MINUET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9115",
+      "word": "PRELUDE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9116",
+      "word": "OVERTURE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9117",
+      "word": "CONCERTO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9118",
+      "word": "RHAPSODY",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9119",
+      "word": "NOCTURNE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9120",
+      "word": "REQUIEM",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9121",
+      "word": "BRIDGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9122",
+      "word": "MOTIF",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9123",
+      "word": "TRILL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9124",
+      "word": "SEGUE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9125",
+      "word": "CAPO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9126",
+      "word": "FRET",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9127",
+      "word": "REVERB",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9128",
+      "word": "SAMPLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9129",
+      "word": "ENSEMBLE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9130",
+      "word": "METER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9131",
+      "word": "DIRGE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9132",
+      "word": "BOLERO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9133",
+      "word": "FUGUE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9134",
+      "word": "MADRIGAL",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9135",
+      "word": "CHORALE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9136",
+      "word": "ORATORIO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9137",
+      "word": "MAZURKA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9138",
+      "word": "GAVOTTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9139",
+      "word": "ANDANTE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9140",
+      "word": "VIVACE",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9141",
+      "word": "RUBATO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9142",
+      "word": "MEZZO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9143",
+      "word": "ZITHER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9144",
+      "word": "DULCIMER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9145",
+      "word": "OCARINA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9146",
+      "word": "THEREMIN",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9147",
+      "word": "KLEZMER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9148",
+      "word": "ZYDECO",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9149",
+      "word": "RAGA",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    },
+    {
+      "id": "MUS-9150",
+      "word": "LUTHIER",
+      "status": "passed",
+      "errors": [],
+      "flags": []
+    }
+  ]
+}

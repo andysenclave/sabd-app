@@ -1,0 +1,842 @@
+[
+  {
+    "word": "TEA",
+    "altDescription": "Biscuits queue up for a quick afternoon dunk"
+  },
+  {
+    "word": "CHAI",
+    "altDescription": "Railway platforms echo with its vendor's singsong call"
+  },
+  {
+    "word": "WATER",
+    "altDescription": "Wells, rivers, and clouds all carry the same gift"
+  },
+  {
+    "word": "APPLE",
+    "altDescription": "Newton napped beneath the wrong branch, luckily"
+  },
+  {
+    "word": "SOUP",
+    "altDescription": "Sometimes the alphabet floats in your bowl"
+  },
+  {
+    "word": "FISH",
+    "altDescription": "Chips' famous partner, battered beyond recognition"
+  },
+  {
+    "word": "MILK",
+    "altDescription": "Cereal's morning bath, leaving white moustaches behind"
+  },
+  {
+    "word": "CHEESE",
+    "altDescription": "Cartoon mice risk everything for one yellow wedge"
+  },
+  {
+    "word": "CUP",
+    "altDescription": "Winners hoist one; bakers measure with one"
+  },
+  {
+    "word": "PIZZA",
+    "altDescription": "Pineapple on top starts internet wars"
+  },
+  {
+    "word": "SPOON",
+    "altDescription": "Stirs the sugar your doctor never approved"
+  },
+  {
+    "word": "PLATE",
+    "altDescription": "Circus artists spin them on tall sticks"
+  },
+  {
+    "word": "BOWL",
+    "altDescription": "Cupped hands inspired its ancient shape"
+  },
+  {
+    "word": "FORK",
+    "altDescription": "Roads do it too, forcing hard choices"
+  },
+  {
+    "word": "ICE",
+    "altDescription": "Break it to start awkward party conversations"
+  },
+  {
+    "word": "JAM",
+    "altDescription": "Traffic gets stuck in one too"
+  },
+  {
+    "word": "PIE",
+    "altDescription": "Clowns throw it; mathematicians circle it endlessly"
+  },
+  {
+    "word": "CORN",
+    "altDescription": "Autumn mazes get carved through its fields"
+  },
+  {
+    "word": "RICE",
+    "altDescription": "Showered over newlyweds in older traditions"
+  },
+  {
+    "word": "SODA",
+    "altDescription": "The hiss when the cap twists free"
+  },
+  {
+    "word": "CANDY",
+    "altDescription": "October doorbells ring for this pillowcase loot"
+  },
+  {
+    "word": "MEAT",
+    "altDescription": "What vegetarians politely wave away at dinner"
+  },
+  {
+    "word": "FRUIT",
+    "altDescription": "Eden's most famous forbidden temptation"
+  },
+  {
+    "word": "GRAPE",
+    "altDescription": "The fox called them sour and left"
+  },
+  {
+    "word": "WINE",
+    "altDescription": "Cellars age it; toasts raise it"
+  },
+  {
+    "word": "BEER",
+    "altDescription": "Hops and barley meet in a chilled mug"
+  },
+  {
+    "word": "EGG",
+    "altDescription": "Which came first, it or the chicken?"
+  },
+  {
+    "word": "COOKIE",
+    "altDescription": "Browsers collect them; grandmothers bake them"
+  },
+  {
+    "word": "BURGER",
+    "altDescription": "Drive-thru royalty flattened between soft buns"
+  },
+  {
+    "word": "FRIES",
+    "altDescription": "The side dish friends always steal first"
+  },
+  {
+    "word": "CHIPS",
+    "altDescription": "Gamblers stack them; couches collect their crumbs"
+  },
+  {
+    "word": "TOAST",
+    "altDescription": "Glasses lift skyward before the best man's speech"
+  },
+  {
+    "word": "OVEN",
+    "altDescription": "Peek through its glass, but never open early"
+  },
+  {
+    "word": "LUNCH",
+    "altDescription": "Economists insist there's no free one"
+  },
+  {
+    "word": "DINNER",
+    "altDescription": "Candlelight turns this meal into romance"
+  },
+  {
+    "word": "CAKE",
+    "altDescription": "You can't keep it and eat it too"
+  },
+  {
+    "word": "SNACK",
+    "altDescription": "Midnight fridge raids hunt for one"
+  },
+  {
+    "word": "POTATO",
+    "altDescription": "Grows eyes but never sees the couch joke"
+  },
+  {
+    "word": "TOMATO",
+    "altDescription": "Bad performances once met flying red projectiles"
+  },
+  {
+    "word": "ORANGE",
+    "altDescription": "Famously, nothing in English rhymes with it"
+  },
+  {
+    "word": "CARROT",
+    "altDescription": "Dangled from sticks to keep donkeys moving"
+  },
+  {
+    "word": "CREAM",
+    "altDescription": "The best always rises, so they say"
+  },
+  {
+    "word": "SALAD",
+    "altDescription": "Caesar lent his name to this bowl"
+  },
+  {
+    "word": "PASTA",
+    "altDescription": "Bowties, shells, and tubes swimming in sauce"
+  },
+  {
+    "word": "SALT",
+    "altDescription": "Take advice with just one grain of it"
+  },
+  {
+    "word": "GARLIC",
+    "altDescription": "Lingers on the breath long after dinner ends"
+  },
+  {
+    "word": "GINGER",
+    "altDescription": "Redheads borrow its name; colds fear it"
+  },
+  {
+    "word": "PEPPER",
+    "altDescription": "Salt's darker half in matching shakers"
+  },
+  {
+    "word": "BACON",
+    "altDescription": "What breadwinners famously bring home"
+  },
+  {
+    "word": "STEAK",
+    "altDescription": "The splurge order when someone else pays"
+  },
+  {
+    "word": "DONUT",
+    "altDescription": "Police break-room clichés come glazed"
+  },
+  {
+    "word": "MUFFIN",
+    "altDescription": "Its top became an unflattering jeans metaphor"
+  },
+  {
+    "word": "BREAD",
+    "altDescription": "Slang for money, staple for everyone"
+  },
+  {
+    "word": "PEANUT",
+    "altDescription": "Elephants adore them; airlines fear them"
+  },
+  {
+    "word": "GRAVY",
+    "altDescription": "Sails to the table in its own boat"
+  },
+  {
+    "word": "ROTI",
+    "altDescription": "Rolled thin, flipped fast, counted by appetite"
+  },
+  {
+    "word": "SUGAR",
+    "altDescription": "A spoonful famously helps medicine go down"
+  },
+  {
+    "word": "SPICE",
+    "altDescription": "Variety, they claim, of life itself"
+  },
+  {
+    "word": "FLOUR",
+    "altDescription": "Bakers wear it like accidental face powder"
+  },
+  {
+    "word": "MANGO",
+    "altDescription": "Ripe ones drip straight down your elbow"
+  },
+  {
+    "word": "SAUCE",
+    "altDescription": "Slang for swagger, ladled over spaghetti"
+  },
+  {
+    "word": "FRY",
+    "altDescription": "Small ones get dismissed; big ones sizzle"
+  },
+  {
+    "word": "BAKE",
+    "altDescription": "School fundraisers hold sales named for it"
+  },
+  {
+    "word": "BOIL",
+    "altDescription": "Anger makes blood do it, allegedly"
+  },
+  {
+    "word": "CURRY",
+    "altDescription": "Flatterers do this with favor"
+  },
+  {
+    "word": "STEAM",
+    "altDescription": "Let it off before the whistle blows"
+  },
+  {
+    "word": "ROAST",
+    "altDescription": "Comedians honor friends by insulting them publicly"
+  },
+  {
+    "word": "GRILL",
+    "altDescription": "Detectives do it to suspects under bright lights"
+  },
+  {
+    "word": "LEMON",
+    "altDescription": "Faulty cars earn this sour nickname"
+  },
+  {
+    "word": "STEW",
+    "altDescription": "Left in it, worriers simmer alone"
+  },
+  {
+    "word": "DOUGH",
+    "altDescription": "Punch it down; slang spends it"
+  },
+  {
+    "word": "HONEY",
+    "altDescription": "Sweethearts answer to it; biscuits drown in it"
+  },
+  {
+    "word": "BATTER",
+    "altDescription": "Cricket sends one to face the bowler"
+  },
+  {
+    "word": "YEAST",
+    "altDescription": "Brewers thank this microbe for every pint"
+  },
+  {
+    "word": "KETCHUP",
+    "altDescription": "Puns about catching up write themselves"
+  },
+  {
+    "word": "MAYO",
+    "altDescription": "The clinic in Minnesota shares its name"
+  },
+  {
+    "word": "JUICE",
+    "altDescription": "Gossip and batteries both run on it"
+  },
+  {
+    "word": "SYRUP",
+    "altDescription": "Cough bottles hide medicine under its sweetness"
+  },
+  {
+    "word": "MUSTARD",
+    "altDescription": "Some can't cut it, idioms insist"
+  },
+  {
+    "word": "VINEGAR",
+    "altDescription": "Catches fewer flies than honey, proverbially"
+  },
+  {
+    "word": "OLIVE",
+    "altDescription": "Extend its branch to end an argument"
+  },
+  {
+    "word": "ALMOND",
+    "altDescription": "Poets compare beautiful eyes to its shape"
+  },
+  {
+    "word": "CASHEW",
+    "altDescription": "Its name sounds like a polite sneeze"
+  },
+  {
+    "word": "ONION",
+    "altDescription": "Ogres famously claim to share its layers"
+  },
+  {
+    "word": "RAISIN",
+    "altDescription": "The cookie surprise nobody wanted over chocolate"
+  },
+  {
+    "word": "COCONUT",
+    "altDescription": "Temples crack them open for blessings"
+  },
+  {
+    "word": "NOODLE",
+    "altDescription": "Slang crowns it your thinking organ"
+  },
+  {
+    "word": "PAPAYA",
+    "altDescription": "Its enzyme softens the toughest meat"
+  },
+  {
+    "word": "GUAVA",
+    "altDescription": "One ripe fruit perfumes the whole courtyard"
+  },
+  {
+    "word": "SPINACH",
+    "altDescription": "The green bits lingering in your smile"
+  },
+  {
+    "word": "DOSA",
+    "altDescription": "Overnight fermentation earns its morning crackle"
+  },
+  {
+    "word": "CABBAGE",
+    "altDescription": "Dolls once sprouted from its famous patch"
+  },
+  {
+    "word": "PUMPKIN",
+    "altDescription": "Cinderella's ride before the midnight deadline"
+  },
+  {
+    "word": "LENTIL",
+    "altDescription": "Red, green, or yellow, it thickens supper"
+  },
+  {
+    "word": "PANCAKE",
+    "altDescription": "Shrove Tuesday's famous frying-pan relay races"
+  },
+  {
+    "word": "SAMOSA",
+    "altDescription": "Chai's crunchy companion at four o'clock"
+  },
+  {
+    "word": "WAFFLE",
+    "altDescription": "Politicians do it when dodging straight answers"
+  },
+  {
+    "word": "TACO",
+    "altDescription": "Tuesdays got branded in its honor"
+  },
+  {
+    "word": "SUSHI",
+    "altDescription": "Conveyor belts parade it past hungry chopsticks"
+  },
+  {
+    "word": "COFFEE",
+    "altDescription": "Baristas misspell your name while brewing it"
+  },
+  {
+    "word": "RAMEN",
+    "altDescription": "Broke students survive on its instant packets"
+  },
+  {
+    "word": "PRETZEL",
+    "altDescription": "Yoga bends bodies into its shape"
+  },
+  {
+    "word": "BUTTER",
+    "altDescription": "Flatterers spread it on thick, figuratively"
+  },
+  {
+    "word": "IDLI",
+    "altDescription": "South India's softest start to Sunday"
+  },
+  {
+    "word": "MASALA",
+    "altDescription": "Bollywood borrows its name for spicy plots"
+  },
+  {
+    "word": "TIKKA",
+    "altDescription": "Britain's adopted national dish carries this name"
+  },
+  {
+    "word": "KEBAB",
+    "altDescription": "Late-night cravings gather at its glowing stall"
+  },
+  {
+    "word": "PICKLE",
+    "altDescription": "Find yourself in one when trouble brews"
+  },
+  {
+    "word": "PAKORA",
+    "altDescription": "Gram-flour armor for onions and chilies"
+  },
+  {
+    "word": "RAITA",
+    "altDescription": "Curd, cucumber, and calm beside biryani"
+  },
+  {
+    "word": "KORMA",
+    "altDescription": "The menu's gentlest answer to spice fear"
+  },
+  {
+    "word": "BANANA",
+    "altDescription": "Republics and split desserts share its name"
+  },
+  {
+    "word": "PULAO",
+    "altDescription": "Biryani's calmer cousin, no wedding drama"
+  },
+  {
+    "word": "HALWA",
+    "altDescription": "Winter carrots meet their sweetest destiny"
+  },
+  {
+    "word": "CLOVE",
+    "altDescription": "Old toothache remedies swear by its oil"
+  },
+  {
+    "word": "BASIL",
+    "altDescription": "Pesto owes it everything, mortar included"
+  },
+  {
+    "word": "NAAN",
+    "altDescription": "Torn and dragged through rich gravy pools"
+  },
+  {
+    "word": "PANEER",
+    "altDescription": "Palak's white companion in vegetarian favorites"
+  },
+  {
+    "word": "THYME",
+    "altDescription": "Puns about clocks follow it everywhere"
+  },
+  {
+    "word": "FENNEL",
+    "altDescription": "Its pale bulb roasts sweeter than expected"
+  },
+  {
+    "word": "LASSI",
+    "altDescription": "Sweet or salted, served in clay tumblers"
+  },
+  {
+    "word": "BIRYANI",
+    "altDescription": "Hyderabad and Lucknow feud over its crown"
+  },
+  {
+    "word": "TURMERIC",
+    "altDescription": "Wedding ceremonies smear its auspicious yellow"
+  },
+  {
+    "word": "CARDAMOM",
+    "altDescription": "An accidental bite that hijacks the biryani"
+  },
+  {
+    "word": "TOFU",
+    "altDescription": "Soybeans pressed into vegan devotion"
+  },
+  {
+    "word": "CHUTNEY",
+    "altDescription": "Mint and coriander ground into green lightning"
+  },
+  {
+    "word": "OREGANO",
+    "altDescription": "Greek hillsides named it mountain's joy"
+  },
+  {
+    "word": "PARSLEY",
+    "altDescription": "First in a famous folk-song herb quartet"
+  },
+  {
+    "word": "CILANTRO",
+    "altDescription": "Scattered green over tacos and salsa alike"
+  },
+  {
+    "word": "GHEE",
+    "altDescription": "Fuels temple lamps and ladoos equally"
+  },
+  {
+    "word": "SESAME",
+    "altDescription": "Freckles on every burger bun's crown"
+  },
+  {
+    "word": "SALAMI",
+    "altDescription": "Cured logs hanging from Italian rafters"
+  },
+  {
+    "word": "YOGURT",
+    "altDescription": "Billions of live cultures, sold as breakfast"
+  },
+  {
+    "word": "WHISK",
+    "altDescription": "Cream surrenders into peaks beneath it"
+  },
+  {
+    "word": "LADLE",
+    "altDescription": "The Big Dipper's kitchen-drawer twin"
+  },
+  {
+    "word": "TANDOOR",
+    "altDescription": "Charcoal depths that blush chicken crimson"
+  },
+  {
+    "word": "CUMIN",
+    "altDescription": "Jeera to some, tempering's opening act"
+  },
+  {
+    "word": "SPATULA",
+    "altDescription": "Scrapes the bowl cleaner than any finger"
+  },
+  {
+    "word": "MARINADE",
+    "altDescription": "Patience, acid, and spice plotting flavor together"
+  },
+  {
+    "word": "SKILLET",
+    "altDescription": "Cast iron heirloom you never wash with soap"
+  },
+  {
+    "word": "GRIDDLE",
+    "altDescription": "Diner pancakes hit this hot flattop first"
+  },
+  {
+    "word": "JALEBI",
+    "altDescription": "Sweet tangled hoops, straight answers never"
+  },
+  {
+    "word": "COLANDER",
+    "altDescription": "Rains dinner water into the sink"
+  },
+  {
+    "word": "BROTH",
+    "altDescription": "Too many cooks famously ruin it"
+  },
+  {
+    "word": "SAUTE",
+    "altDescription": "French verbs make vegetables jump"
+  },
+  {
+    "word": "POACH",
+    "altDescription": "Hunters do it illegally; chefs do it gently"
+  },
+  {
+    "word": "BRAISE",
+    "altDescription": "Dutch ovens forgive the toughest cuts this way"
+  },
+  {
+    "word": "SIMMER",
+    "altDescription": "Tempers do it just below boiling"
+  },
+  {
+    "word": "FILLET",
+    "altDescription": "Mignon's partner on fancy steakhouse menus"
+  },
+  {
+    "word": "KNEAD",
+    "altDescription": "Sounds like necessity, works the gluten"
+  },
+  {
+    "word": "SIRLOIN",
+    "altDescription": "Legend claims a king knighted this cut"
+  },
+  {
+    "word": "BRISKET",
+    "altDescription": "Texas pits argue over its bark"
+  },
+  {
+    "word": "CHORIZO",
+    "altDescription": "Stains the eggs orange at breakfast"
+  },
+  {
+    "word": "NUTMEG",
+    "altDescription": "Footballers slip the ball through your legs"
+  },
+  {
+    "word": "HUMMUS",
+    "altDescription": "The mezze table's beige diplomatic center"
+  },
+  {
+    "word": "GLAZE",
+    "altDescription": "Bored eyes do it during long meetings"
+  },
+  {
+    "word": "TAHINI",
+    "altDescription": "The quiet partner behind hummus's silkiness"
+  },
+  {
+    "word": "QUINOA",
+    "altDescription": "Menus mispronounce it; Incas revered it"
+  },
+  {
+    "word": "COUSCOUS",
+    "altDescription": "North Africa steams its name twice over"
+  },
+  {
+    "word": "SORBET",
+    "altDescription": "Cleanses palates between fancy dinner courses"
+  },
+  {
+    "word": "LASAGNA",
+    "altDescription": "Garfield's Monday-hating heart beats for it"
+  },
+  {
+    "word": "GARNISH",
+    "altDescription": "Courts do it to wages, chefs to plates"
+  },
+  {
+    "word": "GNOCCHI",
+    "altDescription": "Its opening letter stays fashionably silent"
+  },
+  {
+    "word": "PAELLA",
+    "altDescription": "Valencia guards its crusty bottom jealously"
+  },
+  {
+    "word": "TEMPURA",
+    "altDescription": "Portugal's gift that Japan perfected centuries ago"
+  },
+  {
+    "word": "WASABI",
+    "altDescription": "The real root rarely leaves Japan"
+  },
+  {
+    "word": "MISO",
+    "altDescription": "Barrel-aged for years before breakfast"
+  },
+  {
+    "word": "KIMCHI",
+    "altDescription": "Korean cameras prompt smiles with its name"
+  },
+  {
+    "word": "SAFFRON",
+    "altDescription": "Harvested from crocus blooms at dawn"
+  },
+  {
+    "word": "SRIRACHA",
+    "altDescription": "A Thai seaside town lent its name"
+  },
+  {
+    "word": "CUSTARD",
+    "altDescription": "Vanilla-scented flood over warm crumble"
+  },
+  {
+    "word": "RISOTTO",
+    "altDescription": "The dish television chefs weaponize against contestants"
+  },
+  {
+    "word": "MERINGUE",
+    "altDescription": "Pavlova wears this crisp shattering crown"
+  },
+  {
+    "word": "FALAFEL",
+    "altDescription": "Street pitas bulge with these green-hearted spheres"
+  },
+  {
+    "word": "PARFAIT",
+    "altDescription": "French perfection, according to its own name"
+  },
+  {
+    "word": "BRIOCHE",
+    "altDescription": "The misquoted queen allegedly offered it instead"
+  },
+  {
+    "word": "ESPRESSO",
+    "altDescription": "Nine bars of force, one golden crema"
+  },
+  {
+    "word": "TRUFFLE",
+    "altDescription": "Chocolatiers borrowed its name for cocoa-dusted spheres"
+  },
+  {
+    "word": "FRITTATA",
+    "altDescription": "Yesterday's leftovers reborn in beaten eggs"
+  },
+  {
+    "word": "ORZO",
+    "altDescription": "Italian for barley, though wheat throughout"
+  },
+  {
+    "word": "UMAMI",
+    "altDescription": "Mushrooms, parmesan, and soy share its depth"
+  },
+  {
+    "word": "MARZIPAN",
+    "altDescription": "The smooth blanket beneath wedding cake icing"
+  },
+  {
+    "word": "JAGGERY",
+    "altDescription": "Cane fields boiled down in smoky village pans"
+  },
+  {
+    "word": "SOUFFLE",
+    "altDescription": "Ordered in advance, timed to the minute"
+  },
+  {
+    "word": "PRALINE",
+    "altDescription": "New Orleans pours pecans into sweet patties"
+  },
+  {
+    "word": "GALETTE",
+    "altDescription": "France crowns January with its almond version"
+  },
+  {
+    "word": "OFFAL",
+    "altDescription": "Sounds dreadful, nose-to-tail chefs disagree"
+  },
+  {
+    "word": "CEVICHE",
+    "altDescription": "Peru's flagship dish, freshest at noon"
+  },
+  {
+    "word": "GAZPACHO",
+    "altDescription": "Tomatoes blended smooth, stove left untouched"
+  },
+  {
+    "word": "GHERKIN",
+    "altDescription": "A London skyscraper wears its nickname"
+  },
+  {
+    "word": "MOUSSAKA",
+    "altDescription": "The taverna casserole every yiayia perfects"
+  },
+  {
+    "word": "KOMBUCHA",
+    "altDescription": "Sweet tea transformed into health-aisle hype"
+  },
+  {
+    "word": "TEMPEH",
+    "altDescription": "Indonesia wraps this protein in banana leaves"
+  },
+  {
+    "word": "FARRO",
+    "altDescription": "Plump kernels anchoring rustic Tuscan soups"
+  },
+  {
+    "word": "ROUX",
+    "altDescription": "Gumbo begins with its slow dark patience"
+  },
+  {
+    "word": "SEITAN",
+    "altDescription": "Its name alarms those mishearing devilry"
+  },
+  {
+    "word": "DAIKON",
+    "altDescription": "Japan simmers this pale giant in winter"
+  },
+  {
+    "word": "GANACHE",
+    "altDescription": "A scolded apprentice's happy accident, legend says"
+  },
+  {
+    "word": "ENDIVE",
+    "altDescription": "Belgian boats built for elegant party scoops"
+  },
+  {
+    "word": "SUMAC",
+    "altDescription": "Ground berries brightening bazaar spice pyramids"
+  },
+  {
+    "word": "COMPOTE",
+    "altDescription": "Jam's looser cousin, spooned while warm"
+  },
+  {
+    "word": "HARISSA",
+    "altDescription": "Tunisia's smolder, sometimes softened with rose"
+  },
+  {
+    "word": "CONFIT",
+    "altDescription": "Preservation the French made feel luxurious"
+  },
+  {
+    "word": "JULIENNE",
+    "altDescription": "A French girl's name lurking in culinary school drills"
+  },
+  {
+    "word": "TARTARE",
+    "altDescription": "The daring order that skips the stove"
+  },
+  {
+    "word": "RENNET",
+    "altDescription": "Traditionally borrowed from a calf's fourth stomach"
+  },
+  {
+    "word": "TERRINE",
+    "altDescription": "The earthenware mold christened the dish itself"
+  },
+  {
+    "word": "VELOUTE",
+    "altDescription": "One of Escoffier's five foundational pillars"
+  },
+  {
+    "word": "APERITIF",
+    "altDescription": "France opens the evening with this ritual pour"
+  },
+  {
+    "word": "MIREPOIX",
+    "altDescription": "A French duke's name diced into every stockpot"
+  }
+]

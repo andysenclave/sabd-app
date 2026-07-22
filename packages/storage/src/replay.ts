@@ -8,14 +8,16 @@
  * snapshot boundary survives an incremental verify. Only rounds AFTER the scoring epoch
  * count: pre-reset (Elo-era) rounds stay on disk but never fold into the score.
  *
- * If an event carries an engineConfigVersion other than the current one, we warn and
- * replay under the current config — a config registry becomes necessary only after a
- * second tuning change ships.
+ * Config-versioned replay (Phase 4, PART A §1): each event is scored under the config
+ * that was LIVE when it was played (`requireConfig(e.engineConfigVersion)`), never the
+ * current one. This makes historical totals invariant under re-tiering. An event whose
+ * version has no registered config throws `UnknownConfigVersionError` (edge-case F1) —
+ * the caller quarantines rather than guessing a config.
  */
 
 import type { RoundEvent, RoundResult } from '@sabd/contracts';
 import { SEED_RATING } from '@sabd/contracts';
-import { applyPoints, defaultConfig, ENGINE_CONFIG_VERSION, type PointsConfig } from '@sabd/elo';
+import { applyPoints, ENGINE_CONFIG_VERSION, requireConfig } from '@sabd/elo';
 import type { SqlDriver } from './driver.ts';
 import { getPlayer, updateCache } from './player.ts';
 import { getRoundsAfter } from './events.ts';
@@ -46,12 +48,16 @@ export interface ReplayOutcome {
   configMismatches: number;
 }
 
-/** Fold a list of events into a score + streak, starting from the given state. Pure. */
+/**
+ * Fold a list of events into a score + streak, starting from the given state. Pure.
+ *
+ * Each event is scored under ITS OWN config (resolved by `engineConfigVersion`), not
+ * a caller-supplied one — that is the invariant that keeps historical totals stable
+ * across re-tiering. An unregistered version throws `UnknownConfigVersionError` (F1).
+ */
 export function replayEvents(
   events: readonly RoundEvent[],
   start: ReplayState,
-  config: PointsConfig = defaultConfig,
-  warn: (msg: string) => void = console.warn,
 ): ReplayOutcome {
   let rating = start.rating;
   let streak = start.streak;
@@ -60,12 +66,9 @@ export function replayEvents(
   let configMismatches = 0;
 
   for (const e of events) {
+    const config = requireConfig(e.engineConfigVersion); // throws on unknown → caller quarantines
     if (e.engineConfigVersion !== ENGINE_CONFIG_VERSION) {
-      configMismatches++;
-      warn(
-        `replay: round ${e.roundId} was played under engine config ${e.engineConfigVersion}, ` +
-          `replaying under ${ENGINE_CONFIG_VERSION}`,
-      );
+      configMismatches++; // informational: scored under its own era, not the active one
     }
     const update = applyPoints({ rating, streak }, eventToRoundResult(e), config);
     rating = update.newPlayerRating;
@@ -101,12 +104,11 @@ export function verifyRating(
     return { healed: false, replayed: 0, rating: player.cachedRating };
   }
 
-  const outcome = replayEvents(
-    tail,
-    { rating: player.cachedRating, streak: player.cachedStreak, gamesPlayed: player.cachedGamesPlayed },
-    defaultConfig,
-    warn,
-  );
+  const outcome = replayEvents(tail, {
+    rating: player.cachedRating,
+    streak: player.cachedStreak,
+    gamesPlayed: player.cachedGamesPlayed,
+  });
 
   const diverged = outcome.rating !== player.cachedRating;
   if (diverged) {
@@ -133,12 +135,7 @@ export function fullReplay(
   if (!player) throw new Error('fullReplay: no player row — seedPlayer must run first');
 
   const scored = getRoundsAfter(db, player.scoreEpochRoundId);
-  const outcome = replayEvents(
-    scored,
-    { rating: SEED_RATING, streak: 0, gamesPlayed: 0 },
-    defaultConfig,
-    warn,
-  );
+  const outcome = replayEvents(scored, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 });
 
   const diverged =
     outcome.rating !== player.cachedRating || outcome.gamesPlayed !== player.cachedGamesPlayed;

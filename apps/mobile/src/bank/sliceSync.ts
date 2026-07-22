@@ -14,7 +14,7 @@
  * a bank this small doesn't need. Revisit if the bank grows 100×.)
  */
 
-import type { TopicId, WordSlice, WordSliceManifest, WordTier } from '@sabd/contracts';
+import type { BankTier, TopicId, WordSlice, WordSliceManifest } from '@sabd/contracts';
 import { validateWordSlice, validateWordSliceManifest } from '@sabd/contracts';
 
 /** Injected IO — throws on failure; the sync loop converts throws into "keep old". */
@@ -34,7 +34,7 @@ export interface SliceIO {
 }
 
 /** One stable file per cell — swap replaces it atomically. */
-export function cellFileName(topicId: TopicId, tier: WordTier): string {
+export function cellFileName(topicId: TopicId, tier: BankTier): string {
   return `${topicId}-${tier}.json`;
 }
 
@@ -42,7 +42,7 @@ export function cellFileName(topicId: TopicId, tier: WordTier): string {
  * Load every installed slice from disk. Self-describing files are the only state —
  * no separate index to drift. Invalid/corrupt files are dropped (bundled bank covers).
  */
-export async function loadInstalledSlices(io: SliceIO, cells: ReadonlyArray<{ topicId: TopicId; tier: WordTier }>): Promise<WordSlice[]> {
+export async function loadInstalledSlices(io: SliceIO, cells: ReadonlyArray<{ topicId: TopicId; tier: BankTier }>): Promise<WordSlice[]> {
   const out: WordSlice[] = [];
   for (const { topicId, tier } of cells) {
     const text = await io.readText(cellFileName(topicId, tier));

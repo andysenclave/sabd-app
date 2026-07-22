@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "WLD-0001",
+    "word": "MAP",
+    "topic": "World & Places",
+    "length": 3,
+    "difficulty": 4,
+    "tier": "veryEasy",
+    "description": "Folded paper that never refolds the same way twice",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Treasure hunters follow its dotted lines to X"
+  },
+  {
+    "id": "WLD-0002",
+    "word": "SEA",
+    "topic": "World & Places",
+    "length": 3,
+    "difficulty": 5,
+    "tier": "veryEasy",
+    "description": "Salt wind, endless blue, and ships going somewhere far",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Fishermen cast nets into its restless grey swells"
+  },
+  {
+    "id": "WLD-0003",
+    "word": "BEACH",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 6,
+    "tier": "veryEasy",
+    "description": "Sun, sand, and sunscreen in your sandwich",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Footprints vanish here with every incoming wave"
+  },
+  {
+    "id": "WLD-0004",
+    "word": "ROAD",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 6,
+    "tier": "veryEasy",
+    "description": "Long grey stretch that takes every traveler somewhere new",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Headlights trace its curves through the sleeping night"
+  },
+  {
+    "id": "WLD-0005",
+    "word": "HILL",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 7,
+    "tier": "veryEasy",
+    "description": "A gentle green climb before the land turns serious",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Cyclists dread the up, love the down"
+  },
+  {
+    "id": "WLD-0006",
+    "word": "TOWN",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 8,
+    "tier": "veryEasy",
+    "description": "Bigger than the countryside, smaller than the metropolis",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "One market square where everybody eventually meets"
+  },
+  {
+    "id": "WLD-0007",
+    "word": "CITY",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 9,
+    "tier": "veryEasy",
+    "description": "Millions of strangers sharing one skyline",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Traffic horns and neon that never sleep"
+  },
+  {
+    "id": "WLD-0008",
+    "word": "EARTH",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 9,
+    "tier": "veryEasy",
+    "description": "The only home address every human shares",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Third stop from the sun, remarkably lively"
+  },
+  {
+    "id": "WLD-0009",
+    "word": "WORLD",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 10,
+    "tier": "veryEasy",
+    "description": "All seven continents wrapped in one blue marble",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Travelers dream of circling it in eighty days"
+  },
+  {
+    "id": "WLD-0010",
+    "word": "INDIA",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 11,
+    "tier": "veryEasy",
+    "description": "Spice, railways, and a billion dreams under one flag",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Cricket fever, festival colors, and monsoon-washed streets"
+  },
+  {
+    "id": "WLD-0011",
+    "word": "RIVER",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 11,
+    "tier": "veryEasy",
+    "description": "Always running downhill, never out of breath",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "V"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Boats drift where it bends toward the sea"
+  },
+  {
+    "id": "WLD-0012",
+    "word": "PARK",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 12,
+    "tier": "veryEasy",
+    "description": "Green benches, morning walkers, and pigeons holding meetings",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Kites, picnics, and dogs off their leashes"
+  },
+  {
+    "id": "WLD-0013",
+    "word": "FARM",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 13,
+    "tier": "veryEasy",
+    "description": "Fields, tractors, and breakfast still on the hoof",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "A rooster announces dawn before the alarm does"
+  },
+  {
+    "id": "WLD-0014",
+    "word": "ROCK",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 14,
+    "tier": "veryEasy",
+    "description": "Hard grey lump the river never argues with",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Climbers grip it, sculptors carve it, ages ignore it"
+  },
+  {
+    "id": "WLD-0015",
+    "word": "SAND",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 15,
+    "tier": "veryEasy",
+    "description": "A million tiny grains stuck in your slippers",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Hourglasses and castle-builders both depend on it"
+  },
+  {
+    "id": "WLD-0016",
+    "word": "POND",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 16,
+    "tier": "veryEasy",
+    "description": "Still water where ducks run the neighborhood",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Frogs croak from lily pads at dusk"
+  },
+  {
+    "id": "WLD-0017",
+    "word": "CAVE",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 17,
+    "tier": "veryEasy",
+    "description": "Dark hollow where echoes live rent free",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "V"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Bats hang above stone icicles growing drop by drop"
+  },
+  {
+    "id": "WLD-0018",
+    "word": "LAKE",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 17,
+    "tier": "veryEasy",
+    "description": "Still water the mountains keep for themselves",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Morning mist lifts off its glassy mirror"
+  },
+  {
+    "id": "WLD-0019",
+    "word": "BRIDGE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 18,
+    "tier": "veryEasy",
+    "description": "It shakes hands with both banks at once",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Engineers' answer to an inconvenient stretch of water"
+  },
+  {
+    "id": "WLD-0020",
+    "word": "FOREST",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 19,
+    "tier": "veryEasy",
+    "description": "Trees past counting, sunlight arriving in slices",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Where fairy-tale children scatter breadcrumbs and get lost"
+  },
+  {
+    "id": "WLD-0021",
+    "word": "OCEAN",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 19,
+    "tier": "veryEasy",
+    "description": "Most of the planet, still mostly unexplored",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Whales sing across its deep blue miles"
+  },
+  {
+    "id": "WLD-0022",
+    "word": "STREET",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 20,
+    "tier": "veryEasy",
+    "description": "Shops, scooters, and gossip flowing between two footpaths",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "H"
+      }
+    },
+    "altDescription": "Every address starts with its painted name plate"
+  },
+  {
+    "id": "WLD-0023",
+    "word": "HOTEL",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 21,
+    "tier": "veryEasy",
+    "description": "Borrowed bed, tiny soap, breakfast you didn't cook",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Lobby bells, room keys, and checkout at noon"
+  },
+  {
+    "id": "WLD-0024",
+    "word": "TRAIN",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 22,
+    "tier": "veryEasy",
+    "description": "Windows full of country rushing past, chai in hand",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "A long whistle, then platforms slide away"
+  },
+  {
+    "id": "WLD-0025",
+    "word": "BAY",
+    "topic": "World & Places",
+    "length": 3,
+    "difficulty": 23,
+    "tier": "veryEasy",
+    "description": "Where the sea takes a calm bite from the land",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Sheltered anchorage where sailboats ride out storms"
+  },
+  {
+    "id": "WLD-0026",
+    "word": "CAMP",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 23,
+    "tier": "veryEasy",
+    "description": "Sleeping bags, smoky fire, stars for a ceiling",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Ghost stories and marshmallows toasted on sticks"
+  },
+  {
+    "id": "WLD-0027",
+    "word": "TENT",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 24,
+    "tier": "veryEasy",
+    "description": "Cloth walls zipped shut before the night wind",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Pegs, poles, and rain drumming inches above you"
+  },
+  {
+    "id": "WLD-0028",
+    "word": "PATH",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 25,
+    "tier": "veryEasy",
+    "description": "Narrow line of footsteps through the grass",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "The winding way less traveled, or more"
+  },
+  {
+    "id": "WLD-0029",
+    "word": "FLAG",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 26,
+    "tier": "veryEasy",
+    "description": "Cloth that tells you whose soil you stand on",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Hoisted at dawn, saluted, lowered at sunset"
+  },
+  {
+    "id": "WLD-0030",
+    "word": "TRIP",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 27,
+    "tier": "veryEasy",
+    "description": "Bags packed, tickets booked, ordinary life on pause",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Souvenirs and photographs outlast the itinerary"
+  },
+  {
+    "id": "WLD-0031",
+    "word": "FIELD",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 28,
+    "tier": "veryEasy",
+    "description": "Flat green sheet where crops and cricket both grow",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Scarecrows stand guard over the ripening rows"
+  },
+  {
+    "id": "WLD-0032",
+    "word": "MOUNTAIN",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 28,
+    "tier": "veryEasy",
+    "description": "It was climbed because it was there",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Snow-capped giant wearing clouds like a scarf"
+  },
+  {
+    "id": "WLD-0033",
+    "word": "COUNTRY",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 29,
+    "tier": "veryEasy",
+    "description": "An anthem, a flag, and lines drawn on maps",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "H"
+      }
+    },
+    "altDescription": "Home team you cheer for at the Olympics"
+  },
+  {
+    "id": "WLD-0034",
+    "word": "NORTH",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 30,
+    "tier": "veryEasy",
+    "description": "Where every needle secretly wants to point",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "L"
+      }
+    },
+    "altDescription": "Follow the pole star toward colder lands"
+  },
+  {
+    "id": "WLD-0035",
+    "word": "SOUTH",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 31,
+    "tier": "veryEasy",
+    "description": "Down the atlas, where India dips into two seas",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Where migrating birds head when winter bites"
+  },
+  {
+    "id": "WLD-0036",
+    "word": "EAST",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 32,
+    "tier": "veryEasy",
+    "description": "The sun's favorite direction for beginning the day",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The compass rose's right-hand arm"
+  },
+  {
+    "id": "WLD-0037",
+    "word": "WEST",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 33,
+    "tier": "veryEasy",
+    "description": "Where the sun clocks out every evening",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Cowboys rode wild into this storied direction"
+  },
+  {
+    "id": "WLD-0038",
+    "word": "COAST",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 34,
+    "tier": "veryEasy",
+    "description": "The land's long argument with the waves",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Lighthouses blink along its salty edge"
+  },
+  {
+    "id": "WLD-0039",
+    "word": "ISLAND",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 34,
+    "tier": "veryEasy",
+    "description": "Land that decided to keep its distance",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Castaways draw HELP in its lonely sand"
+  },
+  {
+    "id": "WLD-0040",
+    "word": "SHORE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 35,
+    "tier": "veryEasy",
+    "description": "Where wet sand ends and dry land begins",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Seashells wash up here for collectors' pockets"
+  },
+  {
+    "id": "WLD-0041",
+    "word": "CLIFF",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 36,
+    "tier": "veryEasy",
+    "description": "Sheer drop where the land suddenly loses its nerve",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Gulls nest where hikers dare not lean"
+  },
+  {
+    "id": "WLD-0042",
+    "word": "STREAM",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 37,
+    "tier": "veryEasy",
+    "description": "Small chatty water hurrying downhill over pebbles",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Trout flicker beneath a wobbly stepping-stone crossing"
+  },
+  {
+    "id": "WLD-0043",
+    "word": "TRAIL",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 38,
+    "tier": "veryEasy",
+    "description": "Dusty ribbon hikers follow into the wild",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Blazes on trees mark the way onward"
+  },
+  {
+    "id": "WLD-0044",
+    "word": "DESERT",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 39,
+    "tier": "veryEasy",
+    "description": "Endless sand with a serious hydration problem",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "M"
+      }
+    },
+    "altDescription": "Camel caravans chase mirages between distant wells"
+  },
+  {
+    "id": "WLD-0045",
+    "word": "WOODS",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 39,
+    "tier": "veryEasy",
+    "description": "Shady tangle of trunks just past the fence",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Mushroom pickers whistle so wolves keep away"
+  },
+  {
+    "id": "WLD-0046",
+    "word": "PORT",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 40,
+    "tier": "veryEasy",
+    "description": "Cranes, cargo, and ships resting between voyages",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "H"
+      }
+    },
+    "altDescription": "Sailors step onto solid ground with sea legs"
+  },
+  {
+    "id": "WLD-0047",
+    "word": "POLE",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 41,
+    "tier": "veryEasy",
+    "description": "Frozen tip of the planet, top or bottom",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Explorers raced each other to plant flags there"
+  },
+  {
+    "id": "WLD-0048",
+    "word": "CASTLE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 42,
+    "tier": "veryEasy",
+    "description": "Stone towers, a moat, and drawbridge drama",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Knights, dungeons, and a princess in the tallest turret"
+  },
+  {
+    "id": "WLD-0049",
+    "word": "AIRPORT",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 43,
+    "tier": "veryEasy",
+    "description": "Runways, boarding calls, and tearful goodbyes at gates",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Luggage carousels spin while jet engines whine"
+  },
+  {
+    "id": "WLD-0050",
+    "word": "CHINA",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 44,
+    "tier": "veryEasy",
+    "description": "The Great Wall guards this crowded ancient land",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Pandas, dragons, and tea poured for emperors"
+  },
+  {
+    "id": "WLD-0051",
+    "word": "JAPAN",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 45,
+    "tier": "veryEasy",
+    "description": "Cherry blossoms, bullet speed, and polite bowing",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "J",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Sumo rings, manga stalls, and one sacred snowy cone"
+  },
+  {
+    "id": "WLD-0052",
+    "word": "LONDON",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 46,
+    "tier": "veryEasy",
+    "description": "Big Ben, red buses, and stubborn drizzle",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Mind the gap on its ancient underground"
+  },
+  {
+    "id": "WLD-0053",
+    "word": "MUMBAI",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 47,
+    "tier": "veryEasy",
+    "description": "Local trains, sea link, and Bollywood dreams",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Dabbawalas thread lunches through its relentless crowds"
+  },
+  {
+    "id": "WLD-0054",
+    "word": "GOA",
+    "topic": "World & Places",
+    "length": 3,
+    "difficulty": 48,
+    "tier": "veryEasy",
+    "description": "Tiny coastal state where every weekend wants to go",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Susegad afternoons, old churches, and beach shacks"
+  },
+  {
+    "id": "WLD-0055",
+    "word": "AGRA",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 49,
+    "tier": "veryEasy",
+    "description": "One marble monument made this city world famous",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Mughal emperors ruled from this Yamuna-side seat"
+  },
+  {
+    "id": "WLD-0056",
+    "word": "ASIA",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 51,
+    "tier": "easy",
+    "description": "The biggest continent, home to half of humanity",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Rice paddies, silk routes, and teeming megacities"
+  },
+  {
+    "id": "WLD-0057",
+    "word": "PEAK",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 51,
+    "tier": "easy",
+    "description": "The pointy bit that collects flags and frostbite",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Everything below looks tiny from up here"
+  },
+  {
+    "id": "WLD-0058",
+    "word": "EUROPE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 53,
+    "tier": "easy",
+    "description": "Old castles, older rivalries, one shared currency mostly",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Backpackers hop between its capitals on one rail pass"
+  },
+  {
+    "id": "WLD-0059",
+    "word": "AFRICA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 55,
+    "tier": "easy",
+    "description": "Lions, drums, and the cradle of humankind",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "H"
+      }
+    },
+    "altDescription": "Fifty-plus nations between one desert and two capes"
+  },
+  {
+    "id": "WLD-0060",
+    "word": "PARIS",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 56,
+    "tier": "easy",
+    "description": "Croissants, catwalks, and one very tall iron lady",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Lovers lock padlocks over a slow green river"
+  },
+  {
+    "id": "WLD-0061",
+    "word": "EGYPT",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 57,
+    "tier": "easy",
+    "description": "Pharaohs, mummies, and one river feeding everything",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "The Sphinx keeps its riddles beside the dunes"
+  },
+  {
+    "id": "WLD-0062",
+    "word": "FRANCE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 59,
+    "tier": "easy",
+    "description": "Croissants, revolutions, and one very famous iron tower",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "H"
+      }
+    },
+    "altDescription": "Wine, four hundred cheeses, and effortless chic"
+  },
+  {
+    "id": "WLD-0063",
+    "word": "SPAIN",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 61,
+    "tier": "easy",
+    "description": "Flamenco, siestas, and tomatoes thrown for fun",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Bulls run, paella simmers, Gaudi's spires dream"
+  },
+  {
+    "id": "WLD-0064",
+    "word": "VALLEY",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 62,
+    "tier": "easy",
+    "description": "The low road between two proud ridges",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Fog pools where the villages nestle low"
+  },
+  {
+    "id": "WLD-0065",
+    "word": "RUSSIA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 63,
+    "tier": "easy",
+    "description": "The land so wide it needs eleven clocks",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Ballet, bitter winters, and onion-domed skylines"
+  },
+  {
+    "id": "WLD-0066",
+    "word": "CANADA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 65,
+    "tier": "easy",
+    "description": "Maple syrup, moose, and apologetic neighbors up north",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Hockey rinks outnumber warm days up there"
+  },
+  {
+    "id": "WLD-0067",
+    "word": "MEXICO",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 67,
+    "tier": "easy",
+    "description": "Tacos, mariachi, and stone temples of the Aztecs",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Marigolds and sugar skulls for the departed"
+  },
+  {
+    "id": "WLD-0068",
+    "word": "DELHI",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 68,
+    "tier": "easy",
+    "description": "India's capital, old and new stitched together",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Chandni Chowk's chaos beside old red ramparts"
+  },
+  {
+    "id": "WLD-0069",
+    "word": "BRAZIL",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 69,
+    "tier": "easy",
+    "description": "Samba, football, and one enormous green rainforest",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "Z"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Carnival feathers beneath a hilltop open-armed statue"
+  },
+  {
+    "id": "WLD-0070",
+    "word": "GREECE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 71,
+    "tier": "easy",
+    "description": "Ancient ruins, olive groves, and blue domed roofs",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Gods quarreled on its mountaintop before democracy arrived"
+  },
+  {
+    "id": "WLD-0071",
+    "word": "JUNGLE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 73,
+    "tier": "easy",
+    "description": "Green chaos where everything hums, bites, or climbs",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Vines thick enough to swing a hero through"
+  },
+  {
+    "id": "WLD-0072",
+    "word": "TOKYO",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 73,
+    "tier": "easy",
+    "description": "Neon crossings, sushi counters, and quiet efficient chaos",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Vending machines and shrines share every block"
+  },
+  {
+    "id": "WLD-0073",
+    "word": "ROME",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 75,
+    "tier": "easy",
+    "description": "Gladiators once fought where tourists now queue",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Toss a coin backwards into its famous fountain"
+  },
+  {
+    "id": "WLD-0074",
+    "word": "SYDNEY",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 77,
+    "tier": "easy",
+    "description": "Opera house sails beside a famous harbour bridge",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Surfers catch dawn waves at Bondi's edge"
+  },
+  {
+    "id": "WLD-0075",
+    "word": "DUBAI",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 79,
+    "tier": "easy",
+    "description": "Gold souks and the tallest tower on the planet",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Ski indoors while the desert bakes outside"
+  },
+  {
+    "id": "WLD-0076",
+    "word": "GLOBE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 79,
+    "tier": "easy",
+    "description": "The whole world spinning on a desk",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Shakespeare's round playhouse borrowed its name"
+  },
+  {
+    "id": "WLD-0077",
+    "word": "NEPAL",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 81,
+    "tier": "easy",
+    "description": "Prayer flags fluttering below the world's highest roof",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Sherpas call this mountain kingdom home"
+  },
+  {
+    "id": "WLD-0078",
+    "word": "PUNJAB",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 83,
+    "tier": "easy",
+    "description": "Five rivers, golden wheat, and bhangra beats",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Lassi by the tumbler, tractors at full volume"
+  },
+  {
+    "id": "WLD-0079",
+    "word": "KASHMIR",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 85,
+    "tier": "easy",
+    "description": "Houseboats, saffron, and valleys called paradise on postcards",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "L"
+      }
+    },
+    "altDescription": "Famed soft wool and shikara rides at dawn"
+  },
+  {
+    "id": "WLD-0080",
+    "word": "TEMPLE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 86,
+    "tier": "easy",
+    "description": "Incense, bells, and shoes left at the door",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Carved gods watch pilgrims circle the sanctum"
+  },
+  {
+    "id": "WLD-0081",
+    "word": "JAIPUR",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 87,
+    "tier": "easy",
+    "description": "Rajasthan's rose colored capital of royal courtyards",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Elephants amble up to an amber hilltop fortress"
+  },
+  {
+    "id": "WLD-0082",
+    "word": "VENICE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 89,
+    "tier": "easy",
+    "description": "Gondolas gliding where the roads should be",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Masked carnivals in a slowly sinking marvel"
+  },
+  {
+    "id": "WLD-0083",
+    "word": "HAWAII",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 91,
+    "tier": "easy",
+    "description": "Hula, surf, and lava quietly making new land",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Aloha greetings and flower garlands at arrival"
+  },
+  {
+    "id": "WLD-0084",
+    "word": "CANYON",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 92,
+    "tier": "easy",
+    "description": "A river's masterpiece, carved over a few million years",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Shout across and wait for your echo"
+  },
+  {
+    "id": "WLD-0085",
+    "word": "ALPS",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 93,
+    "tier": "easy",
+    "description": "Snowy spine where all of Europe goes skiing",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Hannibal marched elephants over these icy passes"
+  },
+  {
+    "id": "WLD-0086",
+    "word": "AMAZON",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 95,
+    "tier": "easy",
+    "description": "The rainforest so vast it makes its own rain",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "Z"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Piranhas patrol the world's mightiest waterway"
+  },
+  {
+    "id": "WLD-0087",
+    "word": "ARCTIC",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 97,
+    "tier": "easy",
+    "description": "Polar bears pacing the frozen top of maps",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Midnight sun and ice floes going soft"
+  },
+  {
+    "id": "WLD-0088",
+    "word": "ATLAS",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 99,
+    "tier": "easy",
+    "description": "A whole planet pressed flat between two covers",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "The Titan condemned to shoulder the heavens"
+  },
+  {
+    "id": "WLD-0089",
+    "word": "VILLAGE",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 99,
+    "tier": "easy",
+    "description": "Everyone knows your name, and your business",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "One well, one school, a hundred cousins"
+  },
+  {
+    "id": "WLD-0090",
+    "word": "TOWER",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 101,
+    "tier": "easy",
+    "description": "Stone or steel, built mainly for looking down",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Rapunzel let her hair down from one"
+  },
+  {
+    "id": "WLD-0091",
+    "word": "PALACE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 103,
+    "tier": "easy",
+    "description": "Chandeliers, courtyards, and kings who never carried keys",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Throne rooms behind gates the public queues outside"
+  },
+  {
+    "id": "WLD-0092",
+    "word": "FORT",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 105,
+    "tier": "easy",
+    "description": "Thick stone walls that laughed at old cannons",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Pillow builders and generals both claim one"
+  },
+  {
+    "id": "WLD-0093",
+    "word": "PYRAMID",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 107,
+    "tier": "easy",
+    "description": "Pointy royal tomb built to outlast everything",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "H"
+      }
+    },
+    "altDescription": "Desert geometry visible from very far away"
+  },
+  {
+    "id": "WLD-0094",
+    "word": "BORDER",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 110,
+    "tier": "easy",
+    "description": "Invisible line where one anthem hands over to another",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "B",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Guards check papers where two maps meet"
+  },
+  {
+    "id": "WLD-0095",
+    "word": "HARBOR",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 111,
+    "tier": "easy",
+    "description": "Where tired ships come home to gossip",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Masts sway safe while storms rage outside"
+  },
+  {
+    "id": "WLD-0096",
+    "word": "TUNNEL",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 112,
+    "tier": "easy",
+    "description": "A road that decided to go through the hill",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Your radio dies until light reappears ahead"
+  },
+  {
+    "id": "WLD-0097",
+    "word": "HIGHWAY",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 114,
+    "tier": "easy",
+    "description": "Six lanes of hurry stretching past dhaba lights",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Toll booths punctuate the long fast miles"
+  },
+  {
+    "id": "WLD-0098",
+    "word": "CANAL",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 117,
+    "tier": "easy",
+    "description": "Water taught to travel in straight lines",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Barges queue at locks between two seas"
+  },
+  {
+    "id": "WLD-0099",
+    "word": "VOLCANO",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 118,
+    "tier": "easy",
+    "description": "A mountain with anger management issues",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "It naps for centuries, then redecorates violently"
+  },
+  {
+    "id": "WLD-0100",
+    "word": "FERRY",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 119,
+    "tier": "easy",
+    "description": "Flat boat shuttling cars and commuters across water",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Same two docks, all day, every day"
+  },
+  {
+    "id": "WLD-0101",
+    "word": "VISA",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 122,
+    "tier": "easy",
+    "description": "The stamp that lets your dreams cross borders",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Embassy queues and forms before any flight"
+  },
+  {
+    "id": "WLD-0102",
+    "word": "CRUISE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 125,
+    "tier": "easy",
+    "description": "Floating hotel where the view keeps changing",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Deck chairs, midnight buffets, a new harbor daily"
+  },
+  {
+    "id": "WLD-0103",
+    "word": "COMPASS",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 126,
+    "tier": "easy",
+    "description": "The needle that always fancies north",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Lost hikers trust its trembling little arrow"
+  },
+  {
+    "id": "WLD-0104",
+    "word": "RESORT",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 128,
+    "tier": "easy",
+    "description": "Poolside loungers, buffets, and vacation mode fully on",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Wristbands on, worries checked at the gate"
+  },
+  {
+    "id": "WLD-0105",
+    "word": "JOURNEY",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 131,
+    "tier": "easy",
+    "description": "The part between leaving home and arriving changed",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Heroes in stories always take the long one"
+  },
+  {
+    "id": "WLD-0106",
+    "word": "SAFARI",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 134,
+    "tier": "easy",
+    "description": "Jeep, binoculars, and a lion who ignores you",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Khaki hats and cameras stalking the big five"
+  },
+  {
+    "id": "WLD-0107",
+    "word": "CAPITAL",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 135,
+    "tier": "easy",
+    "description": "The city where the country keeps its paperwork",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Parliament sits here, so do all the protests"
+  },
+  {
+    "id": "WLD-0108",
+    "word": "GULF",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 137,
+    "tier": "easy",
+    "description": "A sea reaching deep into the land's embrace",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "F"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Pearl divers once worked these warm waters"
+  },
+  {
+    "id": "WLD-0109",
+    "word": "CREEK",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 140,
+    "tier": "easy",
+    "description": "Skinny water sneaking quietly out to the sea",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Wading kids chase tadpoles between mossy stones"
+  },
+  {
+    "id": "WLD-0110",
+    "word": "MEADOW",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 143,
+    "tier": "easy",
+    "description": "Wildflowers, bees, and grass up to your knees",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Perfect ground for cartwheels and lazy afternoons"
+  },
+  {
+    "id": "WLD-0111",
+    "word": "PASSPORT",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 143,
+    "tier": "easy",
+    "description": "A little booklet collecting stamps and side-eye at borders",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "M"
+      }
+    },
+    "altDescription": "Its unflattering photo follows you across continents"
+  },
+  {
+    "id": "WLD-0112",
+    "word": "MARSH",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 146,
+    "tier": "easy",
+    "description": "Soggy ground where boots sink and herons hunt",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "L"
+      }
+    },
+    "altDescription": "Mosquitoes breed in its reedy shallows"
+  },
+  {
+    "id": "WLD-0113",
+    "word": "SWAMP",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 148,
+    "tier": "easy",
+    "description": "Murky water, tangled roots, and patient crocodiles",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Ogres and fireflies favor this squelchy address"
+  },
+  {
+    "id": "WLD-0114",
+    "word": "RIDGE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 150,
+    "tier": "easy",
+    "description": "The mountain's long backbone against the sky",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Wind hits hardest on this narrow crest"
+  },
+  {
+    "id": "WLD-0115",
+    "word": "HIMALAYA",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 152,
+    "tier": "medium",
+    "description": "The young giant range still growing every year",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Sanskrit named it the abode of snow"
+  },
+  {
+    "id": "WLD-0116",
+    "word": "DELTA",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 155,
+    "tier": "medium",
+    "description": "Where a river fans out and finally lets go",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "A Greek triangle drawn in fertile silt"
+  },
+  {
+    "id": "WLD-0117",
+    "word": "CAIRO",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 157,
+    "tier": "medium",
+    "description": "Minarets and traffic within sight of ancient tombs",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Africa's biggest city crowds the patient Nile"
+  },
+  {
+    "id": "WLD-0118",
+    "word": "ISTANBUL",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 162,
+    "tier": "medium",
+    "description": "One city with a foot on two continents",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Old Constantinople goes by this name now"
+  },
+  {
+    "id": "WLD-0119",
+    "word": "MONSOON",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 165,
+    "tier": "medium",
+    "description": "The sky saving all year for one long pour",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "S"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Farmers watch the horizon praying for its arrival"
+  },
+  {
+    "id": "WLD-0120",
+    "word": "VIENNA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 167,
+    "tier": "medium",
+    "description": "Waltzes, coffeehouses, and imperial ghosts in Austria",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Mozart premiered where schnitzel still reigns supreme"
+  },
+  {
+    "id": "WLD-0121",
+    "word": "OASIS",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 168,
+    "tier": "medium",
+    "description": "Palm trees and water where neither should exist",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Green surprise the dunes keep secret"
+  },
+  {
+    "id": "WLD-0122",
+    "word": "OSLO",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 172,
+    "tier": "medium",
+    "description": "Norway's quiet capital of fjords and Nobel handshakes",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Viking longships and The Scream both dock here"
+  },
+  {
+    "id": "WLD-0123",
+    "word": "SUMMIT",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 175,
+    "tier": "medium",
+    "description": "Where every direction suddenly points down",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "World leaders borrow its name for meetings"
+  },
+  {
+    "id": "WLD-0124",
+    "word": "LISBON",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 177,
+    "tier": "medium",
+    "description": "Yellow trams climbing seven hills to the Atlantic",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Custard tarts and fado songs near the docks"
+  },
+  {
+    "id": "WLD-0125",
+    "word": "GORGE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 180,
+    "tier": "medium",
+    "description": "A slot of stone the water sawed deep",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Rope bridges sway high above its shadows"
+  },
+  {
+    "id": "WLD-0126",
+    "word": "KYOTO",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 182,
+    "tier": "medium",
+    "description": "Geishas, wooden shrines, and gardens of raked gravel",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Bamboo groves and a famous climate treaty"
+  },
+  {
+    "id": "WLD-0127",
+    "word": "EVEREST",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 185,
+    "tier": "medium",
+    "description": "The planet's rooftop, complete with a queue",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Hillary and Tenzing got there first, breathless"
+  },
+  {
+    "id": "WLD-0128",
+    "word": "HAVANA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 187,
+    "tier": "medium",
+    "description": "Vintage cars, cigars, and salsa in crumbling courtyards",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "V"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Rum, revolution murals, and waves lashing the seawall"
+  },
+  {
+    "id": "WLD-0129",
+    "word": "TEHRAN",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 192,
+    "tier": "medium",
+    "description": "Persian capital sprawled beneath snowy Alborz slopes",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Carpet bazaars bustle in Iran's smoggy heart"
+  },
+  {
+    "id": "WLD-0130",
+    "word": "CAPE",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 193,
+    "tier": "medium",
+    "description": "Land's last stubborn point jabbing at the sea",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Superheroes wear one; explorers round one"
+  },
+  {
+    "id": "WLD-0131",
+    "word": "SAHARA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 195,
+    "tier": "medium",
+    "description": "Africa's giant sandbox, no toys allowed",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Once green grassland, now the ultimate emptiness"
+  },
+  {
+    "id": "WLD-0132",
+    "word": "NAIROBI",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 197,
+    "tier": "medium",
+    "description": "A capital where giraffes graze beside skyscrapers",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "H"
+      }
+    },
+    "altDescription": "Kenya's bustling gateway to the great migration"
+  },
+  {
+    "id": "WLD-0133",
+    "word": "ANDES",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 202,
+    "tier": "medium",
+    "description": "South America's endless wall of condors and peaks",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Llamas and Inca trails thread its heights"
+  },
+  {
+    "id": "WLD-0134",
+    "word": "DUNE",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 203,
+    "tier": "medium",
+    "description": "A hill of sand that keeps moving house",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Frank Herbert set sandworms loose on one"
+  },
+  {
+    "id": "WLD-0135",
+    "word": "GLACIER",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 205,
+    "tier": "medium",
+    "description": "A river of ice in absolutely no hurry",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "It carved the valleys and birthed the fjords"
+  },
+  {
+    "id": "WLD-0136",
+    "word": "ROCKIES",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 207,
+    "tier": "medium",
+    "description": "North America's jagged spine of elk and snow",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "The continental divide rides their high shoulders"
+  },
+  {
+    "id": "WLD-0137",
+    "word": "THAMES",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 212,
+    "tier": "medium",
+    "description": "The river gliding past Big Ben and parliament",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Oxford and Cambridge race eights along it"
+  },
+  {
+    "id": "WLD-0138",
+    "word": "REEF",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 213,
+    "tier": "medium",
+    "description": "Coral city where ships fear to scrape",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "F",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Snorkelers hover over its rainbow neighborhoods"
+  },
+  {
+    "id": "WLD-0139",
+    "word": "DANUBE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 217,
+    "tier": "medium",
+    "description": "One blue river waltzing through ten countries",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Budapest and Belgrade share its slow current"
+  },
+  {
+    "id": "WLD-0140",
+    "word": "GANGES",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 220,
+    "tier": "medium",
+    "description": "The sacred river that carries prayers to the sea",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Born in ice, ending in a thousand mouths"
+  },
+  {
+    "id": "WLD-0141",
+    "word": "RHINE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 222,
+    "tier": "medium",
+    "description": "Legend rich river of barges and German lore",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Vineyards climb its banks from the Alps seaward"
+  },
+  {
+    "id": "WLD-0142",
+    "word": "SEINE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 227,
+    "tier": "medium",
+    "description": "Slow water drifting past Notre Dame and lovers",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Impressionists painted its light again and again"
+  },
+  {
+    "id": "WLD-0143",
+    "word": "PLATEAU",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 228,
+    "tier": "medium",
+    "description": "High country that forgot to have peaks",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Where graphs and landforms both flatten out"
+  },
+  {
+    "id": "WLD-0144",
+    "word": "VOLGA",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 232,
+    "tier": "medium",
+    "description": "Mother river of Russia, wide and slow",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Barge haulers sang their way along it"
+  },
+  {
+    "id": "WLD-0145",
+    "word": "LAGOON",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 235,
+    "tier": "medium",
+    "description": "Shallow blue water hiding behind a coral fence",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "A famous movie creature crawled from one"
+  },
+  {
+    "id": "WLD-0146",
+    "word": "YANGTZE",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 237,
+    "tier": "medium",
+    "description": "China's longest river, squeezed through three gorges",
+    "hints": {
+      "position": {
+        "index": 6,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "One colossal dam tamed its wild waters"
+  },
+  {
+    "id": "WLD-0147",
+    "word": "MEKONG",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 242,
+    "tier": "medium",
+    "description": "Muddy giant feeding rice bowls across Southeast Asia",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Floating markets bob on its brown breadth"
+  },
+  {
+    "id": "WLD-0148",
+    "word": "BAZAAR",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 245,
+    "tier": "medium",
+    "description": "Haggling, spices, and noise by the alleyful",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "Z",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Lanterns, carpets, and prices never written down"
+  },
+  {
+    "id": "WLD-0149",
+    "word": "GOBI",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 247,
+    "tier": "medium",
+    "description": "Cold dry emptiness where dinosaur bones surface",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Two-humped camels plod Mongolia's stony waste"
+  },
+  {
+    "id": "WLD-0150",
+    "word": "EQUATOR",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 250,
+    "tier": "medium",
+    "description": "The invisible belt where the planet sweats most",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Sailors hold ceremonies when ships cross it"
+  },
+  {
+    "id": "WLD-0151",
+    "word": "KALAHARI",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 252,
+    "tier": "medium",
+    "description": "Red sands where meerkats stand guard at dawn",
+    "hints": {
+      "position": {
+        "index": 6,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "K",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "San trackers read stories in its dust"
+  },
+  {
+    "id": "WLD-0152",
+    "word": "SIBERIA",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 257,
+    "tier": "medium",
+    "description": "Endless frozen east where exiles once vanished",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Permafrost, rare tigers, and one heroic railway"
+  },
+  {
+    "id": "WLD-0153",
+    "word": "KERALA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 260,
+    "tier": "medium",
+    "description": "Backwaters, coconuts, and God's own country",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Kathakali faces and pepper vines in the rain"
+  },
+  {
+    "id": "WLD-0154",
+    "word": "SUMATRA",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 262,
+    "tier": "medium",
+    "description": "Indonesian giant of orangutans, coffee, and mist",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "A monstrous 2004 wave rose off its coast"
+  },
+  {
+    "id": "WLD-0155",
+    "word": "VARANASI",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 267,
+    "tier": "medium",
+    "description": "Oldest living city of lamps, chants, and pyres",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "H"
+      }
+    },
+    "altDescription": "Silk weavers work where Shiva reputedly never leaves"
+  },
+  {
+    "id": "WLD-0156",
+    "word": "TUNDRA",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 270,
+    "tier": "medium",
+    "description": "Frozen ground where trees gave up trying",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Reindeer graze lichen under a sunless winter"
+  },
+  {
+    "id": "WLD-0157",
+    "word": "DECCAN",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 272,
+    "tier": "medium",
+    "description": "The vast volcanic tableland anchoring southern India",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "N"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Black soil plains where old sultanates clashed"
+  },
+  {
+    "id": "WLD-0158",
+    "word": "MESA",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 275,
+    "tier": "medium",
+    "description": "A table of rock the desert set",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Roadrunner cartoons chase across its high flats"
+  },
+  {
+    "id": "WLD-0159",
+    "word": "ETNA",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 277,
+    "tier": "medium",
+    "description": "Sicily's grumbling giant, forever smoking above orchards",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Cyclopes supposedly forged thunderbolts beneath it"
+  },
+  {
+    "id": "WLD-0160",
+    "word": "PAMPAS",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 282,
+    "tier": "medium",
+    "description": "Argentine grasslands where gauchos ride toward flat horizons",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "P"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Cattle herds built a nation's beefy reputation here"
+  },
+  {
+    "id": "WLD-0161",
+    "word": "STRAIT",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 283,
+    "tier": "medium",
+    "description": "The sea squeezing between two nervous coastlines",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "A chokepoint every admiral memorizes early"
+  },
+  {
+    "id": "WLD-0162",
+    "word": "OUTBACK",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 287,
+    "tier": "medium",
+    "description": "Australia's red empty middle, far from everywhere",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "C"
+      },
+      "letters": {
+        "correct": "U",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Road trains thunder past Uluru toward nowhere"
+  },
+  {
+    "id": "WLD-0163",
+    "word": "HAMLET",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 292,
+    "tier": "medium",
+    "description": "A settlement so small it barely earns a dot",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Shakespeare's gloomy Dane shares its tiny name"
+  },
+  {
+    "id": "WLD-0164",
+    "word": "GEYSER",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 293,
+    "tier": "medium",
+    "description": "The ground's kettle boiling over on schedule",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Old Faithful performs its tallest trick hourly"
+  },
+  {
+    "id": "WLD-0165",
+    "word": "WHARF",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 297,
+    "tier": "medium",
+    "description": "Wooden platform where ships tie up and unload",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Gulls squabble over fish crates at dawn"
+  },
+  {
+    "id": "WLD-0166",
+    "word": "JETTY",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 302,
+    "tier": "medium",
+    "description": "Short stone arm holding the waves back",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "J",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Anglers dangle lines off its far end"
+  },
+  {
+    "id": "WLD-0167",
+    "word": "SAVANNA",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 303,
+    "tier": "medium",
+    "description": "Golden grass, flat-topped trees, lions on patrol",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "V",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Termite towers and thundering wildebeest herds"
+  },
+  {
+    "id": "WLD-0168",
+    "word": "INLET",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 307,
+    "tier": "medium",
+    "description": "A narrow nibble the sea takes from the coast",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Kayakers slip into its quiet hidden waters"
+  },
+  {
+    "id": "WLD-0169",
+    "word": "BASIN",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 312,
+    "tier": "medium",
+    "description": "The wide bowl a river calls its kingdom",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "All local rain answers to one river"
+  },
+  {
+    "id": "WLD-0170",
+    "word": "PRAIRIE",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 313,
+    "tier": "medium",
+    "description": "Grass to the horizon, wind for company",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Bison once darkened it from edge to edge"
+  },
+  {
+    "id": "WLD-0171",
+    "word": "TRENCH",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 317,
+    "tier": "medium",
+    "description": "The ocean's deepest scar, darker than midnight",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "C",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Only a few submersibles have touched its bottom"
+  },
+  {
+    "id": "WLD-0172",
+    "word": "RAVINE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 322,
+    "tier": "medium",
+    "description": "A steep narrow slash carved by hurrying water",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Lost balls and hikers' nerves tumble into it"
+  },
+  {
+    "id": "WLD-0173",
+    "word": "BAYOU",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 327,
+    "tier": "medium",
+    "description": "Sluggish southern waterway of moss and alligators",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Cajun fiddles echo over still dark water"
+  },
+  {
+    "id": "WLD-0174",
+    "word": "LATITUDE",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 330,
+    "tier": "medium",
+    "description": "Lines that measure how far from the middle you wandered",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Navigators reckon it by the noon sun"
+  },
+  {
+    "id": "WLD-0175",
+    "word": "GROTTO",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 332,
+    "tier": "medium",
+    "description": "A small sea cave glowing blue inside",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "A hidden hollow where nymphs bathed, legends say"
+  },
+  {
+    "id": "WLD-0176",
+    "word": "MANGROVE",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 337,
+    "tier": "medium",
+    "description": "Salt loving trees standing on stilted roots",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Storm shields planted where land meets salt"
+  },
+  {
+    "id": "WLD-0177",
+    "word": "CHASM",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 342,
+    "tier": "medium",
+    "description": "A gap in the earth too wide to jump",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Divides between generations borrow its yawning name"
+  },
+  {
+    "id": "WLD-0178",
+    "word": "BUTTE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 348,
+    "tier": "medium",
+    "description": "A lonely flat topped tower of desert rock",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "A"
+      }
+    },
+    "altDescription": "Monument Valley's sentinels pose for every western"
+  },
+  {
+    "id": "WLD-0179",
+    "word": "GHAT",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 355,
+    "tier": "hard",
+    "description": "Stone steps walking the city down to holy water",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "H",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Pyres burn at the river's stone edge"
+  },
+  {
+    "id": "WLD-0180",
+    "word": "FJORD",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 356,
+    "tier": "hard",
+    "description": "A glacier's deep blue signature on the coastline",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "D",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Norwegian postcards can't resist its steep mirrors"
+  },
+  {
+    "id": "WLD-0181",
+    "word": "TARN",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 362,
+    "tier": "hard",
+    "description": "A cold little pool cupped high among crags",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "H"
+      }
+    },
+    "altDescription": "Lake District wanderers name each icy jewel"
+  },
+  {
+    "id": "WLD-0182",
+    "word": "STEPPE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 367,
+    "tier": "hard",
+    "description": "Treeless grass where horsemen wrote history",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "P",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Yurts dot the wind-scoured Eurasian sweep"
+  },
+  {
+    "id": "WLD-0183",
+    "word": "TOR",
+    "topic": "World & Places",
+    "length": 3,
+    "difficulty": 369,
+    "tier": "hard",
+    "description": "Craggy granite crown on a bare hilltop",
+    "hints": {
+      "position": {
+        "index": 0,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Dartmoor's weathered stone stacks draw fog and legend"
+  },
+  {
+    "id": "WLD-0184",
+    "word": "MASSIF",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 376,
+    "tier": "hard",
+    "description": "A whole family of summits moving as one block",
+    "hints": {
+      "position": {
+        "index": 4,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "S",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Mont Blanc anchors one such mighty cluster"
+  },
+  {
+    "id": "WLD-0185",
+    "word": "ATOLL",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 378,
+    "tier": "hard",
+    "description": "A coral ring around a vanished volcano",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Bikini's blue circle once hosted terrible tests"
+  },
+  {
+    "id": "WLD-0186",
+    "word": "SEAMOUNT",
+    "topic": "World & Places",
+    "length": 8,
+    "difficulty": 383,
+    "tier": "hard",
+    "description": "A drowned peak that never reaches the surface",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "M"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Sonar reveals what charts long left blank"
+  },
+  {
+    "id": "WLD-0187",
+    "word": "BIGHT",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 390,
+    "tier": "hard",
+    "description": "A long lazy curve bitten from the coastline",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "G"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Rope handlers and chart readers both use it"
+  },
+  {
+    "id": "WLD-0188",
+    "word": "TAIGA",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 391,
+    "tier": "hard",
+    "description": "The endless pine belt below the frozen north",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "G",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Wolf howls carry far between snowy trunks"
+  },
+  {
+    "id": "WLD-0189",
+    "word": "PLAYA",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 397,
+    "tier": "hard",
+    "description": "A dry lakebed that shines white after rain",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "Y"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Burning Man builds its city on one"
+  },
+  {
+    "id": "WLD-0190",
+    "word": "ESTUARY",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 403,
+    "tier": "hard",
+    "description": "Where the river and the tide argue over salt",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "U"
+      },
+      "letters": {
+        "correct": "Y",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Brackish nursery where young fish grow bold"
+  },
+  {
+    "id": "WLD-0191",
+    "word": "VELD",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 404,
+    "tier": "hard",
+    "description": "Open southern African grassland rolling to the horizon",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Springbok bound across its sunburnt open miles"
+  },
+  {
+    "id": "WLD-0192",
+    "word": "SCREE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 411,
+    "tier": "hard",
+    "description": "Loose sliding stones on a mountainside's steep skirt",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Each footstep sets off a small stony avalanche"
+  },
+  {
+    "id": "WLD-0193",
+    "word": "CALDERA",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 415,
+    "tier": "hard",
+    "description": "The crater left when a volcano swallows itself",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Santorini's white villages perch on its curved rim"
+  },
+  {
+    "id": "WLD-0194",
+    "word": "ARROYO",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 418,
+    "tier": "hard",
+    "description": "A dry desert channel waiting for sudden floods",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Campers avoid its bed when thunderheads gather"
+  },
+  {
+    "id": "WLD-0195",
+    "word": "CENOTE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 426,
+    "tier": "hard",
+    "description": "A sunlit sinkhole where the Maya met their gods",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "S"
+      }
+    },
+    "altDescription": "Divers descend Yucatan's jade-lit limestone wells"
+  },
+  {
+    "id": "WLD-0196",
+    "word": "ISTHMUS",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 429,
+    "tier": "hard",
+    "description": "A skinny land bridge two oceans nearly pinch shut",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "M",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Panama's narrow waist, eventually cut for ships"
+  },
+  {
+    "id": "WLD-0197",
+    "word": "LAHAR",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 433,
+    "tier": "hard",
+    "description": "A hot river of mud racing off a volcano",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "H"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Villages downhill fear this scalding grey surge"
+  },
+  {
+    "id": "WLD-0198",
+    "word": "CIRQUE",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 441,
+    "tier": "hard",
+    "description": "An amphitheatre of ice carved into the mountainside",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "I",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "A famous circus borrowed this French bowl"
+  },
+  {
+    "id": "WLD-0199",
+    "word": "KARST",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 442,
+    "tier": "hard",
+    "description": "Limestone country, riddled with sinkholes and secret caves",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "R"
+      },
+      "letters": {
+        "correct": "T",
+        "decoy": "E"
+      }
+    },
+    "altDescription": "Guilin's dreamy stone towers typify this terrain"
+  },
+  {
+    "id": "WLD-0200",
+    "word": "ARETE",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 448,
+    "tier": "hard",
+    "description": "A knife edge of rock between two icy hollows",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "T"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Greek philosophers praised it; alpinists inch along it"
+  },
+  {
+    "id": "WLD-0201",
+    "word": "MORAINE",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 454,
+    "tier": "hard",
+    "description": "The rubble a glacier bulldozed and then abandoned",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "A"
+      },
+      "letters": {
+        "correct": "N",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Its ridges map where ancient ice once paused"
+  },
+  {
+    "id": "WLD-0202",
+    "word": "COL",
+    "topic": "World & Places",
+    "length": 3,
+    "difficulty": 456,
+    "tier": "hard",
+    "description": "The low saddle climbers cross between two summits",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "L"
+      },
+      "letters": {
+        "correct": "O",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Tour de France riders curse each famous one"
+  },
+  {
+    "id": "WLD-0203",
+    "word": "LOESS",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 463,
+    "tier": "hard",
+    "description": "Fine windblown silt stacked into fertile yellow banks",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "E"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Chinese farmers once dug cozy homes inside it"
+  },
+  {
+    "id": "WLD-0204",
+    "word": "POLDER",
+    "topic": "World & Places",
+    "length": 6,
+    "difficulty": 468,
+    "tier": "hard",
+    "description": "Farmland the Dutch politely borrowed from the sea",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "T"
+      }
+    },
+    "altDescription": "Windmills once pumped these fields dry daily"
+  },
+  {
+    "id": "WLD-0205",
+    "word": "DOAB",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 471,
+    "tier": "hard",
+    "description": "Fertile tongue of land held between two rivers",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "O"
+      },
+      "letters": {
+        "correct": "A",
+        "decoy": "I"
+      }
+    },
+    "altDescription": "Ganga and Yamuna cradle its famous wheat"
+  },
+  {
+    "id": "WLD-0206",
+    "word": "DRUMLIN",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 479,
+    "tier": "hard",
+    "description": "A half buried egg of earth left by ice",
+    "hints": {
+      "position": {
+        "index": 5,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Whole herds of them dot Irish farmland"
+  },
+  {
+    "id": "WLD-0207",
+    "word": "WADI",
+    "topic": "World & Places",
+    "length": 4,
+    "difficulty": 481,
+    "tier": "hard",
+    "description": "A desert riverbed waiting years for its river",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "D"
+      },
+      "letters": {
+        "correct": "W",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Bedouin camp in it, warily watching clouds"
+  },
+  {
+    "id": "WLD-0208",
+    "word": "ESKER",
+    "topic": "World & Places",
+    "length": 5,
+    "difficulty": 488,
+    "tier": "hard",
+    "description": "A winding gravel spine dropped by melting sheets",
+    "hints": {
+      "position": {
+        "index": 2,
+        "letter": "K"
+      },
+      "letters": {
+        "correct": "E",
+        "decoy": "O"
+      }
+    },
+    "altDescription": "Road builders quarry these snaking glacial leftovers"
+  },
+  {
+    "id": "WLD-0209",
+    "word": "TOMBOLO",
+    "topic": "World & Places",
+    "length": 7,
+    "difficulty": 495,
+    "tier": "hard",
+    "description": "The sandy bridge that ties an island to shore",
+    "hints": {
+      "position": {
+        "index": 3,
+        "letter": "B"
+      },
+      "letters": {
+        "correct": "L",
+        "decoy": "R"
+      }
+    },
+    "altDescription": "Low tide reveals a walkable ribbon seaward"
+  },
+  {
+    "id": "WLD-0210",
+    "word": "RIA",
+    "topic": "World & Places",
+    "length": 3,
+    "difficulty": 497,
+    "tier": "hard",
+    "description": "A sunken green coastline where valleys drink the sea",
+    "hints": {
+      "position": {
+        "index": 1,
+        "letter": "I"
+      },
+      "letters": {
+        "correct": "R",
+        "decoy": "N"
+      }
+    },
+    "altDescription": "Galicia's mussel rafts float on flooded inlets"
+  }
+]

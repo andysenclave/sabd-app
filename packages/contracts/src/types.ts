@@ -29,6 +29,26 @@ export type GameMode = 'solo' | '1v1';
 export type WordTier = 'low' | 'mid' | 'high';
 
 /**
+ * Phase 4 (PART A §2): the four-tier vocabulary of the UNIFIED difficulty scale
+ * (0–500, same units as the player score — engine config `3.0.0`). Bands:
+ * veryEasy 0–50, easy 51–150, medium 151–350, hard 351+. The legacy trio above
+ * stays the vocabulary of the Elo-era scale (config `2.0.0`) — code paths bound to
+ * the ACTIVE config (selection, slices, calibration) keep using `WordTier` until
+ * the gated 3.0.0 flip (edge-case F7).
+ */
+export type UnifiedTier = 'veryEasy' | 'easy' | 'medium' | 'hard';
+
+/** Either scale's tier vocabulary — what a bank entry may carry (see `BankScale`). */
+export type BankTier = WordTier | UnifiedTier;
+
+/**
+ * Which number system a bank's difficulties live in (edge-case F5: a bank/slice is
+ * self-describing so a cached file can never be mis-banded). `elo-legacy` = 800–2200,
+ * three tiers; `unified` = 0–500, four tiers. Mirrors `PointsConfig['scale']`.
+ */
+export type BankScale = 'elo-legacy' | 'unified';
+
+/**
  * The six canonical topics (token/Home identity keys, lowercase).
  * Note: `WordEntry.topic` is a display string (e.g. "Gaming") and stays `string` by
  * contract; `TopicId` is the identity key used by tokens and the Home grid.
@@ -41,10 +61,23 @@ export interface WordEntry {
   word: string;
   topic: string;
   length: number;
-  /** The word's rating ("puzzle rating"). */
+  /**
+   * The word's rating ("puzzle rating"). Which scale it lives on is declared by the
+   * bank/slice that carries the entry (`BankScale`), never guessed per-entry.
+   */
   difficulty: number;
-  tier: WordTier;
+  /** Legacy trio on an `elo-legacy` bank; unified four on a `unified` bank. */
+  tier: BankTier;
   description: string;
+  /**
+   * A SECOND clue for the same word (owner request, 2026-07-19) — same authoring
+   * rules as `description` (5–12 words, evocative, no leak) but a different angle.
+   * Reserved for a future feature (clue shuffling or an extra help option — the
+   * consumer is deliberately undecided; nothing reads it yet). Optional because
+   * legacy (`elo-legacy`) bank entries predate it; every unified-bank entry carries
+   * one (enforced by @sabd/wordbank tests, not by this shape check).
+   */
+  altDescription?: string;
   hints: {
     /** `index` is 0-based — slot 0 is the first slot. */
     position: { index: number; letter: string };
@@ -234,16 +267,60 @@ export interface CategoryScore {
  */
 export interface PlayerSnapshot {
   installId: string;
+  /**
+   * The account this install is bound to, when it has claimed/created one (P4-T9).
+   * Null (or absent) for a pure-anonymous install. When set, the snapshot is the
+   * MERGED replay across every install bound to the account, not just `installId`.
+   */
+  accountId?: string | null;
   /** Engine tunables the server replayed under. */
   engineConfigVersion: string;
   /** Independent all-topics replay (own streak) — not a sum of `categories`. */
   global: { score: number; streak: number; gamesPlayed: number };
   /** One entry per topic with ≥ 1 post-epoch round on the server. */
   categories: CategoryScore[];
-  /** Total events the server holds for this install (pre- and post-epoch). */
+  /** Total events the server holds for this install (or account, when bound). */
   totalRounds: number;
   /** Epoch ms when the server computed this snapshot. */
   computedAt: number;
+}
+
+/**
+ * ─── Accounts & transfer-code claim (P4-T9) ──────────────────────────────────
+ * Anonymous play stays the default identity (the installId). An "account" is a
+ * server-minted id that OWNS the merged history of one or more installs; a device
+ * opts in by minting a single-use TRANSFER CODE and another device claims it. No
+ * third-party provider (owner decision) — the code is the bearer credential.
+ */
+
+/** `POST /v1/account/code` response — a fresh single-use transfer code. */
+export interface ClaimCodeResponse {
+  /** The account the code claims into (created lazily binding the calling install). */
+  accountId: string;
+  /** Short, human-typeable, single-use. */
+  code: string;
+  /** Epoch ms after which the code no longer redeems. */
+  expiresAt: number;
+}
+
+/** `POST /v1/account/claim` request — redeem a transfer code on another install. */
+export interface ClaimRequest {
+  installId: string;
+  code: string;
+}
+
+/**
+ * `POST /v1/account/claim` response. On success the caller adopts `events` locally
+ * (same restore path as reinstall) and holds the merged `snapshot`. On failure
+ * `reason` names a DESIGNED state — `already_claimed` is the F12 case (this install
+ * already belongs to an account; the UI offers "keep playing here or contact support").
+ */
+export interface ClaimResponse {
+  ok: boolean;
+  accountId: string | null;
+  snapshot?: PlayerSnapshot;
+  events?: RoundEvent[];
+  reason?: 'unknown_code' | 'already_claimed';
 }
 
 /**
@@ -303,7 +380,8 @@ export interface WordSliceRef {
   topicId: TopicId;
   /** Bank topic display string (matches `WordEntry.topic`). */
   topic: string;
-  tier: WordTier;
+  /** A slice cell's tier — unified four post-3.0.0, legacy trio on old banks (BankScale). */
+  tier: BankTier;
   /**
    * Monotonic per-slice content version — bumps ONLY when this slice's words
    * change, so an unchanged slice is never re-downloaded across bank versions.
@@ -337,7 +415,8 @@ export interface WordSlice {
   wordBankVersion: string;
   topicId: TopicId;
   topic: string;
-  tier: WordTier;
+  /** A slice cell's tier — unified four post-3.0.0, legacy trio on old banks (BankScale). */
+  tier: BankTier;
   sliceVersion: number;
   words: WordEntry[];
 }
