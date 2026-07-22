@@ -102,6 +102,30 @@ export default function Settings() {
           </Pressable>
         </Section>
 
+        <Section title="ACCOUNT">
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Sync across devices"
+            onPress={() => router.push('/sync')}
+            style={styles.linkRow}
+          >
+            <Text style={{ fontFamily: t.font.body, fontSize: 15, color: t.colors.paper }}>Sync across devices</Text>
+            <Text importantForAccessibility="no" style={{ color: t.colors.paperDim }}>›</Text>
+          </Pressable>
+        </Section>
+
+        <Section title="HELP">
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Report a problem"
+            onPress={() => router.push('/feedback')}
+            style={styles.linkRow}
+          >
+            <Text style={{ fontFamily: t.font.body, fontSize: 15, color: t.colors.paper }}>Report a problem</Text>
+            <Text importantForAccessibility="no" style={{ color: t.colors.paperDim }}>›</Text>
+          </Pressable>
+        </Section>
+
         <Section title="YOUR DATA">
           <Text style={{ fontFamily: t.font.body, fontSize: 13, lineHeight: 19, color: t.colors.paperDim, marginBottom: 12 }}>
             This helps tune word difficulty. Nothing else is included.
