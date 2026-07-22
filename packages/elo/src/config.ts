@@ -100,9 +100,10 @@ export const CONFIG_2_0_0: PointsConfig = Object.freeze({
  * score this word suits" — `serveBelow` equals `maxRating`. A new tier `veryEasy`
  * greets score-0 players (the cold-start fix). FROZEN once shipped.
  *
- * NOT YET the active config: `ENGINE_CONFIG_VERSION` stays 2.0.0 until the bank is
- * re-scaled and the `veryEasy` tier is stocked (Phase 4 Lane 2 + edge-case F7).
- * Registered now so replay can already score 3.0.0 events written by ahead devices.
+ * ACTIVE as of the Phase-4 flip: the bank is re-scaled and the `veryEasy` tier is
+ * stocked (Lane 2, 1,260 words), so edge-case F7 is satisfied and this is now the
+ * config new rounds are written and scored under. Historical 2.0.0 rounds keep
+ * replaying under 2.0.0 (PART A §1) — nothing retroactive.
  */
 export const CONFIG_3_0_0: PointsConfig = Object.freeze({
   version: '3.0.0',
@@ -131,13 +132,16 @@ export const CONFIGS: Readonly<Record<string, PointsConfig>> = Object.freeze({
 });
 
 /**
- * Version stamp NEW round_events are written under. BUMP only when flipping the
- * active config (a gated, deliberate step — see CONFIG_3_0_0's note, F7).
+ * Version stamp NEW round_events are written under. Flipped to 3.0.0 in Phase 4 once
+ * the bank was re-scaled and `veryEasy` stocked (F7). Bumping this is THE flip: new
+ * rounds stamp + score under 3.0.0 and selection serves the unified four tiers. Must
+ * move in lockstep with the client serving the UNIFIED bank — a 3.0.0 stamp on a
+ * legacy-scale (800–2200) rating would band as all-`hard` and corrupt scoring.
  */
-export const ENGINE_CONFIG_VERSION = '2.0.0';
+export const ENGINE_CONFIG_VERSION = '3.0.0';
 
-/** The config new events are scored under — always the `ENGINE_CONFIG_VERSION` entry. */
-export const defaultConfig: PointsConfig = CONFIG_2_0_0;
+/** The active config new events are scored under — always the `ENGINE_CONFIG_VERSION` entry. */
+export const defaultConfig: PointsConfig = CONFIG_3_0_0;
 
 /**
  * Thrown when replay meets an `engineConfigVersion` that has no registered config

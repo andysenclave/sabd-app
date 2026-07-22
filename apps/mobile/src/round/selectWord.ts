@@ -15,7 +15,7 @@
  *    or a round abandoned before recording).
  */
 
-import type { WordEntry, WordTier } from '@sabd/contracts';
+import type { BankTier, WordEntry } from '@sabd/contracts';
 import { tierForScore } from '@sabd/elo';
 // The LIVE bank (T10): bundled words with downloaded slices layered per (topic × tier).
 // Offline/fresh installs see exactly the bundled bank.
@@ -23,9 +23,15 @@ import { bankWords, bankTopics } from '../bank/liveBank.ts';
 
 /**
  * When the target tier is exhausted (all its words seen), spill to the nearest tier —
- * an easier already-mastered one before a harder unearned one.
+ * an easier already-mastered one before a harder unearned one. Keyed by the unified
+ * four tiers served under engine config 3.0.0; `tierForScore` returns one of these.
  */
-const TIER_FALLBACK: Record<WordTier, WordTier[]> = {
+const TIER_FALLBACK: Record<BankTier, BankTier[]> = {
+  veryEasy: ['veryEasy', 'easy', 'medium', 'hard'],
+  easy: ['easy', 'veryEasy', 'medium', 'hard'],
+  medium: ['medium', 'easy', 'hard', 'veryEasy'],
+  hard: ['hard', 'medium', 'easy', 'veryEasy'],
+  // Legacy trio — retained so a stale elo-legacy slice (F5) still spills correctly.
   low: ['low', 'mid', 'high'],
   mid: ['mid', 'low', 'high'],
   high: ['high', 'mid', 'low'],

@@ -10,7 +10,11 @@
 
 import type { WordEntry, WordSlice } from '@sabd/contracts';
 import { BANK_TOPICS, topicIdForBankTopic } from '@sabd/contracts';
-import { words as bundledWords, wordBankVersion as bundledVersion } from '@sabd/wordbank';
+// Phase-4 3.0.0 flip: the app serves the UNIFIED bank (0–500 scale, four tiers) in
+// lockstep with ENGINE_CONFIG_VERSION 3.0.0. wordRatingAtPlay written into events is
+// therefore unified-scale, matching the 3.0.0 tier bands. Switching one without the
+// other corrupts scoring (see @sabd/elo config.ts).
+import { unifiedWords as bundledWords, unifiedBankVersion as bundledVersion } from '@sabd/wordbank';
 
 /** cellKey = `${topicId}/${tier}` */
 const overrides = new Map<string, WordSlice>();
