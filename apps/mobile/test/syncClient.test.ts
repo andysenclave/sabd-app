@@ -21,10 +21,16 @@ import {
   type RecordRoundInput,
   type SqlDriver,
 } from '@sabd/storage';
-import { handleGetMe, handleUploadRounds, MemoryEventStore } from '@sabd/ingest';
+import { handleClaim, handleCreateCode, handleGetMe, handleUploadRounds, MemoryEventStore } from '@sabd/ingest';
 // Test-only reach into the storage package's node driver (same SQLite as device).
 import { NodeSqliteDriver } from '../../../packages/storage/test/nodeDriver.ts';
-import { syncPass, uploadUnsynced, type FetchJson } from '../src/sync/syncClient.ts';
+import {
+  claimAccount,
+  requestTransferCode,
+  syncPass,
+  uploadUnsynced,
+  type FetchJson,
+} from '../src/sync/syncClient.ts';
 
 const silent = (): void => {};
 const INSTALL = 'install-e2e';
@@ -32,10 +38,10 @@ const BASE = 'https://ingest.example';
 let clock = 1_752_000_000_000;
 const tick = (): number => (clock += 60_000);
 
-function freshDb(): NodeSqliteDriver {
+function freshDb(installId: string = INSTALL): NodeSqliteDriver {
   const db = new NodeSqliteDriver();
   runMigrations(db);
-  seedPlayer(db, INSTALL, tick());
+  seedPlayer(db, installId, tick());
   return db;
 }
 
@@ -72,6 +78,20 @@ function serverFetch(store: MemoryEventStore, opts: { failUploads?: boolean } = 
         u.searchParams.get('includeEvents') === '1',
         tick(),
       );
+      if (!r.ok) throw new Error(`HTTP ${r.error.status}`);
+      return r.body;
+    }
+    if (init?.method === 'POST' && u.pathname === '/v1/account/code') {
+      let seq = 0;
+      const r = await handleCreateCode(
+        store, init?.headers?.['X-Install-Id'] ?? '', tick(),
+        () => `acct-${++seq}`, () => `CODE-${tick()}`,
+      );
+      if (!r.ok) throw new Error(`HTTP ${r.error.status}`);
+      return r.body;
+    }
+    if (init?.method === 'POST' && u.pathname === '/v1/account/claim') {
+      const r = await handleClaim(store, JSON.parse(init.body!), tick());
       if (!r.ok) throw new Error(`HTTP ${r.error.status}`);
       return r.body;
     }
@@ -156,4 +176,70 @@ test('restore is a no-op for a genuinely new player (server has nothing)', async
   assert.equal(restore, null);
   assert.equal(upload.uploaded, 0);
   assert.equal(getPlayer(db)!.cachedRating, 0);
+});
+
+// ─── P4-T9: transfer-code claim, end-to-end (client + real server) ────────────
+
+test('T9 e2e: phone mints a code, a fresh device claims it and restores the score', async () => {
+  const store = new MemoryEventStore();
+  const fetch = serverFetch(store);
+
+  // Phone plays and syncs.
+  const phone = freshDb('phone');
+  playRounds(phone, 6);
+  await syncPass(phone, fetch, BASE, tick(), silent);
+  const phoneScore = getPlayer(phone)!.cachedRating;
+  assert.ok(phoneScore > 0);
+
+  // Phone requests a transfer code.
+  const code = await requestTransferCode(phone, fetch, BASE);
+  assert.ok(code && code.code.length > 0);
+
+  // A brand-new device claims it → adopts the merged history.
+  const tablet = freshDb('tablet');
+  const summary = await claimAccount(tablet, fetch, BASE, code!.code, tick(), silent);
+  assert.ok(summary.ok);
+  assert.equal(summary.rating, phoneScore);
+  assert.equal(getPlayer(tablet)!.cachedRating, phoneScore);
+  assert.deepEqual(playedWordIds(tablet), playedWordIds(phone)); // seenIds restored too
+});
+
+test('T9 e2e: a device with its OWN rounds joins the account; server merges all 7', async () => {
+  const store = new MemoryEventStore();
+  const fetch = serverFetch(store);
+
+  const phone = freshDb('phone2');
+  playRounds(phone, 4);
+  await syncPass(phone, fetch, BASE, tick(), silent);
+  const code = await requestTransferCode(phone, fetch, BASE);
+
+  // Tablet already played 3 of its own rounds before claiming.
+  const tablet = freshDb('tablet2');
+  playRounds(tablet, 3);
+  await syncPass(tablet, fetch, BASE, tick(), silent);
+
+  const summary = await claimAccount(tablet, fetch, BASE, code!.code, tick(), silent);
+  assert.ok(summary.ok);
+  // Server-side, the account is the authoritative merge of BOTH installs' rounds.
+  const fromPhone = await handleGetMe(store, 'phone2', false, tick());
+  const fromTablet = await handleGetMe(store, 'tablet2', false, tick());
+  assert.ok(fromPhone.ok && fromTablet.ok);
+  assert.equal(fromPhone.body.snapshot.global.gamesPlayed, 7);
+  assert.deepEqual(fromPhone.body.snapshot.global, fromTablet.body.snapshot.global);
+  // The tablet adopted the full merged log locally (all 7 rounds present).
+  assert.equal(countRounds(tablet), 7);
+});
+
+test('T9: claiming with an already-used code surfaces the designed rejection', async () => {
+  const store = new MemoryEventStore();
+  const fetch = serverFetch(store);
+  const phone = freshDb('p3');
+  await syncPass(phone, fetch, BASE, tick(), silent);
+  const code = await requestTransferCode(phone, fetch, BASE);
+
+  const first = await claimAccount(freshDb('t3a'), fetch, BASE, code!.code, tick(), silent);
+  assert.ok(first.ok);
+  const second = await claimAccount(freshDb('t3b'), fetch, BASE, code!.code, tick(), silent);
+  assert.equal(second.ok, false);
+  assert.equal(second.reason, 'unknown_code'); // spent
 });

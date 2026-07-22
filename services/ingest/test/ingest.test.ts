@@ -12,10 +12,25 @@ import type { RoundEvent } from '@sabd/contracts';
 import { ROUND_EVENT_SCHEMA_VERSION, SEED_RATING, validatePlayerSnapshot } from '@sabd/contracts';
 import { ENGINE_CONFIG_VERSION } from '@sabd/elo';
 import { replayEvents } from '@sabd/storage';
-import { computeSnapshot, handleGetMe, handleUploadRounds, MemoryEventStore } from '../src/index.ts';
+import {
+  CLAIM_CODE_TTL_MS,
+  computeSnapshot,
+  handleClaim,
+  handleCreateCode,
+  handleDeleteAccount,
+  handleGetMe,
+  handleUploadRounds,
+  MemoryEventStore,
+} from '../src/index.ts';
 
 const INSTALL = 'install-a';
 const NOW = 1_800_000_000_000;
+
+// Deterministic id/code minters for the account tests.
+let idSeq = 0;
+const mkAccountId = () => `acct-${++idSeq}`;
+let codeSeq = 0;
+const mkCode = () => `CODE-${++codeSeq}`;
 
 let clock = 1_752_000_000_000;
 function event(overrides: Partial<RoundEvent> = {}): RoundEvent {
@@ -225,4 +240,129 @@ test('per-category streaks are independent in the server snapshot too', async ()
   assert.equal(r.body.snapshot.global.streak, 1);
   // Global ≠ sum of categories (locked owner decision).
   assert.notEqual(r.body.snapshot.global.score, gaming.score + music.score);
+});
+
+// ─── P4-T9: accounts + transfer-code claim ───────────────────────────────────
+
+function uploadAs(store: MemoryEventStore, installId: string, events: RoundEvent[]) {
+  return handleUploadRounds(
+    store,
+    { installId, schemaVersion: ROUND_EVENT_SCHEMA_VERSION, events },
+    NOW,
+  );
+}
+
+/** Assert a handler succeeded (transport-wise) and return its body — narrows the union. */
+function must<T>(r: { ok: true; body: T } | { ok: false; error: unknown }): T {
+  assert.ok(r.ok);
+  return r.body;
+}
+
+test('P4-T9 DoD — new device claims a code and restores the merged history', async () => {
+  const store = new MemoryEventStore();
+  // Phone (install-a) plays some rounds.
+  const phoneEvents = [
+    event({ installId: 'install-a' }),
+    event({ installId: 'install-a', topic: 'Music' }),
+    event({ installId: 'install-a' }),
+  ];
+  await uploadAs(store, 'install-a', phoneEvents);
+  const phoneScore = must(await handleGetMe(store, 'install-a', false, NOW)).snapshot.global.score;
+  assert.ok(phoneScore > 0);
+
+  // Phone mints a transfer code.
+  const codeRes = await handleCreateCode(store, 'install-a', NOW, mkAccountId, mkCode);
+  assert.ok(codeRes.ok);
+  assert.equal(codeRes.body.expiresAt, NOW + CLAIM_CODE_TTL_MS);
+
+  // Tablet (install-b, fresh) claims it.
+  const claim = await handleClaim(store, { installId: 'install-b', code: codeRes.body.code }, NOW);
+  assert.ok(claim.ok && claim.body.ok);
+  assert.equal(claim.body.accountId, codeRes.body.accountId);
+  // The merged snapshot equals the phone's, and the events replay to it locally.
+  assert.equal(claim.body.snapshot!.global.score, phoneScore);
+  assert.equal(claim.body.events!.length, 3);
+  const local = replayEvents(claim.body.events!, { rating: SEED_RATING, streak: 0, gamesPlayed: 0 });
+  assert.equal(local.rating, phoneScore);
+});
+
+test('after claim, BOTH installs get the merged account snapshot, and new rounds merge', async () => {
+  const store = new MemoryEventStore();
+  await uploadAs(store, 'install-a', [event({ installId: 'install-a' })]);
+  const code = must(await handleCreateCode(store, 'install-a', NOW, mkAccountId, mkCode)).code;
+  await handleClaim(store, { installId: 'install-b', code }, NOW);
+
+  // Tablet plays a new round → it folds into the SAME account.
+  await uploadAs(store, 'install-b', [event({ installId: 'install-b' })]);
+
+  const fromPhone = must(await handleGetMe(store, 'install-a', false, NOW)).snapshot;
+  const fromTablet = must(await handleGetMe(store, 'install-b', false, NOW)).snapshot;
+  assert.equal(fromPhone.global.gamesPlayed, 2); // both installs' rounds
+  assert.deepEqual(fromPhone.global, fromTablet.global); // one shared account view
+  assert.equal(fromPhone.accountId, fromTablet.accountId);
+});
+
+test('F12 — an install that already owns a history cannot claim another account', async () => {
+  const store = new MemoryEventStore();
+  // install-a has account A; install-b has its own account B.
+  const codeA = must(await handleCreateCode(store, 'install-a', NOW, mkAccountId, mkCode)).code;
+  const acctB = must(await handleCreateCode(store, 'install-b', NOW, mkAccountId, mkCode)).accountId;
+
+  // install-b (already bound to B) tries to claim A's code → rejected, unchanged.
+  const claim = await handleClaim(store, { installId: 'install-b', code: codeA }, NOW);
+  assert.ok(claim.ok);
+  assert.equal(claim.body.ok, false);
+  assert.equal(claim.body.reason, 'already_claimed');
+  assert.equal(claim.body.accountId, acctB); // still its own account
+});
+
+test('a spent, expired, or unknown code is rejected as unknown_code', async () => {
+  const store = new MemoryEventStore();
+  const code = must(await handleCreateCode(store, 'install-a', NOW, mkAccountId, mkCode)).code;
+
+  // Spent: first claim consumes it, a second (different install) fails.
+  await handleClaim(store, { installId: 'install-b', code }, NOW);
+  const spent = await handleClaim(store, { installId: 'install-c', code }, NOW);
+  assert.equal(must(spent).reason, 'unknown_code');
+
+  // Expired.
+  const code2 = must(await handleCreateCode(store, 'install-x', NOW, mkAccountId, mkCode)).code;
+  const expired = await handleClaim(store, { installId: 'install-y', code: code2 }, NOW + CLAIM_CODE_TTL_MS + 1);
+  assert.equal(must(expired).reason, 'unknown_code');
+
+  // Never issued.
+  const unknown = await handleClaim(store, { installId: 'install-z', code: 'NOPE' }, NOW);
+  assert.equal(must(unknown).reason, 'unknown_code');
+});
+
+test('re-claiming your OWN account code is an idempotent success', async () => {
+  const store = new MemoryEventStore();
+  const res = await handleCreateCode(store, 'install-a', NOW, mkAccountId, mkCode);
+  const again = await handleClaim(store, { installId: 'install-a', code: must(res).code }, NOW);
+  assert.ok(must(again).ok);
+  assert.equal(must(again).accountId, must(res).accountId);
+});
+
+test('anonymous play is untouched: an unbound install snapshots on its own events', async () => {
+  const store = new MemoryEventStore();
+  await uploadAs(store, 'solo', [event({ installId: 'solo' })]);
+  const me = await handleGetMe(store, 'solo', false, NOW);
+  assert.ok(me.ok);
+  assert.equal(me.body.snapshot.accountId, null); // no account, zero friction
+  assert.equal(me.body.snapshot.global.gamesPlayed, 1);
+});
+
+test('F14 — account deletion erases every bound install\'s events', async () => {
+  const store = new MemoryEventStore();
+  await uploadAs(store, 'install-a', [event({ installId: 'install-a' })]);
+  const code = must(await handleCreateCode(store, 'install-a', NOW, mkAccountId, mkCode)).code;
+  await handleClaim(store, { installId: 'install-b', code }, NOW);
+  await uploadAs(store, 'install-b', [event({ installId: 'install-b' })]);
+
+  const del = await handleDeleteAccount(store, 'install-b');
+  assert.ok(del.ok);
+  assert.equal(del.body.deletedEvents, 2); // both installs' events
+  assert.equal(del.body.deletedInstalls, 2);
+  // Both installs are now empty anonymous accounts again.
+  assert.equal(must(await handleGetMe(store, 'install-a', false, NOW)).snapshot.totalRounds, 0);
 });

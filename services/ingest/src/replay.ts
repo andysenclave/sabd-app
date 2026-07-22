@@ -64,6 +64,7 @@ export function computeSnapshot(
   installId: string,
   events: readonly RoundEvent[],
   computedAt: number,
+  accountId: string | null = null,
 ): PlayerSnapshot {
   const scored = events.filter(isPointsEra);
 
@@ -77,6 +78,7 @@ export function computeSnapshot(
 
   return {
     installId,
+    accountId,
     engineConfigVersion: ENGINE_CONFIG_VERSION,
     global: { score: global.score, streak: global.streak, gamesPlayed: global.gamesPlayed },
     categories,
