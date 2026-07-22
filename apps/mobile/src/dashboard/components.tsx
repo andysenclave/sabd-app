@@ -13,12 +13,25 @@ import { Wordmark } from '../components/Logo.tsx';
 import { fontFamily as font } from '../theme/fonts.ts';
 import { dash, type DashAccent } from './tokens.ts';
 
-/** Header: the wordmark (left) + a right slot (identity on the hub, a back link elsewhere). */
+/**
+ * Standard top offset for the dashboards' scroll container — matches Home's
+ * `insets.top + 26` so the wordmark sits at the SAME vertical spot on every screen and
+ * never jumps when navigating Home → hub → detail.
+ */
+export const DASH_TOP = 26;
+
+/**
+ * Header: the wordmark (left) + a right slot (identity on the hub, a back link
+ * elsewhere). The wordmark matches Home EXACTLY — same 148px width, same left edge
+ * (paddingHorizontal 24), same top offset (DASH_TOP) — so navigation never resizes or
+ * shifts the mark. The row is top-aligned; the wordmark is the tallest element and
+ * defines the row, so it always pins to the same spot.
+ */
 export function DashHeader({ right }: { right: ReactNode }) {
   return (
     <View style={styles.header}>
-      <Wordmark width={116} />
-      <View style={{ alignItems: 'flex-end' }}>{right}</View>
+      <Wordmark width={148} />
+      <View style={{ alignItems: 'flex-end', paddingTop: 4 }}>{right}</View>
     </View>
   );
 }

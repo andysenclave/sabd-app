@@ -12,7 +12,7 @@ import type { TopicId } from '@sabd/contracts';
 
 import { fontFamily as font } from '../../src/theme/fonts.ts';
 import { dash, accentFor, fmt } from '../../src/dashboard/tokens.ts';
-import { DashHeader, BackLink, StepChart, useScrollPad } from '../../src/dashboard/components.tsx';
+import { DashHeader, DASH_TOP, BackLink, StepChart, useScrollPad } from '../../src/dashboard/components.tsx';
 import { loadCategory } from '../../src/dashboard/load.ts';
 
 const VALID: TopicId[] = ['gaming', 'space', 'music', 'internet', 'food', 'world'];
@@ -30,7 +30,7 @@ export default function CategoryDetail() {
   const chartW = Math.min(width - 48, 340);
 
   return (
-    <View style={[styles.screen, { paddingTop: insets.top + 20 }]}>
+    <View style={[styles.screen, { paddingTop: insets.top + DASH_TOP }]}>
       <ScrollView contentContainerStyle={[styles.body, { paddingBottom: pad }]} showsVerticalScrollIndicator={false}>
         <DashHeader right={<BackLink onPress={() => router.back()} />} />
 

@@ -14,7 +14,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { fontFamily as font } from '../src/theme/fonts.ts';
 import { dash, dashAccent, fmt } from '../src/dashboard/tokens.ts';
-import { DashHeader, BackLink, useScrollPad } from '../src/dashboard/components.tsx';
+import { DashHeader, DASH_TOP, BackLink, useScrollPad } from '../src/dashboard/components.tsx';
 import { loadRewards } from '../src/dashboard/load.ts';
 import type { Earning } from '../src/dashboard/data.ts';
 
@@ -25,7 +25,7 @@ export default function Rewards() {
   const data = useMemo(() => loadRewards(), []);
 
   return (
-    <View style={[styles.screen, { paddingTop: insets.top + 20 }]}>
+    <View style={[styles.screen, { paddingTop: insets.top + DASH_TOP }]}>
       <ScrollView contentContainerStyle={[styles.body, { paddingBottom: pad }]} showsVerticalScrollIndicator={false}>
         <DashHeader right={<BackLink onPress={() => router.back()} />} />
         <Text style={styles.title}>REWARDS</Text>

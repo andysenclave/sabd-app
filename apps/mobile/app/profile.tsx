@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { fontFamily as font } from '../src/theme/fonts.ts';
 import { dash, accentFor, fmt } from '../src/dashboard/tokens.ts';
-import { DashHeader, InvestedBar, useScrollPad } from '../src/dashboard/components.tsx';
+import { DashHeader, DASH_TOP, InvestedBar, useScrollPad } from '../src/dashboard/components.tsx';
 import { loadProfile } from '../src/dashboard/load.ts';
 import type { CategoryDatum, ProfileData } from '../src/dashboard/data.ts';
 
@@ -27,7 +27,7 @@ export default function ProfileHub() {
   const leader = data.categories[0]?.score ?? 0;
 
   return (
-    <View style={[styles.screen, { paddingTop: insets.top + 20 }]}>
+    <View style={[styles.screen, { paddingTop: insets.top + DASH_TOP }]}>
       <ScrollView contentContainerStyle={[styles.body, { paddingBottom: pad }]} showsVerticalScrollIndicator={false}>
         <DashHeader
           right={
@@ -78,14 +78,10 @@ export default function ProfileHub() {
 
         <Text style={styles.footHint}>tap a category → its climb</Text>
 
-        {/* hub nav — rewards + leaderboard */}
+        {/* hub nav — rewards (leaderboard is dormant until soft launch) */}
         <View style={styles.hubNav}>
           <Pressable onPress={() => router.push('/rewards')} accessibilityRole="button" style={styles.hubLink} hitSlop={8}>
             <Text style={styles.hubLinkText}>◆ REWARDS</Text>
-          </Pressable>
-          <View style={styles.hubDivider} />
-          <Pressable onPress={() => router.push('/leaderboard')} accessibilityRole="button" style={styles.hubLink} hitSlop={8}>
-            <Text style={styles.hubLinkText}>▲ LEADERBOARD</Text>
           </Pressable>
         </View>
       </ScrollView>
