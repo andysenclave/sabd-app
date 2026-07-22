@@ -17,18 +17,27 @@ Events input: a JSON array of `RoundEvent`s or an `ExportFile` — playtest
 `npx wrangler d1 execute sabd-ingest --command "SELECT * FROM round_event" --json`
 (or run the aggregation directly in SQL — event-log doc §7.3 has the query).
 
-## The rules (architect Lane 5)
+## The rules (Phase-4 P4-T7 — confidence-weighted)
 
-- **Noise floor**: `< 30` attempts → never re-rated. Five testers' vocabularies are
-  not a word's difficulty.
-- **Slow**: nudges clamp to ±50 rating points per run (`maxNudge`); a drifted word
-  converges over several weeks.
-- **Direction**: observed solve rate vs the tier's target (`low 80% / mid 60% /
-  high 40%`). Over-solved → easier than rated → difficulty drops. (Points-era
-  redesign: the Elo-side `updateWordRating` formula died with `expectedScore`.)
+- **Confidence-weighted, from 5 players.** Correction magnitude scales with sample
+  size instead of a hard gate: `weight = min(1, uniquePlayers / 200)`, so 5 players
+  move a word ~1–2 points and 200 move it decisively. `delta = weight · gain ·
+  (target − observed)`.
+- **Unique players, not attempts** (F8): one grinder replaying a word 40 times is
+  one player's worth of signal — below the 5-player floor, nothing moves.
+- **First attempts only** (F9): a retry after a fail has answer-adjacent knowledge;
+  the signal is each player's FIRST attempt (`firstAttemptSolveRate`).
+- **Slow**: nudges clamp to ±25 points per run (`maxNudge`), below a tier width so a
+  word can't oscillate across a boundary (F10); a drifted word converges over weeks.
+- **Unified-scale evidence only** (F11): pre-3.0.0 events (old 800–2200 ratings) are
+  dropped before aggregating (`calibrationEvents`).
+- **Confounding guard**: weight is further scaled by the spread of attempting
+  players' scores — a word tried only by a narrow band gives weak evidence.
+- **Direction**: observed solve rate vs the tier's target (`veryEasy 85% / easy 72% /
+  medium 55% / hard 40%`). Over-solved → easier than rated → difficulty drops.
 - **Tier crossings are never auto-applied.** difficulty → tier → base pay, so a
   crossing changes what future rounds pay — it's flagged for the human pass.
-- **Tier-at-play is frozen.** Scoring always reads `wordRatingAtPlay` from the
+- **Tier-at-play is frozen** (P4-T8). Scoring always reads `wordRatingAtPlay` from the
   event; re-rating a word never moves a historical score (replay-tested).
   Calibration affects only future selection + future rounds' pay.
 
@@ -40,6 +49,7 @@ gets old — the CLI is already non-interactive apart from the review edit.
 
 ## Tuning
 
-`defaultCalibration` in `src/calibrate.ts`: `targetSolveRate`, `gain`, `maxNudge`,
-`noiseFloor`. Validate targets against real exports before trusting them —
-they're reasoned guesses until playtest data says otherwise.
+`defaultCalibration` in `src/calibrate.ts`: `targetSolveRate`, `gain`, `saturation`,
+`maxNudge`, `minPlayers`, `spreadRef`, `spreadFloor`. Validate targets against real
+exports before trusting them — they're reasoned guesses until playtest data says
+otherwise.

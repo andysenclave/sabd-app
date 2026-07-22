@@ -19,11 +19,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { RoundEvent, WordEntry } from '@sabd/contracts';
-import { aggregateWords } from './aggregate.ts';
+import { aggregateWords, calibrationEvents } from './aggregate.ts';
 import { applyCorrections, defaultCalibration, proposeCorrections, type WordNudge } from './calibrate.ts';
 
 const SERVICE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const DEFAULT_BANK = path.resolve(SERVICE_ROOT, '..', '..', 'packages', 'wordbank', 'data', 'sabd-wordbank.json');
+// Post-3.0.0-flip: calibration runs against the UNIFIED bank (the live one).
+const DEFAULT_BANK = path.resolve(
+  SERVICE_ROOT, '..', '..', 'packages', 'wordbank', 'data', 'sabd-wordbank-unified.json',
+);
 
 function args(name: string): string[] {
   return process.argv.slice(3).filter((a) => a.startsWith(`--${name}=`)).map((a) => a.split('=').slice(1).join('='));
@@ -59,20 +62,23 @@ function propose(): void {
   }
   const bankPath = arg('bank') ?? DEFAULT_BANK;
   const bank = readJson<WordEntry[]>(bankPath);
-  const events = loadEvents(eventPaths);
+  const rawEvents = loadEvents(eventPaths);
+  const events = calibrationEvents(rawEvents); // F11: drop pre-3.0.0 evidence
 
   const stats = aggregateWords(events);
   const proposal = proposeCorrections(stats, bank, defaultCalibration);
 
-  console.log(`\n${events.length} events → ${stats.length} words with data ` +
-    `(${proposal.belowFloor} below the ${defaultCalibration.noiseFloor}-attempt noise floor)\n`);
+  console.log(
+    `\n${rawEvents.length} events (${events.length} on the unified scale) → ${stats.length} words with data ` +
+      `(${proposal.belowFloor} below the ${defaultCalibration.minPlayers}-player floor)\n`,
+  );
 
   if (proposal.autoNudges.length > 0) {
     console.log('DRIFTED (within-tier — auto-apply):');
     for (const n of proposal.autoNudges) {
       console.log(
         `  ${n.wordId} ${n.word.padEnd(12)} ${String(n.oldDifficulty).padStart(4)} → ${String(n.newDifficulty).padStart(4)}` +
-          `  (solve ${(n.solveRate * 100).toFixed(0)}% over ${n.attempts})`,
+          `  (solve ${(n.solveRate * 100).toFixed(0)}% · ${n.uniquePlayers}p · w${n.weight.toFixed(2)})`,
       );
     }
   }
@@ -81,7 +87,7 @@ function propose(): void {
     for (const n of proposal.flagged) {
       console.log(
         `  ${n.wordId} ${n.word.padEnd(12)} ${String(n.oldDifficulty).padStart(4)} → ${String(n.newDifficulty).padStart(4)}` +
-          `  ${n.oldTier} → ${n.newTier}  (solve ${(n.solveRate * 100).toFixed(0)}% over ${n.attempts})`,
+          `  ${n.oldTier} → ${n.newTier}  (solve ${(n.solveRate * 100).toFixed(0)}% · ${n.uniquePlayers}p)`,
       );
     }
   }
