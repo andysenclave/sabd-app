@@ -22,4 +22,8 @@ config.resolver.nodeModulesPaths = [
   path.resolve(workspaceRoot, 'node_modules'),
 ];
 
+// expo-sqlite's web build imports its wa-sqlite `.wasm` worker as an asset; Metro must
+// treat `.wasm` as a bundled asset or the web export fails to resolve it.
+config.resolver.assetExts.push('wasm');
+
 module.exports = config;
