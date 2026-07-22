@@ -9,6 +9,7 @@ import { colors } from '@sabd/tokens';
 import { ThemeProvider } from '../src/theme';
 import { useAppFonts } from '../src/theme/fonts';
 import { useBankBoot } from '../src/bank/useBankBoot';
+import { ErrorBoundary } from '../src/components/ErrorBoundary';
 
 // Hold the native splash until the brand fonts are ready (avoids a fallback-font flash).
 // The split-flap logo intro (T21) plays after this, at the launch moment only.
@@ -31,13 +32,15 @@ export default function RootLayout() {
       <SafeAreaProvider>
         <ThemeProvider>
           <StatusBar style="light" />
-          <Stack
-            screenOptions={{
-              headerShown: false,
-              contentStyle: { backgroundColor: colors.ink },
-              animation: 'fade',
-            }}
-          />
+          <ErrorBoundary>
+            <Stack
+              screenOptions={{
+                headerShown: false,
+                contentStyle: { backgroundColor: colors.ink },
+                animation: 'fade',
+              }}
+            />
+          </ErrorBoundary>
         </ThemeProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
